@@ -1,4 +1,4 @@
-<?php
+<?html
 // List of weapon types
 $weaponTypes = [
     'Bow', 'Crossbow', 'Claw', 'Dagger', 'Gun', 'Knuckle',
@@ -226,17 +226,17 @@ $filteredWeapons = array_filter($weapons, function ($weapon) use ($monsterData, 
             <h1>Equipment Database</h1>
             <p>Equipment stats</p>
             <div class="hero-links">
-                <a href="search.php" class="hero-button">Search</a>
-                <a href="weakness.php" class="hero-button">Elemental Weaknesses</a>
-                <a href="ttl.php" class="hero-button">EXP Calculator</a>
-                <a href="https://artalemarket.com/forum/index.php" class="hero-button">Forums</a>
+                <a href="search.html" class="hero-button">Search</a>
+                <a href="weakness.html" class="hero-button">Elemental Weaknesses</a>
+                <a href="ttl.html" class="hero-button">EXP Calculator</a>
+                <a href="https://artalemarket.com/forum/index.html" class="hero-button">Forums</a>
                 <button id="darkModeToggle" class="dark-mode-button">🌙 Dark Mode</button>
             </div>
         </div>
     </div>
 
     <div class="breadcrumb">
-        <a href="database.php">Home</a> > <span>Database</span>
+        <a href="database.html">Home</a> > <span>Database</span>
     </div>
 
     <!-- Page Container -->
@@ -246,26 +246,26 @@ $filteredWeapons = array_filter($weapons, function ($weapon) use ($monsterData, 
             <div class="sidebar">
                 <h2>Weapons</h2>
                 <ul>
-                    <?php foreach ($weaponTypes as $type): ?>
+                    <?html foreach ($weaponTypes as $type): ?>
                         <li><a href="?type=<?= urlencode($type) ?>"><?= htmlspecialchars($type) ?></a></li>
-                    <?php endforeach; ?>
+                    <?html endforeach; ?>
                 </ul>
             </div>
 
             <!-- Results -->
             <div class="results-container">
-                <?php if ($selectedType): ?>
+                <?html if ($selectedType): ?>
                     <h2><?= htmlspecialchars($selectedType) ?> Weapons</h2>
-                    <?php if (empty($filteredWeapons)): ?>
+                    <?html if (empty($filteredWeapons)): ?>
                         <p>No weapons found for the selected type.</p>
-                    <?php else: ?>
-                        <?php foreach ($filteredWeapons as $weapon): ?>
+                    <?html else: ?>
+                        <?html foreach ($filteredWeapons as $weapon): ?>
                             <div class="item-card">
                                 <h3><?= htmlspecialchars($weapon['name']) ?></h3>
-                                <?php $image = findImageFile($imagePath, $weapon['name'], $extensions); ?>
-                                <?php if ($image): ?>
+                                <?html $image = findImageFile($imagePath, $weapon['name'], $extensions); ?>
+                                <?html if ($image): ?>
                                     <img src="<?= $image ?>" alt="<?= htmlspecialchars($weapon['name']) ?>" class="item-image">
-                                <?php endif; ?>
+                                <?html endif; ?>
 
                                 <table class="item-table">
                                     <tr><th>Required Level</th><td><?= htmlspecialchars($weapon['req_level']) ?></td></tr>
@@ -278,12 +278,12 @@ $filteredWeapons = array_filter($weapons, function ($weapon) use ($monsterData, 
                                     <tr>
                                         <th>Dropped By</th>
                                         <td>
-                                            <?php
+                                            <?html
                                             $droppedBy = findItemDrops($weapon['name'], $monsterData, $bossData);
                                             if (!empty($droppedBy)) {
     $linkedDrops = array_map(function ($monster) {
         $query = urlencode($monster);
-        return '<a href="search.php?monster_query=' . $query . '">' . htmlspecialchars($monster) . '</a>';
+        return '<a href="search.html?monster_query=' . $query . '">' . htmlspecialchars($monster) . '</a>';
     }, $droppedBy);
     echo implode(', ', $linkedDrops);
 } else {
@@ -294,17 +294,17 @@ $filteredWeapons = array_filter($weapons, function ($weapon) use ($monsterData, 
                                     </tr>
                                 </table>
                             </div>
-                        <?php endforeach; ?>
-                    <?php endif; ?>
-                <?php else: ?>
+                        <?html endforeach; ?>
+                    <?html endif; ?>
+                <?html else: ?>
                     <p>Select a weapon category from the sidebar to view items.</p>
-                <?php endif; ?>
+                <?html endif; ?>
             </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <?php include 'footer.php'; ?>
+    <?html include 'footer.html'; ?>
     
     <script src="scripts/dark-mode.js"></script>
     
