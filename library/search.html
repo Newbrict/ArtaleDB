@@ -122,16 +122,12 @@
 </div>
 
 <script>
-  // 데이터 변수들
   let monsterData = [];
   let bossData = [];
 
-  // 이미지 폴더 경로
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
-  const supportedExtensions = ['png']; // 확장자 여러개 시도하는 로직은 복잡해서 png 고정
 
-  // 데이터 로드
   async function loadData() {
     try {
       const [monsterResp, bossResp] = await Promise.all([
@@ -145,16 +141,11 @@
     }
   }
 
-  // 이미지 경로 찾기 (간단히 파일명 만들기)
   function getImagePath(path, name, isItem = false) {
     let fileName = name;
 
     if (isItem) {
-      // Mastery Book 예외처리
-      if (name.includes('[Mastery Book]')) {
-        return path + 'Master_Book.png';
-      }
-      // Scroll % 예외처리
+      if (name.includes('[Mastery Book]')) return path + 'Master_Book.png';
       if (name.includes('Scroll')) {
         if (name.includes('100%')) return path + 'Scroll100.png';
         if (name.includes('70%')) return path + 'Scroll70.png';
@@ -162,20 +153,16 @@
         if (name.includes('30%')) return path + 'Scroll30.png';
         if (name.includes('10%')) return path + 'Scroll10.png';
       }
-      // 성별 제거 (M, F)
       fileName = fileName.replace(/\s\((M|F)\)$/i, '');
-      // 공백 _로, ' - _ 로 대체
       fileName = fileName.replace(/\s+/g, '_').replace(/['-]/g, '_');
-      // 단어마다 첫글자 대문자
       fileName = fileName.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
     } else {
-      // 몬스터 이름 첫글자 대문자 + 나머지 소문자
       fileName = fileName.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('');
     }
+
     return path + fileName + '.png';
   }
 
-  // 몬스터 검색
   function searchMonsters() {
     const query = document.getElementById('monsterSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
@@ -197,7 +184,6 @@
     renderMonsterResults(results);
   }
 
-  // 아이템 검색
   function searchItems() {
     const query = document.getElementById('itemSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
@@ -234,7 +220,6 @@
     renderItemResults(results);
   }
 
-  // 몬스터 결과 렌더링
   function renderMonsterResults(results) {
     const container = document.getElementById('results');
     container.innerHTML = '';
@@ -251,7 +236,8 @@
       const imgSrc = getImagePath(monsterImagePath, monster.name);
       div.innerHTML = `
         <h3>${escapeHtml(monster.name)}</h3>
-        <img src="${imgSrc}" alt="${escapeHtml(monster.name)}" onerror="this.style.display='none'"/>
+        <img src="${imgSrc}" alt="${escapeHtml(monster.name)}"
+             onerror="this.onerror=null; this.src=this.src.replace('.png', '.gif')" />
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
@@ -264,7 +250,6 @@
     });
   }
 
-  // 아이템 결과 렌더링
   function renderItemResults(results) {
     const container = document.getElementById('results');
     container.innerHTML = '';
@@ -282,22 +267,21 @@
 
       div.innerHTML = `
         <h3>아이템: ${escapeHtml(item)}</h3>
-        <img src="${imgSrc}" alt="${escapeHtml(item)}" onerror="this.style.display='none'"/>
+        <img src="${imgSrc}" alt="${escapeHtml(item)}"
+             onerror="this.onerror=null; this.src=this.src.replace('.png', '.gif')" />
         <p><strong>Dropped By:</strong></p>
         <ul>
           ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
         </ul>
       `;
-
       container.appendChild(div);
     }
   }
 
-  // Drops 리스트 HTML (토글 버튼 포함)
   function renderDropsHtml(drops, monsterName) {
     if (!drops || drops.length === 0) return '';
 
-    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_'); // 토글용 id
+    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
 
     return `
       <p><strong>Drops:</strong></p>
@@ -305,7 +289,8 @@
       <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
         ${drops.map(drop => `
           <div class="drop-item">
-            <img src="${getImagePath(itemImagePath, drop, true)}" alt="${escapeHtml(drop)}" onerror="this.style.display='none'"/>
+            <img src="${getImagePath(itemImagePath, drop, true)}" alt="${escapeHtml(drop)}"
+                 onerror="this.onerror=null; this.src=this.src.replace('.png', '.gif')" />
             <span>${escapeHtml(drop)}</span>
           </div>
         `).join('')}
@@ -313,7 +298,6 @@
     `;
   }
 
-  // 드롭 토글 버튼 이벤트 연결
   function attachToggleDropsListener(monsterName) {
     const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
     const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${safeName}"]`);
@@ -327,7 +311,6 @@
     }
   }
 
-  // HTML 이스케이프 (XSS 방지용)
   function escapeHtml(text) {
     if (!text) return '';
     return text.replace(/[&<>"']/g, function (m) {
@@ -342,7 +325,6 @@
     });
   }
 
-  // 다크 모드 토글
   function toggleDarkMode() {
     const body = document.body;
     const btn = document.getElementById('darkModeToggle');
@@ -352,23 +334,16 @@
     localStorage.setItem('darkMode', isDark);
   }
 
-  // 뒤로가기 버튼
-  document.getElementById('backButton').addEventListener('click', () => {
-    history.back();
-  });
-
-  // 초기 세팅
+  document.getElementById('backButton').addEventListener('click', () => history.back());
   document.getElementById('monsterSearchBtn').addEventListener('click', searchMonsters);
   document.getElementById('itemSearchBtn').addEventListener('click', searchItems);
   document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
 
-  // 로컬스토리지에서 다크모드 상태 복원
   if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
     document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
   }
 
-  // 데이터 불러오기
   loadData();
 </script>
 
