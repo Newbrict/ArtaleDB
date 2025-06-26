@@ -1,349 +1,94 @@
-<?html
-// Load JSON data
-$levelDataFile = 'level_data.json';
-
-if (!file_exists($levelDataFile)) {
-    die("Error: Level data file not found!");
-}
-
-$jsonContent = file_get_contents($levelDataFile);
-$levelData = json_decode($jsonContent, true);
-
-if (json_last_error() !== JSON_ERROR_NONE) {
-    die("Error loading level data: " . json_last_error_msg());
-}
-
-// Split level data into four groups
-$columns = [
-    '1-50'   => array_slice($levelData, 0, 50),
-    '51-100' => array_slice($levelData, 50, 50),
-    '101-150' => array_slice($levelData, 100, 50),
-    '151-200' => array_slice($levelData, 150, 50),
-];
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EXP Table & Time to Level Calculator</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        h1, h2 {
-            text-align: center;
-        }
-
-        .table-container {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            max-width: 100%;
-            margin: 20px auto;
-            flex-wrap: wrap;
-        }
-
-        .column {
-            flex: 1;
-            min-width: 200px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            font-size: 9px;
-            text-align: center;
-        }
-
-        th, td {
-            padding: 2px;
-            border: 1px solid #ddd;
-        }
-
-        th {
-            background-color: #f4f4f4;
-        }
-
-        tbody tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-
-        .calculator-container {
-            margin: 20px auto;
-            max-width: 500px;
-            padding: 15px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f9f9f9;
-        }
-
-        .calculator-container label,
-        .calculator-container input {
-            display: block;
-            width: 100%;
-            margin-bottom: 10px;
-        }
-
-        .calculator-container button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-
-        .breadcrumb {
-            background-color: #ddd;
-            padding: 10px;
-            font-size: 16px;
-        }
-
-        .breadcrumb a {
-            text-decoration: none;
-            color: #333;
-        }
-
-        .breadcrumb a:hover {
-            text-decoration: underline;
-        }
-
-        .breadcrumb span {
-            color: #888;
-        }
-        
-        /* Dark Mode: Body */
-.dark-mode body {
-    background-color: #121212;
-    color: #ffffff;
-}
-
-/* Dark Mode: Headings */
-.dark-mode h1,
-.dark-mode h2 {
-    color: #ffffff;
-}
-
-/* Dark Mode: Tables */
-.dark-mode .column {
-    background-color: #1e1e1e;
-    border: 1px solid #444444;
-}
-
-.dark-mode table {
-    background-color: #1e1e1e;
-    color: #ffffff;
-}
-
-.dark-mode th {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.dark-mode td {
-    background-color: #1e1e1e;
-    color: #dddddd;
-}
-
-.dark-mode tbody tr:nth-child(even) {
-    background-color: #2a2a2a;
-}
-
-/* Dark Mode: Calculator Container */
-.dark-mode .calculator-container {
-    background-color: #1e1e1e;
-    border: 1px solid #444444;
-    color: #ffffff;
-}
-
-.dark-mode .calculator-container label,
-.dark-mode .calculator-container input {
-    color: #ffffff;
-    background-color: #333333;
-    border: 1px solid #444444;
-}
-
-.dark-mode .calculator-container button {
-    background-color: #388E3C; /* Green Button */
-    color: #ffffff;
-}
-
-.dark-mode .calculator-container button:hover {
-    background-color: #2e7d32; /* Darker Green on Hover */
-}
-
-/* Dark Mode: Breadcrumb */
-.dark-mode .breadcrumb {
-    background-color: #333333;
-    color: #ffffff;
-}
-
-.dark-mode .breadcrumb a {
-    color: #66bb6a; /* Light green for links */
-}
-
-.dark-mode .breadcrumb a:hover {
-    color: #81c784; /* Brighter green on hover */
-}
-
-.dark-mode .breadcrumb span {
-    color: #aaaaaa; /* Light gray for inactive breadcrumb */
-}
-
-    </style>
-    
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248"
-     crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXP 누적 계산기</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      padding: 20px;
+    }
+    .container {
+      max-width: 500px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin: auto;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #4CAF50;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .result {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
 </head>
 <body>
-    <!-- Header -->
-    <header class="navbar">
-        <div class="logo"></div>
-    </header>
+  <div class="container">
+    <h1>EXP 누적 계산기</h1>
+    <label for="targetLevel">도달하고 싶은 레벨:</label>
+    <input type="number" id="targetLevel" min="1" max="200" value="100">
 
-    <!-- Hero Section -->
-    <div class="hero">
-        <div class="hero-content">
-            <h1>EXP Table & Time to Level Calculator</h1>
-            <p>Plan your progress and estimate time to level up effectively.</p>
-            <div class="hero-links">
-                <a href="weakness.html" class="hero-button">Elemental Weaknesses</a>
-                <a href="search.html" class="hero-button">Search Monsters/Items</a>
-                <a href="database.html" class="hero-button">Database</a>
-                <a href="https://artalemarket.com/forum/index.html" class="hero-button">Forums</a>
-                <button id="darkModeToggle" class="dark-mode-button">🌙 Dark Mode</button>
-            </div>
-        </div>
-    </div>
+    <label for="currentExp">현재 누적 경험치:</label>
+    <input type="number" id="currentExp" value="0">
 
-    <!-- Breadcrumb -->
-    <div class="breadcrumb">
-        <a href="index.html">Home</a> > <span>EXP Table & Calculator</span>
-    </div>
+    <button onclick="calculateExp()">필요한 경험치 계산</button>
 
-    <!-- Main Content -->
-    <main>
-        <div class="table-container">
-            <?html foreach ($columns as $range => $levels): ?>
-                <div class="column">
-                    <h3>Levels <?= $range ?></h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Level</th>
-                                <th>EXP Required</th>
-                                <th>Cumulative EXP</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <?html foreach ($levels as $level): ?>
-                                <tr>
-                                    <td><?= htmlspecialchars($level['level']) ?></td>
-                                    <td><?= htmlspecialchars(number_format($level['expRequired'])) ?></td>
-                                    <td><?= htmlspecialchars(number_format($level['cumulativeExp'])) ?></td>
-                                </tr>
-                            <?html endforeach; ?>
-                        </tbody>
-                    </table>
-                </div>
-            <?html endforeach; ?>
-        </div>
+    <div class="result" id="result"></div>
+  </div>
 
-        <div class="calculator-container">
-            <h2>Time to Level Calculator</h2>
-            <form id="calculator">
-    <label for="currentLevel">Current Level:</label>
-    <input type="number" id="currentLevel" name="currentLevel" min="1" max="200" required>
+  <script>
+    let levelData = [];
 
-    <label for="currentExp">Current EXP:</label>
-    <input type="number" id="currentExp" name="currentExp" min="0" placeholder="EXP at Current Level" required>
+    fetch('level_data.json')
+      .then(response => response.json())
+      .then(data => levelData = data)
+      .catch(error => console.error('레벨 데이터 불러오기 실패:', error));
 
-    <label for="targetLevel">Target Level:</label>
-    <input type="number" id="targetLevel" name="targetLevel" min="1" max="200" required>
+    function calculateExp() {
+      const targetLevel = parseInt(document.getElementById("targetLevel").value);
+      const currentExp = parseInt(document.getElementById("currentExp").value);
 
-    <label for="expRate">EXP Gain per 10 Minutes:</label>
-    <input type="number" id="expRate" name="expRate" min="1" required>
+      const level = levelData.find(l => l.level === targetLevel);
 
-    <button type="button" onclick="calculateTime()">Calculate</button>
-</form>
-<div id="result" class="result"></div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <?html include 'footer.html'; ?>
-    
-             
-
-    <script>
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
-    });
-
-    document.addEventListener('keydown', function (e) {
-        // Disable F12
-        if (e.key === 'F12') {
-            e.preventDefault();
-        }
-        // Disable Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console)
-        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
-            e.preventDefault();
-        }
-        // Disable Ctrl+U (View Source)
-        if (e.ctrlKey && e.key === 'u') {
-            e.preventDefault();
-        }
-    });
-    </script>
-
-<script src="scripts/dark-mode.js"></script>
-
-    <script>
-        const levelData = <?= json_encode($levelData) ?>;
-
-        function calculateTime() {
-    const currentLevel = parseInt(document.getElementById('currentLevel').value);
-    const currentExp = parseInt(document.getElementById('currentExp').value);
-    const targetLevel = parseInt(document.getElementById('targetLevel').value);
-    const expRate = parseInt(document.getElementById('expRate').value);
-
-    if (isNaN(currentLevel) || isNaN(targetLevel) || isNaN(expRate) || currentLevel >= targetLevel || currentExp < 0) {
-        document.getElementById('result').innerHTML = "Please enter valid input.";
+      if (!level) {
+        document.getElementById("result").innerText = "해당 레벨 정보를 찾을 수 없습니다.";
         return;
+      }
+
+      const required = level.cumulativeExp - currentExp;
+      document.getElementById("result").innerText =
+        required <= 0
+          ? `이미 해당 레벨(${targetLevel}) 또는 그 이상입니다.`
+          : `레벨 ${targetLevel}까지 필요한 경험치: ${required.toLocaleString()} EXP`;
     }
-
-    let totalExp = 0;
-
-    for (let i = currentLevel; i < targetLevel; i++) {
-        const level = levelData.find(l => l.level === i);
-        if (level) {
-            if (i === currentLevel) {
-                // Subtract current EXP from the next level's requirement
-                totalExp += level.expRequired - currentExp;
-            } else {
-                totalExp += level.expRequired;
-            }
-        }
-    }
-
-    const totalTimeHours = totalExp / (expRate * 6); // 10 minutes -> 6 units per hour
-    document.getElementById('result').innerHTML = `
-        <strong>Total EXP Required:</strong> ${totalExp.toLocaleString()}<br>
-        <strong>Estimated Time:</strong> ${totalTimeHours.toFixed(2)} hours
-    `;
-}
-
-    </script>
+  </script>
 </body>
 </html>
