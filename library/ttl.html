@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EXP 누적 계산기</title>
   <style>
     body {
@@ -51,20 +51,34 @@
   </style>
 </head>
 <body>
+  <a href="https://heroaran.github.io/" style="
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  ">메인으로</a>
+
   <div class="container">
     <h1>EXP 누적 계산기</h1>
 
     <label for="currentLevel">현재 레벨:</label>
-    <input type="number" id="currentLevel" min="1" max="200" value="1">
+    <input type="number" id="currentLevel" min="1" max="200" value="1" />
 
     <label for="currentPercent">현재 경험치 (%):</label>
-    <input type="number" id="currentPercent" min="0" max="100" value="0">
+    <input type="number" id="currentPercent" min="0" max="100" value="0" />
 
     <label for="targetLevel">목표 레벨:</label>
-    <input type="number" id="targetLevel" min="1" max="200" value="100">
+    <input type="number" id="targetLevel" min="1" max="200" value="100" />
 
-    <label for="expPerMinute">분당 획득 경험치:</label>
-    <input type="number" id="expPerMinute" value="0">
+    <label for="expPer10Minutes">10분당 획득 경험치:</label>
+    <input type="number" id="expPer10Minutes" value="0" />
 
     <button onclick="calculateExp()">필요한 경험치 및 시간 계산</button>
 
@@ -83,7 +97,7 @@
       const currentLevel = parseInt(document.getElementById("currentLevel").value);
       const currentPercent = parseFloat(document.getElementById("currentPercent").value);
       const targetLevel = parseInt(document.getElementById("targetLevel").value);
-      const expPerMinute = parseFloat(document.getElementById("expPerMinute").value);
+      const expPer10Minutes = parseFloat(document.getElementById("expPer10Minutes").value);
 
       const current = levelData.find(l => l.level === currentLevel);
       const target = levelData.find(l => l.level === targetLevel);
@@ -103,8 +117,8 @@
       }
 
       let timeText = "";
-      if (expPerMinute > 0) {
-        const totalMinutes = requiredExp / expPerMinute;
+      if (expPer10Minutes > 0) {
+        const totalMinutes = requiredExp / (expPer10Minutes / 10);
         const hours = Math.floor(totalMinutes / 60);
         const minutes = Math.round(totalMinutes % 60);
         timeText = ` (예상 시간: ${hours}시간 ${minutes}분)`;
