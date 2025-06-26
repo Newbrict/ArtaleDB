@@ -1,4 +1,4 @@
-<?html
+<?php
 // database connection
 require_once 'db_connection.html';
 
@@ -291,96 +291,96 @@ function findImageFile($imagePath, $name, $extensions, $isItem = false) {
             </div>
 
             <div id="results">
-                <?html if (empty($_GET['monster_query']) && empty($_GET['item_query'])): ?>
+                <?php if (empty($_GET['monster_query']) && empty($_GET['item_query'])): ?>
                     <p style="text-align: center; font-size: 18px; color: #555;"><?= $message ?></p>
-                <?html else: ?>
-                    <?html if (isset($_GET['item_query']) && $itemQuery !== ''): ?>
-                        <?html foreach ($results as $item => $monsters): ?>
+                <?php else: ?>
+                    <?php if (isset($_GET['item_query']) && $itemQuery !== ''): ?>
+                        <?php foreach ($results as $item => $monsters): ?>
                             <div class="result-item">
                                 <h3>Item: <?= htmlspecialchars($item) ?></h3>
-                                <?html
+                                <?php
                                 $itemImage = findImageFile($itemImagePath, $item, $supportedExtensions, true);
                                 if ($itemImage): ?>
                                     <img src="<?= $itemImage ?>" alt="<?= htmlspecialchars($item) ?>" style="max-width: 150px; height: auto; margin-bottom: 10px;">
-                                <?html else: ?>
+                                <?php else: ?>
                                     <p><em>No image available</em></p>
-                                <?html endif; ?>
+                                <?php endif; ?>
                                 <p><strong>Dropped By:</strong></p>
                                 <ul>
-                                    <?html foreach ($monsters as $monster): ?>
+                                    <?php foreach ($monsters as $monster): ?>
                                         <li>
                                             <a href="search.html?monster_query=<?= urlencode(strtolower($monster['name'])) ?>&exact=true">
                                                 <?= htmlspecialchars($monster['name']) ?>
                                             </a>
                                             (Level: <?= htmlspecialchars($monster['level'] ?? 'N/A') ?>, Region: <?= htmlspecialchars($monster['region'] ?? 'N/A') ?>)
                                         </li>
-                                    <?html endforeach; ?>
+                                    <?php endforeach; ?>
                                 </ul>
                             </div>
-                        <?html endforeach; ?>
-                    <?html else: ?>
-<?html foreach ($results as $result): ?>
+                        <?php endforeach; ?>
+                    <?php else: ?>
+<?php foreach ($results as $result): ?>
     <div class="result-item">
         <h3><?= htmlspecialchars($result['name']) ?></h3>
-        <?html
+        <?php
         $image = findImageFile($monsterImagePath, $result['name'], $supportedExtensions);
         if ($image): ?>
             <img src="<?= $image ?>" alt="<?= htmlspecialchars($result['name']) ?>" style="max-width: 200px; height: auto; margin-bottom: 10px;">
-        <?html else: ?>
+        <?php else: ?>
             <p><em>No image available</em></p>
-        <?html endif; ?>
+        <?php endif; ?>
 
         <p><strong>Level:</strong> <?= htmlspecialchars($result['level']) ?></p>
         <p><strong>HP:</strong> <?= htmlspecialchars($result['hp']) ?></p>
 
         <!-- Check if it's a boss (has location) -->
-        <?html if (!empty($result['location'])): ?>
+        <?php if (!empty($result['location'])): ?>
             <p><strong>Location:</strong> <?= htmlspecialchars($result['location']) ?></p>
-            <?html if (!empty($result['respawn_time'])): ?>
+            <?php if (!empty($result['respawn_time'])): ?>
                 <p><strong>Respawn Time:</strong>
                     <?= implode(' - ', array_map('intval', $result['respawn_time'])) ?> minutes
                 </p>
-            <?html endif; ?>
-        <?html else: ?>
+            <?php endif; ?>
+        <?php else: ?>
             <!-- Display these fields only for monsters -->
             <p><strong>Modifiers:</strong> <?= htmlspecialchars($result['modifiers'] ?? 'N/A') ?></p>
             <p><strong>Region:</strong> <?= htmlspecialchars($result['region'] ?? 'N/A') ?></p>
             <p><strong>Weapon Def:</strong> <?= htmlspecialchars($result['weapon_def'] ?? 'N/A') ?></p>
             <p><strong>Magic Def:</strong> <?= htmlspecialchars($result['magic_def'] ?? 'N/A') ?></p>
             <p><strong>EXP:</strong> <?= htmlspecialchars($result['exp'] ?? 'N/A') ?></p>
-        <?html endif; ?>
+        <?php endif; ?>
 
-        <?html if (!empty($result['drops'])): ?>
+        <?php if (!empty($result['drops'])): ?>
             <p><strong>Drops:</strong></p>
             <button class="toggle-drops-btn" data-toggle-id="<?= htmlspecialchars($result['name']) ?>">Show Drops</button>
             <div class="drops-list" data-toggle-id="<?= htmlspecialchars($result['name']) ?>" style="display: none;">
                 <div class="grid-container">
-                    <?html foreach ($result['drops'] as $drop): ?>
+                    <?php foreach ($result['drops'] as $drop): ?>
                         <div class="grid-item">
                             <div style="display: flex; align-items: center; gap: 10px;">
-                                <?html
+                                <?php
                                 $dropImage = findImageFile($itemImagePath, $drop, $supportedExtensions, true);
                                 if ($dropImage): ?>
                                     <img src="<?= $dropImage ?>" alt="<?= htmlspecialchars($drop) ?>" style="width: 50px; height: auto;">
-                                <?html endif; ?>
+                                <?php endif; ?>
                                 <?= htmlspecialchars($drop) ?>
                             </div>
                         </div>
-                    <?html endforeach; ?>
+                    <?php endforeach; ?>
                 </div>
             </div>
-        <?html endif; ?>
+        <?php endif; ?>
     </div>
-<?html endforeach; ?>
+<?php endforeach; ?>
 
 
-                    <?html endif; ?>
-                <?html endif; ?>
+                    <?php endif; ?>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 
-         <?html include 'footer.html'; ?>
+         <?php include 'footer.html'; ?>
          
 
         <script>
