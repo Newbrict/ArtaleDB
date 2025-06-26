@@ -1,0 +1,20 @@
+# Disable URL rewrites to avoid removing .php extension
+RewriteEngine Off
+
+# Set Cache-Control headers to expire after a short period (e.g., 1 hour)
+<FilesMatch "\.(html|htm|php)$">
+    Header set Cache-Control "max-age=3600, must-revalidate"
+</FilesMatch>
+
+# Set Cache-Control headers for CSS, JS, and image files to cache them for longer
+<FilesMatch "\.(css|js|png|jpg|jpeg|gif|svg)$">
+    Header set Cache-Control "max-age=86400, public"
+</FilesMatch>
+
+<Files "library/monster_data.json">
+    Require all denied
+</Files>
+
+<Files "/library/monster_data.json">
+    Require all denied
+</Files>
