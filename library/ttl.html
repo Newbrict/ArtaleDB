@@ -54,11 +54,14 @@
   <div class="container">
     <h1>EXP 누적 계산기</h1>
 
-    <label for="targetLevel">도달하고 싶은 레벨:</label>
-    <input type="number" id="targetLevel" min="1" max="200" value="100">
+    <label for="currentLevel">현재 레벨:</label>
+    <input type="number" id="currentLevel" min="1" max="200" value="1">
 
-    <label for="currentExp">현재 누적 경험치:</label>
-    <input type="number" id="currentExp" value="0">
+    <label for="currentPercent">현재 경험치 (%):</label>
+    <input type="number" id="currentPercent" min="0" max="100" value="0">
+
+    <label for="targetLevel">목표 레벨:</label>
+    <input type="number" id="targetLevel" min="1" max="200" value="100">
 
     <label for="expPerMinute">분당 획득 경험치:</label>
     <input type="number" id="expPerMinute" value="0">
@@ -71,27 +74,31 @@
   <script>
     let levelData = [];
 
-    fetch('exp_data.json')
+    fetch('level_data.json')
       .then(response => response.json())
       .then(data => levelData = data)
       .catch(error => console.error('레벨 데이터 불러오기 실패:', error));
 
     function calculateExp() {
+      const currentLevel = parseInt(document.getElementById("currentLevel").value);
+      const currentPercent = parseFloat(document.getElementById("currentPercent").value);
       const targetLevel = parseInt(document.getElementById("targetLevel").value);
-      const currentExp = parseInt(document.getElementById("currentExp").value);
       const expPerMinute = parseFloat(document.getElementById("expPerMinute").value);
 
-      const level = levelData.find(l => l.level === targetLevel);
+      const current = levelData.find(l => l.level === currentLevel);
+      const target = levelData.find(l => l.level === targetLevel);
 
-      if (!level) {
+      if (!current || !target) {
         document.getElementById("result").innerText = "해당 레벨 정보를 찾을 수 없습니다.";
         return;
       }
 
-      const requiredExp = level.cumulativeExp - currentExp;
+      const expToNextLevel = current.expRequired;
+      const currentExp = current.cumulativeExp + (expToNextLevel * (currentPercent / 100));
+      const requiredExp = target.cumulativeExp - currentExp;
 
       if (requiredExp <= 0) {
-        document.getElementById("result").innerText = `이미 해당 레벨(${targetLevel}) 또는 그 이상입니다.`;
+        document.getElementById("result").innerText = `이미 목표 레벨(${targetLevel})에 도달했거나 초과했습니다.`;
         return;
       }
 
@@ -104,7 +111,7 @@
       }
 
       document.getElementById("result").innerText =
-        `레벨 ${targetLevel}까지 필요한 경험치: ${requiredExp.toLocaleString()} EXP` + timeText;
+        `레벨 ${targetLevel}까지 필요한 경험치: ${Math.round(requiredExp).toLocaleString()} EXP` + timeText;
     }
   </script>
 </body>
