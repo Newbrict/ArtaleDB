@@ -1,0 +1,164 @@
+<?php
+// Load monster data
+$monsterData = json_decode(file_get_contents('data/monster/monster_data.json'), true);
+if ($monsterData === null) {
+    die("Error loading JSON file: " . json_last_error_msg());
+}
+
+// Initialize variables
+$searchQuery = isset($_GET['query']) ? trim($_GET['query']) : '';
+$results = [];
+
+if ($searchQuery !== '') {
+    // Fetch items from maplestory.io
+    $apiUrl = "https://maplestory.io/api/gms/90/item?search=" . urlencode($searchQuery);
+    $response = file_get_contents($apiUrl);
+
+    if ($response !== false) {
+        $items = json_decode($response, true);
+
+        foreach ($items as $item) {
+            $itemName = $item['name'];
+
+            // Check if the item is a drop in monster_data.json
+            $droppedBy = [];
+            foreach ($monsterData as $monster) {
+                if (in_array($itemName, $monster['drops'])) {
+                    $droppedBy[] = $monster['name'];
+                }
+            }
+
+            // Include the item only if it's a drop
+            if (!empty($droppedBy)) {
+                $results[] = [
+                    'id' => $item['id'],
+                    'name' => $itemName,
+                    'description' => $item['description'] ?? 'No description available.',
+                    'reqLevel' => $item['requiredLevel'] ?? '-',
+                    'weaponDef' => $item['weaponDefense'] ?? '-',
+                    'magicDef' => $item['magicDefense'] ?? '-',
+                    'job' => $item['requiredJob'] ?? '-',
+                    'mesos' => $item['sellPrice'] ?? '-',
+                    'image' => "https://maplestory.io/api/gms/90/item/{$item['id']}/icon",
+                    'droppedBy' => $droppedBy
+                ];
+            }
+        }
+    }
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Item Search</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .item-container {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .item-header {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+
+        .item-header img {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .item-header h3 {
+            margin: 0;
+            font-size: 18px;
+            color: #333;
+        }
+
+        .item-details {
+            padding: 15px;
+        }
+
+        .item-details p {
+            margin: 5px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .dropped-by-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .dropped-by-list li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="navbar">
+        <div class="logo"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="hero-content">
+            <h1>Item Search</h1>
+            <p>Find item details from Maplestory.io, including monsters that drop them.</p>
+            <form method="get" action="">
+                <input type="text" name="query" placeholder="Search for items..." value="<?= htmlspecialchars($searchQuery) ?>">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container">
+            <?php if (!empty($results)): ?>
+                <?php foreach ($results as $item): ?>
+                    <div class="item-container">
+                        <!-- Item Header -->
+                        <div class="item-header">
+                            <img src="<?= $item['image'] ?>" alt="<?= htmlspecialchars($item['name']) ?>">
+                            <h3><?= htmlspecialchars($item['name']) ?></h3>
+                        </div>
+
+                        <!-- Item Details -->
+                        <div class="item-details">
+                            <p><strong>Description:</strong> <?= htmlspecialchars($item['description']) ?></p>
+                            <p><strong>Req Level:</strong> <?= htmlspecialchars($item['reqLevel']) ?></p>
+                            <p><strong>Weapon Def:</strong> <?= htmlspecialchars($item['weaponDef']) ?></p>
+                            <p><strong>Magic Def:</strong> <?= htmlspecialchars($item['magicDef']) ?></p>
+                            <p><strong>Job:</strong> <?= htmlspecialchars($item['job']) ?></p>
+                            <p><strong>Sold for:</strong> <?= htmlspecialchars($item['mesos']) ?> mesos</p>
+                            <p><strong>Dropped By:</strong></p>
+                            <div class="dropped-by-list">
+                                <ul>
+                                    <?php foreach ($item['droppedBy'] as $monster): ?>
+                                        <li><?= htmlspecialchars($monster) ?></li>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php elseif ($searchQuery): ?>
+                <p>No items found for "<?= htmlspecialchars($searchQuery) ?>".</p>
+            <?php else: ?>
+                <p>Enter an item name to begin your search.</p>
+            <?php endif; ?>
+        </div>
+    </div>
+
+    <?php include 'footer.php'; ?>
+</body>
+</html>

@@ -1,0 +1,741 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+ul {
+    padding-left: 20px; /* Adds space between the bullet and text */
+    margin-bottom: 10px; /* Adds spacing below the list */
+}
+
+li {
+    margin-left: 10px; /* Moves the text further from the bullet */
+}
+
+.navbar {
+    background-color: #4CAF50; /* Green background color */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: white; /* Ensure links in the navbar are white */
+    margin-right: 15px; /* Space between links */
+}
+
+.navbar nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Marketplace and Hero Button Styling */
+.hero-button,
+.marketplace-link {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect for Both Buttons */
+.hero-button:hover,
+.marketplace-link:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #4CAF50; /* Green text color on hover */
+}
+
+.breadcrumb {
+    background-color: #ddd;
+    padding: 10px 20px; /* Add some padding to the breadcrumb */
+    border-radius: 8px; /* Round edges for consistency */
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #888;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    align-items: center; /* Vertically align input and button */
+    gap: 10px; /* Space between input and button */
+}
+
+#monsterSearchBar,
+#itemSearchBar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Set fixed height */
+    box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+.search-button {
+    padding: 0 15px; /* Add horizontal padding for a balanced look */
+    background-color: #4CAF50; /* Match the green header */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Match height of input fields */
+    line-height: 40px; /* Vertically center text */
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Results Container */
+#results {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.no-results {
+    font-size: 18px;
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination a:hover {
+    background-color: #45a049;
+}
+
+.pagination a:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Fix: Show/Hide Drops Button Styling - Consistent in Light and Dark Mode */
+.toggle-drops-btn {
+    background-color: #4CAF50; /* Light green */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+
+/* Style the drops list */
+.drops-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.drops-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.drops-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.drops-list li:last-child {
+    border-bottom: none;
+}
+
+/* When expanded, show the list */
+.drops-list.show {
+    display: block;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the search bars */
+    margin-bottom: 20px;
+}
+
+.search-form {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#monsterSearchBar, #itemSearchBar {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* For the collapsible drops */
+.drops-list {
+    display: none;
+}
+
+
+/* Hover and Active States */
+.toggle-drops-btn:hover {
+    background-color: #388E3C; /* Darker green */
+    transform: translateY(-2px); /* Lift effect */
+}
+
+.toggle-drops-btn:active {
+    background-color: #388E3C; /* Even darker green when clicked */
+    transform: translateY(0); /* Reset the lift effect */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-links {
+    margin-top: 20px; /* Add space above */
+    margin-bottom: 20px; /* Add space below */
+}
+
+
+
+footer {
+    background-color: #4CAF50; /* Match the hero section for consistency */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure it doesn't overlap */
+    width: 100%; /* Full width */
+    margin-top: 40px; /* Space above footer */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero, .breadcrumb, footer {
+    z-index: 10; /* Ensure they're above background elements */
+    position: relative; /* Required for z-index to apply */
+}
+
+.drops-list .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Space between rows and columns */
+}
+
+.drops-list .grid-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.drops-list .grid-item:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #333333;
+}
+
+.dark-mode .container, 
+.dark-mode .result-item {
+    background-color: #1e1e1e;
+    border-color: #444444;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.dark-mode-button:hover {
+    background-color: #45a049;
+}
+
+/* Dark Mode: Breadcrumb */
+.dark-mode .breadcrumb {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.dark-mode .breadcrumb a {
+    color: #4CAF50; /* Green for links */
+}
+
+.dark-mode .breadcrumb a:hover {
+    color: #66bb6a;
+}
+
+/* Dark Mode: Search Inputs */
+.dark-mode input[type="text"],
+.dark-mode input[type="search"] {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.dark-mode input[type="text"]::placeholder {
+    color: #aaaaaa;
+}
+
+/* Dark Mode: Containers */
+.dark-mode .container {
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+}
+
+.dark-mode .result-item {
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+}
+
+/* Dark Mode: Buttons */
+.dark-mode button,
+.dark-mode .search-button,
+.dark-mode .toggle-drops-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: 1px solid #4CAF50;
+}
+
+.dark-mode button:hover,
+.dark-mode .search-button:hover,
+.dark-mode .toggle-drops-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Dark Mode: Footer */
+.dark-mode footer {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Dark Mode: Hero Section */
+.dark-mode .hero {
+    background-color: #1e1e1e; /* Darker background for hero */
+    color: #ffffff; /* White text for contrast */
+}
+
+.dark-mode .hero h1 {
+    color: #66bb6a; /* Soft green heading */
+}
+
+.dark-mode .hero p {
+    color: #cccccc; /* Light gray for text */
+}
+
+/* Dark Mode: Hero Links and Buttons - Force White Text */
+.dark-mode .hero-links a,
+.dark-mode .dark-mode-button {
+    background-color: #388E3C; /* Slightly darker green */
+    color: #ffffff !important; /* Force white text for readability */
+    border: 1px solid #2e7d32;
+    text-decoration: none;
+}
+
+.dark-mode .hero-links a:hover,
+.dark-mode .dark-mode-button:hover {
+    background-color: #2e7d32; /* Darker green on hover */
+    color: #f0f0f0 !important; /* Keep text light gray on hover */
+    text-decoration: underline; /* Optional hover feedback */
+}
+
+/* Dark Mode: Fix for Remaining White Containers */
+.dark-mode .container,
+.dark-mode .result-item {
+    background-color: #333333; /* Same as breadcrumb */
+    border: 1px solid #444444; /* Subtle border for contrast */
+}
+
+.dark-mode .result-item {
+    box-shadow: none; /* Remove any lingering white box shadows */
+}
+
+/* Dark Mode: Hyperlink Colors */
+.dark-mode a {
+    color: #66bb6a; /* Light green for unvisited links */
+    text-decoration: none; /* Optional: Remove underline for cleaner look */
+}
+
+.dark-mode a:hover {
+    color: #81c784; /* Slightly brighter green on hover */
+    text-decoration: underline; /* Add underline for better UX */
+}
+
+.dark-mode a:visited {
+    color: #388e3c; /* Darker green for visited links */
+}
+
+/* Dark Mode: Hero Buttons Fix */
+.dark-mode .hero-button {
+    background-color: #388E3C; /* Darker green button background */
+    color: #ffffff; /* Ensure white text for contrast */
+    border: 1px solid #2e7d32; /* Border for definition */
+}
+
+.dark-mode .hero-button:hover {
+    background-color: #2e7d32; /* Slightly darker green on hover */
+    color: #ffffff; /* Keep text white on hover */
+}
+
+/* Dark Mode: Fix for Outer Results Container */
+.dark-mode #results {
+    background-color: #1e1e1e; /* Dark background for outer container */
+    color: #dddddd; /* Light gray text */
+    border: 1px solid #444444; /* Subtle border for contrast */
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: none; /* Remove any lingering box shadows */
+}
+
+/* Dark Mode: Slightly Lighter Inner Container */
+.dark-mode #results p,
+.dark-mode #results div {
+    background-color: #2a2a2a; /* Slightly lighter gray */
+    color: #dddddd; /* Light gray text */
+    border: none;
+    padding: 10px;
+    border-radius: 4px; /* Consistent rounded corners */
+    text-align: center;
+}
+
+/* Dark Mode: Monster Result Container Fix */
+.dark-mode .result-item {
+    text-align: left !important; /* Force left alignment */
+    padding: 10px !important; /* Consistent padding */
+    margin: 0 !important; /* Reset margin */
+    line-height: 1.3 !important; /* Tighten up line spacing */
+    display: block; /* Ensure block layout */
+}
+
+/* Fix child elements */
+.dark-mode .result-item * {
+    margin: 5px 0 !important; /* Reset spacing between all child elements */
+    padding: 0 !important; /* Remove unwanted padding */
+    text-align: left !important; /* Force text alignment */
+}
+
+/* Adjust headings */
+.dark-mode .result-item h3 {
+    font-size: 1.2rem !important; /* Consistent size */
+    margin-bottom: 5px !important; /* Remove excess spacing */
+}
+
+/* Image Alignment */
+.dark-mode .result-item img {
+    display: inline-block !important;
+    margin-right: 10px !important; /* Add spacing next to the image */
+    vertical-align: middle !important; /* Align image with text */
+}
+
+/* Fix: Ensure Show/Hide Drops Button Matches Light Mode in Dark Mode */
+.dark-mode .toggle-drops-btn {
+    background-color: #4CAF50 !important; /* Light green */
+    color: #ffffff !important; /* White text */
+    font-size: 16px !important; /* Match Light Mode font size */
+    font-weight: bold !important; /* Ensure bold text */
+    padding: 10px 20px !important; /* Match Light Mode padding */
+    border: none !important;
+    border-radius: 5px !important;
+    display: inline-block !important; /* Consistent size */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) !important; /* Consistent shadow */
+    cursor: pointer !important;
+    line-height: 1.4 !important;
+    text-align: center !important;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.dark-mode .toggle-drops-btn:hover {
+    background-color: #388E3C !important; /* Darker green hover effect */
+    transform: translateY(-2px) !important; /* Lift effect */
+}
+
+
+/* Dark Mode: Ensure White Lines Between Items with Fallback */
+.dark-mode .drops-list {
+    background-color: #1e1e1e !important; /* Clean dark background for contrast */
+    padding: 0;
+    margin: 0;
+}
+
+.dark-mode .drops-list li {
+    display: block; /* Ensure proper block display */
+    position: relative; /* Allows outline to align properly */
+    padding: 8px 12px; /* Add space for clarity */
+    color: #dddddd; /* Light gray text for readability */
+    background-color: #1e1e1e; /* Match parent background */
+    border-bottom: 1px solid #ffffff !important; /* Force white border */
+    outline: 1px solid #ffffff !important; /* Fallback outline for visibility */
+    margin: 0; /* Reset margins */
+    list-style: none; /* Remove bullets */
+}
+
+.dark-mode .drops-list li:last-child {
+    border-bottom: none !important; /* Remove border for the last item */
+    outline: none !important; /* Remove outline fallback */
+}
+
+
+
+/* Fix: Proper Spacing Between Monster Containers */
+.dark-mode .result-item {
+    margin-bottom: 20px !important; /* Force spacing */
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+    padding: 10px;
+    border-radius: 5px; /* Consistent rounded corners */
+}
+
+/* Dark Mode: Fix Lists Alignment Inside Containers */
+.dark-mode .result-item ul {
+    margin: 0 !important; /* Remove any inherited margins */
+    padding-left: 20px !important; /* Ensure consistent left padding */
+    list-style-position: inside; /* Force bullets to stay inside the container */
+}
+
+.dark-mode .result-item li {
+    margin: 0 !important; /* Reset margin */
+    padding: 3px 0; /* Add slight vertical spacing for readability */
+    color: #dddddd; /* Light gray text for Dark Mode */
+}
+
+
+/* Mobile Optimization */
+@media screen and (max-width: 768px) {
+    /* General Layout Adjustments */
+    body {
+        padding: 10px;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .hero-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .hero-button {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin: 5px 0;
+    }
+
+    .breadcrumb {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Search Form Adjustments */
+    .search-bar-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .search-form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #monsterSearchBar,
+    #itemSearchBar {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Result Items */
+    .result-item {
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    .result-item h3 {
+        font-size: 18px;
+    }
+
+    .result-item p {
+        font-size: 14px;
+    }
+
+    .result-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Drops List Grid */
+    .drops-list .grid-container {
+        grid-template-columns: 1fr; /* One column on mobile */
+        gap: 5px; /* Reduce space between rows */
+    }
+
+    .grid-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Pagination */
+    .pagination a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    /* Footer Adjustments */
+    footer {
+        font-size: 12px;
+        padding: 10px;
+    }
+}
+
