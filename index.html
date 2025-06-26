@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>아르테일 데이터베이스</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
   <style>
     body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
       margin: 0;
+      font-family: Arial, sans-serif;
     }
 
-    /* Hero-specific styles */
     .hero {
       background-color: #4CAF50;
       color: white;
@@ -34,6 +34,7 @@
     .hero-links {
       display: flex;
       justify-content: center;
+      flex-wrap: wrap;
       gap: 15px;
     }
 
@@ -54,7 +55,6 @@
       color: #4CAF50;
     }
 
-    /* Features Section */
     .features {
       display: flex;
       justify-content: center;
@@ -104,7 +104,6 @@
       background-color: #45a049;
     }
 
-    /* Footer Styling */
     .footer {
       background-color: #333;
       color: #fff;
@@ -135,60 +134,14 @@
     .footer strong {
       font-weight: bold;
     }
-  </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248"
-    crossorigin="anonymous"></script>
-</head>
-<body>
 
-  <!-- Header -->
-  <header class="navbar">
-    <div class="logo">Artale Tools</div>
-  </header>
-
-  <!-- Hero Section -->
-  <div class="hero">
-    <div class="hero-content">
-      <h1>아르테일 데이터베이스</h1>
-      <p>아르테일에 대한 정보를 한눈에!</p>
-      <div class="hero-links">
-        <a href="library/search.html" class="hero-button">몬스터/아이템 검색 (제작중)</a>
-        <a href="https://docs.google.com/spreadsheets/d/1A0-LYyz7KnGEtPU9maB4EhETwQUk-pRxSx8I38OoMeE/edit?gid=0#gid=0" class="hero-button">스킬트리/추천 사냥터</a>
-        <a href="library/ttl.html" class="hero-button">경험치 계산기 (제작중)</a>
-        <a href="forum/index.html" class="hero-button">퀘스트 정보    /* Footer Styling */
-    .footer {
-      background-color: #333;
-      color: #fff;
-      text-align: center;
-      padding: 20px 10px;
-      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      font-size: 14px;
-      line-height: 1.6;
-      margin-top: auto;
-    }
-
-    .footer a {
-      color: #1E90FF;
-      text-decoration: none;
-      margin: 0 10px;
-      transition: color 0.3s ease;
-    }
-
-    .footer a:hover {
-      color: #FFD700;
-      text-decoration: underline;
-    }
-
-    .footer p {
-      margin: 10px 0;
-    }
-
-    .footer strong {
+    .logo {
+      padding: 20px;
+      font-size: 24px;
       font-weight: bold;
     }
   </style>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248"
-    crossorigin="anonymous"></script>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -221,16 +174,16 @@
     <div class="feature">
       <h3>스킬트리/추천 사냥터</h3>
       <p>직업별 추천 스킬트리와 레벨별 추천 사냥터 정보를 알 수 있습니다.</p>
-      <a href="https://docs.google.com/spreadsheets/d/1A0-LYyz7KnGEtPU9maB4EhETwQUk-pRxSx8I38OoMeE/edit?gid=0#gid=0" class="hero-button">Learn More</a>
+      <a href="https://docs.google.com/spreadsheets/d/1A0-LYyz7KnGEtPU9maB4EhETwQUk-pRxSx8I38OoMeE/edit?gid=0#gid=0">Learn More</a>
     </div>
     <div class="feature">
       <h3>경험치 계산기</h3>
-      <p>몇 시간 사냥하면 레벨업이 가능한지 알 수 있는 계산기 입니다.</p>
+      <p>몇 시간 사냥하면 레벨업이 가능한지 알 수 있는 계산기입니다.</p>
       <a href="library/ttl.html">Calculate</a>
     </div>
     <div class="feature">
       <h3>퀘스트 정보</h3>
-      <p>아르테일에 존재하는 퀘스트의 요구조건 및 보상을 확인 가능합니다.</p>
+      <p>아르테일에 존재하는 퀘스트의 요구조건 및 보상을 확인할 수 있습니다.</p>
       <a href="https://docs.google.com/spreadsheets/d/18CYTe4L__6fRjkdCqaFvKjmWcirw3N38AVe7XexnWCw/edit#gid=1500442038">Forums</a>
     </div>
   </div>
@@ -238,13 +191,13 @@
   <!-- Footer -->
   <div class="footer">
     <p>&copy; 2025 아르테일 데이터베이스. All rights reserved. 이 사이트에 사용된 모든 이미지, 정보 및 자산은 해당 소유자의 자산이며, 정보 제공 목적으로 공정 사용에 따라 사용됩니다.</p>
-    <a href="privacy_policy.html">개인 정보 보호 정책</a> | 
-    <a href="terms_of_service.html">서비스 약관</a> | 
-    <a href="https://ko-fi.com/heroaran50" target="_blank">제작자 커피한잔 사주기기</a>
+    <a href="privacy_policy.html">개인 정보 보호 정책</a> |
+    <a href="terms_of_service.html">서비스 약관</a> |
+    <a href="https://ko-fi.com/heroaran50" target="_blank">제작자 커피 한잔 사주기</a>
 
     <p style="margin-top: 20px;">
-      <strong>도움주신분들:</strong> 
-      <a href="https://gist.github.com/baweaver/fe8ccfd0d354667550326c33b1a87b03" target="_blank">baweaver</a> | 
+      <strong>도움주신분들:</strong>
+      <a href="https://gist.github.com/baweaver/fe8ccfd0d354667550326c33b1a87b03" target="_blank">baweaver</a> |
       <a href="https://ko-fi.com/artalemarket" target="_blank">Haz</a>
     </p>
   </div>
