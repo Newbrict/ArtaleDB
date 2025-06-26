@@ -1,105 +1,103 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Monster and Item Search</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background: #f9f9f9;
-    color: #222;
-    padding: 20px;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  body.dark-mode {
-    background-color: #121212;
-    color: #eee;
-  }
-  .container {
-    max-width: 900px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    transition: background-color 0.3s, color 0.3s;
-  }
-  body.dark-mode .container {
-    background: #1e1e1e;
-  }
-  input[type=text] {
-    width: 70%;
-    padding: 10px;
-    margin-right: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  body.dark-mode input[type=text] {
-    background: #333;
-    border: 1px solid #555;
-    color: #eee;
-  }
-  button {
-    padding: 10px 15px;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  button:hover {
-    background-color: #45a049;
-  }
-  #darkModeToggle {
-    background-color: #2196F3;
-    margin-left: 10px;
-  }
-  #darkModeToggle:hover {
-    background-color: #1976D2;
-  }
-  .back-button {
-    background-color: #28a745;
-    margin-bottom: 15px;
-  }
-  .back-button:hover {
-    background-color: #218838;
-  }
-  .result-item {
-    border-bottom: 1px solid #ddd;
-    padding: 15px 0;
-  }
-  body.dark-mode .result-item {
-    border-color: #444;
-  }
-  img {
-    max-width: 150px;
-    margin: 10px 0;
-  }
-  .drops-list {
-    margin-top: 10px;
-    padding-left: 15px;
-  }
-  .drop-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 5px;
-  }
-  .drop-item img {
-    width: 40px;
-    height: auto;
-    margin-right: 10px;
-  }
-  .toggle-drops-btn {
-    margin-top: 8px;
-    background-color: #555;
-  }
-  .toggle-drops-btn:hover {
-    background-color: #333;
-  }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monster and Item Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    body.dark-mode .container {
+      background: #1e1e1e;
+    }
+    input[type=text] {
+      width: 70%;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    body.dark-mode input[type=text] {
+      background: #333;
+      border: 1px solid #555;
+      color: #eee;
+    }
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #darkModeToggle {
+      background-color: #2196F3;
+      margin-left: 10px;
+    }
+    #darkModeToggle:hover {
+      background-color: #1976D2;
+    }
+    .back-button {
+      background-color: #28a745;
+      margin-bottom: 15px;
+    }
+    .back-button:hover {
+      background-color: #218838;
+    }
+    .result-item {
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+    }
+    body.dark-mode .result-item {
+      border-color: #444;
+    }
+    img {
+      max-width: 150px;
+      margin: 10px 0;
+    }
+    .drops-list {
+      margin-top: 10px;
+      padding-left: 15px;
+    }
+    .drop-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .drop-item img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .toggle-drops-btn {
+      margin-top: 8px;
+      background-color: #555;
+    }
+    .toggle-drops-btn:hover {
+      background-color: #333;
+    }
+  </style>
 </head>
 <body>
 
@@ -128,6 +126,29 @@
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
 
+  // 파일명을 그대로 사용하며 일부 특수문자만 제거
+  function getImagePath(path, name, isItem = false) {
+    let fileName = name;
+
+    if (isItem) {
+      if (name.includes('[Mastery Book]')) return path + 'Master_Book.png';
+
+      if (name.includes('Scroll')) {
+        if (name.includes('100%')) return path + 'Scroll100.png';
+        if (name.includes('70%')) return path + 'Scroll70.png';
+        if (name.includes('60%')) return path + 'Scroll60.png';
+        if (name.includes('30%')) return path + 'Scroll30.png';
+        if (name.includes('10%')) return path + 'Scroll10.png';
+      }
+
+      fileName = fileName.replace(/\s\((M|F)\)$/i, ''); // 성별 제거
+    }
+
+    // 공통적으로 적용
+    fileName = fileName.replace(/['-]/g, '_'); // 특수문자 제거, 공백 유지
+    return path + fileName + '.png';
+  }
+
   async function loadData() {
     try {
       const [monsterResp, bossResp] = await Promise.all([
@@ -141,35 +162,10 @@
     }
   }
 
-  function getImagePath(path, name, isItem = false) {
-    let fileName = name;
-
-    if (isItem) {
-      if (name.includes('[Mastery Book]')) return path + 'Master_Book.png';
-      if (name.includes('Scroll')) {
-        if (name.includes('100%')) return path + 'Scroll100.png';
-        if (name.includes('70%')) return path + 'Scroll70.png';
-        if (name.includes('60%')) return path + 'Scroll60.png';
-        if (name.includes('30%')) return path + 'Scroll30.png';
-        if (name.includes('10%')) return path + 'Scroll10.png';
-      }
-      fileName = fileName.replace(/\s\((M|F)\)$/i, '');
-      fileName = fileName.replace(/\s+/g, '_').replace(/['-]/g, '_');
-      fileName = fileName.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
-    } else {
-      fileName = fileName.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('');
-    }
-
-    return path + fileName + '.png';
-  }
-
   function searchMonsters() {
     const query = document.getElementById('monsterSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) {
-      alert("검색어를 입력하세요.");
-      return;
-    }
+    if (terms.length === 0) return alert("검색어를 입력하세요.");
 
     const results = [];
     terms.forEach(term => {
@@ -187,30 +183,16 @@
   function searchItems() {
     const query = document.getElementById('itemSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) {
-      alert("검색어를 입력하세요.");
-      return;
-    }
+    if (terms.length === 0) return alert("검색어를 입력하세요.");
 
     const results = {};
-
     terms.forEach(term => {
-      monsterData.forEach(monster => {
-        if (monster.drops) {
-          monster.drops.forEach(drop => {
+      [...monsterData, ...bossData].forEach(entity => {
+        if (entity.drops) {
+          entity.drops.forEach(drop => {
             if (drop.toLowerCase().includes(term)) {
               if (!results[drop]) results[drop] = [];
-              results[drop].push(monster);
-            }
-          });
-        }
-      });
-      bossData.forEach(boss => {
-        if (boss.drops) {
-          boss.drops.forEach(drop => {
-            if (drop.toLowerCase().includes(term)) {
-              if (!results[drop]) results[drop] = [];
-              results[drop].push(boss);
+              results[drop].push(entity);
             }
           });
         }
@@ -222,12 +204,9 @@
 
   function renderMonsterResults(results) {
     const container = document.getElementById('results');
-    container.innerHTML = '';
-
-    if (results.length === 0) {
-      container.innerHTML = "<p>검색 결과가 없습니다.</p>";
-      return;
-    }
+    container.innerHTML = results.length === 0
+      ? "<p>검색 결과가 없습니다.</p>"
+      : '';
 
     results.forEach(monster => {
       const div = document.createElement('div');
@@ -245,19 +224,15 @@
         ${renderDropsHtml(monster.drops, monster.name)}
       `;
       container.appendChild(div);
-
       attachToggleDropsListener(monster.name);
     });
   }
 
   function renderItemResults(results) {
     const container = document.getElementById('results');
-    container.innerHTML = '';
-
-    if (Object.keys(results).length === 0) {
-      container.innerHTML = "<p>검색 결과가 없습니다.</p>";
-      return;
-    }
+    container.innerHTML = Object.keys(results).length === 0
+      ? "<p>검색 결과가 없습니다.</p>"
+      : '';
 
     for (const [item, monsters] of Object.entries(results)) {
       const div = document.createElement('div');
@@ -280,9 +255,7 @@
 
   function renderDropsHtml(drops, monsterName) {
     if (!drops || drops.length === 0) return '';
-
     const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
-
     return `
       <p><strong>Drops:</strong></p>
       <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
@@ -314,14 +287,9 @@
   function escapeHtml(text) {
     if (!text) return '';
     return text.replace(/[&<>"']/g, function (m) {
-      switch (m) {
-        case '&': return '&amp;';
-        case '<': return '&lt;';
-        case '>': return '&gt;';
-        case '"': return '&quot;';
-        case "'": return '&#39;';
-        default: return m;
-      }
+      return {
+        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+      }[m] || m;
     });
   }
 
