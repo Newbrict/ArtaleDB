@@ -53,13 +53,17 @@
 <body>
   <div class="container">
     <h1>EXP 누적 계산기</h1>
+
     <label for="targetLevel">도달하고 싶은 레벨:</label>
     <input type="number" id="targetLevel" min="1" max="200" value="100">
 
     <label for="currentExp">현재 누적 경험치:</label>
     <input type="number" id="currentExp" value="0">
 
-    <button onclick="calculateExp()">필요한 경험치 계산</button>
+    <label for="expPerMinute">분당 획득 경험치:</label>
+    <input type="number" id="expPerMinute" value="0">
+
+    <button onclick="calculateExp()">필요한 경험치 및 시간 계산</button>
 
     <div class="result" id="result"></div>
   </div>
@@ -67,7 +71,7 @@
   <script>
     let levelData = [];
 
-    fetch('level_data.json')
+    fetch('exp_data.json')
       .then(response => response.json())
       .then(data => levelData = data)
       .catch(error => console.error('레벨 데이터 불러오기 실패:', error));
@@ -75,6 +79,7 @@
     function calculateExp() {
       const targetLevel = parseInt(document.getElementById("targetLevel").value);
       const currentExp = parseInt(document.getElementById("currentExp").value);
+      const expPerMinute = parseFloat(document.getElementById("expPerMinute").value);
 
       const level = levelData.find(l => l.level === targetLevel);
 
@@ -83,11 +88,23 @@
         return;
       }
 
-      const required = level.cumulativeExp - currentExp;
+      const requiredExp = level.cumulativeExp - currentExp;
+
+      if (requiredExp <= 0) {
+        document.getElementById("result").innerText = `이미 해당 레벨(${targetLevel}) 또는 그 이상입니다.`;
+        return;
+      }
+
+      let timeText = "";
+      if (expPerMinute > 0) {
+        const totalMinutes = requiredExp / expPerMinute;
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = Math.round(totalMinutes % 60);
+        timeText = ` (예상 시간: ${hours}시간 ${minutes}분)`;
+      }
+
       document.getElementById("result").innerText =
-        required <= 0
-          ? `이미 해당 레벨(${targetLevel}) 또는 그 이상입니다.`
-          : `레벨 ${targetLevel}까지 필요한 경험치: ${required.toLocaleString()} EXP`;
+        `레벨 ${targetLevel}까지 필요한 경험치: ${requiredExp.toLocaleString()} EXP` + timeText;
     }
   </script>
 </body>
