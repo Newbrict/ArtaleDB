@@ -1,408 +1,376 @@
-<?php
-// database connection
-require_once 'db_connection.html';
-
-session_start();
-
-// Initialize request data if not set
-if (!isset($_SESSION['requests'])) {
-    $_SESSION['requests'] = [];
-}
-
-// Get current time
-$current_time = time();
-
-// Remove requests older than 10 seconds
-$_SESSION['requests'] = array_filter($_SESSION['requests'], function($timestamp) use ($current_time) {
-    return ($current_time - $timestamp) <= 10;
-});
-
-// Check if more than 10 requests in the last 10 seconds
-if (count($_SESSION['requests']) >= 10) {
-    include 'rate_limit.html';  // Include rate limit page if the request limit is exceeded
-    exit();  // Prevent further code execution
-}
-
-// Add current request time to the session
-$_SESSION['requests'][] = $current_time;
-
-// Load monster and boss data from JSON
-$monsterData = json_decode(file_get_contents('data/monster/monster_data.json'), true);
-$bossData = json_decode(file_get_contents('data/monster/boss_data.json'), true);
-if ($monsterData === null || $bossData === null) {
-    die("Error loading JSON files: " . json_last_error_msg());
-}
-
-// Paths to the images directories
-$monsterImagePath = "images/monsters/";
-$itemImagePath = "images/items/";
-
-// image file extensions
-$supportedExtensions = ['png', 'gif'];
-
-// variables
-$results = [];
-$message = "Search for a monster or item.";
-$exactSearch = false; 
-
-// form submission
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['monster_query'])) {
-    $monsterQuery = strtolower(trim($_POST['monster_query']));
-    header("Location: " . $_SERVER['html_SELF'] . "?monster_query=" . urlencode($monsterQuery));
-    exit;
-}
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['item_query'])) {
-    $itemQuery = strtolower(trim($_POST['item_query']));
-    header("Location: " . $_SERVER['html_SELF'] . "?item_query=" . urlencode($itemQuery));
-    exit;
-}
-
-// GET request for search query
-if (isset($_GET['monster_query'])) {
-    $monsterQuery = html_entity_decode(strtolower(trim($_GET['monster_query'])));
-    if ($monsterQuery !== '') {
-        $searchTerms = array_map('trim', explode(',', $monsterQuery)); // Split by commas
-        foreach ($searchTerms as $term) {
-            foreach ($monsterData as $monster) {
-                if (stripos($monster['name'], $term) !== false) {
-                    $results[] = $monster;
-                }
-            }
-
-            foreach ($bossData as $boss) {
-                if (stripos($boss['name'], $term) !== false) {
-                    $results[] = $boss;
-                }
-            }
-        }
-
-        if (empty($results)) {
-            $message = "No monsters found for the search term(s): " . htmlspecialchars($monsterQuery);
-        }
-    }
-} elseif (isset($_GET['item_query'])) {
-    $itemQuery = strtolower(trim($_GET['item_query']));
-    if ($itemQuery !== '') {
-        $searchTerms = array_map('trim', explode(',', $itemQuery)); // Split by commas
-        foreach ($searchTerms as $term) {
-            foreach ($monsterData as $monster) {
-                if (!empty($monster['drops'])) {
-                    foreach ($monster['drops'] as $drop) {
-                        if (stripos($drop, $term) !== false) {
-                            $results[$drop][] = $monster;
-                        }
-                    }
-                }
-            }
-
-            foreach ($bossData as $boss) {
-                if (!empty($boss['drops'])) {
-                    foreach ($boss['drops'] as $drop) {
-                        if (stripos($drop, $term) !== false) {
-                            $results[$drop][] = $boss;
-                        }
-                    }
-                }
-            }
-        }
-
-        if (empty($results)) {
-            $message = "No items found for the search term(s): " . htmlspecialchars($itemQuery);
-        }
-    }
-} else {
-    $monsterQuery = '';
-    $itemQuery = '';
-    $results = [];
-}
-
-// find the correct image file
-function findImageFile($imagePath, $name, $extensions, $isItem = false) {
-    // name
-    if ($isItem) {
-        // Mastery Books
-        if (strpos($name, '[Mastery Book]') !== false) {
-            $masteryBookFile = $imagePath . 'Master_Book.png';
-            if (file_exists($masteryBookFile)) {
-                return $masteryBookFile;
-            }
-        }
-
-        // For scrolls: Check for percentages
-        if (strpos($name, 'Scroll') !== false) {
-            if (strpos($name, '100%') !== false) {
-                $scrollFile = $imagePath . 'Scroll100.png';
-            } elseif (strpos($name, '70%') !== false) {
-                $scrollFile = $imagePath . 'Scroll70.png';
-            } elseif (strpos($name, '60%') !== false) {
-                $scrollFile = $imagePath . 'Scroll60.png';
-            } elseif (strpos($name, '30%') !== false) {
-                $scrollFile = $imagePath . 'Scroll30.png';
-            } elseif (strpos($name, '10%') !== false) {
-                $scrollFile = $imagePath . 'Scroll10.png';
-            }
-
-            if (isset($scrollFile) && file_exists($scrollFile)) {
-                return $scrollFile;
-            }
-        }
-
-        // Remove gender suffixes
-        $name = preg_replace('/\s\((M|F)\)$/i', '', $name);
-
-        // Replace spaces with underscores, capitalize words, and retain numbers
-        $name = preg_replace('/\s+/', '_', $name);
-        $name = str_replace(["'", "-"], "_", $name);
-        $name = ucwords($name);
-    } else {
-        // For monsters and bosses:
-        $name = ucwords(strtolower($name));
-    }
-
-    foreach ($extensions as $ext) {
-        $file = $imagePath . $name . '.' . $ext;
-        if (file_exists($file)) {
-            return $file;
-        }
-    }
-    return null;
-}
-?>
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster and Item Search</title>
-    <link rel="stylesheet" href="styles.css">
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const toggleButtons = document.querySelectorAll('.toggle-drops-btn');
-        const darkModeButton = document.getElementById('darkModeToggle');
-
-        toggleButtons.forEach(button => {
-            button.addEventListener('click', function () {
-                const toggleId = button.getAttribute('data-toggle-id');
-                const dropsList = document.querySelector(`.drops-list[data-toggle-id="${toggleId}"]`);
-
-                if (dropsList) {
-                    const isVisible = dropsList.style.display === 'block';
-                    dropsList.style.display = isVisible ? 'none' : 'block';
-                    button.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
-                }
-            });
-        });
-
-        // Dark Mode Toggle
-        darkModeButton.addEventListener('click', function () {
-            const isDarkMode = document.body.classList.toggle('dark-mode');
-            localStorage.setItem('darkMode', isDarkMode);
-            darkModeButton.textContent = isDarkMode ? '☀️ Light Mode' : '🌙 Dark Mode';
-        });
-
-        // Load Dark Mode Preference
-        const darkModePref = localStorage.getItem('darkMode') === 'true';
-        if (darkModePref) {
-            document.body.classList.add('dark-mode');
-            darkModeButton.textContent = '☀️ Light Mode';
-        }
-    });
-    </script>
-    <style>
-    .dark-mode {
-        background-color: #121212;
-        color: #ffffff;
-    }
-
-    .dark-mode .hero {
-        background-color: #1f1f1f;
-    }
-
-    .dark-mode .hero-button {
-        background-color: #333;
-        color: #fff;
-    }
-
-    .dark-mode .breadcrumb a {
-        color: #bbb;
-    }
-    
-    .back-button {
-        display: inline-block;
-        padding: 10px 20px;
-        font-size: 16px;
-        color: #fff;
-        background-color: #28a745;
-        border: none;
-        border-radius: 5px;
-        text-align: center;
-        cursor: pointer;
-        text-decoration: none;
-        transition: background-color 0.3s ease;
-    }
-
-    .back-button:hover {
-        background-color: #218838;
-    }
-    </style>
-    
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248"
-     crossorigin="anonymous"></script>
-     
-     
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Monster and Item Search</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+  }
+  .container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  body.dark-mode .container {
+    background: #1e1e1e;
+  }
+  input[type=text] {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  body.dark-mode input[type=text] {
+    background: #333;
+    border: 1px solid #555;
+    color: #eee;
+  }
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  #darkModeToggle {
+    background-color: #2196F3;
+    margin-left: 10px;
+  }
+  #darkModeToggle:hover {
+    background-color: #1976D2;
+  }
+  .back-button {
+    background-color: #28a745;
+    margin-bottom: 15px;
+  }
+  .back-button:hover {
+    background-color: #218838;
+  }
+  .result-item {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0;
+  }
+  body.dark-mode .result-item {
+    border-color: #444;
+  }
+  img {
+    max-width: 150px;
+    margin: 10px 0;
+  }
+  .drops-list {
+    margin-top: 10px;
+    padding-left: 15px;
+  }
+  .drop-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  .drop-item img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+  }
+  .toggle-drops-btn {
+    margin-top: 8px;
+    background-color: #555;
+  }
+  .toggle-drops-btn:hover {
+    background-color: #333;
+  }
+</style>
 </head>
 <body>
-    <div class="hero">
-        <div class="hero-content">
-            <h1>Find Monsters and Items</h1>
-            <p>Search through the database to find the monsters and items you need.</p>
-            <div class="hero-links">
-                <a href="weakness.html" class="hero-button">Elemental Weaknesses</a>
-                <a href="ttl.html" class="hero-button">EXP Calculator</a>
-                <a href="database.html" class="hero-button">Database</a>
-                <a href="https://artalemarket.com/forum/index.html" class="hero-button">Forums</a>
-                <button id="darkModeToggle" class="dark-mode-button">🌙 Dark Mode</button>
-            </div>
-        </div>
-    </div>
 
-    <div class="breadcrumb">
-        <a href="search.html">Home</a> > <span>Search</span>
-    </div>
+<div class="container">
+  <button class="back-button" id="backButton">뒤로가기</button>
+  <h1>몬스터 및 아이템 검색</h1>
 
-    <div class="main-container">
-        <div class="container">
-            <div class="search-bar-container">
-                <button onclick="history.back()" class="back-button">Back</button>
-                <div class="search-form">
-                    <form method="post" action="search.html">
-                        <input type="text" id="monsterSearchBar" name="monster_query" placeholder="Search for monsters (e.g., Slime, Pig, Snail)..." value="<?= isset($monsterQuery) ? htmlspecialchars($monsterQuery) : '' ?>">
-                        <button type="submit" class="search-button">Search Monsters</button>
-                    </form>
-                </div>
-                <div class="search-form">
-                    <form method="post" action="search.html">
-                        <input type="text" id="itemSearchBar" name="item_query" placeholder="Search for items (e.g., Potion, Scroll)..." value="<?= isset($itemQuery) ? htmlspecialchars($itemQuery) : '' ?>">
-                        <button type="submit" class="search-button">Search Items</button>
-                    </form>
-                </div>
-            </div>
+  <div style="margin-bottom: 15px;">
+    <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 여러개 구분 가능)">
+    <button id="monsterSearchBtn">검색</button>
+  </div>
 
-            <div id="results">
-                <?php if (empty($_GET['monster_query']) && empty($_GET['item_query'])): ?>
-                    <p style="text-align: center; font-size: 18px; color: #555;"><?= $message ?></p>
-                <?php else: ?>
-                    <?php if (isset($_GET['item_query']) && $itemQuery !== ''): ?>
-                        <?php foreach ($results as $item => $monsters): ?>
-                            <div class="result-item">
-                                <h3>Item: <?= htmlspecialchars($item) ?></h3>
-                                <?php
-                                $itemImage = findImageFile($itemImagePath, $item, $supportedExtensions, true);
-                                if ($itemImage): ?>
-                                    <img src="<?= $itemImage ?>" alt="<?= htmlspecialchars($item) ?>" style="max-width: 150px; height: auto; margin-bottom: 10px;">
-                                <?php else: ?>
-                                    <p><em>No image available</em></p>
-                                <?php endif; ?>
-                                <p><strong>Dropped By:</strong></p>
-                                <ul>
-                                    <?php foreach ($monsters as $monster): ?>
-                                        <li>
-                                            <a href="search.html?monster_query=<?= urlencode(strtolower($monster['name'])) ?>&exact=true">
-                                                <?= htmlspecialchars($monster['name']) ?>
-                                            </a>
-                                            (Level: <?= htmlspecialchars($monster['level'] ?? 'N/A') ?>, Region: <?= htmlspecialchars($monster['region'] ?? 'N/A') ?>)
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            </div>
-                        <?php endforeach; ?>
-                    <?php else: ?>
-<?php foreach ($results as $result): ?>
-    <div class="result-item">
-        <h3><?= htmlspecialchars($result['name']) ?></h3>
-        <?php
-        $image = findImageFile($monsterImagePath, $result['name'], $supportedExtensions);
-        if ($image): ?>
-            <img src="<?= $image ?>" alt="<?= htmlspecialchars($result['name']) ?>" style="max-width: 200px; height: auto; margin-bottom: 10px;">
-        <?php else: ?>
-            <p><em>No image available</em></p>
-        <?php endif; ?>
+  <div style="margin-bottom: 20px;">
+    <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 여러개 구분 가능)">
+    <button id="itemSearchBtn">검색</button>
+    <button id="darkModeToggle">🌙 다크 모드</button>
+  </div>
 
-        <p><strong>Level:</strong> <?= htmlspecialchars($result['level']) ?></p>
-        <p><strong>HP:</strong> <?= htmlspecialchars($result['hp']) ?></p>
+  <div id="results"></div>
+</div>
 
-        <!-- Check if it's a boss (has location) -->
-        <?php if (!empty($result['location'])): ?>
-            <p><strong>Location:</strong> <?= htmlspecialchars($result['location']) ?></p>
-            <?php if (!empty($result['respawn_time'])): ?>
-                <p><strong>Respawn Time:</strong>
-                    <?= implode(' - ', array_map('intval', $result['respawn_time'])) ?> minutes
-                </p>
-            <?php endif; ?>
-        <?php else: ?>
-            <!-- Display these fields only for monsters -->
-            <p><strong>Modifiers:</strong> <?= htmlspecialchars($result['modifiers'] ?? 'N/A') ?></p>
-            <p><strong>Region:</strong> <?= htmlspecialchars($result['region'] ?? 'N/A') ?></p>
-            <p><strong>Weapon Def:</strong> <?= htmlspecialchars($result['weapon_def'] ?? 'N/A') ?></p>
-            <p><strong>Magic Def:</strong> <?= htmlspecialchars($result['magic_def'] ?? 'N/A') ?></p>
-            <p><strong>EXP:</strong> <?= htmlspecialchars($result['exp'] ?? 'N/A') ?></p>
-        <?php endif; ?>
+<script>
+  // 데이터 변수들
+  let monsterData = [];
+  let bossData = [];
 
-        <?php if (!empty($result['drops'])): ?>
-            <p><strong>Drops:</strong></p>
-            <button class="toggle-drops-btn" data-toggle-id="<?= htmlspecialchars($result['name']) ?>">Show Drops</button>
-            <div class="drops-list" data-toggle-id="<?= htmlspecialchars($result['name']) ?>" style="display: none;">
-                <div class="grid-container">
-                    <?php foreach ($result['drops'] as $drop): ?>
-                        <div class="grid-item">
-                            <div style="display: flex; align-items: center; gap: 10px;">
-                                <?php
-                                $dropImage = findImageFile($itemImagePath, $drop, $supportedExtensions, true);
-                                if ($dropImage): ?>
-                                    <img src="<?= $dropImage ?>" alt="<?= htmlspecialchars($drop) ?>" style="width: 50px; height: auto;">
-                                <?php endif; ?>
-                                <?= htmlspecialchars($drop) ?>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                </div>
-            </div>
-        <?php endif; ?>
-    </div>
-<?php endforeach; ?>
+  // 이미지 폴더 경로
+  const monsterImagePath = "images/monsters/";
+  const itemImagePath = "images/items/";
+  const supportedExtensions = ['png']; // 확장자 여러개 시도하는 로직은 복잡해서 png 고정
 
+  // 데이터 로드
+  async function loadData() {
+    try {
+      const [monsterResp, bossResp] = await Promise.all([
+        fetch('data/monster/monster_data.json'),
+        fetch('data/monster/boss_data.json')
+      ]);
+      monsterData = await monsterResp.json();
+      bossData = await bossResp.json();
+    } catch (e) {
+      document.getElementById('results').innerText = "데이터 로드 실패: " + e;
+    }
+  }
 
-                    <?php endif; ?>
-                <?php endif; ?>
-            </div>
-        </div>
-    </div>
+  // 이미지 경로 찾기 (간단히 파일명 만들기)
+  function getImagePath(path, name, isItem = false) {
+    let fileName = name;
 
-         <?php include 'footer.html'; ?>
-         
+    if (isItem) {
+      // Mastery Book 예외처리
+      if (name.includes('[Mastery Book]')) {
+        return path + 'Master_Book.png';
+      }
+      // Scroll % 예외처리
+      if (name.includes('Scroll')) {
+        if (name.includes('100%')) return path + 'Scroll100.png';
+        if (name.includes('70%')) return path + 'Scroll70.png';
+        if (name.includes('60%')) return path + 'Scroll60.png';
+        if (name.includes('30%')) return path + 'Scroll30.png';
+        if (name.includes('10%')) return path + 'Scroll10.png';
+      }
+      // 성별 제거 (M, F)
+      fileName = fileName.replace(/\s\((M|F)\)$/i, '');
+      // 공백 _로, ' - _ 로 대체
+      fileName = fileName.replace(/\s+/g, '_').replace(/['-]/g, '_');
+      // 단어마다 첫글자 대문자
+      fileName = fileName.split('_').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('_');
+    } else {
+      // 몬스터 이름 첫글자 대문자 + 나머지 소문자
+      fileName = fileName.toLowerCase().split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join('');
+    }
+    return path + fileName + '.png';
+  }
 
-        <script>
-    document.addEventListener('contextmenu', function (e) {
-        e.preventDefault();
+  // 몬스터 검색
+  function searchMonsters() {
+    const query = document.getElementById('monsterSearchInput').value.toLowerCase();
+    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
+    if (terms.length === 0) {
+      alert("검색어를 입력하세요.");
+      return;
+    }
+
+    const results = [];
+    terms.forEach(term => {
+      monsterData.forEach(monster => {
+        if (monster.name.toLowerCase().includes(term)) results.push(monster);
+      });
+      bossData.forEach(boss => {
+        if (boss.name.toLowerCase().includes(term)) results.push(boss);
+      });
     });
 
-    document.addEventListener('keydown', function (e) {
-        // Disable F12
-        if (e.key === 'F12') {
-            e.preventDefault();
+    renderMonsterResults(results);
+  }
+
+  // 아이템 검색
+  function searchItems() {
+    const query = document.getElementById('itemSearchInput').value.toLowerCase();
+    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
+    if (terms.length === 0) {
+      alert("검색어를 입력하세요.");
+      return;
+    }
+
+    const results = {};
+
+    terms.forEach(term => {
+      monsterData.forEach(monster => {
+        if (monster.drops) {
+          monster.drops.forEach(drop => {
+            if (drop.toLowerCase().includes(term)) {
+              if (!results[drop]) results[drop] = [];
+              results[drop].push(monster);
+            }
+          });
         }
-        // Disable Ctrl+Shift+I (Inspect), Ctrl+Shift+J (Console)
-        if (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'J')) {
-            e.preventDefault();
+      });
+      bossData.forEach(boss => {
+        if (boss.drops) {
+          boss.drops.forEach(drop => {
+            if (drop.toLowerCase().includes(term)) {
+              if (!results[drop]) results[drop] = [];
+              results[drop].push(boss);
+            }
+          });
         }
-        // Disable Ctrl+U (View Source)
-        if (e.ctrlKey && e.key === 'u') {
-            e.preventDefault();
-        }
+      });
     });
-    </script>
-    
+
+    renderItemResults(results);
+  }
+
+  // 몬스터 결과 렌더링
+  function renderMonsterResults(results) {
+    const container = document.getElementById('results');
+    container.innerHTML = '';
+
+    if (results.length === 0) {
+      container.innerHTML = "<p>검색 결과가 없습니다.</p>";
+      return;
+    }
+
+    results.forEach(monster => {
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+
+      const imgSrc = getImagePath(monsterImagePath, monster.name);
+      div.innerHTML = `
+        <h3>${escapeHtml(monster.name)}</h3>
+        <img src="${imgSrc}" alt="${escapeHtml(monster.name)}" onerror="this.style.display='none'"/>
+        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        ${renderDropsHtml(monster.drops, monster.name)}
+      `;
+      container.appendChild(div);
+
+      attachToggleDropsListener(monster.name);
+    });
+  }
+
+  // 아이템 결과 렌더링
+  function renderItemResults(results) {
+    const container = document.getElementById('results');
+    container.innerHTML = '';
+
+    if (Object.keys(results).length === 0) {
+      container.innerHTML = "<p>검색 결과가 없습니다.</p>";
+      return;
+    }
+
+    for (const [item, monsters] of Object.entries(results)) {
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+
+      const imgSrc = getImagePath(itemImagePath, item, true);
+
+      div.innerHTML = `
+        <h3>아이템: ${escapeHtml(item)}</h3>
+        <img src="${imgSrc}" alt="${escapeHtml(item)}" onerror="this.style.display='none'"/>
+        <p><strong>Dropped By:</strong></p>
+        <ul>
+          ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
+        </ul>
+      `;
+
+      container.appendChild(div);
+    }
+  }
+
+  // Drops 리스트 HTML (토글 버튼 포함)
+  function renderDropsHtml(drops, monsterName) {
+    if (!drops || drops.length === 0) return '';
+
+    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_'); // 토글용 id
+
+    return `
+      <p><strong>Drops:</strong></p>
+      <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
+      <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
+        ${drops.map(drop => `
+          <div class="drop-item">
+            <img src="${getImagePath(itemImagePath, drop, true)}" alt="${escapeHtml(drop)}" onerror="this.style.display='none'"/>
+            <span>${escapeHtml(drop)}</span>
+          </div>
+        `).join('')}
+      </div>
+    `;
+  }
+
+  // 드롭 토글 버튼 이벤트 연결
+  function attachToggleDropsListener(monsterName) {
+    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
+    const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${safeName}"]`);
+    const dropsDiv = document.querySelector(`.drops-list[data-toggle-id="${safeName}"]`);
+    if (btn && dropsDiv) {
+      btn.addEventListener('click', () => {
+        const isVisible = dropsDiv.style.display === 'block';
+        dropsDiv.style.display = isVisible ? 'none' : 'block';
+        btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+      });
+    }
+  }
+
+  // HTML 이스케이프 (XSS 방지용)
+  function escapeHtml(text) {
+    if (!text) return '';
+    return text.replace(/[&<>"']/g, function (m) {
+      switch (m) {
+        case '&': return '&amp;';
+        case '<': return '&lt;';
+        case '>': return '&gt;';
+        case '"': return '&quot;';
+        case "'": return '&#39;';
+        default: return m;
+      }
+    });
+  }
+
+  // 다크 모드 토글
+  function toggleDarkMode() {
+    const body = document.body;
+    const btn = document.getElementById('darkModeToggle');
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
+    btn.textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
+    localStorage.setItem('darkMode', isDark);
+  }
+
+  // 뒤로가기 버튼
+  document.getElementById('backButton').addEventListener('click', () => {
+    history.back();
+  });
+
+  // 초기 세팅
+  document.getElementById('monsterSearchBtn').addEventListener('click', searchMonsters);
+  document.getElementById('itemSearchBtn').addEventListener('click', searchItems);
+  document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+
+  // 로컬스토리지에서 다크모드 상태 복원
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
+  }
+
+  // 데이터 불러오기
+  loadData();
+</script>
+
 </body>
 </html>
