@@ -1,4 +1,4 @@
-<?php
+<?html
 // Start session
 session_start();
 
@@ -18,7 +18,7 @@ $_SESSION['requests'] = array_filter($_SESSION['requests'], function($timestamp)
 // Check if more than 10 requests have been made in the last 10 seconds
 if (count($_SESSION['requests']) >= 10) {
     $error_message = "Too many requests! Please wait 3 seconds and try again.";
-    include 'rate_limit_display.php';  // Include display page for rate limit error
+    include 'rate_limit_display.html';  // Include display page for rate limit error
     exit();  // Stop further code execution
 }
 
