@@ -126,26 +126,26 @@
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
 
-  // ✅ 수정된 버전: 공백, 특수문자 자동 처리
   function getImagePath(path, name, isItem = false) {
     let fileName = name;
 
     if (isItem) {
-      if (name.includes('[Mastery Book]')) return path + encodeURIComponent('Master_Book') + '.gif';
+      if (name.includes('[Mastery Book]')) return path + 'Master_Book.gif';
 
       if (name.includes('Scroll')) {
-        if (name.includes('100%')) return path + encodeURIComponent('Scroll100') + '.gif';
-        if (name.includes('70%')) return path + encodeURIComponent('Scroll70') + '.gif';
-        if (name.includes('60%')) return path + encodeURIComponent('Scroll60') + '.gif';
-        if (name.includes('30%')) return path + encodeURIComponent('Scroll30') + '.gif';
-        if (name.includes('10%')) return path + encodeURIComponent('Scroll10') + '.gif';
+        if (name.includes('100%')) return path + 'Scroll100.gif';
+        if (name.includes('70%')) return path + 'Scroll70.gif';
+        if (name.includes('60%')) return path + 'Scroll60.gif';
+        if (name.includes('30%')) return path + 'Scroll30.gif';
+        if (name.includes('10%')) return path + 'Scroll10.gif';
       }
 
       fileName = fileName.replace(/\s\((M|F)\)$/i, '');
     }
 
-    const encoded = encodeURIComponent(fileName);
-    return path + encoded + '.gif';
+    // 공백, ', - 를 _로 치환
+    fileName = fileName.replace(/['\s\-]/g, '_');
+    return path + fileName + '.gif';
   }
 
   async function loadData() {
