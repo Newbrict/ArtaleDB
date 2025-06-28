@@ -126,8 +126,7 @@
       const percent = name.match(/\d+%/)[0].replace('%', '');
       return 'scroll' + percent;
     }
-    return name.replace(/\s\(M\)|\s\(F\)/gi, '')
-               .replace(/[^a-zA-Z0-9]/g, '_');
+    return name.replace(/[^a-zA-Z0-9]/g, '_');
   }
 
   function getImageElement(path, name, isItem = false) {
@@ -135,12 +134,13 @@
     img.alt = name;
 
     if (!isItem) {
-      img.src = path + encodeURIComponent(name) + '.gif';
+      const fallback = name.replace(/ /g, '_');
+      img.src = path + name + '.gif';
       img.onerror = function () {
         img.onerror = function () {
-          img.src = path + encodeURIComponent(name) + '.png';
+          img.src = path + fallback + '.png';
         };
-        img.src = path + name.replace(/ /g, '_') + '.gif';
+        img.src = path + fallback + '.gif';
       };
     } else {
       const sanitized = sanitizeItemName(name);
@@ -290,7 +290,7 @@
 
   function escapeHtml(text) {
     if (!text) return '';
-    return text.replace(/[&<>"]|'/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
+    return text.replace(/[&<>"']|'/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
   }
 
   function toggleDarkMode() {
