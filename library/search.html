@@ -31,14 +31,21 @@ let monsterData = [];
 let bossData = [];
 
 function sanitizeMonsterName(name) {
-  return name; // 공백 유지, 특수문자도 그대로
+  return name; // 공백 포함 그대로
 }
 
 function sanitizeItemName(name) {
-  if (/scroll/i.test(name) && /\\d+%/.test(name)) {
-    const percent = name.match(/\\d+%/)[0].replace('%', '');
-    return "Scroll" + percent;
+  // Scroll 확률 처리
+  const scrollMatch = name.match(/scroll.*?(\\d+)%/i);
+  if (scrollMatch) {
+    const percent = scrollMatch[1];
+    return `Scroll${percent}`;
   }
+
+  // 성별 표기 (M)/(F) 제거
+  name = name.replace(/\s*\((M|F)\)\s*$/i, '');
+
+  // 특수문자 및 공백을 _로 치환
   return name.replace(/[^a-zA-Z0-9]/g, '_');
 }
 
@@ -49,9 +56,7 @@ function getImageElement(path, displayName, isItem = false, realFilename = null)
 
   img.src = path + filename + '.png';
   img.onerror = function () {
-    img.onerror = function () {
-      img.src = path + filename + '.gif';
-    };
+    img.onerror = null;
     img.src = path + filename + '.gif';
   };
 
@@ -163,7 +168,7 @@ function renderItemResults(results) {
   });
 }
 
-loadData(); // Load JSON data on page load
+loadData();
 </script>
 </body>
 </html>
