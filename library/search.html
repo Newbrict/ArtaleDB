@@ -170,12 +170,19 @@
     if (terms.length === 0) return alert("검색어를 입력하세요.");
 
     const results = [];
+
+    console.log("🔍 검색어:", terms);
+
     terms.forEach(term => {
       monsterData.forEach(monster => {
-        if (monster.name.toLowerCase().includes(term)) results.push(monster);
+        if (monster.name && monster.name.toLowerCase().includes(term)) {
+          results.push(monster);
+        }
       });
       bossData.forEach(boss => {
-        if (boss.name.toLowerCase().includes(term)) results.push(boss);
+        if (boss.name && boss.name.toLowerCase().includes(term)) {
+          results.push(boss);
+        }
       });
     });
 
