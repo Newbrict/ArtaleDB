@@ -23,6 +23,7 @@
   <button onclick="searchItems()">검색</button>
   <div id="results"></div>
 </div>
+
 <script>
 const monsterImagePath = "images/monsters/";
 const itemImagePath = "images/items/";
@@ -31,24 +32,24 @@ let monsterData = [];
 let bossData = [];
 
 function sanitizeMonsterName(name) {
-  return name; // 공백 포함 그대로
+  return name; // 공백과 특수문자 그대로
 }
 
 function sanitizeItemName(name) {
-  // Scroll 확률 처리
-  const scrollMatch = name.match(/scroll.*?(\\d+)%/i);
+  // 4. Scroll 확률 처리: Scroll ... 10%, 30% 등 → Scroll10, Scroll30
+  const scrollMatch = name.match(/scroll[^\\d]*(\\d+)%/i);
   if (scrollMatch) {
-    const percent = scrollMatch[1];
-    return `Scroll${percent}`;
+    return "Scroll" + scrollMatch[1];
   }
 
-  // 성별 표기 (M)/(F) 제거
+  // 2. 성별 표기 제거: (F), (M)
   name = name.replace(/\s*\((M|F)\)\s*$/i, '');
 
-  // 특수문자 및 공백을 _로 치환
+  // 3. 특수문자 전체 _로 치환 (공백, 괄호 포함)
   return name.replace(/[^a-zA-Z0-9]/g, '_');
 }
 
+// 1. 이미지 로딩 실패 시 .gif 시도
 function getImageElement(path, displayName, isItem = false, realFilename = null) {
   const img = document.createElement('img');
   img.alt = displayName;
