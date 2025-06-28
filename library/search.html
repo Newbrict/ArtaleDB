@@ -126,6 +126,8 @@
   }
 
   function sanitizeItemName(name) {
+    if (/Skill Book/i.test(name)) return "Skillbook";
+    if (/Mastery Book/i.test(name)) return "Masterybook";
     const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
     if (scrollMatch) return "Scroll" + scrollMatch[1];
     name = name.replace(/\s*\((M|F)\)\s*$/i, '');
