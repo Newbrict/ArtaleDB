@@ -127,22 +127,33 @@
   const itemImagePath = "images/items/";
 
   function getImageElement(path, name) {
-    const original = encodeURIComponent(name) + '.gif';
-    const fallback = name.replace(/['\s\-]/g, '_') + '.gif';
-
     const img = document.createElement('img');
     img.alt = name;
-    img.src = path + original;
 
-    img.onerror = function () {
-      img.onerror = function () {
-        img.onerror = function () {
-          img.onerror = null;
-          img.src = path + fallback.replace('.gif', '.png');
-        };
-        img.src = path + fallback;
-      };
-      img.src = path + original.replace('.gif', '.png');
+    const encoded = encodeURIComponent(name);
+    const underscored = name.replace(/\s/g, '_');
+    const cleanFallback = name.replace(/[^a-zA-Z0-9]/g, '_');
+
+    const trySrcs = [
+      path + underscored + '.png',
+      path + encoded + '.png',
+      path + underscored + '.gif',
+      path + encoded + '.gif',
+      path + cleanFallback + '.png',
+      path + cleanFallback + '.gif',
+    ];
+
+    let index = 0;
+    img.src = trySrcs[index];
+
+    img.onerror = function handleError() {
+      index++;
+      if (index < trySrcs.length) {
+        img.src = trySrcs[index];
+      } else {
+        img.onerror = null;
+        img.alt += ' (이미지 없음)';
+      }
     };
 
     return img;
@@ -276,7 +287,6 @@
         dropsDiv.style.display = isVisible ? 'none' : 'block';
         btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
 
-        // 이미지 생성 (지연 로딩)
         if (!dropsDiv.querySelector('img')) {
           const dropItems = dropsDiv.querySelectorAll('.drop-item');
           dropItems.forEach(div => {
