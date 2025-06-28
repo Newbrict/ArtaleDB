@@ -126,26 +126,26 @@
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
 
-  function getImagePath(path, name, isItem = false) {
-    let fileName = name;
+  function getImageElement(path, name) {
+    const original = encodeURIComponent(name) + '.gif';
+    const fallback = name.replace(/['\s\-]/g, '_') + '.gif';
 
-    if (isItem) {
-      if (name.includes('[Mastery Book]')) return path + 'Master_Book.gif';
+    const img = document.createElement('img');
+    img.alt = name;
+    img.src = path + original;
 
-      if (name.includes('Scroll')) {
-        if (name.includes('100%')) return path + 'Scroll100.gif';
-        if (name.includes('70%')) return path + 'Scroll70.gif';
-        if (name.includes('60%')) return path + 'Scroll60.gif';
-        if (name.includes('30%')) return path + 'Scroll30.gif';
-        if (name.includes('10%')) return path + 'Scroll10.gif';
-      }
+    img.onerror = function () {
+      img.onerror = function () {
+        img.onerror = function () {
+          img.onerror = null;
+          img.src = path + fallback.replace('.gif', '.png');
+        };
+        img.src = path + fallback;
+      };
+      img.src = path + original.replace('.gif', '.png');
+    };
 
-      fileName = fileName.replace(/\s\((M|F)\)$/i, '');
-    }
-
-    // 공백, ', - 를 _로 치환
-    fileName = fileName.replace(/['\s\-]/g, '_');
-    return path + fileName + '.gif';
+    return img;
   }
 
   async function loadData() {
@@ -209,17 +209,17 @@
       const div = document.createElement('div');
       div.classList.add('result-item');
 
-      const imgSrc = getImagePath(monsterImagePath, monster.name);
+      const img = getImageElement(monsterImagePath, monster.name);
+
       div.innerHTML = `
         <h3>${escapeHtml(monster.name)}</h3>
-        <img src="${imgSrc}" alt="${escapeHtml(monster.name)}"
-             onerror="this.onerror=null; this.src=this.src.replace('.gif', '.png')" />
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
         ${renderDropsHtml(monster.drops, monster.name)}
       `;
+      div.insertBefore(img, div.children[1]);
       container.appendChild(div);
       attachToggleDropsListener(monster.name);
     });
@@ -233,17 +233,16 @@
       const div = document.createElement('div');
       div.classList.add('result-item');
 
-      const imgSrc = getImagePath(itemImagePath, item, true);
+      const img = getImageElement(itemImagePath, item);
 
       div.innerHTML = `
         <h3>아이템: ${escapeHtml(item)}</h3>
-        <img src="${imgSrc}" alt="${escapeHtml(item)}"
-             onerror="this.onerror=null; this.src=this.src.replace('.gif', '.png')" />
         <p><strong>Dropped By:</strong></p>
         <ul>
           ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
         </ul>
       `;
+      div.insertBefore(img, div.children[1]);
       container.appendChild(div);
     }
   }
@@ -255,13 +254,14 @@
       <p><strong>Drops:</strong></p>
       <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
       <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
-        ${drops.map(drop => `
-          <div class="drop-item">
-            <img src="${getImagePath(itemImagePath, drop, true)}" alt="${escapeHtml(drop)}"
-                 onerror="this.onerror=null; this.src=this.src.replace('.gif', '.png')" />
-            <span>${escapeHtml(drop)}</span>
-          </div>
-        `).join('')}
+        ${drops.map(drop => {
+          const html = `
+            <div class="drop-item">
+              <span>${escapeHtml(drop)}</span>
+            </div>
+          `;
+          return html;
+        }).join('')}
       </div>
     `;
   }
@@ -275,6 +275,16 @@
         const isVisible = dropsDiv.style.display === 'block';
         dropsDiv.style.display = isVisible ? 'none' : 'block';
         btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+
+        // 이미지 생성 (지연 로딩)
+        if (!dropsDiv.querySelector('img')) {
+          const dropItems = dropsDiv.querySelectorAll('.drop-item');
+          dropItems.forEach(div => {
+            const name = div.innerText.trim();
+            const img = getImageElement(itemImagePath, name);
+            div.prepend(img);
+          });
+        }
       });
     }
   }
