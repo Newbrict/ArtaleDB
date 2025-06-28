@@ -5,317 +5,124 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Monster and Item Search</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
-      color: #222;
-      padding: 20px;
-      transition: background-color 0.3s, color 0.3s;
-    }
-    body.dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
-    .container {
-      max-width: 900px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-    }
-    body.dark-mode .container {
-      background: #1e1e1e;
-    }
-    input[type=text] {
-      width: 70%;
-      padding: 10px;
-      margin-right: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-    body.dark-mode input[type=text] {
-      background: #333;
-      border: 1px solid #555;
-      color: #eee;
-    }
-    button {
-      padding: 10px 15px;
-      cursor: pointer;
-      border: none;
-      border-radius: 4px;
-      background-color: #4CAF50;
-      color: white;
-      font-weight: bold;
-    }
-    button:hover {
-      background-color: #45a049;
-    }
-    #darkModeToggle {
-      background-color: #2196F3;
-      margin-left: 10px;
-    }
-    #darkModeToggle:hover {
-      background-color: #1976D2;
-    }
-    .back-button {
-      background-color: #28a745;
-      margin-bottom: 15px;
-    }
-    .back-button:hover {
-      background-color: #218838;
-    }
-    .result-item {
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
-    }
-    body.dark-mode .result-item {
-      border-color: #444;
-    }
-    img {
-      max-width: 150px;
-      margin: 10px 0;
-    }
-    .drops-list {
-      margin-top: 10px;
-      padding-left: 15px;
-    }
-    .drop-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 5px;
-    }
-    .drop-item img {
-      width: 40px;
-      height: auto;
-      margin-right: 10px;
-    }
-    .toggle-drops-btn {
-      margin-top: 8px;
-      background-color: #555;
-    }
-    .toggle-drops-btn:hover {
-      background-color: #333;
-    }
+    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; padding: 20px; }
+    .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
+    input[type=text] { width: 70%; padding: 10px; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; background-color: #4CAF50; color: white; }
+    img { max-width: 150px; margin: 10px 0; }
+    .drop-item img { width: 40px; height: auto; margin-right: 10px; }
+    .result-item { border-bottom: 1px solid #ddd; padding: 15px 0; }
   </style>
 </head>
 <body>
 <div class="container">
-  <button class="back-button" id="backButton">뒤로가기</button>
   <h1>몬스터 및 아이템 검색</h1>
-  <div style="margin-bottom: 15px;">
-    <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 여러개 구분 가능)">
-    <button id="monsterSearchBtn">검색</button>
-  </div>
-  <div style="margin-bottom: 20px;">
-    <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 여러개 구분 가능)">
-    <button id="itemSearchBtn">검색</button>
-    <button id="darkModeToggle">🌙 다크 모드</button>
-  </div>
+  <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 구분)">
+  <button onclick="searchMonsters()">검색</button>
+  <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 구분)">
+  <button onclick="searchItems()">검색</button>
   <div id="results"></div>
 </div>
 <script>
-  let monsterData = [];
-  let bossData = [];
+const monsterImagePath = "images/monsters/";
+const itemImagePath = "images/items/";
 
-  const monsterImagePath = "images/monsters/";
-  const itemImagePath = "images/items/";
+function sanitizeMonsterName(name) {
+  return name; // 공백 및 특수문자 유지
+}
 
-  function sanitizeMonsterName(name) {
-    return name.replace(/ /g, '_');
+function sanitizeItemName(name) {
+  if (/scroll/i.test(name) && /\d+%/.test(name)) {
+    const percent = name.match(/\d+%/)[0].replace('%', '');
+    return "Scroll" + percent;
   }
+  return name.replace(/[^a-zA-Z0-9]/g, '_');
+}
 
-  function sanitizeItemName(name) {
-    if (/scroll/i.test(name) && /\d+%/.test(name)) {
-      const percent = name.match(/\d+%/)[0].replace('%', '');
-      return 'Scroll' + percent;
-    }
-    return name.replace(/[^a-zA-Z0-9]/g, '_');
-  }
+function getImageElement(path, displayName, isItem = false, realFilename = null) {
+  const img = document.createElement('img');
+  img.alt = displayName;
+  const filename = realFilename || displayName;
 
-  function getImageElement(path, displayName, isItem = false, realFilename = null) {
-    const img = document.createElement('img');
-    img.alt = displayName;
-    const filename = realFilename || displayName;
-
-    if (!isItem) {
+  img.src = path + filename + '.png';
+  img.onerror = function () {
+    img.onerror = function () {
       img.src = path + filename + '.gif';
-      img.onerror = function () {
-        img.onerror = function () {
-          img.src = path + encodeURIComponent(displayName) + '.png';
-        };
-        img.src = path + filename + '.png';
-      };
-    } else {
-      img.src = path + filename + '.png';
-      img.onerror = function () {
-        img.onerror = function () {
-          img.src = path + encodeURIComponent(displayName) + '.gif';
-        };
-        img.src = path + filename + '.gif';
-      };
-    }
-    return img;
-  }
+    };
+    img.src = path + filename + '.gif';
+  };
 
-  async function loadData() {
-    try {
-      const [monsterResp, bossResp] = await Promise.all([
-        fetch('data/monster/monster_data.json'),
-        fetch('data/monster/boss_data.json')
-      ]);
-      monsterData = await monsterResp.json();
-      bossData = await bossResp.json();
-    } catch (e) {
-      document.getElementById('results').innerText = "데이터 로드 실패: " + e;
-    }
-  }
+  return img;
+}
 
-  function searchMonsters() {
-    const query = document.getElementById('monsterSearchInput').value.toLowerCase();
-    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) return alert("검색어를 입력하세요.");
+const monsters = [
+  { name: "Ribbon Pig", level: 10, hp: 120, region: "Victoria Island", exp: 20, drops: ["Silver Leather Hoodwear (M)", "Dark Nightshift (M)", "Dark Nightshift Pants (M)", "[Skill Book] Triple Throw", "[Mastery Book] Genesis 20"] }
+];
 
-    const results = [];
-    terms.forEach(term => {
-      monsterData.forEach(monster => {
-        if (monster.name.toLowerCase().includes(term)) results.push(monster);
-      });
-      bossData.forEach(boss => {
-        if (boss.name.toLowerCase().includes(term)) results.push(boss);
-      });
+function searchMonsters() {
+  const input = document.getElementById("monsterSearchInput").value.trim().toLowerCase();
+  const results = monsters.filter(m => m.name.toLowerCase().includes(input));
+  renderMonsterResults(results);
+}
+
+function searchItems() {
+  const input = document.getElementById("itemSearchInput").value.trim().toLowerCase();
+  const results = {};
+  monsters.forEach(m => {
+    m.drops.forEach(drop => {
+      if (drop.toLowerCase().includes(input)) {
+        if (!results[drop]) results[drop] = [];
+        results[drop].push(m);
+      }
     });
+  });
+  renderItemResults(results);
+}
 
-    renderMonsterResults(results);
-  }
-
-  function searchItems() {
-    const query = document.getElementById('itemSearchInput').value.toLowerCase();
-    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) return alert("검색어를 입력하세요.");
-
-    const results = {};
-    terms.forEach(term => {
-      [...monsterData, ...bossData].forEach(entity => {
-        if (entity.drops) {
-          entity.drops.forEach(drop => {
-            if (drop.toLowerCase().includes(term)) {
-              if (!results[drop]) results[drop] = [];
-              results[drop].push(entity);
-            }
-          });
-        }
-      });
-    });
-
-    renderItemResults(results);
-  }
-
-  function renderMonsterResults(results) {
-    const container = document.getElementById('results');
-    container.innerHTML = results.length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
-
-    results.forEach(monster => {
-      const div = document.createElement('div');
-      div.classList.add('result-item');
-
-      const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
-
-      div.innerHTML = `
-        <h3>${escapeHtml(monster.name)}</h3>
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        ${renderDropsHtml(monster.drops, monster.name)}
-      `;
-      div.insertBefore(img, div.children[1]);
-      container.appendChild(div);
-      attachToggleDropsListener(monster.name);
-    });
-  }
-
-  function renderItemResults(results) {
-    const container = document.getElementById('results');
-    container.innerHTML = Object.keys(results).length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
-
-    for (const [item, monsters] of Object.entries(results)) {
-      const div = document.createElement('div');
-      div.classList.add('result-item');
-
-      const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
-
-      div.innerHTML = `
-        <h3>아이템: ${escapeHtml(item)}</h3>
-        <p><strong>Dropped By:</strong></p>
-        <ul>
-          ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
-        </ul>
-      `;
-      div.insertBefore(img, div.children[1]);
-      container.appendChild(div);
-    }
-  }
-
-  function renderDropsHtml(drops, monsterName) {
-    if (!drops || drops.length === 0) return '';
-    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
-    return `
+function renderMonsterResults(results) {
+  const container = document.getElementById("results");
+  container.innerHTML = '';
+  results.forEach(monster => {
+    const div = document.createElement('div');
+    div.classList.add('result-item');
+    const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
+    div.appendChild(img);
+    div.innerHTML += `
+      <h3>${monster.name}</h3>
+      <p><strong>Level:</strong> ${monster.level}</p>
+      <p><strong>HP:</strong> ${monster.hp}</p>
+      <p><strong>Region:</strong> ${monster.region}</p>
+      <p><strong>EXP:</strong> ${monster.exp}</p>
       <p><strong>Drops:</strong></p>
-      <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
-      <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
-        ${drops.map(drop => `<div class="drop-item"><span>${escapeHtml(drop)}</span></div>`).join('')}
-      </div>
     `;
+    monster.drops.forEach(drop => {
+      const dropDiv = document.createElement('div');
+      dropDiv.classList.add('drop-item');
+      const dropImg = getImageElement(itemImagePath, drop, true, sanitizeItemName(drop));
+      dropDiv.appendChild(dropImg);
+      dropDiv.innerHTML += `<span>${drop}</span>`;
+      div.appendChild(dropDiv);
+    });
+    container.appendChild(div);
+  });
+}
+
+function renderItemResults(results) {
+  const container = document.getElementById("results");
+  container.innerHTML = '';
+  for (const [item, monsters] of Object.entries(results)) {
+    const div = document.createElement('div');
+    div.classList.add('result-item');
+    const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
+    div.appendChild(img);
+    div.innerHTML += `<h3>${item}</h3><p><strong>Dropped By:</strong></p><ul>`;
+    monsters.forEach(m => {
+      div.innerHTML += `<li>${m.name} (Level ${m.level}, ${m.region})</li>`;
+    });
+    div.innerHTML += `</ul>`;
+    container.appendChild(div);
   }
-
-  function attachToggleDropsListener(monsterName) {
-    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
-    const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${safeName}"]`);
-    const dropsDiv = document.querySelector(`.drops-list[data-toggle-id="${safeName}"]`);
-    if (btn && dropsDiv) {
-      btn.addEventListener('click', () => {
-        const isVisible = dropsDiv.style.display === 'block';
-        dropsDiv.style.display = isVisible ? 'none' : 'block';
-        btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
-
-        if (!dropsDiv.querySelector('img')) {
-          const dropItems = dropsDiv.querySelectorAll('.drop-item');
-          dropItems.forEach(div => {
-            const name = div.innerText.trim();
-            const img = getImageElement(itemImagePath, name, true, sanitizeItemName(name));
-            div.prepend(img);
-          });
-        }
-      });
-    }
-  }
-
-  function escapeHtml(text) {
-    if (!text) return '';
-    return text.replace(/[&<>"]|'/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
-  }
-
-  function toggleDarkMode() {
-    const body = document.body;
-    const btn = document.getElementById('darkModeToggle');
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
-    localStorage.setItem('darkMode', isDark);
-  }
-
-  document.getElementById('backButton').addEventListener('click', () => history.back());
-  document.getElementById('monsterSearchBtn').addEventListener('click', searchMonsters);
-  document.getElementById('itemSearchBtn').addEventListener('click', searchItems);
-  document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
-
-  if (localStorage.getItem('darkMode') === 'true') {
-    document.body.classList.add('dark-mode');
-    document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
-  }
-
-  loadData();
+}
 </script>
 </body>
 </html>
