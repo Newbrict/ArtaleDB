@@ -27,13 +27,16 @@
 const monsterImagePath = "images/monsters/";
 const itemImagePath = "images/items/";
 
+let monsterData = [];
+let bossData = [];
+
 function sanitizeMonsterName(name) {
-  return name; // 공백 및 특수문자 유지
+  return name; // 공백 유지, 특수문자도 그대로
 }
 
 function sanitizeItemName(name) {
-  if (/scroll/i.test(name) && /\d+%/.test(name)) {
-    const percent = name.match(/\d+%/)[0].replace('%', '');
+  if (/scroll/i.test(name) && /\\d+%/.test(name)) {
+    const percent = name.match(/\\d+%/)[0].replace('%', '');
     return "Scroll" + percent;
   }
   return name.replace(/[^a-zA-Z0-9]/g, '_');
@@ -55,33 +58,59 @@ function getImageElement(path, displayName, isItem = false, realFilename = null)
   return img;
 }
 
-const monsters = [
-  { name: "Ribbon Pig", level: 10, hp: 120, region: "Victoria Island", exp: 20, drops: ["Silver Leather Hoodwear (M)", "Dark Nightshift (M)", "Dark Nightshift Pants (M)", "[Skill Book] Triple Throw", "[Mastery Book] Genesis 20"] }
-];
+async function loadData() {
+  try {
+    const [monsterResp, bossResp] = await Promise.all([
+      fetch('data/monster/monster_data.json'),
+      fetch('data/monster/boss_data.json')
+    ]);
+    monsterData = await monsterResp.json();
+    bossData = await bossResp.json();
+  } catch (e) {
+    document.getElementById('results').innerText = "데이터 로드 실패: " + e;
+  }
+}
 
 function searchMonsters() {
   const input = document.getElementById("monsterSearchInput").value.trim().toLowerCase();
-  const results = monsters.filter(m => m.name.toLowerCase().includes(input));
+  const terms = input.split(',').map(t => t.trim()).filter(t => t);
+  const results = [];
+
+  [...monsterData, ...bossData].forEach(mon => {
+    if (terms.some(term => mon.name.toLowerCase().includes(term))) {
+      results.push(mon);
+    }
+  });
+
   renderMonsterResults(results);
 }
 
 function searchItems() {
   const input = document.getElementById("itemSearchInput").value.trim().toLowerCase();
+  const terms = input.split(',').map(t => t.trim()).filter(t => t);
   const results = {};
-  monsters.forEach(m => {
-    m.drops.forEach(drop => {
-      if (drop.toLowerCase().includes(input)) {
+
+  [...monsterData, ...bossData].forEach(mon => {
+    if (!mon.drops) return;
+    mon.drops.forEach(drop => {
+      if (terms.some(term => drop.toLowerCase().includes(term))) {
         if (!results[drop]) results[drop] = [];
-        results[drop].push(m);
+        results[drop].push(mon);
       }
     });
   });
+
   renderItemResults(results);
 }
 
 function renderMonsterResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = '';
+  if (results.length === 0) {
+    container.innerHTML = "<p>검색 결과가 없습니다.</p>";
+    return;
+  }
+
   results.forEach(monster => {
     const div = document.createElement('div');
     div.classList.add('result-item');
@@ -89,20 +118,24 @@ function renderMonsterResults(results) {
     div.appendChild(img);
     div.innerHTML += `
       <h3>${monster.name}</h3>
-      <p><strong>Level:</strong> ${monster.level}</p>
-      <p><strong>HP:</strong> ${monster.hp}</p>
-      <p><strong>Region:</strong> ${monster.region}</p>
-      <p><strong>EXP:</strong> ${monster.exp}</p>
+      <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+      <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+      <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+      <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
       <p><strong>Drops:</strong></p>
     `;
-    monster.drops.forEach(drop => {
-      const dropDiv = document.createElement('div');
-      dropDiv.classList.add('drop-item');
-      const dropImg = getImageElement(itemImagePath, drop, true, sanitizeItemName(drop));
-      dropDiv.appendChild(dropImg);
-      dropDiv.innerHTML += `<span>${drop}</span>`;
-      div.appendChild(dropDiv);
-    });
+    if (monster.drops && monster.drops.length > 0) {
+      monster.drops.forEach(drop => {
+        const dropDiv = document.createElement('div');
+        dropDiv.classList.add('drop-item');
+        const dropImg = getImageElement(itemImagePath, drop, true, sanitizeItemName(drop));
+        dropDiv.appendChild(dropImg);
+        dropDiv.innerHTML += `<span>${drop}</span>`;
+        div.appendChild(dropDiv);
+      });
+    } else {
+      div.innerHTML += `<p><em>None</em></p>`;
+    }
     container.appendChild(div);
   });
 }
@@ -110,19 +143,27 @@ function renderMonsterResults(results) {
 function renderItemResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = '';
-  for (const [item, monsters] of Object.entries(results)) {
+  const keys = Object.keys(results);
+  if (keys.length === 0) {
+    container.innerHTML = "<p>검색 결과가 없습니다.</p>";
+    return;
+  }
+
+  keys.forEach(item => {
     const div = document.createElement('div');
     div.classList.add('result-item');
     const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
     div.appendChild(img);
     div.innerHTML += `<h3>${item}</h3><p><strong>Dropped By:</strong></p><ul>`;
-    monsters.forEach(m => {
-      div.innerHTML += `<li>${m.name} (Level ${m.level}, ${m.region})</li>`;
+    results[item].forEach(mon => {
+      div.innerHTML += `<li>${mon.name} (Level ${mon.level || '?'}, ${mon.region || '?'})</li>`;
     });
     div.innerHTML += `</ul>`;
     container.appendChild(div);
-  }
+  });
 }
+
+loadData(); // Load JSON data on page load
 </script>
 </body>
 </html>
