@@ -214,15 +214,19 @@
       const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
 
       div.innerHTML = `
-        <h3>${escapeHtml(monster.name)}</h3>
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>required_accuracy:</strong> ${monster.required_accuracy || 'N/A'}</p>
-        ${renderDropsHtml(monster.drops, monster.name)}
-      `;
+  <h3>${escapeHtml(monster.name)}</h3>
+      <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+      <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+      <p><strong>modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+      <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+      <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+      <p><strong>required_accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
+        monster.accuracy_level_decrease !== undefined && monster.required_accuracy
+      ? `(1 level decrease +${monster.accuracy_level_decrease})`
+      : ''
+  }</p>
+  ${renderDropsHtml(monster.drops, monster.name)}
+`;
       div.insertBefore(img, div.children[1]);
       container.appendChild(div);
       attachToggleDropsListener(monster.name);
