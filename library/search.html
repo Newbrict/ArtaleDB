@@ -1,28 +1,19 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Monster and Item Search</title>
-  <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; padding: 20px; }
-    .container { max-width: 900px; margin: auto; background: white; padding: 20px; border-radius: 8px; }
-    input[type=text] { width: 70%; padding: 10px; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px; }
-    button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; background-color: #4CAF50; color: white; }
-    img { max-width: 150px; margin: 10px 0; }
-    .drop-item img { width: 40px; height: auto; margin-right: 10px; }
-    .result-item { border-bottom: 1px solid #ddd; padding: 15px 0; }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>몬스터 및 아이템 검색</title>
 </head>
 <body>
-<div class="container">
-  <h1>몬스터 및 아이템 검색</h1>
-  <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 구분)">
-  <button onclick="searchMonsters()">검색</button>
-  <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 구분)">
-  <button onclick="searchItems()">검색</button>
-  <div id="results"></div>
-</div>
+  <div class="container">
+    <h1>몬스터 및 아이템 검색</h1>
+    <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색">
+    <button onclick="searchMonsters()">검색</button>
+    <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색">
+    <button onclick="searchItems()">검색</button>
+    <div id="results"></div>
+  </div>
 
 <script>
 const monsterImagePath = "images/monsters/";
@@ -32,24 +23,18 @@ let monsterData = [];
 let bossData = [];
 
 function sanitizeMonsterName(name) {
-  return name; // 공백과 특수문자 그대로
+  return name;
 }
 
 function sanitizeItemName(name) {
-  // 4. Scroll 확률 처리: Scroll ... 10%, 30% 등 → Scroll10, Scroll30
-  const scrollMatch = name.match(/scroll[^\\d]*(\\d+)%/i);
+  const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
   if (scrollMatch) {
     return "Scroll" + scrollMatch[1];
   }
-
-  // 2. 성별 표기 제거: (F), (M)
   name = name.replace(/\s*\((M|F)\)\s*$/i, '');
-
-  // 3. 특수문자 전체 _로 치환 (공백, 괄호 포함)
   return name.replace(/[^a-zA-Z0-9]/g, '_');
 }
 
-// 1. 이미지 로딩 실패 시 .gif 시도
 function getImageElement(path, displayName, isItem = false, realFilename = null) {
   const img = document.createElement('img');
   img.alt = displayName;
@@ -112,6 +97,7 @@ function searchItems() {
 function renderMonsterResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = '';
+
   if (results.length === 0) {
     container.innerHTML = "<p>검색 결과가 없습니다.</p>";
     return;
@@ -130,6 +116,7 @@ function renderMonsterResults(results) {
       <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
       <p><strong>Drops:</strong></p>
     `;
+
     if (monster.drops && monster.drops.length > 0) {
       monster.drops.forEach(drop => {
         const dropDiv = document.createElement('div');
@@ -142,6 +129,7 @@ function renderMonsterResults(results) {
     } else {
       div.innerHTML += `<p><em>None</em></p>`;
     }
+
     container.appendChild(div);
   });
 }
@@ -150,6 +138,7 @@ function renderItemResults(results) {
   const container = document.getElementById("results");
   container.innerHTML = '';
   const keys = Object.keys(results);
+
   if (keys.length === 0) {
     container.innerHTML = "<p>검색 결과가 없습니다.</p>";
     return;
