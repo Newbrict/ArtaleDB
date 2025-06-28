@@ -130,29 +130,39 @@
     const img = document.createElement('img');
     img.alt = name;
 
-    const encoded = encodeURIComponent(name);
-    const underscored = name.replace(/\s/g, '_');
-    const cleanFallback = name.replace(/[^a-zA-Z0-9]/g, '_');
+    const variants = [];
 
-    const trySrcs = [
-      path + underscored + '.png',
-      path + encoded + '.png',
-      path + underscored + '.gif',
-      path + encoded + '.gif',
-      path + cleanFallback + '.png',
-      path + cleanFallback + '.gif',
-    ];
+    // 원본 이름
+    variants.push(name);
+
+    // 괄호 안 (F) 또는 (M) 제거한 이름
+    const genderless = name.replace(/\s*\([FMfm]\)/g, '').trim();
+    if (!variants.includes(genderless)) variants.push(genderless);
+
+    // 각 이름 변형을 바탕으로 시도할 파일명들 생성
+    const attempts = [];
+
+    variants.forEach(variant => {
+      const underscore = variant.replace(/\s+/g, '_');
+      const encoded = encodeURIComponent(variant);
+      const cleaned = variant.replace(/[^a-zA-Z0-9]/g, '_');
+
+      [underscore, encoded, cleaned].forEach(base => {
+        attempts.push(base + '.png');
+        attempts.push(base + '.gif');
+      });
+    });
 
     let index = 0;
-    img.src = trySrcs[index];
+    img.src = path + attempts[index];
 
-    img.onerror = function handleError() {
+    img.onerror = function tryNext() {
       index++;
-      if (index < trySrcs.length) {
-        img.src = trySrcs[index];
+      if (index < attempts.length) {
+        img.src = path + attempts[index];
       } else {
         img.onerror = null;
-        img.alt += ' (이미지 없음)';
+        img.alt += " (이미지 없음)";
       }
     };
 
@@ -265,14 +275,9 @@
       <p><strong>Drops:</strong></p>
       <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
       <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
-        ${drops.map(drop => {
-          const html = `
-            <div class="drop-item">
-              <span>${escapeHtml(drop)}</span>
-            </div>
-          `;
-          return html;
-        }).join('')}
+        ${drops.map(drop => `
+          <div class="drop-item"><span>${escapeHtml(drop)}</span></div>
+        `).join('')}
       </div>
     `;
   }
@@ -287,9 +292,9 @@
         dropsDiv.style.display = isVisible ? 'none' : 'block';
         btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
 
+        // 지연 로딩: 이미지 없을 경우 생성
         if (!dropsDiv.querySelector('img')) {
-          const dropItems = dropsDiv.querySelectorAll('.drop-item');
-          dropItems.forEach(div => {
+          dropsDiv.querySelectorAll('.drop-item').forEach(div => {
             const name = div.innerText.trim();
             const img = getImageElement(itemImagePath, name);
             div.prepend(img);
@@ -301,11 +306,9 @@
 
   function escapeHtml(text) {
     if (!text) return '';
-    return text.replace(/[&<>"']/g, function (m) {
-      return {
-        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-      }[m] || m;
-    });
+    return text.replace(/[&<>"']/g, m => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+    }[m] || m));
   }
 
   function toggleDarkMode() {
