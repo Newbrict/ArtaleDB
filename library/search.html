@@ -213,12 +213,19 @@
       div.classList.add('result-item');
       const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
 
+      const modifiersText = monster.modifiers ? monster.modifiers.join(', ') : 'N/A';
+      const requiredAccuracy = monster.required_accuracy ?? 'N/A';
+      const accuracyDecrease = monster.accuracy_level_decrease ?? 'N/A';
+
       div.innerHTML = `
         <h3>${escapeHtml(monster.name)}</h3>
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        <p><strong>속성 약점 (Modifiers):</strong> ${escapeHtml(modifiersText)}</p>
+        <p><strong>요구 명중률 (Required Accuracy):</strong> ${requiredAccuracy}</p>
+        <p><strong>레벨 1 낮을 때 추가 명중률 (Accuracy Penalty per Level):</strong> ${accuracyDecrease}</p>
         ${renderDropsHtml(monster.drops, monster.name)}
       `;
       div.insertBefore(img, div.children[1]);
