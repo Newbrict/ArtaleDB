@@ -170,19 +170,12 @@
     if (terms.length === 0) return alert("검색어를 입력하세요.");
 
     const results = [];
-
-    console.log("🔍 검색어:", terms);
-
     terms.forEach(term => {
       monsterData.forEach(monster => {
-        if (monster.name && monster.name.toLowerCase().includes(term)) {
-          results.push(monster);
-        }
+        if (monster.name.toLowerCase().includes(term)) results.push(monster);
       });
       bossData.forEach(boss => {
-        if (boss.name && boss.name.toLowerCase().includes(term)) {
-          results.push(boss);
-        }
+        if (boss.name.toLowerCase().includes(term)) results.push(boss);
       });
     });
 
@@ -220,21 +213,16 @@
       div.classList.add('result-item');
       const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
 
-      const modifiersText = monster.modifiers ? monster.modifiers.join(', ') : 'N/A';
-      const requiredAccuracy = monster.required_accuracy ?? 'N/A';
-      const accuracyDecrease = monster.accuracy_level_decrease ?? 'N/A';
-
-      div.innerHTML = `
+      div.innerHTML = 
         <h3>${escapeHtml(monster.name)}</h3>
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>속성 약점 (Modifiers):</strong> ${escapeHtml(modifiersText)}</p>
-        <p><strong>요구 명중률 (Required Accuracy):</strong> ${requiredAccuracy}</p>
-        <p><strong>레벨 1 낮을 때 추가 명중률 (Accuracy Penalty per Level):</strong> ${accuracyDecrease}</p>
+        <p><strong>required_accuracy:</strong> ${monster.required_accuracy || 'N/A'}</p>
         ${renderDropsHtml(monster.drops, monster.name)}
-      `;
+      ;
       div.insertBefore(img, div.children[1]);
       container.appendChild(div);
       attachToggleDropsListener(monster.name);
@@ -250,13 +238,13 @@
       div.classList.add('result-item');
       const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
 
-      div.innerHTML = `
+      div.innerHTML = 
         <h3>아이템: ${escapeHtml(item)}</h3>
         <p><strong>Dropped By:</strong></p>
         <ul>
-          ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
+          ${monsters.map(m => <li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>).join('')}
         </ul>
-      `;
+      ;
       div.insertBefore(img, div.children[1]);
       container.appendChild(div);
     }
@@ -265,19 +253,19 @@
   function renderDropsHtml(drops, monsterName) {
     if (!drops || drops.length === 0) return '';
     const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
-    return `
+    return 
       <p><strong>Drops:</strong></p>
       <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
       <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
-        ${drops.map(drop => `<div class="drop-item"><span>${escapeHtml(drop)}</span></div>`).join('')}
+        ${drops.map(drop => <div class="drop-item"><span>${escapeHtml(drop)}</span></div>).join('')}
       </div>
-    `;
+    ;
   }
 
   function attachToggleDropsListener(monsterName) {
     const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
-    const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${safeName}"]`);
-    const dropsDiv = document.querySelector(`.drops-list[data-toggle-id="${safeName}"]`);
+    const btn = document.querySelector(.toggle-drops-btn[data-toggle-id="${safeName}"]);
+    const dropsDiv = document.querySelector(.drops-list[data-toggle-id="${safeName}"]);
     if (btn && dropsDiv) {
       btn.addEventListener('click', () => {
         const isVisible = dropsDiv.style.display === 'block';
