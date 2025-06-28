@@ -100,56 +100,58 @@
   </style>
 </head>
 <body>
-
 <div class="container">
   <button class="back-button" id="backButton">뒤로가기</button>
   <h1>몬스터 및 아이템 검색</h1>
-
   <div style="margin-bottom: 15px;">
     <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 여러개 구분 가능)">
     <button id="monsterSearchBtn">검색</button>
   </div>
-
   <div style="margin-bottom: 20px;">
     <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 여러개 구분 가능)">
     <button id="itemSearchBtn">검색</button>
     <button id="darkModeToggle">🌙 다크 모드</button>
   </div>
-
   <div id="results"></div>
 </div>
-
 <script>
-  let monsterData = [], bossData = [];
+  let monsterData = [];
+  let bossData = [];
+
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
 
-  function getMonsterImage(name) {
-    const img = document.createElement('img');
-    img.alt = name;
-    img.src = monsterImagePath + encodeURIComponent(name) + '.gif';
-    img.onerror = () => {
-      img.src = monsterImagePath + encodeURIComponent(name) + '.png';
-    };
-    return img;
+  function sanitizeItemName(name) {
+    if (/scroll/i.test(name) && /\d+%/.test(name)) {
+      const percent = name.match(/\d+%/)[0].replace('%', '');
+      return 'scroll' + percent;
+    }
+    return name.replace(/\s\(M\)|\s\(F\)/gi, '')
+               .replace(/[^a-zA-Z0-9]/g, '_');
   }
 
-  function getItemImage(name) {
+  function getImageElement(path, name, isItem = false) {
     const img = document.createElement('img');
     img.alt = name;
-    const normalized = name
-      .replace(/\s*\([^\)]*\)/g, '')
-      .replace(/[^\w]/g, '_')
-      .replace(/_+/g, '_')
-      .replace(/^_+|_+$/g, '');
-    const base = normalized;
-    const attempts = [base + '.png', base + '.gif'];
-    let index = 0;
-    img.src = itemImagePath + attempts[index];
-    img.onerror = () => {
-      index++;
-      if (index < attempts.length) img.src = itemImagePath + attempts[index];
-    };
+
+    if (!isItem) {
+      img.src = path + encodeURIComponent(name) + '.gif';
+      img.onerror = function () {
+        img.onerror = function () {
+          img.src = path + encodeURIComponent(name) + '.png';
+        };
+        img.src = path + name.replace(/ /g, '_') + '.gif';
+      };
+    } else {
+      const sanitized = sanitizeItemName(name);
+      img.src = path + sanitized + '.png';
+      img.onerror = function () {
+        img.onerror = function () {
+          img.src = path + sanitized + '.gif';
+        };
+        img.src = path + encodeURIComponent(name) + '.png';
+      };
+    }
     return img;
   }
 
@@ -167,110 +169,149 @@
   }
 
   function searchMonsters() {
-    const terms = document.getElementById('monsterSearchInput').value.toLowerCase().split(',').map(t => t.trim()).filter(Boolean);
-    if (!terms.length) return alert("검색어를 입력하세요.");
-    const results = [...monsterData, ...bossData].filter(m => terms.some(term => m.name.toLowerCase().includes(term)));
-    renderMonsters(results);
+    const query = document.getElementById('monsterSearchInput').value.toLowerCase();
+    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
+    if (terms.length === 0) return alert("검색어를 입력하세요.");
+
+    const results = [];
+    terms.forEach(term => {
+      monsterData.forEach(monster => {
+        if (monster.name.toLowerCase().includes(term)) results.push(monster);
+      });
+      bossData.forEach(boss => {
+        if (boss.name.toLowerCase().includes(term)) results.push(boss);
+      });
+    });
+
+    renderMonsterResults(results);
   }
 
   function searchItems() {
-    const terms = document.getElementById('itemSearchInput').value.toLowerCase().split(',').map(t => t.trim()).filter(Boolean);
-    if (!terms.length) return alert("검색어를 입력하세요.");
-    const resultMap = {};
-    [...monsterData, ...bossData].forEach(m => {
-      m.drops?.forEach(drop => {
-        if (terms.some(term => drop.toLowerCase().includes(term))) {
-          if (!resultMap[drop]) resultMap[drop] = [];
-          resultMap[drop].push(m);
+    const query = document.getElementById('itemSearchInput').value.toLowerCase();
+    const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
+    if (terms.length === 0) return alert("검색어를 입력하세요.");
+
+    const results = {};
+    terms.forEach(term => {
+      [...monsterData, ...bossData].forEach(entity => {
+        if (entity.drops) {
+          entity.drops.forEach(drop => {
+            if (drop.toLowerCase().includes(term)) {
+              if (!results[drop]) results[drop] = [];
+              results[drop].push(entity);
+            }
+          });
         }
       });
     });
-    renderItems(resultMap);
+
+    renderItemResults(results);
   }
 
-  function renderMonsters(monsters) {
-    const c = document.getElementById('results');
-    c.innerHTML = monsters.length ? '' : '<p>검색 결과가 없습니다.</p>';
-    monsters.forEach(m => {
-      const d = document.createElement('div');
-      d.className = 'result-item';
-      d.innerHTML = `
-        <h3>${escapeHtml(m.name)}</h3>
-        <p><strong>Level:</strong> ${m.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${m.hp || 'N/A'}</p>
-        <p><strong>Region:</strong> ${m.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${m.exp || 'N/A'}</p>
-        ${renderDropList(m.drops, m.name)}
+  function renderMonsterResults(results) {
+    const container = document.getElementById('results');
+    container.innerHTML = results.length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
+
+    results.forEach(monster => {
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+
+      const img = getImageElement(monsterImagePath, monster.name);
+
+      div.innerHTML = `
+        <h3>${escapeHtml(monster.name)}</h3>
+        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        ${renderDropsHtml(monster.drops, monster.name)}
       `;
-      d.insertBefore(getMonsterImage(m.name), d.children[1]);
-      c.appendChild(d);
-      attachDropToggle(m.name);
+      div.insertBefore(img, div.children[1]);
+      container.appendChild(div);
+      attachToggleDropsListener(monster.name);
     });
   }
 
-  function renderItems(results) {
-    const c = document.getElementById('results');
-    c.innerHTML = Object.keys(results).length ? '' : '<p>검색 결과가 없습니다.</p>';
+  function renderItemResults(results) {
+    const container = document.getElementById('results');
+    container.innerHTML = Object.keys(results).length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
+
     for (const [item, monsters] of Object.entries(results)) {
-      const d = document.createElement('div');
-      d.className = 'result-item';
-      d.innerHTML = `
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+
+      const img = getImageElement(itemImagePath, item, true);
+
+      div.innerHTML = `
         <h3>아이템: ${escapeHtml(item)}</h3>
         <p><strong>Dropped By:</strong></p>
-        <ul>${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}</ul>
+        <ul>
+          ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
+        </ul>
       `;
-      d.insertBefore(getItemImage(item), d.children[1]);
-      c.appendChild(d);
+      div.insertBefore(img, div.children[1]);
+      container.appendChild(div);
     }
   }
 
-  function renderDropList(drops, monsterName) {
-    if (!drops?.length) return '';
-    const id = monsterName.replace(/[^a-z0-9]/gi, '_');
+  function renderDropsHtml(drops, monsterName) {
+    if (!drops || drops.length === 0) return '';
+    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
     return `
       <p><strong>Drops:</strong></p>
-      <button class="toggle-drops-btn" data-toggle-id="${id}">Show Drops</button>
-      <div class="drops-list" data-toggle-id="${id}" style="display:none;">
+      <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
+      <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
         ${drops.map(drop => `<div class="drop-item"><span>${escapeHtml(drop)}</span></div>`).join('')}
       </div>
     `;
   }
 
-  function attachDropToggle(monsterName) {
-    const id = monsterName.replace(/[^a-z0-9]/gi, '_');
-    const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${id}"]`);
-    const div = document.querySelector(`.drops-list[data-toggle-id="${id}"]`);
-    if (!btn || !div) return;
-    btn.addEventListener('click', () => {
-      const show = div.style.display !== 'block';
-      div.style.display = show ? 'block' : 'none';
-      btn.textContent = show ? 'Hide Drops' : 'Show Drops';
-      if (!div.querySelector('img')) {
-        div.querySelectorAll('.drop-item').forEach(d => {
-          const name = d.innerText.trim();
-          d.prepend(getItemImage(name));
-        });
-      }
-    });
+  function attachToggleDropsListener(monsterName) {
+    const safeName = monsterName.replace(/[^a-z0-9]/gi, '_');
+    const btn = document.querySelector(`.toggle-drops-btn[data-toggle-id="${safeName}"]`);
+    const dropsDiv = document.querySelector(`.drops-list[data-toggle-id="${safeName}"]`);
+    if (btn && dropsDiv) {
+      btn.addEventListener('click', () => {
+        const isVisible = dropsDiv.style.display === 'block';
+        dropsDiv.style.display = isVisible ? 'none' : 'block';
+        btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+
+        if (!dropsDiv.querySelector('img')) {
+          const dropItems = dropsDiv.querySelectorAll('.drop-item');
+          dropItems.forEach(div => {
+            const name = div.innerText.trim();
+            const img = getImageElement(itemImagePath, name, true);
+            div.prepend(img);
+          });
+        }
+      });
+    }
   }
 
   function escapeHtml(text) {
-    return text?.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]) || '';
+    if (!text) return '';
+    return text.replace(/[&<>"']|'/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[m]);
   }
 
   function toggleDarkMode() {
     const body = document.body;
     const btn = document.getElementById('darkModeToggle');
-    const isDark = body.classList.toggle('dark-mode');
+    body.classList.toggle('dark-mode');
+    const isDark = body.classList.contains('dark-mode');
     btn.textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
     localStorage.setItem('darkMode', isDark);
   }
 
-  document.getElementById('backButton').onclick = () => history.back();
-  document.getElementById('monsterSearchBtn').onclick = searchMonsters;
-  document.getElementById('itemSearchBtn').onclick = searchItems;
-  document.getElementById('darkModeToggle').onclick = toggleDarkMode;
-  if (localStorage.getItem('darkMode') === 'true') toggleDarkMode();
+  document.getElementById('backButton').addEventListener('click', () => history.back());
+  document.getElementById('monsterSearchBtn').addEventListener('click', searchMonsters);
+  document.getElementById('itemSearchBtn').addEventListener('click', searchItems);
+  document.getElementById('darkModeToggle').addEventListener('click', toggleDarkMode);
+
+  if (localStorage.getItem('darkMode') === 'true') {
+    document.body.classList.add('dark-mode');
+    document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
+  }
+
   loadData();
 </script>
 </body>
