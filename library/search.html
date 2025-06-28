@@ -121,6 +121,10 @@
   const monsterImagePath = "images/monsters/";
   const itemImagePath = "images/items/";
 
+  function sanitizeMonsterName(name) {
+    return name.replace(/ /g, '_');
+  }
+
   function sanitizeItemName(name) {
     if (/scroll/i.test(name) && /\d+%/.test(name)) {
       const percent = name.match(/\d+%/)[0].replace('%', '');
@@ -134,13 +138,13 @@
     img.alt = name;
 
     if (!isItem) {
-      const fallback = name.replace(/ /g, '_');
-      img.src = path + name + '.gif';
+      const fallback = sanitizeMonsterName(name);
+      img.src = path + fallback + '.gif';
       img.onerror = function () {
         img.onerror = function () {
           img.src = path + fallback + '.png';
         };
-        img.src = path + fallback + '.gif';
+        img.src = path + encodeURIComponent(name) + '.gif';
       };
     } else {
       const sanitized = sanitizeItemName(name);
@@ -216,7 +220,7 @@
       const div = document.createElement('div');
       div.classList.add('result-item');
 
-      const img = getImageElement(monsterImagePath, monster.name);
+      const img = getImageElement(monsterImagePath, monster.name, false);
 
       div.innerHTML = `
         <h3>${escapeHtml(monster.name)}</h3>
