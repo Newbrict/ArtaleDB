@@ -14,6 +14,37 @@
       font-family: Arial, sans-serif;
     }
 
+    .navbar {
+      background-color: #4CAF50;
+      color: white;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .language-switch .lang-button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .language-switch .lang-button:hover {
+      background-color: white;
+      color: #4CAF50;
+    }
+
     .hero {
       background-color: #4CAF50;
       color: white;
@@ -134,12 +165,6 @@
     .footer strong {
       font-weight: bold;
     }
-
-    .logo {
-      padding: 20px;
-      font-size: 24px;
-      font-weight: bold;
-    }
   </style>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2214201539994248" crossorigin="anonymous"></script>
 </head>
@@ -148,6 +173,9 @@
   <!-- Header -->
   <header class="navbar">
     <div class="logo">아르테일 데이터베이스</div>
+    <div class="language-switch">
+      <a href="/en/index.html" class="lang-button">English</a>
+    </div>
   </header>
 
   <!-- Hero Section -->
