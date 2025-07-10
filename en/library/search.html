@@ -124,13 +124,12 @@
   </div>
   <script>
     let monsterData = [], bossData = [];
-    const monsterImagePath = "images/monsters/";
+    const monsterImagePath = "library/images/monsters/";
     const itemImagePath = "images/items/";
 
     const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
-
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
 
     const getItemImageName = name => {
@@ -141,20 +140,22 @@
       return sanitizeName(name);
     };
 
-   const getImageElement = (path, name, isItem = false) => {
-  const img = document.createElement('img');
-  img.alt = name;
-  const filename = isItem ? getItemImageName(name) : sanitizeName(stripGender(name));
-  const pngPath = path + filename + '.png';
-  const gifPath = path + filename + '.gif';
+    const getImageElement = (path, name, isItem = false) => {
+      const img = document.createElement('img');
+      img.alt = name;
+      const filename = isItem
+        ? getItemImageName(name)
+        : stripGender(name).replace(/\s+/g, '_');
+      const pngPath = path + filename + '.png';
+      const gifPath = path + filename + '.gif';
 
-  img.onerror = () => {
-    img.onerror = null;  // 무한 루프 방지
-    img.src = gifPath;
-  };
-  img.src = pngPath;
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = gifPath;
+      };
+      img.src = pngPath;
 
-  return img;
+      return img;
     };
 
     const highlightKeyword = (text, keyword) => {
@@ -237,11 +238,11 @@
     function showMonsterDetail(monster) {
       const details = document.getElementById('details');
       const dropsId = `drop-list-${sanitizeName(monster.name)}`;
-      const imgSrc = `${monsterImagePath + monster.name}.png`;
-      const fallbackImgSrc = `${monsterImagePath + monster.name}.gif`;
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
+        <img src="${monsterImagePath + stripGender(monster.name).replace(/\s+/g, '_')}.png" 
+             onerror="this.onerror=null;this.src='${monsterImagePath + stripGender(monster.name).replace(/\s+/g, '_')}.gif';" 
+             alt="${escapeHtml(monster.name)}">
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
@@ -269,42 +270,41 @@
 
     function showItemDetail(item, monsters) {
       const details = document.getElementById('details');
-        details.innerHTML = '';
-        details.appendChild(getImageElement(itemImagePath, item, true));
+      details.innerHTML = '';
+      details.appendChild(getImageElement(itemImagePath, item, true));
 
       const title = document.createElement('h2');
-        title.textContent = item;
-        details.appendChild(title);
+      title.textContent = item;
+      details.appendChild(title);
 
       const sub = document.createElement('div');
-        sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
-  
+      sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
+
       const ul = document.createElement('ul');
-        monsters.forEach(m => {
-      const li = document.createElement('li');
-    
-      const img = getImageElement(monsterImagePath, m.name);
-          img.style.width = '30px';
-          img.style.height = 'auto';
-          img.style.verticalAlign = 'middle';
-          img.style.marginRight = '8px';
+      monsters.forEach(m => {
+        const li = document.createElement('li');
+        const img = getImageElement(monsterImagePath, m.name);
+        img.style.width = '30px';
+        img.style.height = 'auto';
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
 
-      const link = document.createElement('a');
-          link.href = '#';
-          link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
-          link.addEventListener('click', e => {
-              e.preventDefault();
-            document.getElementById('searchInput').value = m.name;
-              unifiedSearch(); // 자동 검색 실행
-    });
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          document.getElementById('searchInput').value = m.name;
+          unifiedSearch();
+        });
 
-    li.appendChild(img);
-    li.appendChild(link);
-    ul.appendChild(li);
-  });
+        li.appendChild(img);
+        li.appendChild(link);
+        ul.appendChild(li);
+      });
 
-  sub.appendChild(ul);
-  details.appendChild(sub);
+      sub.appendChild(ul);
+      details.appendChild(sub);
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
