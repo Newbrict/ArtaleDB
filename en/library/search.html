@@ -122,12 +122,19 @@
       return name.replace(/[^a-zA-Z0-9]/g, '_');
     }
 
+    function sanitizeMonsterName(name) {
+      return name.replace(/[^a-zA-Z0-9]/g, '_');
+    }
+
     function getImageElement(path, name, fallback = null) {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = fallback || name;
+      const filename = fallback || name.replace(/[^a-zA-Z0-9]/g, '_');
       img.src = path + filename + '.png';
-      img.onerror = () => img.src = path + filename + '.gif';
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = path + filename + '.gif';
+      };
       return img;
     }
 
@@ -137,155 +144,99 @@
     }
 
     async function loadData() {
-      const [monsterRes, bossRes] = await Promise.all([
+      const [monsterResp, bossResp] = await Promise.all([
         fetch('data/monster/monster_data.json'),
         fetch('data/monster/boss_data.json')
       ]);
-      monsterData = await monsterRes.json();
-      bossData = await bossRes.json();
+      monsterData = await monsterResp.json();
+      bossData = await bossResp.json();
     }
 
     function unifiedSearch() {
       const keyword = document.getElementById('searchInput').value.trim();
-      const terms = keyword.toLowerCase().split(',').map(t => t.trim()).filter(Boolean);
+      if (!keyword) {
+        alert("Please enter a search term.");
+        return;
+      }
+      const lowerKeyword = keyword.toLowerCase();
+      const terms = lowerKeyword.split(',').map(t => t.trim()).filter(t => t);
+
       const resultsContainer = document.getElementById('results');
-      const details = document.getElementById('details');
-      resultsContainer.innerHTML = '';
-      details.innerHTML = '';
+      resultsContainer.innerHTML = "";
 
-      const monsters = [...monsterData, ...bossData].filter(m => terms.some(t => m.name.toLowerCase().includes(t)));
-      const items = {};
-      [...monsterData, ...bossData].forEach(m => m.drops?.forEach(drop => {
-        if (terms.some(t => drop.toLowerCase().includes(t))) {
-          if (!items[drop]) items[drop] = [];
-          items[drop].push(m);
-        }
-      }));
+      const monsterMatches = [...monsterData, ...bossData].filter(m =>
+        terms.some(term => m.name.toLowerCase().includes(term))
+      );
 
-      if (monsters.length > 0) {
-        resultsContainer.innerHTML += `<h2>🧟 Monsters (${monsters.length})</h2>`;
-        monsters.forEach(monster => {
+      const itemMatches = {};
+      [...monsterData, ...bossData].forEach(m => {
+        if (!m.drops) return;
+        m.drops.forEach(drop => {
+          if (terms.some(term => drop.toLowerCase().includes(term))) {
+            if (!itemMatches[drop]) itemMatches[drop] = [];
+            itemMatches[drop].push(m);
+          }
+        });
+      });
+
+      if (monsterMatches.length > 0) {
+        const title = document.createElement('h2');
+        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
+        resultsContainer.appendChild(title);
+
+        monsterMatches.forEach(monster => {
           const div = document.createElement('div');
           div.classList.add('result-item');
-          const img = getImageElement(monsterImagePath, monster.name);
-          const link = document.createElement('a');
-          link.href = '#';
-          link.textContent = monster.name;
-          link.dataset.type = 'monster';
-          link.dataset.name = monster.name;
-          link.className = 'data-link';
+
+          const img = getImageElement(monsterImagePath, monster.name, sanitizeMonsterName(monster.name));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(monster.name, keyword);
+
           div.appendChild(img);
-          div.appendChild(link);
+          div.appendChild(span);
           resultsContainer.appendChild(div);
         });
       }
 
-      const itemKeys = Object.keys(items);
+      const itemKeys = Object.keys(itemMatches);
       if (itemKeys.length > 0) {
-        resultsContainer.innerHTML += `<h2>🎁 Items (${itemKeys.length})</h2>`;
+        const title = document.createElement('h2');
+        title.textContent = `🎁 Items (${itemKeys.length})`;
+        resultsContainer.appendChild(title);
+
         itemKeys.forEach(item => {
           const div = document.createElement('div');
           div.classList.add('result-item');
+
           const img = getImageElement(itemImagePath, item, sanitizeItemName(item));
-          const link = document.createElement('a');
-          link.href = '#';
-          link.textContent = item;
-          link.dataset.type = 'item';
-          link.dataset.name = item;
-          link.className = 'data-link';
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(item, keyword);
+
           div.appendChild(img);
-          div.appendChild(link);
+          div.appendChild(span);
           resultsContainer.appendChild(div);
         });
       }
 
-      if (monsters.length === 0 && itemKeys.length === 0) {
-        resultsContainer.innerHTML = '<p>No results found.</p>';
+      if (monsterMatches.length === 0 && itemKeys.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
       }
     }
-
-    function renderMonsterDetails(monster) {
-      const details = document.getElementById('details');
-      const img = getImageElement(monsterImagePath, monster.name);
-      const dropId = 'drop-' + sanitizeItemName(monster.name);
-
-      details.innerHTML = `
-        <h2>${monster.name}</h2>
-        <img src="${img.src}" alt="${monster.name}">
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined && monster.required_accuracy ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
-        <p><strong>Drops:</strong></p>
-        <button onclick="toggleDrops('${dropId}')">Show Drops</button>
-        <div id="${dropId}" style="display:none;">
-          ${(monster.drops || []).map(drop => {
-            const file = sanitizeItemName(drop);
-            return `<div class='drop-item'><img src='${itemImagePath + file}.png' onerror="this.onerror=null;this.src='${itemImagePath + file}.gif';"><span>${drop}</span></div>`;
-          }).join('') || '<p>None</p>'}
-        </div>
-      `;
-    }
-
-    function renderItemDetails(itemName) {
-      const details = document.getElementById('details');
-      const file = sanitizeItemName(itemName);
-      const monsters = [...monsterData, ...bossData].filter(m => m.drops?.includes(itemName));
-      const img = getImageElement(itemImagePath, itemName, file);
-
-      details.innerHTML = `
-        <h2>Item: ${itemName}</h2>
-        <img src="${img.src}" alt="${itemName}">
-        <p><strong>Dropped By:</strong></p>
-        <ul>
-          ${monsters.map(m => `<li>${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('') || '<li>None</li>'}
-        </ul>
-      `;
-    }
-
-    function toggleDrops(id) {
-      const el = document.getElementById(id);
-      const btn = el.previousElementSibling;
-      if (el.style.display === 'none') {
-        el.style.display = 'block';
-        btn.textContent = 'Hide Drops';
-      } else {
-        el.style.display = 'none';
-        btn.textContent = 'Show Drops';
-      }
-    }
-
-    document.addEventListener('click', function (e) {
-      if (e.target.classList.contains('data-link')) {
-        e.preventDefault();
-        const type = e.target.dataset.type;
-        const name = e.target.dataset.name;
-        if (type === 'monster') {
-          const found = [...monsterData, ...bossData].find(m => m.name === name);
-          if (found) renderMonsterDetails(found);
-        } else if (type === 'item') {
-          renderItemDetails(name);
-        }
-      }
-    });
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', e => e.key === 'Enter' && unifiedSearch());
-
+    document.getElementById('searchInput').addEventListener('keydown', (e) => {
+      if (e.key === 'Enter') unifiedSearch();
+    });
     document.getElementById('darkModeToggle').addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       const isDark = document.body.classList.contains('dark-mode');
       localStorage.setItem('darkMode', isDark);
       document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     });
-
     if (localStorage.getItem('darkMode') === 'true') {
       document.body.classList.add('dark-mode');
       document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
     }
-
     loadData();
   </script>
 </body>
