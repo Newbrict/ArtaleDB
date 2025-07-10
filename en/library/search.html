@@ -217,10 +217,10 @@
   <h3>${escapeHtml(monster.name)}</h3>
       <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
       <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-      <p><strong>modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+      <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
       <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
       <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-      <p><strong>required_accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
+      <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
         monster.accuracy_level_decrease !== undefined && monster.required_accuracy
       ? `(1 level decrease +${monster.accuracy_level_decrease})`
       : ''
