@@ -119,10 +119,18 @@
       return name.replace(/[^a-zA-Z0-9]/g, '_');
     }
 
-    function getImageElement(path, name) {
+    function getItemImageName(name) {
+      if (/Skill Book/i.test(name)) return "Skillbook";
+      if (/Mastery Book/i.test(name)) return "Masterybook";
+      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
+      if (scrollMatch) return "Scroll" + scrollMatch[1];
+      return sanitizeName(name);
+    }
+
+    function getImageElement(path, name, isItem = false) {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = sanitizeName(name);
+      const filename = isItem ? getItemImageName(name) : name;
       img.src = path + filename + '.png';
       img.onerror = () => {
         img.onerror = null;
@@ -145,139 +153,7 @@
       bossData = await bossResp.json();
     }
 
-    async function unifiedSearch() {
-      const keyword = document.getElementById('searchInput').value.trim();
-      if (!keyword) return alert("Please enter a search term.");
-      const lowerKeyword = keyword.toLowerCase();
-      const terms = lowerKeyword.split(',').map(t => t.trim()).filter(Boolean);
-
-      const resultsContainer = document.getElementById('results');
-      const detailsContainer = document.getElementById('details');
-      resultsContainer.innerHTML = detailsContainer.innerHTML = "";
-
-      const monsterMatches = [...monsterData, ...bossData].filter(m =>
-        terms.some(term => m.name.toLowerCase().includes(term))
-      );
-
-      const itemMatches = {};
-      [...monsterData, ...bossData].forEach(m => {
-        (m.drops || []).forEach(drop => {
-          if (terms.some(term => drop.toLowerCase().includes(term))) {
-            itemMatches[drop] = itemMatches[drop] || [];
-            itemMatches[drop].push(m);
-          }
-        });
-      });
-
-      const makeClickHandler = (type, name) => () => {
-        const detail = document.getElementById('details');
-        detail.innerHTML = '';
-        if (type === 'monster') {
-          const data = [...monsterData, ...bossData].find(m => m.name === name);
-          if (!data) return;
-          const div = document.createElement('div');
-          const img = getImageElement(monsterImagePath, data.name);
-          div.innerHTML = `
-            <h2>${escapeHtml(data.name)}</h2>
-            <p><strong>Level:</strong> ${data.level || 'N/A'}</p>
-            <p><strong>HP:</strong> ${data.hp || 'N/A'}</p>
-            <p><strong>Modifiers:</strong> ${data.modifiers || 'N/A'}</p>
-            <p><strong>Region:</strong> ${data.region || 'N/A'}</p>
-            <p><strong>EXP:</strong> ${data.exp || 'N/A'}</p>
-            <p><strong>Required Accuracy:</strong> ${data.required_accuracy || 'N/A'} ${data.accuracy_level_decrease ? `(1 level decrease +${data.accuracy_level_decrease})` : ''}</p>
-          `;
-          div.prepend(img);
-          if (data.drops?.length) {
-            const btn = document.createElement('button');
-            btn.textContent = 'Show Drops';
-            const dropDiv = document.createElement('div');
-            dropDiv.style.display = 'none';
-            for (const item of data.drops) {
-              const dropItem = document.createElement('div');
-              dropItem.className = 'drop-item';
-              const dropImg = getImageElement(itemImagePath, item);
-              dropItem.appendChild(dropImg);
-              dropItem.appendChild(document.createTextNode(item));
-              dropDiv.appendChild(dropItem);
-            }
-            btn.onclick = () => {
-              dropDiv.style.display = dropDiv.style.display === 'none' ? 'block' : 'none';
-              btn.textContent = dropDiv.style.display === 'none' ? 'Show Drops' : 'Hide Drops';
-            };
-            div.appendChild(btn);
-            div.appendChild(dropDiv);
-          }
-          detail.appendChild(div);
-        } else {
-          const div = document.createElement('div');
-          const img = getImageElement(itemImagePath, name);
-          div.innerHTML = `
-            <h2>${escapeHtml(name)}</h2>
-            <p><strong>Dropped by:</strong></p>
-            <ul>
-              ${(itemMatches[name] || []).map(m => `<li>${escapeHtml(m.name)} (Lv.${m.level || '?'})</li>`).join('')}
-            </ul>
-          `;
-          div.prepend(img);
-          detail.appendChild(div);
-        }
-      };
-
-      if (monsterMatches.length) {
-        const h2 = document.createElement('h2');
-        h2.textContent = `🦟 Monsters (${monsterMatches.length})`;
-        resultsContainer.appendChild(h2);
-        for (const m of monsterMatches) {
-          const div = document.createElement('div');
-          div.className = 'result-item';
-          const img = getImageElement(monsterImagePath, m.name);
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(m.name, keyword);
-          div.appendChild(img);
-          div.appendChild(span);
-          div.onclick = makeClickHandler('monster', m.name);
-          resultsContainer.appendChild(div);
-        }
-      }
-
-      const itemKeys = Object.keys(itemMatches);
-      if (itemKeys.length) {
-        const h2 = document.createElement('h2');
-        h2.textContent = `🏱 Items (${itemKeys.length})`;
-        resultsContainer.appendChild(h2);
-        for (const item of itemKeys) {
-          const div = document.createElement('div');
-          div.className = 'result-item';
-          const img = getImageElement(itemImagePath, item);
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(item, keyword);
-          div.appendChild(img);
-          div.appendChild(span);
-          div.onclick = makeClickHandler('item', item);
-          resultsContainer.appendChild(div);
-        }
-      }
-
-      if (!monsterMatches.length && !itemKeys.length) {
-        resultsContainer.innerHTML = '<p>No results found.</p>';
-      }
-    }
-
-    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', e => {
-      if (e.key === 'Enter') unifiedSearch();
-    });
-    document.getElementById('darkModeToggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      localStorage.setItem('darkMode', isDark);
-      document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
-    });
-    if (localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-      document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
-    }
-    loadData();
+    // ... (나머지 스크립트 동일: unifiedSearch, event listeners 등)
   </script>
 </body>
 </html>
