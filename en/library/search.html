@@ -153,7 +153,133 @@
       bossData = await bossResp.json();
     }
 
-    // ... (나머지 스크립트 동일: unifiedSearch, event listeners 등)
+    function unifiedSearch() {
+  const keyword = document.getElementById('searchInput').value.trim();
+  if (!keyword) {
+    alert("Please enter a search term.");
+    return;
+  }
+  const lowerKeyword = keyword.toLowerCase();
+  const terms = lowerKeyword.split(',').map(t => t.trim()).filter(t => t);
+
+  const resultsContainer = document.getElementById('results');
+  resultsContainer.innerHTML = "";
+  document.getElementById('details').innerHTML = "";
+
+  const monsterMatches = [...monsterData, ...bossData].filter(m =>
+    terms.some(term => m.name.toLowerCase().includes(term))
+  );
+
+  const itemMatches = {};
+  [...monsterData, ...bossData].forEach(m => {
+    if (!m.drops) return;
+    m.drops.forEach(drop => {
+      if (terms.some(term => drop.toLowerCase().includes(term))) {
+        if (!itemMatches[drop]) itemMatches[drop] = [];
+        itemMatches[drop].push(m);
+      }
+    });
+  });
+
+  if (monsterMatches.length > 0) {
+    const title = document.createElement('h2');
+    title.textContent = `🧟 Monsters (${monsterMatches.length})`;
+    resultsContainer.appendChild(title);
+
+    monsterMatches.forEach(monster => {
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+      const img = getImageElement(monsterImagePath, monster.name);
+      const span = document.createElement('span');
+      span.innerHTML = highlightKeyword(monster.name, keyword);
+      div.appendChild(img);
+      div.appendChild(span);
+      div.addEventListener('click', () => showMonsterDetail(monster));
+      resultsContainer.appendChild(div);
+    });
+  }
+
+  const itemKeys = Object.keys(itemMatches);
+  if (itemKeys.length > 0) {
+    const title = document.createElement('h2');
+    title.textContent = `🎁 Items (${itemKeys.length})`;
+    resultsContainer.appendChild(title);
+
+    itemKeys.forEach(item => {
+      const div = document.createElement('div');
+      div.classList.add('result-item');
+      const img = getImageElement(itemImagePath, item, true);
+      const span = document.createElement('span');
+      span.innerHTML = highlightKeyword(item, keyword);
+      div.appendChild(img);
+      div.appendChild(span);
+      div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+      resultsContainer.appendChild(div);
+    });
+  }
+
+  if (monsterMatches.length === 0 && itemKeys.length === 0) {
+    resultsContainer.innerHTML = "<p>No results found.</p>";
+  }
+}
+
+function showMonsterDetail(monster) {
+  const details = document.getElementById('details');
+  details.innerHTML = `
+    <h2>${escapeHtml(monster.name)}</h2>
+    <img src="${monsterImagePath + monster.name}.png" onerror="this.onerror=null;this.src='${monsterImagePath + monster.name}.gif';" alt="${escapeHtml(monster.name)}">
+    <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+    <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+    <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+    <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+    <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+    <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
+      monster.accuracy_level_decrease !== undefined && monster.required_accuracy
+        ? `(1 level decrease +${monster.accuracy_level_decrease})`
+        : ''
+    }</p>
+    <div><strong>Drops:</strong></div>
+    <ul>
+      ${(monster.drops || []).map(drop => `<li>${escapeHtml(drop)}</li>`).join('')}
+    </ul>
+  `;
+}
+
+function showItemDetail(item, monsters) {
+  const details = document.getElementById('details');
+  const img = getImageElement(itemImagePath, item, true);
+  details.innerHTML = '';
+  details.appendChild(img);
+  const title = document.createElement('h2');
+  title.textContent = item;
+  details.appendChild(title);
+
+  const sub = document.createElement('div');
+  sub.innerHTML = `<p><strong>Dropped by:</strong></p><ul>${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}</ul>`;
+  details.appendChild(sub);
+}
+
+document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+
+document.getElementById('searchInput').addEventListener('keydown', (e) => {
+  if (e.key === 'Enter') {
+    unifiedSearch();
+  }
+});
+
+document.getElementById('darkModeToggle').addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  const isDark = document.body.classList.contains('dark-mode');
+  localStorage.setItem('darkMode', isDark);
+  document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+});
+
+if (localStorage.getItem('darkMode') === 'true') {
+  document.body.classList.add('dark-mode');
+  document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
+}
+
+loadData();
   </script>
 </body>
 </html>
