@@ -1,0 +1,350 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+ul {
+    padding-left: 20px; /* Adds space between the bullet and text */
+    margin-bottom: 10px; /* Adds spacing below the list */
+}
+
+li {
+    margin-left: 10px; /* Moves the text further from the bullet */
+}
+
+.navbar {
+    background-color: #4CAF50; /* Green background color */
+    padding: 10px 20px; /* Padding around the navbar */
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    text-decoration: none;
+    color: white; /* Ensure links in the navbar are white */
+    margin-right: 15px; /* Space between links */
+}
+
+.navbar nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+/* Marketplace and Hero Button Styling */
+.hero-button,
+.marketplace-link {
+    text-decoration: none;
+    color: #ffffff; /* White text color */
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect for Both Buttons */
+.hero-button:hover,
+.marketplace-link:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #4CAF50; /* Green text color on hover */
+}
+
+.breadcrumb {
+    background-color: #ddd;
+    padding: 10px 20px; /* Add some padding to the breadcrumb */
+    border-radius: 8px; /* Round edges for consistency */
+    margin-bottom: 20px;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.breadcrumb span {
+    color: #888;
+}
+
+/* Main Container */
+.main-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    width: 100%; /* Ensure full width */
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+
+/* Search Form Styling */
+.search-form {
+    display: flex;
+    align-items: center; /* Vertically align input and button */
+    gap: 10px; /* Space between input and button */
+}
+
+#monsterSearchBar,
+#itemSearchBar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Set fixed height */
+    box-sizing: border-box; /* Ensures padding doesn't increase size */
+}
+
+.search-button {
+    padding: 0 15px; /* Add horizontal padding for a balanced look */
+    background-color: #4CAF50; /* Match the green header */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    height: 40px; /* Match height of input fields */
+    line-height: 40px; /* Vertically center text */
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/* Results Container */
+#results {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.no-results {
+    font-size: 18px;
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+/* Pagination */
+.pagination {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.pagination a:hover {
+    background-color: #45a049;
+}
+
+.pagination a:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.toggle-drops-btn {
+    margin-top: 10px;
+    padding: 8px 16px; /* Adds padding for a balanced size */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* Removes default border */
+    border-radius: 8px; /* Rounds the corners */
+    font-size: 14px; /* Slightly smaller text */
+    font-weight: bold; /* Bold text for visibility */
+    cursor: pointer; /* Pointer cursor on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth hover effect */
+}
+
+
+/* Style the drops list */
+.drops-list {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.drops-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.drops-list li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.drops-list li:last-child {
+    border-bottom: none;
+}
+
+/* When expanded, show the list */
+.drops-list.show {
+    display: block;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Space between the search bars */
+    margin-bottom: 20px;
+}
+
+.search-form {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+#monsterSearchBar, #itemSearchBar {
+    width: 80%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* For the collapsible drops */
+.drops-list {
+    display: none;
+}
+
+
+/* Hover and Active States */
+.toggle-drops-btn:hover {
+    background-color: #45a049; /* Slightly darker green on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+.toggle-drops-btn:active {
+    background-color: #388E3C; /* Even darker green when clicked */
+    transform: translateY(0); /* Reset the lift effect */
+}
+
+/* Hero Section */
+.hero {
+    background-color: #4CAF50;
+    color: white;
+    padding: 50px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-links {
+    margin-top: 20px; /* Add space above */
+    margin-bottom: 20px; /* Add space below */
+}
+
+
+
+footer {
+    background-color: #4CAF50; /* Match the hero section for consistency */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative; /* Ensure it doesn't overlap */
+    width: 100%; /* Full width */
+    margin-top: 40px; /* Space above footer */
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero, .breadcrumb, footer {
+    z-index: 10; /* Ensure they're above background elements */
+    position: relative; /* Required for z-index to apply */
+}
+
+.drops-list .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px; /* Space between rows and columns */
+}
+
+.drops-list .grid-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.drops-list .grid-item:last-child {
+    border-bottom: none; /* Remove border for the last row */
+}
+

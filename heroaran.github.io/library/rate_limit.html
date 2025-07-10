@@ -1,0 +1,29 @@
+<?html
+// Start session
+session_start();
+
+// Initialize request data if not set
+if (!isset($_SESSION['requests'])) {
+    $_SESSION['requests'] = [];
+}
+
+// Get current time
+$current_time = time();
+
+// Remove requests older than 10 seconds
+$_SESSION['requests'] = array_filter($_SESSION['requests'], function($timestamp) use ($current_time) {
+    return ($current_time - $timestamp) <= 3;
+});
+
+// Check if more than 10 requests have been made in the last 10 seconds
+if (count($_SESSION['requests']) >= 10) {
+    $error_message = "Too many requests! Please wait 3 seconds and try again.";
+    include 'rate_limit_display.html';  // Include display page for rate limit error
+    exit();  // Stop further code execution
+}
+
+// Add current request time to the session
+$_SESSION['requests'][] = $current_time;
+
+// If no error, continue with normal search functionality (you can add additional code here for a successful request)
+?>

@@ -1,0 +1,104 @@
+/* Dark Mode: General */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar */
+body.dark-mode .navbar {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Hero Section */
+body.dark-mode .hero {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+/* Breadcrumb */
+body.dark-mode .breadcrumb {
+    background-color: #2a2a2a;
+    color: #dddddd;
+}
+
+/* Containers */
+body.dark-mode .page-container,
+body.dark-mode .main-container,
+body.dark-mode .container,
+body.dark-mode .results-container,
+body.dark-mode .sidebar {
+    background-color: #1e1e1e;
+    color: #dddddd;
+    border: 1px solid #444444;
+}
+
+/* Result Items */
+body.dark-mode .result-item {
+    background-color: #1e1e1e;
+    border: 1px solid #444444;
+    color: #dddddd;
+}
+
+/* Tables */
+body.dark-mode .item-table th,
+body.dark-mode .item-table td {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-color: #444444;
+}
+
+/* Buttons */
+body.dark-mode button,
+body.dark-mode .search-button,
+body.dark-mode .toggle-drops-btn {
+    background-color: #4CAF50;
+    color: #ffffff;
+    border: none;
+}
+
+body.dark-mode button:hover,
+body.dark-mode .search-button:hover,
+body.dark-mode .toggle-drops-btn:hover {
+    background-color: #388E3C;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .item-table {
+    background-color: #1e1e1e; /* Dark background for the table */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+body.dark-mode .item-table th,
+body.dark-mode .item-table td {
+    background-color: #333333; /* Darker gray for cells */
+    color: #ffffff; /* White text */
+    border: 1px solid #444444; /* Subtle border for cells */
+    padding: 8px;
+    text-align: left;
+}
+
+body.dark-mode .item-table th {
+    background-color: #444444; /* Slightly darker for headers */
+    font-weight: bold;
+}
+
+body.dark-mode .item-card {
+    background-color: #1e1e1e; /* Dark gray for the card background */
+    color: #ffffff; /* White text */
+    border: 1px solid #444444; /* Subtle border */
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: none; /* Remove any box shadow for a clean look */
+}
+
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #66bb6a; /* Light green for headings */
+}

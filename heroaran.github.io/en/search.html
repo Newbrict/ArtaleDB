@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Monster & Item Search</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    body.dark-mode .container {
+      background: #1e1e1e;
+    }
+    input[type=text] {
+      width: 60%;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    body.dark-mode input[type=text] {
+      background: #333;
+      border: 1px solid #555;
+      color: #eee;
+    }
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #darkModeToggle {
+      background-color: #2196F3;
+      margin-left: 10px;
+    }
+    #darkModeToggle:hover {
+      background-color: #1976D2;
+    }
+    .result-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+    body.dark-mode .result-item {
+      border-color: #444;
+    }
+    .result-item img {
+      width: 50px;
+      height: auto;
+      margin-right: 15px;
+    }
+    mark {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 0 3px;
+    }
+    body.dark-mode mark {
+      background-color: #ffda6a;
+    }
+    .content-wrapper {
+      display: flex;
+      gap: 30px;
+    }
+    #results {
+      flex: 1;
+      max-width: 45%;
+    }
+    #details {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+    body.dark-mode #details {
+      border-color: #444;
+    }
+    .drop-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .drop-item img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🔍 Monster / Item Search</h1>
+    <div style="margin-bottom: 20px;">
+      <input type="text" id="searchInput" placeholder="Enter keyword(s) (e.g. snail)">
+      <button id="searchBtn">Search</button>
+      <button id="darkModeToggle">🌙 Dark Mode</button>
+    </div>
+    <div class="content-wrapper">
+      <div id="results"></div>
+      <div id="details"></div>
+    </div>
+  </div>
+  <script>
+    let monsterData = [], bossData = [];
+    const monsterImagePath = "images/monsters/";
+    const itemImagePath = "images/items/";
+
+    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
+    const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
+
+    const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
+
+    const getItemImageName = name => {
+      if (/Skill Book/i.test(name)) return "Skillbook";
+      if (/Mastery Book/i.test(name)) return "Masterybook";
+      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
+      if (scrollMatch) return "Scroll" + scrollMatch[1];
+      return sanitizeName(name);
+    };
+
+   const getImageElement = (path, name, isItem = false) => {
+  const img = document.createElement('img');
+  img.alt = name;
+  const filename = isItem ? getItemImageName(name) : sanitizeName(stripGender(name));
+  const pngPath = path + filename + '.png';
+  const gifPath = path + filename + '.gif';
+
+  img.onerror = () => {
+    img.onerror = null;  // 무한 루프 방지
+    img.src = gifPath;
+  };
+  img.src = pngPath;
+
+  return img;
+    };
+
+    const highlightKeyword = (text, keyword) => {
+      const regex = new RegExp(`(${keyword})`, 'gi');
+      return escapeHtml(text).replace(regex, '<mark>$1</mark>');
+    };
+
+    async function loadData() {
+      const [monsterResp, bossResp] = await Promise.all([
+        fetch('data/monster/monster_data.json'),
+        fetch('data/monster/boss_data.json')
+      ]);
+      monsterData = await monsterResp.json();
+      bossData = await bossResp.json();
+    }
+
+    function unifiedSearch() {
+      const keywordRaw = document.getElementById('searchInput').value.trim();
+      if (!keywordRaw) return alert("Please enter a search term.");
+
+      const terms = keywordRaw.toLowerCase().split(',').map(t => normalize(t.trim()));
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = "";
+      document.getElementById('details').innerHTML = "";
+
+      const monsterMatches = [...monsterData, ...bossData].filter(m =>
+        terms.some(term => normalize(m.name).includes(term))
+      );
+
+      const itemMatches = {};
+      [...monsterData, ...bossData].forEach(m => {
+        if (!m.drops) return;
+        m.drops.forEach(drop => {
+          const normDrop = normalize(drop);
+          if (terms.some(term => normDrop.includes(term))) {
+            if (!itemMatches[drop]) itemMatches[drop] = [];
+            itemMatches[drop].push(m);
+          }
+        });
+      });
+
+      if (monsterMatches.length > 0) {
+        const title = document.createElement('h2');
+        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
+        resultsContainer.appendChild(title);
+        monsterMatches.forEach(monster => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(monsterImagePath, monster.name));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(monster.name, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showMonsterDetail(monster));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      const itemKeys = Object.keys(itemMatches);
+      if (itemKeys.length > 0) {
+        const title = document.createElement('h2');
+        title.textContent = `🎁 Items (${itemKeys.length})`;
+        resultsContainer.appendChild(title);
+        itemKeys.forEach(item => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(itemImagePath, item, true));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(item, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      if (monsterMatches.length === 0 && itemKeys.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+      }
+    }
+
+    function showMonsterDetail(monster) {
+      const details = document.getElementById('details');
+      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+      const imgSrc = `${monsterImagePath + monster.name}.png`;
+      const fallbackImgSrc = `${monsterImagePath + monster.name}.gif`;
+      details.innerHTML = `
+        <h2>${escapeHtml(monster.name)}</h2>
+        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
+        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined && monster.required_accuracy ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
+        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+        <div id="${dropsId}" style="display:none; margin-top:10px;">
+          ${(monster.drops || []).map(drop => `
+            <div class="drop-item">
+              <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
+              <span>${escapeHtml(drop)}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function toggleDrops(id, btn) {
+      const el = document.getElementById(id);
+      const isVisible = el.style.display === 'block';
+      el.style.display = isVisible ? 'none' : 'block';
+      btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+    }
+
+    function showItemDetail(item, monsters) {
+      const details = document.getElementById('details');
+        details.innerHTML = '';
+        details.appendChild(getImageElement(itemImagePath, item, true));
+
+      const title = document.createElement('h2');
+        title.textContent = item;
+        details.appendChild(title);
+
+      const sub = document.createElement('div');
+        sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
+  
+      const ul = document.createElement('ul');
+        monsters.forEach(m => {
+      const li = document.createElement('li');
+    
+      const img = getImageElement(monsterImagePath, m.name);
+          img.style.width = '30px';
+          img.style.height = 'auto';
+          img.style.verticalAlign = 'middle';
+          img.style.marginRight = '8px';
+
+      const link = document.createElement('a');
+          link.href = '#';
+          link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
+          link.addEventListener('click', e => {
+              e.preventDefault();
+            document.getElementById('searchInput').value = m.name;
+              unifiedSearch(); // 자동 검색 실행
+    });
+
+    li.appendChild(img);
+    li.appendChild(link);
+    ul.appendChild(li);
+  });
+
+  sub.appendChild(ul);
+  details.appendChild(sub);
+    }
+
+    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+    document.getElementById('searchInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') unifiedSearch();
+    });
+
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
+    }
+
+    loadData();
+  </script>
+</body>
+</html>
