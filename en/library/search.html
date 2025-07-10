@@ -63,6 +63,7 @@
       align-items: center;
       border-bottom: 1px solid #ddd;
       padding: 15px 0;
+      cursor: pointer;
     }
     body.dark-mode .result-item {
       border-color: #444;
@@ -112,24 +113,16 @@
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) || '';
+    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
 
-    function sanitizeItemName(name) {
-      if (/Skill Book/i.test(name)) return "Skillbook";
-      if (/Mastery Book/i.test(name)) return "Masterybook";
-      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
-      if (scrollMatch) return "Scroll" + scrollMatch[1];
+    function sanitizeName(name) {
       return name.replace(/[^a-zA-Z0-9]/g, '_');
     }
 
-    function sanitizeMonsterName(name) {
-      return name.replace(/[^a-zA-Z0-9]/g, '_');
-    }
-
-    function getImageElement(path, name, fallback = null) {
+    function getImageElement(path, name) {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = fallback || name.replace(/[^a-zA-Z0-9]/g, '_');
+      const filename = sanitizeName(name);
       img.src = path + filename + '.png';
       img.onerror = () => {
         img.onerror = null;
@@ -154,15 +147,13 @@
 
     function unifiedSearch() {
       const keyword = document.getElementById('searchInput').value.trim();
-      if (!keyword) {
-        alert("Please enter a search term.");
-        return;
-      }
+      if (!keyword) return alert("Please enter a search term.");
       const lowerKeyword = keyword.toLowerCase();
-      const terms = lowerKeyword.split(',').map(t => t.trim()).filter(t => t);
+      const terms = lowerKeyword.split(',').map(t => t.trim()).filter(Boolean);
 
       const resultsContainer = document.getElementById('results');
-      resultsContainer.innerHTML = "";
+      const detailsContainer = document.getElementById('details');
+      resultsContainer.innerHTML = detailsContainer.innerHTML = "";
 
       const monsterMatches = [...monsterData, ...bossData].filter(m =>
         terms.some(term => m.name.toLowerCase().includes(term))
@@ -170,61 +161,105 @@
 
       const itemMatches = {};
       [...monsterData, ...bossData].forEach(m => {
-        if (!m.drops) return;
-        m.drops.forEach(drop => {
+        (m.drops || []).forEach(drop => {
           if (terms.some(term => drop.toLowerCase().includes(term))) {
-            if (!itemMatches[drop]) itemMatches[drop] = [];
+            itemMatches[drop] = itemMatches[drop] || [];
             itemMatches[drop].push(m);
           }
         });
       });
 
-      if (monsterMatches.length > 0) {
-        const title = document.createElement('h2');
-        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
-        resultsContainer.appendChild(title);
-
-        monsterMatches.forEach(monster => {
+      const makeClickHandler = (type, name) => () => {
+        const detail = document.getElementById('details');
+        detail.innerHTML = '';
+        if (type === 'monster') {
+          const data = [...monsterData, ...bossData].find(m => m.name === name);
+          if (!data) return;
           const div = document.createElement('div');
-          div.classList.add('result-item');
+          div.innerHTML = `
+            <h2>${escapeHtml(data.name)}</h2>
+            ${getImageElement(monsterImagePath, data.name).outerHTML}
+            <p><strong>Level:</strong> ${data.level || 'N/A'}</p>
+            <p><strong>HP:</strong> ${data.hp || 'N/A'}</p>
+            <p><strong>Modifiers:</strong> ${data.modifiers || 'N/A'}</p>
+            <p><strong>Region:</strong> ${data.region || 'N/A'}</p>
+            <p><strong>EXP:</strong> ${data.exp || 'N/A'}</p>
+            <p><strong>Required Accuracy:</strong> ${data.required_accuracy || 'N/A'} ${data.accuracy_level_decrease ? `(1 level decrease +${data.accuracy_level_decrease})` : ''}</p>
+          `;
+          if (data.drops?.length) {
+            const btn = document.createElement('button');
+            btn.textContent = 'Show Drops';
+            const dropDiv = document.createElement('div');
+            dropDiv.style.display = 'none';
+            data.drops.forEach(item => {
+              const dropItem = document.createElement('div');
+              dropItem.className = 'drop-item';
+              dropItem.appendChild(getImageElement(itemImagePath, item));
+              dropItem.appendChild(document.createTextNode(item));
+              dropDiv.appendChild(dropItem);
+            });
+            btn.onclick = () => {
+              dropDiv.style.display = dropDiv.style.display === 'none' ? 'block' : 'none';
+              btn.textContent = dropDiv.style.display === 'none' ? 'Show Drops' : 'Hide Drops';
+            };
+            div.appendChild(btn);
+            div.appendChild(dropDiv);
+          }
+          detail.appendChild(div);
+        } else {
+          const div = document.createElement('div');
+          div.innerHTML = `
+            <h2>${escapeHtml(name)}</h2>
+            ${getImageElement(itemImagePath, name).outerHTML}
+            <p><strong>Dropped by:</strong></p>
+            <ul>
+              ${(itemMatches[name] || []).map(m => `<li>${escapeHtml(m.name)} (Lv.${m.level || '?'})</li>`).join('')}
+            </ul>
+          `;
+          detail.appendChild(div);
+        }
+      };
 
-          const img = getImageElement(monsterImagePath, monster.name, sanitizeMonsterName(monster.name));
+      if (monsterMatches.length) {
+        const h2 = document.createElement('h2');
+        h2.textContent = `🧟 Monsters (${monsterMatches.length})`;
+        resultsContainer.appendChild(h2);
+        monsterMatches.forEach(m => {
+          const div = document.createElement('div');
+          div.className = 'result-item';
+          div.appendChild(getImageElement(monsterImagePath, m.name));
           const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(monster.name, keyword);
-
-          div.appendChild(img);
+          span.innerHTML = highlightKeyword(m.name, keyword);
           div.appendChild(span);
+          div.onclick = makeClickHandler('monster', m.name);
           resultsContainer.appendChild(div);
         });
       }
 
       const itemKeys = Object.keys(itemMatches);
-      if (itemKeys.length > 0) {
-        const title = document.createElement('h2');
-        title.textContent = `🎁 Items (${itemKeys.length})`;
-        resultsContainer.appendChild(title);
-
+      if (itemKeys.length) {
+        const h2 = document.createElement('h2');
+        h2.textContent = `🎁 Items (${itemKeys.length})`;
+        resultsContainer.appendChild(h2);
         itemKeys.forEach(item => {
           const div = document.createElement('div');
-          div.classList.add('result-item');
-
-          const img = getImageElement(itemImagePath, item, sanitizeItemName(item));
+          div.className = 'result-item';
+          div.appendChild(getImageElement(itemImagePath, item));
           const span = document.createElement('span');
           span.innerHTML = highlightKeyword(item, keyword);
-
-          div.appendChild(img);
           div.appendChild(span);
+          div.onclick = makeClickHandler('item', item);
           resultsContainer.appendChild(div);
         });
       }
 
-      if (monsterMatches.length === 0 && itemKeys.length === 0) {
-        resultsContainer.innerHTML = "<p>No results found.</p>";
+      if (!monsterMatches.length && !itemKeys.length) {
+        resultsContainer.innerHTML = '<p>No results found.</p>';
       }
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', (e) => {
+    document.getElementById('searchInput').addEventListener('keydown', e => {
       if (e.key === 'Enter') unifiedSearch();
     });
     document.getElementById('darkModeToggle').addEventListener('click', () => {
