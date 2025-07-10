@@ -141,16 +141,20 @@
       return sanitizeName(name);
     };
 
-    const getImageElement = (path, name, isItem = false) => {
-      const img = document.createElement('img');
-      img.alt = name;
-      const filename = isItem ? getItemImageName(name) : sanitizeName(stripGender(name));
-      img.src = path + filename + '.png';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = path + filename + '.gif';
-      };
-      return img;
+   const getImageElement = (path, name, isItem = false) => {
+  const img = document.createElement('img');
+  img.alt = name;
+  const filename = isItem ? getItemImageName(name) : sanitizeName(stripGender(name));
+  const pngPath = path + filename + '.png';
+  const gifPath = path + filename + '.gif';
+
+  img.onerror = () => {
+    img.onerror = null;  // 무한 루프 방지
+    img.src = gifPath;
+  };
+  img.src = pngPath;
+
+  return img;
     };
 
     const highlightKeyword = (text, keyword) => {
