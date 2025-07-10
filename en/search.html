@@ -144,7 +144,7 @@
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = isItem ? getItemImageName(name) : name;
+      const filename = isItem ? getItemImageName(name) : sanitizeName(stripGender(name));
       img.src = path + filename + '.png';
       img.onerror = () => {
         img.onerror = null;
