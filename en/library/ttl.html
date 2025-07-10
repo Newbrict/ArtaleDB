@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>EXP Calculator</title>
+=======
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EXP 누적 계산기</title>
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -69,6 +77,7 @@
 <body>
 
   <div class="container">
+<<<<<<< HEAD
     <h1>EXP Calculator</h1>
 
     <label for="currentLevel">Current Level:</label>
@@ -85,6 +94,26 @@
 
     <button onclick="calculateExp()">Calculate required EXP and time</button>
     <a href="https://heroaran.github.io/en/index.html" class="main-button">Back</a>
+=======
+    <h1>EXP 누적 계산기</h1>
+
+    <label for="currentLevel">현재 레벨:</label>
+    <input type="number" id="currentLevel" min="1" max="200" value="1" />
+
+    <label for="currentPercent">현재 경험치 (%):</label>
+    <input type="number" id="currentPercent" min="0" max="100" value="0" />
+
+    <label for="targetLevel">목표 레벨:</label>
+    <input type="number" id="targetLevel" min="1" max="200" value="100" />
+
+    <label for="expPer10Minutes">10분당 획득 경험치:</label>
+    <input type="number" id="expPer10Minutes" value="0" />
+
+    <button onclick="calculateExp()">필요한 경험치 및 시간 계산</button>
+
+    <!-- 여기 메인으로 버튼 추가 -->
+    <a href="https://heroaran.github.io/" class="main-button">메인으로</a>
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
 
     <div class="result" id="result"></div>
   </div>
@@ -95,7 +124,11 @@
     fetch('level_data.json')
       .then(response => response.json())
       .then(data => levelData = data)
+<<<<<<< HEAD
       .catch(error => console.error('Failed to import level data:', error));
+=======
+      .catch(error => console.error('레벨 데이터 불러오기 실패:', error));
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
 
     function calculateExp() {
       const currentLevel = parseInt(document.getElementById("currentLevel").value);
@@ -107,7 +140,11 @@
       const target = levelData.find(l => l.level === targetLevel);
 
       if (!current || !target) {
+<<<<<<< HEAD
         document.getElementById("result").innerText = "No corresponding level information was found.";
+=======
+        document.getElementById("result").innerText = "해당 레벨 정보를 찾을 수 없습니다.";
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
         return;
       }
 
@@ -116,7 +153,11 @@
       const requiredExp = target.cumulativeExp - currentExp;
 
       if (requiredExp <= 0) {
+<<<<<<< HEAD
         document.getElementById("result").innerText = `Already reached or exceeded the target level (${targetLevel}).`;
+=======
+        document.getElementById("result").innerText = `이미 목표 레벨(${targetLevel})에 도달했거나 초과했습니다.`;
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
         return;
       }
 
@@ -125,11 +166,19 @@
         const totalMinutes = requiredExp / (expPer10Minutes / 10);
         const hours = Math.floor(totalMinutes / 60);
         const minutes = Math.round(totalMinutes % 60);
+<<<<<<< HEAD
         timeText = ` (Estimated time: ${hours}hour ${minutes}minutes)`;
       }
 
       document.getElementById("result").innerText =
         `Experience value required up to level ${targetLevel}: ${Math.round(requiredExp).toLocaleString()} EXP` + timeText;
+=======
+        timeText = ` (예상 시간: ${hours}시간 ${minutes}분)`;
+      }
+
+      document.getElementById("result").innerText =
+        `레벨 ${targetLevel}까지 필요한 경험치: ${Math.round(requiredExp).toLocaleString()} EXP` + timeText;
+>>>>>>> eee1959 (Rename monster image files to use underscores instead of spaces)
     }
   </script>
 </body>
