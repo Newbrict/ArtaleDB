@@ -17,7 +17,7 @@
       color: #eee;
     }
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: auto;
       background: white;
       padding: 20px;
@@ -28,7 +28,7 @@
       background: #1e1e1e;
     }
     input[type=text] {
-      width: 70%;
+      width: 60%;
       padding: 10px;
       margin-right: 10px;
       border: 1px solid #ccc;
@@ -81,9 +81,28 @@
     body.dark-mode mark {
       background-color: #ffda6a;
     }
-    #details {
-      margin-top: 30px;
+
+    /* NEW: 좌우 구조 */
+    .content-wrapper {
+      display: flex;
+      gap: 30px;
     }
+
+    #results {
+      flex: 1;
+      max-width: 45%;
+    }
+
+    #details {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+
+    body.dark-mode #details {
+      border-color: #444;
+    }
+
     .drop-item {
       display: flex;
       align-items: center;
@@ -104,8 +123,12 @@
       <button id="searchBtn">Search</button>
       <button id="darkModeToggle">🌙 Dark Mode</button>
     </div>
-    <div id="results"></div>
-    <div id="details"></div>
+
+    <!-- 좌우 영역 래퍼 -->
+    <div class="content-wrapper">
+      <div id="results"></div>
+      <div id="details"></div>
+    </div>
   </div>
 
   <script>
@@ -113,7 +136,9 @@
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({
+      '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', '\'':'&#39;'
+    })[c]) || '';
 
     function sanitizeName(name) {
       return name.replace(/[^a-zA-Z0-9]/g, '_');
@@ -224,9 +249,13 @@
 
     function showMonsterDetail(monster) {
       const details = document.getElementById('details');
+      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+      const imgSrc = `${monsterImagePath + monster.name}.png`;
+      const fallbackImgSrc = `${monsterImagePath + monster.name}.gif`;
+
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${monsterImagePath + monster.name}.png" onerror="this.onerror=null;this.src='${monsterImagePath + monster.name}.gif';" alt="${escapeHtml(monster.name)}">
+        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
@@ -237,11 +266,23 @@
             ? `(1 level decrease +${monster.accuracy_level_decrease})`
             : ''
         }</p>
-        <div><strong>Drops:</strong></div>
-        <ul>
-          ${(monster.drops || []).map(drop => `<li>${escapeHtml(drop)}</li>`).join('')}
-        </ul>
+        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+        <div id="${dropsId}" style="display:none; margin-top:10px;">
+          ${(monster.drops || []).map(drop => `
+            <div class="drop-item">
+              <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
+              <span>${escapeHtml(drop)}</span>
+            </div>
+          `).join('')}
+        </div>
       `;
+    }
+
+    function toggleDrops(id, btn) {
+      const el = document.getElementById(id);
+      const isVisible = el.style.display === 'block';
+      el.style.display = isVisible ? 'none' : 'block';
+      btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
     }
 
     function showItemDetail(item, monsters) {
@@ -259,11 +300,8 @@
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-
     document.getElementById('searchInput').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        unifiedSearch();
-      }
+      if (e.key === 'Enter') unifiedSearch();
     });
 
     document.getElementById('darkModeToggle').addEventListener('click', () => {
