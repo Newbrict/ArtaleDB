@@ -124,7 +124,7 @@
   </div>
   <script>
     let monsterData = [], bossData = [];
-    const monsterImagePath = "library/images/monsters/";
+    const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
     const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
@@ -238,11 +238,13 @@
     function showMonsterDetail(monster) {
       const details = document.getElementById('details');
       const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+      const filename = stripGender(monster.name).replace(/\s+/g, '_');
+      const imgSrc = `${monsterImagePath}${filename}.png`;
+      const fallbackImgSrc = `${monsterImagePath}${filename}.gif`;
+
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${monsterImagePath + stripGender(monster.name).replace(/\s+/g, '_')}.png" 
-             onerror="this.onerror=null;this.src='${monsterImagePath + stripGender(monster.name).replace(/\s+/g, '_')}.gif';" 
-             alt="${escapeHtml(monster.name)}">
+        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
