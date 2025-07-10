@@ -243,7 +243,7 @@
       const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
 
       div.innerHTML = `
-        <h3>아이템: ${escapeHtml(item)}</h3>
+        <h3>Item: ${escapeHtml(item)}</h3>
         <p><strong>Dropped By:</strong></p>
         <ul>
           ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
