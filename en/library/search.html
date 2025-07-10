@@ -97,6 +97,14 @@
     .toggle-drops-btn:hover {
       background-color: #333;
     }
+    .item-link {
+      color: #007bff;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    body.dark-mode .item-link {
+      color: #66bfff;
+    }
   </style>
 </head>
 <body>
@@ -114,6 +122,7 @@
   </div>
   <div id="results"></div>
 </div>
+
 <script>
   let monsterData = [];
   let bossData = [];
@@ -214,19 +223,19 @@
       const img = getImageElement(monsterImagePath, monster.name, false, sanitizeMonsterName(monster.name));
 
       div.innerHTML = `
-  <h3>${escapeHtml(monster.name)}</h3>
-      <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-      <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-      <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
-      <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-      <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-      <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
-        monster.accuracy_level_decrease !== undefined && monster.required_accuracy
-      ? `(1 level decrease +${monster.accuracy_level_decrease})`
-      : ''
-  }</p>
-  ${renderDropsHtml(monster.drops, monster.name)}
-`;
+        <h3>${escapeHtml(monster.name)}</h3>
+        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
+          monster.accuracy_level_decrease !== undefined && monster.required_accuracy
+            ? `(1 level decrease +${monster.accuracy_level_decrease})`
+            : ''
+        }</p>
+        ${renderDropsHtml(monster.drops, monster.name)}
+      `;
       div.insertBefore(img, div.children[1]);
       container.appendChild(div);
       attachToggleDropsListener(monster.name);
@@ -235,7 +244,7 @@
 
   function renderItemResults(results) {
     const container = document.getElementById('results');
-    container.innerHTML = Object.keys(results).length === 0 ? "<p>No search results found." : '';
+    container.innerHTML = Object.keys(results).length === 0 ? "<p>No search results found.</p>" : '';
 
     for (const [item, monsters] of Object.entries(results)) {
       const div = document.createElement('div');
@@ -243,7 +252,7 @@
       const img = getImageElement(itemImagePath, item, true, sanitizeItemName(item));
 
       div.innerHTML = `
-        <h3>Item: ${escapeHtml(item)}</h3>
+        <h3>Item: <a href="#" class="item-link" data-item="${escapeHtml(item)}">${escapeHtml(item)}</a></h3>
         <p><strong>Dropped By:</strong></p>
         <ul>
           ${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}
@@ -261,7 +270,10 @@
       <p><strong>Drops:</strong></p>
       <button class="toggle-drops-btn" data-toggle-id="${safeName}">Show Drops</button>
       <div class="drops-list" data-toggle-id="${safeName}" style="display:none;">
-        ${drops.map(drop => `<div class="drop-item"><span>${escapeHtml(drop)}</span></div>`).join('')}
+        ${drops.map(drop => `
+          <div class="drop-item">
+            <a href="#" class="item-link" data-item="${escapeHtml(drop)}">${escapeHtml(drop)}</a>
+          </div>`).join('')}
       </div>
     `;
   }
@@ -296,6 +308,17 @@
     btn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     localStorage.setItem('darkMode', isDark);
   }
+
+  // 🔄 아이템 이름 클릭 시 재검색
+  document.addEventListener('click', function (e) {
+    const target = e.target;
+    if (target.classList.contains('item-link')) {
+      e.preventDefault();
+      const itemName = target.dataset.item;
+      document.getElementById('itemSearchInput').value = itemName;
+      searchItems();
+    }
+  });
 
   document.getElementById('backButton').addEventListener('click', () => history.back());
   document.getElementById('monsterSearchBtn').addEventListener('click', searchMonsters);
