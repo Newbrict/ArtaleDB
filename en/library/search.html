@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -101,16 +101,16 @@
 </head>
 <body>
 <div class="container">
-  <button class="back-button" id="backButton">뒤로가기</button>
-  <h1>몬스터 및 아이템 검색</h1>
+  <button class="back-button" id="backButton">Back</button>
+  <h1>Search Monster / Item</h1>
   <div style="margin-bottom: 15px;">
-    <input type="text" id="monsterSearchInput" placeholder="몬스터 이름으로 검색 (쉼표로 여러개 구분 가능)">
-    <button id="monsterSearchBtn">검색</button>
+    <input type="text" id="monsterSearchInput" placeholder="Search by Monster Name (can be separated by several commas)">
+    <button id="monsterSearchBtn">Search</button>
   </div>
   <div style="margin-bottom: 20px;">
-    <input type="text" id="itemSearchInput" placeholder="아이템 이름으로 검색 (쉼표로 여러개 구분 가능)">
-    <button id="itemSearchBtn">검색</button>
-    <button id="darkModeToggle">🌙 다크 모드</button>
+    <input type="text" id="itemSearchInput" placeholder="Search by item name (can be separated by several commas)">
+    <button id="itemSearchBtn">Search</button>
+    <button id="darkModeToggle">🌙 Dark Mode</button>
   </div>
   <div id="results"></div>
 </div>
@@ -155,7 +155,7 @@
       monsterData = await monsterResp.json();
       bossData = await bossResp.json();
     } catch (e) {
-      document.getElementById('results').innerText = "데이터 로드 실패: " + e;
+      document.getElementById('results').innerText = "Failed to load data: " + e;
     }
   }
 
@@ -167,7 +167,7 @@
   function searchMonsters() {
     const query = document.getElementById('monsterSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) return alert("검색어를 입력하세요.");
+    if (terms.length === 0) return alert("Please enter a search term.");
 
     const results = [];
     terms.forEach(term => {
@@ -185,7 +185,7 @@
   function searchItems() {
     const query = document.getElementById('itemSearchInput').value.toLowerCase();
     const terms = query.split(',').map(t => t.trim()).filter(t => t.length > 0);
-    if (terms.length === 0) return alert("검색어를 입력하세요.");
+    if (terms.length === 0) return alert("Please enter a search term.");
 
     const results = {};
     terms.forEach(term => {
@@ -206,7 +206,7 @@
 
   function renderMonsterResults(results) {
     const container = document.getElementById('results');
-    container.innerHTML = results.length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
+    container.innerHTML = results.length === 0 ? "<p>No search results found.</p>" : '';
 
     results.forEach(monster => {
       const div = document.createElement('div');
@@ -235,7 +235,7 @@
 
   function renderItemResults(results) {
     const container = document.getElementById('results');
-    container.innerHTML = Object.keys(results).length === 0 ? "<p>검색 결과가 없습니다.</p>" : '';
+    container.innerHTML = Object.keys(results).length === 0 ? "<p>No search results found." : '';
 
     for (const [item, monsters] of Object.entries(results)) {
       const div = document.createElement('div');
@@ -293,7 +293,7 @@
     const btn = document.getElementById('darkModeToggle');
     body.classList.toggle('dark-mode');
     const isDark = body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
+    btn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
     localStorage.setItem('darkMode', isDark);
   }
 
@@ -304,7 +304,7 @@
 
   if (localStorage.getItem('darkMode') === 'true') {
     document.body.classList.add('dark-mode');
-    document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
+    document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
   }
 
   loadData();
