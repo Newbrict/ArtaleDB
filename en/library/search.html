@@ -91,40 +91,30 @@
       <button id="darkModeToggle">🌙 Dark Mode</button>
     </div>
     <div id="results"></div>
+    <div id="details" style="margin-top: 30px;"></div>
   </div>
-
   <script>
     let monsterData = [];
     let bossData = [];
-
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = (text) => {
-      if (!text) return '';
-      return text.replace(/[&<>"']/g, m => ({
-        '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
-      })[m]);
-    }
+    const escapeHtml = (text) => text?.replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])) || '';
 
     function sanitizeItemName(name) {
       if (/Skill Book/i.test(name)) return "Skillbook";
       if (/Mastery Book/i.test(name)) return "Masterybook";
-      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
+      const scrollMatch = name.match(/scroll[^"]*(\d+)%/i);
       if (scrollMatch) return "Scroll" + scrollMatch[1];
-      name = name.replace(/\s*\((M|F)\)\s*$/i, '');
       return name.replace(/[^a-zA-Z0-9]/g, '_');
     }
 
-    function getImageElement(path, name, fallbackName = null) {
+    function getImageElement(path, name, fallback = null) {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = fallbackName || name;
+      const filename = fallback || name;
       img.src = path + filename + '.png';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = path + filename + '.gif';
-      };
+      img.onerror = () => img.src = path + filename + '.gif';
       return img;
     }
 
@@ -134,92 +124,131 @@
     }
 
     async function loadData() {
-      const [monsterResp, bossResp] = await Promise.all([
+      const [monsterRes, bossRes] = await Promise.all([
         fetch('data/monster/monster_data.json'),
         fetch('data/monster/boss_data.json')
       ]);
-      monsterData = await monsterResp.json();
-      bossData = await bossResp.json();
+      monsterData = await monsterRes.json();
+      bossData = await bossRes.json();
     }
 
     function unifiedSearch() {
       const keyword = document.getElementById('searchInput').value.trim();
-      if (!keyword) {
-        alert("Please enter a search term.");
-        return;
-      }
-      const lowerKeyword = keyword.toLowerCase();
-      const terms = lowerKeyword.split(',').map(t => t.trim()).filter(t => t);
-
+      const terms = keyword.toLowerCase().split(',').map(t => t.trim()).filter(Boolean);
       const resultsContainer = document.getElementById('results');
-      resultsContainer.innerHTML = "";
+      document.getElementById('details').innerHTML = '';
+      resultsContainer.innerHTML = '';
 
-      const monsterMatches = [...monsterData, ...bossData].filter(m =>
-        terms.some(term => m.name.toLowerCase().includes(term))
-      );
+      const monsters = [...monsterData, ...bossData].filter(m => terms.some(t => m.name.toLowerCase().includes(t)));
+      const items = {};
+      [...monsterData, ...bossData].forEach(m => m.drops?.forEach(drop => {
+        if (terms.some(t => drop.toLowerCase().includes(t))) {
+          if (!items[drop]) items[drop] = [];
+          items[drop].push(m);
+        }
+      }));
 
-      const itemMatches = {};
-      [...monsterData, ...bossData].forEach(m => {
-        if (!m.drops) return;
-        m.drops.forEach(drop => {
-          if (terms.some(term => drop.toLowerCase().includes(term))) {
-            if (!itemMatches[drop]) itemMatches[drop] = [];
-            itemMatches[drop].push(m);
-          }
-        });
-      });
-
-      if (monsterMatches.length > 0) {
-        const title = document.createElement('h2');
-        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
-        resultsContainer.appendChild(title);
-
-        monsterMatches.forEach(monster => {
+      if (monsters.length > 0) {
+        resultsContainer.innerHTML += `<h2>🧟 Monsters (${monsters.length})</h2>`;
+        monsters.forEach(monster => {
           const div = document.createElement('div');
           div.classList.add('result-item');
-
           const img = getImageElement(monsterImagePath, monster.name);
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(monster.name, keyword);
-
+          const link = `<a href="#" class="data-link" data-type="monster" data-name="${monster.name}">${highlightKeyword(monster.name, keyword)}</a>`;
+          div.innerHTML = '';
           div.appendChild(img);
-          div.appendChild(span);
+          div.innerHTML += link;
           resultsContainer.appendChild(div);
         });
       }
 
-      const itemKeys = Object.keys(itemMatches);
+      const itemKeys = Object.keys(items);
       if (itemKeys.length > 0) {
-        const title = document.createElement('h2');
-        title.textContent = `🎁 Items (${itemKeys.length})`;
-        resultsContainer.appendChild(title);
-
+        resultsContainer.innerHTML += `<h2>🎁 Items (${itemKeys.length})</h2>`;
         itemKeys.forEach(item => {
           const div = document.createElement('div');
           div.classList.add('result-item');
-
           const img = getImageElement(itemImagePath, item, sanitizeItemName(item));
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(item, keyword);
-
+          const link = `<a href="#" class="data-link" data-type="item" data-name="${item}">${highlightKeyword(item, keyword)}</a>`;
+          div.innerHTML = '';
           div.appendChild(img);
-          div.appendChild(span);
+          div.innerHTML += link;
           resultsContainer.appendChild(div);
         });
       }
 
-      if (monsterMatches.length === 0 && itemKeys.length === 0) {
-        resultsContainer.innerHTML = "<p>No results found.</p>";
+      if (monsters.length === 0 && itemKeys.length === 0) {
+        resultsContainer.innerHTML = '<p>No results found.</p>';
       }
     }
 
-    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+    function showMonsterDetails(monster) {
+      const container = document.getElementById('details');
+      const img = getImageElement(monsterImagePath, monster.name);
+      container.innerHTML = `
+        <h2>🧟 ${monster.name} Details</h2>
+        <div class="result-item">
+          <img src="${img.src}" alt="${monster.name}">
+          <div>
+            <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+            <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+            <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+            <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+            <p><strong>Drops:</strong></p>
+            <ul>
+              ${monster.drops?.map(drop => `
+                <li>
+                  <img src="${itemImagePath + sanitizeItemName(drop)}.png" 
+                       onerror="this.onerror=null;this.src='${itemImagePath + sanitizeItemName(drop)}.gif';" 
+                       alt="${drop}" style="width:30px;vertical-align:middle;margin-right:6px;">
+                  <a href="#" class="data-link" data-type="item" data-name="${drop}">${drop}</a>
+                </li>`).join('') || '<li>None</li>'}
+            </ul>
+          </div>
+        </div>`;
+    }
 
-    document.getElementById('searchInput').addEventListener('keydown', (e) => {
-      if (e.key === 'Enter') {
-        unifiedSearch();
+    function showItemDetails(item, monsters) {
+      const container = document.getElementById('details');
+      const img = getImageElement(itemImagePath, item, sanitizeItemName(item));
+      container.innerHTML = `
+        <h2>🎁 ${item} Details</h2>
+        <div class="result-item">
+          <img src="${img.src}" alt="${item}">
+          <div>
+            <p><strong>Dropped by:</strong></p>
+            <ul>
+              ${monsters.map(m => `
+                <li>
+                  <img src="${monsterImagePath + m.name}.png" 
+                       onerror="this.onerror=null;this.src='${monsterImagePath + m.name}.gif';" 
+                       alt="${m.name}" style="width:30px;vertical-align:middle;margin-right:6px;">
+                  <a href="#" class="data-link" data-type="monster" data-name="${m.name}">${m.name}</a> 
+                  (Lv: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})
+                </li>`).join('') || '<li>None</li>'}
+            </ul>
+          </div>
+        </div>`;
+    }
+
+    document.addEventListener('click', function(e) {
+      const target = e.target;
+      if (target.classList.contains('data-link')) {
+        e.preventDefault();
+        const type = target.dataset.type;
+        const name = target.dataset.name;
+        if (type === 'monster') {
+          const found = [...monsterData, ...bossData].find(m => m.name === name);
+          if (found) showMonsterDetails(found);
+        } else if (type === 'item') {
+          const sources = [...monsterData, ...bossData].filter(m => m.drops?.includes(name));
+          showItemDetails(name, sources);
+        }
       }
     });
+
+    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+    document.getElementById('searchInput').addEventListener('keydown', e => e.key === 'Enter' && unifiedSearch());
 
     document.getElementById('darkModeToggle').addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
