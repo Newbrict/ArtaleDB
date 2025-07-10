@@ -132,12 +132,13 @@
     const stripGender = name => name.replace(/\s*\([MF]\)$/i, '').trim();
 
     const getItemImageName = name => {
-      if (/Skill Book/i.test(name)) return "Skillbook";
-      if (/Mastery Book/i.test(name)) return "Masterybook";
-      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
+      const cleanName = stripGender(name);  // (F), (M) 제거
+      if (/Skill Book/i.test(cleanName)) return "Skillbook";
+      if (/Mastery Book/i.test(cleanName)) return "Masterybook";
+      const scrollMatch = cleanName.match(/scroll[^\d]*(\d+)%/i);
       if (scrollMatch) return "Scroll" + scrollMatch[1];
-      return sanitizeName(name);
-    };
+      return sanitizeName(cleanName);
+};
 
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
