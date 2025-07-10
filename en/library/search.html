@@ -81,28 +81,22 @@
     body.dark-mode mark {
       background-color: #ffda6a;
     }
-
-    /* NEW: 좌우 구조 */
     .content-wrapper {
       display: flex;
       gap: 30px;
     }
-
     #results {
       flex: 1;
       max-width: 45%;
     }
-
     #details {
       flex: 1;
       border-left: 1px solid #ccc;
       padding-left: 20px;
     }
-
     body.dark-mode #details {
       border-color: #444;
     }
-
     .drop-item {
       display: flex;
       align-items: center;
@@ -123,36 +117,29 @@
       <button id="searchBtn">Search</button>
       <button id="darkModeToggle">🌙 Dark Mode</button>
     </div>
-
-    <!-- 좌우 영역 래퍼 -->
     <div class="content-wrapper">
       <div id="results"></div>
       <div id="details"></div>
     </div>
   </div>
-
   <script>
     let monsterData = [], bossData = [];
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({
-      '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', '\'':'&#39;'
-    })[c]) || '';
+    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
+    const stripGender = name => name.replace(/\s*\([MF]\)$/i, '').trim();
 
-    function sanitizeName(name) {
-      return name.replace(/[^a-zA-Z0-9]/g, '_');
-    }
-
-    function getItemImageName(name) {
+    const getItemImageName = name => {
       if (/Skill Book/i.test(name)) return "Skillbook";
       if (/Mastery Book/i.test(name)) return "Masterybook";
       const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
       if (scrollMatch) return "Scroll" + scrollMatch[1];
       return sanitizeName(name);
-    }
+    };
 
-    function getImageElement(path, name, isItem = false) {
+    const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
       img.alt = name;
       const filename = isItem ? getItemImageName(name) : name;
@@ -162,12 +149,12 @@
         img.src = path + filename + '.gif';
       };
       return img;
-    }
+    };
 
-    function highlightKeyword(text, keyword) {
+    const highlightKeyword = (text, keyword) => {
       const regex = new RegExp(`(${keyword})`, 'gi');
       return escapeHtml(text).replace(regex, '<mark>$1</mark>');
-    }
+    };
 
     async function loadData() {
       const [monsterResp, bossResp] = await Promise.all([
@@ -180,25 +167,23 @@
 
     function unifiedSearch() {
       const keywordRaw = document.getElementById('searchInput').value.trim();
-      if (!keywordRaw) {
-        alert("Please enter a search term.");
-        return;
-      }
+      if (!keywordRaw) return alert("Please enter a search term.");
 
-      const terms = keywordRaw.toLowerCase().split(',').map(t => sanitizeName(t.trim())).filter(t => t);
+      const terms = keywordRaw.toLowerCase().split(',').map(t => sanitizeName(stripGender(t.trim())));
       const resultsContainer = document.getElementById('results');
       resultsContainer.innerHTML = "";
       document.getElementById('details').innerHTML = "";
 
       const monsterMatches = [...monsterData, ...bossData].filter(m =>
-        terms.some(term => sanitizeName(m.name.toLowerCase()).includes(term))
+        terms.some(term => sanitizeName(stripGender(m.name.toLowerCase())).includes(term))
       );
 
       const itemMatches = {};
       [...monsterData, ...bossData].forEach(m => {
         if (!m.drops) return;
         m.drops.forEach(drop => {
-          if (terms.some(term => sanitizeName(drop.toLowerCase()).includes(term))) {
+          const strippedDrop = sanitizeName(stripGender(drop.toLowerCase()));
+          if (terms.some(term => strippedDrop.includes(term))) {
             if (!itemMatches[drop]) itemMatches[drop] = [];
             itemMatches[drop].push(m);
           }
@@ -209,14 +194,12 @@
         const title = document.createElement('h2');
         title.textContent = `🧟 Monsters (${monsterMatches.length})`;
         resultsContainer.appendChild(title);
-
         monsterMatches.forEach(monster => {
           const div = document.createElement('div');
           div.classList.add('result-item');
-          const img = getImageElement(monsterImagePath, monster.name);
+          div.appendChild(getImageElement(monsterImagePath, monster.name));
           const span = document.createElement('span');
           span.innerHTML = highlightKeyword(monster.name, keywordRaw);
-          div.appendChild(img);
           div.appendChild(span);
           div.addEventListener('click', () => showMonsterDetail(monster));
           resultsContainer.appendChild(div);
@@ -226,16 +209,14 @@
       const itemKeys = Object.keys(itemMatches);
       if (itemKeys.length > 0) {
         const title = document.createElement('h2');
-        title.textContent = `🎁 Items (${itemKeys.length})`;
+        title.textContent = `🏱 Items (${itemKeys.length})`;
         resultsContainer.appendChild(title);
-
         itemKeys.forEach(item => {
           const div = document.createElement('div');
           div.classList.add('result-item');
-          const img = getImageElement(itemImagePath, item, true);
+          div.appendChild(getImageElement(itemImagePath, item, true));
           const span = document.createElement('span');
           span.innerHTML = highlightKeyword(item, keywordRaw);
-          div.appendChild(img);
           div.appendChild(span);
           div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
           resultsContainer.appendChild(div);
@@ -252,7 +233,6 @@
       const dropsId = `drop-list-${sanitizeName(monster.name)}`;
       const imgSrc = `${monsterImagePath + monster.name}.png`;
       const fallbackImgSrc = `${monsterImagePath + monster.name}.gif`;
-
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
         <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
@@ -261,11 +241,7 @@
         <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${
-          monster.accuracy_level_decrease !== undefined && monster.required_accuracy
-            ? `(1 level decrease +${monster.accuracy_level_decrease})`
-            : ''
-        }</p>
+        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined && monster.required_accuracy ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
         <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
@@ -287,20 +263,18 @@
 
     function showItemDetail(item, monsters) {
       const details = document.getElementById('details');
-      const img = getImageElement(itemImagePath, item, true);
       details.innerHTML = '';
-      details.appendChild(img);
+      details.appendChild(getImageElement(itemImagePath, item, true));
       const title = document.createElement('h2');
       title.textContent = item;
       details.appendChild(title);
-
       const sub = document.createElement('div');
       sub.innerHTML = `<p><strong>Dropped by:</strong></p><ul>${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}</ul>`;
       details.appendChild(sub);
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', (e) => {
+    document.getElementById('searchInput').addEventListener('keydown', e => {
       if (e.key === 'Enter') unifiedSearch();
     });
 
