@@ -132,22 +132,22 @@
     const stripGender = name => name.replace(/\s*\([MF]\)$/i, '').trim();
 
     const getItemImageName = name => {
-      const cleanName = stripGender(name);  // (F), (M) 제거
+      const cleanName = stripGender(name);
       if (/Skill Book/i.test(cleanName)) return "Skillbook";
       if (/Mastery Book/i.test(cleanName)) return "Masterybook";
       const scrollMatch = cleanName.match(/scroll[^\d]*(\d+)%/i);
       if (scrollMatch) return "Scroll" + scrollMatch[1];
       return sanitizeName(cleanName);
-};
+    };
 
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = isItem ? getItemImageName(name) : name;
-      img.src = path + filename + '.png';
+      const filename = isItem ? getItemImageName(name) : stripGender(name);
+      img.src = path + sanitizeName(filename) + '.png';
       img.onerror = () => {
         img.onerror = null;
-        img.src = path + filename + '.gif';
+        img.src = path + sanitizeName(filename) + '.gif';
       };
       return img;
     };
@@ -232,8 +232,8 @@
     function showMonsterDetail(monster) {
       const details = document.getElementById('details');
       const dropsId = `drop-list-${sanitizeName(monster.name)}`;
-      const imgSrc = `${monsterImagePath + monster.name}.png`;
-      const fallbackImgSrc = `${monsterImagePath + monster.name}.gif`;
+      const imgSrc = `${monsterImagePath + sanitizeName(stripGender(monster.name))}.png`;
+      const fallbackImgSrc = `${monsterImagePath + sanitizeName(stripGender(monster.name))}.gif`;
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
         <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
@@ -255,23 +255,53 @@
       `;
     }
 
+    function showItemDetail(item, monsters) {
+      const details = document.getElementById('details');
+      details.innerHTML = '';
+      details.appendChild(getImageElement(itemImagePath, item, true));
+
+      const title = document.createElement('h2');
+      title.textContent = item;
+      details.appendChild(title);
+
+      const sub = document.createElement('div');
+      sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
+      
+      const ul = document.createElement('ul');
+      monsters.forEach(m => {
+        const li = document.createElement('li');
+        
+        const img = getImageElement(monsterImagePath, m.name);
+        img.style.width = '30px';
+        img.style.height = 'auto';
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
+
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
+        link.style.textDecoration = 'none';
+        link.style.color = 'inherit';
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          document.getElementById('searchInput').value = m.name;
+          unifiedSearch();
+        });
+
+        li.appendChild(img);
+        li.appendChild(link);
+        ul.appendChild(li);
+      });
+
+      sub.appendChild(ul);
+      details.appendChild(sub);
+    }
+
     function toggleDrops(id, btn) {
       const el = document.getElementById(id);
       const isVisible = el.style.display === 'block';
       el.style.display = isVisible ? 'none' : 'block';
       btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
-    }
-
-    function showItemDetail(item, monsters) {
-      const details = document.getElementById('details');
-      details.innerHTML = '';
-      details.appendChild(getImageElement(itemImagePath, item, true));
-      const title = document.createElement('h2');
-      title.textContent = item;
-      details.appendChild(title);
-      const sub = document.createElement('div');
-      sub.innerHTML = `<p><strong>Dropped by:</strong></p><ul>${monsters.map(m => `<li>${escapeHtml(m.name)} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})</li>`).join('')}</ul>`;
-      details.appendChild(sub);
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
