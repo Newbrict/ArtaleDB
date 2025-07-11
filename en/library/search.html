@@ -39,6 +39,48 @@
       border: 1px solid #555;
       color: #eee;
     }
+    #autocomplete {
+      font-size: 14px;
+      border-radius: 4px;
+      position: absolute;
+      background: white;
+      z-index: 10;
+      border: 1px solid #ccc;
+      max-height: 400px;
+      overflow-y: auto;
+      width: 60%;
+      display: none;
+    }
+    .dark-mode #autocomplete {
+      background: #1e1e1e;
+      border-color: #444;
+    }
+    .autocomplete-category {
+      font-weight: bold;
+      padding: 8px;
+      background-color: #eee;
+    }
+    .dark-mode .autocomplete-category {
+      background-color: #333;
+      color: #fff;
+    }
+    .autocomplete-item {
+      display: flex;
+      align-items: center;
+      padding: 5px 8px;
+      cursor: pointer;
+    }
+    .autocomplete-item:hover {
+      background-color: #f0f0f0;
+    }
+    .dark-mode .autocomplete-item:hover {
+      background-color: #444;
+    }
+    .autocomplete-item img {
+      width: 30px;
+      height: auto;
+      margin-right: 10px;
+    }
     button {
       padding: 10px 15px;
       cursor: pointer;
@@ -112,16 +154,18 @@
 <body>
   <div class="container">
     <h1>🔍 Monster / Item Search</h1>
-    <div style="margin-bottom: 20px;">
+    <div style="margin-bottom: 20px; position: relative;">
       <input type="text" id="searchInput" placeholder="Enter keyword(s) (e.g. snail)">
       <button id="searchBtn">Search</button>
       <button id="darkModeToggle">🌙 Dark Mode</button>
+      <div id="autocomplete"></div>
     </div>
     <div class="content-wrapper">
       <div id="results"></div>
       <div id="details"></div>
     </div>
   </div>
+
   <script>
     let monsterData = [], bossData = [];
     const monsterImagePath = "images/monsters/";
@@ -180,6 +224,7 @@
       const resultsContainer = document.getElementById('results');
       resultsContainer.innerHTML = "";
       document.getElementById('details').innerHTML = "";
+      document.getElementById('autocomplete').style.display = 'none';
 
       const monsterMatches = [...monsterData, ...bossData].filter(m =>
         terms.some(term => normalize(m.name).includes(term))
@@ -308,6 +353,67 @@
       sub.appendChild(ul);
       details.appendChild(sub);
     }
+
+    const autocompleteBox = document.getElementById('autocomplete');
+    document.getElementById('searchInput').addEventListener('input', () => {
+      const keywordRaw = document.getElementById('searchInput').value.trim();
+      if (!keywordRaw) {
+        autocompleteBox.style.display = 'none';
+        return;
+      }
+
+      const term = normalize(keywordRaw);
+      const monsterMatches = [...monsterData, ...bossData].filter(m =>
+        normalize(m.name).includes(term)
+      );
+
+      const itemMatches = [];
+      [...monsterData, ...bossData].forEach(m => {
+        (m.drops || []).forEach(drop => {
+          if (normalize(drop).includes(term) && !itemMatches.includes(drop)) {
+            itemMatches.push(drop);
+          }
+        });
+      });
+
+      if (monsterMatches.length === 0 && itemMatches.length === 0) {
+        autocompleteBox.style.display = 'none';
+        return;
+      }
+
+      let html = '';
+
+      if (monsterMatches.length) {
+        html += `<div class="autocomplete-category">🧟 Monsters</div>`;
+        monsterMatches.forEach(m => {
+          const img = getImageElement(monsterImagePath, m.name).outerHTML;
+          html += `<div class="autocomplete-item" onclick="selectSuggestion('${m.name}')">${img}<span>${escapeHtml(m.name)}</span></div>`;
+        });
+      }
+
+      if (itemMatches.length) {
+        html += `<div class="autocomplete-category">🎁 Items</div>`;
+        itemMatches.forEach(i => {
+          const img = getImageElement(itemImagePath, i, true).outerHTML;
+          html += `<div class="autocomplete-item" onclick="selectSuggestion('${i}')">${img}<span>${escapeHtml(i)}</span></div>`;
+        });
+      }
+
+      autocompleteBox.innerHTML = html;
+      autocompleteBox.style.display = 'block';
+    });
+
+    function selectSuggestion(text) {
+      document.getElementById('searchInput').value = text;
+      autocompleteBox.style.display = 'none';
+      unifiedSearch();
+    }
+
+    document.addEventListener('click', (e) => {
+      if (!autocompleteBox.contains(e.target) && e.target.id !== 'searchInput') {
+        autocompleteBox.style.display = 'none';
+      }
+    });
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
     document.getElementById('searchInput').addEventListener('keydown', e => {
