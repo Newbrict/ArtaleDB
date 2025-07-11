@@ -280,6 +280,8 @@
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        <p><strong>Modifiers:</strong> ${monster.Modifiers || 'N/A'}</p>
+        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined ? ` (1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
         <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
