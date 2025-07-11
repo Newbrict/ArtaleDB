@@ -23,6 +23,7 @@
       padding: 20px;
       border-radius: 8px;
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      position: relative;
     }
     body.dark-mode .container {
       background: #1e1e1e;
@@ -38,48 +39,6 @@
       background: #333;
       border: 1px solid #555;
       color: #eee;
-    }
-    #autocomplete {
-      font-size: 14px;
-      border-radius: 4px;
-      position: absolute;
-      background: white;
-      z-index: 10;
-      border: 1px solid #ccc;
-      max-height: 400px;
-      overflow-y: auto;
-      width: 60%;
-      display: none;
-    }
-    .dark-mode #autocomplete {
-      background: #1e1e1e;
-      border-color: #444;
-    }
-    .autocomplete-category {
-      font-weight: bold;
-      padding: 8px;
-      background-color: #eee;
-    }
-    .dark-mode .autocomplete-category {
-      background-color: #333;
-      color: #fff;
-    }
-    .autocomplete-item {
-      display: flex;
-      align-items: center;
-      padding: 5px 8px;
-      cursor: pointer;
-    }
-    .autocomplete-item:hover {
-      background-color: #f0f0f0;
-    }
-    .dark-mode .autocomplete-item:hover {
-      background-color: #444;
-    }
-    .autocomplete-item img {
-      width: 30px;
-      height: auto;
-      margin-right: 10px;
     }
     button {
       padding: 10px 15px;
@@ -149,25 +108,236 @@
       height: auto;
       margin-right: 10px;
     }
+    .top-right-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ff7043;
+    }
+    .top-right-button:hover {
+      background-color: #e55d2e;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <div style="position: absolute; top: 20px; right: 30px;">
-      <button onclick="location.href='https://artaledb.com/en/index.html'" style="background-color: #ff7043;">🏠 Main</button>
-    </div>
+    <button class="top-right-button" onclick="location.href='https://artaledb.com/en/index.html'">🏠 Main</button>
     <h1>🔍 Monster / Item Search</h1>
-    <div style="margin-bottom: 20px; position: relative;">
+    <div style="margin-bottom: 20px;">
       <input type="text" id="searchInput" placeholder="Enter keyword(s) (e.g. snail)">
       <button id="searchBtn">Search</button>
       <button id="darkModeToggle">🌙 Dark Mode</button>
-      <div id="autocomplete"></div>
     </div>
     <div class="content-wrapper">
       <div id="results"></div>
       <div id="details"></div>
     </div>
   </div>
-  <script src="main.js"></script>
+  <script>
+     let monsterData = [], bossData = [];
+    const monsterImagePath = "images/monsters/";
+    const itemImagePath = "images/items/";
+
+    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
+    const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
+    const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
+
+    const getItemImageName = name => {
+      if (/Skill Book/i.test(name)) return "Skillbook";
+      if (/Mastery Book/i.test(name)) return "Masterybook";
+      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
+      if (scrollMatch) return "Scroll" + scrollMatch[1];
+      return sanitizeName(name);
+    };
+
+    const getImageElement = (path, name, isItem = false) => {
+      const img = document.createElement('img');
+      img.alt = name;
+      const filename = isItem
+        ? getItemImageName(name)
+        : stripGender(name).replace(/\s+/g, '_');
+      const pngPath = path + filename + '.png';
+      const gifPath = path + filename + '.gif';
+
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = gifPath;
+      };
+      img.src = pngPath;
+
+      return img;
+    };
+
+    const highlightKeyword = (text, keyword) => {
+      const regex = new RegExp(`(${keyword})`, 'gi');
+      return escapeHtml(text).replace(regex, '<mark>$1</mark>');
+    };
+
+    async function loadData() {
+      const [monsterResp, bossResp] = await Promise.all([
+        fetch('data/monster/monster_data.json'),
+        fetch('data/monster/boss_data.json')
+      ]);
+      monsterData = await monsterResp.json();
+      bossData = await bossResp.json();
+    }
+
+    function unifiedSearch() {
+      const keywordRaw = document.getElementById('searchInput').value.trim();
+      if (!keywordRaw) return alert("Please enter a search term.");
+
+      const terms = keywordRaw.toLowerCase().split(',').map(t => normalize(t.trim()));
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = "";
+      document.getElementById('details').innerHTML = "";
+
+      const monsterMatches = [...monsterData, ...bossData].filter(m =>
+        terms.some(term => normalize(m.name).includes(term))
+      );
+
+      const itemMatches = {};
+      [...monsterData, ...bossData].forEach(m => {
+        if (!m.drops) return;
+        m.drops.forEach(drop => {
+          const normDrop = normalize(drop);
+          if (terms.some(term => normDrop.includes(term))) {
+            if (!itemMatches[drop]) itemMatches[drop] = [];
+            itemMatches[drop].push(m);
+          }
+        });
+      });
+
+      if (monsterMatches.length > 0) {
+        const title = document.createElement('h2');
+        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
+        resultsContainer.appendChild(title);
+        monsterMatches.forEach(monster => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(monsterImagePath, monster.name));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(monster.name, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showMonsterDetail(monster));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      const itemKeys = Object.keys(itemMatches);
+      if (itemKeys.length > 0) {
+        const title = document.createElement('h2');
+        title.textContent = `🎁 Items (${itemKeys.length})`;
+        resultsContainer.appendChild(title);
+        itemKeys.forEach(item => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(itemImagePath, item, true));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(item, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      if (monsterMatches.length === 0 && itemKeys.length === 0) {
+        resultsContainer.innerHTML = "<p>No results found.</p>";
+      }
+    }
+
+    function showMonsterDetail(monster) {
+      const details = document.getElementById('details');
+      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+      const filename = stripGender(monster.name).replace(/\s+/g, '_');
+      const imgSrc = `${monsterImagePath}${filename}.png`;
+      const fallbackImgSrc = `${monsterImagePath}${filename}.gif`;
+
+      details.innerHTML = `
+        <h2>${escapeHtml(monster.name)}</h2>
+        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
+        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
+        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined && monster.required_accuracy ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
+        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+        <div id="${dropsId}" style="display:none; margin-top:10px;">
+          ${(monster.drops || []).map(drop => `
+            <div class="drop-item">
+              <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
+              <span>${escapeHtml(drop)}</span>
+            </div>
+          `).join('')}
+        </div>
+      `;
+    }
+
+    function toggleDrops(id, btn) {
+      const el = document.getElementById(id);
+      const isVisible = el.style.display === 'block';
+      el.style.display = isVisible ? 'none' : 'block';
+      btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+    }
+
+    function showItemDetail(item, monsters) {
+      const details = document.getElementById('details');
+      details.innerHTML = '';
+      details.appendChild(getImageElement(itemImagePath, item, true));
+
+      const title = document.createElement('h2');
+      title.textContent = item;
+      details.appendChild(title);
+
+      const sub = document.createElement('div');
+      sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
+
+      const ul = document.createElement('ul');
+      monsters.forEach(m => {
+        const li = document.createElement('li');
+        const img = getImageElement(monsterImagePath, m.name);
+        img.style.width = '30px';
+        img.style.height = 'auto';
+        img.style.verticalAlign = 'middle';
+        img.style.marginRight = '8px';
+
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          document.getElementById('searchInput').value = m.name;
+          unifiedSearch();
+        });
+
+        li.appendChild(img);
+        li.appendChild(link);
+        ul.appendChild(li);
+      });
+
+      sub.appendChild(ul);
+      details.appendChild(sub);
+    }
+
+    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+    document.getElementById('searchInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') unifiedSearch();
+    });
+
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
+    }
+
+    loadData();
+  </script>
 </body>
 </html>
