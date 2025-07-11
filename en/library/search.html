@@ -117,14 +117,40 @@
     .top-right-button:hover {
       background-color: #e55d2e;
     }
+    #autocompleteList {
+      position: absolute;
+      background: white;
+      z-index: 1000;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+    }
+    #autocompleteList li {
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    #autocompleteList li img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <button class="top-right-button" onclick="location.href='https://artaledb.com/en/index.html'">🏠 Main</button>
     <h1>🔍 Monster / Item Search</h1>
-    <div style="margin-bottom: 20px;">
+    <div style="margin-bottom: 20px; position: relative;">
       <input type="text" id="searchInput" placeholder="Enter keyword(s) (e.g. snail)">
+      <ul id="autocompleteList"></ul>
       <button id="searchBtn">Search</button>
       <button id="darkModeToggle">🌙 Dark Mode</button>
     </div>
@@ -134,11 +160,11 @@
     </div>
   </div>
   <script>
-     let monsterData = [], bossData = [];
+    let monsterData = [], bossData = [];
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const escapeHtml = text => text?.replace(/[&<>"]|'/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
@@ -154,18 +180,12 @@
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
       img.alt = name;
-      const filename = isItem
-        ? getItemImageName(name)
-        : stripGender(name).replace(/\s+/g, '_');
-      const pngPath = path + filename + '.png';
-      const gifPath = path + filename + '.gif';
-
+      const filename = isItem ? getItemImageName(name) : stripGender(name).replace(/\s+/g, '_');
+      img.src = path + filename + '.png';
       img.onerror = () => {
         img.onerror = null;
-        img.src = gifPath;
+        img.src = path + filename + '.gif';
       };
-      img.src = pngPath;
-
       return img;
     };
 
@@ -258,10 +278,8 @@
         <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
         <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
         <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
         <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
         <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined && monster.required_accuracy ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
         <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
@@ -270,8 +288,7 @@
               <span>${escapeHtml(drop)}</span>
             </div>
           `).join('')}
-        </div>
-      `;
+        </div>`;
     }
 
     function toggleDrops(id, btn) {
@@ -298,8 +315,6 @@
         const li = document.createElement('li');
         const img = getImageElement(monsterImagePath, m.name);
         img.style.width = '30px';
-        img.style.height = 'auto';
-        img.style.verticalAlign = 'middle';
         img.style.marginRight = '8px';
 
         const link = document.createElement('a');
@@ -336,6 +351,62 @@
       document.body.classList.add('dark-mode');
       document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
     }
+
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const query = this.value.trim().toLowerCase();
+      const autocompleteList = document.getElementById('autocompleteList');
+      autocompleteList.innerHTML = '';
+      autocompleteList.style.display = 'none';
+
+      if (!query) return;
+
+      const monsterMatches = [...monsterData, ...bossData].filter(m =>
+        stripGender(m.name).toLowerCase().includes(query)
+      );
+      const itemSet = new Set();
+      [...monsterData, ...bossData].forEach(m => {
+        (m.drops || []).forEach(d => {
+          if (stripGender(d).toLowerCase().includes(query)) itemSet.add(d);
+        });
+      });
+
+      if (monsterMatches.length === 0 && itemSet.size === 0) return;
+      autocompleteList.style.display = 'block';
+
+      const addSection = (title, items, isItem = false) => {
+        if (!items.length) return;
+        const header = document.createElement('li');
+        header.innerHTML = `<strong>${title}</strong>`;
+        header.style.padding = '5px';
+        header.style.borderBottom = '1px solid #ccc';
+        autocompleteList.appendChild(header);
+        items.forEach(item => {
+          const li = document.createElement('li');
+          const img = getImageElement(isItem ? itemImagePath : monsterImagePath, item.name || item, isItem);
+          const span = document.createElement('span');
+          span.textContent = item.name || item;
+          li.appendChild(img);
+          li.appendChild(span);
+          li.addEventListener('click', () => {
+            document.getElementById('searchInput').value = item.name || item;
+            autocompleteList.style.display = 'none';
+            unifiedSearch();
+          });
+          autocompleteList.appendChild(li);
+        });
+      };
+
+      addSection('몬스터', monsterMatches.slice(0, 10));
+      addSection('아이템', Array.from(itemSet).slice(0, 10), true);
+    });
+
+    document.addEventListener('click', e => {
+      const target = e.target;
+      const list = document.getElementById('autocompleteList');
+      if (!list.contains(target) && target.id !== 'searchInput') {
+        list.style.display = 'none';
+      }
+    });
 
     loadData();
   </script>
