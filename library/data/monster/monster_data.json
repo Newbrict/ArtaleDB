@@ -573,7 +573,7 @@
     "region": "빅토리아 아일랜드"
   },
   {
-    "name": "Rooster",
+    "name": "닭",
     "level": 20,
     "hp": 340,
     "mp": 40,
@@ -594,19 +594,19 @@
       "뻣뻣한 깃털",
       "가넷의 원석",
       "자수정의 원석",
-      "Bronze Full Helm",
-      "Red Split",
+      "브론즈 풀 헬름",
+      "붉은색 가람",
       "검은색 가람 치마",
-      "Blue Savata",
-      "Red Ankle-strap Sandals",
-      "Misthil Axe",
-      "Scroll for Topwear for DEF 60%",
-      "Magic Potion"
+      "블루 사바타",
+      "빨간색 도로시 구두",
+      "미스릴 도끼",
+      "상의 방어력 주문서 60%",
+      "마법사의 물약"
     ],
-    "region": "Shanghai, Floating Market (Thailand)"
+    "region": "상해 와이탄, 플로팅 마켓 (태국)"
   },
   {
-    "name": "Blue Mushroom",
+    "name": "파란버섯",
     "level": 20,
     "hp": 350,
     "mp": 30,
@@ -622,12 +622,12 @@
     ],
     "modifiers": "X",
     "drops": [
-      "Blue Mushroom Cap",
+      "파란버섯의 갓",
       "주황 포션",
-      "Magic Potion",
-      "Scroll for Two Handed Sword for ATT 10%",
+      "마법사의 물약",
+      "한손검 공격력 주문서 10%",
       "필드 대거",
-      "Steel Fitted Mail",
+      "스틸 메일",
       "Red Loosecap",
       "활전용 화살",
       "금의 원석",
@@ -860,7 +860,7 @@
       "Scroll for Earring for INT 10%",
       "Scroll for Two Handed BW for ATT 10%"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Wooden Mask",
@@ -932,7 +932,7 @@
       "Korean Fan",
       "Aluminum Baseball Bat",
       "Eloon",
-      "Misthil Axe",
+      "미스릴 도끼",
       "Red Savata",
       "Red Starry Bandana",
       "Blue Doros Robe",
@@ -1109,7 +1109,7 @@
       "Scroll for Earring for LUK 60%",
       "Seclusion Wristguard"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Wild Boar",
@@ -1312,7 +1312,7 @@
       "강철의 원석",
       "Sushi Salmon",
       "Fish Cake Skewer",
-      "Scroll for Two Handed Sword for ATT 10%",
+      "한손검 공격력 주문서 10%",
       "한손도끼 공격력 주문서 10%",
       "Frying Pan",
       "Cat's Eye",
@@ -1441,7 +1441,7 @@
       "Scroll for Bow for ATT 60%",
       "Tobi Throwing Stars"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Fairy",
@@ -1600,7 +1600,7 @@
       "Dark Legolia Pants",
       "Blue Avenger",
       "Scroll for Two Handed BW for ATT 10%",
-      "Scroll for Topwear for DEF 60%"
+      "상의 방어력 주문서 60%"
     ],
     "region": "Zipangu"
   },
@@ -1902,7 +1902,7 @@
       "One Handed Sword Forging Stimulator",
       "Wand Production Stimulator"
     ],
-    "region": "빅토리아 아일랜드, Floating Market (Thailand)"
+    "region": "빅토리아 아일랜드, 플로팅 마켓 (태국)"
   },
   {
     "name": "Leatty",
@@ -1928,7 +1928,7 @@
       "White Potion",
       "Wolbi Throwing Stars",
       "다이아몬드의 원석",
-      "Blue Savata",
+      "블루 사바타",
       "Pink Jester",
       "Dark Hawkeye",
       "Black Steal",
@@ -1988,7 +1988,7 @@
       "Scroll for Two Handed BW for ATT 10%",
       "Kumbi Throwing Stars"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Jr. Grupin",
@@ -2441,7 +2441,7 @@
       "한손둔기 공격력 주문서 60%",
       "Scroll for Bow for ATT 60%"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Curse Eye",
@@ -2785,7 +2785,7 @@
       "단검 공격력 주문서 60%",
       "Mokbi Throwing Stars"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "Lorang",
@@ -3030,7 +3030,7 @@
       "Kumbi Throwing Stars",
       "Black Adventurer Cape"
     ],
-    "region": "Shanghai"
+    "region": "상해 와이탄"
   },
   {
     "name": "King Bloctopus",
@@ -3246,7 +3246,7 @@
       "White Potion",
       "파란 포션",
       "Hall Staff",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "Scroll for Claw for ATT 60%",
       "Great Red Helmet",
       "Red Pole Feather Hat",
@@ -4185,7 +4185,7 @@
       "White Potion",
       "Elixir",
       "Scroll for Overall Armor for DEF 60%",
-      "Scroll for Two Handed Sword for ATT 10%",
+      "한손검 공격력 주문서 10%",
       "Scroll for 창 for ATT 60%",
       "Red Whip",
       "Great Brown Helmet",
@@ -4465,7 +4465,7 @@
       "활전용 화살",
       "석궁전용 화살",
       "Scroll for Overall Armor for DEF 60%",
-      "Scroll for Two Handed Sword for ATT 10%",
+      "한손검 공격력 주문서 10%",
       "Mithril Crusader Helm",
       "Arc Staff",
       "Mithril Brist",
@@ -4498,7 +4498,7 @@
     "modifiers": "X",
     "drops": [
       "Iron Boar Armor",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Black Crystal Ore",
       "강철의 원석",
       "White Potion",
@@ -5737,7 +5737,7 @@
       "망토 지력 주문서 10%",
       "The Summoning Rock",
       "Blue Counter",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Dark Shadow",
       "Dark Shadow Pants",
       "Blue Bone Helm",
@@ -6784,7 +6784,7 @@
       "Steel Manute",
       "Steal Pow",
       "Red Gore Boots",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "Ocher Scorpio Pants",
       "Ocher Scorpio",
       "Black Magic Cape",
@@ -6823,7 +6823,7 @@
       "Elixir",
       "Black Crystal Ore",
       "강철의 원석",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "DEX Crystal Ore",
       "Blue Calas",
       "Blue Shouldermail",
@@ -7659,7 +7659,7 @@
       "오리할콘의 원석",
       "Dragon Skin",
       "망토 물리방어력 주문서 60%",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "Red Seraphis",
       "Blue Sonata",
       "Bronze Identity",
@@ -8322,7 +8322,7 @@
       "금의 원석",
       "Dark Crystal Ore",
       "Sniper Pill",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Scroll for Cape for STR 60%",
       "White Anakamoon",
       "Brown Polyfeather Hat",
@@ -8548,7 +8548,7 @@
       "Golden River",
       "Bronze Gigantic",
       "Neocora",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Scroll for Staff for Magic ATT 60%",
       "Dark Calaf",
       "White Calaf",
@@ -8826,7 +8826,7 @@
       "다이아몬드의 원석",
       "자수정의 원석",
       "Power Crystal Ore",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Scroll for Cape for LUK 60%",
       "Dark Requiem",
       "Dark Carzen Boots",
@@ -8941,7 +8941,7 @@
       "Dark Crystal Ore",
       "마법의 돌",
       "Sunset Dew",
-      "Scroll for Two Handed Sword for ATT 60%",
+      "한손검 공격력 주문서 60%",
       "Scroll for Cape for LUK 60%",
       "Redemption",
       "Gold Eyes",
@@ -9045,12 +9045,12 @@
       "White Potion",
       "Power Elixir",
       "Unagi",
-      "Magic Potion",
+      "마법사의 물약",
       "강철의 원석",
       "The Summoning Rock",
       "미스릴의 원석",
       "Scroll for Claw for ATT 10%",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "Purple Nightfox",
       "Dark Linnex",
       "Silver Ancient Shield",
@@ -9114,7 +9114,7 @@
       "단검 공격력 주문서 10%",
       "Scroll for Wand for Magic ATT 10%",
       "Scroll for Staff for Magic ATT 10%",
-      "Scroll for Two Handed Sword for ATT 10%",
+      "한손검 공격력 주문서 10%",
       "Scroll for Two Handed Axe for ATT 10%",
       "Scroll for Two Handed BW for ATT 10%",
       "Scroll for 창 for ATT 10%",
@@ -9407,7 +9407,7 @@
       "브라운 미들 래더",
       "OrangeHigh Boots",
       "Black Dragon Robe",
-      "Blue Savata",
+      "블루 사바타",
       "Subi Throwing Star",
       "Red Cross Earrings",
       "The Negotiator",
@@ -9484,7 +9484,7 @@
       "파란 포션",
       "Red Tiberian",
       "Green Hunter",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "Purple Steal",
       "Purple Steal Pants",
       "Cass",
@@ -9512,7 +9512,7 @@
     ],
     "modifiers": "Weak Lightning, Weak Poison / Strong Fire",
     "drops": [
-      "Magic Potion",
+      "마법사의 물약",
       "은의 원석",
       "에메랄드의 원석",
       "Emerald Earrings",
@@ -10054,7 +10054,7 @@
       "다이아몬드의 원석",
       "자수정의 원석",
       "Power Crystal Ore",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "전신 갑옷 민첩성 주문서 60%",
       "Blue Scarab",
       "Scroll for Overall Armor for INT 60%",
@@ -10350,7 +10350,7 @@
       "활전용 화살",
       "석궁전용 화살",
       "Carrot",
-      "Magic Potion",
+      "마법사의 물약",
       "금의 원석",
       "자수정의 원석",
       "Scroll for Crossbow for ATT 10%",
@@ -10437,7 +10437,7 @@
       "Golden Pride",
       "Green Lappy Boots",
       "Green Robin Hat",
-      "Blue Savata",
+      "블루 사바타",
       "Black Magicshoes",
       "Blood Sneak Pants",
       "Beige Carribean",
@@ -10556,7 +10556,7 @@
       "Red Cross Shield",
       "Forked 창",
       "Orange Whitebottom Boots",
-      "Blue Savata",
+      "블루 사바타",
       "Black Magicshoes",
       "Blood Sneak Pants",
       "Blood Sneak",
@@ -10760,7 +10760,7 @@
       "Kiyos Beak",
       "아쿠아마린의 원석",
       "마법의 돌",
-      "Scroll for Topwear for DEF 60%",
+      "상의 방어력 주문서 60%",
       "망토 민첩성 주문서 100%",
       "Eagle Crow",
       "Bronze Guardian",
@@ -11555,7 +11555,7 @@
       "Blue One-lined T-Shirt",
       "Scroll for Shoes for Jump 30%"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "White Chicken",
@@ -11590,7 +11590,7 @@
       "창",
       "위저드 완드"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "Yellow Lizard",
@@ -11622,7 +11622,7 @@
       "Circle-Winded Staff",
       "Scroll for 창 for Accuracy 60%"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "Toad",
@@ -11655,7 +11655,7 @@
       "Forked 창",
       "Petal Staff"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "Red Lizard",
@@ -11690,7 +11690,7 @@
       "Scroll for Shoes for Jump 100%",
       "Scroll for Gun for ATT 60%"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "Snake",
@@ -11736,7 +11736,7 @@
       "Red Moon Gloves",
       "너클 공격력 주문서 60%"
     ],
-    "region": "Floating Market (Thailand)"
+    "region": "플로팅 마켓 (태국)"
   },
   {
     "name": "Rash",
@@ -12629,7 +12629,7 @@
         "Red Arnah Shoes",
         "Leomite",
         "Dimon Wand",
-        "Scroll for Topwear for DEF 60%",
+        "상의 방어력 주문서 60%",
         "Scroll for Helmet for DEF 60%",
         "Scroll for Two-Handed Sword for ATT 60%",
         "Dragon Spirit",
