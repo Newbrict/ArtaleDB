@@ -291,7 +291,7 @@
         <p><strong>EXP:</strong> ${monster.exp || '0'}</p>
         <p><strong>속성:</strong> ${monster.Modifiers || '없음'}</p>
         <p><strong>명중률 요구치:</strong> ${monster.required_accuracy || '0'} ${monster.accuracy_level_decrease !== undefined ? ` (1레벨 낮을때 마다 +${monster.accuracy_level_decrease})` : ''}</p>
-        <button onclick="toggleDrops('${dropsId}', this)">드롭 보기</button>
+        <button onclick="toggleDrops('${dropsId}', this)">드랍아이템 보기</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
@@ -306,7 +306,7 @@
       const el = document.getElementById(id);
       const isVisible = el.style.display === 'block';
       el.style.display = isVisible ? 'none' : 'block';
-      btn.textContent = isVisible ? '드롭 보기' : '드롭 숨기기';
+      btn.textContent = isVisible ? '드랍아이템 보기' : '숨기기';
     }
 
     function showItemDetail(item, monsters) {
