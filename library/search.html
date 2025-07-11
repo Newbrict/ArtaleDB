@@ -286,10 +286,10 @@
         <h2>${escapeHtml(monster.name)}</h2>
         <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
         <p><strong>레벨:</strong> ${monster.level || '정보 없음'}</p>
-        <p><strong>체력 (HP):</strong> ${monster.hp || '정보 없음'}</p>
+        <p><strong>HP:</strong> ${monster.hp || '정보 없음'}</p>
         <p><strong>지역:</strong> ${monster.region || '정보 없음'}</p>
-        <p><strong>경험치 (EXP):</strong> ${monster.exp || '정보 없음'}</p>
-        <p><strong>속성:</strong> ${monster.Modifiers || '정보 없음'}</p>
+        <p><strong>EXP:</strong> ${monster.exp || '정보 없음'}</p>
+        <p><strong>속성:</strong> ${monster.Modifiers || '없음'}</p>
         <p><strong>명중률 요구치:</strong> ${monster.required_accuracy || '정보 없음'} ${monster.accuracy_level_decrease !== undefined ? ` (1레벨 낮을때 마다 +${monster.accuracy_level_decrease})` : ''}</p>
         <button onclick="toggleDrops('${dropsId}', this)">드롭 보기</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
