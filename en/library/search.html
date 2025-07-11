@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Monster & Item Search</title>
+  <title>몬스터 & 아이템 검색</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -142,17 +142,26 @@
       height: 30px;
       margin-right: 10px;
     }
+   .top-right-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ff7043;
+    }
+    .top-right-button:hover {
+      background-color: #e55d2e;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <button class="top-right-button" onclick="location.href='https://artaledb.com/en/index.html'">🏠 Main</button>
-    <h1>🔍 Monster / Item Search</h1>
+    <button class="top-right-button" onclick="location.href='https://artaledb.com/ko/index.html'">🏠 메인</button>
+    <h1>🔍 몬스터 / 아이템 검색</h1>
     <div style="margin-bottom: 20px; position: relative;">
-      <input type="text" id="searchInput" placeholder="Enter keyword(s) (e.g. snail)">
+      <input type="text" id="searchInput" placeholder="검색어를 입력하세요 (예: 달팽이)">
       <ul id="autocompleteList"></ul>
-      <button id="searchBtn">Search</button>
-      <button id="darkModeToggle">🌙 Dark Mode</button>
+      <button id="searchBtn">검색</button>
+      <button id="darkModeToggle">🌙 다크 모드</button>
     </div>
     <div class="content-wrapper">
       <div id="results"></div>
@@ -205,7 +214,7 @@
 
     function unifiedSearch() {
       const keywordRaw = document.getElementById('searchInput').value.trim();
-      if (!keywordRaw) return alert("Please enter a search term.");
+      if (!keywordRaw) return alert("검색어를 입력해주세요.");
 
       const terms = keywordRaw.toLowerCase().split(',').map(t => normalize(t.trim()));
       const resultsContainer = document.getElementById('results');
@@ -230,7 +239,7 @@
 
       if (monsterMatches.length > 0) {
         const title = document.createElement('h2');
-        title.textContent = `🧟 Monsters (${monsterMatches.length})`;
+        title.textContent = `🧟 몬스터 (${monsterMatches.length})`;
         resultsContainer.appendChild(title);
         monsterMatches.forEach(monster => {
           const div = document.createElement('div');
@@ -247,7 +256,7 @@
       const itemKeys = Object.keys(itemMatches);
       if (itemKeys.length > 0) {
         const title = document.createElement('h2');
-        title.textContent = `🎁 Items (${itemKeys.length})`;
+        title.textContent = `🎁 아이템 (${itemKeys.length})`;
         resultsContainer.appendChild(title);
         itemKeys.forEach(item => {
           const div = document.createElement('div');
@@ -262,7 +271,7 @@
       }
 
       if (monsterMatches.length === 0 && itemKeys.length === 0) {
-        resultsContainer.innerHTML = "<p>No results found.</p>";
+        resultsContainer.innerHTML = "<p>검색 결과가 없습니다.</p>";
       }
     }
 
@@ -276,11 +285,11 @@
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
         <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+        <p><strong>레벨:</strong> ${monster.level || '정보 없음'}</p>
+        <p><strong>HP:</strong> ${monster.hp || '정보 없음'}</p>
+        <p><strong>출현 지역:</strong> ${monster.region || '정보 없음'}</p>
+        <p><strong>경험치:</strong> ${monster.exp || '정보 없음'}</p>
+        <button onclick="toggleDrops('${dropsId}', this)">드롭 보기</button>
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
@@ -295,7 +304,7 @@
       const el = document.getElementById(id);
       const isVisible = el.style.display === 'block';
       el.style.display = isVisible ? 'none' : 'block';
-      btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
+      btn.textContent = isVisible ? '드롭 보기' : '드롭 숨기기';
     }
 
     function showItemDetail(item, monsters) {
@@ -308,7 +317,7 @@
       details.appendChild(title);
 
       const sub = document.createElement('div');
-      sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
+      sub.innerHTML = `<p><strong>드롭 몬스터:</strong></p>`;
 
       const ul = document.createElement('ul');
       monsters.forEach(m => {
@@ -319,7 +328,7 @@
 
         const link = document.createElement('a');
         link.href = '#';
-        link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
+        link.textContent = `${m.name} (레벨: ${m.level || '정보 없음'}, 지역: ${m.region || '정보 없음'})`;
         link.addEventListener('click', e => {
           e.preventDefault();
           document.getElementById('searchInput').value = m.name;
@@ -344,12 +353,12 @@
       document.body.classList.toggle('dark-mode');
       const isDark = document.body.classList.contains('dark-mode');
       localStorage.setItem('darkMode', isDark);
-      document.getElementById('darkModeToggle').textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+      document.getElementById('darkModeToggle').textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
     });
 
     if (localStorage.getItem('darkMode') === 'true') {
       document.body.classList.add('dark-mode');
-      document.getElementById('darkModeToggle').textContent = '☀️ Light Mode';
+      document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
     }
 
     document.getElementById('searchInput').addEventListener('input', function() {
@@ -396,8 +405,8 @@
         });
       };
 
-      addSection('Monster', monsterMatches.slice(0, 10));
-      addSection('Item', Array.from(itemSet).slice(0, 10), true);
+      addSection('몬스터', monsterMatches.slice(0, 10));
+      addSection('아이템', Array.from(itemSet).slice(0, 10), true);
     });
 
     document.addEventListener('click', e => {
