@@ -1,0 +1,9297 @@
+[
+  {
+    "id": 4000000,
+    "name_kr": "파란 달팽이의 껍질",
+    "name_en": "BlueSnailShell"
+  },
+  {
+    "id": 4000001,
+    "name_kr": "주황버섯의 갓",
+    "name_en": "OrangeMushroomCap"
+  },
+  {
+    "id": 4000002,
+    "name_kr": "돼지의 리본",
+    "name_en": "Pig'sRibbon"
+  },
+  {
+    "id": 4000003,
+    "name_kr": "나뭇가지",
+    "name_en": "TreeBranch"
+  },
+  {
+    "id": 4000004,
+    "name_kr": "물컹물컹한 액체",
+    "name_en": "SquishyLiquid"
+  },
+  {
+    "id": 4000005,
+    "name_kr": "나뭇잎",
+    "name_en": "Leaf"
+  },
+  {
+    "id": 4000006,
+    "name_kr": "옥토퍼스의 다리",
+    "name_en": "OctopusLeg"
+  },
+  {
+    "id": 4000007,
+    "name_kr": "이블아이의 꼬리",
+    "name_en": "EvilEyeTail"
+  },
+  {
+    "id": 4000008,
+    "name_kr": "죽은 자의 부적",
+    "name_en": "CharmoftheUndead"
+  },
+  {
+    "id": 4000009,
+    "name_kr": "파란버섯의 갓",
+    "name_en": "BlueMushroomCap"
+  },
+  {
+    "id": 4000010,
+    "name_kr": "슬라임의 방울",
+    "name_en": "SlimeBubble"
+  },
+  {
+    "id": 4000011,
+    "name_kr": "버섯의 포자",
+    "name_en": "MushroomSpore"
+  },
+  {
+    "id": 4000012,
+    "name_kr": "초록버섯의 갓",
+    "name_en": "GreenMushroomCap"
+  },
+  {
+    "id": 4000013,
+    "name_kr": "커즈아이의 꼬리",
+    "name_en": "CurseEyeTail"
+  },
+  {
+    "id": 4000014,
+    "name_kr": "드레이크의 머리뼈",
+    "name_en": "DrakeSkull"
+  },
+  {
+    "id": 4000015,
+    "name_kr": "뿔버섯의 갓",
+    "name_en": "HornyMushroomCap"
+  },
+  {
+    "id": 4000016,
+    "name_kr": "빨간 달팽이의 껍질",
+    "name_en": "RedSnailShell"
+  },
+  {
+    "id": 4000017,
+    "name_kr": "돼지의 머리",
+    "name_en": "Pig'sHead"
+  },
+  {
+    "id": 4000018,
+    "name_kr": "장작",
+    "name_en": "Firewood"
+  },
+  {
+    "id": 4000019,
+    "name_kr": "달팽이의 껍질",
+    "name_en": "SnailShell"
+  },
+  {
+    "id": 4000020,
+    "name_kr": "와일드보어의 송곳니",
+    "name_en": "WildBoarTooth"
+  },
+  {
+    "id": 4000021,
+    "name_kr": "동물의 가죽",
+    "name_en": "Leather"
+  },
+  {
+    "id": 4000022,
+    "name_kr": "스톤골렘의 돌조각",
+    "name_en": "StoneGolemRubble"
+  },
+  {
+    "id": 4000023,
+    "name_kr": "콜드아이의 꼬리",
+    "name_en": "ColdEyeTail"
+  },
+  {
+    "id": 4000024,
+    "name_kr": "파이어보어의 송곳니",
+    "name_en": "FireBoar'sTooth"
+  },
+  {
+    "id": 4000025,
+    "name_kr": "다크 스톤골렘의 돌조각",
+    "name_en": "DarkStoneGolemRubble"
+  },
+  {
+    "id": 4000026,
+    "name_kr": "루팡 인형",
+    "name_en": "LupinDoll"
+  },
+  {
+    "id": 4000027,
+    "name_kr": "와일드카고의 눈동자",
+    "name_en": "WildKargoEye"
+  },
+  {
+    "id": 4000028,
+    "name_kr": "타우로마시스의 뿔",
+    "name_en": "TauromacisHorn"
+  },
+  {
+    "id": 4000029,
+    "name_kr": "루팡의 바나나",
+    "name_en": "Lupin'sBanana"
+  },
+  {
+    "id": 4000030,
+    "name_kr": "용의 가죽",
+    "name_en": "DragonSkin"
+  },
+  {
+    "id": 4000031,
+    "name_kr": "저주받은 인형",
+    "name_en": "CursedDoll"
+  },
+  {
+    "id": 4000032,
+    "name_kr": "리게이터의 가죽",
+    "name_en": "LigatorSkin"
+  },
+  {
+    "id": 4000033,
+    "name_kr": "크로코의 가죽",
+    "name_en": "CrocoSkin"
+  },
+  {
+    "id": 4000034,
+    "name_kr": "주니어 네키의 가죽",
+    "name_en": "Jr.NeckiSkin"
+  },
+  {
+    "id": 4000035,
+    "name_kr": "식탁보",
+    "name_en": "Tablecloth"
+  },
+  {
+    "id": 4000036,
+    "name_kr": "이상한 느낌의 약",
+    "name_en": "MedicineWithWeirdVibes"
+  },
+  {
+    "id": 4000037,
+    "name_kr": "버블링의 큰 방울",
+    "name_en": "Bubbling'sHugeBubble"
+  },
+  {
+    "id": 4000038,
+    "name_kr": "이벤트 트로피",
+    "name_en": "EventTrophy"
+  },
+  {
+    "id": 4000039,
+    "name_kr": "아이언 호그의 철발굽",
+    "name_en": "IronHog'sMetalHoof"
+  },
+  {
+    "id": 4000040,
+    "name_kr": "머쉬맘의 포자",
+    "name_en": "MushmomSpore"
+  },
+  {
+    "id": 4000041,
+    "name_kr": "멜러디의 실험용 개구리",
+    "name_en": "Malady'sExperimentalFrog"
+  },
+  {
+    "id": 4000042,
+    "name_kr": "스티지의 날개",
+    "name_en": "StirgeWing"
+  },
+  {
+    "id": 4000043,
+    "name_kr": "로랑의 집게발",
+    "name_en": "LorangClaw"
+  },
+  {
+    "id": 4000044,
+    "name_kr": "클랑의 집게발",
+    "name_en": "ClangClaw"
+  },
+  {
+    "id": 4000045,
+    "name_kr": "엄티의 등껍질",
+    "name_en": "TortieShell"
+  },
+  {
+    "id": 4000046,
+    "name_kr": "타우로스피어의 뿔",
+    "name_en": "TaurospearHorn"
+  },
+  {
+    "id": 4000047,
+    "name_kr": "마우스",
+    "name_en": "Mouse"
+  },
+  {
+    "id": 4000048,
+    "name_kr": "주니어 예티의 가죽",
+    "name_en": "Jr.YetiSkin"
+  },
+  {
+    "id": 4000049,
+    "name_kr": "예티의 뿔",
+    "name_en": "YetiHorn"
+  },
+  {
+    "id": 4000050,
+    "name_kr": "페페의 부리",
+    "name_en": "PepeBeak"
+  },
+  {
+    "id": 4000051,
+    "name_kr": "헥터의 꼬리",
+    "name_en": "HectorTail"
+  },
+  {
+    "id": 4000052,
+    "name_kr": "화이트팽의 꼬리",
+    "name_en": "WhitePangTail"
+  },
+  {
+    "id": 4000053,
+    "name_kr": "웨어울프의 발톱",
+    "name_en": "WerewolfToenail"
+  },
+  {
+    "id": 4000054,
+    "name_kr": "라이칸스로프의 발톱",
+    "name_en": "LycanthropeToenail"
+  },
+  {
+    "id": 4000055,
+    "name_kr": "다크 주니어 예티의 가죽",
+    "name_en": "DarkJr.YetiSkin"
+  },
+  {
+    "id": 4000056,
+    "name_kr": "다크 예티의 뿔",
+    "name_en": "DarkYetiHorn"
+  },
+  {
+    "id": 4000057,
+    "name_kr": "다크 페페의 부리",
+    "name_en": "DarkPepeBeak"
+  },
+  {
+    "id": 4000058,
+    "name_kr": "네펜데스의 씨앗",
+    "name_en": "NependeathSeed"
+  },
+  {
+    "id": 4000059,
+    "name_kr": "스타픽시의 별조각",
+    "name_en": "StarPixie'sStarpiece"
+  },
+  {
+    "id": 4000060,
+    "name_kr": "루나픽시의 달조각",
+    "name_en": "LunarPixie'sMoonpiece"
+  },
+  {
+    "id": 4000061,
+    "name_kr": "러스터픽시의 태양조각",
+    "name_en": "LusterPixie'sSunpiece"
+  },
+  {
+    "id": 4000062,
+    "name_kr": "다크 네펜데스의 씨앗",
+    "name_en": "DarkNependeathSeed"
+  },
+  {
+    "id": 4000063,
+    "name_kr": "스톤볼의 돌조각",
+    "name_en": "SentinelShellpiece"
+  },
+  {
+    "id": 4000064,
+    "name_kr": "까마귀 깃털",
+    "name_en": "CrowFeather"
+  },
+  {
+    "id": 4000065,
+    "name_kr": "너구리 장작",
+    "name_en": "RaccoonFirewood"
+  },
+  {
+    "id": 4000066,
+    "name_kr": "여우 꼬리",
+    "name_en": "CloudFoxtail"
+  },
+  {
+    "id": 4000067,
+    "name_kr": "주니어 부기의 뿔",
+    "name_en": "Jr.BoogieHorn"
+  },
+  {
+    "id": 4000068,
+    "name_kr": "페어리의 더듬이",
+    "name_en": "Fierry'sTentacle"
+  },
+  {
+    "id": 4000069,
+    "name_kr": "좀비의 잃어버린 어금니",
+    "name_en": "Zombie'sLostTooth"
+  },
+  {
+    "id": 4000070,
+    "name_kr": "샐리온의 꼬리",
+    "name_en": "CellionTail"
+  },
+  {
+    "id": 4000071,
+    "name_kr": "라이오너의 꼬리",
+    "name_en": "LionerTail"
+  },
+  {
+    "id": 4000072,
+    "name_kr": "그류핀의 꼬리",
+    "name_en": "GrupinTail"
+  },
+  {
+    "id": 4000073,
+    "name_kr": "단단한 뿔",
+    "name_en": "SolidHorn"
+  },
+  {
+    "id": 4000074,
+    "name_kr": "루이넬의 꼬리",
+    "name_en": "LucidaTail"
+  },
+  {
+    "id": 4000075,
+    "name_kr": "망령의 삼각두건",
+    "name_en": "TriangularBandanaoftheNightghost"
+  },
+  {
+    "id": 4000076,
+    "name_kr": "플라이아이의 날개",
+    "name_en": "Fly-EyeWing"
+  },
+  {
+    "id": 4000077,
+    "name_kr": "큰 구름여우 꼬리",
+    "name_en": "DarkCloudFoxtail"
+  },
+  {
+    "id": 4000078,
+    "name_kr": "주니어 불독의 송곳니",
+    "name_en": "Jr.CerebesTooth"
+  },
+  {
+    "id": 4000079,
+    "name_kr": "불독의 송곳니",
+    "name_en": "CerebesTooth"
+  },
+  {
+    "id": 4000080,
+    "name_kr": "파이어독의 목걸이",
+    "name_en": "Bain'sSpikyCollar"
+  },
+  {
+    "id": 4000081,
+    "name_kr": "파이어봄의 불씨",
+    "name_en": "FirebombFlame"
+  },
+  {
+    "id": 4000082,
+    "name_kr": "좀비의 잃어버린 금니",
+    "name_en": "Zombie'sLostGoldTooth"
+  },
+  {
+    "id": 4000083,
+    "name_kr": "주니어 스톤볼의 돌조각",
+    "name_en": "Jr.SentinelShellpiece"
+  },
+  {
+    "id": 4000084,
+    "name_kr": "아이스 스톤볼의 돌조각",
+    "name_en": "IceSentinelShellpiece"
+  },
+  {
+    "id": 4000085,
+    "name_kr": "파이어 스톤볼의 돌조각",
+    "name_en": "FireSentinelShellpiece"
+  },
+  {
+    "id": 4000086,
+    "name_kr": "리티의 털뭉치",
+    "name_en": "LeattyFurball"
+  },
+  {
+    "id": 4000087,
+    "name_kr": "다크 리티의 털뭉치",
+    "name_en": "DarkLeattyFurball"
+  },
+  {
+    "id": 4000088,
+    "name_kr": "주니어 페페의 물고기",
+    "name_en": "Jr.Pepe'sFish"
+  },
+  {
+    "id": 4000089,
+    "name_kr": "꼬붕 A의 배지",
+    "name_en": "LittlemanA'sBadge"
+  },
+  {
+    "id": 4000090,
+    "name_kr": "꼬붕 B의 명찰",
+    "name_en": "LittlemanB'sNamePlate"
+  },
+  {
+    "id": 4000091,
+    "name_kr": "꼬붕 C의 목걸이",
+    "name_en": "LittlemanC'sNecklace"
+  },
+  {
+    "id": 4000092,
+    "name_kr": "간부 A의 손수건",
+    "name_en": "LeaderA'sShades"
+  },
+  {
+    "id": 4000093,
+    "name_kr": "간부 B의 왁스",
+    "name_en": "LeaderB'sCharm"
+  },
+  {
+    "id": 4000094,
+    "name_kr": "보스의 포머드",
+    "name_en": "Boss'sPomade"
+  },
+  {
+    "id": 4000095,
+    "name_kr": "쥐덫",
+    "name_en": "RatTrap"
+  },
+  {
+    "id": 4000096,
+    "name_kr": "단단한 호두",
+    "name_en": "HardWalnut"
+  },
+  {
+    "id": 4000097,
+    "name_kr": "거미줄",
+    "name_en": "Spiderweb"
+  },
+  {
+    "id": 4000098,
+    "name_kr": "끈적이는 거미줄",
+    "name_en": "StickySpiderweb"
+  },
+  {
+    "id": 4000099,
+    "name_kr": "문어 열쇠고리",
+    "name_en": "BloctopusKeyChain"
+  },
+  {
+    "id": 4000100,
+    "name_kr": "플라스틱 왕관",
+    "name_en": "PlasticCrown"
+  },
+  {
+    "id": 4000101,
+    "name_kr": "노란색 장난감 블록",
+    "name_en": "YellowToyBlock"
+  },
+  {
+    "id": 4000102,
+    "name_kr": "파란색 장난감 블록",
+    "name_en": "BlueToyBlock"
+  },
+  {
+    "id": 4000103,
+    "name_kr": "비행기 프로펠러",
+    "name_en": "Propeller"
+  },
+  {
+    "id": 4000104,
+    "name_kr": "비행기 모터",
+    "name_en": "Motor"
+  },
+  {
+    "id": 4000105,
+    "name_kr": "비행기 컨트롤러",
+    "name_en": "PlaneController"
+  },
+  {
+    "id": 4000106,
+    "name_kr": "곰인형의 솜뭉치",
+    "name_en": "Teddy'sCotton"
+  },
+  {
+    "id": 4000107,
+    "name_kr": "곰인형의 노란리본",
+    "name_en": "Teddy'sYellowRibbon"
+  },
+  {
+    "id": 4000108,
+    "name_kr": "팬더인형",
+    "name_en": "PandaDoll"
+  },
+  {
+    "id": 4000109,
+    "name_kr": "장난감 새끼오리",
+    "name_en": "ToyDuckling"
+  },
+  {
+    "id": 4000110,
+    "name_kr": "장난감 병정의 칼",
+    "name_en": "ToyTrojanSword"
+  },
+  {
+    "id": 4000111,
+    "name_kr": "싸구려 건전지",
+    "name_en": "CheapBattery"
+  },
+  {
+    "id": 4000112,
+    "name_kr": "기계심장",
+    "name_en": "MechanicalHeart"
+  },
+  {
+    "id": 4000113,
+    "name_kr": "시계 태엽",
+    "name_en": "ClockSpring"
+  },
+  {
+    "id": 4000114,
+    "name_kr": "작은 시계",
+    "name_en": "TableClock"
+  },
+  {
+    "id": 4000115,
+    "name_kr": "톱니바퀴",
+    "name_en": "Cog"
+  },
+  {
+    "id": 4000116,
+    "name_kr": "작은 알",
+    "name_en": "SmallEgg"
+  },
+  {
+    "id": 4000117,
+    "name_kr": "우주 식량",
+    "name_en": "SpaceFood"
+  },
+  {
+    "id": 4000118,
+    "name_kr": "소형 우주선",
+    "name_en": "SmallSpaceship"
+  },
+  {
+    "id": 4000119,
+    "name_kr": "수신기",
+    "name_en": "ReceivingApparatus"
+  },
+  {
+    "id": 4000120,
+    "name_kr": "마티안의 촉수",
+    "name_en": "Mateon'sTentacle"
+  },
+  {
+    "id": 4000121,
+    "name_kr": "플라티안의 헬멧",
+    "name_en": "Plateon'sHelmet"
+  },
+  {
+    "id": 4000122,
+    "name_kr": "메카티안의 광선총",
+    "name_en": "Mecateon'sLaserGun"
+  },
+  {
+    "id": 4000123,
+    "name_kr": "낡은 고글",
+    "name_en": "Worn-OutGoggle"
+  },
+  {
+    "id": 4000124,
+    "name_kr": "롬바드의 메모리카드",
+    "name_en": "Rombot'sMemoryCard"
+  },
+  {
+    "id": 4000125,
+    "name_kr": "원로 그레이의 표식",
+    "name_en": "ChiefGray'sSign"
+  },
+  {
+    "id": 4000126,
+    "name_kr": "MT-09의 연료",
+    "name_en": "MT-09'sFuel"
+  },
+  {
+    "id": 4000127,
+    "name_kr": "장난감 북",
+    "name_en": "ToyDrum"
+  },
+  {
+    "id": 4000128,
+    "name_kr": "버피의 모자",
+    "name_en": "BuffyHat"
+  },
+  {
+    "id": 4000129,
+    "name_kr": "레이지 버피의 구슬",
+    "name_en": "LazyBuffyMarble"
+  },
+  {
+    "id": 4000130,
+    "name_kr": "버푼의 괘종시계",
+    "name_en": "Buffoon'sGrandpaClock"
+  },
+  {
+    "id": 4000131,
+    "name_kr": "딥 버푼의 돌조각",
+    "name_en": "DeepBuffoon'sRockPiece"
+  },
+  {
+    "id": 4000132,
+    "name_kr": "파이렛의 키",
+    "name_en": "GhostPirateKey"
+  },
+  {
+    "id": 4000133,
+    "name_kr": "듀얼 파이렛의 추진기",
+    "name_en": "DualPirate'sPropeller"
+  },
+  {
+    "id": 4000134,
+    "name_kr": "바이킹의 돛",
+    "name_en": "VikingSail"
+  },
+  {
+    "id": 4000135,
+    "name_kr": "기간틱 바이킹의 모자",
+    "name_en": "GiganticVikingHat"
+  },
+  {
+    "id": 4000136,
+    "name_kr": "코코넛 열매",
+    "name_en": "Coconut"
+  },
+  {
+    "id": 4000137,
+    "name_kr": "부하D의 손톱",
+    "name_en": "SubordinateDFingernail"
+  },
+  {
+    "id": 4000138,
+    "name_kr": "여보스의 빗",
+    "name_en": "LadyBoss'sComb"
+  },
+  {
+    "id": 4000139,
+    "name_kr": "보디가드A의 넥타이 핀",
+    "name_en": "BodyguardA'sTiePin"
+  },
+  {
+    "id": 4000140,
+    "name_kr": "보디가드 B의 탄환",
+    "name_en": "BodyguardB'sBulletShell"
+  },
+  {
+    "id": 4000141,
+    "name_kr": "대보스의 손전등",
+    "name_en": "BigBossFlashlight"
+  },
+  {
+    "id": 4000142,
+    "name_kr": "주니어 스톤볼의 돌조각",
+    "name_en": "Jr.SentinelShellpiece"
+  },
+  {
+    "id": 4000143,
+    "name_kr": "좀비테니 인형",
+    "name_en": "ZombieTeddyBear"
+  },
+  {
+    "id": 4000144,
+    "name_kr": "자유로운 영혼",
+    "name_en": "FreeSpirit"
+  },
+  {
+    "id": 4000145,
+    "name_kr": "봉인된 괘종시계",
+    "name_en": "Sealed-upGrandpaClock"
+  },
+  {
+    "id": 4000146,
+    "name_kr": "사악한 영혼",
+    "name_en": "EvilSpirit"
+  },
+  {
+    "id": 4000147,
+    "name_kr": "봉인된 테니인형",
+    "name_en": "SealedTeddyBear"
+  },
+  {
+    "id": 4000148,
+    "name_kr": "속박의 굴레",
+    "name_en": "BindingBridle"
+  },
+  {
+    "id": 4000149,
+    "name_kr": "봉인된 항아리",
+    "name_en": "SealedBottle"
+  },
+  {
+    "id": 4000150,
+    "name_kr": "팬텀워치의 얼음조각",
+    "name_en": "IcePiece"
+  },
+  {
+    "id": 4000151,
+    "name_kr": "게이트키퍼의 완장",
+    "name_en": "GatekeeperArmband"
+  },
+  {
+    "id": 4000152,
+    "name_kr": "타나토스의 견장",
+    "name_en": "TanathosStrap"
+  },
+  {
+    "id": 4000153,
+    "name_kr": "스노클",
+    "name_en": "Snorkle"
+  },
+  {
+    "id": 4000154,
+    "name_kr": "아기 물개 인형",
+    "name_en": "ToyBabySeal"
+  },
+  {
+    "id": 4000155,
+    "name_kr": "물개가죽",
+    "name_en": "SealSkin"
+  },
+  {
+    "id": 4000156,
+    "name_kr": "물개의 송곳니",
+    "name_en": "SealTooth"
+  },
+  {
+    "id": 4000157,
+    "name_kr": "물개고기",
+    "name_en": "SealMeat"
+  },
+  {
+    "id": 4000158,
+    "name_kr": "푸퍼의 알",
+    "name_en": "PoopaEgg"
+  },
+  {
+    "id": 4000159,
+    "name_kr": "포이즌 푸퍼의 독가시",
+    "name_en": "PoisonPoopa'sPoisonousSpikes"
+  },
+  {
+    "id": 4000160,
+    "name_kr": "바늘",
+    "name_en": "Needle"
+  },
+  {
+    "id": 4000161,
+    "name_kr": "해마의 꼬리",
+    "name_en": "SeaHorseTail"
+  },
+  {
+    "id": 4000162,
+    "name_kr": "화려한 비늘가죽",
+    "name_en": "FlamboyantScaleSkin"
+  },
+  {
+    "id": 4000163,
+    "name_kr": "해마의 뿔",
+    "name_en": "SeaHorseHorn"
+  },
+  {
+    "id": 4000164,
+    "name_kr": "버블피쉬의 마음",
+    "name_en": "BubbleFish'sThoughts"
+  },
+  {
+    "id": 4000165,
+    "name_kr": "화려한 꽃잎",
+    "name_en": "FlamboyantPetal"
+  },
+  {
+    "id": 4000166,
+    "name_kr": "새우살",
+    "name_en": "ShrimpMeat"
+  },
+  {
+    "id": 4000167,
+    "name_kr": "딱딱한 비늘",
+    "name_en": "HardNeedle"
+  },
+  {
+    "id": 4000168,
+    "name_kr": "해바라기씨",
+    "name_en": "SunflowerSeed"
+  },
+  {
+    "id": 4000169,
+    "name_kr": "절구공이",
+    "name_en": "Pounder"
+  },
+  {
+    "id": 4000170,
+    "name_kr": "호랑이 발도장",
+    "name_en": "TigerStamp"
+  },
+  {
+    "id": 4000171,
+    "name_kr": "호랑이 가죽",
+    "name_en": "TigerSkin"
+  },
+  {
+    "id": 4000172,
+    "name_kr": "삼미호의 꼬리",
+    "name_en": "Three-TailedFoxtail"
+  },
+  {
+    "id": 4000173,
+    "name_kr": "빗자루",
+    "name_en": "Broom"
+  },
+  {
+    "id": 4000175,
+    "name_kr": "피아누스 미니어쳐",
+    "name_en": "MiniaturePianus"
+  },
+  {
+    "id": 4000176,
+    "name_kr": "독버섯",
+    "name_en": "PoisonousMushroom"
+  },
+  {
+    "id": 4000177,
+    "name_kr": "믹스블록",
+    "name_en": "MixedBlock"
+  },
+  {
+    "id": 4000178,
+    "name_kr": "아이언보어의 갑옷조각",
+    "name_en": "IronBoarArmor"
+  },
+  {
+    "id": 4000179,
+    "name_kr": "망둥이 묶음",
+    "name_en": "ABundleofGoby"
+  },
+  {
+    "id": 4000180,
+    "name_kr": "상어 틀니",
+    "name_en": "SharkDenture"
+  },
+  {
+    "id": 4000181,
+    "name_kr": "냉동포장 샥스핀",
+    "name_en": "FrozenShark'sFin"
+  },
+  {
+    "id": 4000182,
+    "name_kr": "석회가루병",
+    "name_en": "LimePowderBottle"
+  },
+  {
+    "id": 4000183,
+    "name_kr": "먹물병",
+    "name_en": "InkBottle"
+  },
+  {
+    "id": 4000184,
+    "name_kr": "전기버터구이",
+    "name_en": "Butter-ToastedSquid"
+  },
+  {
+    "id": 4000185,
+    "name_kr": "얼음 등뼈",
+    "name_en": "IceBackbone"
+  },
+  {
+    "id": 4000186,
+    "name_kr": "다크 드레이크의 뿔",
+    "name_en": "DarkDrake'sHorn"
+  },
+  {
+    "id": 4000187,
+    "name_kr": "닭발",
+    "name_en": "ChickenFeet"
+  },
+  {
+    "id": 4000188,
+    "name_kr": "오리알",
+    "name_en": "DuckEgg"
+  },
+  {
+    "id": 4000189,
+    "name_kr": "양털",
+    "name_en": "SheepSkin"
+  },
+  {
+    "id": 4000190,
+    "name_kr": "흰뿔",
+    "name_en": "WhiteHorn"
+  },
+  {
+    "id": 4000191,
+    "name_kr": "검은 뿔",
+    "name_en": "BlackHorn"
+  },
+  {
+    "id": 4000192,
+    "name_kr": "코뚜레",
+    "name_en": "NoseRing"
+  },
+  {
+    "id": 4000193,
+    "name_kr": "쟁기",
+    "name_en": "Plow"
+  },
+  {
+    "id": 4000194,
+    "name_kr": "검은 털",
+    "name_en": "BlackFur"
+  },
+  {
+    "id": 4000195,
+    "name_kr": "묘목",
+    "name_en": "Seedling"
+  },
+  {
+    "id": 4000196,
+    "name_kr": "목판",
+    "name_en": "WoodenBoard"
+  },
+  {
+    "id": 4000197,
+    "name_kr": "석판",
+    "name_en": "Slate"
+  },
+  {
+    "id": 4000198,
+    "name_kr": "들개의 꼬리",
+    "name_en": "WildDogTail"
+  },
+  {
+    "id": 4000199,
+    "name_kr": "들개의 선글라스",
+    "name_en": "WildDogShades"
+  },
+  {
+    "id": 4000200,
+    "name_kr": "들개의 틀니",
+    "name_en": "WildDogDenture"
+  },
+  {
+    "id": 4000201,
+    "name_kr": "원숭이의 자전거",
+    "name_en": "MonkeyBike"
+  },
+  {
+    "id": 4000202,
+    "name_kr": "오토바이 헬멧",
+    "name_en": "MotorcycleHelmet"
+  },
+  {
+    "id": 4000204,
+    "name_kr": "스켈독의 뼈",
+    "name_en": "Skeledog'sBone"
+  },
+  {
+    "id": 4000205,
+    "name_kr": "더러운 붕대",
+    "name_en": "DirtyBandage"
+  },
+  {
+    "id": 4000206,
+    "name_kr": "갈비뼈",
+    "name_en": "Rib"
+  },
+  {
+    "id": 4000207,
+    "name_kr": "골반뼈",
+    "name_en": "PelvicBone"
+  },
+  {
+    "id": 4000208,
+    "name_kr": "말 머리뼈",
+    "name_en": "HorseSkull"
+  },
+  {
+    "id": 4000209,
+    "name_kr": "코-크 슬라임의 방울",
+    "name_en": "Co-keSlimesBell"
+  },
+  {
+    "id": 4000210,
+    "name_kr": "코-크 돼지의 리본",
+    "name_en": "Co-kePigsRibbon"
+  },
+  {
+    "id": 4000211,
+    "name_kr": "코카-콜라 큐브",
+    "name_en": "Coca-ColaCube"
+  },
+  {
+    "id": 4000212,
+    "name_kr": "코-크플레이 큐브",
+    "name_en": "CokePLAYCube"
+  },
+  {
+    "id": 4000213,
+    "name_kr": "코카-콜라 카드",
+    "name_en": "Coca-ColaCard"
+  },
+  {
+    "id": 4000214,
+    "name_kr": "코카-콜라 젬",
+    "name_en": "Coca-ColaGem"
+  },
+  {
+    "id": 4000215,
+    "name_kr": "도끼",
+    "name_en": "Axe"
+  },
+  {
+    "id": 4000216,
+    "name_kr": "코카-콜라 캔",
+    "name_en": "Coca-ColaCan"
+  },
+  {
+    "id": 4000217,
+    "name_kr": "코카-콜라 라이트 캔",
+    "name_en": "Coca-ColaLightCan"
+  },
+  {
+    "id": 4000218,
+    "name_kr": "얼음등딱지",
+    "name_en": "IceShell"
+  },
+  {
+    "id": 4000219,
+    "name_kr": "코-크아이스 블록",
+    "name_en": "CokeIceBlock"
+  },
+  {
+    "id": 4000220,
+    "name_kr": "아이스 블록",
+    "name_en": "IceBlock"
+  },
+  {
+    "id": 4000221,
+    "name_kr": "코-크 병뚜껑",
+    "name_en": "CokeBottleLid"
+  },
+  {
+    "id": 4000222,
+    "name_kr": "제등",
+    "name_en": "WornPaperLantern"
+  },
+  {
+    "id": 4000223,
+    "name_kr": "오이",
+    "name_en": "Cucumber"
+  },
+  {
+    "id": 4000224,
+    "name_kr": "나막신",
+    "name_en": "Sabots"
+  },
+  {
+    "id": 4000225,
+    "name_kr": "찢어진 옷자락",
+    "name_en": "KimonoPiece"
+  },
+  {
+    "id": 4000226,
+    "name_kr": "레쉬의 털뭉치",
+    "name_en": "Rash'sFurball"
+  },
+  {
+    "id": 4000227,
+    "name_kr": "나무열매",
+    "name_en": "TreeFruit"
+  },
+  {
+    "id": 4000228,
+    "name_kr": "마취가루",
+    "name_en": "AnestheticPowder"
+  },
+  {
+    "id": 4000229,
+    "name_kr": "다크 레쉬의 털뭉치",
+    "name_en": "DarkRash'sFurball"
+  },
+  {
+    "id": 4000230,
+    "name_kr": "저주가루",
+    "name_en": "CursePowder"
+  },
+  {
+    "id": 4000231,
+    "name_kr": "헹키의 팬플룻",
+    "name_en": "Hankie'sPanFlute"
+  },
+  {
+    "id": 4000232,
+    "name_kr": "켄타우로스의 불꽃",
+    "name_en": "Kentaurus'sFlame"
+  },
+  {
+    "id": 4000233,
+    "name_kr": "켄타우로스의 정수",
+    "name_en": "Kentaurus'sMarrow"
+  },
+  {
+    "id": 4000234,
+    "name_kr": "켄타우로스의 뼈",
+    "name_en": "Kentaurus'sSkull"
+  },
+  {
+    "id": 4000235,
+    "name_kr": "마뇽의 꼬리",
+    "name_en": "Manon'sTail"
+  },
+  {
+    "id": 4000236,
+    "name_kr": "비틀의 뿔",
+    "name_en": "Beetle'sHorn"
+  },
+  {
+    "id": 4000237,
+    "name_kr": "듀얼 비틀의 뿔",
+    "name_en": "DualBeetle'sHorn"
+  },
+  {
+    "id": 4000238,
+    "name_kr": "하프의 꼬리깃털",
+    "name_en": "Harp'sTailFeather"
+  },
+  {
+    "id": 4000239,
+    "name_kr": "블러드 하프의 머리관",
+    "name_en": "BloodHarp'sCrown"
+  },
+  {
+    "id": 4000240,
+    "name_kr": "작은 불꽃 깃털",
+    "name_en": "SmallFlamingFeather"
+  },
+  {
+    "id": 4000241,
+    "name_kr": "버크의 씹던 풀",
+    "name_en": "Birk'sChewedGrass"
+  },
+  {
+    "id": 4000242,
+    "name_kr": "듀얼 버크의 작은 꼬리",
+    "name_en": "DualBirk'sTinyTail"
+  },
+  {
+    "id": 4000243,
+    "name_kr": "그리프의 뿔",
+    "name_en": "GriffeyHorn"
+  },
+  {
+    "id": 4000244,
+    "name_kr": "드래곤의 영혼",
+    "name_en": "DragonSpirit"
+  },
+  {
+    "id": 4000245,
+    "name_kr": "드래곤의 비늘",
+    "name_en": "DragonScale"
+  },
+  {
+    "id": 4000246,
+    "name_kr": "두꺼비독",
+    "name_en": "ToadPoisoin"
+  },
+  {
+    "id": 4000247,
+    "name_kr": "개구리 뒷다리",
+    "name_en": "FrogLegs"
+  },
+  {
+    "id": 4000248,
+    "name_kr": "뱀 비늘",
+    "name_en": "SnakeScale"
+  },
+  {
+    "id": 4000249,
+    "name_kr": "뱀 껍질",
+    "name_en": "SnakeSkin"
+  },
+  {
+    "id": 4000250,
+    "name_kr": "도마뱀 꼬리",
+    "name_en": "LizardTail"
+  },
+  {
+    "id": 4000251,
+    "name_kr": "도마뱀 혀",
+    "name_en": "LizardTongue"
+  },
+  {
+    "id": 4000252,
+    "name_kr": "닭고기",
+    "name_en": "Chicken"
+  },
+  {
+    "id": 4000253,
+    "name_kr": "흰 달걀",
+    "name_en": "WhiteEgg"
+  },
+  {
+    "id": 4000254,
+    "name_kr": "레드 버블",
+    "name_en": "RedBubble"
+  },
+  {
+    "id": 4000255,
+    "name_kr": "옐로우 버블",
+    "name_en": "YellowBubble"
+  },
+  {
+    "id": 4000256,
+    "name_kr": "그린 버블",
+    "name_en": "GreenBubble"
+  },
+  {
+    "id": 4000257,
+    "name_kr": "예티인형 열쇠고리",
+    "name_en": "YetiKeyChain"
+  },
+  {
+    "id": 4000258,
+    "name_kr": "주니어페페인형 열쇠고리",
+    "name_en": "Jr.PepeKeyChain"
+  },
+  {
+    "id": 4000259,
+    "name_kr": "인형뽑기 기계인형",
+    "name_en": "UFOCatcher"
+  },
+  {
+    "id": 4000260,
+    "name_kr": "호브의 바지",
+    "name_en": "Hov'sShorts"
+  },
+  {
+    "id": 4000261,
+    "name_kr": "핀 호브의 부적",
+    "name_en": "PinHov'sCharm"
+  },
+  {
+    "id": 4000262,
+    "name_kr": "금이 간 등껍질",
+    "name_en": "CrackedShell"
+  },
+  {
+    "id": 4000263,
+    "name_kr": "붉은 등껍질",
+    "name_en": "RedShell"
+  },
+  {
+    "id": 4000264,
+    "name_kr": "리스튼의 가죽",
+    "name_en": "RextonLeather"
+  },
+  {
+    "id": 4000265,
+    "name_kr": "이상한 알",
+    "name_en": "StrangeEgg"
+  },
+  {
+    "id": 4000266,
+    "name_kr": "나무 어깨 보호대",
+    "name_en": "WoodenShoulderPad"
+  },
+  {
+    "id": 4000267,
+    "name_kr": "해골 어깨 보호대",
+    "name_en": "SkullShoulderPad"
+  },
+  {
+    "id": 4000268,
+    "name_kr": "와이번의 날개",
+    "name_en": "WyvernWing"
+  },
+  {
+    "id": 4000269,
+    "name_kr": "와이번의 아가미",
+    "name_en": "WyvernGill"
+  },
+  {
+    "id": 4000270,
+    "name_kr": "와이번의 발톱",
+    "name_en": "WyvernToenail"
+  },
+  {
+    "id": 4000271,
+    "name_kr": "망가진 둥지",
+    "name_en": "DestroyedNest"
+  },
+  {
+    "id": 4000272,
+    "name_kr": "알껍질 조각",
+    "name_en": "EggShell"
+  },
+  {
+    "id": 4000273,
+    "name_kr": "오래된 뼈",
+    "name_en": "OldNeckBone"
+  },
+  {
+    "id": 4000274,
+    "name_kr": "부러진 뿔",
+    "name_en": "BrokenHorn"
+  },
+  {
+    "id": 4000275,
+    "name_kr": "부러진 뿔",
+    "name_en": "BrokenHorn"
+  },
+  {
+    "id": 4000276,
+    "name_kr": "도토리",
+    "name_en": "Acorn"
+  },
+  {
+    "id": 4000277,
+    "name_kr": "골무",
+    "name_en": "Thimble"
+  },
+  {
+    "id": 4000278,
+    "name_kr": "바늘쌈지",
+    "name_en": "NeedlePouch"
+  },
+  {
+    "id": 4000279,
+    "name_kr": "네키의 꽃",
+    "name_en": "NeckiFlower"
+  },
+  {
+    "id": 4000280,
+    "name_kr": "네키의 수영모자",
+    "name_en": "NeckiSwimmingCap"
+  },
+  {
+    "id": 4000281,
+    "name_kr": "뱀가죽",
+    "name_en": "SnakeLeather"
+  },
+  {
+    "id": 4000282,
+    "name_kr": "천도씨앗",
+    "name_en": "PeachSeed"
+  },
+  {
+    "id": 4000283,
+    "name_kr": "곰발바닥",
+    "name_en": "BearFoot"
+  },
+  {
+    "id": 4000284,
+    "name_kr": "노란 허리띠",
+    "name_en": "YellowBelt"
+  },
+  {
+    "id": 4000285,
+    "name_kr": "빨간 허리띠",
+    "name_en": "RedBelt"
+  },
+  {
+    "id": 4000286,
+    "name_kr": "짚 인형",
+    "name_en": "StrawDoll"
+  },
+  {
+    "id": 4000287,
+    "name_kr": "나무인형",
+    "name_en": "WoodenDoll"
+  },
+  {
+    "id": 4000288,
+    "name_kr": "부러진 사슴 뿔",
+    "name_en": "BrokenDeerHorn"
+  },
+  {
+    "id": 4000289,
+    "name_kr": "고양이 인형",
+    "name_en": "CatDoll"
+  },
+  {
+    "id": 4000290,
+    "name_kr": "고슴도치의 가시",
+    "name_en": "PorcupineSpine"
+  },
+  {
+    "id": 4000291,
+    "name_kr": "깨진 항아리 조각",
+    "name_en": "BrokenPieceofPot"
+  },
+  {
+    "id": 4000292,
+    "name_kr": "산삼 달인물",
+    "name_en": "Ginseng-BoiledWater"
+  },
+  {
+    "id": 4000293,
+    "name_kr": "도라지",
+    "name_en": "Bellflower"
+  },
+  {
+    "id": 4000294,
+    "name_kr": "100년 묵은 도라지",
+    "name_en": "100-Year-OldBellflower"
+  },
+  {
+    "id": 4000295,
+    "name_kr": "게비알의 가죽",
+    "name_en": "Mr.Alli'sLeather"
+  },
+  {
+    "id": 4000296,
+    "name_kr": "해적의 표식",
+    "name_en": "MarkofthePirate"
+  },
+  {
+    "id": 4000297,
+    "name_kr": "선장의 모자",
+    "name_en": "Captain'sHat"
+  },
+  {
+    "id": 4000298,
+    "name_kr": "낡은 종이",
+    "name_en": "OldPaper"
+  },
+  {
+    "id": 4000299,
+    "name_kr": "비급의 낱장",
+    "name_en": "TheBookGhost'sSheetofPaper"
+  },
+  {
+    "id": 4000313,
+    "name_kr": "황금단풍",
+    "name_en": "GoldenMapleLeaf"
+  },
+  {
+    "id": 4000324,
+    "name_kr": "클로버",
+    "name_en": "Clover"
+  },
+  {
+    "id": 4000325,
+    "name_kr": "홍당무",
+    "name_en": "Carrot"
+  },
+  {
+    "id": 4000326,
+    "name_kr": "귀마개",
+    "name_en": "Earmuff"
+  },
+  {
+    "id": 4000327,
+    "name_kr": "낡은 목도리",
+    "name_en": "RaggedScarf"
+  },
+  {
+    "id": 4000328,
+    "name_kr": "뱀방울",
+    "name_en": "SnakeRattle"
+  },
+  {
+    "id": 4000329,
+    "name_kr": "선인장의 줄기",
+    "name_en": "CactusStem"
+  },
+  {
+    "id": 4000330,
+    "name_kr": "선인장의 가시",
+    "name_en": "CactusThorn"
+  },
+  {
+    "id": 4000331,
+    "name_kr": "카투스의 꽃",
+    "name_en": "Cactus'Flower"
+  },
+  {
+    "id": 4000332,
+    "name_kr": "금모래 가루",
+    "name_en": "Sand"
+  },
+  {
+    "id": 4000333,
+    "name_kr": "망원경",
+    "name_en": "Telescope"
+  },
+  {
+    "id": 4000334,
+    "name_kr": "빈 자루",
+    "name_en": "EmptySack"
+  },
+  {
+    "id": 4000335,
+    "name_kr": "키요의 부리",
+    "name_en": "Kiyo'sBeek"
+  },
+  {
+    "id": 4000336,
+    "name_kr": "타락한 자의 성서",
+    "name_en": "BibleoftheCorrupt"
+  },
+  {
+    "id": 4000350,
+    "name_kr": "나무 망치",
+    "name_en": "WoodenHammer"
+  },
+  {
+    "id": 4000351,
+    "name_kr": "전갈의 독침",
+    "name_en": "ScorpionSting"
+  },
+  {
+    "id": 4000352,
+    "name_kr": "사막의 불꽃",
+    "name_en": "FlamingDesert"
+  },
+  {
+    "id": 4000353,
+    "name_kr": "젤라틴",
+    "name_en": "Gelatin"
+  },
+  {
+    "id": 4000354,
+    "name_kr": "비커",
+    "name_en": "Beaker"
+  },
+  {
+    "id": 4000355,
+    "name_kr": "호문스큘러의 흙",
+    "name_en": "Homunculus'sSand"
+  },
+  {
+    "id": 4000356,
+    "name_kr": "플라스크",
+    "name_en": "Flask"
+  },
+  {
+    "id": 4000357,
+    "name_kr": "강철 파편",
+    "name_en": "PieceofSteel"
+  },
+  {
+    "id": 4000358,
+    "name_kr": "강철 파편 강화형",
+    "name_en": "HardenedPieceofSteel"
+  },
+  {
+    "id": 4000359,
+    "name_kr": "미스릴 파편",
+    "name_en": "PieceofMithril"
+  },
+  {
+    "id": 4000360,
+    "name_kr": "미스릴 파편 강화형",
+    "name_en": "HardenedPieceofMithril"
+  },
+  {
+    "id": 4000361,
+    "name_kr": "5월의 이슬",
+    "name_en": "MayMist"
+  },
+  {
+    "id": 4000362,
+    "name_kr": "망가진 기계심장",
+    "name_en": "BrokenMechanicalHeart"
+  },
+  {
+    "id": 4000363,
+    "name_kr": "출입증",
+    "name_en": "EntryPass"
+  },
+  {
+    "id": 4000364,
+    "name_kr": "전선다발",
+    "name_en": "Wires"
+  },
+  {
+    "id": 4000365,
+    "name_kr": "콘센트",
+    "name_en": "Plug"
+  },
+  {
+    "id": 4000411,
+    "name_kr": "블랙리스트",
+    "name_en": "Blacklist"
+  },
+  {
+    "id": 4000412,
+    "name_kr": "수련의 증표",
+    "name_en": "ProofofTraining"
+  },
+  {
+    "id": 4000413,
+    "name_kr": "누군가의 모자",
+    "name_en": "Someone'sHat"
+  },
+  {
+    "id": 4000414,
+    "name_kr": "대나무 명패",
+    "name_en": "BambooNameplate"
+  },
+  {
+    "id": 4000415,
+    "name_kr": "얼음 눈물",
+    "name_en": "IceTear"
+  },
+  {
+    "id": 4000416,
+    "name_kr": "선비의 갓",
+    "name_en": "TraditionalScholarHat"
+  },
+  {
+    "id": 4000418,
+    "name_kr": "쓸모없는 기계심장",
+    "name_en": "UselessMechanicalHeart"
+  },
+  {
+    "id": 4000419,
+    "name_kr": "보라색 액체",
+    "name_en": "PurpleLiquid"
+  },
+  {
+    "id": 4000436,
+    "name_kr": "이끼 달팽이의 껍질",
+    "name_en": "MossSnailShell"
+  },
+  {
+    "id": 4000437,
+    "name_kr": "검은 포자",
+    "name_en": "BlackMushroomSpore"
+  },
+  {
+    "id": 4000438,
+    "name_kr": "나무줄기",
+    "name_en": "TreeTrunk"
+  },
+  {
+    "id": 4000439,
+    "name_kr": "돌조각",
+    "name_en": "Rubble"
+  },
+  {
+    "id": 4000440,
+    "name_kr": "거친 가죽",
+    "name_en": "ToughLeather"
+  },
+  {
+    "id": 4000443,
+    "name_kr": "금이 간 모래시계",
+    "name_en": "CrackedHourglass"
+  },
+  {
+    "id": 4000444,
+    "name_kr": "녹색 옷자락",
+    "name_en": "GreenCloth"
+  },
+  {
+    "id": 4000445,
+    "name_kr": "녹색 고깔모자",
+    "name_en": "GreenConeHat"
+  },
+  {
+    "id": 4000446,
+    "name_kr": "웃는 가면",
+    "name_en": "SmileyMask"
+  },
+  {
+    "id": 4000447,
+    "name_kr": "녹색 투구",
+    "name_en": "GreenHelmet"
+  },
+  {
+    "id": 4000448,
+    "name_kr": "녹색 심장",
+    "name_en": "GreenHeart"
+  },
+  {
+    "id": 4000449,
+    "name_kr": "푸른 옷자락",
+    "name_en": "BlueCloth"
+  },
+  {
+    "id": 4000450,
+    "name_kr": "푸른 고깔모자",
+    "name_en": "BlueConeHat"
+  },
+  {
+    "id": 4000451,
+    "name_kr": "무표정한 가면",
+    "name_en": "NeutralMask"
+  },
+  {
+    "id": 4000452,
+    "name_kr": "푸른 투구",
+    "name_en": "BlueHelmet"
+  },
+  {
+    "id": 4000453,
+    "name_kr": "푸른 심장",
+    "name_en": "BlueHeart"
+  },
+  {
+    "id": 4000454,
+    "name_kr": "붉은 옷자락",
+    "name_en": "RedCloth"
+  },
+  {
+    "id": 4000455,
+    "name_kr": "붉은 고깔모자",
+    "name_en": "RedConeHat"
+  },
+  {
+    "id": 4000456,
+    "name_kr": "슬픈 가면",
+    "name_en": "FrownyMask"
+  },
+  {
+    "id": 4000457,
+    "name_kr": "붉은 투구",
+    "name_en": "RedHelmet"
+  },
+  {
+    "id": 4000458,
+    "name_kr": "붉은 심장",
+    "name_en": "RedHeart"
+  },
+  {
+    "id": 4000459,
+    "name_kr": "검은 갑옷조각",
+    "name_en": "BlackArmorFragment"
+  },
+  {
+    "id": 4000460,
+    "name_kr": "고래의 투구",
+    "name_en": "Whale'sHelmet"
+  },
+  {
+    "id": 4000461,
+    "name_kr": "나이트의 가면",
+    "name_en": "Knight'sMask"
+  },
+  {
+    "id": 4000462,
+    "name_kr": "수호수의 뿔",
+    "name_en": "Guardian'sHorn"
+  },
+  {
+    "id": 4000482,
+    "name_kr": "티노의 깃털",
+    "name_en": "Tino'sFeather"
+  },
+  {
+    "id": 4000483,
+    "name_kr": "티브의 깃털",
+    "name_en": "Tiv'sFeather"
+  },
+  {
+    "id": 4000484,
+    "name_kr": "티무의 깃털",
+    "name_en": "Timu'sFeather"
+  },
+  {
+    "id": 4000485,
+    "name_kr": "티루의 깃털",
+    "name_en": "Tiru'sFeather"
+  },
+  {
+    "id": 4000486,
+    "name_kr": "티구르의 깃털",
+    "name_en": "Tiguru'sFeather"
+  },
+  {
+    "id": 4000489,
+    "name_kr": "튜토리얼 티노의 깃털",
+    "name_en": "TutorialTino'sFeather"
+  },
+  {
+    "id": 4000492,
+    "name_kr": "우테 증명서",
+    "name_en": "CertificateofGreatTester"
+  },
+  {
+    "id": 4000493,
+    "name_kr": "무루의 털뭉치",
+    "name_en": "Muru'sFurball"
+  },
+  {
+    "id": 4000494,
+    "name_kr": "무루파의 털뭉치",
+    "name_en": "Murupa'sFurball"
+  },
+  {
+    "id": 4000495,
+    "name_kr": "무루피아의 털뭉치",
+    "name_en": "Murupia'sFurball"
+  },
+  {
+    "id": 4000496,
+    "name_kr": "무루무루의 털뭉치",
+    "name_en": "Murumuru'sFurball"
+  },
+  {
+    "id": 4000497,
+    "name_kr": "무루쿤의 털뭉치",
+    "name_en": "Murukun'sFurball"
+  },
+  {
+    "id": 4000499,
+    "name_kr": "변종포자",
+    "name_en": "MutatedSpore"
+  },
+  {
+    "id": 4000500,
+    "name_kr": "독버섯의 갓",
+    "name_en": "PoisonMushroomCap"
+  },
+  {
+    "id": 4000501,
+    "name_kr": "중독된 돼지꼬리",
+    "name_en": "IntoxicatedPigTail"
+  },
+  {
+    "id": 4000502,
+    "name_kr": "망가진 투구",
+    "name_en": "DestroyedHelmet"
+  },
+  {
+    "id": 4000503,
+    "name_kr": "부러진 창",
+    "name_en": "BrokenSpear"
+  },
+  {
+    "id": 4000504,
+    "name_kr": "호위대장 그레이 예티의 뿔",
+    "name_en": "ChiefGreyYetiHorn"
+  },
+  {
+    "id": 4000505,
+    "name_kr": "호위대장 화이트 예티의 뿔",
+    "name_en": "ChiefWhiteYetiHorn"
+  },
+  {
+    "id": 4000506,
+    "name_kr": "호위대장 골드 예티의 뿔",
+    "name_en": "ChiefGoldYetiHorn"
+  },
+  {
+    "id": 4000507,
+    "name_kr": "버섯의 독포자",
+    "name_en": "PoisonSpore"
+  },
+  {
+    "id": 4000525,
+    "name_kr": "아이 마네킹의 토끼의상",
+    "name_en": "KidMannequin'sBunnySuit"
+  },
+  {
+    "id": 4000526,
+    "name_kr": "여자 마네킹의 가발",
+    "name_en": "FemaleMannequin'sWig"
+  },
+  {
+    "id": 4000527,
+    "name_kr": "남자 마네킹의 페도라",
+    "name_en": "MaleMannequin'sFedora"
+  },
+  {
+    "id": 4000528,
+    "name_kr": "최신곡 CD",
+    "name_en": "LatestHitsCompilation"
+  },
+  {
+    "id": 4000529,
+    "name_kr": "흘러간 가요 CD",
+    "name_en": "GreatestOldies"
+  },
+  {
+    "id": 4000530,
+    "name_kr": "블루 퍼퓸",
+    "name_en": "BluePerfume"
+  },
+  {
+    "id": 4000532,
+    "name_kr": "옐로우 퍼퓸",
+    "name_en": "YellowPerfume"
+  },
+  {
+    "id": 4000534,
+    "name_kr": "핑크 퍼퓸",
+    "name_en": "PinkPerfume"
+  },
+  {
+    "id": 4000536,
+    "name_kr": "싸구려 스피커",
+    "name_en": "CheapSpeakers"
+  },
+  {
+    "id": 4000537,
+    "name_kr": "고급 앰프전선",
+    "name_en": "FancyAmplifierCables"
+  },
+  {
+    "id": 4000538,
+    "name_kr": "락 스피릿의 악보",
+    "name_en": "SpiritofRock'sMusicScore"
+  },
+  {
+    "id": 4000539,
+    "name_kr": "체리 버블",
+    "name_en": "CherryBubble"
+  },
+  {
+    "id": 4000540,
+    "name_kr": "멜론 버블",
+    "name_en": "MelonBubble"
+  },
+  {
+    "id": 4000541,
+    "name_kr": "망고 버블",
+    "name_en": "MangoBubble"
+  },
+  {
+    "id": 4000542,
+    "name_kr": "예티 키홀더",
+    "name_en": "YetiKeychain"
+  },
+  {
+    "id": 4000543,
+    "name_kr": "주니어 페페 키홀더",
+    "name_en": "Jr.PepeKeychain"
+  },
+  {
+    "id": 4000544,
+    "name_kr": "주황버섯 인형",
+    "name_en": "OrangeMushroomDoll"
+  },
+  {
+    "id": 4000545,
+    "name_kr": "레드슬라임의 액체",
+    "name_en": "RedSquishyLiquid"
+  },
+  {
+    "id": 4000546,
+    "name_kr": "실버슬라임의 액체",
+    "name_en": "SilverSquishyLiquid"
+  },
+  {
+    "id": 4000547,
+    "name_kr": "골드슬라임의 액체",
+    "name_en": "GoldSquishyLiquid"
+  },
+  {
+    "id": 4000548,
+    "name_kr": "오버로드A의 레이더장치",
+    "name_en": "OverlordARadarDevice"
+  },
+  {
+    "id": 4000549,
+    "name_kr": "오버로드B의 레이더장치",
+    "name_en": "OverlordBRadarDevice"
+  },
+  {
+    "id": 4000550,
+    "name_kr": "로비의 전자유도장치",
+    "name_en": "Robby'sElectronicInductionDevice"
+  },
+  {
+    "id": 4000551,
+    "name_kr": "이루워터의 레이저소드",
+    "name_en": "IruvataLaserSword"
+  },
+  {
+    "id": 4000552,
+    "name_kr": "애프터로드의 체인타이어",
+    "name_en": "AfterlordChainedTire"
+  },
+  {
+    "id": 4000553,
+    "name_kr": "프로토타입로드의 추진장치",
+    "name_en": "PrototypeLordPropulsionSystem"
+  },
+  {
+    "id": 4000554,
+    "name_kr": "암슈트A의 부품",
+    "name_en": "MaverickTypeAComponent"
+  },
+  {
+    "id": 4000555,
+    "name_kr": "암슈트S의 레이저건",
+    "name_en": "MaverickTypeSLaserGun"
+  },
+  {
+    "id": 4000556,
+    "name_kr": "암슈트D의 부스터",
+    "name_en": "MaverickTypeDBooster"
+  },
+  {
+    "id": 4000557,
+    "name_kr": "파워암슈트A의 진공관",
+    "name_en": "ImperialGuardVacuumTube"
+  },
+  {
+    "id": 4000558,
+    "name_kr": "파워암슈트B의 견갑",
+    "name_en": "RoyalGuardArmor"
+  },
+  {
+    "id": 4001000,
+    "name_kr": "아르웬의 유리구두",
+    "name_en": "Arwen'sGlassShoes"
+  },
+  {
+    "id": 4001001,
+    "name_kr": "귀족의 거울",
+    "name_en": "VIPMirror"
+  },
+  {
+    "id": 4001002,
+    "name_kr": "이웃집 그녀",
+    "name_en": "TheGirlNextDoor"
+  },
+  {
+    "id": 4001003,
+    "name_kr": "오래된 금시계",
+    "name_en": "OldGoldWatch"
+  },
+  {
+    "id": 4001004,
+    "name_kr": "'돼지와 함께 춤을'의 땅문서",
+    "name_en": "\"Blackbull's\"deedtotheland"
+  },
+  {
+    "id": 4001005,
+    "name_kr": "고대의 주문서",
+    "name_en": "AncientScroll"
+  },
+  {
+    "id": 4001006,
+    "name_kr": "불꽃 깃털",
+    "name_en": "FlamingFeather"
+  },
+  {
+    "id": 4001007,
+    "name_kr": "쿠폰",
+    "name_en": "Coupon"
+  },
+  {
+    "id": 4001008,
+    "name_kr": "통행증",
+    "name_en": "Pass"
+  },
+  {
+    "id": 4001009,
+    "name_kr": "스텀프 지우개",
+    "name_en": "StumpEraser"
+  },
+  {
+    "id": 4001010,
+    "name_kr": "머쉬맘 지우개",
+    "name_en": "MushmomEraser"
+  },
+  {
+    "id": 4001011,
+    "name_kr": "루팡 지우개",
+    "name_en": "LupinEraser"
+  },
+  {
+    "id": 4001012,
+    "name_kr": "레이스 지우개",
+    "name_en": "WraithEraser"
+  },
+  {
+    "id": 4001013,
+    "name_kr": "슬라임 지우개",
+    "name_en": "SlimeEraser"
+  },
+  {
+    "id": 4001014,
+    "name_kr": "옥토퍼스 지우개",
+    "name_en": "OctopusEraser"
+  },
+  {
+    "id": 4001015,
+    "name_kr": "종이 문서",
+    "name_en": "PaperDocument"
+  },
+  {
+    "id": 4001016,
+    "name_kr": "열쇠",
+    "name_en": "TheKey"
+  },
+  {
+    "id": 4001017,
+    "name_kr": "불의 눈",
+    "name_en": "EyeofFire"
+  },
+  {
+    "id": 4001018,
+    "name_kr": "불의 원석",
+    "name_en": "FireOre"
+  },
+  {
+    "id": 4001019,
+    "name_kr": "마법석 활성화 주문서",
+    "name_en": "OrbisRockScroll"
+  },
+  {
+    "id": 4001020,
+    "name_kr": "에오스의 돌 활성화 주문서",
+    "name_en": "EosRockScroll"
+  },
+  {
+    "id": 4001021,
+    "name_kr": "불너구리 지우개",
+    "name_en": "FireRaccoonEraser"
+  },
+  {
+    "id": 4001022,
+    "name_kr": "차원의 통행증",
+    "name_en": "PassofDimension"
+  },
+  {
+    "id": 4001023,
+    "name_kr": "차원의 열쇠",
+    "name_en": "KeyofDimension"
+  },
+  {
+    "id": 4001024,
+    "name_kr": "루비안",
+    "name_en": "Rubian"
+  },
+  {
+    "id": 4001025,
+    "name_kr": "롱기누스 창",
+    "name_en": "LonginusSpear"
+  },
+  {
+    "id": 4001026,
+    "name_kr": "열쇠",
+    "name_en": "Key"
+  },
+  {
+    "id": 4001027,
+    "name_kr": "용맹의 훈장",
+    "name_en": "MedalofValor"
+  },
+  {
+    "id": 4001028,
+    "name_kr": "지혜의 두루마리",
+    "name_en": "ScrollofWisdom"
+  },
+  {
+    "id": 4001029,
+    "name_kr": "오래된 음식",
+    "name_en": "SpoiledFood"
+  },
+  {
+    "id": 4001030,
+    "name_kr": "700년산 주니어 네키 술",
+    "name_en": "Jr.NeckiDrink"
+  },
+  {
+    "id": 4001031,
+    "name_kr": "샤렌 3세의 바지",
+    "name_en": "SharenIII'sPants"
+  },
+  {
+    "id": 4001032,
+    "name_kr": "샤렌 3세의 신발",
+    "name_en": "SharenIII'sShoes"
+  },
+  {
+    "id": 4001033,
+    "name_kr": "샤렌 3세의 상의",
+    "name_en": "SharenIII'sTop"
+  },
+  {
+    "id": 4001034,
+    "name_kr": "샤렌 3세의 왕관",
+    "name_en": "SharenIII'sCrown"
+  },
+  {
+    "id": 4001035,
+    "name_kr": "악마의 표식",
+    "name_en": "MarkofEvil"
+  },
+  {
+    "id": 4001036,
+    "name_kr": ".",
+    "name_en": "."
+  },
+  {
+    "id": 4001037,
+    "name_kr": "녹슨 열쇠",
+    "name_en": "RustyKey"
+  },
+  {
+    "id": 4001038,
+    "name_kr": "스텀프 지우개",
+    "name_en": "StumpEraser"
+  },
+  {
+    "id": 4001039,
+    "name_kr": "머쉬맘 지우개",
+    "name_en": "MushmomEraser"
+  },
+  {
+    "id": 4001040,
+    "name_kr": "루팡 지우개",
+    "name_en": "LupinEraser"
+  },
+  {
+    "id": 4001041,
+    "name_kr": "레이스 지우개",
+    "name_en": "WraithEraser"
+  },
+  {
+    "id": 4001042,
+    "name_kr": "슬라임 지우개",
+    "name_en": "SlimeEraser"
+  },
+  {
+    "id": 4001043,
+    "name_kr": "옥토퍼스 지우개",
+    "name_en": "OctopusEraser"
+  },
+  {
+    "id": 4001044,
+    "name_kr": "여신상의 첫 번째 조각",
+    "name_en": "StatueofGoddess:1stPiece"
+  },
+  {
+    "id": 4001045,
+    "name_kr": "여신상의 두 번째 조각",
+    "name_en": "StatueofGoddess:2ndPiece"
+  },
+  {
+    "id": 4001046,
+    "name_kr": "여신상의 첫 번째 조각",
+    "name_en": "StatueofGoddess:3rdPiece"
+  },
+  {
+    "id": 4001047,
+    "name_kr": "여신상의 네 번째 조각",
+    "name_en": "StatueofGoddess:4thPiece"
+  },
+  {
+    "id": 4001048,
+    "name_kr": "여신상의 네 번째 조각",
+    "name_en": "StatueofGoddess:5thPiece"
+  },
+  {
+    "id": 4001049,
+    "name_kr": "여신상의 세 번째 조각",
+    "name_en": "StatueofGoddess:6thPiece"
+  },
+  {
+    "id": 4001050,
+    "name_kr": "첫 번째 작은 조각",
+    "name_en": "1stSmallPiece"
+  },
+  {
+    "id": 4001051,
+    "name_kr": "두 번째 작은 조각",
+    "name_en": "2ndSmallPiece"
+  },
+  {
+    "id": 4001052,
+    "name_kr": "다섯 번째 작은 조각",
+    "name_en": "5thSmallPiece"
+  },
+  {
+    "id": 4001053,
+    "name_kr": "이상한 씨앗",
+    "name_en": "StrangeSeed"
+  },
+  {
+    "id": 4001054,
+    "name_kr": "더 이상한 씨앗",
+    "name_en": "EvenStrangerSeed"
+  },
+  {
+    "id": 4001055,
+    "name_kr": "생명의 풀",
+    "name_en": "GrassofLife"
+  },
+  {
+    "id": 4001056,
+    "name_kr": "웅장한 음악의 LP",
+    "name_en": "LP:OperaticMusic"
+  },
+  {
+    "id": 4001057,
+    "name_kr": "아기자기한 음악의 LP",
+    "name_en": "LP:CuteMusic"
+  },
+  {
+    "id": 4001058,
+    "name_kr": "무서운 음악의 LP",
+    "name_en": "LP:ScaryMusic"
+  },
+  {
+    "id": 4001059,
+    "name_kr": "재미있는 음악의 LP",
+    "name_en": "LP:FunMusic"
+  },
+  {
+    "id": 4001060,
+    "name_kr": "우울한 음악의 LP",
+    "name_en": "LP:SadMusic"
+  },
+  {
+    "id": 4001061,
+    "name_kr": "싸늘한 음악의 LP",
+    "name_en": "LP:ColdMusic"
+  },
+  {
+    "id": 4001062,
+    "name_kr": "깔끔한 음악의 LP",
+    "name_en": "LP:TightMusic"
+  },
+  {
+    "id": 4001063,
+    "name_kr": "구름 조각",
+    "name_en": "CloudPiece"
+  },
+  {
+    "id": 4001064,
+    "name_kr": "일기장 첫 번째 페이지",
+    "name_en": "Diary:1stPage"
+  },
+  {
+    "id": 4001065,
+    "name_kr": "일기장 두 번째 페이지",
+    "name_en": "Diary:2ndPage"
+  },
+  {
+    "id": 4001066,
+    "name_kr": "일기장 세 번째 페이지",
+    "name_en": "Diary:3rdPage"
+  },
+  {
+    "id": 4001067,
+    "name_kr": "일기장 네 번째 페이지",
+    "name_en": "Diary:4thPage"
+  },
+  {
+    "id": 4001068,
+    "name_kr": "일기장 다섯 번째 페이지",
+    "name_en": "Diary:5thPage"
+  },
+  {
+    "id": 4001069,
+    "name_kr": "일기장 여섯 번째 페이지",
+    "name_en": "Diary:6thPage"
+  },
+  {
+    "id": 4001070,
+    "name_kr": "일기장 일곱 번째 페이지",
+    "name_en": "Diary:7thPage"
+  },
+  {
+    "id": 4001071,
+    "name_kr": "일기장 여덟 번째 페이지",
+    "name_en": "Diary:8thPage"
+  },
+  {
+    "id": 4001072,
+    "name_kr": "일기장 아홉 번째 페이지",
+    "name_en": "Diary:9thPage"
+  },
+  {
+    "id": 4001073,
+    "name_kr": "일기장 열 번째 페이지",
+    "name_en": "Diary:10thPage"
+  },
+  {
+    "id": 4001074,
+    "name_kr": "투명 아이템",
+    "name_en": "TransparentItem"
+  },
+  {
+    "id": 4001075,
+    "name_kr": "코니언의 정수",
+    "name_en": "Cornian'sMarrow"
+  },
+  {
+    "id": 4001076,
+    "name_kr": "마뇽의 울음소리",
+    "name_en": "Manon'sCry"
+  },
+  {
+    "id": 4001077,
+    "name_kr": "질긴 용의 가죽",
+    "name_en": "ToughDragonSkin"
+  },
+  {
+    "id": 4001078,
+    "name_kr": "코니언의 단도",
+    "name_en": "Cornian'sDagger"
+  },
+  {
+    "id": 4001079,
+    "name_kr": "망가진 단도",
+    "name_en": "BustedDagger"
+  },
+  {
+    "id": 4001080,
+    "name_kr": "결사대의 증표1",
+    "name_en": "MarkoftheSquad1"
+  },
+  {
+    "id": 4001081,
+    "name_kr": "결사대의 증표2",
+    "name_en": "MarkoftheSquad2"
+  },
+  {
+    "id": 4001082,
+    "name_kr": "결사대의 증표3",
+    "name_en": "MarkoftheSquad3"
+  },
+  {
+    "id": 4001083,
+    "name_kr": "자쿰의 증표",
+    "name_en": "ZakumCertificate"
+  },
+  {
+    "id": 4001084,
+    "name_kr": "파풀라투스의 증표",
+    "name_en": "PapulatusCertificate"
+  },
+  {
+    "id": 4001085,
+    "name_kr": "피아누스의 증표",
+    "name_en": "PianusCertificate"
+  },
+  {
+    "id": 4001086,
+    "name_kr": "명예 결사대원의 증표",
+    "name_en": "CertificateoftheDragonSquad"
+  },
+  {
+    "id": 4001087,
+    "name_kr": "첫 번째 미로방의 수정열쇠",
+    "name_en": "CrystalKey:1stRoomofMaze"
+  },
+  {
+    "id": 4001088,
+    "name_kr": "두 번째 미로방의 수정열쇠",
+    "name_en": "CrystalKey:2ndRoomofMaze"
+  },
+  {
+    "id": 4001089,
+    "name_kr": "세 번째 미로방의 수정열쇠",
+    "name_en": "CrystalKey:3rdRoomofMaze"
+  },
+  {
+    "id": 4001090,
+    "name_kr": "네 번째 미로방의 수정열쇠",
+    "name_en": "CrystalKey:4thRoomofMaze"
+  },
+  {
+    "id": 4001091,
+    "name_kr": "다섯 번째 미로방의 수정열쇠",
+    "name_en": "CrystalKey:5thRoomofMaze"
+  },
+  {
+    "id": 4001092,
+    "name_kr": "붉은 열쇠",
+    "name_en": "RedKey"
+  },
+  {
+    "id": 4001093,
+    "name_kr": "푸른 열쇠",
+    "name_en": "BlueKey"
+  },
+  {
+    "id": 4001094,
+    "name_kr": "나인스피릿의 알",
+    "name_en": "NineSpirit'sEgg"
+  },
+  {
+    "id": 4001095,
+    "name_kr": "연두색 달맞이꽃 씨앗",
+    "name_en": "GreenPrimroseSeed"
+  },
+  {
+    "id": 4001096,
+    "name_kr": "보라색 달맞이꽃 씨앗",
+    "name_en": "PurplePrimroseSeed"
+  },
+  {
+    "id": 4001097,
+    "name_kr": "자주색 달맞이꽃 씨앗",
+    "name_en": "PinkPrimroseSeed"
+  },
+  {
+    "id": 4001098,
+    "name_kr": "황갈색 달맞이꽃 씨앗",
+    "name_en": "BrownPrimroseSeed"
+  },
+  {
+    "id": 4001099,
+    "name_kr": "노란색 달맞이꽃 씨앗",
+    "name_en": "YellowPrimroseSeed"
+  },
+  {
+    "id": 4001100,
+    "name_kr": "파란색 달맞이꽃 씨앗",
+    "name_en": "BluePrimroseSeed"
+  },
+  {
+    "id": 4001101,
+    "name_kr": "월묘의 떡",
+    "name_en": "MoonBunny'sRiceCake"
+  },
+  {
+    "id": 4001102,
+    "name_kr": "보물상자",
+    "name_en": "TreasureChest"
+  },
+  {
+    "id": 4001103,
+    "name_kr": "코니언의 정수",
+    "name_en": "Cornian'sMarrow"
+  },
+  {
+    "id": 4001104,
+    "name_kr": "마뇽의 울음소리",
+    "name_en": "Manon'sCry"
+  },
+  {
+    "id": 4001105,
+    "name_kr": "질긴 용의 가죽",
+    "name_en": "ToughDragonSkin"
+  },
+  {
+    "id": 4001107,
+    "name_kr": "[스토리북]검은 책",
+    "name_en": "[Storybook]Blackbook"
+  },
+  {
+    "id": 4001108,
+    "name_kr": "차가운 불씨",
+    "name_en": "ColdFlame"
+  },
+  {
+    "id": 4001109,
+    "name_kr": "강화 유리병",
+    "name_en": "HardenedGlassBottle"
+  },
+  {
+    "id": 4001110,
+    "name_kr": "[스토리북]정체불명의 편지",
+    "name_en": "[Storybook]UnknownLetter"
+  },
+  {
+    "id": 4001111,
+    "name_kr": "[스토리북]크림슨발록의 계획서",
+    "name_en": "[Storybook]CrimsonBalrog'sProposal"
+  },
+  {
+    "id": 4001112,
+    "name_kr": "[스토리북]읽을 수 없는 책",
+    "name_en": "[Storybook]IndecipherableBook"
+  },
+  {
+    "id": 4001113,
+    "name_kr": "피닉스의 알",
+    "name_en": "Phoenix'sEgg"
+  },
+  {
+    "id": 4001114,
+    "name_kr": "프리져의 알",
+    "name_en": "Freezer'sEgg"
+  },
+  {
+    "id": 4001115,
+    "name_kr": "운디네의 옷자락",
+    "name_en": "Undine'sCloth"
+  },
+  {
+    "id": 4001116,
+    "name_kr": "육각 수정 목걸이",
+    "name_en": "HectagonNecklace"
+  },
+  {
+    "id": 4001117,
+    "name_kr": "오래된 쇠열쇠",
+    "name_en": "OldMetalKey"
+  },
+  {
+    "id": 4001118,
+    "name_kr": "고지도의 조각",
+    "name_en": "PieceofthePirateMap"
+  },
+  {
+    "id": 4001119,
+    "name_kr": "고지도",
+    "name_en": "PirateMap"
+  },
+  {
+    "id": 4001120,
+    "name_kr": "신입 해적의 증표",
+    "name_en": "MarkoftheRookiePirate"
+  },
+  {
+    "id": 4001121,
+    "name_kr": "중급 해적의 증표",
+    "name_en": "MarkoftheRisingPirate"
+  },
+  {
+    "id": 4001122,
+    "name_kr": "고참 해적의 증표",
+    "name_en": "MarkoftheVeteranPirate"
+  },
+  {
+    "id": 4001123,
+    "name_kr": "투명아이템",
+    "name_en": "TransparentItem"
+  },
+  {
+    "id": 4001124,
+    "name_kr": "도의진의 구슬",
+    "name_en": "Dr.Do'sMarble"
+  },
+  {
+    "id": 4001125,
+    "name_kr": "블록퍼스의 설계도",
+    "name_en": "BloctopusBlueprint"
+  },
+  {
+    "id": 4001126,
+    "name_kr": "단풍잎",
+    "name_en": "MapleLeaf"
+  },
+  {
+    "id": 4001127,
+    "name_kr": "도화선",
+    "name_en": "Fuse"
+  },
+  {
+    "id": 4001128,
+    "name_kr": "화약통",
+    "name_en": "Powderkeg"
+  },
+  {
+    "id": 4001129,
+    "name_kr": "메이플 코인",
+    "name_en": "MapleCoin"
+  },
+  {
+    "id": 4001130,
+    "name_kr": "로미오의 편지",
+    "name_en": "Romeo'sLetter"
+  },
+  {
+    "id": 4001131,
+    "name_kr": "줄리엣의 편지",
+    "name_en": "Juliet'sLetter"
+  },
+  {
+    "id": 4001132,
+    "name_kr": "수상한 액체",
+    "name_en": "SuspiciousLiquid"
+  },
+  {
+    "id": 4001133,
+    "name_kr": "카드키",
+    "name_en": "CardKey"
+  },
+  {
+    "id": 4001134,
+    "name_kr": "알카드노의 실험자료",
+    "name_en": "Alcadno'sExperimentFiles"
+  },
+  {
+    "id": 4001135,
+    "name_kr": "제뉴미스트의 실험자료",
+    "name_en": "Zenumist'sExperimentFiles"
+  },
+  {
+    "id": 4001136,
+    "name_kr": "주문서의 조각",
+    "name_en": "PieceofScroll"
+  },
+  {
+    "id": 4001141,
+    "name_kr": "눈사람의 나뭇가지",
+    "name_en": "SnowmanBranch"
+  },
+  {
+    "id": 4001142,
+    "name_kr": "헤네시스",
+    "name_en": "Henesys"
+  },
+  {
+    "id": 4001143,
+    "name_kr": "엘리니아",
+    "name_en": "Elinia"
+  },
+  {
+    "id": 4001144,
+    "name_kr": "페리온",
+    "name_en": "Perion"
+  },
+  {
+    "id": 4001145,
+    "name_kr": "커닝시티",
+    "name_en": "KerningCity"
+  },
+  {
+    "id": 4001146,
+    "name_kr": "리스항구",
+    "name_en": "LithHarbor"
+  },
+  {
+    "id": 4001147,
+    "name_kr": "노틸러스",
+    "name_en": "CallofTheNautilus"
+  },
+  {
+    "id": 4001148,
+    "name_kr": "슬리피우드",
+    "name_en": "Sleepywood"
+  },
+  {
+    "id": 4001149,
+    "name_kr": "아쿠아리움",
+    "name_en": "Aquarium"
+  },
+  {
+    "id": 4001150,
+    "name_kr": "백초마을",
+    "name_en": "BaekchoVillage"
+  },
+  {
+    "id": 4001151,
+    "name_kr": "무릉",
+    "name_en": "HappyValley"
+  },
+  {
+    "id": 4001152,
+    "name_kr": "아리안트",
+    "name_en": "Ariant"
+  },
+  {
+    "id": 4001153,
+    "name_kr": "마가티아",
+    "name_en": "Magatia"
+  },
+  {
+    "id": 4001154,
+    "name_kr": "엘나스폐광",
+    "name_en": "ElNathDeadMine"
+  },
+  {
+    "id": 4001155,
+    "name_kr": "용의 숲",
+    "name_en": "DragonForest"
+  },
+  {
+    "id": 4001156,
+    "name_kr": "차원의 통행증",
+    "name_en": "PassofDimension"
+  },
+  {
+    "id": 4001157,
+    "name_kr": "별도장",
+    "name_en": "StarStamp"
+  },
+  {
+    "id": 4001158,
+    "name_kr": "여신의 깃털",
+    "name_en": "FeatherofGoddess"
+  },
+  {
+    "id": 4001159,
+    "name_kr": "제뉴미스트 구슬",
+    "name_en": "ZenumistMarble"
+  },
+  {
+    "id": 4001160,
+    "name_kr": "알카드노 구슬",
+    "name_en": "AlcadnoMarble"
+  },
+  {
+    "id": 4001161,
+    "name_kr": "지독한 독",
+    "name_en": "ConcentratedPoison"
+  },
+  {
+    "id": 4001162,
+    "name_kr": "희석된 독",
+    "name_en": "DilutedPoison"
+  },
+  {
+    "id": 4001163,
+    "name_kr": "보라색 마력석",
+    "name_en": "PurpleStoneofMagic"
+  },
+  {
+    "id": 4001164,
+    "name_kr": "골렘의 독구슬",
+    "name_en": "Golem'sMarble"
+  },
+  {
+    "id": 4001165,
+    "name_kr": "나무가 좋아하는 햇살",
+    "name_en": "Sunshine"
+  },
+  {
+    "id": 4001166,
+    "name_kr": "스노우 실크",
+    "name_en": "SnowSilk"
+  },
+  {
+    "id": 4001167,
+    "name_kr": "생일 케이크 조각",
+    "name_en": "PieceofBirthdayCake"
+  },
+  {
+    "id": 4001168,
+    "name_kr": "황금 단풍잎",
+    "name_en": "GoldenMapleLeaf"
+  },
+  {
+    "id": 4001169,
+    "name_kr": "몬스터 구슬",
+    "name_en": "MonsterMarble"
+  },
+  {
+    "id": 4001170,
+    "name_kr": "경악",
+    "name_en": "??"
+  },
+  {
+    "id": 4001171,
+    "name_kr": "감격",
+    "name_en": "??"
+  },
+  {
+    "id": 4001172,
+    "name_kr": "놀람",
+    "name_en": "??"
+  },
+  {
+    "id": 4001173,
+    "name_kr": "절망",
+    "name_en": "??"
+  },
+  {
+    "id": 4001174,
+    "name_kr": "연습용 신발",
+    "name_en": "PracticeShoes"
+  },
+  {
+    "id": 4001175,
+    "name_kr": "어린이 신발",
+    "name_en": "KidShoes"
+  },
+  {
+    "id": 4001176,
+    "name_kr": "작업용 삽",
+    "name_en": "Shovel"
+  },
+  {
+    "id": 4001177,
+    "name_kr": "흰 면티셔츠",
+    "name_en": "WhiteCrewneckShirt"
+  },
+  {
+    "id": 4001178,
+    "name_kr": "해변용 비치샌들",
+    "name_en": "BeachSandals"
+  },
+  {
+    "id": 4001179,
+    "name_kr": "훈련용 광선물총",
+    "name_en": "WaterGunforTraining"
+  },
+  {
+    "id": 4001180,
+    "name_kr": "외출용 장갑",
+    "name_en": "GlovesforOutside"
+  },
+  {
+    "id": 4001181,
+    "name_kr": "벙어리 장갑",
+    "name_en": "Mittens"
+  },
+  {
+    "id": 4001182,
+    "name_kr": "깨끗한 대걸레",
+    "name_en": "CleanMop"
+  },
+  {
+    "id": 4001183,
+    "name_kr": "수련복",
+    "name_en": "TrainingUniform"
+  },
+  {
+    "id": 4001184,
+    "name_kr": "튼튼한 쇠스랑",
+    "name_en": "DurableRake"
+  },
+  {
+    "id": 4001185,
+    "name_kr": "따뜻한 털부츠",
+    "name_en": "WarmFurBoots"
+  },
+  {
+    "id": 4001186,
+    "name_kr": "왕의 터번",
+    "name_en": "King'sTurban"
+  },
+  {
+    "id": 4001187,
+    "name_kr": "음치",
+    "name_en": "Beltin"
+  },
+  {
+    "id": 4001188,
+    "name_kr": "몸치",
+    "name_en": "Breakin"
+  },
+  {
+    "id": 4001189,
+    "name_kr": "박치",
+    "name_en": "Poppin"
+  },
+  {
+    "id": 4001190,
+    "name_kr": "블랙홀",
+    "name_en": "BlackholeMarble"
+  },
+  {
+    "id": 4001191,
+    "name_kr": "우수요원 배찌",
+    "name_en": "ExcellentAgentBadge"
+  },
+  {
+    "id": 4001192,
+    "name_kr": "첩보문서",
+    "name_en": "IntelligenceDocument"
+  },
+  {
+    "id": 4001193,
+    "name_kr": "번개용 투명 아이템",
+    "name_en": "TransparentItemforLightning"
+  },
+  {
+    "id": 4001197,
+    "name_kr": "푸르스름한 광석",
+    "name_en": "BluishMineral"
+  },
+  {
+    "id": 4001198,
+    "name_kr": "알테어 조각",
+    "name_en": "AltaireFragment"
+  },
+  {
+    "id": 4001199,
+    "name_kr": "깃풀",
+    "name_en": "Straw"
+  },
+  {
+    "id": 4001201,
+    "name_kr": "재밌는 모험이야기",
+    "name_en": "FunnyTravelStories"
+  },
+  {
+    "id": 4001202,
+    "name_kr": "아이돌 히트곡 Top10",
+    "name_en": "Top10PopStarHits"
+  },
+  {
+    "id": 4001203,
+    "name_kr": "만지의 낡은 일기장",
+    "name_en": "Manji'sRaggedDiary"
+  },
+  {
+    "id": 4001204,
+    "name_kr": "그윈의 모험담",
+    "name_en": "Gwin'sTravelStories"
+  },
+  {
+    "id": 4001205,
+    "name_kr": "에릭손의 모험담",
+    "name_en": "Ericsson'sTravelStories"
+  },
+  {
+    "id": 4001207,
+    "name_kr": "검은 비늘",
+    "name_en": "BlackScale"
+  },
+  {
+    "id": 4001213,
+    "name_kr": "달빛 꾸러미",
+    "name_en": "StrangeMark"
+  },
+  {
+    "id": 4001214,
+    "name_kr": "달빛도둑 입장권",
+    "name_en": "RichieGold"
+  },
+  {
+    "id": 4001237,
+    "name_kr": "약하게 오염된 돌멩이",
+    "name_en": "SlightlyPollutedRock"
+  },
+  {
+    "id": 4001238,
+    "name_kr": "오염된 돌멩이",
+    "name_en": "PollutedRock"
+  },
+  {
+    "id": 4001239,
+    "name_kr": "강하게 오염된 돌멩이",
+    "name_en": "HeavilyPollutedRock"
+  },
+  {
+    "id": 4001240,
+    "name_kr": "오염 물질",
+    "name_en": "PollutedItem"
+  },
+  {
+    "id": 4001245,
+    "name_kr": "피그미의 황금알",
+    "name_en": "Pigmy'sGoldenEgg"
+  },
+  {
+    "id": 4001246,
+    "name_kr": "따뜻한 햇살",
+    "name_en": "WarmSunlight"
+  },
+  {
+    "id": 4001247,
+    "name_kr": "이야기 보물상자",
+    "name_en": "StoryTreasureBox"
+  },
+  {
+    "id": 4001254,
+    "name_kr": "반짝이는 메이플 코인",
+    "name_en": "ShinyMapleCoin"
+  },
+  {
+    "id": 4001255,
+    "name_kr": "황금돼지의 단단한 알",
+    "name_en": "GoldenPig'sHardEgg"
+  },
+  {
+    "id": 4001261,
+    "name_kr": "발록의 가죽조각",
+    "name_en": "PieceofBalrogLeather"
+  },
+  {
+    "id": 4001263,
+    "name_kr": "고급양털",
+    "name_en": "FineWool"
+  },
+  {
+    "id": 4001264,
+    "name_kr": "목동의 점심",
+    "name_en": "ShepherdBoy'sLunch."
+  },
+  {
+    "id": 4001268,
+    "name_kr": "황색 크립토 결정체",
+    "name_en": "BrownKryptoCrystal"
+  },
+  {
+    "id": 4001269,
+    "name_kr": "에메랄드색 크립토 결정체",
+    "name_en": "EmeraldKryptoCrystal"
+  },
+  {
+    "id": 4001270,
+    "name_kr": "착한 어린이 쪽지",
+    "name_en": "Warm-heartedChild'sNote"
+  },
+  {
+    "id": 4001271,
+    "name_kr": "길 잃은 아이",
+    "name_en": "LostChild"
+  },
+  {
+    "id": 4001272,
+    "name_kr": "거대 네펜데스의 씨앗",
+    "name_en": "GiantNependeathSeed"
+  },
+  {
+    "id": 4001300,
+    "name_kr": "그라나다",
+    "name_en": "Granada"
+  },
+  {
+    "id": 4001301,
+    "name_kr": "가가의 발굴대회 허가증",
+    "name_en": "Gaga'sExcavationPermit"
+  },
+  {
+    "id": 4001302,
+    "name_kr": "진귀한 유물",
+    "name_en": "ValuableArtifact"
+  },
+  {
+    "id": 4001303,
+    "name_kr": "석화된 오토마우스",
+    "name_en": "PetrifiedMouse"
+  },
+  {
+    "id": 4001304,
+    "name_kr": "가가의 잃어버린 안경",
+    "name_en": "Gaga'sGlasses"
+  },
+  {
+    "id": 4001305,
+    "name_kr": "카산드라의 수정구",
+    "name_en": "Cassandra'sCrystalBall"
+  },
+  {
+    "id": 4001306,
+    "name_kr": "번쩍번쩍 빛나는 손목시계",
+    "name_en": "TheShinyWatch"
+  },
+  {
+    "id": 4001307,
+    "name_kr": "나이스 축구화",
+    "name_en": "ASoccerCleat"
+  },
+  {
+    "id": 4001308,
+    "name_kr": "퀘스트 완료의 책",
+    "name_en": "TheQuestCompletionBook"
+  },
+  {
+    "id": 4001309,
+    "name_kr": "여성스런 머리끈",
+    "name_en": "APrettyHair-Tie"
+  },
+  {
+    "id": 4001310,
+    "name_kr": "낡은 운영자의 신발",
+    "name_en": "AnOldShoe"
+  },
+  {
+    "id": 4001311,
+    "name_kr": "낡은 유물",
+    "name_en": "AncientRelic"
+  },
+  {
+    "id": 4001316,
+    "name_kr": "카산드라의 앨범",
+    "name_en": "Cassandra'sAlbum"
+  },
+  {
+    "id": 4001317,
+    "name_kr": "투구페페의 투구",
+    "name_en": "HelmetPepe'sHelmet"
+  },
+  {
+    "id": 4001318,
+    "name_kr": "머쉬킹 왕국 옥쇄",
+    "name_en": "TheRoyalSealoftheMushkingEmpire"
+  },
+  {
+    "id": 4001320,
+    "name_kr": "꽃무늬 튜브 교환권",
+    "name_en": "FlowerTubeCoupon"
+  },
+  {
+    "id": 4001321,
+    "name_kr": "999객차 승차권",
+    "name_en": "Train999BoardingPass"
+  },
+  {
+    "id": 4001322,
+    "name_kr": "예티파라오의 사파이어",
+    "name_en": "PharaohYeti'sSapphire"
+  },
+  {
+    "id": 4001323,
+    "name_kr": "예티파라오의 루비",
+    "name_en": "PharaohYeti'sRuby"
+  },
+  {
+    "id": 4001324,
+    "name_kr": "예티파라오의 에메랄드",
+    "name_en": "PharaohYeti'sEmerald"
+  },
+  {
+    "id": 4001325,
+    "name_kr": "예티파라오의 토파즈",
+    "name_en": "PharaohYeti'sTopaz"
+  },
+  {
+    "id": 4001326,
+    "name_kr": "빨간색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001327,
+    "name_kr": "주황색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001328,
+    "name_kr": "노란색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001329,
+    "name_kr": "초록색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001330,
+    "name_kr": "파란색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001331,
+    "name_kr": "남색 크레파스",
+    "name_en": "??????"
+  },
+  {
+    "id": 4001332,
+    "name_kr": "보라색 크레파스",
+    "name_en": "???????"
+  },
+  {
+    "id": 4001333,
+    "name_kr": "화분",
+    "name_en": "Pot"
+  },
+  {
+    "id": 4001334,
+    "name_kr": "노란색 꽃이 핀 화분",
+    "name_en": "YellowFlowerPot"
+  },
+  {
+    "id": 4001339,
+    "name_kr": "음흉한 여우의 꼬리",
+    "name_en": "TreacherousFoxTail"
+  },
+  {
+    "id": 4001393,
+    "name_kr": "시간여행자의 회중시계",
+    "name_en": "TimeTraveler'sPocketWatch"
+  },
+  {
+    "id": 4001394,
+    "name_kr": "시간여행자의 프리패스",
+    "name_en": "TimeTraveler'sFreePass"
+  },
+  {
+    "id": 4002000,
+    "name_kr": "달팽이 우표",
+    "name_en": "SnailStamp"
+  },
+  {
+    "id": 4002001,
+    "name_kr": "파란 달팽이 우표",
+    "name_en": "BlueSnailStamp"
+  },
+  {
+    "id": 4002002,
+    "name_kr": "스텀프 우표",
+    "name_en": "StumpStamp"
+  },
+  {
+    "id": 4002003,
+    "name_kr": "슬라임 우표",
+    "name_en": "SlimeStamp"
+  },
+  {
+    "id": 4003000,
+    "name_kr": "나사",
+    "name_en": "Screw"
+  },
+  {
+    "id": 4003001,
+    "name_kr": "가공된 나무",
+    "name_en": "ProcessedWood"
+  },
+  {
+    "id": 4003002,
+    "name_kr": "얼음 조각",
+    "name_en": "PieceofIce"
+  },
+  {
+    "id": 4003003,
+    "name_kr": "요정의 날개",
+    "name_en": "FairyWing"
+  },
+  {
+    "id": 4003004,
+    "name_kr": "뻣뻣한 깃털",
+    "name_en": "StiffFeather"
+  },
+  {
+    "id": 4003005,
+    "name_kr": "부드러운 깃털",
+    "name_en": "SoftFeather"
+  },
+  {
+    "id": 4004000,
+    "name_kr": "힘의 크리스탈 원석",
+    "name_en": "PowerCrystalOre"
+  },
+  {
+    "id": 4004001,
+    "name_kr": "지혜의 크리스탈 원석",
+    "name_en": "WisdomCrystalOre"
+  },
+  {
+    "id": 4004002,
+    "name_kr": "민첩성의 크리스탈 원석",
+    "name_en": "DEXCrystalOre"
+  },
+  {
+    "id": 4004003,
+    "name_kr": "행운의 크리스탈 원석",
+    "name_en": "LUKCrystalOre"
+  },
+  {
+    "id": 4004004,
+    "name_kr": "어둠의 크리스탈 원석",
+    "name_en": "DarkCrystalOre"
+  },
+  {
+    "id": 4005000,
+    "name_kr": "힘의 크리스탈",
+    "name_en": "PowerCrystal"
+  },
+  {
+    "id": 4005001,
+    "name_kr": "지혜의 크리스탈",
+    "name_en": "WisdomCrystal"
+  },
+  {
+    "id": 4005002,
+    "name_kr": "민첩성의 크리스탈",
+    "name_en": "DEXCrystal"
+  },
+  {
+    "id": 4005003,
+    "name_kr": "행운의 크리스탈",
+    "name_en": "LUKCrystal"
+  },
+  {
+    "id": 4005004,
+    "name_kr": "어둠의 크리스탈",
+    "name_en": "DarkCrystal"
+  },
+  {
+    "id": 4006000,
+    "name_kr": "마법의 돌",
+    "name_en": "TheMagicRock"
+  },
+  {
+    "id": 4006001,
+    "name_kr": "소환의 돌",
+    "name_en": "TheSummoningRock"
+  },
+  {
+    "id": 4007000,
+    "name_kr": "마법의 가루(갈색)",
+    "name_en": "MagicPowder(Brown)"
+  },
+  {
+    "id": 4007001,
+    "name_kr": "마법의 가루(흰색)",
+    "name_en": "MagicPowder(White)"
+  },
+  {
+    "id": 4007002,
+    "name_kr": "마법의 가루(파랑)",
+    "name_en": "MagicPowder(Blue)"
+  },
+  {
+    "id": 4007003,
+    "name_kr": "마법의 가루(초록)",
+    "name_en": "MagicPowder(Green)"
+  },
+  {
+    "id": 4007004,
+    "name_kr": "마법의 가루(노랑)",
+    "name_en": "MagicPowder(Yellow)"
+  },
+  {
+    "id": 4007005,
+    "name_kr": "마법의 가루(보라)",
+    "name_en": "MagicPowder(Purple)"
+  },
+  {
+    "id": 4007006,
+    "name_kr": "마법의 가루(빨강)",
+    "name_en": "MagicPowder(Red)"
+  },
+  {
+    "id": 4007007,
+    "name_kr": "마법의 가루(검정)",
+    "name_en": "MagicPowder(Black)"
+  },
+  {
+    "id": 4010000,
+    "name_kr": "청동의 원석",
+    "name_en": "BronzeOre"
+  },
+  {
+    "id": 4010001,
+    "name_kr": "강철의 원석",
+    "name_en": "SteelOre"
+  },
+  {
+    "id": 4010002,
+    "name_kr": "미스릴의 원석",
+    "name_en": "MithrilOre"
+  },
+  {
+    "id": 4010003,
+    "name_kr": "아다만티움의 원석",
+    "name_en": "AdamantiumOre"
+  },
+  {
+    "id": 4010004,
+    "name_kr": "은의 원석",
+    "name_en": "SilverOre"
+  },
+  {
+    "id": 4010005,
+    "name_kr": "오리할콘의 원석",
+    "name_en": "OrihalconOre"
+  },
+  {
+    "id": 4010006,
+    "name_kr": "금의 원석",
+    "name_en": "GoldOre"
+  },
+  {
+    "id": 4010007,
+    "name_kr": "리튬의 원석",
+    "name_en": "LidiumOre"
+  },
+  {
+    "id": 4011000,
+    "name_kr": "청동",
+    "name_en": "BronzePlate"
+  },
+  {
+    "id": 4011001,
+    "name_kr": "강철",
+    "name_en": "SteelPlate"
+  },
+  {
+    "id": 4011002,
+    "name_kr": "미스릴",
+    "name_en": "MithrilPlate"
+  },
+  {
+    "id": 4011003,
+    "name_kr": "아다만티움",
+    "name_en": "AdamantiumPlate"
+  },
+  {
+    "id": 4011004,
+    "name_kr": "은",
+    "name_en": "SilverPlate"
+  },
+  {
+    "id": 4011005,
+    "name_kr": "오리할콘",
+    "name_en": "OrihalconPlate"
+  },
+  {
+    "id": 4011006,
+    "name_kr": "금",
+    "name_en": "GoldPlate"
+  },
+  {
+    "id": 4011007,
+    "name_kr": "달의 돌",
+    "name_en": "MoonRock"
+  },
+  {
+    "id": 4011008,
+    "name_kr": "리튬",
+    "name_en": "Lidium"
+  },
+  {
+    "id": 4020000,
+    "name_kr": "가넷의 원석",
+    "name_en": "GarnetOre"
+  },
+  {
+    "id": 4020001,
+    "name_kr": "자수정의 원석",
+    "name_en": "AmethystOre"
+  },
+  {
+    "id": 4020002,
+    "name_kr": "아쿠아마린의 원석",
+    "name_en": "AquaMarineOre"
+  },
+  {
+    "id": 4020003,
+    "name_kr": "에메랄드의 원석",
+    "name_en": "EmeraldOre"
+  },
+  {
+    "id": 4020004,
+    "name_kr": "오팔의 원석",
+    "name_en": "OpalOre"
+  },
+  {
+    "id": 4020005,
+    "name_kr": "사파이어의 원석",
+    "name_en": "SapphireOre"
+  },
+  {
+    "id": 4020006,
+    "name_kr": "토파즈의 원석",
+    "name_en": "TopazOre"
+  },
+  {
+    "id": 4020007,
+    "name_kr": "다이아몬드의 원석",
+    "name_en": "DiamondOre"
+  },
+  {
+    "id": 4020008,
+    "name_kr": "흑수정의 원석",
+    "name_en": "BlackCrystalOre"
+  },
+  {
+    "id": 4020009,
+    "name_kr": "시간 조각",
+    "name_en": "PieceofTime"
+  },
+  {
+    "id": 4021000,
+    "name_kr": "가넷",
+    "name_en": "Garnet"
+  },
+  {
+    "id": 4021001,
+    "name_kr": "자수정",
+    "name_en": "Amethyst"
+  },
+  {
+    "id": 4021002,
+    "name_kr": "아쿠아마린",
+    "name_en": "AquaMarine"
+  },
+  {
+    "id": 4021003,
+    "name_kr": "에메랄드",
+    "name_en": "Emerald"
+  },
+  {
+    "id": 4021004,
+    "name_kr": "오팔",
+    "name_en": "Opal"
+  },
+  {
+    "id": 4021005,
+    "name_kr": "사파이어",
+    "name_en": "Sapphire"
+  },
+  {
+    "id": 4021006,
+    "name_kr": "토파즈",
+    "name_en": "Topaz"
+  },
+  {
+    "id": 4021007,
+    "name_kr": "다이아몬드",
+    "name_en": "Diamond"
+  },
+  {
+    "id": 4021008,
+    "name_kr": "흑수정",
+    "name_en": "BlackCrystal"
+  },
+  {
+    "id": 4021009,
+    "name_kr": "별의 돌",
+    "name_en": "StarRock"
+  },
+  {
+    "id": 4021010,
+    "name_kr": "시간의 돌",
+    "name_en": "RockofTime"
+  },
+  {
+    "id": 4030000,
+    "name_kr": "슬라임 오목알",
+    "name_en": "OmokPiece:Slime"
+  },
+  {
+    "id": 4030001,
+    "name_kr": "버섯 오목알",
+    "name_en": "OmokPiece:Mushroom"
+  },
+  {
+    "id": 4030002,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030003,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030004,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030005,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030006,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030007,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030008,
+    "name_kr": "테트리스 조각",
+    "name_en": "TetrisPiece"
+  },
+  {
+    "id": 4030009,
+    "name_kr": "바둑판",
+    "name_en": "OmokTable"
+  },
+  {
+    "id": 4030010,
+    "name_kr": "옥토퍼스 오목알",
+    "name_en": "OmokPiece:Octopus"
+  },
+  {
+    "id": 4030011,
+    "name_kr": "돼지 오목알",
+    "name_en": "OmokPiece:Pig"
+  },
+  {
+    "id": 4030012,
+    "name_kr": "몬스터 카드",
+    "name_en": "MonsterCard"
+  },
+  {
+    "id": 4030013,
+    "name_kr": "블록퍼스 오목알",
+    "name_en": "OmokPiece:Bloctopus"
+  },
+  {
+    "id": 4030014,
+    "name_kr": "핑크 테니 오목알",
+    "name_en": "OmokPiece:PinkTeddy"
+  },
+  {
+    "id": 4030015,
+    "name_kr": "팬더 테니 오목알",
+    "name_en": "OmokPiece:PandaTeddy"
+  },
+  {
+    "id": 4030016,
+    "name_kr": "트릭스터 오목알",
+    "name_en": "OmokPiece:Trixter"
+  },
+  {
+    "id": 4031000,
+    "name_kr": "마리아의 편지",
+    "name_en": "Maria'sLetter"
+  },
+  {
+    "id": 4031001,
+    "name_kr": "루카스의 편지",
+    "name_en": "Lucas'Letter"
+  },
+  {
+    "id": 4031002,
+    "name_kr": "루카스의 금시계",
+    "name_en": "Lucas'sGoldWatch"
+  },
+  {
+    "id": 4031003,
+    "name_kr": "세라의 거울",
+    "name_en": "Sera'sMirror"
+  },
+  {
+    "id": 4031004,
+    "name_kr": "반짝이는 돌",
+    "name_en": "SparklingRock"
+  },
+  {
+    "id": 4031005,
+    "name_kr": "아르콘의 피",
+    "name_en": "Arcon'sBlood"
+  },
+  {
+    "id": 4031006,
+    "name_kr": "이상한 약",
+    "name_en": "WeirdMedicine"
+  },
+  {
+    "id": 4031007,
+    "name_kr": "오래된 금시계",
+    "name_en": "OldGoldWatch"
+  },
+  {
+    "id": 4031008,
+    "name_kr": "'주먹펴고 일어서'의 편지",
+    "name_en": "DanceswithBalrog'sLetter"
+  },
+  {
+    "id": 4031009,
+    "name_kr": "'하인즈'의 편지",
+    "name_en": "GrendeltheReallyOld'sLetter"
+  },
+  {
+    "id": 4031010,
+    "name_kr": "'헬레나'의 편지",
+    "name_en": "AthenaPierce'sLetter"
+  },
+  {
+    "id": 4031011,
+    "name_kr": "'다크로드'의 편지",
+    "name_en": "DarkLord'sLetter"
+  },
+  {
+    "id": 4031012,
+    "name_kr": "영웅의 증거",
+    "name_en": "TheProofofaHero"
+  },
+  {
+    "id": 4031013,
+    "name_kr": "검은 구슬",
+    "name_en": "DarkMarble"
+  },
+  {
+    "id": 4031014,
+    "name_kr": "리나의 특제 장어구이",
+    "name_en": "Rina'sUnagiSpecial"
+  },
+  {
+    "id": 4031015,
+    "name_kr": "신선한 우유",
+    "name_en": "FreshMilk"
+  },
+  {
+    "id": 4031016,
+    "name_kr": "비밀의 책",
+    "name_en": "SecretBook"
+  },
+  {
+    "id": 4031017,
+    "name_kr": "매직박스",
+    "name_en": "MagicBox"
+  },
+  {
+    "id": 4031018,
+    "name_kr": "보물문서",
+    "name_en": "TreasureScroll"
+  },
+  {
+    "id": 4031019,
+    "name_kr": "악마의 문서",
+    "name_en": "ScrollofSecrets"
+  },
+  {
+    "id": 4031020,
+    "name_kr": "핑크 안시리움",
+    "name_en": "PinkAnthurium"
+  },
+  {
+    "id": 4031021,
+    "name_kr": "오렌지 안시리움",
+    "name_en": "OrangeAnthurium"
+  },
+  {
+    "id": 4031022,
+    "name_kr": "블루 안시리움",
+    "name_en": "BlueAnthurium"
+  },
+  {
+    "id": 4031023,
+    "name_kr": "옐로우 안시리움",
+    "name_en": "YellowAnthurium"
+  },
+  {
+    "id": 4031024,
+    "name_kr": "퍼플 비올라",
+    "name_en": "PurpleViola"
+  },
+  {
+    "id": 4031025,
+    "name_kr": "핑크 비올라",
+    "name_en": "PinkViola"
+  },
+  {
+    "id": 4031026,
+    "name_kr": "블루 비올라",
+    "name_en": "BlueViola"
+  },
+  {
+    "id": 4031027,
+    "name_kr": "오렌지 비올라",
+    "name_en": "OrangeViola"
+  },
+  {
+    "id": 4031028,
+    "name_kr": "화이트 비올라",
+    "name_en": "WhiteViola"
+  },
+  {
+    "id": 4031029,
+    "name_kr": "한 뿌리 인삼",
+    "name_en": "Single-RootedGinseng"
+  },
+  {
+    "id": 4031030,
+    "name_kr": "두 뿌리 인삼",
+    "name_en": "Double-RootedGinseng"
+  },
+  {
+    "id": 4031031,
+    "name_kr": "세 뿌리 인삼",
+    "name_en": "Triple-RootedGinseng"
+  },
+  {
+    "id": 4031032,
+    "name_kr": "두 뿌리 홍삼",
+    "name_en": "Double-RootedRedGinseng"
+  },
+  {
+    "id": 4031033,
+    "name_kr": "세 뿌리 홍삼",
+    "name_en": "Triple-RootedRedGinseng"
+  },
+  {
+    "id": 4031034,
+    "name_kr": "생명의 주문서",
+    "name_en": "LifeScroll"
+  },
+  {
+    "id": 4031035,
+    "name_kr": "바르토스의 편지",
+    "name_en": "Bartos'Letter"
+  },
+  {
+    "id": 4031036,
+    "name_kr": "공사장B1 입장권",
+    "name_en": "TickettoConstructionSiteB1"
+  },
+  {
+    "id": 4031037,
+    "name_kr": "공사장B2 입장권",
+    "name_en": "TickettoConstructionSiteB2"
+  },
+  {
+    "id": 4031038,
+    "name_kr": "공사장B3 입장권",
+    "name_en": "TickettoConstructionSiteB3"
+  },
+  {
+    "id": 4031039,
+    "name_kr": "슈미의 동전",
+    "name_en": "Shumi'sCoin"
+  },
+  {
+    "id": 4031040,
+    "name_kr": "슈미의 돈뭉치",
+    "name_en": "Shumi'sRollofCash"
+  },
+  {
+    "id": 4031041,
+    "name_kr": "슈미의 돈주머니",
+    "name_en": "Shumi'sSackofCash"
+  },
+  {
+    "id": 4031042,
+    "name_kr": "검은 깃털",
+    "name_en": "BlackFeather"
+  },
+  {
+    "id": 4031043,
+    "name_kr": "빨간 망토",
+    "name_en": "RedCape"
+  },
+  {
+    "id": 4031044,
+    "name_kr": "오르비스 행 티켓(기본)",
+    "name_en": "TickettoOrbis(Basic)"
+  },
+  {
+    "id": 4031045,
+    "name_kr": "오르비스 행 티켓(일반)",
+    "name_en": "TickettoOrbis(Regular)"
+  },
+  {
+    "id": 4031046,
+    "name_kr": "엘리니아 행 티켓(기본)",
+    "name_en": "TickettoEllinia(Basic)"
+  },
+  {
+    "id": 4031047,
+    "name_kr": "엘리니아 행 티켓(일반)",
+    "name_en": "TickettoEllinia(Regular)"
+  },
+  {
+    "id": 4031048,
+    "name_kr": "비밀의 주문서",
+    "name_en": "BlankScroll"
+  },
+  {
+    "id": 4031049,
+    "name_kr": "고대문서 조각",
+    "name_en": "APieceofanAncientScroll"
+  },
+  {
+    "id": 4031050,
+    "name_kr": "깨진 검은수정",
+    "name_en": "CrackedBlackCrystal"
+  },
+  {
+    "id": 4031051,
+    "name_kr": "요정의 가루",
+    "name_en": "FairyDust"
+  },
+  {
+    "id": 4031052,
+    "name_kr": "헬라의 펜던트",
+    "name_en": "Hella'sPendant"
+  },
+  {
+    "id": 4031053,
+    "name_kr": "오래된 반지",
+    "name_en": "OldRing"
+  },
+  {
+    "id": 4031054,
+    "name_kr": "오래된 지도조각",
+    "name_en": "OldPieceofMap"
+  },
+  {
+    "id": 4031055,
+    "name_kr": "기억의 가루",
+    "name_en": "MemoryPowder"
+  },
+  {
+    "id": 4031056,
+    "name_kr": "고대의 책",
+    "name_en": "TheBookofAncient"
+  },
+  {
+    "id": 4031057,
+    "name_kr": "강인함의 목걸이",
+    "name_en": "TheNecklaceofStrength"
+  },
+  {
+    "id": 4031058,
+    "name_kr": "지혜의 목걸이",
+    "name_en": "TheNecklaceofWisdom"
+  },
+  {
+    "id": 4031059,
+    "name_kr": "검은 부적",
+    "name_en": "BlackCharm"
+  },
+  {
+    "id": 4031060,
+    "name_kr": "니크의 반지",
+    "name_en": "Nick'sRing"
+  },
+  {
+    "id": 4031061,
+    "name_kr": "불의 원석 조각",
+    "name_en": "PieceofFireOre"
+  },
+  {
+    "id": 4031062,
+    "name_kr": "화산의 숨결",
+    "name_en": "TheBreathofLava"
+  },
+  {
+    "id": 4031063,
+    "name_kr": "토르의 뿔",
+    "name_en": "Torr'sHorn"
+  },
+  {
+    "id": 4031064,
+    "name_kr": "비 구슬",
+    "name_en": "OrangeMarble"
+  },
+  {
+    "id": 4031065,
+    "name_kr": "운수 대길 쪽지",
+    "name_en": "ExcellentLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031066,
+    "name_kr": "운수 중길 쪽지",
+    "name_en": "GreatLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031067,
+    "name_kr": "운수 소길 쪽지",
+    "name_en": "GoodLuckFortuneMessage"
+  },
+  {
+    "id": 4031068,
+    "name_kr": "운수 길 쪽지",
+    "name_en": "OrdinaryLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031069,
+    "name_kr": "운수 말길 쪽지",
+    "name_en": "BadLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031070,
+    "name_kr": "운수 흉 쪽지",
+    "name_en": "TerribleLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031071,
+    "name_kr": "운수 대흉의 쪽지",
+    "name_en": "WorstLuckFortuneCookieMessage"
+  },
+  {
+    "id": 4031072,
+    "name_kr": "매직박스의 열쇠",
+    "name_en": "AKeyoftheMagicBox"
+  },
+  {
+    "id": 4031073,
+    "name_kr": "루디브리엄 행 티켓(기본)",
+    "name_en": "TickettoLudibrium(Basic)"
+  },
+  {
+    "id": 4031074,
+    "name_kr": "루디브리엄 행 티켓(일반)",
+    "name_en": "TickettoLudibrium(Regular)"
+  },
+  {
+    "id": 4031075,
+    "name_kr": "'주먹펴고 일어서'의 연하장",
+    "name_en": "NewYear'sCardfromBlackbull"
+  },
+  {
+    "id": 4031076,
+    "name_kr": "'하인즈'의 연하장",
+    "name_en": "NewYear'sCardfromGrendeltheReallyOld"
+  },
+  {
+    "id": 4031077,
+    "name_kr": "'헬레나'의 연하장",
+    "name_en": "NewYear'sCardfromHelena"
+  },
+  {
+    "id": 4031078,
+    "name_kr": "카호의 사진기",
+    "name_en": "ManagerKarl'sCamera"
+  },
+  {
+    "id": 4031079,
+    "name_kr": "오뚝이 일꾼의 사진1",
+    "name_en": "PhotoofRoly-Poly1"
+  },
+  {
+    "id": 4031080,
+    "name_kr": "오뚝이 일꾼의 사진2",
+    "name_en": "PhotoofRoly-Poly2"
+  },
+  {
+    "id": 4031081,
+    "name_kr": "오뚝이 일꾼의 사진3",
+    "name_en": "PhotoofRoly-Poly3"
+  },
+  {
+    "id": 4031082,
+    "name_kr": "오뚝이 일꾼의 사진4",
+    "name_en": "PhotoofRoly-Poly4"
+  },
+  {
+    "id": 4031083,
+    "name_kr": "오뚝이 일꾼의 사진5",
+    "name_en": "PhotoofRoly-Poly5"
+  },
+  {
+    "id": 4031084,
+    "name_kr": "오뚝이 일꾼의 사진6",
+    "name_en": "PhotoofRoly-Poly6"
+  },
+  {
+    "id": 4031085,
+    "name_kr": "오뚝이 일꾼의 사진7",
+    "name_en": "PhotoofRoly-Poly7"
+  },
+  {
+    "id": 4031086,
+    "name_kr": "오뚝이 일꾼의 사진8",
+    "name_en": "PhotoofRoly-Poly8"
+  },
+  {
+    "id": 4031087,
+    "name_kr": "오뚝이 일꾼의 사진9",
+    "name_en": "PhotoofRoly-Poly9"
+  },
+  {
+    "id": 4031088,
+    "name_kr": "오뚝이 일꾼의 사진10",
+    "name_en": "PhotoofRoly-Poly10"
+  },
+  {
+    "id": 4031089,
+    "name_kr": "드라이버",
+    "name_en": "Screwdriver"
+  },
+  {
+    "id": 4031090,
+    "name_kr": "기억의 조각",
+    "name_en": "PieceofMemory"
+  },
+  {
+    "id": 4031091,
+    "name_kr": "코린의 기억",
+    "name_en": "Korin'sMemory"
+  },
+  {
+    "id": 4031092,
+    "name_kr": "기계 부품",
+    "name_en": "MachineParts"
+  },
+  {
+    "id": 4031093,
+    "name_kr": "맛있는 호두",
+    "name_en": "TastyWalnut"
+  },
+  {
+    "id": 4031094,
+    "name_kr": "시계추",
+    "name_en": "Pendulum"
+  },
+  {
+    "id": 4031095,
+    "name_kr": "1호 부품박스",
+    "name_en": "BoxofParts#1"
+  },
+  {
+    "id": 4031096,
+    "name_kr": "2호 부품박스",
+    "name_en": "BoxofParts#2"
+  },
+  {
+    "id": 4031097,
+    "name_kr": "3호 부품박스",
+    "name_en": "BoxofParts#3"
+  },
+  {
+    "id": 4031098,
+    "name_kr": "만능 시계 태엽",
+    "name_en": "All-purposeClockSpring"
+  },
+  {
+    "id": 4031099,
+    "name_kr": "봉인된 편지",
+    "name_en": "SealedLetter"
+  },
+  {
+    "id": 4031100,
+    "name_kr": "설계도",
+    "name_en": "BlueprintMachine"
+  },
+  {
+    "id": 4031101,
+    "name_kr": "레이저 총",
+    "name_en": "LaserGun"
+  },
+  {
+    "id": 4031102,
+    "name_kr": "노트",
+    "name_en": "Note"
+  },
+  {
+    "id": 4031103,
+    "name_kr": "바나드 그레이의 세포",
+    "name_en": "BarnardGray'sCell"
+  },
+  {
+    "id": 4031104,
+    "name_kr": "제타 그레이의 세포",
+    "name_en": "ZetaGray'sCell"
+  },
+  {
+    "id": 4031105,
+    "name_kr": "울트라 그레이의 세포",
+    "name_en": "UltraGray'sCell"
+  },
+  {
+    "id": 4031106,
+    "name_kr": "원로 그레이의 세포",
+    "name_en": "ChiefGray'sCell"
+  },
+  {
+    "id": 4031107,
+    "name_kr": "도곤스 보고서",
+    "name_en": "Dogon'sReport"
+  },
+  {
+    "id": 4031108,
+    "name_kr": "슈퍼 알람 시계",
+    "name_en": "SuperAlarmClock"
+  },
+  {
+    "id": 4031109,
+    "name_kr": "화이트 커버춰",
+    "name_en": "WhiteChocolate"
+  },
+  {
+    "id": 4031110,
+    "name_kr": "다크 커버춰",
+    "name_en": "DarkChocolate"
+  },
+  {
+    "id": 4031111,
+    "name_kr": "하트 상자",
+    "name_en": "HeartBox"
+  },
+  {
+    "id": 4031112,
+    "name_kr": "금색 리본",
+    "name_en": "GoldRibbon"
+  },
+  {
+    "id": 4031113,
+    "name_kr": "바구니",
+    "name_en": "Basket"
+  },
+  {
+    "id": 4031114,
+    "name_kr": "포장 재료",
+    "name_en": "CoverMaterial"
+  },
+  {
+    "id": 4031115,
+    "name_kr": "특수 건전지",
+    "name_en": "SpecialBattery"
+  },
+  {
+    "id": 4031116,
+    "name_kr": "비밀문서",
+    "name_en": "SecretDocument"
+  },
+  {
+    "id": 4031117,
+    "name_kr": "운석샘플",
+    "name_en": "MeteoriteSample"
+  },
+  {
+    "id": 4031118,
+    "name_kr": "해독된 메모리카드",
+    "name_en": "DecipheredMemoryCard"
+  },
+  {
+    "id": 4031119,
+    "name_kr": "새까만 히나인형",
+    "name_en": "BlackToyHeena"
+  },
+  {
+    "id": 4031120,
+    "name_kr": "히나인형",
+    "name_en": "ToyHeena"
+  },
+  {
+    "id": 4031121,
+    "name_kr": "조개껍데기",
+    "name_en": "ClamShell"
+  },
+  {
+    "id": 4031122,
+    "name_kr": "설탕",
+    "name_en": "Sugar"
+  },
+  {
+    "id": 4031123,
+    "name_kr": "파인애플",
+    "name_en": "Pineapple"
+  },
+  {
+    "id": 4031124,
+    "name_kr": "딸기",
+    "name_en": "Strawberry"
+  },
+  {
+    "id": 4031125,
+    "name_kr": "나무 꼬치",
+    "name_en": "WoodenSkewer"
+  },
+  {
+    "id": 4031126,
+    "name_kr": "포터의 편지",
+    "name_en": "Porter'sLetter"
+  },
+  {
+    "id": 4031127,
+    "name_kr": "파일럿의 편지",
+    "name_en": "Pilot'sLetter"
+  },
+  {
+    "id": 4031128,
+    "name_kr": "위버의 편지",
+    "name_en": "Weaver'sLetter"
+  },
+  {
+    "id": 4031129,
+    "name_kr": "고소한 치즈",
+    "name_en": "SavoryCheese"
+  },
+  {
+    "id": 4031130,
+    "name_kr": "정비 문서",
+    "name_en": "MaintenanceManual"
+  },
+  {
+    "id": 4031131,
+    "name_kr": "파란 잉어",
+    "name_en": "BlueCarp"
+  },
+  {
+    "id": 4031132,
+    "name_kr": "빨간 잉어",
+    "name_en": "RedCarp"
+  },
+  {
+    "id": 4031133,
+    "name_kr": "초록색 아기잉어",
+    "name_en": "GreenBabyCarp"
+  },
+  {
+    "id": 4031134,
+    "name_kr": "자유여행권",
+    "name_en": "VIPTickettoFlorinaBeach"
+  },
+  {
+    "id": 4031135,
+    "name_kr": "빛을 잃은 크리스탈",
+    "name_en": "DullCrystal"
+  },
+  {
+    "id": 4031136,
+    "name_kr": "외계인 그레이의 문서",
+    "name_en": "Gray'sDocument"
+  },
+  {
+    "id": 4031137,
+    "name_kr": "푸짐한 선물상자",
+    "name_en": "BoxofPresents"
+  },
+  {
+    "id": 4031138,
+    "name_kr": "돈 주머니",
+    "name_en": "MoneySack"
+  },
+  {
+    "id": 4031139,
+    "name_kr": "마리와카와 가방",
+    "name_en": "Mariwakawa'sBag"
+  },
+  {
+    "id": 4031140,
+    "name_kr": "빛을 잃은 크리스탈",
+    "name_en": "DullCrystal"
+  },
+  {
+    "id": 4031141,
+    "name_kr": "1호 부품박스",
+    "name_en": "Parts#1"
+  },
+  {
+    "id": 4031142,
+    "name_kr": "2호 부품박스",
+    "name_en": "Parts#2"
+  },
+  {
+    "id": 4031143,
+    "name_kr": "3호 부품박스",
+    "name_en": "Parts#3"
+  },
+  {
+    "id": 4031144,
+    "name_kr": "영웅의 글라디우스",
+    "name_en": "Hero'sGladius"
+  },
+  {
+    "id": 4031145,
+    "name_kr": "시계추",
+    "name_en": "Pendulum"
+  },
+  {
+    "id": 4031146,
+    "name_kr": "동물의 뼈화석",
+    "name_en": "AnimalFossil"
+  },
+  {
+    "id": 4031147,
+    "name_kr": "식물의 나뭇잎화석",
+    "name_en": "PlantFossil"
+  },
+  {
+    "id": 4031148,
+    "name_kr": "윈스턴의 소개장",
+    "name_en": "Winston'sRecommendation"
+  },
+  {
+    "id": 4031149,
+    "name_kr": "화석 상자",
+    "name_en": "FossilBox"
+  },
+  {
+    "id": 4031150,
+    "name_kr": "식물 샘플",
+    "name_en": "PlantSample"
+  },
+  {
+    "id": 4031151,
+    "name_kr": "박제된 드레이크 머리뼈",
+    "name_en": "StuffedDrakeSkull"
+  },
+  {
+    "id": 4031152,
+    "name_kr": "화석연구 보고서",
+    "name_en": "FossilReport"
+  },
+  {
+    "id": 4031153,
+    "name_kr": "스텀프의 눈물",
+    "name_en": "Stump'sTeardrop"
+  },
+  {
+    "id": 4031154,
+    "name_kr": "에스텔의 특제소스",
+    "name_en": "Estelle'sSpecialSauce"
+  },
+  {
+    "id": 4031155,
+    "name_kr": "깨진 거울조각",
+    "name_en": "BrokenMirrorGlass"
+  },
+  {
+    "id": 4031156,
+    "name_kr": "반짝이는 유리구슬",
+    "name_en": "SparklingGlassMarble"
+  },
+  {
+    "id": 4031157,
+    "name_kr": "메이플 고서 上",
+    "name_en": "MapleHistoryBookI"
+  },
+  {
+    "id": 4031158,
+    "name_kr": "메이플 고서 中",
+    "name_en": "MapleHistoryBookII"
+  },
+  {
+    "id": 4031159,
+    "name_kr": "메이플 고서 下",
+    "name_en": "MapleHistoryBookIII"
+  },
+  {
+    "id": 4031160,
+    "name_kr": "명예의 훈장",
+    "name_en": "MedalofHonor"
+  },
+  {
+    "id": 4031161,
+    "name_kr": "오래된 나사",
+    "name_en": "RustyScrew"
+  },
+  {
+    "id": 4031162,
+    "name_kr": "낡은 나무 판자",
+    "name_en": "OldWoodenBoard"
+  },
+  {
+    "id": 4031163,
+    "name_kr": "비상의 비약",
+    "name_en": "FlyingMedicine"
+  },
+  {
+    "id": 4031164,
+    "name_kr": "악어가죽 주머니",
+    "name_en": "AlligatorSkinPouch"
+  },
+  {
+    "id": 4031165,
+    "name_kr": "마녀풀의 잎사귀",
+    "name_en": "WitchgrassLeaf"
+  },
+  {
+    "id": 4031166,
+    "name_kr": "쿤의 소개장",
+    "name_en": "Olaf'sRecommendation"
+  },
+  {
+    "id": 4031167,
+    "name_kr": "훈련용 파란색 선물상자",
+    "name_en": "BluePresentBoxforTraining"
+  },
+  {
+    "id": 4031168,
+    "name_kr": "훈련용 노란색 선물상자",
+    "name_en": "YellowPresentBoxforTraining"
+  },
+  {
+    "id": 4031169,
+    "name_kr": "훈련용 초록색 선물상자",
+    "name_en": "GreenPresentBoxforTraining"
+  },
+  {
+    "id": 4031170,
+    "name_kr": "타키온",
+    "name_en": "Tachion"
+  },
+  {
+    "id": 4031171,
+    "name_kr": "신비한 가루",
+    "name_en": "MysteriousPowder"
+  },
+  {
+    "id": 4031172,
+    "name_kr": "루디브리엄의 메달",
+    "name_en": "LudibriumMedal"
+  },
+  {
+    "id": 4031173,
+    "name_kr": "이얀의 편지",
+    "name_en": "Ayan'sLetter"
+  },
+  {
+    "id": 4031174,
+    "name_kr": "장난감 칼",
+    "name_en": "Ayan'sToySword"
+  },
+  {
+    "id": 4031175,
+    "name_kr": "타키온",
+    "name_en": "Tachion"
+  },
+  {
+    "id": 4031176,
+    "name_kr": "차원의 균열 조각 A",
+    "name_en": "PieceofCrackedDimensionA"
+  },
+  {
+    "id": 4031177,
+    "name_kr": "차원의 균열 조각 B",
+    "name_en": "PieceofCrackedDimensionB"
+  },
+  {
+    "id": 4031178,
+    "name_kr": "차원의 균열 조각 C",
+    "name_en": "PieceofCrackedDimensionC"
+  },
+  {
+    "id": 4031179,
+    "name_kr": "차원 균열의 조각",
+    "name_en": "PieceofCrackedDimension"
+  },
+  {
+    "id": 4031181,
+    "name_kr": "쌀가루",
+    "name_en": "RicePowder"
+  },
+  {
+    "id": 4031182,
+    "name_kr": "꿀",
+    "name_en": "Honey"
+  },
+  {
+    "id": 4031183,
+    "name_kr": "솔잎",
+    "name_en": "Leaf"
+  },
+  {
+    "id": 4031184,
+    "name_kr": "찹쌀가루",
+    "name_en": "GlutinousRicePowder"
+  },
+  {
+    "id": 4031185,
+    "name_kr": "꿀단지",
+    "name_en": "PotofHoney"
+  },
+  {
+    "id": 4031186,
+    "name_kr": "기름병",
+    "name_en": "BottleofOil"
+  },
+  {
+    "id": 4031187,
+    "name_kr": "금송편",
+    "name_en": "GoldSongPyun"
+  },
+  {
+    "id": 4031188,
+    "name_kr": "한과세트",
+    "name_en": "HanGwaSet"
+  },
+  {
+    "id": 4031189,
+    "name_kr": "오로라 구슬",
+    "name_en": "AuroraMarble"
+  },
+  {
+    "id": 4031190,
+    "name_kr": "뿔피리",
+    "name_en": "HornFlute"
+  },
+  {
+    "id": 4031191,
+    "name_kr": "금방울",
+    "name_en": "GoldenBell"
+  },
+  {
+    "id": 4031192,
+    "name_kr": "빨간 리본끈",
+    "name_en": "RedRibbon"
+  },
+  {
+    "id": 4031193,
+    "name_kr": "영혼수집기",
+    "name_en": "SoulCollector"
+  },
+  {
+    "id": 4031194,
+    "name_kr": "넬라의 한복",
+    "name_en": "Nella'sKoreanCostume"
+  },
+  {
+    "id": 4031195,
+    "name_kr": "오로라 구슬",
+    "name_en": "AuroraMarble"
+  },
+  {
+    "id": 4031196,
+    "name_kr": "다크타키온",
+    "name_en": "DarkTachion"
+  },
+  {
+    "id": 4031197,
+    "name_kr": "켈벨로스의 눈물",
+    "name_en": "TearsofKelvelos"
+  },
+  {
+    "id": 4031198,
+    "name_kr": "빈 물약병",
+    "name_en": "EmptyPotionBottle"
+  },
+  {
+    "id": 4031199,
+    "name_kr": "루나 팔찌",
+    "name_en": "LunarWristband"
+  },
+  {
+    "id": 4031200,
+    "name_kr": "네펜데스 즙",
+    "name_en": "SapofNependeath"
+  },
+  {
+    "id": 4031201,
+    "name_kr": "달콤한 시럽",
+    "name_en": "SweetSyrup"
+  },
+  {
+    "id": 4031202,
+    "name_kr": "네펜데스 주스",
+    "name_en": "NependeathJuice"
+  },
+  {
+    "id": 4031204,
+    "name_kr": "리사의 소개장",
+    "name_en": "Lisa'sRecommendation"
+  },
+  {
+    "id": 4031205,
+    "name_kr": "리사의 특수치료제",
+    "name_en": "Lisa'sSpecialMedicine"
+  },
+  {
+    "id": 4031206,
+    "name_kr": "찢어진 여행 티켓1",
+    "name_en": "RippedTravelTicket1"
+  },
+  {
+    "id": 4031207,
+    "name_kr": "찢어진 여행 티켓2",
+    "name_en": "RippedTravelTicket2"
+  },
+  {
+    "id": 4031208,
+    "name_kr": "빈병",
+    "name_en": "EmptyBottle"
+  },
+  {
+    "id": 4031209,
+    "name_kr": "SOS구조 요청 편지",
+    "name_en": "SOSLetter"
+  },
+  {
+    "id": 4031210,
+    "name_kr": "로빈슨의 ID카드",
+    "name_en": "Robinson'sID"
+  },
+  {
+    "id": 4031211,
+    "name_kr": "라마의 표식",
+    "name_en": "Lama'sSign"
+  },
+  {
+    "id": 4031212,
+    "name_kr": "싸늘한 기운",
+    "name_en": "ColdSteam"
+  },
+  {
+    "id": 4031213,
+    "name_kr": "와일드카고의 영혼석",
+    "name_en": "WildKargo'sSpiritRock"
+  },
+  {
+    "id": 4031214,
+    "name_kr": "타우로마시스의 영혼석",
+    "name_en": "Tauromacis'sSpiritRock"
+  },
+  {
+    "id": 4031215,
+    "name_kr": "타우로스피어의 영혼석",
+    "name_en": "Taurospear'sSpiritRock"
+  },
+  {
+    "id": 4031216,
+    "name_kr": "주니어 발록의 영혼석",
+    "name_en": "Jr.Balrog'sSpiritRock"
+  },
+  {
+    "id": 4031217,
+    "name_kr": "황금빛 열쇠",
+    "name_en": "GoldenKey"
+  },
+  {
+    "id": 4031218,
+    "name_kr": "어둠의 계약서",
+    "name_en": "TheContractofDarkness"
+  },
+  {
+    "id": 4031219,
+    "name_kr": "스카두르의 활",
+    "name_en": "Scadur'sBow"
+  },
+  {
+    "id": 4031220,
+    "name_kr": "신비한 밀가루",
+    "name_en": "MythicalFlour"
+  },
+  {
+    "id": 4031221,
+    "name_kr": "지구방위본부 특수 워프캡슐",
+    "name_en": "OmegaSectorWarpCapsule"
+  },
+  {
+    "id": 4031222,
+    "name_kr": "무쇠 호미",
+    "name_en": "SteelHoe"
+  },
+  {
+    "id": 4031223,
+    "name_kr": "금은보화",
+    "name_en": "BoxofJewelry"
+  },
+  {
+    "id": 4031224,
+    "name_kr": "재산 압류 통지서",
+    "name_en": "WarrantofAttachment"
+  },
+  {
+    "id": 4031225,
+    "name_kr": "박씨",
+    "name_en": "MagicSeed"
+  },
+  {
+    "id": 4031226,
+    "name_kr": "그윈의 가방",
+    "name_en": "Gwin'sBag"
+  },
+  {
+    "id": 4031227,
+    "name_kr": "지네의 붉은 구슬",
+    "name_en": "CentipedeRedMarble"
+  },
+  {
+    "id": 4031229,
+    "name_kr": "볏섬",
+    "name_en": "SackofRice"
+  },
+  {
+    "id": 4031230,
+    "name_kr": "새 항아리",
+    "name_en": "NewPot"
+  },
+  {
+    "id": 4031231,
+    "name_kr": "쑥",
+    "name_en": "Artemisia"
+  },
+  {
+    "id": 4031232,
+    "name_kr": "도깨비 감투",
+    "name_en": "GoblinCap"
+  },
+  {
+    "id": 4031233,
+    "name_kr": "도깨비 방망이",
+    "name_en": "GoblinBat"
+  },
+  {
+    "id": 4031234,
+    "name_kr": "도깨비 망토",
+    "name_en": "GoblinCape"
+  },
+  {
+    "id": 4031235,
+    "name_kr": "'흥부놀부' 동화책",
+    "name_en": "StorybookonHongbuandNolbu"
+  },
+  {
+    "id": 4031236,
+    "name_kr": "'콩쥐팥쥐' 동화책",
+    "name_en": "StorybookonKongJiandPatJi"
+  },
+  {
+    "id": 4031237,
+    "name_kr": "'의좋은 형제' 동화책",
+    "name_en": "StorybookonBrotherlyLove"
+  },
+  {
+    "id": 4031238,
+    "name_kr": "'도깨비 이야기' 동화책",
+    "name_en": "StorybookontheGoblinStory"
+  },
+  {
+    "id": 4031239,
+    "name_kr": "카밀라에게 보내는 편지",
+    "name_en": "TheLettertoCamila"
+  },
+  {
+    "id": 4031240,
+    "name_kr": "카밀라의 답장",
+    "name_en": "Camila'sReply"
+  },
+  {
+    "id": 4031241,
+    "name_kr": "제비가 잃어버린 박씨",
+    "name_en": "Swallow'sLostSeed"
+  },
+  {
+    "id": 4031242,
+    "name_kr": "돌고래 택시 이용권",
+    "name_en": "DolphinTaxiCoupon"
+  },
+  {
+    "id": 4031243,
+    "name_kr": "찢어진 여행 티켓1",
+    "name_en": "RippedTravelTicket1"
+  },
+  {
+    "id": 4031244,
+    "name_kr": "흥부의 박씨",
+    "name_en": "Hongbu'sSeed"
+  },
+  {
+    "id": 4031245,
+    "name_kr": "놀부의 박씨",
+    "name_en": "Nolbu'sSeed"
+  },
+  {
+    "id": 4031246,
+    "name_kr": "볏섬",
+    "name_en": "SackofRice"
+  },
+  {
+    "id": 4031247,
+    "name_kr": "볏섬",
+    "name_en": "SackofRice"
+  },
+  {
+    "id": 4031248,
+    "name_kr": "볏섬",
+    "name_en": "SackofRice"
+  },
+  {
+    "id": 4031251,
+    "name_kr": "심해먼지",
+    "name_en": "SeaDust"
+  },
+  {
+    "id": 4031252,
+    "name_kr": "찢어진 노트",
+    "name_en": "WrippedNote"
+  },
+  {
+    "id": 4031253,
+    "name_kr": "피아누스의 비명소리",
+    "name_en": "Pianus'sScream"
+  },
+  {
+    "id": 4031254,
+    "name_kr": "망가진 손전등",
+    "name_en": "BrokenFlashlight"
+  },
+  {
+    "id": 4031255,
+    "name_kr": "고장난 카메라",
+    "name_en": "BrokenCamera"
+  },
+  {
+    "id": 4031256,
+    "name_kr": "차가운 눈물",
+    "name_en": "ColdTear"
+  },
+  {
+    "id": 4031257,
+    "name_kr": "빈 향수병",
+    "name_en": "EmptyBottleofPerfume"
+  },
+  {
+    "id": 4031258,
+    "name_kr": "들국화",
+    "name_en": "Chrysanthemum"
+  },
+  {
+    "id": 4031259,
+    "name_kr": "씨클의 세포샘플",
+    "name_en": "Seacle'sDNASample"
+  },
+  {
+    "id": 4031260,
+    "name_kr": "씨코의 세포샘플",
+    "name_en": "Cico'sDNASample"
+  },
+  {
+    "id": 4031261,
+    "name_kr": "핀붐의 세포샘플",
+    "name_en": "PinBoom'sDNASample"
+  },
+  {
+    "id": 4031262,
+    "name_kr": "플라워피쉬의 세포샘플",
+    "name_en": "FlowerFish'sDNASample"
+  },
+  {
+    "id": 4031263,
+    "name_kr": "마스크피쉬의 세포샘플",
+    "name_en": "MaskedFish'sDNASample"
+  },
+  {
+    "id": 4031264,
+    "name_kr": "버블피쉬의 세포샘플",
+    "name_en": "BubbleFish'sDNASample"
+  },
+  {
+    "id": 4031265,
+    "name_kr": "푸퍼의 세포샘플",
+    "name_en": "Pooper'sDNASample"
+  },
+  {
+    "id": 4031266,
+    "name_kr": "스파커의 세포샘플",
+    "name_en": "Sparker'sDNASample"
+  },
+  {
+    "id": 4031267,
+    "name_kr": "프리져의 세포샘플",
+    "name_en": "Freezer'sDNASample"
+  },
+  {
+    "id": 4031268,
+    "name_kr": "튼튼한 동아줄",
+    "name_en": "ToughRope"
+  },
+  {
+    "id": 4031269,
+    "name_kr": "미끌미끌한 기름",
+    "name_en": "SlipperyOil"
+  },
+  {
+    "id": 4031270,
+    "name_kr": "'해와 달이 된 오누이' 동화책",
+    "name_en": "StorybookonTheKidsThatBecametheSunandtheMoon"
+  },
+  {
+    "id": 4031271,
+    "name_kr": "빈 향수병",
+    "name_en": "EmptyBottleofPerfume"
+  },
+  {
+    "id": 4031272,
+    "name_kr": "빈 향수병",
+    "name_en": "EmptyBottleofPerfume"
+  },
+  {
+    "id": 4031273,
+    "name_kr": "빨간 털실뭉치",
+    "name_en": "RedBallofYarn"
+  },
+  {
+    "id": 4031274,
+    "name_kr": "종이조각A",
+    "name_en": "PieceofPaperA"
+  },
+  {
+    "id": 4031275,
+    "name_kr": "종이조각B",
+    "name_en": "PieceofPaperB"
+  },
+  {
+    "id": 4031276,
+    "name_kr": "종이조각C",
+    "name_en": "PieceofPaperC"
+  },
+  {
+    "id": 4031277,
+    "name_kr": "종이조각D",
+    "name_en": "PieceofPaperD"
+  },
+  {
+    "id": 4031278,
+    "name_kr": "종이조각E",
+    "name_en": "PieceofPaperE"
+  },
+  {
+    "id": 4031279,
+    "name_kr": "정부미",
+    "name_en": "State-heldRice"
+  },
+  {
+    "id": 4031280,
+    "name_kr": "'효녀 심청' 동화책",
+    "name_en": "StorybookonShimChung"
+  },
+  {
+    "id": 4031281,
+    "name_kr": "뮤즈의 요리",
+    "name_en": "Muse'sDish"
+  },
+  {
+    "id": 4031282,
+    "name_kr": "악의 기운",
+    "name_en": "EvilEnergy"
+  },
+  {
+    "id": 4031285,
+    "name_kr": "보물상자",
+    "name_en": "TreasureChest"
+  },
+  {
+    "id": 4031286,
+    "name_kr": "보물상자",
+    "name_en": "TreasureChest"
+  },
+  {
+    "id": 4031288,
+    "name_kr": "농부의 소개서",
+    "name_en": "RecommendationLetter"
+  },
+  {
+    "id": 4031289,
+    "name_kr": "자격증명서",
+    "name_en": "ShanghaiPermit"
+  },
+  {
+    "id": 4031290,
+    "name_kr": "사진기용 삼각대",
+    "name_en": "Tripod"
+  },
+  {
+    "id": 4031291,
+    "name_kr": "완벽한 상자",
+    "name_en": "ThePerfectBox"
+  },
+  {
+    "id": 4031292,
+    "name_kr": "영웅의 북",
+    "name_en": "Hero'sDrum"
+  },
+  {
+    "id": 4031293,
+    "name_kr": "영원의 눈물",
+    "name_en": "TearsofEternity"
+  },
+  {
+    "id": 4031295,
+    "name_kr": "손연주의 편지",
+    "name_en": "YanZi'sLetter"
+  },
+  {
+    "id": 4031296,
+    "name_kr": "최신형 핸드폰",
+    "name_en": "NewCellphone"
+  },
+  {
+    "id": 4031297,
+    "name_kr": "파티 초대장",
+    "name_en": "PartyInvitation"
+  },
+  {
+    "id": 4031298,
+    "name_kr": "금도끼 은도끼 동화책",
+    "name_en": "StorybookontheStoryofAxes"
+  },
+  {
+    "id": 4031301,
+    "name_kr": "아쿠아리움 초대권",
+    "name_en": "InvitationtoAquarium"
+  },
+  {
+    "id": 4031302,
+    "name_kr": "바다 쓰레기",
+    "name_en": "SeaTrash"
+  },
+  {
+    "id": 4031303,
+    "name_kr": "보관함 열쇠",
+    "name_en": "StorageKey"
+  },
+  {
+    "id": 4031304,
+    "name_kr": "아쿠아리움 초대권",
+    "name_en": "InvitationtoAquarium"
+  },
+  {
+    "id": 4031308,
+    "name_kr": "구름 분무기",
+    "name_en": "CloudSprayer"
+  },
+  {
+    "id": 4031309,
+    "name_kr": "마법 구름 조각",
+    "name_en": "CloudPiece"
+  },
+  {
+    "id": 4031310,
+    "name_kr": "아쿠아로드 사진첩",
+    "name_en": "AquaroadPhotoAlbum"
+  },
+  {
+    "id": 4031311,
+    "name_kr": "눈송이 결정",
+    "name_en": "SnowCrystal"
+  },
+  {
+    "id": 4031312,
+    "name_kr": "눈결정의 마법구",
+    "name_en": "SnowCrystalSphere"
+  },
+  {
+    "id": 4031315,
+    "name_kr": "나무꾼의 쇠도끼",
+    "name_en": "TreeCutter'sSteelAxe"
+  },
+  {
+    "id": 4031316,
+    "name_kr": "칠성이의 쇠도끼",
+    "name_en": "ChilSung'sSteelAxe"
+  },
+  {
+    "id": 4031317,
+    "name_kr": "나무군의 쇠도끼",
+    "name_en": "Tree'sSteelAxe"
+  },
+  {
+    "id": 4031318,
+    "name_kr": "칠남이의 쇠도끼",
+    "name_en": "ChilNam'sSteelAxe"
+  },
+  {
+    "id": 4031319,
+    "name_kr": "나무꾼 전용 강철도끼",
+    "name_en": "SteelAxeforTreeCutters"
+  },
+  {
+    "id": 4031320,
+    "name_kr": "망가진 쇠도끼",
+    "name_en": "BrokenSteelAxe"
+  },
+  {
+    "id": 4031321,
+    "name_kr": "바다 쓰레기",
+    "name_en": "SeaTrash"
+  },
+  {
+    "id": 4031322,
+    "name_kr": "코카 열매",
+    "name_en": "CocaFruit"
+  },
+  {
+    "id": 4031323,
+    "name_kr": "탄산수",
+    "name_en": "CO2"
+  },
+  {
+    "id": 4031324,
+    "name_kr": "캐러멜",
+    "name_en": "Caramel"
+  },
+  {
+    "id": 4031325,
+    "name_kr": "비밀의 코카-콜라 원액",
+    "name_en": "SecretCoca-ColaLiquid"
+  },
+  {
+    "id": 4031330,
+    "name_kr": "리프레 행 티켓(기본)",
+    "name_en": "TickettoLeafre(Basic)"
+  },
+  {
+    "id": 4031331,
+    "name_kr": "리프레 행 티켓(일반)",
+    "name_en": "TickettoLeafre(Reg)"
+  },
+  {
+    "id": 4031332,
+    "name_kr": "1연승 증명서",
+    "name_en": "Certificateof1-straightWin"
+  },
+  {
+    "id": 4031333,
+    "name_kr": "2연승 증명서",
+    "name_en": "Certificateof2-straightWins"
+  },
+  {
+    "id": 4031334,
+    "name_kr": "3연승 증명서",
+    "name_en": "Certificateof3-straightWins"
+  },
+  {
+    "id": 4031335,
+    "name_kr": "4연승 증명서",
+    "name_en": "Certificateof4-straightWins"
+  },
+  {
+    "id": 4031336,
+    "name_kr": "5연승 증명서",
+    "name_en": "Certificateof5-straightWins"
+  },
+  {
+    "id": 4031337,
+    "name_kr": "6연승 증명서",
+    "name_en": "Certificateof6-straightWins"
+  },
+  {
+    "id": 4031338,
+    "name_kr": "7연승 증명서",
+    "name_en": "Certificateof7-straightWins"
+  },
+  {
+    "id": 4031339,
+    "name_kr": "8연승 증명서",
+    "name_en": "Certificateof8-straightWins"
+  },
+  {
+    "id": 4031340,
+    "name_kr": "9연승 증명서",
+    "name_en": "Certificateof9-straightWins"
+  },
+  {
+    "id": 4031341,
+    "name_kr": "10연승 증명서",
+    "name_en": "Certificateof10-straightWins"
+  },
+  {
+    "id": 4031342,
+    "name_kr": "전직 증명서",
+    "name_en": "CertificateofSwitch"
+  },
+  {
+    "id": 4031343,
+    "name_kr": "영웅의 펜타곤",
+    "name_en": "TheHeroicPentagon"
+  },
+  {
+    "id": 4031344,
+    "name_kr": "영웅의 별",
+    "name_en": "TheHeroicStar"
+  },
+  {
+    "id": 4031345,
+    "name_kr": "보호의 성수",
+    "name_en": "PureWaterofProtection"
+  },
+  {
+    "id": 4031346,
+    "name_kr": "마법의 씨앗",
+    "name_en": "MagicSeed"
+  },
+  {
+    "id": 4031347,
+    "name_kr": "장난감성의 선물",
+    "name_en": "ToyCastlePresent"
+  },
+  {
+    "id": 4031348,
+    "name_kr": "비밀의 주술서",
+    "name_en": "SecretSpellScroll"
+  },
+  {
+    "id": 4031352,
+    "name_kr": "핑크 예티 인형",
+    "name_en": "PinkYetiDoll"
+  },
+  {
+    "id": 4031353,
+    "name_kr": "음악상자",
+    "name_en": "MusicBox"
+  },
+  {
+    "id": 4031354,
+    "name_kr": "목걸이",
+    "name_en": "Necklace"
+  },
+  {
+    "id": 4031355,
+    "name_kr": "죽",
+    "name_en": "Porridge"
+  },
+  {
+    "id": 4031356,
+    "name_kr": "크리스틴의 소개장",
+    "name_en": "Christine'sIntroductionletter"
+  },
+  {
+    "id": 4031382,
+    "name_kr": "파티복",
+    "name_en": "PartyDress"
+  },
+  {
+    "id": 4031383,
+    "name_kr": "수호대 가입 허가서",
+    "name_en": "DefenseSquadEnrollmentPermission"
+  },
+  {
+    "id": 4031384,
+    "name_kr": "수호대 가입 허가서",
+    "name_en": "DefenseSquadEnrollmentPermission"
+  },
+  {
+    "id": 4031385,
+    "name_kr": "수호대 가입 허가서",
+    "name_en": "DefenseSquadEnrollmentPermission"
+  },
+  {
+    "id": 4031386,
+    "name_kr": "수호대 가입 허가서",
+    "name_en": "DefenseSquadEnrollmentPermission"
+  },
+  {
+    "id": 4031387,
+    "name_kr": "수호대 가입 허가서",
+    "name_en": "DefenseSquadEnrollmentPermission"
+  },
+  {
+    "id": 4031388,
+    "name_kr": "키드의 열쇠",
+    "name_en": "Kid'sKey"
+  },
+  {
+    "id": 4031391,
+    "name_kr": "가짜 설계도",
+    "name_en": "FakeBlueprint"
+  },
+  {
+    "id": 4031392,
+    "name_kr": "화장품",
+    "name_en": "FaceLotion"
+  },
+  {
+    "id": 4031400,
+    "name_kr": "파파야",
+    "name_en": "Papaya"
+  },
+  {
+    "id": 4031401,
+    "name_kr": "로즈애플",
+    "name_en": "RoseApple"
+  },
+  {
+    "id": 4031405,
+    "name_kr": "파티용 유리구두",
+    "name_en": "GlassShoes"
+  },
+  {
+    "id": 4031409,
+    "name_kr": "웨딩 열쇠",
+    "name_en": "AmoriaHeartKey"
+  },
+  {
+    "id": 4031410,
+    "name_kr": "하인즈의 전언",
+    "name_en": "GrendeltheReallyOld'sMessage"
+  },
+  {
+    "id": 4031411,
+    "name_kr": "타타모의 편지",
+    "name_en": "Tatamo'sLetter"
+  },
+  {
+    "id": 4031412,
+    "name_kr": "다크 레쉬의 검은 영혼",
+    "name_en": "BlackSoulofDarkRash"
+  },
+  {
+    "id": 4031413,
+    "name_kr": "듀얼 버크의 검은 영혼",
+    "name_en": "BlackSoulofDualBirk"
+  },
+  {
+    "id": 4031414,
+    "name_kr": "다크 코니언의 검은 영혼",
+    "name_en": "BlackSoulofDarkCornian"
+  },
+  {
+    "id": 4031415,
+    "name_kr": "다크 와이번의 검은 영혼",
+    "name_en": "BlackSoulofDarkWyvern"
+  },
+  {
+    "id": 4031426,
+    "name_kr": "앤의 편지",
+    "name_en": "Anne'sLetter"
+  },
+  {
+    "id": 4031427,
+    "name_kr": "클리프의 선물상자",
+    "name_en": "Cliff'sGiftBox"
+  },
+  {
+    "id": 4031428,
+    "name_kr": "맛있는 눈뭉치",
+    "name_en": "DeliciousSnowball"
+  },
+  {
+    "id": 4031429,
+    "name_kr": "짚 풀",
+    "name_en": "Straw"
+  },
+  {
+    "id": 4031430,
+    "name_kr": "신선의 두루마리&lt;초급&gt;",
+    "name_en": "TheLegendaryBeing'sScroll<Beginner>"
+  },
+  {
+    "id": 4031431,
+    "name_kr": "신선의 두루마리&lt;중급&gt;",
+    "name_en": "TheLegendaryBeing'sScroll<Intermediate>"
+  },
+  {
+    "id": 4031432,
+    "name_kr": "신선의 두루마리&lt;상급&gt;",
+    "name_en": "TheLegendaryBeing'sScroll<Advanced>"
+  },
+  {
+    "id": 4031433,
+    "name_kr": "고양이의 영혼",
+    "name_en": "KittySpirit"
+  },
+  {
+    "id": 4031436,
+    "name_kr": "갈퀴손",
+    "name_en": "Hook"
+  },
+  {
+    "id": 4031437,
+    "name_kr": "데비존의 상자열쇠",
+    "name_en": "LordPirate'sKeytoChest"
+  },
+  {
+    "id": 4031438,
+    "name_kr": "데비존의 항해일지",
+    "name_en": "LordPirate'sTravelDiary"
+  },
+  {
+    "id": 4031448,
+    "name_kr": "죽음의 공포",
+    "name_en": "DeathlyFear"
+  },
+  {
+    "id": 4031449,
+    "name_kr": "드래곤 하트",
+    "name_en": "DragonHeart"
+  },
+  {
+    "id": 4031450,
+    "name_kr": "오리할콘 망치",
+    "name_en": "OrihalconHammer"
+  },
+  {
+    "id": 4031451,
+    "name_kr": "소환물의 뼈대",
+    "name_en": "SummoningFrame"
+  },
+  {
+    "id": 4031452,
+    "name_kr": "샨의 의뢰품",
+    "name_en": "Shawn'sRequest"
+  },
+  {
+    "id": 4031453,
+    "name_kr": "영혼의 마법진",
+    "name_en": "MagicalArrayoftheSpirit"
+  },
+  {
+    "id": 4031454,
+    "name_kr": "성배",
+    "name_en": "HolyCup"
+  },
+  {
+    "id": 4031455,
+    "name_kr": "생명의 성수",
+    "name_en": "HolyWaterofLife"
+  },
+  {
+    "id": 4031456,
+    "name_kr": "단풍잎 구슬",
+    "name_en": "MapleMarble"
+  },
+  {
+    "id": 4031457,
+    "name_kr": "그리프의 날개바람",
+    "name_en": "GriffeyWind"
+  },
+  {
+    "id": 4031458,
+    "name_kr": "타나토스의 검은 돌풍",
+    "name_en": "Thanatos'sBlackTornado"
+  },
+  {
+    "id": 4031459,
+    "name_kr": "부기의 저주받은 회오리",
+    "name_en": "Boogie'sCursedWhirlwind"
+  },
+  {
+    "id": 4031460,
+    "name_kr": "식어버린 늑대의 심장",
+    "name_en": "ColdHeartofaWolf"
+  },
+  {
+    "id": 4031461,
+    "name_kr": "생명의 뿌리",
+    "name_en": "LifeRoots"
+  },
+  {
+    "id": 4031462,
+    "name_kr": "환기 팬",
+    "name_en": "VentilatingFan"
+  },
+  {
+    "id": 4031463,
+    "name_kr": "미스릴 팔찌",
+    "name_en": "MithrilWristband"
+  },
+  {
+    "id": 4031464,
+    "name_kr": "낡은 팔찌",
+    "name_en": "RaggedWristband"
+  },
+  {
+    "id": 4031465,
+    "name_kr": "헬레나의 오래된 장갑",
+    "name_en": "Helena'sOldGloves"
+  },
+  {
+    "id": 4031466,
+    "name_kr": "어둠의 영혼석",
+    "name_en": "DarkSoulRock"
+  },
+  {
+    "id": 4031467,
+    "name_kr": "세이람의 목걸이",
+    "name_en": "Sayram'sNecklace"
+  },
+  {
+    "id": 4031468,
+    "name_kr": "영혼의 주머니",
+    "name_en": "SoulPouch"
+  },
+  {
+    "id": 4031469,
+    "name_kr": "불의 영혼석",
+    "name_en": "FireSoulRock"
+  },
+  {
+    "id": 4031470,
+    "name_kr": "얼음의 영혼석",
+    "name_en": "IcySoulRock"
+  },
+  {
+    "id": 4031471,
+    "name_kr": "세이람의 방패",
+    "name_en": "Sayram'sShield"
+  },
+  {
+    "id": 4031472,
+    "name_kr": "의지의 조각",
+    "name_en": "PieceofCourage"
+  },
+  {
+    "id": 4031473,
+    "name_kr": "이계의 열쇠",
+    "name_en": "KeytotheOtherWorld"
+  },
+  {
+    "id": 4031474,
+    "name_kr": "영혼의 계약서",
+    "name_en": "SoulContract"
+  },
+  {
+    "id": 4031475,
+    "name_kr": "잊혀진 신전의 열쇠",
+    "name_en": "KeytotheForgottenShrine"
+  },
+  {
+    "id": 4031476,
+    "name_kr": "유리 구슬",
+    "name_en": "GlassMarble"
+  },
+  {
+    "id": 4031477,
+    "name_kr": "라이칸스로프의 계획서",
+    "name_en": "Lycanthrope'sPlans"
+  },
+  {
+    "id": 4031478,
+    "name_kr": "오래 가는 건전지",
+    "name_en": "Long-lastingBattery"
+  },
+  {
+    "id": 4031479,
+    "name_kr": "세이람의 목걸이",
+    "name_en": "Sayram'sNecklace"
+  },
+  {
+    "id": 4031482,
+    "name_kr": "드래곤 하트",
+    "name_en": "DragonHeart"
+  },
+  {
+    "id": 4031483,
+    "name_kr": "드래곤 하트",
+    "name_en": "DragonHeart"
+  },
+  {
+    "id": 4031484,
+    "name_kr": "드래곤 하트",
+    "name_en": "DragonHeart"
+  },
+  {
+    "id": 4031485,
+    "name_kr": "드래곤 하트",
+    "name_en": "DragonHeart"
+  },
+  {
+    "id": 4031487,
+    "name_kr": "헬레나의 오래된 장갑",
+    "name_en": "Helena'sOldGloves"
+  },
+  {
+    "id": 4031488,
+    "name_kr": "영혼의 주머니",
+    "name_en": "SoulPouch"
+  },
+  {
+    "id": 4031495,
+    "name_kr": "타일러스의 믿음",
+    "name_en": "Tylus'sTrust"
+  },
+  {
+    "id": 4031496,
+    "name_kr": "이계의 열쇠",
+    "name_en": "KeytotheOtherWorld"
+  },
+  {
+    "id": 4031497,
+    "name_kr": "소환물의 뼈대",
+    "name_en": "SummoningFrame"
+  },
+  {
+    "id": 4031504,
+    "name_kr": "파란색 선물상자",
+    "name_en": "BlueGiftBox"
+  },
+  {
+    "id": 4031505,
+    "name_kr": "노란색 선물상자",
+    "name_en": "YellowGiftBox"
+  },
+  {
+    "id": 4031506,
+    "name_kr": "초록색 선물상자",
+    "name_en": "GreenGiftBox"
+  },
+  {
+    "id": 4031507,
+    "name_kr": "페로몬",
+    "name_en": "Pheromone"
+  },
+  {
+    "id": 4031508,
+    "name_kr": "연구보고서",
+    "name_en": "Kenta'sReport"
+  },
+  {
+    "id": 4031509,
+    "name_kr": "드래곤의 향수병",
+    "name_en": "Dragon'sPerfumeBottle"
+  },
+  {
+    "id": 4031510,
+    "name_kr": "전직 증명서",
+    "name_en": "RecommendationLetterforJobAdv."
+  },
+  {
+    "id": 4031511,
+    "name_kr": "영웅의 펜타곤",
+    "name_en": "HeroicPentagon"
+  },
+  {
+    "id": 4031512,
+    "name_kr": "영웅의 별",
+    "name_en": "HeroicStar"
+  },
+  {
+    "id": 4031513,
+    "name_kr": "전직 증명서",
+    "name_en": "RecommendationLetterforJobAdv."
+  },
+  {
+    "id": 4031514,
+    "name_kr": "영웅의 펜타곤",
+    "name_en": "HeroicPentagon"
+  },
+  {
+    "id": 4031515,
+    "name_kr": "영웅의 별",
+    "name_en": "HeroicStar"
+  },
+  {
+    "id": 4031516,
+    "name_kr": "전직 증명서",
+    "name_en": "RecommendationLetterforJobAdv."
+  },
+  {
+    "id": 4031517,
+    "name_kr": "영웅의 펜타곤",
+    "name_en": "HeroicPentagon"
+  },
+  {
+    "id": 4031518,
+    "name_kr": "영웅의 별",
+    "name_en": "HeroicStar"
+  },
+  {
+    "id": 4031551,
+    "name_kr": "데비존의 보물",
+    "name_en": "LordPirate'sTreasures"
+  },
+  {
+    "id": 4031552,
+    "name_kr": "사미인탕의 약재뭉치",
+    "name_en": "Body&PhysicsMedicineHerbPouch"
+  },
+  {
+    "id": 4031553,
+    "name_kr": "청웅탕의 약재뭉치",
+    "name_en": "Mind&HeartMedicineHerbPouch"
+  },
+  {
+    "id": 4031554,
+    "name_kr": "천도나무용 명약",
+    "name_en": "PeachTreeHerbPouch"
+  },
+  {
+    "id": 4031555,
+    "name_kr": "조류용 명약",
+    "name_en": "HerbPouchforBirds"
+  },
+  {
+    "id": 4031556,
+    "name_kr": "마리아의 영양 주스",
+    "name_en": "Maria'sNutritionalJuice"
+  },
+  {
+    "id": 4031557,
+    "name_kr": "카산드라의 휴대폰",
+    "name_en": "Cassandra'sCellphone"
+  },
+  {
+    "id": 4031558,
+    "name_kr": "주먹펴고 일어서의 우표",
+    "name_en": "DanceswithBalrog'sStamp"
+  },
+  {
+    "id": 4031559,
+    "name_kr": "하인즈의 우표",
+    "name_en": "GrendeltheReallyOld'sStamp"
+  },
+  {
+    "id": 4031560,
+    "name_kr": "다크로드의 우표",
+    "name_en": "DarkLordStamp"
+  },
+  {
+    "id": 4031561,
+    "name_kr": "헬레나의 우표",
+    "name_en": "AthenaPierce'sStamp"
+  },
+  {
+    "id": 4031568,
+    "name_kr": "묘안석",
+    "name_en": "Cat'sEye"
+  },
+  {
+    "id": 4031569,
+    "name_kr": "무희용 쌍검",
+    "name_en": "Dancer'sSwords"
+  },
+  {
+    "id": 4031570,
+    "name_kr": "티건의 수염가닥",
+    "name_en": "PieceofTigun'sBeard"
+  },
+  {
+    "id": 4031571,
+    "name_kr": "왕비가 주문한 비단",
+    "name_en": "Queen'sSilk"
+  },
+  {
+    "id": 4031572,
+    "name_kr": "셰헤라자드의 이야기책",
+    "name_en": "Schegerazade'sStorybook"
+  },
+  {
+    "id": 4031573,
+    "name_kr": "위즈의 이야기책",
+    "name_en": "Wiz'sStorybook"
+  },
+  {
+    "id": 4031574,
+    "name_kr": "스카이롬",
+    "name_en": "SkyJewel"
+  },
+  {
+    "id": 4031575,
+    "name_kr": "아리안트행 티켓(기본)",
+    "name_en": "TickettoAriant(Basic)"
+  },
+  {
+    "id": 4031576,
+    "name_kr": "아리안트행 티켓(일반)",
+    "name_en": "TickettoAriant(Regular)"
+  },
+  {
+    "id": 4031577,
+    "name_kr": "요정의 찻잎",
+    "name_en": "Fairy'sTeaLeaf"
+  },
+  {
+    "id": 4031578,
+    "name_kr": "왕비의 반지",
+    "name_en": "Queen'sRing"
+  },
+  {
+    "id": 4031579,
+    "name_kr": "작은 보물주머니",
+    "name_en": "SmallSackofJewelry"
+  },
+  {
+    "id": 4031580,
+    "name_kr": "포장된 음식물",
+    "name_en": "WrappedFood"
+  },
+  {
+    "id": 4031581,
+    "name_kr": "모래그림단원의 증표",
+    "name_en": "SandPictureMemberBadge"
+  },
+  {
+    "id": 4031582,
+    "name_kr": "궁전 출입 자격증",
+    "name_en": "EntryPasstothePalace"
+  },
+  {
+    "id": 4031583,
+    "name_kr": "보라색 변신의 꽃잎",
+    "name_en": "PurpleLeafofTransformation"
+  },
+  {
+    "id": 4031584,
+    "name_kr": "분홍색 변신의 꽃잎",
+    "name_en": "PinkLeafofTransformation"
+  },
+  {
+    "id": 4031585,
+    "name_kr": "노란색 변신의 꽃잎",
+    "name_en": "YellowLeafofTransformation"
+  },
+  {
+    "id": 4031586,
+    "name_kr": "외로운 밀가루",
+    "name_en": "LonelyBakingPowder"
+  },
+  {
+    "id": 4031587,
+    "name_kr": "그리움의 춘장",
+    "name_en": "BlackBeanPasteofLonging"
+  },
+  {
+    "id": 4031588,
+    "name_kr": "고독한 돼지고기",
+    "name_en": "PorkofLoneliness"
+  },
+  {
+    "id": 4031589,
+    "name_kr": "셰헤라자드의 편지",
+    "name_en": "Schegerazade'sLetter"
+  },
+  {
+    "id": 4031591,
+    "name_kr": "어린왕자 동화책",
+    "name_en": "TheLittleMaplePrinceStorybook"
+  },
+  {
+    "id": 4031606,
+    "name_kr": "상자 속 단풍잎",
+    "name_en": "MapleLeafintheBox"
+  },
+  {
+    "id": 4031607,
+    "name_kr": "상자 속 단풍잎",
+    "name_en": "MapleLeafintheBox"
+  },
+  {
+    "id": 4031608,
+    "name_kr": "영원의 주문서",
+    "name_en": "InfinityScroll"
+  },
+  {
+    "id": 4031610,
+    "name_kr": "단풍잎 모양 귀고리",
+    "name_en": "MapleLeafEarring"
+  },
+  {
+    "id": 4031611,
+    "name_kr": "영원의 주문서",
+    "name_en": "InfinityScroll"
+  },
+  {
+    "id": 4031612,
+    "name_kr": "영원의 주문서",
+    "name_en": "InfinityScroll"
+  },
+  {
+    "id": 4031613,
+    "name_kr": "상자 속 단풍잎",
+    "name_en": "MapleLeafintheBox"
+  },
+  {
+    "id": 4031614,
+    "name_kr": "상자 속 단풍잎",
+    "name_en": "MapleLeafintheBox"
+  },
+  {
+    "id": 4031615,
+    "name_kr": "상자 속 단풍잎",
+    "name_en": "MapleLeafintheBox"
+  },
+  {
+    "id": 4031616,
+    "name_kr": "단풍잎 모양 귀고리",
+    "name_en": "MapleLeafEarring"
+  },
+  {
+    "id": 4031617,
+    "name_kr": "단풍잎 모양 귀고리",
+    "name_en": "MapleLeafEarring"
+  },
+  {
+    "id": 4031619,
+    "name_kr": "봉달이의 작은 상자",
+    "name_en": "Moppie'sLittleBox"
+  },
+  {
+    "id": 4031620,
+    "name_kr": "바이런의 추천서",
+    "name_en": "Byron'sRecommendationLetter"
+  },
+  {
+    "id": 4031621,
+    "name_kr": "바이런의 추천서",
+    "name_en": "Byron'sRecommendationLetter"
+  },
+  {
+    "id": 4031622,
+    "name_kr": "바이런의 추천서",
+    "name_en": "Byron'sRecommendationLetter"
+  },
+  {
+    "id": 4031623,
+    "name_kr": "바이런의 추천서",
+    "name_en": "Byron'sRecommendationLetter"
+  },
+  {
+    "id": 4031624,
+    "name_kr": "봉달이의 작은 상자",
+    "name_en": "Moppie'sLittleBox"
+  },
+  {
+    "id": 4031625,
+    "name_kr": "아쿠아리움 초대권",
+    "name_en": "AquariumInvitation"
+  },
+  {
+    "id": 4031661,
+    "name_kr": "감정의 물병",
+    "name_en": "BottleofEmotion"
+  },
+  {
+    "id": 4031662,
+    "name_kr": "낡은 철검",
+    "name_en": "RaggedSteelSword"
+  },
+  {
+    "id": 4031663,
+    "name_kr": "응급 치료약",
+    "name_en": "EmergencyKit"
+  },
+  {
+    "id": 4031667,
+    "name_kr": "감정의 물병",
+    "name_en": "BottleofEmotion"
+  },
+  {
+    "id": 4031668,
+    "name_kr": "'다크로드'의 연하장",
+    "name_en": "DarkLord'sNewYearCard"
+  },
+  {
+    "id": 4031669,
+    "name_kr": "복주머니",
+    "name_en": "LuckSack"
+  },
+  {
+    "id": 4031683,
+    "name_kr": "마야의 사랑의 증표",
+    "name_en": "Maya'ssealoflove"
+  },
+  {
+    "id": 4031684,
+    "name_kr": "로웬의 사랑의 증표",
+    "name_en": "Lowen'ssealoflove"
+  },
+  {
+    "id": 4031685,
+    "name_kr": "이얀의 사랑의 증표",
+    "name_en": "Ayan'ssealoflove"
+  },
+  {
+    "id": 4031686,
+    "name_kr": "넬라의 사랑의 증표",
+    "name_en": "Nela'ssealoflove"
+  },
+  {
+    "id": 4031687,
+    "name_kr": "에릭손의 사랑의 증표",
+    "name_en": "Erikson'ssealoflove"
+  },
+  {
+    "id": 4031688,
+    "name_kr": "티군의 사랑의 증표",
+    "name_en": "Tigun'ssealoflove"
+  },
+  {
+    "id": 4031689,
+    "name_kr": "뮤즈의 사랑의 증표",
+    "name_en": "Muse'ssealoflove"
+  },
+  {
+    "id": 4031690,
+    "name_kr": "팜의 사랑의 증표",
+    "name_en": "Pam'ssealoflove"
+  },
+  {
+    "id": 4031691,
+    "name_kr": "한태수의 사랑의 증표",
+    "name_en": "Taesoo'sProofofLove"
+  },
+  {
+    "id": 4031692,
+    "name_kr": "지유르의 사랑의 증표",
+    "name_en": "Jiyur'sProofofLove"
+  },
+  {
+    "id": 4031693,
+    "name_kr": "뮤테의 모형",
+    "name_en": "Mute'sModel"
+  },
+  {
+    "id": 4031694,
+    "name_kr": "루모의 잎사귀",
+    "name_en": "Lumo'sLeaf"
+  },
+  {
+    "id": 4031695,
+    "name_kr": "설원 장미",
+    "name_en": "SnowRose"
+  },
+  {
+    "id": 4031696,
+    "name_kr": "설원 장미의 씨앗",
+    "name_en": "SnowRoseSeed"
+  },
+  {
+    "id": 4031697,
+    "name_kr": "은 펜던트",
+    "name_en": "SilverPendant"
+  },
+  {
+    "id": 4031698,
+    "name_kr": "마력제어장치",
+    "name_en": "MagicDevice"
+  },
+  {
+    "id": 4031699,
+    "name_kr": "햇살 한 모금",
+    "name_en": "DropofSun"
+  },
+  {
+    "id": 4031700,
+    "name_kr": "달빛 한 모금",
+    "name_en": "DropofMoon"
+  },
+  {
+    "id": 4031701,
+    "name_kr": "박첨지의 수박",
+    "name_en": "Chumji'sWatermelon"
+  },
+  {
+    "id": 4031702,
+    "name_kr": "투명 아이템",
+    "name_en": "TransparentItem"
+  },
+  {
+    "id": 4031703,
+    "name_kr": "평범한 나뭇가지",
+    "name_en": "RegularTreeBranch"
+  },
+  {
+    "id": 4031704,
+    "name_kr": "누군가의 연구 보고서",
+    "name_en": "AnonymousResearchReport"
+  },
+  {
+    "id": 4031705,
+    "name_kr": "이상한 물병",
+    "name_en": "StrangeBottleofWater"
+  },
+  {
+    "id": 4031706,
+    "name_kr": "필리아의 편지",
+    "name_en": "Phyllia'sLetter"
+  },
+  {
+    "id": 4031707,
+    "name_kr": "에릭손의 편지",
+    "name_en": "Ericsson'sLetter"
+  },
+  {
+    "id": 4031708,
+    "name_kr": "비밀스런 문서",
+    "name_en": "SecretDocument"
+  },
+  {
+    "id": 4031709,
+    "name_kr": "빛을 잃은 마력제어장치",
+    "name_en": "LightlessMagicDevice"
+  },
+  {
+    "id": 4031737,
+    "name_kr": "호문스큘러의 피",
+    "name_en": "Homunculus'sBlood"
+  },
+  {
+    "id": 4031738,
+    "name_kr": "드랭의 치료약",
+    "name_en": "Dran'sMedicine"
+  },
+  {
+    "id": 4031739,
+    "name_kr": "겸손의 마법석",
+    "name_en": "MagicStoneofHumility"
+  },
+  {
+    "id": 4031740,
+    "name_kr": "정직의 마법석",
+    "name_en": "MagicStoneofHonesty"
+  },
+  {
+    "id": 4031741,
+    "name_kr": "신뢰의 마법석",
+    "name_en": "MagicStoneofTrust"
+  },
+  {
+    "id": 4031743,
+    "name_kr": "알 수 없는 약",
+    "name_en": "UnknownMedicine"
+  },
+  {
+    "id": 4031744,
+    "name_kr": "은 펜던트",
+    "name_en": "SilverPendant"
+  },
+  {
+    "id": 4031745,
+    "name_kr": "파웬의 출입증",
+    "name_en": "Parwen'sEntryPass"
+  },
+  {
+    "id": 4031762,
+    "name_kr": "색동 복주머니(7급)",
+    "name_en": "RelicWeaponBlueprint"
+  },
+  {
+    "id": 4031763,
+    "name_kr": "색동 복주머니(6급)",
+    "name_en": "MateriaWeaponBlueprint"
+  },
+  {
+    "id": 4031773,
+    "name_kr": "바짝 마른 나뭇가지",
+    "name_en": "DryBranch"
+  },
+  {
+    "id": 4031774,
+    "name_kr": "유레테의 연구서",
+    "name_en": "Yulete'sLabReport"
+  },
+  {
+    "id": 4031775,
+    "name_kr": "프랑켄로이드의 설계도",
+    "name_en": "Frankenroid'sBlueprint"
+  },
+  {
+    "id": 4031776,
+    "name_kr": "시린의 옷본",
+    "name_en": "Sirin'sPattern"
+  },
+  {
+    "id": 4031777,
+    "name_kr": "줄리엣의 선물",
+    "name_en": "Juliet'sPresent"
+  },
+  {
+    "id": 4031778,
+    "name_kr": "로미오의 연애편지",
+    "name_en": "Romeo'sLoveLetter"
+  },
+  {
+    "id": 4031779,
+    "name_kr": "줄리엣의 도시락",
+    "name_en": "Juliet'sLunchBox"
+  },
+  {
+    "id": 4031780,
+    "name_kr": "빨간색 수상한 액체",
+    "name_en": "MysteriousRedLiquid"
+  },
+  {
+    "id": 4031781,
+    "name_kr": "녹색 수상한 액체",
+    "name_en": "MysteriousGreenLiquid"
+  },
+  {
+    "id": 4031782,
+    "name_kr": "노란색 수상한 액체",
+    "name_en": "MysteriousYellowLiquid"
+  },
+  {
+    "id": 4031783,
+    "name_kr": "파란색 수상한 액체",
+    "name_en": "MysteriousBlueLiquid"
+  },
+  {
+    "id": 4031784,
+    "name_kr": "보라색 수상한 액체",
+    "name_en": "MysteriousPurpleLiquid"
+  },
+  {
+    "id": 4031785,
+    "name_kr": "도시락 레시피",
+    "name_en": "LunchboxRecipe"
+  },
+  {
+    "id": 4031788,
+    "name_kr": "붉은 구슬",
+    "name_en": "RedMarble"
+  },
+  {
+    "id": 4031789,
+    "name_kr": "해독 구슬",
+    "name_en": "AntidoteMarble"
+  },
+  {
+    "id": 4031790,
+    "name_kr": "작은 단서",
+    "name_en": "SmallClue"
+  },
+  {
+    "id": 4031791,
+    "name_kr": "얼음 결정",
+    "name_en": "IceCrystal"
+  },
+  {
+    "id": 4031792,
+    "name_kr": "버섯 사탕",
+    "name_en": "MushroomCandy"
+  },
+  {
+    "id": 4031793,
+    "name_kr": "구미호의 꼬리",
+    "name_en": "OldFox'sTail"
+  },
+  {
+    "id": 4031794,
+    "name_kr": "한태수의 천도복숭아",
+    "name_en": "TaeSoo'sPeach"
+  },
+  {
+    "id": 4031795,
+    "name_kr": "색동 복주머니(5급)",
+    "name_en": "CatDollUnderaSpell"
+  },
+  {
+    "id": 4031796,
+    "name_kr": "유레테의 연구서",
+    "name_en": "Yulete'sLabReport"
+  },
+  {
+    "id": 4031797,
+    "name_kr": "유레테의 연구문서",
+    "name_en": "Yulete'sReport"
+  },
+  {
+    "id": 4031798,
+    "name_kr": "완성된 시약",
+    "name_en": "FinishedReagent"
+  },
+  {
+    "id": 4031799,
+    "name_kr": "로미오의 설원장미",
+    "name_en": "Romeo'sSnowRose"
+  },
+  {
+    "id": 4031800,
+    "name_kr": "마리아의 편지",
+    "name_en": "Maria'sLetter"
+  },
+  {
+    "id": 4031801,
+    "name_kr": "루카스의 추천서",
+    "name_en": "Lucas'sRecommendationLetter"
+  },
+  {
+    "id": 4031802,
+    "name_kr": "주니어 스톤볼의 돌조각",
+    "name_en": "Jr.SentinelShellpiece"
+  },
+  {
+    "id": 4031806,
+    "name_kr": "로미오의 청혼용 반지",
+    "name_en": "Romeo'sEngagementRing"
+  },
+  {
+    "id": 4031830,
+    "name_kr": "유령 주머니",
+    "name_en": "GhostSack"
+  },
+  {
+    "id": 4031831,
+    "name_kr": "거울조각",
+    "name_en": "MirrorPiece"
+  },
+  {
+    "id": 4031832,
+    "name_kr": "소필리아의 초상화",
+    "name_en": "SopheliasPortrait"
+  },
+  {
+    "id": 4031833,
+    "name_kr": "호박주스",
+    "name_en": "PumpkinJuice"
+  },
+  {
+    "id": 4031834,
+    "name_kr": "완벽한 연장",
+    "name_en": "PerfectTool"
+  },
+  {
+    "id": 4031835,
+    "name_kr": "루드밀라의 귀고리",
+    "name_en": "LyudmillasEarring"
+  },
+  {
+    "id": 4031836,
+    "name_kr": "악보",
+    "name_en": "Score"
+  },
+  {
+    "id": 4031837,
+    "name_kr": "버려진 인형",
+    "name_en": "DumpedDoll"
+  },
+  {
+    "id": 4031838,
+    "name_kr": "천조각",
+    "name_en": "PieceofCloth"
+  },
+  {
+    "id": 4031839,
+    "name_kr": "구겨진 편지지",
+    "name_en": "CrumpledLetter"
+  },
+  {
+    "id": 4031840,
+    "name_kr": "낡은 오르골",
+    "name_en": "OldOrgel"
+  },
+  {
+    "id": 4031841,
+    "name_kr": "마법의 병",
+    "name_en": "MagicFlask(Empty)"
+  },
+  {
+    "id": 4031842,
+    "name_kr": "마법의 병",
+    "name_en": "MagicFlask(Filled)"
+  },
+  {
+    "id": 4031843,
+    "name_kr": "커다란 진주",
+    "name_en": "LargePearl"
+  },
+  {
+    "id": 4031844,
+    "name_kr": "롤로네의 조사 자료",
+    "name_en": "Rolonay'sResearchReport"
+  },
+  {
+    "id": 4031845,
+    "name_kr": "일일 보고서",
+    "name_en": "DailyLog"
+  },
+  {
+    "id": 4031846,
+    "name_kr": "검은 마법사의 증표",
+    "name_en": "BlackMagician'sToken"
+  },
+  {
+    "id": 4031847,
+    "name_kr": "우유통",
+    "name_en": "MilkJug"
+  },
+  {
+    "id": 4031848,
+    "name_kr": "우유통",
+    "name_en": "MilkJug(1/3)"
+  },
+  {
+    "id": 4031849,
+    "name_kr": "우유통",
+    "name_en": "MilkJug(2/3)"
+  },
+  {
+    "id": 4031850,
+    "name_kr": "우유통",
+    "name_en": "MilkJug(Full)"
+  },
+  {
+    "id": 4031851,
+    "name_kr": "웨일족 전용 통조림",
+    "name_en": "WhaleanCannedFood"
+  },
+  {
+    "id": 4031852,
+    "name_kr": "드레스",
+    "name_en": "Dress"
+  },
+  {
+    "id": 4031853,
+    "name_kr": "아벨의 안경",
+    "name_en": "Abel'sGlasses"
+  },
+  {
+    "id": 4031854,
+    "name_kr": "누군가의 안경",
+    "name_en": "MiscellaneousGlasses"
+  },
+  {
+    "id": 4031855,
+    "name_kr": "누군가의 안경",
+    "name_en": "MiscellaneousGlasses"
+  },
+  {
+    "id": 4031856,
+    "name_kr": "강력한 힘의 결정",
+    "name_en": "PotentPowerCrystal"
+  },
+  {
+    "id": 4031857,
+    "name_kr": "강력한 바람의 결정",
+    "name_en": "PotentWindCrystal"
+  },
+  {
+    "id": 4031858,
+    "name_kr": "포쉐의 편지",
+    "name_en": "Porchay'sLetter"
+  },
+  {
+    "id": 4031859,
+    "name_kr": "전직 증명서",
+    "name_en": "RecommendationLetterfor4thJobAdvancement"
+  },
+  {
+    "id": 4031860,
+    "name_kr": "영웅의 펜타곤",
+    "name_en": "HeroicPentagon"
+  },
+  {
+    "id": 4031861,
+    "name_kr": "영웅의 별",
+    "name_en": "HeroicStar"
+  },
+  {
+    "id": 4031862,
+    "name_kr": "검은 마법사의 증표",
+    "name_en": "BlackMagician'sToken"
+  },
+  {
+    "id": 4031863,
+    "name_kr": "보고서",
+    "name_en": "ConfidentialReport"
+  },
+  {
+    "id": 4031868,
+    "name_kr": "영혼의 보석",
+    "name_en": "SpiritJewel"
+  },
+  {
+    "id": 4031869,
+    "name_kr": "파풀라투스의 열쇠",
+    "name_en": "Papulatus'Key"
+  },
+  {
+    "id": 4031870,
+    "name_kr": "파풀라투스의 열쇠",
+    "name_en": "Papulatus'Key"
+  },
+  {
+    "id": 4031871,
+    "name_kr": "단단한 가죽",
+    "name_en": "SturdyLeather"
+  },
+  {
+    "id": 4031872,
+    "name_kr": "돌의 심장",
+    "name_en": "HeartofStone"
+  },
+  {
+    "id": 4031873,
+    "name_kr": "바이킹의 깃발",
+    "name_en": "SpiritVikingFlags"
+  },
+  {
+    "id": 4031874,
+    "name_kr": "바이킹의 증표",
+    "name_en": "SpiritVikingToken"
+  },
+  {
+    "id": 4031887,
+    "name_kr": "길들인 루돌프",
+    "name_en": "TamedRudolph"
+  },
+  {
+    "id": 4031890,
+    "name_kr": "워프카드",
+    "name_en": "WarpCard"
+  },
+  {
+    "id": 4031891,
+    "name_kr": "금화 주머니",
+    "name_en": "GoldPouch"
+  },
+  {
+    "id": 4031892,
+    "name_kr": "찢어진 지도",
+    "name_en": "TatteredMap"
+  },
+  {
+    "id": 4031893,
+    "name_kr": "바이런의 추천서",
+    "name_en": "Byron'sRecommendationLetter"
+  },
+  {
+    "id": 4031894,
+    "name_kr": "구겨진 종이조각",
+    "name_en": "CrumpledPieceofPaper"
+  },
+  {
+    "id": 4031895,
+    "name_kr": "치즈 조각",
+    "name_en": "PieceofCheese"
+  },
+  {
+    "id": 4031896,
+    "name_kr": "마법의 시약",
+    "name_en": "MagicReagent"
+  },
+  {
+    "id": 4031923,
+    "name_kr": "라디오 부품",
+    "name_en": "RadioParts"
+  },
+  {
+    "id": 4031924,
+    "name_kr": "요정의 머리칼",
+    "name_en": "FairyHair"
+  },
+  {
+    "id": 4031925,
+    "name_kr": "저주용 못",
+    "name_en": "CursingNail"
+  },
+  {
+    "id": 4031926,
+    "name_kr": "그레이의 촉수",
+    "name_en": "GrayTentacle"
+  },
+  {
+    "id": 4031927,
+    "name_kr": "초음파 해독기",
+    "name_en": "WaveTranslator"
+  },
+  {
+    "id": 4031928,
+    "name_kr": "초음파 해독기",
+    "name_en": "WaveTranslator"
+  },
+  {
+    "id": 4031933,
+    "name_kr": "보라색 단단한 목재",
+    "name_en": "SolidPurpleLumber"
+  },
+  {
+    "id": 4031934,
+    "name_kr": "분홍색 단단한 목재",
+    "name_en": "SolidPinkLumber"
+  },
+  {
+    "id": 4031935,
+    "name_kr": "노란색 단단한 목재",
+    "name_en": "SolidYellowLumber"
+  },
+  {
+    "id": 4031938,
+    "name_kr": "99% 다크 초콜릿",
+    "name_en": "99%DarkChocolate"
+  },
+  {
+    "id": 4031939,
+    "name_kr": "99% 다크 초콜릿",
+    "name_en": "99%DarkChocolate"
+  },
+  {
+    "id": 4031940,
+    "name_kr": "99% 다크 초콜릿",
+    "name_en": "99%DarkChocolate"
+  },
+  {
+    "id": 4031945,
+    "name_kr": "신비로운 직물",
+    "name_en": "MysteriousCloth"
+  },
+  {
+    "id": 4031963,
+    "name_kr": "일스의 반쪽짜리 펜던트",
+    "name_en": "Eel'sHalfPendant"
+  },
+  {
+    "id": 4031964,
+    "name_kr": "펜던트 조각",
+    "name_en": "PieceofPendant"
+  },
+  {
+    "id": 4031965,
+    "name_kr": "일스의 펜던트",
+    "name_en": "Eel'sPendant"
+  },
+  {
+    "id": 4031966,
+    "name_kr": "연습용 신발 발주서",
+    "name_en": "PracticeShoesOrderForm"
+  },
+  {
+    "id": 4031967,
+    "name_kr": "어린이 신발 발주서",
+    "name_en": "Kids'ShoesOrderForm"
+  },
+  {
+    "id": 4031968,
+    "name_kr": "작업용 삽 발주서",
+    "name_en": "WorkShovelOrderForm"
+  },
+  {
+    "id": 4031969,
+    "name_kr": "흰 면티셔츠 발주서",
+    "name_en": "WhiteCottonShirtOrderForm"
+  },
+  {
+    "id": 4031970,
+    "name_kr": "해변용 비치샌들 발주서",
+    "name_en": "BeachSandalsOrderForm"
+  },
+  {
+    "id": 4031971,
+    "name_kr": "훈련용 광선물총 발주서",
+    "name_en": "TrainingGunOrderForm"
+  },
+  {
+    "id": 4031972,
+    "name_kr": "외출용 장갑 발주서",
+    "name_en": "OutdoorGlovesOrderForm"
+  },
+  {
+    "id": 4031973,
+    "name_kr": "벙어리 장갑 발주서",
+    "name_en": "MittensOrderForm"
+  },
+  {
+    "id": 4031974,
+    "name_kr": "깨끗한 대걸레 발주서",
+    "name_en": "CleanMopOrderForm"
+  },
+  {
+    "id": 4031975,
+    "name_kr": "수련복 발주서",
+    "name_en": "TrainingUniformOrderForm"
+  },
+  {
+    "id": 4031976,
+    "name_kr": "튼튼한 쇠스랑 발주서",
+    "name_en": "StrongRakeOrderForm"
+  },
+  {
+    "id": 4031977,
+    "name_kr": "따뜻한 털부츠 발주서",
+    "name_en": "FurBootsOrderForm"
+  },
+  {
+    "id": 4031978,
+    "name_kr": "왕의 터번 발주서",
+    "name_en": "King'sTurbanOrderForm"
+  },
+  {
+    "id": 4031979,
+    "name_kr": "낙서로 가득한 종이조각",
+    "name_en": "DoodlyPaper"
+  },
+  {
+    "id": 4031980,
+    "name_kr": "황금모루",
+    "name_en": "GoldAnvil"
+  },
+  {
+    "id": 4031988,
+    "name_kr": "특수요원 뱃지",
+    "name_en": "SpecialAgentBadge"
+  },
+  {
+    "id": 4031991,
+    "name_kr": "타이머의 알",
+    "name_en": "Timer'sEgg"
+  },
+  {
+    "id": 4031992,
+    "name_kr": "태엽벌레",
+    "name_en": "SpringyWorm"
+  },
+  {
+    "id": 4031999,
+    "name_kr": "마스터 M의 지시서",
+    "name_en": "MasterM'sDirectionScroll"
+  },
+  {
+    "id": 4032000,
+    "name_kr": "마스터 M의 명령서",
+    "name_en": "MasterM'sOrderScroll"
+  },
+  {
+    "id": 4032001,
+    "name_kr": "마스터 M의 지령서",
+    "name_en": "MasterM'sCommandScroll"
+  },
+  {
+    "id": 4032002,
+    "name_kr": "카오스의 구슬",
+    "name_en": "MarbleofChaos"
+  },
+  {
+    "id": 4032035,
+    "name_kr": "길 잃은 도요새",
+    "name_en": "ALostSnipe"
+  },
+  {
+    "id": 4032036,
+    "name_kr": "달나라 여행티켓 특별판",
+    "name_en": "SpecialTickettotheMoon"
+  },
+  {
+    "id": 4032037,
+    "name_kr": "쇠고기",
+    "name_en": "BeefSlice"
+  },
+  {
+    "id": 4032038,
+    "name_kr": "마른 표고버섯",
+    "name_en": "DryMushroom"
+  },
+  {
+    "id": 4032039,
+    "name_kr": "통 도라지",
+    "name_en": "WholeBellflower"
+  },
+  {
+    "id": 4032040,
+    "name_kr": "화양적 한 접시",
+    "name_en": "FireGrillSkewerDish"
+  },
+  {
+    "id": 4032041,
+    "name_kr": "달꽃",
+    "name_en": "MoonFlower"
+  },
+  {
+    "id": 4032042,
+    "name_kr": "첫번째 달 사진 조각",
+    "name_en": "1stMoonPhotoPiece"
+  },
+  {
+    "id": 4032043,
+    "name_kr": "두번째 달 사진 조각",
+    "name_en": "2ndMoonPhotoPiece"
+  },
+  {
+    "id": 4032044,
+    "name_kr": "세번째 달 사진 조각",
+    "name_en": "3rdMoonPhotoPiece"
+  },
+  {
+    "id": 4032066,
+    "name_kr": "아기새의 깃털",
+    "name_en": "BabyBirdFeather"
+  },
+  {
+    "id": 4032083,
+    "name_kr": "루드밀라의 사진첩",
+    "name_en": "Ludmilla'sPhotoAlbm"
+  },
+  {
+    "id": 4032084,
+    "name_kr": "소필리아의 완벽한 인형",
+    "name_en": "Sophilia'sPerfectDoll"
+  },
+  {
+    "id": 4032085,
+    "name_kr": "페토 인형",
+    "name_en": "PetoDoll"
+  },
+  {
+    "id": 4032086,
+    "name_kr": "의문의 작은 알",
+    "name_en": "MysteriousSmallEgg"
+  },
+  {
+    "id": 4032087,
+    "name_kr": "행운의 흰 원숭이 인형",
+    "name_en": "LuckyWhiteMonkeyDoll"
+  },
+  {
+    "id": 4032088,
+    "name_kr": "루드밀라의 사진첩",
+    "name_en": "Ludmilla'sPhotoAlbm"
+  },
+  {
+    "id": 4032096,
+    "name_kr": "시험의 증표",
+    "name_en": "ProofofExam"
+  },
+  {
+    "id": 4032097,
+    "name_kr": "시험의 증표",
+    "name_en": "ProofofExam"
+  },
+  {
+    "id": 4032098,
+    "name_kr": "시험의 증표",
+    "name_en": "ProofofExam"
+  },
+  {
+    "id": 4032099,
+    "name_kr": "시험의 증표",
+    "name_en": "ProofofExam"
+  },
+  {
+    "id": 4032100,
+    "name_kr": "시험의 증표",
+    "name_en": "ProofofExam"
+  },
+  {
+    "id": 4032101,
+    "name_kr": "잃어버린 보물",
+    "name_en": "TheLostTreasure"
+  },
+  {
+    "id": 4032102,
+    "name_kr": "잃어버린 보물",
+    "name_en": "TheLostTreasure"
+  },
+  {
+    "id": 4032103,
+    "name_kr": "잃어버린 보물",
+    "name_en": "TheLostTreasure"
+  },
+  {
+    "id": 4032104,
+    "name_kr": "잃어버린 보물",
+    "name_en": "TheLostTreasure"
+  },
+  {
+    "id": 4032105,
+    "name_kr": "잃어버린 보물",
+    "name_en": "TheLostTreasure"
+  },
+  {
+    "id": 4032115,
+    "name_kr": "나인하트의 소개장",
+    "name_en": "Neinheart'sLetter"
+  },
+  {
+    "id": 4032116,
+    "name_kr": "키리두의 소개장",
+    "name_en": "Kiridu'sLetter"
+  },
+  {
+    "id": 4032117,
+    "name_kr": "켄타의 특제 영양제",
+    "name_en": "Kenta'sSpecialSupplements"
+  },
+  {
+    "id": 4032120,
+    "name_kr": "자격의 증표",
+    "name_en": "ProofofQualification"
+  },
+  {
+    "id": 4032121,
+    "name_kr": "자격의 증표",
+    "name_en": "ProofofQualification"
+  },
+  {
+    "id": 4032122,
+    "name_kr": "자격의 증표",
+    "name_en": "ProofofQualification"
+  },
+  {
+    "id": 4032123,
+    "name_kr": "자격의 증표",
+    "name_en": "ProofofQualification"
+  },
+  {
+    "id": 4032124,
+    "name_kr": "자격의 증표",
+    "name_en": "ProofofQualification"
+  },
+  {
+    "id": 4032125,
+    "name_kr": "능력의 증표",
+    "name_en": "ProofofAbility"
+  },
+  {
+    "id": 4032126,
+    "name_kr": "능력의 증표",
+    "name_en": "ProofofAbility"
+  },
+  {
+    "id": 4032127,
+    "name_kr": "능력의 증표",
+    "name_en": "ProofofAbility"
+  },
+  {
+    "id": 4032128,
+    "name_kr": "능력의 증표",
+    "name_en": "ProofofAbility"
+  },
+  {
+    "id": 4032129,
+    "name_kr": "능력의 증표",
+    "name_en": "ProofofAbility"
+  },
+  {
+    "id": 4032130,
+    "name_kr": "돼지의 인형",
+    "name_en": "PigDoll"
+  },
+  {
+    "id": 4032131,
+    "name_kr": "돼지의 인형",
+    "name_en": "PigDoll"
+  },
+  {
+    "id": 4032132,
+    "name_kr": "로카의 임무 보고서",
+    "name_en": "Roca'sMissionReport"
+  },
+  {
+    "id": 4032136,
+    "name_kr": "버블링 인형",
+    "name_en": "BubblingDoll"
+  },
+  {
+    "id": 4032137,
+    "name_kr": "버블링 인형",
+    "name_en": "BubblingDoll"
+  },
+  {
+    "id": 4032138,
+    "name_kr": "버블링 인형",
+    "name_en": "BubblingDoll"
+  },
+  {
+    "id": 4032139,
+    "name_kr": "낡은 열쇠",
+    "name_en": "OldKey"
+  },
+  {
+    "id": 4032140,
+    "name_kr": "버블링 인형",
+    "name_en": "BubblingDoll"
+  },
+  {
+    "id": 4032141,
+    "name_kr": "마티어스의 임무 보고서",
+    "name_en": "Mattias'MissionReport"
+  },
+  {
+    "id": 4032142,
+    "name_kr": "맑은 나무수액",
+    "name_en": "ClearTreeSap"
+  },
+  {
+    "id": 4032143,
+    "name_kr": "식물의 열매",
+    "name_en": "Fruit"
+  },
+  {
+    "id": 4032144,
+    "name_kr": "헤르샤의 임무 보고서",
+    "name_en": "Hersha'sMissionReport"
+  },
+  {
+    "id": 4032145,
+    "name_kr": "탐지기",
+    "name_en": "Detector"
+  },
+  {
+    "id": 4032146,
+    "name_kr": "우드 마스크의 인형",
+    "name_en": "WoodenMaskDoll"
+  },
+  {
+    "id": 4032147,
+    "name_kr": "스톤 마스크의 인형",
+    "name_en": "RockyMaskDoll"
+  },
+  {
+    "id": 4032148,
+    "name_kr": "탐지기",
+    "name_en": "Detector"
+  },
+  {
+    "id": 4032149,
+    "name_kr": "열 마리의 부기의 임무 보고서",
+    "name_en": "10Boogies'MissionReport"
+  },
+  {
+    "id": 4032178,
+    "name_kr": "해킹시도 흔적",
+    "name_en": "HackAttempt"
+  },
+  {
+    "id": 4032179,
+    "name_kr": "에레브 수색증",
+    "name_en": "EreveInvestigationPermit"
+  },
+  {
+    "id": 4032190,
+    "name_kr": "주황버섯 인형",
+    "name_en": "OrangeMushroomDoll"
+  },
+  {
+    "id": 4032196,
+    "name_kr": "1단계 농축 이유식",
+    "name_en": "ConcentratedFormula:Step1"
+  },
+  {
+    "id": 4032197,
+    "name_kr": "2단계 농축 이유식",
+    "name_en": "ConcentratedFormula:Step2"
+  },
+  {
+    "id": 4032198,
+    "name_kr": "3단계 농축 이유식",
+    "name_en": "ConcentratedFormula:Step3"
+  },
+  {
+    "id": 4032206,
+    "name_kr": "엘리니아 고산식물",
+    "name_en": "ElliniaAlpinePlants"
+  },
+  {
+    "id": 4032208,
+    "name_kr": "나인하트의 소개장",
+    "name_en": "Neinheart'sLetter"
+  },
+  {
+    "id": 4032250,
+    "name_kr": "알 수 없는 종이조각",
+    "name_en": "MysteriousPieceofPaper"
+  },
+  {
+    "id": 4032262,
+    "name_kr": "무영의 전언",
+    "name_en": "MuYoung'sMessage"
+  },
+  {
+    "id": 4032263,
+    "name_kr": "악마를 쫓는 부적",
+    "name_en": "ShamanCharm"
+  },
+  {
+    "id": 4032264,
+    "name_kr": "봄날의 꽃씨",
+    "name_en": "SpringFlowerSeed"
+  },
+  {
+    "id": 4032265,
+    "name_kr": "봄날의 꽃잎",
+    "name_en": "SpringFlowerPetal"
+  },
+  {
+    "id": 4032266,
+    "name_kr": "눈부신 햇살",
+    "name_en": "DazzlingSunlight"
+  },
+  {
+    "id": 4032267,
+    "name_kr": "석재",
+    "name_en": "BuildingStone"
+  },
+  {
+    "id": 4032268,
+    "name_kr": "휘장",
+    "name_en": "Drape"
+  },
+  {
+    "id": 4032269,
+    "name_kr": "노블레스 증명서",
+    "name_en": "NoblesseCertificate"
+  },
+  {
+    "id": 4032270,
+    "name_kr": "반짝이는 햇살",
+    "name_en": "GlisteningSunlight"
+  },
+  {
+    "id": 4032271,
+    "name_kr": "순수한 작은 새싹",
+    "name_en": "PureSmallSprout"
+  },
+  {
+    "id": 4032272,
+    "name_kr": "그리움의 편지지",
+    "name_en": "StationeryofLonging"
+  },
+  {
+    "id": 4032273,
+    "name_kr": "용기 열 배 연필",
+    "name_en": "PencilofCourageX10"
+  },
+  {
+    "id": 4032275,
+    "name_kr": "순수한 보통 새싹",
+    "name_en": "PureNormalSprout"
+  },
+  {
+    "id": 4032276,
+    "name_kr": "순수한 새싹",
+    "name_en": "PureSprout"
+  },
+  {
+    "id": 4032277,
+    "name_kr": "순수한 큰 새싹",
+    "name_en": "PureLargeSprout"
+  },
+  {
+    "id": 4032278,
+    "name_kr": "간절한 그리움의 편지지",
+    "name_en": "StationeryofDeepLonging"
+  },
+  {
+    "id": 4032279,
+    "name_kr": "희망과 그리움의 편지지",
+    "name_en": "StationaryofHopeandLonging"
+  },
+  {
+    "id": 4032280,
+    "name_kr": "사랑과 그리움의 편지지",
+    "name_en": "LetterofLoveandLonging"
+  },
+  {
+    "id": 4032281,
+    "name_kr": "용기 백 배 연필",
+    "name_en": "PencilofCourageX100"
+  },
+  {
+    "id": 4032282,
+    "name_kr": "용기 천 배 연필",
+    "name_en": "PencilofCourageX1000"
+  },
+  {
+    "id": 4032283,
+    "name_kr": "용기 만 배 연필",
+    "name_en": "PencilofCourageX10000"
+  },
+  {
+    "id": 4032284,
+    "name_kr": "아이의 망가진 장난감",
+    "name_en": "Child'sBrokenToy"
+  },
+  {
+    "id": 4032285,
+    "name_kr": "아이의 망가진 장난감",
+    "name_en": "Child'sBrokenToy"
+  },
+  {
+    "id": 4032286,
+    "name_kr": "아이의 망가진 장난감",
+    "name_en": "Child'sBrokenToy"
+  },
+  {
+    "id": 4032287,
+    "name_kr": "아이의 망가진 장난감",
+    "name_en": "Child'sBrokenToy"
+  },
+  {
+    "id": 4032288,
+    "name_kr": "나인하트의 택시 이용권",
+    "name_en": "Neinheart'sTaxiCoupon"
+  },
+  {
+    "id": 4032298,
+    "name_kr": "파티용 풍선",
+    "name_en": "PartyBalloon"
+  },
+  {
+    "id": 4032299,
+    "name_kr": "파티용 폭죽",
+    "name_en": "PartyFirecracker"
+  },
+  {
+    "id": 4032300,
+    "name_kr": "파티용 초",
+    "name_en": "PartyCandle"
+  },
+  {
+    "id": 4032301,
+    "name_kr": "파티용 고깔모자",
+    "name_en": "PartyConehat"
+  },
+  {
+    "id": 4032302,
+    "name_kr": "신기한 물감",
+    "name_en": "AmazingWatercolorPaint"
+  },
+  {
+    "id": 4032303,
+    "name_kr": "신비한 물감",
+    "name_en": "MysticalWatercolorPaint"
+  },
+  {
+    "id": 4032304,
+    "name_kr": "마법의 물감",
+    "name_en": "MagicalWatercolorPaint"
+  },
+  {
+    "id": 4032309,
+    "name_kr": "대나무 한 단",
+    "name_en": "PieceofBamboo"
+  },
+  {
+    "id": 4032310,
+    "name_kr": "목재",
+    "name_en": "Wood"
+  },
+  {
+    "id": 4032311,
+    "name_kr": "자격의 증표",
+    "name_en": "SignofAcceptance"
+  },
+  {
+    "id": 4032312,
+    "name_kr": "홍주옥",
+    "name_en": "RedJade"
+  },
+  {
+    "id": 4032313,
+    "name_kr": "트루의 택시 이용권",
+    "name_en": "TruTaxiCoupon"
+  },
+  {
+    "id": 4032314,
+    "name_kr": "주황버섯의 뿔",
+    "name_en": "OrangeMushroomHorn"
+  },
+  {
+    "id": 4032315,
+    "name_kr": "시니컬한 주황버섯 인형",
+    "name_en": "CynicalOrangeMushroomPuppet"
+  },
+  {
+    "id": 4032316,
+    "name_kr": "좌절한 초록버섯 인형",
+    "name_en": "DejectedGreenMushroomPuppet"
+  },
+  {
+    "id": 4032317,
+    "name_kr": "좌절한 초록버섯 인형",
+    "name_en": "DejectedGreenMushroomPuppet"
+  },
+  {
+    "id": 4032318,
+    "name_kr": "좌절한 초록버섯 인형",
+    "name_en": "DejectedGreenMushroomPuppet"
+  },
+  {
+    "id": 4032319,
+    "name_kr": "히죽대는 고스텀프 인형",
+    "name_en": "SmirkingGhostStumpPuppet"
+  },
+  {
+    "id": 4032320,
+    "name_kr": "열 마리의 부기의 보고서",
+    "name_en": "Reportfrom10Boogies"
+  },
+  {
+    "id": 4032321,
+    "name_kr": "짜증내는 좀비버섯 인형",
+    "name_en": "AnnoyedZombieMushroomDoll"
+  },
+  {
+    "id": 4032322,
+    "name_kr": "인형사의 문서",
+    "name_en": "PuppeteerDocument"
+  },
+  {
+    "id": 4032323,
+    "name_kr": "빅토리아 아일랜드의 봉인석",
+    "name_en": "SealStoneofVictoriaIsland"
+  },
+  {
+    "id": 4032324,
+    "name_kr": "급성 성장 촉진제",
+    "name_en": "RapidGrowthStimulator"
+  },
+  {
+    "id": 4032325,
+    "name_kr": "보관고의 열쇠",
+    "name_en": "StorageKey"
+  },
+  {
+    "id": 4032326,
+    "name_kr": "나무 열쇠",
+    "name_en": "WoodenKey"
+  },
+  {
+    "id": 4032327,
+    "name_kr": "깨끗한 편지",
+    "name_en": "CleanLetter"
+  },
+  {
+    "id": 4032328,
+    "name_kr": "낡은 편지",
+    "name_en": "OldLetter"
+  },
+  {
+    "id": 4032329,
+    "name_kr": "낡은 편지",
+    "name_en": "OldLetter"
+  },
+  {
+    "id": 4032330,
+    "name_kr": "리린의 편지",
+    "name_en": "Lilin'sEnvelope"
+  },
+  {
+    "id": 4032331,
+    "name_kr": "아기 늑대용 영양제",
+    "name_en": "WolfCubVitamins"
+  },
+  {
+    "id": 4032332,
+    "name_kr": "아기 늑대용 영양식",
+    "name_en": "WolfCubMeal"
+  },
+  {
+    "id": 4032333,
+    "name_kr": "사춘기 늑대용 영양제",
+    "name_en": "PubertyWolfVitamins"
+  },
+  {
+    "id": 4032334,
+    "name_kr": "늑대의 생명수",
+    "name_en": "LifeWaterforWolf"
+  },
+  {
+    "id": 4032335,
+    "name_kr": "늑대의 이빨",
+    "name_en": "WolfTooth"
+  },
+  {
+    "id": 4032338,
+    "name_kr": "리린의 편지",
+    "name_en": "Lilin'sLetter"
+  },
+  {
+    "id": 4032339,
+    "name_kr": "홍주옥",
+    "name_en": "RedJade"
+  },
+  {
+    "id": 4032340,
+    "name_kr": "돼지의 꼬리",
+    "name_en": "PigTail"
+  },
+  {
+    "id": 4032341,
+    "name_kr": "인형사의 문서",
+    "name_en": "PuppeteerDocument"
+  },
+  {
+    "id": 4032342,
+    "name_kr": "특수 먹물",
+    "name_en": "SpecialInk"
+  },
+  {
+    "id": 4032343,
+    "name_kr": "족자",
+    "name_en": "PictureScroll"
+  },
+  {
+    "id": 4032348,
+    "name_kr": "견고한 짚단",
+    "name_en": "SecureBundleofStraw"
+  },
+  {
+    "id": 4032349,
+    "name_kr": "단단한 짚단",
+    "name_en": "SolidBundleofStraw"
+  },
+  {
+    "id": 4032350,
+    "name_kr": "튼튼한 짚단",
+    "name_en": "StrongBundleofStraw"
+  },
+  {
+    "id": 4032366,
+    "name_kr": "아렴풋한 흔적",
+    "name_en": "VagueAranMemory"
+  },
+  {
+    "id": 4032367,
+    "name_kr": "아련한 흔적",
+    "name_en": "DimAranMemory"
+  },
+  {
+    "id": 4032368,
+    "name_kr": "희미한 흔적",
+    "name_en": "FaintAranMemory"
+  },
+  {
+    "id": 4032369,
+    "name_kr": "흐릿한 흔적",
+    "name_en": "CloudyAranMemory"
+  },
+  {
+    "id": 4032370,
+    "name_kr": "아른한 흔적",
+    "name_en": "LingeringAranMemory"
+  },
+  {
+    "id": 4032371,
+    "name_kr": "어른대는 흔적",
+    "name_en": "FlickeringAranMemory"
+  },
+  {
+    "id": 4032372,
+    "name_kr": "거대한 폴암 이미지",
+    "name_en": "GiantPolearmImage"
+  },
+  {
+    "id": 4032373,
+    "name_kr": "튜토리얼 무루의 털뭉치",
+    "name_en": "TutorialMuru'sFurball"
+  },
+  {
+    "id": 4032374,
+    "name_kr": "전사 모험가 표창장",
+    "name_en": "LetterofCommendation"
+  },
+  {
+    "id": 4032375,
+    "name_kr": "전직관의 추천서",
+    "name_en": "RecommendationLetter"
+  },
+  {
+    "id": 4032376,
+    "name_kr": "마법사 모험가 표창장",
+    "name_en": "LetterofCommendation"
+  },
+  {
+    "id": 4032377,
+    "name_kr": "궁수 모험가 표창장",
+    "name_en": "LetterofCommendation"
+  },
+  {
+    "id": 4032378,
+    "name_kr": "도적 모험가 표창장",
+    "name_en": "LetterofCommendation"
+  },
+  {
+    "id": 4032379,
+    "name_kr": "해적 모험가 표창장",
+    "name_en": "LetterofCommendation"
+  },
+  {
+    "id": 4032386,
+    "name_kr": "페페킹의 왕관",
+    "name_en": "KingPepe'sCrown"
+  },
+  {
+    "id": 4032387,
+    "name_kr": "총리대신의 휘장",
+    "name_en": "PrimeMinisterEmblem"
+  },
+  {
+    "id": 4032388,
+    "name_kr": "결혼식장 열쇠",
+    "name_en": "WeddingHallKey"
+  },
+  {
+    "id": 4032389,
+    "name_kr": "킬라 버섯 포자 샘플",
+    "name_en": "KillerMushroomSporeSample"
+  },
+  {
+    "id": 4032390,
+    "name_kr": "오염된 뿔버섯의 갓",
+    "name_en": "TaintedHornyMushroomCap"
+  },
+  {
+    "id": 4032399,
+    "name_kr": "소리를 담은 부적",
+    "name_en": "RecordingCharm"
+  },
+  {
+    "id": 4032400,
+    "name_kr": "기억하고 있는 자의 추천서",
+    "name_en": "RecommendationLetter"
+  },
+  {
+    "id": 4032401,
+    "name_kr": "황금 독침",
+    "name_en": "GoldPoisonSting"
+  },
+  {
+    "id": 4032402,
+    "name_kr": "모래 두더지의 모자",
+    "name_en": "SandMoleHat"
+  },
+  {
+    "id": 4032405,
+    "name_kr": "밀실열쇠",
+    "name_en": "SecretKey"
+  },
+  {
+    "id": 4032418,
+    "name_kr": "빙고의 목걸이",
+    "name_en": "BingoNecklace"
+  },
+  {
+    "id": 4032419,
+    "name_kr": "빙고의 목걸이",
+    "name_en": "BingoNecklace"
+  },
+  {
+    "id": 4032420,
+    "name_kr": "빙고의 목걸이",
+    "name_en": "BingoNecklace"
+  },
+  {
+    "id": 4032421,
+    "name_kr": "빙고의 목걸이",
+    "name_en": "BingoNecklace"
+  },
+  {
+    "id": 4032422,
+    "name_kr": "빙고의 목걸이",
+    "name_en": "BingoNecklace"
+  },
+  {
+    "id": 4032423,
+    "name_kr": "관절염 치료제",
+    "name_en": "ArthritisMedicine"
+  },
+  {
+    "id": 4032424,
+    "name_kr": "미스 표시",
+    "name_en": "MissedMark"
+  },
+  {
+    "id": 4032430,
+    "name_kr": "달사진",
+    "name_en": "PhotooftheMoon"
+  },
+  {
+    "id": 4032431,
+    "name_kr": "달사진",
+    "name_en": "PhotooftheMoon"
+  },
+  {
+    "id": 4032432,
+    "name_kr": "달사진",
+    "name_en": "PhotooftheMoon"
+  },
+  {
+    "id": 4032433,
+    "name_kr": "달사진",
+    "name_en": "PhotooftheMoon"
+  },
+  {
+    "id": 4032434,
+    "name_kr": "노랑나비",
+    "name_en": "YellowButterfly"
+  },
+  {
+    "id": 4032447,
+    "name_kr": "불독 사료",
+    "name_en": "DogFood"
+  },
+  {
+    "id": 4032448,
+    "name_kr": "사랑이 담긴 도시락",
+    "name_en": "LunchMadewithLove"
+  },
+  {
+    "id": 4032449,
+    "name_kr": "아기 돼지",
+    "name_en": "Piglet"
+  },
+  {
+    "id": 4032450,
+    "name_kr": "빈 도시락통",
+    "name_en": "EmptyLunchBox"
+  },
+  {
+    "id": 4032451,
+    "name_kr": "달걀",
+    "name_en": "Egg"
+  },
+  {
+    "id": 4032452,
+    "name_kr": "건초 한 줌",
+    "name_en": "BundleofHay"
+  },
+  {
+    "id": 4032453,
+    "name_kr": "돼지고기",
+    "name_en": "Pork"
+  },
+  {
+    "id": 4032454,
+    "name_kr": "아기 용을 위한 우유",
+    "name_en": "MilkforBabyDragon"
+  },
+  {
+    "id": 4032455,
+    "name_kr": "그리드의 편지",
+    "name_en": "LetterfromGustav"
+  },
+  {
+    "id": 4032456,
+    "name_kr": "스탄의 추천서",
+    "name_en": "RecommendationLetter"
+  },
+  {
+    "id": 4032457,
+    "name_kr": "왕연해의 수련증표",
+    "name_en": "PowerB.Fore'sCertificateofTraining"
+  },
+  {
+    "id": 4032458,
+    "name_kr": "리나의 파란버섯 죽",
+    "name_en": "Rina'sBlueMushroomPorridge"
+  },
+  {
+    "id": 4032459,
+    "name_kr": "파란버섯 인형",
+    "name_en": "BlueMushroomDoll"
+  },
+  {
+    "id": 4032460,
+    "name_kr": "시원한 스텀프 수액",
+    "name_en": "RefreshingStumpSap"
+  },
+  {
+    "id": 4032461,
+    "name_kr": "좀비버섯 인형",
+    "name_en": "ZombieMushroomDoll"
+  },
+  {
+    "id": 4032462,
+    "name_kr": "와일드보어 인형",
+    "name_en": "WildBoarDoll"
+  },
+  {
+    "id": 4032463,
+    "name_kr": "단서가 적힌 문서",
+    "name_en": "DocumentwithClue"
+  },
+  {
+    "id": 4032464,
+    "name_kr": "사비트라마의 약초",
+    "name_en": "Sabitrama'sHerb"
+  },
+  {
+    "id": 4032465,
+    "name_kr": "넬라의 소개장",
+    "name_en": "Nella'sLetterofIntroduction"
+  },
+  {
+    "id": 4032466,
+    "name_kr": "골렘 인형",
+    "name_en": "GolemDoll"
+  },
+  {
+    "id": 4032467,
+    "name_kr": "오닉스 드래곤의 비늘",
+    "name_en": "DragonScales"
+  },
+  {
+    "id": 4032468,
+    "name_kr": "급성 성장 촉진제",
+    "name_en": "RapidGrowthAccelerant"
+  },
+  {
+    "id": 4032469,
+    "name_kr": "존의 지도",
+    "name_en": "John'sMap"
+  },
+  {
+    "id": 4032470,
+    "name_kr": "야자수 과일음료",
+    "name_en": "TropicalFruitPunch"
+  },
+  {
+    "id": 4032471,
+    "name_kr": "검은 열쇠",
+    "name_en": "BlackKey"
+  },
+  {
+    "id": 4032472,
+    "name_kr": "설귀도의 지도",
+    "name_en": "MapofTurtleIsland"
+  },
+  {
+    "id": 4032473,
+    "name_kr": "불길한 뼈",
+    "name_en": "GruesomeBone"
+  },
+  {
+    "id": 4032474,
+    "name_kr": "세르프의 진주",
+    "name_en": "SerufPearl"
+  },
+  {
+    "id": 4032475,
+    "name_kr": "라이칸스로프의 가죽",
+    "name_en": "LycanthropeLeather"
+  },
+  {
+    "id": 4032476,
+    "name_kr": "캡틴 알파의 버클",
+    "name_en": "CaptainAlpha'sBuckle"
+  },
+  {
+    "id": 4032477,
+    "name_kr": "깨지지 않는 자기",
+    "name_en": "UnbreakablePorcelain"
+  },
+  {
+    "id": 4032497,
+    "name_kr": "기옹",
+    "name_en": "Potter"
+  },
+  {
+    "id": 4032498,
+    "name_kr": "나무토막",
+    "name_en": "ThickBranch"
+  },
+  {
+    "id": 4032502,
+    "name_kr": "드래곤 비늘",
+    "name_en": "DragonScale"
+  },
+  {
+    "id": 4032503,
+    "name_kr": "빛나는 드래곤 비늘",
+    "name_en": "ShinyDragonScale"
+  },
+  {
+    "id": 4032504,
+    "name_kr": "라이칸스로프의 가죽",
+    "name_en": "LycanthropeLeather"
+  },
+  {
+    "id": 4032505,
+    "name_kr": "캡틴 알파의 버클",
+    "name_en": "CaptainAlpha'sBuckle"
+  },
+  {
+    "id": 4032506,
+    "name_kr": "사물함 열쇠",
+    "name_en": "LockerKey"
+  },
+  {
+    "id": 4032507,
+    "name_kr": "작곡 노트",
+    "name_en": "CompositionNotes"
+  },
+  {
+    "id": 4032508,
+    "name_kr": "비밀의 레시피",
+    "name_en": "SecretRecipe"
+  },
+  {
+    "id": 4032509,
+    "name_kr": "최신형 MP3",
+    "name_en": "LatestModelMP3"
+  },
+  {
+    "id": 4032510,
+    "name_kr": "전설의 가위",
+    "name_en": "LegendaryScissors"
+  },
+  {
+    "id": 4032511,
+    "name_kr": "앤디의 회중시계",
+    "name_en": "Andy'sPocketWatch"
+  },
+  {
+    "id": 4032512,
+    "name_kr": "사건의 실마리",
+    "name_en": "PrimaryCluetotheCase"
+  },
+  {
+    "id": 4032513,
+    "name_kr": "구겨진 스케치북 낱장",
+    "name_en": "WrinkledSketchbookLoose-Leaf"
+  },
+  {
+    "id": 4032514,
+    "name_kr": "대피소 열쇠",
+    "name_en": "ShelterKey"
+  },
+  {
+    "id": 4032515,
+    "name_kr": "베르가모트의 시간모래",
+    "name_en": "Bergamot'sTimeSand"
+  },
+  {
+    "id": 4032516,
+    "name_kr": "듀나스의 시간모래",
+    "name_en": "Dunas'sTimeSand"
+  },
+  {
+    "id": 4032517,
+    "name_kr": "아우프헤벤의 시간모래",
+    "name_en": "Aufheben'sTimeSand"
+  },
+  {
+    "id": 4032518,
+    "name_kr": "오베론의 시간모래",
+    "name_en": "Oberon'sTimeSand"
+  },
+  {
+    "id": 4032519,
+    "name_kr": "니벨룽겐의 시간모래",
+    "name_en": "Nibelung'sTimeSand"
+  },
+  {
+    "id": 4032520,
+    "name_kr": "메이드 앞치마",
+    "name_en": "MaidApron"
+  },
+  {
+    "id": 4032521,
+    "name_kr": "VIP 초대권",
+    "name_en": "VIPInvitation"
+  },
+  {
+    "id": 4032526,
+    "name_kr": "존의 지도",
+    "name_en": "John'sMap"
+  },
+  {
+    "id": 4055000,
+    "name_kr": "카산드라의 점괘쿠폰",
+    "name_en": "Cassandra'sDivineCoupon"
+  },
+  {
+    "id": 4055001,
+    "name_kr": "카산드라의 점괘쿠폰",
+    "name_en": "Cassandra'sDivineCoupon"
+  },
+  {
+    "id": 4055004,
+    "name_kr": "헤네시스 성형외과 이벤트 쿠폰",
+    "name_en": "HenesysPlasticSurgeryEventCoupon"
+  },
+  {
+    "id": 4055005,
+    "name_kr": "커닝시티 미용실 이벤트 쿠폰",
+    "name_en": "KerningCityHairSalonCoupon"
+  },
+  {
+    "id": 4080000,
+    "name_kr": "슬라임, 버섯 오목세트",
+    "name_en": "Slime&MushroomOmokSet"
+  },
+  {
+    "id": 4080001,
+    "name_kr": "슬라임, 옥토퍼스 오목세트",
+    "name_en": "Slime&OctopusOmokSet"
+  },
+  {
+    "id": 4080002,
+    "name_kr": "슬라임, 돼지 오목세트",
+    "name_en": "Slime&PigOmokSet"
+  },
+  {
+    "id": 4080003,
+    "name_kr": "옥토퍼스, 버섯 오목세트",
+    "name_en": "Octopus&MushroomOmokSet"
+  },
+  {
+    "id": 4080004,
+    "name_kr": "돼지, 옥토퍼스 오목세트",
+    "name_en": "Pig&OctopusOmokSet"
+  },
+  {
+    "id": 4080005,
+    "name_kr": "돼지, 버섯 오목세트",
+    "name_en": "Pig&MushroomOmokSet"
+  },
+  {
+    "id": 4080006,
+    "name_kr": "블록퍼스, 핑크 테니 오목세트",
+    "name_en": "Bloctopus&PinkTeddyOmokSet"
+  },
+  {
+    "id": 4080007,
+    "name_kr": "블록퍼스, 트릭스터 오목세트",
+    "name_en": "Bloctopus&TrixterOmokSet"
+  },
+  {
+    "id": 4080008,
+    "name_kr": "핑크 테니, 트릭스터 오목세트",
+    "name_en": "PinkTeddy&TrixterOmokSet"
+  },
+  {
+    "id": 4080009,
+    "name_kr": "팬더 테니, 블록퍼스 오목세트",
+    "name_en": "PandaTeddy&BlocktopusOmokSet"
+  },
+  {
+    "id": 4080010,
+    "name_kr": "팬더 테니, 핑크 테니 오목세트",
+    "name_en": "PandaTeddy&PinkTeddyOmokSet"
+  },
+  {
+    "id": 4080011,
+    "name_kr": "팬더 테니, 트릭스터 오목세트",
+    "name_en": "PandaTeddy&TrixterOmokSet"
+  },
+  {
+    "id": 4080100,
+    "name_kr": "같은그림찾기세트",
+    "name_en": "AsetofMatchCards"
+  },
+  {
+    "id": 4130000,
+    "name_kr": "장갑 제작의 촉진제",
+    "name_en": "GlovesProductionStimulator"
+  },
+  {
+    "id": 4130001,
+    "name_kr": "신발 제작의 촉진제",
+    "name_en": "ShoesProductionStimulator"
+  },
+  {
+    "id": 4130002,
+    "name_kr": "한손검 제작의 촉진제",
+    "name_en": "One-HandedSwordForgingStimulator"
+  },
+  {
+    "id": 4130003,
+    "name_kr": "한손도끼 제작의 촉진제",
+    "name_en": "One-HandedAxeForgingStimulator"
+  },
+  {
+    "id": 4130004,
+    "name_kr": "한손둔기 제작의 촉진제",
+    "name_en": "One-HandedBluntWeaponForgingStimulator"
+  },
+  {
+    "id": 4130005,
+    "name_kr": "두손검 제작의 촉진제",
+    "name_en": "Two-HandedSwordForgingStimulator"
+  },
+  {
+    "id": 4130006,
+    "name_kr": "두손도끼 제작의 촉진제",
+    "name_en": "Two-HandedAxeForgingStimulator"
+  },
+  {
+    "id": 4130007,
+    "name_kr": "두손둔기 제작의 촉진제",
+    "name_en": "Two-HandedMaceForgingStimulator"
+  },
+  {
+    "id": 4130008,
+    "name_kr": "창 제작의 촉진제",
+    "name_en": "SpearForgingStimulator"
+  },
+  {
+    "id": 4130009,
+    "name_kr": "폴암 제작의 촉진제",
+    "name_en": "PoleArmForgingStimulator"
+  },
+  {
+    "id": 4130010,
+    "name_kr": "완드 제작의 촉진제",
+    "name_en": "WandProductionStimulator"
+  },
+  {
+    "id": 4130011,
+    "name_kr": "스태프 제작의 촉진제",
+    "name_en": "StaffProductionStimulator"
+  },
+  {
+    "id": 4130012,
+    "name_kr": "활 제작의 촉진제",
+    "name_en": "BowProductionStimulator"
+  },
+  {
+    "id": 4130013,
+    "name_kr": "석궁 제작의 촉진제",
+    "name_en": "CrossbowProductionStimulator"
+  },
+  {
+    "id": 4130014,
+    "name_kr": "단검 제작의 촉진제",
+    "name_en": "DaggerForgingStimulator"
+  },
+  {
+    "id": 4130015,
+    "name_kr": "아대 제작의 촉진제",
+    "name_en": "ClawProductionStimulator"
+  },
+  {
+    "id": 4130016,
+    "name_kr": "너클 제작의 촉진제",
+    "name_en": "KnucklerProductionStimulator"
+  },
+  {
+    "id": 4130017,
+    "name_kr": "건 제작의 촉진제",
+    "name_en": "GunProductionStimulator"
+  },
+  {
+    "id": 4130018,
+    "name_kr": "투구 제작의 촉진제",
+    "name_en": "ArmorProductionStimulator"
+  },
+  {
+    "id": 4130019,
+    "name_kr": "상의 제작의 촉진제",
+    "name_en": "TopwearProductionStimulator"
+  },
+  {
+    "id": 4130020,
+    "name_kr": "하의 제작의 촉진제",
+    "name_en": "BottomwearProductionStimulator"
+  },
+  {
+    "id": 4130021,
+    "name_kr": "전신 갑옷 제작의 촉진제",
+    "name_en": "OverallProductionStimulator"
+  },
+  {
+    "id": 4130022,
+    "name_kr": "방패 제작의 촉진제",
+    "name_en": "ShieldProductionStimulator"
+  },
+  {
+    "id": 4131000,
+    "name_kr": "한손검 제조법",
+    "name_en": "One-HandedSwordForgingManual"
+  },
+  {
+    "id": 4131001,
+    "name_kr": "한손도끼 제조법",
+    "name_en": "One-HandedAxeForgingManual"
+  },
+  {
+    "id": 4131002,
+    "name_kr": "한손둔기 제조법",
+    "name_en": "One-HandedBluntWeaponForgingManual"
+  },
+  {
+    "id": 4131003,
+    "name_kr": "두손검 제조법",
+    "name_en": "Two-HandedSwordForgingManual"
+  },
+  {
+    "id": 4131004,
+    "name_kr": "두손도끼 제조법",
+    "name_en": "Two-HandedAxeForgingManual"
+  },
+  {
+    "id": 4131005,
+    "name_kr": "두손둔기 제조법",
+    "name_en": "Two-HandedMaceForgingManual"
+  },
+  {
+    "id": 4131006,
+    "name_kr": "창 제조법",
+    "name_en": "SpearForgingManual"
+  },
+  {
+    "id": 4131007,
+    "name_kr": "폴암 제조법",
+    "name_en": "PoleArmForgingManual"
+  },
+  {
+    "id": 4131008,
+    "name_kr": "완드 제조법",
+    "name_en": "WandProductionManual"
+  },
+  {
+    "id": 4131009,
+    "name_kr": "스태프 제조법",
+    "name_en": "StaffProductionManual"
+  },
+  {
+    "id": 4131010,
+    "name_kr": "활 제조법",
+    "name_en": "BowProductionManual"
+  },
+  {
+    "id": 4131011,
+    "name_kr": "석궁 제조법",
+    "name_en": "CrossbowProductionManual"
+  },
+  {
+    "id": 4131012,
+    "name_kr": "단검 제조법",
+    "name_en": "DaggerForgingManual"
+  },
+  {
+    "id": 4131013,
+    "name_kr": "아대 제조법",
+    "name_en": "ClawProductionManual"
+  },
+  {
+    "id": 4131014,
+    "name_kr": "너클 제조법",
+    "name_en": "KnucklerProductionManual"
+  },
+  {
+    "id": 4131015,
+    "name_kr": "건 제조법",
+    "name_en": "GunProductionManual"
+  },
+  {
+    "id": 4140000,
+    "name_kr": "사랑의 초코스틱",
+    "name_en": "ChocolateStick"
+  },
+  {
+    "id": 4140100,
+    "name_kr": "발렌타인데이 하트초콜릿",
+    "name_en": "HeartChocolate"
+  },
+  {
+    "id": 4140101,
+    "name_kr": "화이트데이 파인애플사탕",
+    "name_en": "PineappleCandyforWhiteDay"
+  },
+  {
+    "id": 4140102,
+    "name_kr": "화이트데이 딸기사탕",
+    "name_en": "StrawberryCandyforWhiteDay"
+  },
+  {
+    "id": 4140103,
+    "name_kr": "도우미 인증서",
+    "name_en": "CertificateofAssistant"
+  },
+  {
+    "id": 4140200,
+    "name_kr": "발렌타인데이 초콜릿 바구니",
+    "name_en": "ChocolateBasket"
+  },
+  {
+    "id": 4140201,
+    "name_kr": "화이트데이 사탕바구니",
+    "name_en": "CandyBasketforWhiteDay"
+  },
+  {
+    "id": 4140300,
+    "name_kr": "달의 기운",
+    "name_en": "PowerofMoon"
+  },
+  {
+    "id": 4140301,
+    "name_kr": "별의 기운",
+    "name_en": "PowerofStar"
+  },
+  {
+    "id": 4140302,
+    "name_kr": "호신부적",
+    "name_en": "DefenseCharm"
+  },
+  {
+    "id": 4160000,
+    "name_kr": "펫 안내서 : 강아지 편",
+    "name_en": "PetCommandGuide:Puppy"
+  },
+  {
+    "id": 4160001,
+    "name_kr": "펫 안내서 : 고양이 편",
+    "name_en": "PetCommandGuide:Kitty"
+  },
+  {
+    "id": 4160002,
+    "name_kr": "펫 안내서 : 토끼 편",
+    "name_en": "PetCommandGuide:Bunny"
+  },
+  {
+    "id": 4160003,
+    "name_kr": "펫 안내서 : 카고 편",
+    "name_en": "PetCommandGuide:MiniKargo"
+  },
+  {
+    "id": 4160004,
+    "name_kr": "펫 안내서 : 허스키 편",
+    "name_en": "PetCommandGuide:Husky"
+  },
+  {
+    "id": 4160005,
+    "name_kr": "펫 안내서 : 돼지 편",
+    "name_en": "PetCommandGuide:Pig"
+  },
+  {
+    "id": 4160006,
+    "name_kr": "펫 안내서 : 팬더 편",
+    "name_en": "PetCommandGuide:Panda"
+  },
+  {
+    "id": 4160007,
+    "name_kr": "펫 안내서 : 디노 편",
+    "name_en": "PetCommandGuide:Dino"
+  },
+  {
+    "id": 4160008,
+    "name_kr": "펫 안내서 : 백호 편",
+    "name_en": "PetCommandGuide:WhiteTiger"
+  },
+  {
+    "id": 4160009,
+    "name_kr": "펫 안내서 : 루돌프 편",
+    "name_en": "PetCommandGuide:Rudolph"
+  },
+  {
+    "id": 4160010,
+    "name_kr": "펫 안내서 : 원숭이 편",
+    "name_en": "PetCommandGuide:Monkey"
+  },
+  {
+    "id": 4160011,
+    "name_kr": "펫 능력치 이전 주문서",
+    "name_en": "PetAPResetScroll"
+  },
+  {
+    "id": 4160012,
+    "name_kr": "펫 안내서 : 미니예티 편",
+    "name_en": "PetCommandGuide:MiniYeti"
+  },
+  {
+    "id": 4160014,
+    "name_kr": "펫 안내서 : 펭귄 편",
+    "name_en": "PetCommandGuide:Penguin"
+  },
+  {
+    "id": 4160015,
+    "name_kr": "펫 안내서 : 주니어 발록 편",
+    "name_en": "PetCommandGuide:Jr.Balrog"
+  },
+  {
+    "id": 4160019,
+    "name_kr": "펫 안내서 : 손오공 편",
+    "name_en": "PetCommandGuide:SunWuKong"
+  },
+  {
+    "id": 4160020,
+    "name_kr": "펫 안내서 : 칠면조 편",
+    "name_en": "PetCommandGuide:Turkey"
+  },
+  {
+    "id": 4160028,
+    "name_kr": "펫 안내서 : 주니어 리퍼 편",
+    "name_en": "PetCommandGuide:Jr.Reaper"
+  },
+  {
+    "id": 4160031,
+    "name_kr": "펫 안내서 : 고슴도치 편",
+    "name_en": "PetCommandGuide:Hedgehog"
+  },
+  {
+    "id": 4160033,
+    "name_kr": "펫 안내서 : 키노 편",
+    "name_en": "PetCommandGuide:Kino"
+  },
+  {
+    "id": 4160041,
+    "name_kr": "펫 안내서 : 황금돼지 편",
+    "name_en": "PetCommandGuide:GoldPig"
+  },
+  {
+    "id": 4161000,
+    "name_kr": "그윈의 일기장",
+    "name_en": "Gwin'sDiary"
+  },
+  {
+    "id": 4161001,
+    "name_kr": "초보자 안내서",
+    "name_en": "Beginner'sGuide"
+  },
+  {
+    "id": 4161002,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161003,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161004,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161005,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161006,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161007,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161008,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161009,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161010,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161011,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161012,
+    "name_kr": "출석확인 책",
+    "name_en": "AttendanceBook"
+  },
+  {
+    "id": 4161013,
+    "name_kr": "리프레 안내 책자",
+    "name_en": "LeafreGuidebook"
+  },
+  {
+    "id": 4161014,
+    "name_kr": "여신의 일기장",
+    "name_en": "DiaryoftheGoddess"
+  },
+  {
+    "id": 4161015,
+    "name_kr": "[스토리북]타오르는 불꽃의 책",
+    "name_en": "[Storybook]BurningBookofFire"
+  },
+  {
+    "id": 4161016,
+    "name_kr": "[스토리북]얼어붙은 얼음의 책",
+    "name_en": "[Storybook]FrozenBookofIce"
+  },
+  {
+    "id": 4161017,
+    "name_kr": "카론의 노트",
+    "name_en": "Caron'sNote"
+  },
+  {
+    "id": 4161018,
+    "name_kr": "[스토리북]오래된 책",
+    "name_en": "[Storybook]AncientBook"
+  },
+  {
+    "id": 4161019,
+    "name_kr": "세이람의 모험",
+    "name_en": "Sayram'sJourney"
+  },
+  {
+    "id": 4161020,
+    "name_kr": "마법사 이야기",
+    "name_en": "StoryofaMagician"
+  },
+  {
+    "id": 4161021,
+    "name_kr": "[스토리북]검은 구름 제조법",
+    "name_en": "[Storybook]FormulaforBlackCloud"
+  },
+  {
+    "id": 4161022,
+    "name_kr": "타오르는 불꽃의 책",
+    "name_en": "BurningBookofFire"
+  },
+  {
+    "id": 4161023,
+    "name_kr": "얼어붙은 얼음의 책",
+    "name_en": "FrozenBookofIce"
+  },
+  {
+    "id": 4161024,
+    "name_kr": "궁수의 길",
+    "name_en": "Bowman'sWay"
+  },
+  {
+    "id": 4161025,
+    "name_kr": "궁수의 길",
+    "name_en": "RoadofBowman"
+  },
+  {
+    "id": 4161026,
+    "name_kr": "궁수의 길",
+    "name_en": "RoadofBowman"
+  },
+  {
+    "id": 4161027,
+    "name_kr": "궁수의 길",
+    "name_en": "RoadofBowman"
+  },
+  {
+    "id": 4161028,
+    "name_kr": "궁수의 길",
+    "name_en": "RoadofBowman"
+  },
+  {
+    "id": 4161029,
+    "name_kr": "궁수의 길",
+    "name_en": "RoadofBowman"
+  },
+  {
+    "id": 4161030,
+    "name_kr": "약재조합서",
+    "name_en": "BookonHerbalMedicine"
+  },
+  {
+    "id": 4161031,
+    "name_kr": "드랭의 노트",
+    "name_en": "Dran'sNote"
+  },
+  {
+    "id": 4161032,
+    "name_kr": "드랭의 노트",
+    "name_en": "Dran'sNote"
+  },
+  {
+    "id": 4161033,
+    "name_kr": "드랭의 노트",
+    "name_en": "Dran'sNote"
+  },
+  {
+    "id": 4161034,
+    "name_kr": "드랭의 노트",
+    "name_en": "Dran'sNote"
+  },
+  {
+    "id": 4161035,
+    "name_kr": "달팽이 전설",
+    "name_en": "TheLegendofSnail"
+  },
+  {
+    "id": 4161036,
+    "name_kr": "연주곡 : 작은별",
+    "name_en": "Song:TwinkleTwinkleLittleStar"
+  },
+  {
+    "id": 4161037,
+    "name_kr": "메이커 안내서",
+    "name_en": "AGuidetoUsingtheMakerSkill"
+  },
+  {
+    "id": 4161042,
+    "name_kr": "메이커 안내서 해외용",
+    "name_en": "SantaEncyclopediaNo.6"
+  },
+  {
+    "id": 4161044,
+    "name_kr": "시그너스 기사단 의 책 1권",
+    "name_en": "CygnusKnight'sBookVolume1"
+  },
+  {
+    "id": 4161045,
+    "name_kr": "시그너스 기사단 의 책 2권",
+    "name_en": "CygnusKnight'sBookVolume2"
+  },
+  {
+    "id": 4161046,
+    "name_kr": "시그너스 기사단 의 책 3권",
+    "name_en": "CygnusKnight'sBookVolume3"
+  },
+  {
+    "id": 4161047,
+    "name_kr": "노블레스 안내서",
+    "name_en": "NoblesseGuide"
+  },
+  {
+    "id": 4161048,
+    "name_kr": "레전드 안내서",
+    "name_en": "Legend'sGuide"
+  },
+  {
+    "id": 4170000,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170001,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170002,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170003,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170004,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170005,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170006,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170007,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170009,
+    "name_kr": "피그미 에그",
+    "name_en": "PigmyEgg"
+  },
+  {
+    "id": 4170012,
+    "name_kr": "DS 에그",
+    "name_en": "DSEgg"
+  },
+  {
+    "id": 4210000,
+    "name_kr": "문스톤링",
+    "name_en": "Moonstonering"
+  },
+  {
+    "id": 4210001,
+    "name_kr": "문스톤링 2캐럿",
+    "name_en": "Moonstonering2karat"
+  },
+  {
+    "id": 4210002,
+    "name_kr": "문스톤링 3캐럿",
+    "name_en": "Moonstonering3karat"
+  },
+  {
+    "id": 4210003,
+    "name_kr": "샤이닝스타링",
+    "name_en": "Shiningstarring"
+  },
+  {
+    "id": 4210004,
+    "name_kr": "샤이닝스타링 2캐럿",
+    "name_en": "Shiningstarring2karat"
+  },
+  {
+    "id": 4210005,
+    "name_kr": "샤이닝스타링 3캐럿",
+    "name_en": "Shiningstarring3karat"
+  },
+  {
+    "id": 4210006,
+    "name_kr": "골드하트링",
+    "name_en": "Goldheartring"
+  },
+  {
+    "id": 4210007,
+    "name_kr": "골드하트링 2캐럿",
+    "name_en": "Goldheartring2karat"
+  },
+  {
+    "id": 4210008,
+    "name_kr": "골드하트링 3캐럿",
+    "name_en": "Goldheartring3karat"
+  },
+  {
+    "id": 4210009,
+    "name_kr": "실버윙링",
+    "name_en": "Silverwingring"
+  },
+  {
+    "id": 4210010,
+    "name_kr": "실버윙링 2캐럿",
+    "name_en": "Silverwingring2karat"
+  },
+  {
+    "id": 4210011,
+    "name_kr": "실버윙링 3캐럿",
+    "name_en": "Silverwingring3karat"
+  },
+  {
+    "id": 4211000,
+    "name_kr": "조촐한 결혼 청첩장",
+    "name_en": "Simpleweddinginvitation"
+  },
+  {
+    "id": 4211001,
+    "name_kr": "스위티 결혼 청첩장",
+    "name_en": "Sweetieweddinginvitation"
+  },
+  {
+    "id": 4211002,
+    "name_kr": "프리미엄 결혼 청첩장",
+    "name_en": "Premiumweddinginvitation"
+  },
+  {
+    "id": 4212000,
+    "name_kr": "조촐한 결혼 청첩장",
+    "name_en": "Simpleweddinginvitation"
+  },
+  {
+    "id": 4212001,
+    "name_kr": "스위티 결혼 청첩장",
+    "name_en": "Sweetieweddinginvitation"
+  },
+  {
+    "id": 4212002,
+    "name_kr": "프리미엄 결혼 청첩장",
+    "name_en": "Premiumweddinginvitation"
+  },
+  {
+    "id": 4213000,
+    "name_kr": "사랑의 서약",
+    "name_en": "Lovevow"
+  },
+  {
+    "id": 4213001,
+    "name_kr": "주례 승낙서",
+    "name_en": "Approvalforofficiation"
+  },
+  {
+    "id": 4214000,
+    "name_kr": "조촐한 결혼식 영수증",
+    "name_en": "Simpleweddingreceipt"
+  },
+  {
+    "id": 4214001,
+    "name_kr": "스위티 결혼식 영수증",
+    "name_en": "Sweetieweddingreceipt"
+  },
+  {
+    "id": 4214002,
+    "name_kr": "프리미엄 결혼식 영수증",
+    "name_en": "Premiumweddingreceipt"
+  },
+  {
+    "id": 4220000,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220001,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220002,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220003,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220004,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220005,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220006,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220007,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220008,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220009,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220010,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220011,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220012,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220013,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220014,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220015,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220016,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220017,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220018,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220019,
+    "name_kr": "화분",
+    "name_en": "Flowerpot"
+  },
+  {
+    "id": 4220020,
+    "name_kr": "스텀피의 묘목",
+    "name_en": "Stumpy'sSeedling"
+  },
+  {
+    "id": 4220021,
+    "name_kr": "헝겊 인형",
+    "name_en": "RagDoll"
+  },
+  {
+    "id": 4220023,
+    "name_kr": "운세 종이",
+    "name_en": "FortuneSheet"
+  },
+  {
+    "id": 4220045,
+    "name_kr": "생일 케이크 상자",
+    "name_en": "BirthdayCakeBox"
+  },
+  {
+    "id": 4220046,
+    "name_kr": "타이머의 알",
+    "name_en": "Timer'sEgg"
+  },
+  {
+    "id": 4220067,
+    "name_kr": "달 사진 봉투",
+    "name_en": "Moon"
+  },
+  {
+    "id": 4220137,
+    "name_kr": "티티아나의 알",
+    "name_en": "MimianaEgg"
+  },
+  {
+    "id": 4220138,
+    "name_kr": "유리온실",
+    "name_en": "GlassIncubator"
+  },
+  {
+    "id": 4220139,
+    "name_kr": "티티아나의 알",
+    "name_en": "MimianaEgg"
+  },
+  {
+    "id": 4220145,
+    "name_kr": "티티아나의 알",
+    "name_en": "MimianaEgg"
+  },
+  {
+    "id": 4220146,
+    "name_kr": "티티아나의 알",
+    "name_en": "MimianaEgg"
+  },
+  {
+    "id": 4220148,
+    "name_kr": "주황버섯의 초상화",
+    "name_en": "PortraitofanOrangeMushroom"
+  },
+  {
+    "id": 4220149,
+    "name_kr": "옥토퍼스의 초상화",
+    "name_en": "PortraitofanOctopus"
+  },
+  {
+    "id": 4220150,
+    "name_kr": "예티의 초상화",
+    "name_en": "PortraitofaYeti"
+  },
+  {
+    "id": 4220151,
+    "name_kr": "족자",
+    "name_en": "HangingScroll"
+  },
+  {
+    "id": 4220152,
+    "name_kr": "무지개 그림",
+    "name_en": "RainbowDrawing"
+  },
+  {
+    "id": 4250000,
+    "name_kr": "하급 다이아몬드",
+    "name_en": "BasicDiamond"
+  },
+  {
+    "id": 4250001,
+    "name_kr": "중급 다이아몬드",
+    "name_en": "IntermediateDiamond"
+  },
+  {
+    "id": 4250002,
+    "name_kr": "상급 다이아몬드",
+    "name_en": "AdvancedDiamond"
+  },
+  {
+    "id": 4250100,
+    "name_kr": "하급 사파이어",
+    "name_en": "BasicSapphire"
+  },
+  {
+    "id": 4250101,
+    "name_kr": "중급 사파이어",
+    "name_en": "IntermediateSapphire"
+  },
+  {
+    "id": 4250102,
+    "name_kr": "상급 사파이어",
+    "name_en": "AdvancedSapphire"
+  },
+  {
+    "id": 4250200,
+    "name_kr": "하급 가넷",
+    "name_en": "BasicGarnet"
+  },
+  {
+    "id": 4250201,
+    "name_kr": "중급 가넷",
+    "name_en": "IntermediateGarnet"
+  },
+  {
+    "id": 4250202,
+    "name_kr": "상급 가넷",
+    "name_en": "AdvancedGarnet"
+  },
+  {
+    "id": 4250300,
+    "name_kr": "하급 오팔",
+    "name_en": "BasicOpal"
+  },
+  {
+    "id": 4250301,
+    "name_kr": "중급 오팔",
+    "name_en": "IntermediateOpal"
+  },
+  {
+    "id": 4250302,
+    "name_kr": "상급 오팔",
+    "name_en": "AdvancedOpal"
+  },
+  {
+    "id": 4250400,
+    "name_kr": "하급 자수정",
+    "name_en": "BasicAmethyst"
+  },
+  {
+    "id": 4250401,
+    "name_kr": "중급 자수정",
+    "name_en": "IntermediateAmethyst"
+  },
+  {
+    "id": 4250402,
+    "name_kr": "상급 자수정",
+    "name_en": "AdvancedAmethyst"
+  },
+  {
+    "id": 4250500,
+    "name_kr": "하급 아쿠아마린",
+    "name_en": "BasicAquaMarine"
+  },
+  {
+    "id": 4250501,
+    "name_kr": "중급 아쿠아마린",
+    "name_en": "IntermediateAquaMarine"
+  },
+  {
+    "id": 4250502,
+    "name_kr": "상급 아쿠아마린",
+    "name_en": "AdvancedAquaMarine"
+  },
+  {
+    "id": 4250600,
+    "name_kr": "하급 토파즈",
+    "name_en": "BasicTopaz"
+  },
+  {
+    "id": 4250601,
+    "name_kr": "중급 토파즈",
+    "name_en": "IntermediateTopaz"
+  },
+  {
+    "id": 4250602,
+    "name_kr": "상급 토파즈",
+    "name_en": "AdvancedTopaz"
+  },
+  {
+    "id": 4250700,
+    "name_kr": "하급 에메랄드",
+    "name_en": "BasicEmerald"
+  },
+  {
+    "id": 4250701,
+    "name_kr": "중급 에메랄드",
+    "name_en": "IntermediateEmerald"
+  },
+  {
+    "id": 4250702,
+    "name_kr": "상급 에메랄드",
+    "name_en": "AdvancedEmerald"
+  },
+  {
+    "id": 4250800,
+    "name_kr": "하급 힘의 크리스탈",
+    "name_en": "BasicPowerCrystal"
+  },
+  {
+    "id": 4250801,
+    "name_kr": "중급 힘의 크리스탈",
+    "name_en": "IntermediatePowerCrystal"
+  },
+  {
+    "id": 4250802,
+    "name_kr": "상급 힘의 크리스탈",
+    "name_en": "AdvancedPowerCrystal"
+  },
+  {
+    "id": 4250900,
+    "name_kr": "하급 지혜의 크리스탈",
+    "name_en": "BasicWisdomCrystal"
+  },
+  {
+    "id": 4250901,
+    "name_kr": "중급 지혜의 크리스탈",
+    "name_en": "IntermediateWisdomCrystal"
+  },
+  {
+    "id": 4250902,
+    "name_kr": "상급 지혜의 크리스탈",
+    "name_en": "AdvancedWisdomCrystal"
+  },
+  {
+    "id": 4251000,
+    "name_kr": "하급 행운의 크리스탈",
+    "name_en": "BasicLUKCrystal"
+  },
+  {
+    "id": 4251001,
+    "name_kr": "중급 행운의 크리스탈",
+    "name_en": "IntermediateLUKCrystal"
+  },
+  {
+    "id": 4251002,
+    "name_kr": "상급 행운의 크리스탈",
+    "name_en": "AdvancedLUKCrystal"
+  },
+  {
+    "id": 4251100,
+    "name_kr": "하급 민첩성의 크리스탈",
+    "name_en": "BasicDEXCrystal"
+  },
+  {
+    "id": 4251101,
+    "name_kr": "중급 민첩성의 크리스탈",
+    "name_en": "IntermediateDEXCrystal"
+  },
+  {
+    "id": 4251102,
+    "name_kr": "상급 민첩성의 크리스탈",
+    "name_en": "AdvancedDEXCrystal"
+  },
+  {
+    "id": 4251200,
+    "name_kr": "하급 비밀의 크리스탈",
+    "name_en": "BasicSecretCrystal"
+  },
+  {
+    "id": 4251201,
+    "name_kr": "중급 비밀의 크리스탈",
+    "name_en": "IntermediateSecretCrystal"
+  },
+  {
+    "id": 4251202,
+    "name_kr": "상급 비밀의 크리스탈",
+    "name_en": "AdvancedSecretCrystal"
+  },
+  {
+    "id": 4251300,
+    "name_kr": "하급 흑수정",
+    "name_en": "BasicBlackCrystal"
+  },
+  {
+    "id": 4251301,
+    "name_kr": "중급 흑수정",
+    "name_en": "IntermediateBlackCrystal"
+  },
+  {
+    "id": 4251302,
+    "name_kr": "상급 흑수정",
+    "name_en": "AdvancedBlackCrystal"
+  },
+  {
+    "id": 4251400,
+    "name_kr": "하급 어둠의 크리스탈",
+    "name_en": "BasicDarkCrystal"
+  },
+  {
+    "id": 4251401,
+    "name_kr": "중급 어둠의 크리스탈",
+    "name_en": "IntermediateDarkCrystal"
+  },
+  {
+    "id": 4251402,
+    "name_kr": "상급 어둠의 크리스탈",
+    "name_en": "AdvancedDarkCrystal"
+  },
+  {
+    "id": 4260000,
+    "name_kr": "하급 몬스터 결정C",
+    "name_en": "BasicMonsterCrystal1"
+  },
+  {
+    "id": 4260001,
+    "name_kr": "하급 몬스터 결정B",
+    "name_en": "BasicMonsterCrystal2"
+  },
+  {
+    "id": 4260002,
+    "name_kr": "하급 몬스터 결정A",
+    "name_en": "BasicMonsterCrystal3"
+  },
+  {
+    "id": 4260003,
+    "name_kr": "중급 몬스터 결정C",
+    "name_en": "IntermediateMonsterCrystal1"
+  },
+  {
+    "id": 4260004,
+    "name_kr": "중급 몬스터 결정B",
+    "name_en": "IntermediateMonsterCrystal2"
+  },
+  {
+    "id": 4260005,
+    "name_kr": "중급 몬스터 결정A",
+    "name_en": "IntermediateMonsterCrystal3"
+  },
+  {
+    "id": 4260006,
+    "name_kr": "상급 몬스터 결정C",
+    "name_en": "AdvancedMonsterCrystal1"
+  },
+  {
+    "id": 4260007,
+    "name_kr": "상급 몬스터 결정B",
+    "name_en": "AdvancedMonsterCrystal2"
+  },
+  {
+    "id": 4260008,
+    "name_kr": "상급 몬스터 결정A",
+    "name_en": "AdvancedMonsterCrystal3"
+  },
+  {
+    "id": 4310000,
+    "name_kr": "절대음감",
+    "name_en": "PerfectPitch"
+  }
+]
