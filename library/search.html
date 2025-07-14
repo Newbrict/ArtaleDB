@@ -12,38 +12,16 @@
       padding: 20px;
       transition: background-color 0.3s, color 0.3s;
     }
-    body.dark-mode {
-      background-color: #121212;
-      color: #eee;
-    }
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      background: white;
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 0 8px rgba(0,0,0,0.1);
-      position: relative;
-    }
+    body.dark-mode { background-color: #121212; color: #eee; }
+    .container { max-width: 1100px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 8px rgba(0,0,0,0.1); position: relative; }
     body.dark-mode .container { background: #1e1e1e; }
-    input[type=text] {
-      width: 60%; padding: 10px; margin-right: 10px;
-      border: 1px solid #ccc; border-radius: 4px;
-    }
-    body.dark-mode input[type=text] {
-      background: #333; border: 1px solid #555; color: #eee;
-    }
-    button {
-      padding: 10px 15px; cursor: pointer;
-      border: none; border-radius: 4px;
-      background-color: #4CAF50; color: white; font-weight: bold;
-    }
+    input[type=text] { width: 60%; padding: 10px; margin-right: 10px; border: 1px solid #ccc; border-radius: 4px; }
+    body.dark-mode input[type=text] { background: #333; border: 1px solid #555; color: #eee; }
+    button { padding: 10px 15px; cursor: pointer; border: none; border-radius: 4px; background-color: #4CAF50; color: white; font-weight: bold; }
     button:hover { background-color: #45a049; }
     #darkModeToggle { background-color: #2196F3; margin-left: 10px; }
     #darkModeToggle:hover { background-color: #1976D2; }
-    .result-item { display: flex; align-items: center;
-      border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;
-    }
+    .result-item { display: flex; align-items: center; border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer; }
     body.dark-mode .result-item { border-color: #444; }
     .result-item img { width: 50px; height: auto; margin-right: 15px; }
     mark { background-color: yellow; font-weight: bold; padding: 0 3px; }
@@ -54,23 +32,16 @@
     body.dark-mode #details { border-color: #444; }
     .drop-item { display: flex; align-items: center; margin-bottom: 5px; }
     .drop-item img { width: 40px; height: auto; margin-right: 10px; }
-    .top-right-button {
-      position: absolute; top: 20px; right: 20px;
-      background-color: #ff7043;
-    }
+    .top-right-button { position: absolute; top: 20px; right: 20px; background-color: #ff7043; }
     .top-right-button:hover { background-color: #e55d2e; }
     #autocompleteList {
-      position: absolute; background: white; z-index: 1000;
-      list-style: none; padding: 10px; margin: 0;
-      width: 60%; border: 1px solid #ccc; border-radius: 4px;
-      max-height: 300px; overflow-y: auto; display: none;
+      position: absolute; background: white; z-index: 1000; list-style: none; padding: 10px; margin: 0;
+      width: 60%; border: 1px solid #ccc; border-radius: 4px; max-height: 300px; overflow-y: auto; display: none;
     }
     body.dark-mode #autocompleteList { background: #2b2b2b; border: 1px solid #555; }
     body.dark-mode #autocompleteList li { color: #ddd; }
     body.dark-mode #autocompleteList li:hover { background-color: #3a3a3a; }
-    #autocompleteList li {
-      padding: 5px 0; display: flex; align-items: center; cursor: pointer;
-    }
+    #autocompleteList li { padding: 5px 0; display: flex; align-items: center; cursor: pointer; }
     #autocompleteList li img { max-width: 30px; max-height: 30px; margin-right: 10px; }
   </style>
 </head>
@@ -94,7 +65,7 @@
     const monsterImagePath = 'library/images/monsters/';
     const itemImagePath    = 'library/images/items/';
 
-    const escapeHtml = text => text?.replace(/[&<>"']|'/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const escapeHtml = text => text?.replace(/[&<>"]|'/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
@@ -109,8 +80,7 @@
     }
 
     const getImageElement = (path, name, isItem = false) => {
-      const img = document.createElement('img');
-      img.alt = name;
+      const img = document.createElement('img'); img.alt = name;
       const filename = isItem ? getItemImageName(name) : stripGender(name).replace(/\s+/g, '_');
       img.src = path + filename + '.png';
       img.onerror = () => { img.onerror = null; img.src = path + filename + '.gif'; };
@@ -124,9 +94,9 @@
 
     async function loadData() {
       const [mRes, bRes, uRes] = await Promise.all([
-        fetch('library/data/monster/monster_data.json'),
-        fetch('library/data/monster/boss_data.json'),
-        fetch('library/data/item/unique_items.json')
+        fetch('/library/data/monster/monster_data.json'),
+        fetch('/library/data/monster/boss_data.json'),
+        fetch('/library/data/item/unique_items.json')
       ]);
       monsterData = await mRes.json();
       bossData    = await bRes.json();
@@ -184,7 +154,7 @@
       const d = document.getElementById('details');
       const id = `drop-list-${sanitizeName(m.name)}`;
       const fn = stripGender(m.name).replace(/\s+/g, '_');
-      const p = m.imagePath || `${monsterImagePath}${fn}`;
+      const p = `${monsterImagePath}${fn}`;
       d.innerHTML = `
         <h2>${escapeHtml(m.name)}</h2>
         <img src="${p}.png" onerror="this.onerror=null;this.src='${p}.gif'" alt="${escapeHtml(m.name)}">
@@ -216,10 +186,7 @@
       `;
     }
 
-    function toggleDrops(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === 'none' ? 'block' : 'none';
-    }
+    function toggleDrops(id) { const el = document.getElementById(id); el.style.display = el.style.display === 'none' ? 'block' : 'none'; }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
     document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
