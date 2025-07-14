@@ -175,15 +175,18 @@
 
     // 아이템 이미지 이름 결정 (한글→영어 매핑 우선)
     const getItemImageName = name => {
-      if (itemNameMap[name]) {
-        return sanitizeName(itemNameMap[name]);
-      }
-      if (/Skill Book/i.test(name))   return "Skillbook";
-      if (/Mastery Book/i.test(name)) return "Masterybook";
-      const scrollMatch = name.match(/scroll[^\d]*(\d+)%/i);
-      if (scrollMatch) return "Scroll" + scrollMatch[1];
-      return sanitizeName(name);
-    };
+  // 1) 스킬북
+  if (/스킬북/.test(name))   return "Skillbook";
+  // 2) 마스터북
+  if (/마스터북/.test(name)) return "Masterybook";
+  // 3) 주문서 (숫자% 스크롤)
+  const scrollMatch = name.match(/주문서[^\d]*(\d+)%/);
+  if (scrollMatch) return "Scroll" + scrollMatch[1];
+  // 4) 한글→영어 매핑이 있으면 사용
+  if (itemNameMap[name])    return sanitizeName(itemNameMap[name]);
+  // 5) 기본 sanitize
+  return sanitizeName(name);
+};
 
     // img element 생성
     const getImageElement = (path, name, isItem = false) => {
