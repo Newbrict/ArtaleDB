@@ -5,43 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>몬스터 / 아이템 검색</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #f9f9f9; color: #222; padding: 20px; transition: background-color 0.3s, color 0.3s; }
-    body.dark-mode { background-color: #121212; color: #eee; }
-    .container { max-width:1100px; margin:auto; background:white; padding:20px; border-radius:8px; box-shadow:0 0 8px rgba(0,0,0,0.1); position:relative; }
-    body.dark-mode .container { background:#1e1e1e; }
-    input[type=text] { width:60%; padding:10px; margin-right:10px; border:1px solid #ccc; border-radius:4px; }
-    body.dark-mode input[type=text] { background:#333; border:1px solid #555; color:#eee; }
-    button { padding:10px 15px; cursor:pointer; border:none; border-radius:4px; background-color:#4CAF50; color:white; font-weight:bold; }
-    button:hover { background-color:#45a049; }
-    #darkModeToggle { background-color:#2196F3; margin-left:10px; }
-    #darkModeToggle:hover { background-color:#1976D2; }
-    .result-item { display:flex; align-items:center; border-bottom:1px solid #ddd; padding:15px 0; cursor:pointer; }
-    body.dark-mode .result-item { border-color:#444; }
-    .result-item img { width:50px; height:auto; margin-right:15px; }
-    mark { background-color:yellow; font-weight:bold; padding:0 3px; }
-    body.dark-mode mark { background-color:#ffda6a; }
-    .content-wrapper { display:flex; gap:30px; }
-    #results { flex:1; max-width:45%; }
-    #details { flex:1; border-left:1px solid #ccc; padding-left:20px; }
-    body.dark-mode #details { border-color:#444; }
-    .drop-item { display:flex; align-items:center; margin-bottom:5px; }
-    .drop-item img { width:40px; height:auto; margin-right:10px; }
-    .top-right-button { position:absolute; top:20px; right:20px; background-color:#ff7043; }
-    .top-right-button:hover { background-color:#e55d2e; }
-    #autocompleteList { position:absolute; background:white; z-index:1000; list-style:none; padding:10px; margin:0; width:60%; border:1px solid #ccc; border-radius:4px; max-height:300px; overflow-y:auto; display:none; }
-    body.dark-mode #autocompleteList { background-color:#2b2b2b; border:1px solid #555; }
-    body.dark-mode #autocompleteList li { color:#ddd; }
-    body.dark-mode #autocompleteList li strong { color:#fff; }
-    body.dark-mode #autocompleteList li:hover { background-color:#3a3a3a; }
-    #autocompleteList li { padding:5px 0; display:flex; align-items:center; cursor:pointer; }
-    #autocompleteList li img { max-width:30px; max-height:30px; margin-right:10px; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #222;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    body.dark-mode {
+      background-color: #121212;
+      color: #eee;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+      position: relative;
+    }
+    body.dark-mode .container {
+      background: #1e1e1e;
+    }
+    input[type=text] {
+      width: 60%;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    body.dark-mode input[type=text] {
+      background: #333;
+      border: 1px solid #555;
+      color: #eee;
+    }
+    button {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
+      background-color: #4CAF50;
+      color: white;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #darkModeToggle {
+      background-color: #2196F3;
+      margin-left: 10px;
+    }
+    #darkModeToggle:hover {
+      background-color: #1976D2;
+    }
+    .result-item {
+      display: flex;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      padding: 15px 0;
+      cursor: pointer;
+    }
+    body.dark-mode .result-item {
+      border-color: #444;
+    }
+    .result-item img {
+      width: 50px;
+      height: auto;
+      margin-right: 15px;
+    }
+    mark {
+      background-color: yellow;
+      font-weight: bold;
+      padding: 0 3px;
+    }
+    body.dark-mode mark {
+      background-color: #ffda6a;
+    }
+    .content-wrapper {
+      display: flex;
+      gap: 30px;
+    }
+    #results {
+      flex: 1;
+      max-width: 45%;
+    }
+    #details {
+      flex: 1;
+      border-left: 1px solid #ccc;
+      padding-left: 20px;
+    }
+    body.dark-mode #details {
+      border-color: #444;
+    }
+    .drop-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+    }
+    .drop-item img {
+      width: 40px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .top-right-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ff7043;
+    }
+    .top-right-button:hover {
+      background-color: #e55d2e;
+    }
+    #autocompleteList {
+      position: absolute;
+      background: white;
+      z-index: 1000;
+      list-style: none;
+      padding: 10px;
+      margin: 0;
+      width: 60%;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      max-height: 300px;
+      overflow-y: auto;
+      display: none;
+    }
+    body.dark-mode #autocompleteList {
+      background-color: #2b2b2b;
+      border: 1px solid #555;
+    }
+    body.dark-mode #autocompleteList li {
+      color: #ddd;
+    }
+    body.dark-mode #autocompleteList li strong {
+      color: #fff;
+    }
+    body.dark-mode #autocompleteList li:hover {
+      background-color: #3a3a3a;
+    }
+    #autocompleteList li {
+      padding: 5px 0;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    #autocompleteList li img {
+      max-width: 30px;
+      max-height: 30px;
+      margin-right: 10px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <button class="top-right-button" onclick="location.href='https://artaledb.com/ko/index.html'">🏠 메인</button>
+    <button class="top-right-button" onclick="location.href='https://artaledb.com/'">🏠 메인</button>
     <h1>🔍 몬스터 / 아이템 검색</h1>
-    <div style="margin-bottom:20px; position:relative;">
+    <div style="margin-bottom: 20px; position: relative;">
       <input type="text" id="searchInput" placeholder="검색어를 입력하세요 (예: 달팽이)">
       <ul id="autocompleteList"></ul>
       <button id="searchBtn">검색</button>
@@ -54,23 +174,52 @@
   </div>
   <script>
     let monsterData = [], bossData = [], uniqueMap = {};
-    const monsterDataPath = "library/data/monster/monster_data.json";
-    const bossDataPath    = "library/data/monster/boss_data.json";
-    const uniqueItemsPath = "library/data/item/unique_items.json";
-    const monsterImagePath = "library/images/monsters/";
-    const itemImagePath    = "library/images/items/";
+    const monsterDataPath  = 'library/data/monster/monster_data.json';
+    const bossDataPath     = 'library/data/monster/boss_data.json';
+    const uniqueItemsPath  = 'library/data/item/unique_items.json';
+    const monsterImagePath = 'library/images/monsters/';
+    const itemImagePath    = 'library/images/items/';
 
     const escapeHtml = text => text?.replace(/[&<>"']|'/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
 
-    // 이미 로딩 전 클릭 방지
+    function getItemImageName(name) {
+      if (/스킬북/.test(name)) return 'Skillbook';
+      if (/마스터리북/.test(name)) return 'Masterybook';
+      const scrollMatch = name.match(/주문서[^\d]*(\d+)%/);
+      if (scrollMatch) return 'Scroll' + scrollMatch[1];
+      const en = uniqueMap[name];
+      return en ? sanitizeName(en) : sanitizeName(name);
+    }
+
+    const getImageElement = (path, name, isItem = false) => {
+      const img = document.createElement('img');
+      img.alt = name;
+      const filename = isItem ? getItemImageName(name) : stripGender(name).replace(/\s+/g, '_');
+      img.src = path + filename + '.png';
+      img.onerror = () => { img.onerror = null; img.src = path + filename + '.gif'; };
+      return img;
+    };
+
+    const highlightKeyword = (text, keyword) => {
+      const regex = new RegExp(`(${keyword})`, 'gi');
+      return escapeHtml(text).replace(regex, '<mark>$1</mark>');
+    };
+
+    async function loadData() {
+      const [mRes, bRes, uRes] = await Promise.all([
+        fetch(monsterDataPath),
+        fetch(bossDataPath),
+        fetch(uniqueItemsPath)
+      ]);
+      monsterData = await mRes.json();
+      bossData    = await bRes.json();
+      uniqueMap   = await uRes.json();
+    }
+
     function unifiedSearch() {
-      if (!monsterData.length && !bossData.length) {
-        alert('몬스터 데이터가 아직 로딩 중입니다. 잠시 후 다시 시도해주세요.');
-        return;
-      }
       const keywordRaw = document.getElementById('searchInput').value.trim();
       if (!keywordRaw) return alert('검색어를 입력해주세요.');
 
@@ -80,14 +229,12 @@
       resultsContainer.innerHTML = '';
       document.getElementById('details').innerHTML = '';
 
-      // 몬스터 검색: normalized match 또는 부분 문자열 match
       const allMonsters = [...monsterData, ...bossData];
       const monsterMatches = allMonsters.filter(m => {
         const nameLower = m.name.toLowerCase();
         return terms.some(term => normalize(m.name).includes(term) || nameLower.includes(keywordLower));
       });
 
-      // 아이템 검색
       const itemMatches = {};
       allMonsters.forEach(m => {
         if (!m.drops) return;
@@ -101,32 +248,28 @@
         });
       });
 
-      // 몬스터 결과 출력
       if (monsterMatches.length) {
         const title = document.createElement('h2');
         title.textContent = `🧟 몬스터 (${monsterMatches.length})`;
         resultsContainer.appendChild(title);
-        monsterMatches.forEach(monster => {
-          const div = document.createElement('div');
-          div.classList.add('result-item');
-          div.appendChild(getImageElement(monsterImagePath, monster.name));
+        monsterMatches.forEach(mon => {
+          const div = document.createElement('div'); div.classList.add('result-item');
+          div.appendChild(getImageElement(monsterImagePath, mon.name));
           const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(monster.name, keywordRaw);
+          span.innerHTML = highlightKeyword(mon.name, keywordRaw);
           div.appendChild(span);
-          div.addEventListener('click', () => showMonsterDetail(monster));
+          div.addEventListener('click', () => showMonsterDetail(mon));
           resultsContainer.appendChild(div);
         });
       }
 
-      // 아이템 결과 출력
       const itemKeys = Object.keys(itemMatches);
       if (itemKeys.length) {
         const title = document.createElement('h2');
         title.textContent = `🎁 아이템 (${itemKeys.length})`;
         resultsContainer.appendChild(title);
         itemKeys.forEach(item => {
-          const div = document.createElement('div');
-          div.classList.add('result-item');
+          const div = document.createElement('div'); div.classList.add('result-item');
           div.appendChild(getImageElement(itemImagePath, item, true));
           const span = document.createElement('span');
           span.innerHTML = highlightKeyword(item, keywordRaw);
@@ -141,50 +284,24 @@
       }
     }
 
-    function getItemImageName(name) {
-      if (/스킬북/.test(name)) return "Skillbook";
-      if (/마스터리북/.test(name)) return "Masterybook";
-      const scrollMatch = name.match(/주문서[^\d]*(\d+)%/);
-      if (scrollMatch) return "Scroll" + scrollMatch[1];
-      const enName = uniqueMap[name];
-      return enName ? sanitizeName(enName) : sanitizeName(name);
-    }
-
-    function getImageElement(path, name, isItem = false) {
-      const img = document.createElement('img');
-      img.alt = name;
-      const filename = isItem ? getItemImageName(name) : stripGender(name).replace(/\s+/g, '_');
-      img.src = path + filename + '.png';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = path + filename + '.gif';
-      };
-      return img;
-    }
-
-    function highlightKeyword(text, keyword) {
-      const regex = new RegExp(`(${keyword})`, 'gi');
-      return escapeHtml(text).replace(regex, '<mark>$1</mark>');
-    }
-
     function showMonsterDetail(monster) {
       const details = document.getElementById('details');
-      const dropListId = `drop-${sanitizeName(monster.name)}`;
-      const baseName = stripGender(monster.name).replace(/\s+/g, '_');
-      const imgPng = `${monsterImagePath}${baseName}.png`;
-      const imgGif = `${monsterImagePath}${baseName}.gif`;
+      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+      const fn = stripGender(monster.name).replace(/\s+/g, '_');
+      const imgP = `${monsterImagePath}${fn}.png`;
+      const imgG = `${monsterImagePath}${fn}.gif`;
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgPng}" onerror="this.onerror=null;this.src='${imgGif}'">
-        <p><strong>레벨:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>지역:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>경험치:</strong> ${monster.exp || 'N/A'}</p>
-        <button onclick="toggleDrops('${dropListId}')">획득처 보기</button>
-        <div id="${dropListId}" style="display:none; margin-top:10px;">
-          ${(monster.drops || []).map(d => `
+        <img src="${imgP}" alt="${escapeHtml(monster.name)}" onerror="this.onerror=null;this.src='${imgG}'">
+        <p><strong>레벨:</strong> ${monster.level||'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp||'N/A'}</p>
+        <p><strong>지역:</strong> ${monster.region||'N/A'}</p>
+        <p><strong>경험치:</strong> ${monster.exp||'N/A'}</p>
+        <button onclick="toggleDrops('${dropsId}')">획득처 보기</button>
+        <div id="${dropsId}" style="display:none; margin-top:10px;">${(monster.drops||[]).map(d=>`
             <div class="drop-item">
-              <img src="${itemImagePath+getItemImageName(d)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(d)}.gif'"><span>${escapeHtml(d)}</span>
+              <img src="${itemImagePath+getItemImageName(d)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(d)}.gif'" alt="${escapeHtml(d)}">
+              <span>${escapeHtml(d)}</span>
             </div>`).join('')}
         </div>
       `;
@@ -194,47 +311,8 @@
       const details = document.getElementById('details');
       details.innerHTML = `
         <h2>${escapeHtml(item)}</h2>
-        <img src="${itemImagePath+getItemImageName(item)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(item)}.gif'">
+        <img src="${itemImagePath+getItemImageName(item)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(item)}.gif'" alt="${escapeHtml(item)}">
         <h3>획득처</h3>
-        ${monsters.map(m => `
+        ${monsters.map(m=>`
           <div class="drop-item">
-            <img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.gif'"><span>${escapeHtml(m.name)}</span>
-          </div>`).join('')}
-      `;
-    }
-
-    function toggleDrops(id) {
-      const el = document.getElementById(id);
-      el.style.display = el.style.display === 'none' ? 'block' : 'none';
-    }
-
-    // 이벤트 바인딩
-    document.addEventListener('DOMContentLoaded', () => {
-      document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-      document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
-      document.getElementById('darkModeToggle').addEventListener('click', () => document.body.classList.toggle('dark-mode'));
-      loadData();
-    });
-
-    // 데이터 로드 (오류 무시)
-    async function loadData() {
-      try {
-        const [mRes, bRes] = await Promise.all([fetch(monsterDataPath), fetch(bossDataPath)]);
-        monsterData = await mRes.json();
-        bossData    = await bRes.json();
-        console.log('몬스터 데이터 로드 완료', monsterData.length, '보스 데이터 로드 완료', bossData.length);
-      } catch (e) {
-        console.error('몬스터/보스 데이터 로드 실패', e);
-      }
-      try {
-        const uRes = await fetch(uniqueItemsPath);
-        uniqueMap    = await uRes.json();
-        console.log('유니크 아이템 매핑 로드 완료');
-      } catch (e) {
-        console.warn('유니크 아이템 매핑 로드 실패', e);
-        uniqueMap = {};
-      }
-    }
-  </script>
-</body>
-</html>
+            <img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+strip
