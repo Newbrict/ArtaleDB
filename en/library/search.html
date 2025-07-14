@@ -286,32 +286,48 @@
       }
     }
 
-    function showMonsterDetail(monster) {
-      const details = document.getElementById('details');
-      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
-      const filename = stripGender(monster.name).replace(/\s+/g, '_');
-      const imgSrc = `${monsterImagePath}${filename}.png`;
-      const fallbackImgSrc = `${monsterImagePath}${filename}.gif`;
+   function showMonsterDetail(monster) {
+  const details = document.getElementById('details');
+  const dropsId = `drop-list-${sanitizeName(monster.name)}`;
+  const filename = stripGender(monster.name).replace(/\s+/g, '_');
+  const imgSrc = `${monsterImagePath}${filename}.png`;
+  const fallbackImgSrc = `${monsterImagePath}${filename}.gif`;
 
-      details.innerHTML = `
-        <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallbackImgSrc}';" alt="${escapeHtml(monster.name)}">
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-        <p><strong>Modifiers:</strong> ${monster.Modifiers || 'N/A'}</p>
-        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease !== undefined ? ` (1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
-        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
-        <div id="${dropsId}" style="display:none; margin-top:10px;">
-          ${(monster.drops || []).map(drop => `
-            <div class="drop-item">
-              <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
-              <span>${escapeHtml(drop)}</span>
-            </div>
-          `).join('')}
-        </div>`;
-    }
+  details.innerHTML = `
+    <h2>${escapeHtml(monster.name)}</h2>
+    <img src="${imgSrc}"
+         onerror="this.onerror=null;this.src='${fallbackImgSrc}';"
+         alt="${escapeHtml(monster.name)}">
+
+    <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
+    <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+    <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
+    <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
+
+    ${monster.respawn_time 
+      ? `<p><strong>Respawn Time:</strong> ${monster.respawn_time}</p>` 
+      : ''}
+
+    <p><strong>Modifiers:</strong> ${monster.Modifiers || 'N/A'}</p>
+    <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} 
+      ${monster.accuracy_level_decrease !== undefined 
+        ? `(1 level decrease +${monster.accuracy_level_decrease})` 
+        : ''}
+    </p>
+
+    <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+    <div id="${dropsId}" style="display:none; margin-top:10px;">
+      ${(monster.drops || []).map(drop => `
+        <div class="drop-item">
+          <img src="${itemImagePath + getItemImageName(drop)}.png"
+               onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';"
+               alt="${escapeHtml(drop)}">
+          <span>${escapeHtml(drop)}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
 
     function toggleDrops(id, btn) {
       const el = document.getElementById(id);
