@@ -131,6 +131,26 @@
       overflow-y: auto;
       display: none;
     }
+    body.dark-mode #autocompleteList {
+      background-color: #2b2b2b;      
+      border: 1px solid #555;       
+    }
+
+    /* 항목 텍스트 색상 */
+    body.dark-mode #autocompleteList li {
+      color: #ddd;                   
+    }
+
+    /* 섹션 헤더(제목) 강조 색상 */
+    body.dark-mode #autocompleteList li strong {
+      color: #fff;                   
+    }
+
+    /* 항목 호버 시 배경 변화 */
+    body.dark-mode #autocompleteList li:hover {
+      background-color: #3a3a3a;     
+    }
+
     #autocompleteList li {
       padding: 5px 0;
       display: flex;
