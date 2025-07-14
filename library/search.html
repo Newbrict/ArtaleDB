@@ -66,7 +66,7 @@
 
     const getItemImageName = name => {
       if (/스킬북/.test(name))   return "Skillbook";
-      if (/마스터북/.test(name)) return "Masterybook";
+      if (/마스터리북/.test(name)) return "Masterybook";
       const scrollMatch = name.match(/주문서[^\d]*(\d+)%/);
       if (scrollMatch) return "Scroll" + scrollMatch[1];
       if (itemNameMap[name])    return sanitizeName(itemNameMap[name]);
