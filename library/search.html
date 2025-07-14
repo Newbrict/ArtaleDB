@@ -39,7 +39,7 @@
 </head>
 <body>
   <div class="container">
-    <button class="top-right-button" onclick="location.href='https://artaledb.com/'">🏠 메인</button>
+    <button class="top-right-button" onclick="location.href='https://artaledb.com/ko/index.html'">🏠 메인</button>
     <h1>🔍 몬스터 / 아이템 검색</h1>
     <div style="margin-bottom:20px; position:relative;">
       <input type="text" id="searchInput" placeholder="검색어를 입력하세요 (예: 달팽이)">
@@ -53,27 +53,188 @@
     </div>
   </div>
   <script>
-    let monsterData=[], bossData=[], uniqueMap={};
-    const monsterDataPath="library/data/monster/monster_data.json";
-    const bossDataPath="library/data/monster/boss_data.json";
-    const uniqueItemsPath="library/data/item/unique_items.json";
-    const monsterImagePath="library/images/monsters/";
-    const itemImagePath="library/images/items/";
-    const escapeHtml=text=>text?.replace(/[&<>"']|'/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]) )||'';
-    const stripGender=name=>name.replace(/\s*\([MF]\)/i,'').trim();
-    const sanitizeName=name=>name.replace(/[^a-zA-Z0-9]/g,'_');
-    const normalize=text=>sanitizeName(stripGender(text.toLowerCase()));
-    function getItemImageName(name){if(/스킬북/.test(name))return"Skillbook";if(/마스터리북/.test(name))return"Masterybook";const m=name.match(/주문서[^\d]*(\d+)%/);if(m)return"Scroll"+m[1];const e=uniqueMap[name];return e?sanitizeName(e):sanitizeName(name);}    
-    function getImageElement(path,name,isItem=false){const img=document.createElement('img');img.alt=name;const fn=isItem?getItemImageName(name):stripGender(name).replace(/\s+/g,'_');img.src=path+fn+'.png';img.onerror=()=>{img.onerror=null;img.src=path+fn+'.gif';};return img;}    
-    const highlightKeyword=(t,k)=>{const r=new RegExp(`(${k})`,'gi');return escapeHtml(t).replace(r,'<mark>$1</mark>');};
-    async function loadData(){const [r1,r2,r3]=await Promise.all([fetch(monsterDataPath),fetch(bossDataPath),fetch(uniqueItemsPath)]);monsterData=await r1.json();bossData=await r2.json();uniqueMap=await r3.json();}
-    function unifiedSearch(){const kw=document.getElementById('searchInput').value.trim();if(!kw)return alert('검색어를 입력해주세요.');const terms=kw.toLowerCase().split(',').map(t=>normalize(t.trim()));const rc=document.getElementById('results');rc.innerHTML='';document.getElementById('details').innerHTML='';const mMatches=[...monsterData,...bossData].filter(m=>terms.some(t=>normalize(m.name).includes(t)));const iMatches={};[...monsterData,...bossData].forEach(m=>{if(!m.drops)return;m.drops.forEach(d=>{const nd=normalize(d);if(terms.some(t=>nd.includes(t))){iMatches[d]||(iMatches[d]=[]);iMatches[d].push(m);}});});if(mMatches.length){const h=document.createElement('h2');h.textContent=`🧟 몬스터 (${mMatches.length})`;rc.appendChild(h);mMatches.forEach(m=>{const d=document.createElement('div');d.classList.add('result-item');d.appendChild(getImageElement(monsterImagePath,m.name));const s=document.createElement('span');s.innerHTML=highlightKeyword(m.name,kw);d.appendChild(s);d.addEventListener('click',()=>showMonsterDetail(m));rc.appendChild(d);});}const ik=Object.keys(iMatches);if(ik.length){const h2=document.createElement('h2');h2.textContent=`🎁 아이템 (${ik.length})`;rc.appendChild(h2);ik.forEach(item=>{const d=document.createElement('div');d.classList.add('result-item');d.appendChild(getImageElement(itemImagePath,item,true));const s2=document.createElement('span');s2.innerHTML=highlightKeyword(item,kw);d.appendChild(s2);d.addEventListener('click',()=>showItemDetail(item,iMatches[item]));rc.appendChild(d);});}if(!mMatches.length&&!ik.length){rc.innerHTML='<p>결과가 없습니다.</p>';} }
-    function showMonsterDetail(m){const d=document.getElementById('details');const id=`drop-${sanitizeName(m.name)}`;const fn=stripGender(m.name).replace(/\s+/g,'_');const s1=`${monsterImagePath}${fn}.png`,s2=`${monsterImagePath}${fn}.gif`;d.innerHTML=`<h2>${escapeHtml(m.name)}</h2><img src="${s1}" onerror="this.onerror=null;this.src='${s2}'"><p><strong>레벨:</strong>${m.level||'N/A'}</p><p><strong>HP:</strong>${m.hp||'N/A'}</p><p><strong>지역:</strong>${m.region||'N/A'}</p><p><strong>경험치:</strong>${m.exp||'N/A'}</p><p><strong>필요 명중력:</strong>${m.required_accuracy||'N/A'}</p><button onclick="toggleDrops('${id}')">획득처 보기</button><div id="${id}" style="display:none;">${(m.drops||[]).map(d=>`<div class="drop-item"><img src="${itemImagePath+getItemImageName(d)}.png" onerror="this.onerror=null;this.src='`+itemImagePath+getItemImageName(d)+`.gif'"><span>${escapeHtml(d)}</span></div>`).join('')}</div>`;}    
-    function showItemDetail(i,ms){const d=document.getElementById('details');d.innerHTML=`<h2>${escapeHtml(i)}</h2><img src="${itemImagePath+getItemImageName(i)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(i)+'.gif'}'"><h3>획득처</h3>${ms.map(m=>`<div class="drop-item"><img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.gif'"><span>${escapeHtml(m.name)}</span></div>`).join('')}`;}
-    function toggleDrops(id){const e=document.getElementById(id);e.style.display=e.style.display==='none'?'block':'none';}
-    document.getElementById('searchBtn').addEventListener('click',unifiedSearch);
-    document.getElementById('darkModeToggle').addEventListener('click',()=>document.body.classList.toggle('dark-mode'));
-    loadData();
+    let monsterData = [], bossData = [], uniqueMap = {};
+    const monsterDataPath = "library/data/monster/monster_data.json";
+    const bossDataPath    = "library/data/monster/boss_data.json";
+    const uniqueItemsPath = "library/data/item/unique_items.json";
+    const monsterImagePath = "library/images/monsters/";
+    const itemImagePath    = "library/images/items/";
+
+    const escapeHtml = text => text?.replace(/[&<>"']|'/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
+    const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
+    const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
+    const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
+
+    // 이미 로딩 전 클릭 방지
+    function unifiedSearch() {
+      if (!monsterData.length && !bossData.length) {
+        alert('몬스터 데이터가 아직 로딩 중입니다. 잠시 후 다시 시도해주세요.');
+        return;
+      }
+      const keywordRaw = document.getElementById('searchInput').value.trim();
+      if (!keywordRaw) return alert('검색어를 입력해주세요.');
+
+      const keywordLower = keywordRaw.toLowerCase();
+      const terms = keywordLower.split(',').map(t => normalize(t.trim()));
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+      document.getElementById('details').innerHTML = '';
+
+      // 몬스터 검색: normalized match 또는 부분 문자열 match
+      const allMonsters = [...monsterData, ...bossData];
+      const monsterMatches = allMonsters.filter(m => {
+        const nameLower = m.name.toLowerCase();
+        return terms.some(term => normalize(m.name).includes(term) || nameLower.includes(keywordLower));
+      });
+
+      // 아이템 검색
+      const itemMatches = {};
+      allMonsters.forEach(m => {
+        if (!m.drops) return;
+        m.drops.forEach(drop => {
+          const dropNorm = normalize(drop);
+          const dropLower = drop.toLowerCase();
+          if (terms.some(term => dropNorm.includes(term) || dropLower.includes(keywordLower))) {
+            if (!itemMatches[drop]) itemMatches[drop] = [];
+            itemMatches[drop].push(m);
+          }
+        });
+      });
+
+      // 몬스터 결과 출력
+      if (monsterMatches.length) {
+        const title = document.createElement('h2');
+        title.textContent = `🧟 몬스터 (${monsterMatches.length})`;
+        resultsContainer.appendChild(title);
+        monsterMatches.forEach(monster => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(monsterImagePath, monster.name));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(monster.name, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showMonsterDetail(monster));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      // 아이템 결과 출력
+      const itemKeys = Object.keys(itemMatches);
+      if (itemKeys.length) {
+        const title = document.createElement('h2');
+        title.textContent = `🎁 아이템 (${itemKeys.length})`;
+        resultsContainer.appendChild(title);
+        itemKeys.forEach(item => {
+          const div = document.createElement('div');
+          div.classList.add('result-item');
+          div.appendChild(getImageElement(itemImagePath, item, true));
+          const span = document.createElement('span');
+          span.innerHTML = highlightKeyword(item, keywordRaw);
+          div.appendChild(span);
+          div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+          resultsContainer.appendChild(div);
+        });
+      }
+
+      if (!monsterMatches.length && !itemKeys.length) {
+        resultsContainer.innerHTML = '<p>결과가 없습니다.</p>';
+      }
+    }
+
+    function getItemImageName(name) {
+      if (/스킬북/.test(name)) return "Skillbook";
+      if (/마스터리북/.test(name)) return "Masterybook";
+      const scrollMatch = name.match(/주문서[^\d]*(\d+)%/);
+      if (scrollMatch) return "Scroll" + scrollMatch[1];
+      const enName = uniqueMap[name];
+      return enName ? sanitizeName(enName) : sanitizeName(name);
+    }
+
+    function getImageElement(path, name, isItem = false) {
+      const img = document.createElement('img');
+      img.alt = name;
+      const filename = isItem ? getItemImageName(name) : stripGender(name).replace(/\s+/g, '_');
+      img.src = path + filename + '.png';
+      img.onerror = () => {
+        img.onerror = null;
+        img.src = path + filename + '.gif';
+      };
+      return img;
+    }
+
+    function highlightKeyword(text, keyword) {
+      const regex = new RegExp(`(${keyword})`, 'gi');
+      return escapeHtml(text).replace(regex, '<mark>$1</mark>');
+    }
+
+    function showMonsterDetail(monster) {
+      const details = document.getElementById('details');
+      const dropListId = `drop-${sanitizeName(monster.name)}`;
+      const baseName = stripGender(monster.name).replace(/\s+/g, '_');
+      const imgPng = `${monsterImagePath}${baseName}.png`;
+      const imgGif = `${monsterImagePath}${baseName}.gif`;
+      details.innerHTML = `
+        <h2>${escapeHtml(monster.name)}</h2>
+        <img src="${imgPng}" onerror="this.onerror=null;this.src='${imgGif}'">
+        <p><strong>레벨:</strong> ${monster.level || 'N/A'}</p>
+        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
+        <p><strong>지역:</strong> ${monster.region || 'N/A'}</p>
+        <p><strong>경험치:</strong> ${monster.exp || 'N/A'}</p>
+        <button onclick="toggleDrops('${dropListId}')">획득처 보기</button>
+        <div id="${dropListId}" style="display:none; margin-top:10px;">
+          ${(monster.drops || []).map(d => `
+            <div class="drop-item">
+              <img src="${itemImagePath+getItemImageName(d)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(d)}.gif'"><span>${escapeHtml(d)}</span>
+            </div>`).join('')}
+        </div>
+      `;
+    }
+
+    function showItemDetail(item, monsters) {
+      const details = document.getElementById('details');
+      details.innerHTML = `
+        <h2>${escapeHtml(item)}</h2>
+        <img src="${itemImagePath+getItemImageName(item)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(item)}.gif'">
+        <h3>획득처</h3>
+        ${monsters.map(m => `
+          <div class="drop-item">
+            <img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.gif'"><span>${escapeHtml(m.name)}</span>
+          </div>`).join('')}
+      `;
+    }
+
+    function toggleDrops(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    // 이벤트 바인딩
+    document.addEventListener('DOMContentLoaded', () => {
+      document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+      document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
+      document.getElementById('darkModeToggle').addEventListener('click', () => document.body.classList.toggle('dark-mode'));
+      loadData();
+    });
+
+    // 데이터 로드 (오류 무시)
+    async function loadData() {
+      try {
+        const [mRes, bRes] = await Promise.all([fetch(monsterDataPath), fetch(bossDataPath)]);
+        monsterData = await mRes.json();
+        bossData    = await bRes.json();
+        console.log('몬스터 데이터 로드 완료', monsterData.length, '보스 데이터 로드 완료', bossData.length);
+      } catch (e) {
+        console.error('몬스터/보스 데이터 로드 실패', e);
+      }
+      try {
+        const uRes = await fetch(uniqueItemsPath);
+        uniqueMap    = await uRes.json();
+        console.log('유니크 아이템 매핑 로드 완료');
+      } catch (e) {
+        console.warn('유니크 아이템 매핑 로드 실패', e);
+        uniqueMap = {};
+      }
+    }
   </script>
 </body>
 </html>
