@@ -1,0 +1,7818 @@
+[
+  {
+    "name_en": "Snail Shell",
+    "name_kr": "달팽이의 껍질"
+  },
+  {
+    "name_en": "Red Potion",
+    "name_kr": "빨간 포션"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEF 10%",
+    "name_kr": "투구 방어력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Cape for Magic Def 60%",
+    "name_kr": "망토 마법방어력 주문서 60%"
+  },
+  {
+    "name_en": "Arrow for Bow",
+    "name_kr": "활전용 화살"
+  },
+  {
+    "name_en": "Bronze Ore",
+    "name_kr": "청동의 원석"
+  },
+  {
+    "name_en": "Garnet Ore",
+    "name_kr": "가넷의 원석"
+  },
+  {
+    "name_en": "Arrow for Crossbow",
+    "name_kr": "석궁전용 화살"
+  },
+  {
+    "name_en": "Green Headband",
+    "name_kr": "연두색 머리띠"
+  },
+  {
+    "name_en": "Green Apple",
+    "name_kr": "초록사과"
+  },
+  {
+    "name_en": "Blue Snail Shell",
+    "name_kr": "파란 달팽이의 껍질"
+  },
+  {
+    "name_en": "Scroll for Cape for HP 100%",
+    "name_kr": "망토 체력 주문서 100%"
+  },
+  {
+    "name_en": "Amethyst Ore",
+    "name_kr": "자수정의 원석"
+  },
+  {
+    "name_en": "Steel Ore",
+    "name_kr": "강철의 원석"
+  },
+  {
+    "name_en": "Red Striped T Shirt",
+    "name_kr": "빨간 줄무늬 티셔츠"
+  },
+  {
+    "name_en": "Red Striped T Shirt",
+    "name_kr": "파란색 원라인 티셔츠"
+  },
+  {
+    "name_en": "Grey Thick Sweat Pants",
+    "name_kr": "회갈색 수련복"
+  },
+  {
+    "name_en": "Grey Brown Training Shirt",
+    "name_kr": "회갈색 수련복 바지"
+  },
+  {
+    "name_en": "Grey Brown Training Pants",
+    "name_kr": "회색 고무줄 바지"
+  },
+  {
+    "name_en": "Mushroom Spore",
+    "name_kr": "버섯의 포자"
+  },
+  {
+    "name_en": "Scroll for Cape for HP 60%",
+    "name_kr": "망토 체력 주문서 60%"
+  },
+  {
+    "name_en": "AquaMarine Ore",
+    "name_kr": "아쿠아마린의 원석"
+  },
+  {
+    "name_en": "Mithril Ore",
+    "name_kr": "미스릴의 원석"
+  },
+  {
+    "name_en": "Field Dagger",
+    "name_kr": "필드 대거"
+  },
+  {
+    "name_en": "Ice Jeans",
+    "name_kr": "아이스 진"
+  },
+  {
+    "name_en": "Jean Capris",
+    "name_kr": "파란 칠부바지"
+  },
+  {
+    "name_en": "Green Avelin Skirt",
+    "name_kr": "그린 아벨린 치마"
+  },
+  {
+    "name_en": "Brown Rocky Bandana",
+    "name_kr": "브라운 로키 반다나"
+  },
+  {
+    "name_en": "Red Snail Shell",
+    "name_kr": "빨간 달팽이의 껍질"
+  },
+  {
+    "name_en": "Scroll for Cape for MP 100%",
+    "name_kr": "망토 마나 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for DEX 10%",
+    "name_kr": "전신 갑옷 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Wooden Sword",
+    "name_kr": "목검"
+  },
+  {
+    "name_en": "Leather Purse",
+    "name_kr": "가죽 핸드백"
+  },
+  {
+    "name_en": "Silver Ore",
+    "name_kr": "은의 원석"
+  },
+  {
+    "name_en": "Opal Ore",
+    "name_kr": "오팔의 원석"
+  },
+  {
+    "name_en": "Metal Wand",
+    "name_kr": "메탈 완드"
+  },
+  {
+    "name_en": "Brown Duo",
+    "name_kr": "브라운 듀오"
+  },
+  {
+    "name_en": "Amethyst Earrings",
+    "name_kr": "자수정 귀걸이"
+  },
+  {
+    "name_en": "Brown Woodsman Boots",
+    "name_kr": "브라운 우드탑"
+  },
+  {
+    "name_en": "Red Cloth Pants",
+    "name_kr": "홍몽 바지"
+  },
+  {
+    "name_en": "Brown Rocky Suit",
+    "name_kr": "브라운 로키 슈트"
+  },
+  {
+    "name_en": "Tree Branch",
+    "name_kr": "나뭇가지"
+  },
+  {
+    "name_en": "Scroll for Cape for HP 10%",
+    "name_kr": "망토 체력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Topwear for DEF 10%",
+    "name_kr": "상의 방어력 주문서 10%"
+  },
+  {
+    "name_en": "Emerald Ore",
+    "name_kr": "에메랄드의 원석"
+  },
+  {
+    "name_en": "Adamantium Ore",
+    "name_kr": "아다만티움의 원석"
+  },
+  {
+    "name_en": "Triangular Zamadar",
+    "name_kr": "삼각 자마다르"
+  },
+  {
+    "name_en": "Brown High Boots",
+    "name_kr": "브라운 미들 래더"
+  },
+  {
+    "name_en": "Juno",
+    "name_kr": "주노"
+  },
+  {
+    "name_en": "Composite Bow",
+    "name_kr": "합금 활"
+  },
+  {
+    "name_en": "Rookie Pants",
+    "name_kr": "레전드 바지"
+  },
+  {
+    "name_en": "Pistol",
+    "name_kr": "피스톨"
+  },
+  {
+    "name_en": "Squishy Liquid",
+    "name_kr": "물컹물컹한 액체"
+  },
+  {
+    "name_en": "Scroll for Cape for DEX 100%",
+    "name_kr": "망토 민첩성 주문서 100%"
+  },
+  {
+    "name_en": "Slime Bubble",
+    "name_kr": "슬라임의 방울"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for DEF 10%",
+    "name_kr": "하의 방어력 주문서 10%"
+  },
+  {
+    "name_en": "White Bandana",
+    "name_kr": "흰색 두건"
+  },
+  {
+    "name_en": "Metal Axe",
+    "name_kr": "쇠 도끼"
+  },
+  {
+    "name_en": "Orihalcon Ore",
+    "name_kr": "오리할콘의 원석"
+  },
+  {
+    "name_en": "Sapphire Ore",
+    "name_kr": "사파이어의 원석"
+  },
+  {
+    "name_en": "Fork on a Stick",
+    "name_kr": "포크 창"
+  },
+  {
+    "name_en": "Beige Nitty",
+    "name_kr": "베이지 니티"
+  },
+  {
+    "name_en": "Lemona",
+    "name_kr": "레모나"
+  },
+  {
+    "name_en": "Iron Axe",
+    "name_kr": "철제 도끼"
+  },
+  {
+    "name_en": "Steel Knuckler",
+    "name_kr": "스틸 너클"
+  },
+  {
+    "name_en": "Pig's Head",
+    "name_kr": "돼지의 머리"
+  },
+  {
+    "name_en": "Scroll for Cape for LUK 100%",
+    "name_kr": "망토 행운 주문서 100%"
+  },
+  {
+    "name_en": "Brown Hard Leather Pants",
+    "name_kr": "갈색 하드래더 바지"
+  },
+  {
+    "name_en": "Brown Skullcap",
+    "name_kr": "갈색 가죽모자"
+  },
+  {
+    "name_en": "Scroll for Shoes for DEX 10%",
+    "name_kr": "신발 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Wooden Mallet",
+    "name_kr": "나무 망치"
+  },
+  {
+    "name_en": "Gold Ore",
+    "name_kr": "금의 원석"
+  },
+  {
+    "name_en": "Topaz Ore",
+    "name_kr": "토파즈의 원석"
+  },
+  {
+    "name_en": "Garnier",
+    "name_kr": "가니어"
+  },
+  {
+    "name_en": "White Split Skirt",
+    "name_kr": "흰색 가람 치마"
+  },
+  {
+    "name_en": "Leather",
+    "name_kr": "동물의 가죽"
+  },
+  {
+    "name_en": "Orange Lolica Armor",
+    "name_kr": "오렌지 스퀘이머"
+  },
+  {
+    "name_en": "Dark Nightshift",
+    "name_kr": "흑야"
+  },
+  {
+    "name_en": "Orange Mushroom Cap",
+    "name_kr": "주황버섯의 갓"
+  },
+  {
+    "name_en": "Scroll for Shoes for Jump 10%",
+    "name_kr": "신발 점프력 주문서 10%"
+  },
+  {
+    "name_en": "White Gomushin",
+    "name_kr": "흰색 고무신"
+  },
+  {
+    "name_en": "Bronze Koif",
+    "name_kr": "브론즈 코이프"
+  },
+  {
+    "name_en": "Spear",
+    "name_kr": "창"
+  },
+  {
+    "name_en": "Double Axe",
+    "name_kr": "양날 도끼"
+  },
+  {
+    "name_en": "Diamond Ore",
+    "name_kr": "다이아몬드의 원석"
+  },
+  {
+    "name_en": "Basic Archer Gloves",
+    "name_kr": "아르"
+  },
+  {
+    "name_en": "Red Ninja Sandals",
+    "name_kr": "빨간색 닌자 샌들"
+  },
+  {
+    "name_en": "Brown Hard Leather Boots",
+    "name_kr": "브라운 하드래더 부츠"
+  },
+  {
+    "name_en": "Bullet",
+    "name_kr": "불릿"
+  },
+  {
+    "name_en": "Leaf",
+    "name_kr": "나뭇잎"
+  },
+  {
+    "name_en": "Scroll for Gloves for DEX 10%",
+    "name_kr": "장갑 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Stolen Fence",
+    "name_kr": "사각 나무 방패"
+  },
+  {
+    "name_en": "Bronze Helmet",
+    "name_kr": "브론즈 캡"
+  },
+  {
+    "name_en": "Pole Arm",
+    "name_kr": "폴암"
+  },
+  {
+    "name_en": "Yellow Avelin",
+    "name_kr": "옐로우 아벨린"
+  },
+  {
+    "name_en": "Yellow Avelin Skirt",
+    "name_kr": "옐로우 아벨린 치마"
+  },
+  {
+    "name_en": "Green Arianne Skirt",
+    "name_kr": "그린 아리안느 치마"
+  },
+  {
+    "name_en": "Green Arianne",
+    "name_kr": "그린 아리안느"
+  },
+  {
+    "name_en": "Single Earring",
+    "name_kr": "한쪽 은 귀고리"
+  },
+  {
+    "name_en": "Wooden Staff",
+    "name_kr": "나무 스태프"
+  },
+  {
+    "name_en": "Machete",
+    "name_kr": "쿠크리"
+  },
+  {
+    "name_en": "Orange Potion",
+    "name_kr": "주황 포션"
+  },
+  {
+    "name_en": "Blue Potion",
+    "name_kr": "파란 포션"
+  },
+  {
+    "name_en": "Brown Lagger Cap",
+    "name_kr": "브라운 래거 캡"
+  },
+  {
+    "name_en": "Pig's Ribbon",
+    "name_kr": "돼지의 리본"
+  },
+  {
+    "name_en": "Stiff Feather",
+    "name_kr": "뻣뻣한 깃털"
+  },
+  {
+    "name_en": "Scroll for Shield for DEF 10%",
+    "name_kr": "방패 방어력 주문서 10%"
+  },
+  {
+    "name_en": "Silver Leather Hoodwear",
+    "name_kr": "은색 래더 후드웨어"
+  },
+  {
+    "name_en": "Dark Nightshift Pants",
+    "name_kr": "흑야 바지"
+  },
+  {
+    "name_en": "Wooden Samurai Sword",
+    "name_kr": "환목검"
+  },
+  {
+    "name_en": "Orange Sporty T Shirt",
+    "name_kr": "주황색 스포츠 티셔츠"
+  },
+  {
+    "name_en": "Brown Cotton Lagger",
+    "name_kr": "브라운 코튼래거"
+  },
+  {
+    "name_en": "Brown Lagger Slipper",
+    "name_kr": "브라운 래거 슬리퍼"
+  },
+  {
+    "name_en": "Octopus Leg",
+    "name_kr": "옥토퍼스의 다리"
+  },
+  {
+    "name_en": "Scroll for One Handed Sword for ATT 10%",
+    "name_kr": "한손검 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Steel Shield",
+    "name_kr": "강철 방패"
+  },
+  {
+    "name_en": "Yellow Arianne Skirt",
+    "name_kr": "옐로우 아리안느 치마"
+  },
+  {
+    "name_en": "Brown Corporal",
+    "name_kr": "브론즈 코퍼럴"
+  },
+  {
+    "name_en": "Brown Corporal Pants",
+    "name_kr": "브론즈 코퍼럴 바지"
+  },
+  {
+    "name_en": "Leather Arms",
+    "name_kr": "래더 암즈"
+  },
+  {
+    "name_en": "Green Mushroom Cap",
+    "name_kr": "초록버섯의 갓"
+  },
+  {
+    "name_en": "Scroll for One Handed Axe for ATT 10%",
+    "name_kr": "한손도끼 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Mace",
+    "name_kr": "메이스"
+  },
+  {
+    "name_en": "Red Nightshift",
+    "name_kr": "적야"
+  },
+  {
+    "name_en": "Red Nightshift Pants",
+    "name_kr": "적야 바지"
+  },
+  {
+    "name_en": "Pan Lid",
+    "name_kr": "냄비 뚜껑"
+  },
+  {
+    "name_en": "Battle Crossbow",
+    "name_kr": "전투 석궁"
+  },
+  {
+    "name_en": "Green Able Armor",
+    "name_kr": "그레이 아벨 래더아머"
+  },
+  {
+    "name_en": "Green Able Armor Skirt",
+    "name_kr": "그레이 아벨 가죽치마"
+  },
+  {
+    "name_en": "Old Wisconsin",
+    "name_kr": "군밤장수 모자"
+  },
+  {
+    "name_en": "Long Sword",
+    "name_kr": "카알 대검"
+  },
+  {
+    "name_en": "Brown Winter Hat",
+    "name_kr": "갈색 고급 가죽 모자"
+  },
+  {
+    "name_en": "Green Matty",
+    "name_kr": "그린 매티"
+  },
+  {
+    "name_en": "Zeco",
+    "name_kr": "제코"
+  },
+  {
+    "name_en": "Purple Arianne",
+    "name_kr": "퍼플 아리안느"
+  },
+  {
+    "name_en": "Purple Arianne Skirt",
+    "name_kr": "퍼플 아리안느 치마"
+  },
+  {
+    "name_en": "Scroll for Cape for INT 100%",
+    "name_kr": "망토 지력 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Dagger for ATT 10%",
+    "name_kr": "단검 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Cape for Weapon Def 60%",
+    "name_kr": "망토 물리방어력 주문서 60%"
+  },
+  {
+    "name_en": "Bubbling's Huge Bubble",
+    "name_kr": "버블링의 큰 방울"
+  },
+  {
+    "name_en": "Red Apprentice Hat",
+    "name_kr": "붉은색 낡은 고깔 모자"
+  },
+  {
+    "name_en": "Blue Nightshift",
+    "name_kr": "청야"
+  },
+  {
+    "name_en": "Blue Nightshift Pants",
+    "name_kr": "청야 바지"
+  },
+  {
+    "name_en": "Yellow Able Armor",
+    "name_kr": "옐로우 아벨 래더아머"
+  },
+  {
+    "name_en": "Brown Abel Skirt",
+    "name_kr": "브라운 아벨 가죽치마"
+  },
+  {
+    "name_en": "Blue Jewelry Boots",
+    "name_kr": "블루 쥬얼리 슈즈"
+  },
+  {
+    "name_en": "Fish Spear",
+    "name_kr": "물고기 작살"
+  },
+  {
+    "name_en": "The Magic Rock",
+    "name_kr": "마법의 돌"
+  },
+  {
+    "name_en": "Green Lagger Halfglove",
+    "name_kr": "그린 래거 하프글로브"
+  },
+  {
+    "name_en": "Dellinger Special",
+    "name_kr": "델린져"
+  },
+  {
+    "name_en": "Firewood",
+    "name_kr": "장작"
+  },
+  {
+    "name_en": "Scroll for One Handed BW for ATT 10%",
+    "name_kr": "한손둔기 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Wizard Wand",
+    "name_kr": "위저드 완드"
+  },
+  {
+    "name_en": "Bronze Aroa Boots",
+    "name_kr": "고동색 아로아 슈즈"
+  },
+  {
+    "name_en": "Contra Axe",
+    "name_kr": "콘트라 엑스"
+  },
+  {
+    "name_en": "Battle Shield",
+    "name_kr": "배틀 실드"
+  },
+  {
+    "name_en": "Orange Split Piece",
+    "name_kr": "주황색 가람"
+  },
+  {
+    "name_en": "White Split Pants",
+    "name_kr": "흰색 가람 바지"
+  },
+  {
+    "name_en": "Brown Nightshift",
+    "name_kr": "황야"
+  },
+  {
+    "name_en": "Brown Nightshift Pants",
+    "name_kr": "황야 바지"
+  },
+  {
+    "name_en": "Blue Robin Hat",
+    "name_kr": "블루 패더윙햇"
+  },
+  {
+    "name_en": "Old Wooden Staff",
+    "name_kr": "고목나무 스태프"
+  },
+  {
+    "name_en": "Wooden Baseball Bat",
+    "name_kr": "나무 야구 방망이"
+  },
+  {
+    "name_en": "Seedling",
+    "name_kr": "묘목"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for DEX 60%",
+    "name_kr": "전신 갑옷 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Gloves for DEX 60%",
+    "name_kr": "장갑 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Brown Able Skirt",
+    "name_kr": "브라운 아벨 가죽치마"
+  },
+  {
+    "name_en": "Green Plain Robe",
+    "name_kr": "그린 플레로브"
+  },
+  {
+    "name_en": "Black Split Piece",
+    "name_kr": "검은색 가람"
+  },
+  {
+    "name_en": "Black Split Skirt",
+    "name_kr": "검은색 가람 치마"
+  },
+  {
+    "name_en": "Orange High Boots",
+    "name_kr": "오렌지 미들 래더"
+  },
+  {
+    "name_en": "Blue Enamel Boots",
+    "name_kr": "파란색 에나멜 부츠"
+  },
+  {
+    "name_en": "Dark Savata",
+    "name_kr": "다크 사바타"
+  },
+  {
+    "name_en": "Red Thief Hood",
+    "name_kr": "레드 시프 후드"
+  },
+  {
+    "name_en": "Blue Feather Hat",
+    "name_kr": "블루 페더햇"
+  },
+  {
+    "name_en": "Blue Wizard Robe",
+    "name_kr": "파란색 사제의 로브"
+  },
+  {
+    "name_en": "Scroll for Knuckle for ATT 10%",
+    "name_kr": "너클 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Bronze Full Helm",
+    "name_kr": "브론즈 풀 헬름"
+  },
+  {
+    "name_en": "Red Split",
+    "name_kr": "붉은색 가람"
+  },
+  {
+    "name_en": "Blue Savata",
+    "name_kr": "블루 사바타"
+  },
+  {
+    "name_en": "Red Ankle-strap Sandals",
+    "name_kr": "빨간색 도로시 구두"
+  },
+  {
+    "name_en": "Misthil Axe",
+    "name_kr": "미스릴 도끼"
+  },
+  {
+    "name_en": "Scroll for Topwear for DEF 60%",
+    "name_kr": "상의 방어력 주문서 60%"
+  },
+  {
+    "name_en": "Magic Potion",
+    "name_kr": "마법사의 물약"
+  },
+  {
+    "name_en": "Blue Mushroom Cap",
+    "name_kr": "파란버섯의 갓"
+  },
+  {
+    "name_en": "Scroll for Two Handed Sword for ATT 10%",
+    "name_kr": "한손검 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Steel Fitted Mail",
+    "name_kr": "스틸 메일"
+  },
+  {
+    "name_en": "Red Loosecap",
+    "name_kr": "레드 루즈캡"
+  },
+  {
+    "name_en": "Mithril Pole Arm",
+    "name_kr": "미스릴 폴암"
+  },
+  {
+    "name_en": "Red Shivermail",
+    "name_kr": "레드 쉬버메일"
+  },
+  {
+    "name_en": "Red Shivermail Skirt",
+    "name_kr": "레드 쉬버메일 치마"
+  },
+  {
+    "name_en": "Blue Sergeant",
+    "name_kr": "블루 서전트"
+  },
+  {
+    "name_en": "Steel Sergeant Kilt",
+    "name_kr": "스틸 서전트 치마"
+  },
+  {
+    "name_en": "Purple Jewelry Boots",
+    "name_kr": "퍼플 쥬얼리 슈즈"
+  },
+  {
+    "name_en": "White Potion",
+    "name_kr": "하얀 포션"
+  },
+  {
+    "name_en": "Mithril War Boots",
+    "name_kr": "미스릴 워 부츠"
+  },
+  {
+    "name_en": "Halfmoon Zamadar",
+    "name_kr": "반월 자마다르"
+  },
+  {
+    "name_en": "Wizard Staff",
+    "name_kr": "위저드 스태프"
+  },
+  {
+    "name_en": "Green Burgler",
+    "name_kr": "그린 버글러"
+  },
+  {
+    "name_en": "Brown Double Marine",
+    "name_kr": "브라운 더블마린"
+  },
+  {
+    "name_en": "Brown Pitz Bandana",
+    "name_kr": "브라운 피츠 반다나"
+  },
+  {
+    "name_en": "Stirge Wing",
+    "name_kr": "스티지의 날개"
+  },
+  {
+    "name_en": "Lemon",
+    "name_kr": "레몬"
+  },
+  {
+    "name_en": "Steel Corporal",
+    "name_kr": "스틸 코퍼럴"
+  },
+  {
+    "name_en": "Steel Corporal Pants",
+    "name_kr": "스틸 코퍼럴 바지"
+  },
+  {
+    "name_en": "Red Pao",
+    "name_kr": "빨간색 파오"
+  },
+  {
+    "name_en": "Red Pao Bottom",
+    "name_kr": "빨간색 파오 바지"
+  },
+  {
+    "name_en": "Pink Qi Pao",
+    "name_kr": "분홍색 친파오"
+  },
+  {
+    "name_en": "Purple Qi Pao Skirt",
+    "name_kr": "보라색 친파오 치마"
+  },
+  {
+    "name_en": "Scroll for Knuckle for ATT 60%",
+    "name_kr": "너클 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Cape for Magic Def 10%",
+    "name_kr": "망토 마법방어력 주문서 10%"
+  },
+  {
+    "name_en": "Green Robin Hat",
+    "name_kr": "그린 페더윙햇"
+  },
+  {
+    "name_en": "Ryden",
+    "name_kr": "라이덴"
+  },
+  {
+    "name_en": "Scroll for Helmet for INT 100%",
+    "name_kr": "투구 지력 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for One Handed Axe for Accuracy 60%",
+    "name_kr": "한손도끼 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Work Gloves",
+    "name_kr": "노가다 목장갑"
+  },
+  {
+    "name_en": "Beige Carribean",
+    "name_kr": "베이지 카리브어"
+  },
+  {
+    "name_en": "Jr Necki's Skin",
+    "name_kr": "주니어 네키의 가죽"
+  },
+  {
+    "name_en": "Orange",
+    "name_kr": "오렌지"
+  },
+  {
+    "name_en": "Coconut Knife",
+    "name_kr": "넙치검"
+  },
+  {
+    "name_en": "Red Jack Boots",
+    "name_kr": "레드 잭부츠"
+  },
+  {
+    "name_en": "Steel Sharp Helm",
+    "name_kr": "스틸 샤프 헬름"
+  },
+  {
+    "name_en": "Blue Kendo Robe",
+    "name_kr": "파란색 검도복"
+  },
+  {
+    "name_en": "Purple Split",
+    "name_kr": "보라색 가람"
+  },
+  {
+    "name_en": "Brown Lamelle",
+    "name_kr": "브라운 라멜"
+  },
+  {
+    "name_en": "Brown Ramel Skirt",
+    "name_kr": "브라운 라멜 치마"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for Jump 100%",
+    "name_kr": "하의 점프력 주문서 100%"
+  },
+  {
+    "name_en": "Double Tail Knuckler",
+    "name_kr": "더블테일 너클"
+  },
+  {
+    "name_en": "Sap of Ancient Tree",
+    "name_kr": "고목 나무의 수액"
+  },
+  {
+    "name_en": "Scroll for Two Handed BW for ATT 10%",
+    "name_kr": "두손둔기 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Brown Doroness Robe",
+    "name_kr": "브라운 도로네스 로브"
+  },
+  {
+    "name_en": "Green Able Armor Skirt",
+    "name_kr": "그린 아벨 가죽치마"
+  },
+  {
+    "name_en": "Purple Shivermail",
+    "name_kr": "퍼플 쉬버메일"
+  },
+  {
+    "name_en": "Purple Shivermail Skirt",
+    "name_kr": "퍼플 쉬버메일 치마"
+  },
+  {
+    "name_en": "Adamantium Igor",
+    "name_kr": "아다만티움 이고르"
+  },
+  {
+    "name_en": "Red Lappy Boots",
+    "name_kr": "레드 래피 부츠"
+  },
+  {
+    "name_en": "Yellow Starry Bandana",
+    "name_kr": "노란색 별 두건"
+  },
+  {
+    "name_en": "Mithril Guards",
+    "name_kr": "미스릴 가즈"
+  },
+  {
+    "name_en": "Silver Guardian",
+    "name_kr": "실버 가디언"
+  },
+  {
+    "name_en": "Purple Doroness Robe",
+    "name_kr": "퍼플 도로네스 로브"
+  },
+  {
+    "name_en": "Black Lappy Boots",
+    "name_kr": "블랙 래피 부츠"
+  },
+  {
+    "name_en": "The Summoning Rock",
+    "name_kr": "소환의 돌"
+  },
+  {
+    "name_en": "Wooden Top",
+    "name_kr": "나무팽이"
+  },
+  {
+    "name_en": "Axe",
+    "name_kr": "도끼"
+  },
+  {
+    "name_en": "Scroll for Two Handed Sword for Accuracy 60%",
+    "name_kr": "두손검 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Two Handed BW for Accuracy 100%",
+    "name_kr": "두손둔기 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Horny Mushroom Cap",
+    "name_kr": "뿔버섯의 갓"
+  },
+  {
+    "name_en": "Wizard Potion",
+    "name_kr": "현자의 물약"
+  },
+  {
+    "name_en": "Scroll for Two Handed Axe for ATT 10%",
+    "name_kr": "두손도끼 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Iron Burgernet Helm",
+    "name_kr": "아이언 버거넷 헬름"
+  },
+  {
+    "name_en": "Green Able Armor",
+    "name_kr": "그린린 아벨 래더아머"
+  },
+  {
+    "name_en": "Yellow Windshoes",
+    "name_kr": "옐로우 윈드슈즈"
+  },
+  {
+    "name_en": "Red Kendo Robe",
+    "name_kr": "빨간색 검도복"
+  },
+  {
+    "name_en": "Eagle Crow",
+    "name_kr": "이글 크로"
+  },
+  {
+    "name_en": "Black Pao",
+    "name_kr": "검정색 파오"
+  },
+  {
+    "name_en": "Black Pao Bottom",
+    "name_kr": "검정색 파오 바지"
+  },
+  {
+    "name_en": "Blue Jean Shorts",
+    "name_kr": "파란 청 반바지"
+  },
+  {
+    "name_en": "Steel Fingerless Gloves",
+    "name_kr": "강철 반장갑"
+  },
+  {
+    "name_en": "Brown Jester",
+    "name_kr": "브라운 핀터"
+  },
+  {
+    "name_en": "Cutlus",
+    "name_kr": "커틀러스"
+  },
+  {
+    "name_en": "The Negotiator",
+    "name_kr": "개런드 피스톨"
+  },
+  {
+    "name_en": "Brown Turk Gally",
+    "name_kr": "브라운 툴크갤리"
+  },
+  {
+    "name_en": "Scroll for One Handed BW for Accuracy 10%",
+    "name_kr": "한손둔기 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Green Moon Conehat",
+    "name_kr": "그린문 고깔모자"
+  },
+  {
+    "name_en": "Bronze Wolfskin",
+    "name_kr": "브론즈 우드쉽"
+  },
+  {
+    "name_en": "Silver War Boots",
+    "name_kr": "실버 워 부츠"
+  },
+  {
+    "name_en": "Viking Sword",
+    "name_kr": "바이킹 소드"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for DEF 60%",
+    "name_kr": "하의 방어력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Earring for INT 10%",
+    "name_kr": "귀 장식 지력 주문서 10%"
+  },
+  {
+    "name_en": "Wooden Board",
+    "name_kr": "목판"
+  },
+  {
+    "name_en": "Scroll for Cape for INT 60%",
+    "name_kr": "망토 지력 주문서 60%"
+  },
+  {
+    "name_en": "Brown Robin Hat",
+    "name_kr": "브라운 페더윙햇"
+  },
+  {
+    "name_en": "Mithril Viking Helm",
+    "name_kr": "미스릴 바이킹 헬름"
+  },
+  {
+    "name_en": "Scroll for Shield for DEF 60%",
+    "name_kr": "방패 방어력 주문서 60%"
+  },
+  {
+    "name_en": "Blue Split Piece",
+    "name_kr": "푸른색 가람"
+  },
+  {
+    "name_en": "Green Loosecap",
+    "name_kr": "그린 루즈캡"
+  },
+  {
+    "name_en": "Black Split Pants",
+    "name_kr": "검은색 가람 바지"
+  },
+  {
+    "name_en": "Gold War Boots",
+    "name_kr": "골드 워 부츠"
+  },
+  {
+    "name_en": "Silver Sylvia",
+    "name_kr": "실버 실비아"
+  },
+  {
+    "name_en": "Iron Dagger",
+    "name_kr": "아이언 대거"
+  },
+  {
+    "name_en": "Orihalcon Missel",
+    "name_kr": "오리할콘 미셀"
+  },
+  {
+    "name_en": "Ocean Mesana",
+    "name_kr": "오션 메사나"
+  },
+  {
+    "name_en": "Scroll for Spear for Accuracy 60%",
+    "name_kr": "창 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Knuckle for Accuracy 100%",
+    "name_kr": "너클 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Spiderweb",
+    "name_kr": "거미줄"
+  },
+  {
+    "name_en": "Warrior Pill",
+    "name_kr": "전사의 알약"
+  },
+  {
+    "name_en": "LUK Crystal Ore",
+    "name_kr": "행운의 크리스탈 원석"
+  },
+  {
+    "name_en": "Scroll for Shield for DEF 100%",
+    "name_kr": "방패 방어력 주문서 100%"
+  },
+  {
+    "name_en": "Korean Fan",
+    "name_kr": "태극부채"
+  },
+  {
+    "name_en": "Aluminum Baseball Bat",
+    "name_kr": "알루미늄 야구 방망이"
+  },
+  {
+    "name_en": "Eloon",
+    "name_kr": "일룬"
+  },
+  {
+    "name_en": "Red Savata",
+    "name_kr": "레드 사바타"
+  },
+  {
+    "name_en": "Red Starry Bandana",
+    "name_kr": "빨간색 별 두건"
+  },
+  {
+    "name_en": "Blue Doros Robe",
+    "name_kr": "블루 도로스 로브"
+  },
+  {
+    "name_en": "Subi Throwing Stars",
+    "name_kr": "수비 표창"
+  },
+  {
+    "name_en": "Balanche",
+    "name_kr": "발란쉐"
+  },
+  {
+    "name_en": "Brown Skeedy Sandals",
+    "name_kr": "브라운 스키디 샌들"
+  },
+  {
+    "name_en": "Brown Wooden Krag",
+    "name_kr": "브라운 우든크라그"
+  },
+  {
+    "name_en": "Scroll for Earring for LUK 100%",
+    "name_kr": "귀 장식 행운 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Two Handed Axe for Accuracy 10%",
+    "name_kr": "두손도끼 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Jr Sentinel Shellpiece",
+    "name_kr": "주니어 스톤볼의 돌조각"
+  },
+  {
+    "name_en": "Brown Loosecap",
+    "name_kr": "브라운 루즈캡"
+  },
+  {
+    "name_en": "Iron Mace",
+    "name_kr": "강철 메이스"
+  },
+  {
+    "name_en": "Fusion Mace",
+    "name_kr": "퓨전 메이스"
+  },
+  {
+    "name_en": "Orihalcon Master Sergeant Kilt",
+    "name_kr": "오리할콘 마스터 서전트 치마"
+  },
+  {
+    "name_en": "Orihalcon Master Sergeant",
+    "name_kr": "오리할콘 마스터 서전트"
+  },
+  {
+    "name_en": "Black Steal",
+    "name_kr": "블랙 스틸레스"
+  },
+  {
+    "name_en": "Black Steal Pants",
+    "name_kr": "블랙 스틸레스 바지지"
+  },
+  {
+    "name_en": "Bronze Arrow for Bow",
+    "name_kr": "활전용 청동화살"
+  },
+  {
+    "name_en": "Bronze Arrow for Crossbow",
+    "name_kr": "석궁전용 청동화살"
+  },
+  {
+    "name_en": "Scroll for Two Handed BW for Accuracy 60%",
+    "name_kr": "두손둔기 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Charm of the Undead",
+    "name_kr": "죽은 자의 부적"
+  },
+  {
+    "name_en": "Scroll for Spear for ATT 10%",
+    "name_kr": "창 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Weighted Earrings",
+    "name_kr": "추 귀고리"
+  },
+  {
+    "name_en": "Gold Earrings",
+    "name_kr": "금 귀고리"
+  },
+  {
+    "name_en": "Hunter's Bow",
+    "name_kr": "사냥꾼의 활"
+  },
+  {
+    "name_en": "Green Hunter",
+    "name_kr": "그린 헌트"
+  },
+  {
+    "name_en": "Brown Sneak",
+    "name_kr": "브라운 스니크"
+  },
+  {
+    "name_en": "Brown Sneak Pants",
+    "name_kr": "브라운 스니크 바지"
+  },
+  {
+    "name_en": "Mithril Wand",
+    "name_kr": "미스릴 완드"
+  },
+  {
+    "name_en": "Red Martial Arts Pants",
+    "name_kr": "홍무 바지"
+  },
+  {
+    "name_en": "Green Hwarang Shirt",
+    "name_kr": "지천의"
+  },
+  {
+    "name_en": "Blue Chaos Robe",
+    "name_kr": "블루 데빌즈 로브"
+  },
+  {
+    "name_en": "White Chaos Robe",
+    "name_kr": "화이트 데빌즈 로브"
+  },
+  {
+    "name_en": "Pink Jester",
+    "name_kr": "핑크 핀터"
+  },
+  {
+    "name_en": "Nakamaki",
+    "name_kr": "나카마키"
+  },
+  {
+    "name_en": "Red Hwarang Shirt",
+    "name_kr": "지장의"
+  },
+  {
+    "name_en": "Blue Counter",
+    "name_kr": "블루 카운터"
+  },
+  {
+    "name_en": "Golden Hook",
+    "name_kr": "골든훅"
+  },
+  {
+    "name_en": "Speed Potion",
+    "name_kr": "민첩함의 물약"
+  },
+  {
+    "name_en": "Brown Leather Armor Glove",
+    "name_kr": "브라운 래더 아머글로브"
+  },
+  {
+    "name_en": "Slate",
+    "name_kr": "석판"
+  },
+  {
+    "name_en": "Scroll for Earring for INT 60%",
+    "name_kr": "귀 장식 지력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Spear for ATT 60%",
+    "name_kr": "창 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Ice Wand",
+    "name_kr": "아이스 완드"
+  },
+  {
+    "name_en": "Blue Pao Bottom",
+    "name_kr": "파란색 파오 바지"
+  },
+  {
+    "name_en": "Blue Pao",
+    "name_kr": "파란색 파오"
+  },
+  {
+    "name_en": "Sky Shark",
+    "name_kr": "스카이 샤크"
+  },
+  {
+    "name_en": "Sky Shark Skirt",
+    "name_kr": "스카이 샤크 치마"
+  },
+  {
+    "name_en": "Scroll for Staff for Magic ATT 60%",
+    "name_kr": "스태프 마력 주문서 60%"
+  },
+  {
+    "name_en": "Green Marker",
+    "name_kr": "그린 마커"
+  },
+  {
+    "name_en": "Red Lutia",
+    "name_kr": "레드 루티아"
+  },
+  {
+    "name_en": "Black Sneak",
+    "name_kr": "블랙 스니크"
+  },
+  {
+    "name_en": "Black Sneak Pants",
+    "name_kr": "블랙 스니크 바지지"
+  },
+  {
+    "name_en": "Lollipop",
+    "name_kr": "막대 사탕"
+  },
+  {
+    "name_en": "Forked Spear",
+    "name_kr": "삼지창"
+  },
+  {
+    "name_en": "Mokbi Throwing Stars",
+    "name_kr": "목비 표창"
+  },
+  {
+    "name_en": "Scroll for Earring for LUK 60%",
+    "name_kr": "귀 장식 행운 주문서 60%"
+  },
+  {
+    "name_en": "Seclusion Wristguard",
+    "name_kr": "시클루전 리스트"
+  },
+  {
+    "name_en": "Wild Boar Tooth",
+    "name_kr": "와일드보어의 송곳니"
+  },
+  {
+    "name_en": "Green Shivermail",
+    "name_kr": "그린 쉬버메일"
+  },
+  {
+    "name_en": "Green Shivermail Skirt",
+    "name_kr": "그린 쉬버메일 치마"
+  },
+  {
+    "name_en": "Red Doroness Robe",
+    "name_kr": "레드 도로네스 로브"
+  },
+  {
+    "name_en": "Sapphire Earrings",
+    "name_kr": "사파이어 귀고리"
+  },
+  {
+    "name_en": "Bronze Pride",
+    "name_kr": "손오공 청동 머리띠"
+  },
+  {
+    "name_en": "Mithril Battle Grieves",
+    "name_kr": "미스릴 배틀 그리브"
+  },
+  {
+    "name_en": "Iron Chain Boots",
+    "name_kr": "아이언 체인슈즈"
+  },
+  {
+    "name_en": "Lionheart",
+    "name_kr": "하이랜더"
+  },
+  {
+    "name_en": "Circle Winded Staff",
+    "name_kr": "써클윈드 스태프"
+  },
+  {
+    "name_en": "Brown Piette Pants",
+    "name_kr": "브라운 피에뜨 바지"
+  },
+  {
+    "name_en": "Brown Piette",
+    "name_kr": "브라운 피에뜨"
+  },
+  {
+    "name_en": "Blue Knucklevest Pants",
+    "name_kr": "블루 너클베스트 바지"
+  },
+  {
+    "name_en": "Brown Guiltian",
+    "name_kr": "브라운 길티언"
+  },
+  {
+    "name_en": "Red Distinction",
+    "name_kr": "레드 크라페"
+  },
+  {
+    "name_en": "Sabretooth",
+    "name_kr": "버드빌"
+  },
+  {
+    "name_en": "Hard Leather Glove",
+    "name_kr": "하드레더 글로브"
+  },
+  {
+    "name_en": "Split Bullet",
+    "name_kr": "스플릿 불릿"
+  },
+  {
+    "name_en": "Warrior Potion",
+    "name_kr": "전사의 물약"
+  },
+  {
+    "name_en": "Crow Feather",
+    "name_kr": "까마귀 깃털"
+  },
+  {
+    "name_en": "Fish Cake Skewer",
+    "name_kr": "어묵(꼬치)"
+  },
+  {
+    "name_en": "Mana Elixir",
+    "name_kr": "마나 엘릭서"
+  },
+  {
+    "name_en": "Dango",
+    "name_kr": "당고"
+  },
+  {
+    "name_en": "Green Umbrella",
+    "name_kr": "연두색 우산"
+  },
+  {
+    "name_en": "Blue Whitebottom Boots",
+    "name_kr": "파란색 가죽구두"
+  },
+  {
+    "name_en": "Aqua Snowboard",
+    "name_kr": "아쿠아 스노우보드"
+  },
+  {
+    "name_en": "Red Engrit",
+    "name_kr": "레드 잉그리트"
+  },
+  {
+    "name_en": "Blue Guise",
+    "name_kr": "블루 가이즈"
+  },
+  {
+    "name_en": "Bronze Mischief",
+    "name_kr": "브론즈 스틸라인"
+  },
+  {
+    "name_en": "Scroll for Shoes for Jump 60%",
+    "name_kr": "신발 점프력 주문서 60%"
+  },
+  {
+    "name_en": "Evil Eye's Tail",
+    "name_kr": "이블아이의 꼬리"
+  },
+  {
+    "name_en": "Scroll for Pole Arm for ATT 10%",
+    "name_kr": "폴암 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Yellow Square",
+    "name_kr": "옐로우 스퀘어"
+  },
+  {
+    "name_en": "Gold Sneak",
+    "name_kr": "골드 스니클리스"
+  },
+  {
+    "name_en": "Great Red Helmet",
+    "name_kr": "레드 그레이트 헬멧"
+  },
+  {
+    "name_en": "Cat's Eye",
+    "name_kr": "캣츠 아이"
+  },
+  {
+    "name_en": "White Wizard Robe",
+    "name_kr": "흰색 사제의 로브"
+  },
+  {
+    "name_en": "Gold Sneak Pants",
+    "name_kr": "골드 스니클리스 바지"
+  },
+  {
+    "name_en": "Blue Engrit",
+    "name_kr": "블루 잉그리트"
+  },
+  {
+    "name_en": "Green Bennis Chainmail",
+    "name_kr": "그린 이너스 체인메일"
+  },
+  {
+    "name_en": "Bennis Chainpants",
+    "name_kr": "이너스 체인바지"
+  },
+  {
+    "name_en": "Green Avelin",
+    "name_kr": "그린 아벨린"
+  },
+  {
+    "name_en": "Scroll for Two Handed Sword for Accuracy 100%",
+    "name_kr": "두손검 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Gloves for HP 100%",
+    "name_kr": "장갑 체력 주문서 100%"
+  },
+  {
+    "name_en": "Norman Grip",
+    "name_kr": "노만 그립"
+  },
+  {
+    "name_en": "Khaki Shadow Pants",
+    "name_kr": "카키 쉐도우 바지"
+  },
+  {
+    "name_en": "Mithril Maul",
+    "name_kr": "미스릴 모울"
+  },
+  {
+    "name_en": "Sticky Spiderweb",
+    "name_kr": "끈적이는 거미줄"
+  },
+  {
+    "name_en": "Magic Pill",
+    "name_kr": "마법사의 알약"
+  },
+  {
+    "name_en": "DEX Crystal Ore",
+    "name_kr": "민첩성의 크리스탈 원석"
+  },
+  {
+    "name_en": "Purple Fairy Skirt",
+    "name_kr": "퍼플 페어리 로브 치마"
+  },
+  {
+    "name_en": "Purple Fairy Top",
+    "name_kr": "퍼플 페어리 로브"
+  },
+  {
+    "name_en": "Blue Hawkeye",
+    "name_kr": "블루 네페르"
+  },
+  {
+    "name_en": "Green Wizard Robe",
+    "name_kr": "초록색 사제의 로브"
+  },
+  {
+    "name_en": "Steel Sylvia",
+    "name_kr": "스틸 실비아"
+  },
+  {
+    "name_en": "Scroll for Shield for STR 100%",
+    "name_kr": "방패 힘 주문서 100%"
+  },
+  {
+    "name_en": "Cloud Foxtail",
+    "name_kr": "여우 꼬리"
+  },
+  {
+    "name_en": "Sushi Salmon",
+    "name_kr": "초밥(청란젓)"
+  },
+  {
+    "name_en": "Frying Pan",
+    "name_kr": "프라이팬"
+  },
+  {
+    "name_en": "Diao Chan Sword",
+    "name_kr": "칠성검"
+  },
+  {
+    "name_en": "Sky Blue Umbrella",
+    "name_kr": "하늘색 우산"
+  },
+  {
+    "name_en": "Newspaper Hat",
+    "name_kr": "신문지 투구"
+  },
+  {
+    "name_en": "Sapphire Fitted Mail",
+    "name_kr": "사파이어 메일"
+  },
+  {
+    "name_en": "Dankke",
+    "name_kr": "당커"
+  },
+  {
+    "name_en": "Blue Legolier",
+    "name_kr": "블루 레골러"
+  },
+  {
+    "name_en": "Blue Pole Feather Hat",
+    "name_kr": "블루 폴리페더햇"
+  },
+  {
+    "name_en": "Red Pole Feather Hat",
+    "name_kr": "레드 폴리페더햇"
+  },
+  {
+    "name_en": "Teddy's Cotton",
+    "name_kr": "곰인형의 솜뭉치"
+  },
+  {
+    "name_en": "Wisdom Crystal Ore",
+    "name_kr": "지혜의 크리스탈 원석"
+  },
+  {
+    "name_en": "Scroll for Shoes for DEX 60%",
+    "name_kr": "신발 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Mountain Crossbow",
+    "name_kr": "산양 석궁"
+  },
+  {
+    "name_en": "Golden Pride",
+    "name_kr": "손오공 금 머리띠"
+  },
+  {
+    "name_en": "War Hammer",
+    "name_kr": "워해머"
+  },
+  {
+    "name_en": "Dark Silver Stealer",
+    "name_kr": "다크실버 스틸러"
+  },
+  {
+    "name_en": "Blue Silky Boots",
+    "name_kr": "블루 실키부츠"
+  },
+  {
+    "name_en": "Brown Pollard",
+    "name_kr": "브라운 폴라아드"
+  },
+  {
+    "name_en": "Fire Sentinel Shellpiece",
+    "name_kr": "파이어 스톤볼의 돌조각"
+  },
+  {
+    "name_en": "Scroll for Gloves for ATT 10%",
+    "name_kr": "장갑 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Blue Lutia",
+    "name_kr": "블루 루티아"
+  },
+  {
+    "name_en": "Sky Sneak",
+    "name_kr": "스카이 스니클리스"
+  },
+  {
+    "name_en": "Green Huntress Armor",
+    "name_kr": "그린 헌터미 아머"
+  },
+  {
+    "name_en": "Sky Sneak Pants",
+    "name_kr": "스카이 스니클리스 바지"
+  },
+  {
+    "name_en": "Green Huntress Pants",
+    "name_kr": "그린 헌터미 아머 바지"
+  },
+  {
+    "name_en": "Blueberry Lolica Armor",
+    "name_kr": "블루베리 스퀘이머"
+  },
+  {
+    "name_en": "Purple Salt Shoes",
+    "name_kr": "퍼플 솔트 슈즈"
+  },
+  {
+    "name_en": "Red Viper",
+    "name_kr": "레드 바이퍼"
+  },
+  {
+    "name_en": "White Crusader Chainmail",
+    "name_kr": "화이트 크로스 체인메일"
+  },
+  {
+    "name_en": "Scroll for Shield for HP 100%",
+    "name_kr": "방패 체력 주문서 100%"
+  },
+  {
+    "name_en": "Dark Tiberian",
+    "name_kr": "다크 티베리안"
+  },
+  {
+    "name_en": "Green Silky Boots",
+    "name_kr": "그린 실키부츠"
+  },
+  {
+    "name_en": "Sledgehammer",
+    "name_kr": "빅해머"
+  },
+  {
+    "name_en": "Scroll for Cape for LUK 10%",
+    "name_kr": "망토 행운 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Bow for ATT 60%",
+    "name_kr": "활 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Tobi Throwing Stars",
+    "name_kr": "토비 표창"
+  },
+  {
+    "name_en": "Fierry's Tentacle",
+    "name_kr": "페어리의 더듬이"
+  },
+  {
+    "name_en": "Sentinel Shellpiece",
+    "name_kr": "스톤볼의 돌조각"
+  },
+  {
+    "name_en": "Power Crystal Ore",
+    "name_kr": "힘의 크리스탈 원석"
+  },
+  {
+    "name_en": "Petal Staff",
+    "name_kr": "페탈 스태프"
+  },
+  {
+    "name_en": "Fireman's Axe",
+    "name_kr": "파이어 잭"
+  },
+  {
+    "name_en": "White Martial Arts Pants",
+    "name_kr": "백무 바지"
+  },
+  {
+    "name_en": "Green Pole Feather Hat",
+    "name_kr": "그린 폴리페더햇"
+  },
+  {
+    "name_en": "Lightning Earrings",
+    "name_kr": "번개 귀고리"
+  },
+  {
+    "name_en": "Green Knucklevest",
+    "name_kr": "그린 너클베스트"
+  },
+  {
+    "name_en": "Scroll for Cape for Weapon Def 10%",
+    "name_kr": "망토 물리방어력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Earring for DEX 100%",
+    "name_kr": "귀 장식 민첩성 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for HP 100%",
+    "name_kr": "하의 체력 주문서 100%"
+  },
+  {
+    "name_en": "White Oceania Cap",
+    "name_kr": "화이트 오시니아 캡"
+  },
+  {
+    "name_en": "Toy Drum",
+    "name_kr": "장난감 북"
+  },
+  {
+    "name_en": "Dark Crystal Ore",
+    "name_kr": "어둠의 크리스탈 원석"
+  },
+  {
+    "name_en": "Red Whip",
+    "name_kr": "붉은 채찍"
+  },
+  {
+    "name_en": "Broadsword",
+    "name_kr": "클러디"
+  },
+  {
+    "name_en": "Black Bennis Chainmail",
+    "name_kr": "레드 이너스 체인메일"
+  },
+  {
+    "name_en": "Blue Steal",
+    "name_kr": "블루 스틸레스"
+  },
+  {
+    "name_en": "Blue Steal Pants",
+    "name_kr": "블루 스틸레스 바지"
+  },
+  {
+    "name_en": "Black Dragon Robe",
+    "name_kr": "흑룡포"
+  },
+  {
+    "name_en": "Black Lutia",
+    "name_kr": "블랙 루티아"
+  },
+  {
+    "name_en": "Green Legolier",
+    "name_kr": "그린 레골러"
+  },
+  {
+    "name_en": "Green Legolier Pants",
+    "name_kr": "그린 레골러 바지"
+  },
+  {
+    "name_en": "Brown Matty",
+    "name_kr": "브라운 매티"
+  },
+  {
+    "name_en": "Fairy Wand",
+    "name_kr": "페어리 완드"
+  },
+  {
+    "name_en": "Cold Mind",
+    "name_kr": "콜드마인드"
+  },
+  {
+    "name_en": "Scroll for Gun for ATT 60%",
+    "name_kr": "건 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Pole Arm for Accuracy 10%",
+    "name_kr": "폴암 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Spear Forging Stimulator",
+    "name_kr": "창 제작의 촉진제"
+  },
+  {
+    "name_en": "Claw Production Stimulator",
+    "name_kr": "아대 제작의 촉진제"
+  },
+  {
+    "name_en": "Shoes Production Stimulator",
+    "name_kr": "신발 제작의 촉진제"
+  },
+  {
+    "name_en": "Raccoon Firewood",
+    "name_kr": "너구리 장작"
+  },
+  {
+    "name_en": "Tri-colored Dango",
+    "name_kr": "삼색 당고"
+  },
+  {
+    "name_en": "Kinoko Ramen Salt",
+    "name_kr": "키노코라면(소금)"
+  },
+  {
+    "name_en": "Takoyaki Octopus Ball",
+    "name_kr": "타코야끼(문어 볼)"
+  },
+  {
+    "name_en": "Orange Ski",
+    "name_kr": "오렌지 스키"
+  },
+  {
+    "name_en": "Yellow Mop",
+    "name_kr": "노란 대걸레"
+  },
+  {
+    "name_en": "Heavy Hammer",
+    "name_kr": "호스맨즈"
+  },
+  {
+    "name_en": "Square Shovel",
+    "name_kr": "사각 강철 야삽"
+  },
+  {
+    "name_en": "Pointed Shovel",
+    "name_kr": "삼각 강철 야삽"
+  },
+  {
+    "name_en": "Blue Magicshoes",
+    "name_kr": "블루 매직슈즈"
+  },
+  {
+    "name_en": "White Magicshoes",
+    "name_kr": "화이트 매직슈즈"
+  },
+  {
+    "name_en": "Dark Legolier",
+    "name_kr": "다크 레골러"
+  },
+  {
+    "name_en": "Green Legolia Pants",
+    "name_kr": "그린 레골리스 바지"
+  },
+  {
+    "name_en": "Dark Legolia Pants",
+    "name_kr": "다크 레골리스 바지"
+  },
+  {
+    "name_en": "Blue Avenger",
+    "name_kr": "블루 후르츠"
+  },
+  {
+    "name_en": "Ice Sentinel Shellpiece",
+    "name_kr": "아이스 스톤볼의 돌조각"
+  },
+  {
+    "name_en": "Blue Matty",
+    "name_kr": "블루 매티"
+  },
+  {
+    "name_en": "Blue Bennis Chainmail",
+    "name_kr": "블루 이너스 체인메일"
+  },
+  {
+    "name_en": "Plunger",
+    "name_kr": "뚜러"
+  },
+  {
+    "name_en": "Red Steal Pants",
+    "name_kr": "레드 스틸레스 바지"
+  },
+  {
+    "name_en": "Red Steal",
+    "name_kr": "레드 스틸레스"
+  },
+  {
+    "name_en": "Axe Pole Arm",
+    "name_kr": "도끼 폴암"
+  },
+  {
+    "name_en": "Worn-Out Goggle",
+    "name_kr": "낡은 고글"
+  },
+  {
+    "name_en": "Black Crystal Ore",
+    "name_kr": "흑수정의 원석"
+  },
+  {
+    "name_en": "Forked Dagger",
+    "name_kr": "쌍지단도"
+  },
+  {
+    "name_en": "Red Hunter's Armor",
+    "name_kr": "레드 헌터스 아머"
+  },
+  {
+    "name_en": "Red Hunter's Pants",
+    "name_kr": "레드 헌터스 아머 바지"
+  },
+  {
+    "name_en": "Green Jester",
+    "name_kr": "그린 핀터"
+  },
+  {
+    "name_en": "Steel Briggon",
+    "name_kr": "스틸 브리건"
+  },
+  {
+    "name_en": "Red White Lined Boots",
+    "name_kr": "레드 라인부츠"
+  },
+  {
+    "name_en": "Green Pilfer",
+    "name_kr": "그린 필퍼"
+  },
+  {
+    "name_en": "Blue Guiltian",
+    "name_kr": "블루 길티언"
+  },
+  {
+    "name_en": "Brown Pierre Shoes",
+    "name_kr": "브라운 피에르슈즈"
+  },
+  {
+    "name_en": "Iron Knuckle",
+    "name_kr": "아이언 너클"
+  },
+  {
+    "name_en": "Prime Hands",
+    "name_kr": "프라임 핸즈"
+  },
+  {
+    "name_en": "Scroll for Two Handed Axe for Accuracy 100%",
+    "name_kr": "두손도끼 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Bow Production Stimulator",
+    "name_kr": "활 제작의 촉진제"
+  },
+  {
+    "name_en": "Crossbow Production Stimulator",
+    "name_kr": "석궁 제작의 촉진제"
+  },
+  {
+    "name_en": "Helmet Production Stimulator",
+    "name_kr": "투구 제작의 촉진제"
+  },
+  {
+    "name_en": "Wand Production Stimulator",
+    "name_kr": "완드 제작의 촉진제"
+  },
+  {
+    "name_en": "Teddy's Yellow Ribbon",
+    "name_kr": "곰인형의 노란리본"
+  },
+  {
+    "name_en": "Scroll for Cape for INT 10%",
+    "name_kr": "망토 지력 주문서 10%"
+  },
+  {
+    "name_en": "Black Huntress Armor",
+    "name_kr": "블랙 헌터미 아머"
+  },
+  {
+    "name_en": "Black Huntress Pants",
+    "name_kr": "블랙 헌터미 바지"
+  },
+  {
+    "name_en": "Bronze Missel",
+    "name_kr": "브론즈 미셀"
+  },
+  {
+    "name_en": "Blood Chaos Robe",
+    "name_kr": "블러드 데빌즈 로브"
+  },
+  {
+    "name_en": "Red Knucklevest",
+    "name_kr": "레드 너클베스트"
+  },
+  {
+    "name_en": "Red Knucklevest Pants",
+    "name_kr": "레드 너클베스트 바지"
+  },
+  {
+    "name_en": "Yellow Briggon",
+    "name_kr": "옐로우 브리건"
+  },
+  {
+    "name_en": "Red Salt Shoes",
+    "name_kr": "레드 솔트 슈즈"
+  },
+  {
+    "name_en": "Steel Avarice",
+    "name_kr": "스틸 보닌"
+  },
+  {
+    "name_en": "Yellow Tartis",
+    "name_kr": "옐로우 타르티스"
+  },
+  {
+    "name_en": "One Handed Sword Forging Stimulator",
+    "name_kr": "한손검 제작의 촉진제"
+  },
+  {
+    "name_en": "Topwear Production Stimulator",
+    "name_kr": "상의 제작의 촉진제"
+  },
+  {
+    "name_en": "Overall Production Stimulator",
+    "name_kr": "전신 갑옷 제작의 촉진제"
+  },
+  {
+    "name_en": "Overall Production Stimulator",
+    "name_kr": "핑크테니 오목알"
+  },
+  {
+    "name_en": "Fire Boar's Tooth",
+    "name_kr": "파이어보어의 송곳니"
+  },
+  {
+    "name_en": "Wolbi Throwing Stars",
+    "name_kr": "월비 표창"
+  },
+  {
+    "name_en": "Arwen's Glass Shoes",
+    "name_kr": "아르웬의 유리구두"
+  },
+  {
+    "name_en": "Brown Martial Arts Pants",
+    "name_kr": "황무 바지"
+  },
+  {
+    "name_en": "Gold Sylvia",
+    "name_kr": "골드 실비아"
+  },
+  {
+    "name_en": "Red Hunter Boots",
+    "name_kr": "레드 헌터부츠"
+  },
+  {
+    "name_en": "Black Salt Shoes",
+    "name_kr": "블랙 솔트 슈즈"
+  },
+  {
+    "name_en": "Red Silky Boots",
+    "name_kr": "레드 실키부츠"
+  },
+  {
+    "name_en": "Heckler",
+    "name_kr": "헤클러"
+  },
+  {
+    "name_en": "Crystal Wand",
+    "name_kr": "크리스탈 완드"
+  },
+  {
+    "name_en": "Red Matty",
+    "name_kr": "레드 매티"
+  },
+  {
+    "name_en": "Staff Production Stimulator",
+    "name_kr": "스태프 제작의 촉진제"
+  },
+  {
+    "name_en": "Knuckler Production Stimulator",
+    "name_kr": "너클 제작의 촉진제"
+  },
+  {
+    "name_en": "Gun Production Stimulator",
+    "name_kr": "건 제작의 촉진제"
+  },
+  {
+    "name_en": "Shield Production Stimulator",
+    "name_kr": "방패 제작의 촉진제"
+  },
+  {
+    "name_en": "Rat Trap",
+    "name_kr": "쥐덫"
+  },
+  {
+    "name_en": "Scroll for Pole Arm for ATT 60%",
+    "name_kr": "폴암 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Green Guise",
+    "name_kr": "그린 가이즈"
+  },
+  {
+    "name_en": "Brown Hawkeye",
+    "name_kr": "브라운 네페르"
+  },
+  {
+    "name_en": "Silver Chain Boots",
+    "name_kr": "실버 체인슈즈"
+  },
+  {
+    "name_en": "Cass",
+    "name_kr": "카스"
+  },
+  {
+    "name_en": "White Martial Arts Shorts",
+    "name_kr": "반 백무 바지"
+  },
+  {
+    "name_en": "Bronze Scaler",
+    "name_kr": "브론즈 스케일러"
+  },
+  {
+    "name_en": "Jacker",
+    "name_kr": "젝커"
+  },
+  {
+    "name_en": "Brown Paulie Boots",
+    "name_kr": "브라운 폴티 부츠"
+  },
+  {
+    "name_en": "One Handed Axe Forging Stimulator",
+    "name_kr": "한손도끼 제작의 촉진제"
+  },
+  {
+    "name_en": "One Handed Mace Forging Stimulator",
+    "name_kr": "한손둔기 제작의 촉진제"
+  },
+  {
+    "name_en": "Ligator Skin",
+    "name_kr": "리게이터의 가죽"
+  },
+  {
+    "name_en": "Gephart",
+    "name_kr": "게파트"
+  },
+  {
+    "name_en": "Yellow Engrit",
+    "name_kr": "옐로우 잉그리트"
+  },
+  {
+    "name_en": "Red Amoria Top",
+    "name_kr": "레드 아모리아 로브"
+  },
+  {
+    "name_en": "Steel Arbion",
+    "name_kr": "스틸 아르비욘"
+  },
+  {
+    "name_en": "Mithril Trigger",
+    "name_kr": "미스릴 티거"
+  },
+  {
+    "name_en": "Steel Tower Shield",
+    "name_kr": "스틸 타워 실드"
+  },
+  {
+    "name_en": "Red Amoria Skirt",
+    "name_kr": "레드 아모리아 치마"
+  },
+  {
+    "name_en": "Leatty Furball",
+    "name_kr": "리티의 털뭉치"
+  },
+  {
+    "name_en": "Dark Hawkeye",
+    "name_kr": "다크 네페르"
+  },
+  {
+    "name_en": "Black Steal Pants",
+    "name_kr": "블랙 스틸레스 바지"
+  },
+  {
+    "name_en": "Green Hunter Boots",
+    "name_kr": "그린 헌터부츠"
+  },
+  {
+    "name_en": "Red Magicshoes",
+    "name_kr": "레드 매직슈즈"
+  },
+  {
+    "name_en": "Red Noel",
+    "name_kr": "레드 노엘"
+  },
+  {
+    "name_en": "Gold Dragon",
+    "name_kr": "금룡의"
+  },
+  {
+    "name_en": "Two Handed Sword Forging Stimulator",
+    "name_kr": "두손검 제작의 촉진제"
+  },
+  {
+    "name_en": "Gloves Production Stimulator",
+    "name_kr": "장갑 제작의 촉진제"
+  },
+  {
+    "name_en": "Black Jester",
+    "name_kr": "블랙 핀터"
+  },
+  {
+    "name_en": "Dark Legolia",
+    "name_kr": "다크 레골리스"
+  },
+  {
+    "name_en": "Red Cleave",
+    "name_kr": "레드 클리브"
+  },
+  {
+    "name_en": "Red Sneakers",
+    "name_kr": "빨간색 캔버스화"
+  },
+  {
+    "name_en": "Sniper Potion",
+    "name_kr": "명사수의 물약"
+  },
+  {
+    "name_en": "Scroll for Wand for Magic ATT 10%",
+    "name_kr": "완드 마력 주문서 10%"
+  },
+  {
+    "name_en": "Kumbi Throwing Stars",
+    "name_kr": "금비 표창"
+  },
+  {
+    "name_en": "Solid Horn",
+    "name_kr": "단단한 뿔"
+  },
+  {
+    "name_en": "Scroll for Wand for Magic ATT 60%",
+    "name_kr": "완드 마력 주문서 60%"
+  },
+  {
+    "name_en": "Green Hawkeye",
+    "name_kr": "그린 네페르"
+  },
+  {
+    "name_en": "Blue Sky",
+    "name_kr": "창천의"
+  },
+  {
+    "name_en": "Black Amoria Top",
+    "name_kr": "블랙 아모리아 로브"
+  },
+  {
+    "name_en": "Black Amoria Skirt",
+    "name_kr": "블랙 아모리아 치마"
+  },
+  {
+    "name_en": "Blue Legolia",
+    "name_kr": "블루 레골리스"
+  },
+  {
+    "name_en": "Blue Legolia Pants",
+    "name_kr": "블루 레골리스 바지"
+  },
+  {
+    "name_en": "Gold Arbion",
+    "name_kr": "골드 아르비욘"
+  },
+  {
+    "name_en": "Blue Moon Shoes",
+    "name_kr": "블루 문슈즈"
+  },
+  {
+    "name_en": "Scroll for One Handed Axe for Accuracy 100%",
+    "name_kr": "한손도끼 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Knuckle for Accuracy 60%",
+    "name_kr": "너클 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Red Misty",
+    "name_kr": "레드 로얄미스티"
+  },
+  {
+    "name_en": "Two Handed Axe Forging Stimulator",
+    "name_kr": "두손도끼 제작의 촉진제"
+  },
+  {
+    "name_en": "Bottomwear Production Stimulator",
+    "name_kr": "하의 제작의 촉진제"
+  },
+  {
+    "name_en": "Reef Claw",
+    "name_kr": "리프 크로"
+  },
+  {
+    "name_en": "Brown Hunter Boots",
+    "name_kr": "브라운 헌터부츠"
+  },
+  {
+    "name_en": "Dark Guardian",
+    "name_kr": "다크 가디언"
+  },
+  {
+    "name_en": "Gold Scaler",
+    "name_kr": "골드 스케일러"
+  },
+  {
+    "name_en": "Silver Fitted Mail",
+    "name_kr": "실버 메일"
+  },
+  {
+    "name_en": "Red Starlight",
+    "name_kr": "레드 스타라이트"
+  },
+  {
+    "name_en": "Red Moonlight",
+    "name_kr": "레드 문라이트"
+  },
+  {
+    "name_en": "Scroll for One Handed Axe for Accuracy 10%",
+    "name_kr": "한손도끼 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Claw for ATT 60%",
+    "name_kr": "아대 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Flaming Feather",
+    "name_kr": "불꽃 깃털"
+  },
+  {
+    "name_en": "Brown Guise",
+    "name_kr": "브라운 가이즈"
+  },
+  {
+    "name_en": "Blood Battle Grieves",
+    "name_kr": "블러드 배틀그리브"
+  },
+  {
+    "name_en": "Blue Axe",
+    "name_kr": "버크"
+  },
+  {
+    "name_en": "Steel Trigger",
+    "name_kr": "스틸 티거"
+  },
+  {
+    "name_en": "Blue Legolier Pants",
+    "name_kr": "블루 레골러 바지"
+  },
+  {
+    "name_en": "Brown Starlight",
+    "name_kr": "브라운 스타라이트"
+  },
+  {
+    "name_en": "Dark Matty",
+    "name_kr": "다크 매티"
+  },
+  {
+    "name_en": "Two Handed Mace Forging Stimulator",
+    "name_kr": "두손둔기 제작의 촉진제"
+  },
+  {
+    "name_en": "Dark Leatty Furball",
+    "name_kr": "다크 리티의 털뭉치"
+  },
+  {
+    "name_en": "Dark Guise",
+    "name_kr": "다크 가이즈"
+  },
+  {
+    "name_en": "Scimitar",
+    "name_kr": "왕푸"
+  },
+  {
+    "name_en": "Dark Chaos Robe",
+    "name_kr": "다크 데빌즈 로브"
+  },
+  {
+    "name_en": "Dark Briggon",
+    "name_kr": "다크 브리건"
+  },
+  {
+    "name_en": "Green White Lined Boots",
+    "name_kr": "그린 라인부츠"
+  },
+  {
+    "name_en": "Purple Moonlight",
+    "name_kr": "퍼플 문라이트"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for DEX 100%",
+    "name_kr": "하의 민첩성 주문서 100%"
+  },
+  {
+    "name_en": "Blue Den Marine",
+    "name_kr": "블루 데네마린"
+  },
+  {
+    "name_en": "Hard Walnut",
+    "name_kr": "단단한 호두"
+  },
+  {
+    "name_en": "Speed Pill",
+    "name_kr": "속도 향상의 알약"
+  },
+  {
+    "name_en": "Scroll for Shoes for Jump 100%",
+    "name_kr": "신발 점프력 주문서 100%"
+  },
+  {
+    "name_en": "Blue Fairy Top",
+    "name_kr": "블루 페어리 로브"
+  },
+  {
+    "name_en": "Blue Fairy Skirt",
+    "name_kr": "블루 페어리 로브 치마"
+  },
+  {
+    "name_en": "Dark Brown Stealer",
+    "name_kr": "다크브라운 스틸러"
+  },
+  {
+    "name_en": "Dark Brown Stealer Pants",
+    "name_kr": "다크브라운 스틸러 바지"
+  },
+  {
+    "name_en": "Great Blue Helmet",
+    "name_kr": "블루 그레이트 헬멧"
+  },
+  {
+    "name_en": "Dark Pole Feather Hat",
+    "name_kr": "다크 폴리페더햇"
+  },
+  {
+    "name_en": "Brown Legolier",
+    "name_kr": "브라운 레골러"
+  },
+  {
+    "name_en": "Brown Legolier Pants",
+    "name_kr": "브라운 레골러 바지"
+  },
+  {
+    "name_en": "Blood Fitted Mail",
+    "name_kr": "블러드 메일"
+  },
+  {
+    "name_en": "Green Starlight",
+    "name_kr": "그린 스타라이트"
+  },
+  {
+    "name_en": "Hall Staff",
+    "name_kr": "홀 스태프"
+  },
+  {
+    "name_en": "Brown Jeweled",
+    "name_kr": "브라운 쥬얼드"
+  },
+  {
+    "name_en": "Red Barbay",
+    "name_kr": "레드 바르베이"
+  },
+  {
+    "name_en": "Dagger Forging Stimulator",
+    "name_kr": "단검 제작의 촉진제"
+  },
+  {
+    "name_en": "Clock Spring",
+    "name_kr": "시계 태엽"
+  },
+  {
+    "name_en": "Snowball",
+    "name_kr": "눈덩이"
+  },
+  {
+    "name_en": "Brown Marker",
+    "name_kr": "브라운 마커"
+  },
+  {
+    "name_en": "Brown Legolia",
+    "name_kr": "브라운 레골리스"
+  },
+  {
+    "name_en": "Brown Legolia Pants",
+    "name_kr": "브라운 레골리스 바지"
+  },
+  {
+    "name_en": "Blue Noel",
+    "name_kr": "블루 노엘"
+  },
+  {
+    "name_en": "Blue Starlight",
+    "name_kr": "블루 스타라이트"
+  },
+  {
+    "name_en": "Black Red Lined Shoes",
+    "name_kr": "레드 하프슈즈"
+  },
+  {
+    "name_en": "Adamantium Knuckle",
+    "name_kr": "아다만티움 너클"
+  },
+  {
+    "name_en": "Brown Locote Shoes",
+    "name_kr": "브라운 로코트 슈즈"
+  },
+  {
+    "name_en": "Toy Duckling",
+    "name_kr": "장난감 새끼오리"
+  },
+  {
+    "name_en": "Soft Feather",
+    "name_kr": "부드러운 깃털"
+  },
+  {
+    "name_en": "Blue Hunter's Armor",
+    "name_kr": "블루 헌터스 아머"
+  },
+  {
+    "name_en": "Silver Black Stealer",
+    "name_kr": "실버블랙 스틸러 바지"
+  },
+  {
+    "name_en": "Blue Hunter's Pants",
+    "name_kr": "블루 허터스 아머 바지"
+  },
+  {
+    "name_en": "Silver Black Stealer Pants",
+    "name_kr": "실버블랙 스틸러 바지"
+  },
+  {
+    "name_en": "Great Brown Helmet",
+    "name_kr": "브라운 그레이트 헬멧"
+  },
+  {
+    "name_en": "Blue Crusader Chainmail",
+    "name_kr": "블루 크로스 체인메일"
+  },
+  {
+    "name_en": "Aqua Brace",
+    "name_kr": "아쿠아 브레이스"
+  },
+  {
+    "name_en": "Bazlud",
+    "name_kr": "베즐러드"
+  },
+  {
+    "name_en": "Blue Brace Look",
+    "name_kr": "블루 브레이스룩"
+  },
+  {
+    "name_en": "Star Pixie's Starpiece",
+    "name_kr": "스타픽시의 별조각"
+  },
+  {
+    "name_en": "Scroll for Cape for STR 100%",
+    "name_kr": "망토 힘 주문서 100%"
+  },
+  {
+    "name_en": "Black Marker",
+    "name_kr": "블랙 마커"
+  },
+  {
+    "name_en": "Steel Missel",
+    "name_kr": "스틸 미셀"
+  },
+  {
+    "name_en": "Blue White Lined Boots",
+    "name_kr": "블루 라인부츠"
+  },
+  {
+    "name_en": "Red Burgler",
+    "name_kr": "레드 버글러"
+  },
+  {
+    "name_en": "Red Legolia",
+    "name_kr": "레드 레골리스"
+  },
+  {
+    "name_en": "Red Legolia Pants",
+    "name_kr": "레드 레골리스 바지"
+  },
+  {
+    "name_en": "Brown Moonlight",
+    "name_kr": "브라운 문라이트"
+  },
+  {
+    "name_en": "Traus",
+    "name_kr": "트라우스"
+  },
+  {
+    "name_en": "Vaulter 2000",
+    "name_kr": "발터2000"
+  },
+  {
+    "name_en": "Pole Arm Forging Stimulator",
+    "name_kr": "폴암 제작의 촉진제"
+  },
+  {
+    "name_en": "Tablecloth",
+    "name_kr": "식탁보"
+  },
+  {
+    "name_en": "Scroll for Helmet for HP 10%",
+    "name_kr": "투구 체력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEX 100%",
+    "name_kr": "투구 민첩성 주문서 100%"
+  },
+  {
+    "name_en": "Battle Bow",
+    "name_kr": "배틀 보우"
+  },
+  {
+    "name_en": "Dark Crusader Chainmail",
+    "name_kr": "다크 크로스 체인메일"
+  },
+  {
+    "name_en": "Dark Engrit",
+    "name_kr": "다크 잉그리트"
+  },
+  {
+    "name_en": "Mithril Scaler",
+    "name_kr": "미스릴 스케일러"
+  },
+  {
+    "name_en": "Dark Noel",
+    "name_kr": "다크 노엘"
+  },
+  {
+    "name_en": "Orihalcon Arbion",
+    "name_kr": "오리할콘 아르비욘"
+  },
+  {
+    "name_en": "Niam",
+    "name_kr": "니암"
+  },
+  {
+    "name_en": "Red Moon Shoes",
+    "name_kr": "레드 문슈즈"
+  },
+  {
+    "name_en": "Red Pierre Shoes",
+    "name_kr": "레드 피에르슈즈"
+  },
+  {
+    "name_en": "Adamantium Avarice",
+    "name_kr": "아다만티움 보닌"
+  },
+  {
+    "name_en": "Shooting Star",
+    "name_kr": "슈팅 스타"
+  },
+  {
+    "name_en": "Jousting Helmet",
+    "name_kr": "주스팅"
+  },
+  {
+    "name_en": "Blue Moonlight",
+    "name_kr": "블루 문슈즈라이트"
+  },
+  {
+    "name_en": "Black Green Lined Shoes",
+    "name_kr": "그린 하프슈즈"
+  },
+  {
+    "name_en": "Scroll for One Handed BW for ATT 60%",
+    "name_kr": "한손둔기 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Curse Eye's Tail",
+    "name_kr": "커즈아이의 꼬리"
+  },
+  {
+    "name_en": "Scroll for Bow for ATT 10%",
+    "name_kr": "활 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Black Martial Arts Pants",
+    "name_kr": "흑무 바지"
+  },
+  {
+    "name_en": "Dark Burgler",
+    "name_kr": "다크 버글러"
+  },
+  {
+    "name_en": "Black Knucklevest",
+    "name_kr": "블랙 너클베스트"
+  },
+  {
+    "name_en": "Black Knucklevest Pants",
+    "name_kr": "블랙 너클베스트 바지"
+  },
+  {
+    "name_en": "Red Duke",
+    "name_kr": "레드 듀크"
+  },
+  {
+    "name_en": "Scroll for Gun for ATT 10%",
+    "name_kr": "건 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Lunar Shooter",
+    "name_kr": "루나 슈터"
+  },
+  {
+    "name_en": "Silver Maiden",
+    "name_kr": "실버 메이든"
+  },
+  {
+    "name_en": "\"Blackbull's\" deed to the land",
+    "name_kr": "'돼지와 함께 춤을'의 땅문서"
+  },
+  {
+    "name_en": "Bloctopus Key Chain",
+    "name_kr": "문어 열쇠고리"
+  },
+  {
+    "name_en": "Silver Battle Grieves",
+    "name_kr": "실버 배틀 그리브"
+  },
+  {
+    "name_en": "Black Magicshoes",
+    "name_kr": "블랙랙 매직슈즈"
+  },
+  {
+    "name_en": "Adamantium Guards",
+    "name_kr": "아다만티움 가즈"
+  },
+  {
+    "name_en": "Dark Legolier Pants",
+    "name_kr": "다크 레골러 바지"
+  },
+  {
+    "name_en": "Purple Avenger",
+    "name_kr": "퍼플 후르츠"
+  },
+  {
+    "name_en": "Crescent Polearm",
+    "name_kr": "크레센트"
+  },
+  {
+    "name_en": "Khaki Shadow",
+    "name_kr": "카키 쉐도우"
+  },
+  {
+    "name_en": "Silver Crow",
+    "name_kr": "실버 크로우"
+  },
+  {
+    "name_en": "Jr Pepes Fish",
+    "name_kr": "주니어 페페의 물고기"
+  },
+  {
+    "name_en": "Blue Burgler",
+    "name_kr": "블루 버글러"
+  },
+  {
+    "name_en": "Red Gold Stealer Pants",
+    "name_kr": "레드골드 스틸러 바지"
+  },
+  {
+    "name_en": "Green Legolia",
+    "name_kr": "그린 레골리스"
+  },
+  {
+    "name_en": "Emerald Fitted Mail",
+    "name_kr": "에메랄드 메일"
+  },
+  {
+    "name_en": "Steel Nordic Helm",
+    "name_kr": "스틸 노르만 헬름"
+  },
+  {
+    "name_en": "Red Arten",
+    "name_kr": "레드드 아르텐"
+  },
+  {
+    "name_en": "Titan",
+    "name_kr": "타이탄"
+  },
+  {
+    "name_en": "Scroll for Knuckle for Accuracy 10%",
+    "name_kr": "너클 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Red Gold Stealer",
+    "name_kr": "레드골드 스틸러"
+  },
+  {
+    "name_en": "Jr. Boogie's Horns",
+    "name_kr": "주니어 부기의 뿔"
+  },
+  {
+    "name_en": "Sunflower Seed",
+    "name_kr": "해바라기씨"
+  },
+  {
+    "name_en": "Blue Amoria Top",
+    "name_kr": "블루 아모리아 로브"
+  },
+  {
+    "name_en": "Blue Amoria Skirt",
+    "name_kr": "블루 아모리아 치마"
+  },
+  {
+    "name_en": "Great Brown Helmet",
+    "name_kr": "블루 그레이트 헬멧"
+  },
+  {
+    "name_en": "Gold Brace",
+    "name_kr": "골드 브레이스"
+  },
+  {
+    "name_en": "Gold Cleave",
+    "name_kr": "골드 클리브"
+  },
+  {
+    "name_en": "Dark Moon Shoes",
+    "name_kr": "다크 문슈즈"
+  },
+  {
+    "name_en": "Maroon Jangoon Shoes",
+    "name_kr": "청 진월장화"
+  },
+  {
+    "name_en": "Brown Barbee",
+    "name_kr": "브라운 바르비"
+  },
+  {
+    "name_en": "Propeller",
+    "name_kr": "비행기 프로펠러"
+  },
+  {
+    "name_en": "Scroll for One Handed Sword for ATT 60%",
+    "name_kr": "한손검 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Gold Chain Boots",
+    "name_kr": "골드 체인슈즈"
+  },
+  {
+    "name_en": "Black Hunter Boots",
+    "name_kr": "블랙 헌터부츠"
+  },
+  {
+    "name_en": "Emerald Battle Grieves",
+    "name_kr": "에메랄드 배틀 그리브"
+  },
+  {
+    "name_en": "Brown Burgler",
+    "name_kr": "브라운 버글러"
+  },
+  {
+    "name_en": "Dark Moonlight",
+    "name_kr": "다크 문라이트"
+  },
+  {
+    "name_en": "Green Distinction",
+    "name_kr": "그린 크라페"
+  },
+  {
+    "name_en": "Yellow Jangoon Armor",
+    "name_kr": "황진일갑주"
+  },
+  {
+    "name_en": "Black Jangoon Pants",
+    "name_kr": "흑진일갑주 바지"
+  },
+  {
+    "name_en": "White Piette",
+    "name_kr": "화이트 피에뜨"
+  },
+  {
+    "name_en": "Blue Piette Pants",
+    "name_kr": "블루 피에뜨 바지"
+  },
+  {
+    "name_en": "Blue Calaf",
+    "name_kr": "블루 칼라프"
+  },
+  {
+    "name_en": "Red Sonata",
+    "name_kr": "적 흑일모자"
+  },
+  {
+    "name_en": "Emerald Hildon Boots",
+    "name_kr": "에메랄드 힐던부츠"
+  },
+  {
+    "name_en": "Red Maro",
+    "name_kr": "적마로"
+  },
+  {
+    "name_en": "Panda Doll",
+    "name_kr": "팬더인형"
+  },
+  {
+    "name_en": "Blue Hunter Boots",
+    "name_kr": "블루 헌터부츠"
+  },
+  {
+    "name_en": "Dark Starlight",
+    "name_kr": "다크 스타라이트"
+  },
+  {
+    "name_en": "Red Guiltian",
+    "name_kr": "레드 길티언"
+  },
+  {
+    "name_en": "Dark Knuckle",
+    "name_kr": "다크 너클"
+  },
+  {
+    "name_en": "Dragon Toenail",
+    "name_kr": "드래곤 토네일"
+  },
+  {
+    "name_en": "Scroll for Shield for LUK 100%",
+    "name_kr": "방패 행운 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for One Handed BW for Accuracy 60%",
+    "name_kr": "한손둔기 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Sniper Pill",
+    "name_kr": "명사수의 알약"
+  },
+  {
+    "name_en": "Dark Avenger",
+    "name_kr": "다크 후르츠"
+  },
+  {
+    "name_en": "Black Jangoon Armor",
+    "name_kr": "흑진월갑주"
+  },
+  {
+    "name_en": "Red Arten",
+    "name_kr": "레드 아르텐"
+  },
+  {
+    "name_en": "Black Jangoon Skirt",
+    "name_kr": "흑진월갑주 치마"
+  },
+  {
+    "name_en": "Scroll for Shoes for Speed 10%",
+    "name_kr": "신발 이동속도 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Dagger for ATT 60%",
+    "name_kr": "단검 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Lorang's Claws",
+    "name_kr": "로랑의 집게발"
+  },
+  {
+    "name_en": "Dark Trigger",
+    "name_kr": "다크 티거"
+  },
+  {
+    "name_en": "Adamantium Tower Shield",
+    "name_kr": "아다만티움 타워 실드"
+  },
+  {
+    "name_en": "Blue Pierre Shoes",
+    "name_kr": "블루 피에르슈즈"
+  },
+  {
+    "name_en": "Dark Cleave",
+    "name_kr": "다크 클리브"
+  },
+  {
+    "name_en": "Dark Piette",
+    "name_kr": "다크 피에뜨"
+  },
+  {
+    "name_en": "Dark Piette Pants",
+    "name_kr": "다크 피에뜨 바지지"
+  },
+  {
+    "name_en": "Purple Shadow",
+    "name_kr": "퍼플 쉐도우"
+  },
+  {
+    "name_en": "Purple Shadow Pants",
+    "name_kr": "퍼플 쉐도우 바지"
+  },
+  {
+    "name_en": "Scroll for Topwear for LUK 100%",
+    "name_kr": "상의 행운 주문서 100%"
+  },
+  {
+    "name_en": "Neozard",
+    "name_kr": "네오자드"
+  },
+  {
+    "name_en": "Motor",
+    "name_kr": "비행기 모터"
+  },
+  {
+    "name_en": "Mystic Shield",
+    "name_kr": "미스틱 실드"
+  },
+  {
+    "name_en": "Red Jangoon Armor",
+    "name_kr": "홍진월갑주"
+  },
+  {
+    "name_en": "Red Jangoon Skirt",
+    "name_kr": "홍진월갑주 치마"
+  },
+  {
+    "name_en": "White Piettra",
+    "name_kr": "화이트 피에르타"
+  },
+  {
+    "name_en": "White Piettra Skirt",
+    "name_kr": "화이트 피에르타 치마"
+  },
+  {
+    "name_en": "Red Pilfer",
+    "name_kr": "레드 필퍼"
+  },
+  {
+    "name_en": "Yellow Duke",
+    "name_kr": "옐로우 듀크"
+  },
+  {
+    "name_en": "Dark Pennance",
+    "name_kr": "다크크 페넌스"
+  },
+  {
+    "name_en": "Steel Slain",
+    "name_kr": "스틸 슬레인"
+  },
+  {
+    "name_en": "Rower",
+    "name_kr": "로우어"
+  },
+  {
+    "name_en": "Lion's Fang",
+    "name_kr": "호검"
+  },
+  {
+    "name_en": "Cog",
+    "name_kr": "톱니바퀴"
+  },
+  {
+    "name_en": "Scroll for Two Handed BW for ATT 60%",
+    "name_kr": "두손둔기 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Bronze Chain Boots",
+    "name_kr": "브론즈 체인슈즈"
+  },
+  {
+    "name_en": "Mithril Brist",
+    "name_kr": "미스릴 스케일러"
+  },
+  {
+    "name_en": "Blue Pilfer",
+    "name_kr": "블루 필퍼"
+  },
+  {
+    "name_en": "White Guiltian",
+    "name_kr": "Wh화이트트ite 길티언"
+  },
+  {
+    "name_en": "Maroon Jangoon Armor",
+    "name_kr": "자진일갑주"
+  },
+  {
+    "name_en": "White Jangoon Pants",
+    "name_kr": "백진일갑주 바지"
+  },
+  {
+    "name_en": "Lupin Doll",
+    "name_kr": "루팡 인형"
+  },
+  {
+    "name_en": "Scroll for Cape for MP 60%",
+    "name_kr": "망토 마나 주문서 60%"
+  },
+  {
+    "name_en": "Lupin's Banana",
+    "name_kr": "루팡의 바나나"
+  },
+  {
+    "name_en": "Purple Steal",
+    "name_kr": "퍼플 스틸레스"
+  },
+  {
+    "name_en": "Purple Steal Pants",
+    "name_kr": "퍼플 스틸레스 바지"
+  },
+  {
+    "name_en": "Black Yellow Lined Shoes",
+    "name_kr": "옐로우 하프슈즈"
+  },
+  {
+    "name_en": "Gold Moon Shoes",
+    "name_kr": "골드 문슈즈"
+  },
+  {
+    "name_en": "Mithril Tower Shield",
+    "name_kr": "미스릴 타워 실드"
+  },
+  {
+    "name_en": "Dark Avarice",
+    "name_kr": "다크 보닌"
+  },
+  {
+    "name_en": "Light Mantis",
+    "name_kr": "라이트 맨티스"
+  },
+  {
+    "name_en": "Brown Leather Krag",
+    "name_kr": "브라운 레더크라그"
+  },
+  {
+    "name_en": "Scroll for Cape for MP 10%",
+    "name_kr": "망토 마나 주문서 10%"
+  },
+  {
+    "name_en": "Black Adventurer Cape",
+    "name_kr": "검은색 모험가의 망토"
+  },
+  {
+    "name_en": "Plastic Crown",
+    "name_kr": "플라스틱 왕관"
+  },
+  {
+    "name_en": "Bronze Guardian",
+    "name_kr": "브론즈 가디언"
+  },
+  {
+    "name_en": "Blue Duke",
+    "name_kr": "블루 듀크"
+  },
+  {
+    "name_en": "Dark Guiltian",
+    "name_kr": "다크 길티언"
+  },
+  {
+    "name_en": "Marine Shadow",
+    "name_kr": "마린 쉐도우"
+  },
+  {
+    "name_en": "Marine Shadow Pants",
+    "name_kr": "마린 쉐도우 바지"
+  },
+  {
+    "name_en": "Brown Piettra",
+    "name_kr": "브라운 피에르타"
+  },
+  {
+    "name_en": "Brown Piettra Skirt",
+    "name_kr": "브라운 피에르타 치마"
+  },
+  {
+    "name_en": "Scroll for Two Handed Axe for Accuracy 60%",
+    "name_kr": "두손도끼 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Blue Calas",
+    "name_kr": "블루문"
+  },
+  {
+    "name_en": "Plane Controller",
+    "name_kr": "비행기 컨트롤러"
+  },
+  {
+    "name_en": "Blue Distinction",
+    "name_kr": "블루 크라페"
+  },
+  {
+    "name_en": "Blue Jangoon Armor",
+    "name_kr": "청진일갑주"
+  },
+  {
+    "name_en": "Brown Jangoon Pants",
+    "name_kr": "황진일갑주 바지"
+  },
+  {
+    "name_en": "Dark Shadow",
+    "name_kr": "다크 쉐도우"
+  },
+  {
+    "name_en": "Dark Shadow Pants",
+    "name_kr": "다크 쉐도우 바지"
+  },
+  {
+    "name_en": "Brown Jangoon Shoes",
+    "name_kr": "황 진월장화"
+  },
+  {
+    "name_en": "Pansy Earrings",
+    "name_kr": "펜지 이어링"
+  },
+  {
+    "name_en": "Blue Pennance",
+    "name_kr": "블루 페넌스"
+  },
+  {
+    "name_en": "Red Willow",
+    "name_kr": "레드 윌로우"
+  },
+  {
+    "name_en": "Green Goni Shoes",
+    "name_kr": "그린 고니슈즈"
+  },
+  {
+    "name_en": "Mithril Brist",
+    "name_kr": "미스릴 브리스트"
+  },
+  {
+    "name_en": "Toy Trojan Sword",
+    "name_kr": "장난감 병정의 칼"
+  },
+  {
+    "name_en": "Brown Pilfer",
+    "name_kr": "브라운 필퍼"
+  },
+  {
+    "name_en": "Mithril Nordic Helm",
+    "name_kr": "미스릴 노르만 헬름"
+  },
+  {
+    "name_en": "Dark Arten",
+    "name_kr": "다크 아르텐"
+  },
+  {
+    "name_en": "Yellow Pierre Shoes",
+    "name_kr": "옐로우 피에르슈즈"
+  },
+  {
+    "name_en": "Red Calaf",
+    "name_kr": "레드 칼라프"
+  },
+  {
+    "name_en": "Small Egg",
+    "name_kr": "작은 알"
+  },
+  {
+    "name_en": "Dark Brace",
+    "name_kr": "다크 브레이스"
+  },
+  {
+    "name_en": "Brown Jangoon Armor",
+    "name_kr": "황진월갑주"
+  },
+  {
+    "name_en": "Brown Jangoon Skirt",
+    "name_kr": "황진월갑주 치마"
+  },
+  {
+    "name_en": "Blue Moon Gloves",
+    "name_kr": "청월 장갑"
+  },
+  {
+    "name_en": "Dark Willow",
+    "name_kr": "다크 윌로우"
+  },
+  {
+    "name_en": "Scroll for One Handed BW for Accuracy 100%",
+    "name_kr": "한손둔기 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Table Clock",
+    "name_kr": "작은 시계"
+  },
+  {
+    "name_en": "Blue Moonlight",
+    "name_kr": "블루 문라이트"
+  },
+  {
+    "name_en": "Cromi",
+    "name_kr": "크로미"
+  },
+  {
+    "name_en": "Sai",
+    "name_kr": "차"
+  },
+  {
+    "name_en": "All-purpose Clock Spring",
+    "name_kr": "만능 시계 태엽"
+  },
+  {
+    "name_en": "Space Food",
+    "name_kr": "우주 식량"
+  },
+  {
+    "name_en": "Dexterity Pill",
+    "name_kr": "민첩함의 알약"
+  },
+  {
+    "name_en": "Yellow Umbrella",
+    "name_kr": "노란색 우산"
+  },
+  {
+    "name_en": "Orange Calas",
+    "name_kr": "오렌지 칼라스"
+  },
+  {
+    "name_en": "Blue Maro",
+    "name_kr": "청마로"
+  },
+  {
+    "name_en": "Silver Crusader Helm",
+    "name_kr": "실버 크루세이더 헬름"
+  },
+  {
+    "name_en": "Cursed Doll",
+    "name_kr": "저주받은 인형"
+  },
+  {
+    "name_en": "Dark Pilfer",
+    "name_kr": "다크 필퍼"
+  },
+  {
+    "name_en": "Blood Avarice",
+    "name_kr": "블러드 보닌"
+  },
+  {
+    "name_en": "Arc Staff",
+    "name_kr": "아크 스태프"
+  },
+  {
+    "name_en": "The Nine Dragons",
+    "name_kr": "구룡도"
+  },
+  {
+    "name_en": "Shinkita",
+    "name_kr": "신기타"
+  },
+  {
+    "name_en": "Scroll for Spear for Accuracy 10%",
+    "name_kr": "창 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Worn Paper Lantern",
+    "name_kr": "제등"
+  },
+  {
+    "name_en": "Scroll for Two Handed Axe for ATT 60%",
+    "name_kr": "두손도끼 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Yakisoba x2",
+    "name_kr": "야끼소바(곱배기)"
+  },
+  {
+    "name_en": "Mighty Bullet",
+    "name_kr": "마이티 불릿"
+  },
+  {
+    "name_en": "Liu Bei Dagger",
+    "name_kr": "쌍고검"
+  },
+  {
+    "name_en": "Ocher Shouldermail",
+    "name_kr": "오우커 숄더메일"
+  },
+  {
+    "name_en": "White Calas",
+    "name_kr": "화이트 칼라스"
+  },
+  {
+    "name_en": "Nimble Wristguard",
+    "name_kr": "님블 리스트"
+  },
+  {
+    "name_en": "Red Moon Pants",
+    "name_kr": "적월 바지"
+  },
+  {
+    "name_en": "Cold Eye's Tail",
+    "name_kr": "콜드아이의 꼬리"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEF 60%",
+    "name_kr": "투구 방어력 주문서 60%"
+  },
+  {
+    "name_en": "Pink Moon Conehat",
+    "name_kr": "핑크문 고깔모자"
+  },
+  {
+    "name_en": "Icicle",
+    "name_kr": "고드름"
+  },
+  {
+    "name_en": "Old Steel Nordic Helm",
+    "name_kr": "골드 노르만 헬름"
+  },
+  {
+    "name_en": "Brown Distinction",
+    "name_kr": "브라운 크라페"
+  },
+  {
+    "name_en": "Red Shadow",
+    "name_kr": "레드 쉐도우"
+  },
+  {
+    "name_en": "Red Shadow Pants",
+    "name_kr": "레드 쉐도우 바지"
+  },
+  {
+    "name_en": "Pink Goldwind Shoes",
+    "name_kr": "핑크 골든윈드슈즈"
+  },
+  {
+    "name_en": "Brown Moon Gloves",
+    "name_kr": "황월 장갑"
+  },
+  {
+    "name_en": "Scroll for Pole Arm for Accuracy 60%",
+    "name_kr": "폴암 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Dark Hunter's Pants",
+    "name_kr": "다크 헌터스 아머 바지"
+  },
+  {
+    "name_en": "Acorn",
+    "name_kr": "도토리"
+  },
+  {
+    "name_en": "White Guiltian",
+    "name_kr": "화이트 길티언"
+  },
+  {
+    "name_en": "Bloody Mantis Pants",
+    "name_kr": "블러디 맨티스 바지"
+  },
+  {
+    "name_en": "Bloody Mantis",
+    "name_kr": "블러디 맨티스"
+  },
+  {
+    "name_en": "Cheap BATT ery",
+    "name_kr": "싸구려 건전지"
+  },
+  {
+    "name_en": "Green Steel Tip Boots",
+    "name_kr": "그린 네일슈즈"
+  },
+  {
+    "name_en": "Jeweled Katar",
+    "name_kr": "쥬얼 쿠아다라"
+  },
+  {
+    "name_en": "Red Avenger",
+    "name_kr": "레드 후르츠"
+  },
+  {
+    "name_en": "Thimble",
+    "name_kr": "골무"
+  },
+  {
+    "name_en": "Black Blue Lines Shoes",
+    "name_kr": "블루 하프슈즈"
+  },
+  {
+    "name_en": "Maroon Moon Pants",
+    "name_kr": "자월 바지"
+  },
+  {
+    "name_en": "Orange Golden Circlet",
+    "name_kr": "오렌지 골든서클릿"
+  },
+  {
+    "name_en": "Scroll for Topwear for HP 100%",
+    "name_kr": "상의 체력 주문서 100%"
+  },
+  {
+    "name_en": "Fly Eye Wing",
+    "name_kr": "플라이아이의 날개"
+  },
+  {
+    "name_en": "Scroll for Cape for STR 10%",
+    "name_kr": "망토 힘 주문서 10%"
+  },
+  {
+    "name_en": "Red Legolier Pants",
+    "name_kr": "레드 레골러 바지"
+  },
+  {
+    "name_en": "Red Legolier",
+    "name_kr": "레드 레골러"
+  },
+  {
+    "name_en": "Blue Arten",
+    "name_kr": "블루 아르텐"
+  },
+  {
+    "name_en": "Dark Calaf",
+    "name_kr": "다크 칼라프"
+  },
+  {
+    "name_en": "Orihalcon Hildon Boots",
+    "name_kr": "오리할콘 힐던부츠"
+  },
+  {
+    "name_en": "Olympus",
+    "name_kr": "올림푸스"
+  },
+  {
+    "name_en": "Scroll for Gloves for ATT 60%",
+    "name_kr": "장갑 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Zard",
+    "name_kr": "쟈드"
+  },
+  {
+    "name_en": "Esther Shield",
+    "name_kr": "에스터 실드"
+  },
+  {
+    "name_en": "Serpent's Tongue",
+    "name_kr": "장팔사모"
+  },
+  {
+    "name_en": "Buck",
+    "name_kr": "벅"
+  },
+  {
+    "name_en": "Mateon's Tentacle",
+    "name_kr": "마티안의 촉수"
+  },
+  {
+    "name_en": "Dark Pennance",
+    "name_kr": "다크 페넌스"
+  },
+  {
+    "name_en": "Blue Steel Tip Boots",
+    "name_kr": "블루 네일슈즈"
+  },
+  {
+    "name_en": "Red Moon Gloves",
+    "name_kr": "적월 장갑"
+  },
+  {
+    "name_en": "Small Spaceship",
+    "name_kr": "소형 우주선"
+  },
+  {
+    "name_en": "Scroll for Shoes for Speed 60%",
+    "name_kr": "신발 이동속도 주문서 60%"
+  },
+  {
+    "name_en": "Jurgen Wristguard",
+    "name_kr": "주르건 리스트"
+  },
+  {
+    "name_en": "Dark Piette Pants",
+    "name_kr": "다크 피에뜨 바지"
+  },
+  {
+    "name_en": "Dark Calas",
+    "name_kr": "다크 칼라스"
+  },
+  {
+    "name_en": "Blue Sonata",
+    "name_kr": "청 흑일모자"
+  },
+  {
+    "name_en": "Iron Hog's Metal Hoof",
+    "name_kr": "아이언호그의 철발굽"
+  },
+  {
+    "name_en": "Elixir",
+    "name_kr": "엘릭서"
+  },
+  {
+    "name_en": "Red-Lined Kismet",
+    "name_kr": "적선백궁"
+  },
+  {
+    "name_en": "Orange Calaf",
+    "name_kr": "오렌지 칼라프"
+  },
+  {
+    "name_en": "Blood Slain",
+    "name_kr": "블러드 슬레인"
+  },
+  {
+    "name_en": "Yellow Toy Block",
+    "name_kr": "노란색 장난감 블록"
+  },
+  {
+    "name_en": "Blue Shouldermail",
+    "name_kr": "블루 숄더메일"
+  },
+  {
+    "name_en": "Blue Shouldermail Pants",
+    "name_kr": "블루 숄더메일 바지"
+  },
+  {
+    "name_en": "Skull Shield",
+    "name_kr": "해골 방패"
+  },
+  {
+    "name_en": "Moss Snail Shell",
+    "name_kr": "이끼 달팽이의 껍질"
+  },
+  {
+    "name_en": "Scroll for Helmet for HP 60%",
+    "name_kr": "투구 체력 주문서 60%"
+  },
+  {
+    "name_en": "Nependeath Seed",
+    "name_kr": "네펜데스의 씨앗"
+  },
+  {
+    "name_en": "Gold Nordic Helm",
+    "name_kr": "골드 노르만 헬름"
+  },
+  {
+    "name_en": "Dark Piettra",
+    "name_kr": "다크 피에르타"
+  },
+  {
+    "name_en": "Dark Piettra Skirt",
+    "name_kr": "다크 피에르타 바지"
+  },
+  {
+    "name_en": "Green Lumati",
+    "name_kr": "그린 루이마리"
+  },
+  {
+    "name_en": "Gold Brist",
+    "name_kr": "골드 브리스트"
+  },
+  {
+    "name_en": "Red Goni Shoes",
+    "name_kr": "레드 고니슈즈"
+  },
+  {
+    "name_en": "Nependeath's Honey",
+    "name_kr": "네펜데스의 꿀"
+  },
+  {
+    "name_en": "Jr. Cerebes Tooth",
+    "name_kr": "주니어 불독의 송곳니"
+  },
+  {
+    "name_en": "Dark Trigger",
+    "name_kr": "다 티거"
+  },
+  {
+    "name_en": "Green Sonata",
+    "name_kr": "녹 흑일모자"
+  },
+  {
+    "name_en": "Dark Golden Circlet",
+    "name_kr": "다크 골든서클릿"
+  },
+  {
+    "name_en": "Bronze Crusader Helm",
+    "name_kr": "브론즈 크루세이더 헬름"
+  },
+  {
+    "name_en": "Needle Pouch",
+    "name_kr": "바늘쌈지"
+  },
+  {
+    "name_en": "Emerald Dome",
+    "name_kr": "에메랄드 돔"
+  },
+  {
+    "name_en": "Dark Piettra Skirt",
+    "name_kr": "다크 피에르타 치마"
+  },
+  {
+    "name_en": "Brown Double Boots",
+    "name_kr": "브라운 더블트 부츠"
+  },
+  {
+    "name_en": "Skeledog's Bone",
+    "name_kr": "스켈독의 뼈"
+  },
+  {
+    "name_en": "Blue Bandana",
+    "name_kr": "파란색 두건"
+  },
+  {
+    "name_en": "Blue Lined Kismet",
+    "name_kr": "청선백궁"
+  },
+  {
+    "name_en": "Red Pierre Shoes",
+    "name_kr": "레드드 피에르슈즈"
+  },
+  {
+    "name_en": "Scroll for Gloves for HP 60%",
+    "name_kr": "장갑 체력 주문서 60%"
+  },
+  {
+    "name_en": "Plateon's Helmet",
+    "name_kr": "플라티안의 헬멧"
+  },
+  {
+    "name_en": "Brown Pole Feather Hat",
+    "name_kr": "브라운 폴리페더햇"
+  },
+  {
+    "name_en": "Red Lumati",
+    "name_kr": "레드 루이마리"
+  },
+  {
+    "name_en": "Blue Willow",
+    "name_kr": "블루루 윌로우"
+  },
+  {
+    "name_en": "Purple Goni Shoes",
+    "name_kr": "퍼플 고니슈즈"
+  },
+  {
+    "name_en": "Fury Claw",
+    "name_kr": "데빌클로"
+  },
+  {
+    "name_en": "Scroll for Earring for HP 100%",
+    "name_kr": "귀 장식 체력 주문서 100%"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for STR 100%",
+    "name_kr": "전신 갑옷 힘 주문서 100%"
+  },
+  {
+    "name_en": "Mechanical Heart",
+    "name_kr": "기계심장"
+  },
+  {
+    "name_en": "Sapphire Slain",
+    "name_kr": "사파이어 슬레인"
+  },
+  {
+    "name_en": "Green China",
+    "name_kr": "녹일"
+  },
+  {
+    "name_en": "Green China Pants",
+    "name_kr": "녹일 바지"
+  },
+  {
+    "name_en": "Black Maro",
+    "name_kr": "흑마로"
+  },
+  {
+    "name_en": "The Rising",
+    "name_kr": "라이징"
+  },
+  {
+    "name_en": "Mr Rasfelt",
+    "name_kr": "라스펠트건"
+  },
+  {
+    "name_en": "Blue Toy Block",
+    "name_kr": "파란색 장난감 블록"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for DEF 60%",
+    "name_kr": "전신 갑옷 방어력 주문서 60%"
+  },
+  {
+    "name_en": "Dark Distinction",
+    "name_kr": "다크 크라페"
+  },
+  {
+    "name_en": "Ocher Shouldermail Pants",
+    "name_kr": "오우커 숄더메일 바지"
+  },
+  {
+    "name_en": "Red Pennance",
+    "name_kr": "레드 페넌스"
+  },
+  {
+    "name_en": "Gold Hildon Boots",
+    "name_kr": "골드 힐던부츠"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for Jump 60%",
+    "name_kr": "하의 점프력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for DEX 10%",
+    "name_kr": "하의 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Shield for STR 60%",
+    "name_kr": "방패 힘 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Two Handed Sword for Accuracy 10%",
+    "name_kr": "두손검 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Dark Cloud Foxtail",
+    "name_kr": "큰 구름여우 꼬리"
+  },
+  {
+    "name_en": "Kinoko Ramen Pig Head",
+    "name_kr": "키노코라면(돼지사골)"
+  },
+  {
+    "name_en": "Yakisoba",
+    "name_kr": "야끼소바"
+  },
+  {
+    "name_en": "Fish Cake Dish",
+    "name_kr": "어묵(접시)"
+  },
+  {
+    "name_en": "Red Umbrella",
+    "name_kr": "빨강 우산"
+  },
+  {
+    "name_en": "Thermometer",
+    "name_kr": "체온계"
+  },
+  {
+    "name_en": "Pounder",
+    "name_kr": "절구공이"
+  },
+  {
+    "name_en": "Blue Adventurer Cape",
+    "name_kr": "파란색 모험가의 망토"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEX 60%",
+    "name_kr": "투구 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Topwear for STR 100%",
+    "name_kr": "상의 힘 주문서 100%"
+  },
+  {
+    "name_en": "Snake Leather",
+    "name_kr": "뱀가죽"
+  },
+  {
+    "name_en": "Umber Shouldermail",
+    "name_kr": "엄버 숄더메일"
+  },
+  {
+    "name_en": "Umber Shouldermail Pants",
+    "name_kr": "엄버 숄더메일 바지"
+  },
+  {
+    "name_en": "Necki Swimming Cap",
+    "name_kr": "네키의 수영모자"
+  },
+  {
+    "name_en": "Scroll for Pole Arm for Accuracy 100%",
+    "name_kr": "폴암 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Lunar Pixie's Moonpiece",
+    "name_kr": "루나픽시의 달조각"
+  },
+  {
+    "name_en": "Aqua Golden Circlet",
+    "name_kr": "아쿠아 골든서클릿"
+  },
+  {
+    "name_en": "Brown Sonata",
+    "name_kr": "황 흑일모자"
+  },
+  {
+    "name_en": "Red Moon",
+    "name_kr": "적월"
+  },
+  {
+    "name_en": "Scroll for Two Handed BW for Accuracy 10%",
+    "name_kr": "두손둔기 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Receving Apparatus",
+    "name_kr": "수신기"
+  },
+  {
+    "name_en": "Skull Earrings",
+    "name_kr": "해골 귀고리"
+  },
+  {
+    "name_en": "Green Goldwind Shoes",
+    "name_kr": "그린 골든윈드슈즈"
+  },
+  {
+    "name_en": "Golden Mole",
+    "name_kr": "골든 모울"
+  },
+  {
+    "name_en": "Dark Slain",
+    "name_kr": "다크 슬레인"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEX 10%",
+    "name_kr": "투구 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Mithril Crusader Helm",
+    "name_kr": "미스릴 크루세이더 헬름"
+  },
+  {
+    "name_en": "Maroon Moon",
+    "name_kr": "자월"
+  },
+  {
+    "name_en": "Necki Flower",
+    "name_kr": "네키의 꽃"
+  },
+  {
+    "name_en": "Brown Leather Ocean Hat",
+    "name_kr": "브라운레더 오션 햇"
+  },
+  {
+    "name_en": "Scroll for Spear for Accuracy 100%",
+    "name_kr": "창 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Iron Boar Armor",
+    "name_kr": "아이언보어의 갑옷조각"
+  },
+  {
+    "name_en": "Scroll for Two Handed Sword for ATT 60%",
+    "name_kr": "한손검 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Drake Skull",
+    "name_kr": "드레이크의 머리뼈"
+  },
+  {
+    "name_en": "Dragon Skin",
+    "name_kr": "용의 가죽"
+  },
+  {
+    "name_en": "Blue Bone Helm",
+    "name_kr": "블루 본 헬름"
+  },
+  {
+    "name_en": "Red Calas",
+    "name_kr": "레드 칼라스"
+  },
+  {
+    "name_en": "Mithril Hildon Boots",
+    "name_kr": "미스릴 힐던부츠"
+  },
+  {
+    "name_en": "Purple Steel Tip Boots",
+    "name_kr": "퍼플플 네일슈즈"
+  },
+  {
+    "name_en": "Scroll for Helmet for INT 60%",
+    "name_kr": "투구 지력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for HP 60%",
+    "name_kr": "하의 체력 주문서 60%"
+  },
+  {
+    "name_en": "Tortie Shell",
+    "name_kr": "엄티의 등껍질"
+  },
+  {
+    "name_en": "Scroll for Cape for STR 60%",
+    "name_kr": "망토 힘 주문서 60%"
+  },
+  {
+    "name_en": "Purple Goldwind Shoes",
+    "name_kr": "퍼플 골든윈드슈즈"
+  },
+  {
+    "name_en": "Dark Shouldermail Pants",
+    "name_kr": "다크 숄더메일 바지"
+  },
+  {
+    "name_en": "Dark Shouldermail",
+    "name_kr": "다크 숄더메일"
+  },
+  {
+    "name_en": "Brown Moon Pants",
+    "name_kr": "황월 바지"
+  },
+  {
+    "name_en": "Brown Moon",
+    "name_kr": "황월"
+  },
+  {
+    "name_en": "Flame Golden Circlet",
+    "name_kr": "플레임 골든서클릿"
+  },
+  {
+    "name_en": "Tree Trunk",
+    "name_kr": "나무줄기"
+  },
+  {
+    "name_en": "Scroll for Staff for Magic ATT 10%",
+    "name_kr": "스태프 마력 주문서 10%"
+  },
+  {
+    "name_en": "Ivory Shouldermail",
+    "name_kr": "아이보리 숄더메일"
+  },
+  {
+    "name_en": "Ivory Shouldermail Pants",
+    "name_kr": "아이보리 숄더메일 바지"
+  },
+  {
+    "name_en": "Blue Goldwind Shoes",
+    "name_kr": "블루 골든윈드슈즈"
+  },
+  {
+    "name_en": "Mecateon's Laser Gun",
+    "name_kr": "메카티안의 광선총"
+  },
+  {
+    "name_en": "Black Amoria Top",
+    "name_kr": "블랙 아모리아 Top"
+  },
+  {
+    "name_en": "Brown Royce",
+    "name_kr": "브라운 로이스"
+  },
+  {
+    "name_en": "Rombot's Memory Card",
+    "name_kr": "롬바드의 메모리카드"
+  },
+  {
+    "name_en": "Broken Piece of Pot",
+    "name_kr": "깨진 항아리 조각"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEF 60%`",
+    "name_kr": "투구 방어력 주문서 60%`"
+  },
+  {
+    "name_en": "Green Plasteer",
+    "name_kr": "그린 플레스티어"
+  },
+  {
+    "name_en": "Dirty Bandage",
+    "name_kr": "더러운 붕대"
+  },
+  {
+    "name_en": "Bronze Pow",
+    "name_kr": "브론즈 파우"
+  },
+  {
+    "name_en": "Oaker Garner",
+    "name_kr": "오커 가너"
+  },
+  {
+    "name_en": "Bronze Clench",
+    "name_kr": "브론즈 클랜치"
+  },
+  {
+    "name_en": "Scroll for Topwear for STR 10%",
+    "name_kr": "상의 힘 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Topwear for LUK 60%",
+    "name_kr": "상의 행운 주문서 60%"
+  },
+  {
+    "name_en": "Dark Nependeath Seed",
+    "name_kr": "다크 네펜데스의 씨앗"
+  },
+  {
+    "name_en": "Red Shouldermail",
+    "name_kr": "레드 숄더메일"
+  },
+  {
+    "name_en": "Red Shouldermail Pants",
+    "name_kr": "레드 숄더메일 바지"
+  },
+  {
+    "name_en": "Blue China",
+    "name_kr": "청일"
+  },
+  {
+    "name_en": "Blue China Pants",
+    "name_kr": "청일 바지"
+  },
+  {
+    "name_en": "Blue Willow",
+    "name_kr": "블루 윌로우"
+  },
+  {
+    "name_en": "Medicine With Weird Vibes",
+    "name_kr": "이상한 느낌의 약"
+  },
+  {
+    "name_en": "Scroll for Helmet for INT 10%",
+    "name_kr": "투구 지력 주문서 10%"
+  },
+  {
+    "name_en": "Ginseng-Boiled Water",
+    "name_kr": "산삼 달인물"
+  },
+  {
+    "name_en": "Black Bandana",
+    "name_kr": "검은색 두건"
+  },
+  {
+    "name_en": "Emerald Earrings",
+    "name_kr": "에메랄드 귀고리"
+  },
+  {
+    "name_en": "Red Ice Queen",
+    "name_kr": "레드 트란도트"
+  },
+  {
+    "name_en": "Red Ice Queen Skirt",
+    "name_kr": "레드 트란도트 치마"
+  },
+  {
+    "name_en": "White Adventurer Cape",
+    "name_kr": "화이트 모험가의 망토"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for HP 10%",
+    "name_kr": "하의 체력 주문서 10%"
+  },
+  {
+    "name_en": "Clang's Claws",
+    "name_kr": "클랑의 집게발"
+  },
+  {
+    "name_en": "Scroll for Topwear for LUK 10%",
+    "name_kr": "상의 행운 주문서 10%"
+  },
+  {
+    "name_en": "Chief Gray's Sign",
+    "name_kr": "원로 그레이의 표식"
+  },
+  {
+    "name_en": "Red Magic Cape",
+    "name_kr": "빨간색 마법의 망토"
+  },
+  {
+    "name_en": "Star Rock",
+    "name_kr": "별의 돌"
+  },
+  {
+    "name_en": "Brown Steel Tip Boots",
+    "name_kr": "브라운 네일슈즈"
+  },
+  {
+    "name_en": "Purple Steel Tip Boots",
+    "name_kr": "퍼플 네일슈즈"
+  },
+  {
+    "name_en": "Old Mithril Nordic Helm",
+    "name_kr": "낡은 미스릴 노르만 헬름"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for Jump 10%",
+    "name_kr": "하의 점프력 주문서 10%"
+  },
+  {
+    "name_en": "Tiger Stamp",
+    "name_kr": "호랑이 발도장"
+  },
+  {
+    "name_en": "Scroll for Crossbow for ATT 10%",
+    "name_kr": "석궁 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Drake's Blood",
+    "name_kr": "드레이크의 피"
+  },
+  {
+    "name_en": "Drake's Meat",
+    "name_kr": "드레이크의 고기"
+  },
+  {
+    "name_en": "Blue Lumati",
+    "name_kr": "블루 루이마리"
+  },
+  {
+    "name_en": "Thorns",
+    "name_kr": "쏜즈"
+  },
+  {
+    "name_en": "Scroll for Topwear for HP 10%",
+    "name_kr": "상의 체력 주문서 10%"
+  },
+  {
+    "name_en": "Jr Yeti Skin",
+    "name_kr": "주니어 예티의 가죽"
+  },
+  {
+    "name_en": "Mithril Wolfskin",
+    "name_kr": "미스릴 우드쉽"
+  },
+  {
+    "name_en": "Blue Anakarune",
+    "name_kr": "블루 아나카룬"
+  },
+  {
+    "name_en": "Red Anakarune",
+    "name_kr": "레드 아나카룬"
+  },
+  {
+    "name_en": "Scroll for Shield for STR 10%",
+    "name_kr": "방패 힘 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for One Handed Sword for Accuracy 10%",
+    "name_kr": "한손검 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Shield for LUK 10%",
+    "name_kr": "방패 행운 주문서 10%"
+  },
+  {
+    "name_en": "Umber Mantis Pants",
+    "name_kr": "엄버 맨티스 바지"
+  },
+  {
+    "name_en": "Umber Mantis",
+    "name_kr": "엄버 맨티스"
+  },
+  {
+    "name_en": "Golden Crow",
+    "name_kr": "골든 크로우"
+  },
+  {
+    "name_en": "Straw Doll",
+    "name_kr": "짚 인형"
+  },
+  {
+    "name_en": "Scroll for Shield for HP 60%",
+    "name_kr": "방패 체력 주문서 60%"
+  },
+  {
+    "name_en": "Wooden Doll",
+    "name_kr": "나무 인형"
+  },
+  {
+    "name_en": "Silver Windshoes",
+    "name_kr": "실버 윈드슈즈"
+  },
+  {
+    "name_en": "Brown Studded Top",
+    "name_kr": "브라운 스타드"
+  },
+  {
+    "name_en": "Brown Studded Pants",
+    "name_kr": "브라운 스타드 바지"
+  },
+  {
+    "name_en": "Purple Cast Linen",
+    "name_kr": "퍼플 카스트 린넨"
+  },
+  {
+    "name_en": "Scroll for Gloves for HP 10%",
+    "name_kr": "장갑 체력 주문서 10%"
+  },
+  {
+    "name_en": "Brown China",
+    "name_kr": "황일"
+  },
+  {
+    "name_en": "Rubble",
+    "name_kr": "돌조각"
+  },
+  {
+    "name_en": "Firebomb Flame",
+    "name_kr": "파이어봄의 불씨"
+  },
+  {
+    "name_en": "Blood Moss Boots",
+    "name_kr": "블러드 모스부츠"
+  },
+  {
+    "name_en": "Red Seraphis",
+    "name_kr": "레드 세라피스"
+  },
+  {
+    "name_en": "Scroll for Earring for HP 60%",
+    "name_kr": "귀 장식 체력 주문서 60%"
+  },
+  {
+    "name_en": "Luster Pixie's Sunpiece",
+    "name_kr": "러스터픽시의 태양조각"
+  },
+  {
+    "name_en": "Scroll for One Handed Sword for Accuracy 60%",
+    "name_kr": "한손검 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Blue Goni Shoes",
+    "name_kr": "블루 고니슈즈"
+  },
+  {
+    "name_en": "Red Gore Boots",
+    "name_kr": "레드 고어부츠"
+  },
+  {
+    "name_en": "Steel Manute",
+    "name_kr": "스틸 마누트"
+  },
+  {
+    "name_en": "Black Schult",
+    "name_kr": "블랙 슐트"
+  },
+  {
+    "name_en": "Croco Skin",
+    "name_kr": "크로코의 가죽"
+  },
+  {
+    "name_en": "Light Scorpio",
+    "name_kr": "라이트 스콜피오"
+  },
+  {
+    "name_en": "Light Scorpio Pants",
+    "name_kr": "라이트 스콜피오 바지"
+  },
+  {
+    "name_en": "Wooden Legend Shield",
+    "name_kr": "우드 레전드 실드"
+  },
+  {
+    "name_en": "Black Royal Barone",
+    "name_kr": "블랙 로얄바롱"
+  },
+  {
+    "name_en": "Tiger Skin",
+    "name_kr": "호랑이 가죽"
+  },
+  {
+    "name_en": "Cellion Tail",
+    "name_kr": "샐리온의 꼬리"
+  },
+  {
+    "name_en": "Red Hearted Earrings",
+    "name_kr": "빨간하트 귀고리"
+  },
+  {
+    "name_en": "Red China Pants",
+    "name_kr": "적일 바지"
+  },
+  {
+    "name_en": "Red China",
+    "name_kr": "적일"
+  },
+  {
+    "name_en": "Red Anakamoon",
+    "name_kr": "레드 아나카문"
+  },
+  {
+    "name_en": "Orange Tai",
+    "name_kr": "주자로"
+  },
+  {
+    "name_en": "Blaze Capsule",
+    "name_kr": "블레이즈 캡슐"
+  },
+  {
+    "name_en": "Black Basile Boots",
+    "name_kr": "블랙 바실즈 부츠"
+  },
+  {
+    "name_en": "Bellflower",
+    "name_kr": "도라지"
+  },
+  {
+    "name_en": "Crystal Flower Earrings",
+    "name_kr": "크리스탈 플라워링"
+  },
+  {
+    "name_en": "Bronze Platine",
+    "name_kr": "브론즈 플라틴"
+  },
+  {
+    "name_en": "Bronze Platine Pants",
+    "name_kr": "브론즈 플라틴 바지"
+  },
+  {
+    "name_en": "Red Choro",
+    "name_kr": "적초로"
+  },
+  {
+    "name_en": "Psycho Claw",
+    "name_kr": "세라핌즈"
+  },
+  {
+    "name_en": "Grupin Tail",
+    "name_kr": "그류핀의 꼬리"
+  },
+  {
+    "name_en": "Blue Moon Pants",
+    "name_kr": "청월 바지"
+  },
+  {
+    "name_en": "Deadly Fin",
+    "name_kr": "게타"
+  },
+  {
+    "name_en": "Tamus",
+    "name_kr": "타무스"
+  },
+  {
+    "name_en": "Scroll for Earring for LUK 10%",
+    "name_kr": "귀 장식 행운 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Shield for LUK 60%",
+    "name_kr": "방패 행운 주문서 60%"
+  },
+  {
+    "name_en": "Glaze Capsule",
+    "name_kr": "글레이즈 캡슐"
+  },
+  {
+    "name_en": "Lioner Tail",
+    "name_kr": "라이오너의 꼬리"
+  },
+  {
+    "name_en": "Steel Brist",
+    "name_kr": "스틸 브리스트"
+  },
+  {
+    "name_en": "Red Polyfeather Hat",
+    "name_kr": "적궁우"
+  },
+  {
+    "name_en": "MT-09's Fuel",
+    "name_kr": "MT-09의 연료"
+  },
+  {
+    "name_en": "Pink-Flowered Earrings",
+    "name_kr": "분홍꽃 귀고리"
+  },
+  {
+    "name_en": "Moon Rock",
+    "name_kr": "달의 돌"
+  },
+  {
+    "name_en": "Mithri Brist",
+    "name_kr": "미스릴 브리스트"
+  },
+  {
+    "name_en": "Brown China Pants",
+    "name_kr": "황일 바지"
+  },
+  {
+    "name_en": "Sparta",
+    "name_kr": "그리스"
+  },
+  {
+    "name_en": "Silver Legend Shield",
+    "name_kr": "실버 레전드 실드"
+  },
+  {
+    "name_en": "The Shining",
+    "name_kr": "샤이닝"
+  },
+  {
+    "name_en": "100 Year Old Bellflower",
+    "name_kr": "100년 묵은 도라지"
+  },
+  {
+    "name_en": "Black Hunter",
+    "name_kr": "블랙 헌트"
+  },
+  {
+    "name_en": "Venon",
+    "name_kr": "베논"
+  },
+  {
+    "name_en": "Red Orientican",
+    "name_kr": "레드 오리엔타이칸"
+  },
+  {
+    "name_en": "Red Orientican Pants",
+    "name_kr": "레드 오리엔타이칸 바지"
+  },
+  {
+    "name_en": "Malady's Experimental Frog",
+    "name_kr": "멜러디의 실험용 개구리"
+  },
+  {
+    "name_en": "White Calaf",
+    "name_kr": "화이트 칼라프"
+  },
+  {
+    "name_en": "Green Orientican Pants",
+    "name_kr": "그린 오리엔타이칸 바지"
+  },
+  {
+    "name_en": "Green Orientican",
+    "name_kr": "그린 오리엔타이칸"
+  },
+  {
+    "name_en": "Asianic Bow",
+    "name_kr": "봉황위궁"
+  },
+  {
+    "name_en": "Steal Pow",
+    "name_kr": "스틸 파우"
+  },
+  {
+    "name_en": "Stone Golem Rubble",
+    "name_kr": "스톤골렘의 돌조각"
+  },
+  {
+    "name_en": "Red Cross Shield",
+    "name_kr": "레드 크로스 실드"
+  },
+  {
+    "name_en": "Scroll for Crossbow for ATT 60%",
+    "name_kr": "석궁 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Bronze Identity",
+    "name_kr": "브론즈 하이드후드"
+  },
+  {
+    "name_en": "Green Ice Queen",
+    "name_kr": "그린 트란도트"
+  },
+  {
+    "name_en": "Green Ice Queen Skirt",
+    "name_kr": "그린 트란도트 치마"
+  },
+  {
+    "name_en": "Hawkhead",
+    "name_kr": "호크헤드"
+  },
+  {
+    "name_en": "Old Paper",
+    "name_kr": "낡은 종이"
+  },
+  {
+    "name_en": "Blue Tai",
+    "name_kr": "청자로"
+  },
+  {
+    "name_en": "Skylar",
+    "name_kr": "방천극"
+  },
+  {
+    "name_en": "The Book Ghost's Sheet of Paper",
+    "name_kr": "비급의 낱장"
+  },
+  {
+    "name_en": "Scroll for Earring for DEX 60%",
+    "name_kr": "귀 장식 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Black Mushroom Spore",
+    "name_kr": "검은 포자"
+  },
+  {
+    "name_en": "Hector's Tail",
+    "name_kr": "헥터의 꼬리"
+  },
+  {
+    "name_en": "Scroll for Cape for DEX 60%",
+    "name_kr": "망토 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Green Adventurer Cape",
+    "name_kr": "그린 모험가의 망토"
+  },
+  {
+    "name_en": "Green Maro",
+    "name_kr": "녹마로"
+  },
+  {
+    "name_en": "The Blessing",
+    "name_kr": "플루튬"
+  },
+  {
+    "name_en": "Serpent's Coil",
+    "name_kr": "스네이크"
+  },
+  {
+    "name_en": "Dark Jr Yeti Skin",
+    "name_kr": "다크 주니어 예티의 가죽"
+  },
+  {
+    "name_en": "Holy Cross Earrings",
+    "name_kr": "홀리 크로스링"
+  },
+  {
+    "name_en": "Blue Magic 호Cape",
+    "name_kr": "파란색 마법의 망토"
+  },
+  {
+    "name_en": "Gold Moss Boots",
+    "name_kr": "골드 모스부츠"
+  },
+  {
+    "name_en": "Sephia Garner",
+    "name_kr": "세피아 가너"
+  },
+  {
+    "name_en": "Three-Tailed Foxtail",
+    "name_kr": "삼미호의 꼬리"
+  },
+  {
+    "name_en": "White Anakarune",
+    "name_kr": "화이트 아나카룬"
+  },
+  {
+    "name_en": "Holy Spear",
+    "name_kr": "십자창"
+  },
+  {
+    "name_en": "Ocher Scorpio",
+    "name_kr": "오우커 스콜피오"
+  },
+  {
+    "name_en": "Ocher Scorpio Pants",
+    "name_kr": "오우커 스콜피오 바지"
+  },
+  {
+    "name_en": "Bear Foot",
+    "name_kr": "곰발바닥"
+  },
+  {
+    "name_en": "Yellow Belt",
+    "name_kr": "노란 허리띠"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for LUK 100%",
+    "name_kr": "전신 갑옷 행운 주문서 100%"
+  },
+  {
+    "name_en": "Tough Leather",
+    "name_kr": "거친 가죽"
+  },
+  {
+    "name_en": "Blue Orientican",
+    "name_kr": "블루 오리엔타이칸"
+  },
+  {
+    "name_en": "Blue Ice Queen",
+    "name_kr": "블루 트란도트"
+  },
+  {
+    "name_en": "Gold Manute",
+    "name_kr": "골드 마누트"
+  },
+  {
+    "name_en": "Blue Gore Boots",
+    "name_kr": "블루 고어부츠"
+  },
+  {
+    "name_en": "Zombie's Lost Tooth",
+    "name_kr": "좀비의 잃어버린 어금니"
+  },
+  {
+    "name_en": "Green Seraphis",
+    "name_kr": "그린 세라피스"
+  },
+  {
+    "name_en": "Red Magic Cape",
+    "name_kr": "레드 마법의 망토"
+  },
+  {
+    "name_en": "Blue Orientican Pants",
+    "name_kr": "블루 오리엔타이칸 바지"
+  },
+  {
+    "name_en": "White Polyfeather Hat",
+    "name_kr": "백궁우"
+  },
+  {
+    "name_en": "Storybook Black Book",
+    "name_kr": "[스토리북] 검은책"
+  },
+  {
+    "name_en": "Rib",
+    "name_kr": "갈비뼈"
+  },
+  {
+    "name_en": "Silver Planet",
+    "name_kr": "실버 플레닛"
+  },
+  {
+    "name_en": "Red Infinium Circlet",
+    "name_kr": "레드 키튼서클렛"
+  },
+  {
+    "name_en": "Brown Nightfox",
+    "name_kr": "브라운 루크"
+  },
+  {
+    "name_en": "Beige Patriot",
+    "name_kr": "베이지 웨어캡"
+  },
+  {
+    "name_en": "Zombie's Lost Tooth",
+    "name_kr": "좀비의 잃어버리 어금니"
+  },
+  {
+    "name_en": "Zombie's Lost Gold Tooth",
+    "name_kr": "좀비의 잃어버린 금니"
+  },
+  {
+    "name_en": "White Magic Cape",
+    "name_kr": "흰색 마법의 망토"
+  },
+  {
+    "name_en": "Brown Choro",
+    "name_kr": "황초로"
+  },
+  {
+    "name_en": "Adamantium Legend Shield",
+    "name_kr": "아다만티움 레전드 실드"
+  },
+  {
+    "name_en": "Gold Pow",
+    "name_kr": "골드 파우"
+  },
+  {
+    "name_en": "Blue Oriental Helmet",
+    "name_kr": "블루 오리엔트 헬멧"
+  },
+  {
+    "name_en": "Blue Seraphis",
+    "name_kr": "블루 세라피스"
+  },
+  {
+    "name_en": "Purple Mystique",
+    "name_kr": "퍼플 루티드"
+  },
+  {
+    "name_en": "Purple Mystique Pants",
+    "name_kr": "퍼플 루티드 바지"
+  },
+  {
+    "name_en": "White Fang's Tail",
+    "name_kr": "화이트팽의 꼬리"
+  },
+  {
+    "name_en": "Blue Anakamoon",
+    "name_kr": "블루 아나카문"
+  },
+  {
+    "name_en": "Red Oriental Helmet",
+    "name_kr": "레드 오리엔트 헬멧"
+  },
+  {
+    "name_en": "Blue Gaia Cape",
+    "name_kr": "파란색 가이아의 망토"
+  },
+  {
+    "name_en": "Dark Stone Golem Rubble",
+    "name_kr": "다크 스톤골렘의 돌조각"
+  },
+  {
+    "name_en": "Old Steel Nordic Helm",
+    "name_kr": "낡은 스틸 노르만 헬름"
+  },
+  {
+    "name_en": "Dark Manute",
+    "name_kr": "다크 마누트"
+  },
+  {
+    "name_en": "Black Magic Cape",
+    "name_kr": "블랙 마법의 망토"
+  },
+  {
+    "name_en": "Dark Identity",
+    "name_kr": "다크 하이드후드"
+  },
+  {
+    "name_en": "Blue Goldrunners",
+    "name_kr": "블루 앵클부츠"
+  },
+  {
+    "name_en": "Evil Wings",
+    "name_kr": "이블윙즈"
+  },
+  {
+    "name_en": "Burning Hell",
+    "name_kr": "버닝헬"
+  },
+  {
+    "name_en": "Ancient Scroll",
+    "name_kr": "고대의 주문서"
+  },
+  {
+    "name_en": "Green Gore Boots",
+    "name_kr": "그린 고어부츠"
+  },
+  {
+    "name_en": "Silver Identity",
+    "name_kr": "실버 하이드후드"
+  },
+  {
+    "name_en": "Broken Deer Horn",
+    "name_kr": "부러진 사슴의 뿔"
+  },
+  {
+    "name_en": "Scroll for Topwear for HP 60%",
+    "name_kr": "상의 체력 주문서 60%"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for STR 10%",
+    "name_kr": "전신 갑옷 힘 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Shield for HP 10%",
+    "name_kr": "방패 체력 주문서 10%"
+  },
+  {
+    "name_en": "Mixed Block",
+    "name_kr": "Mixed Block"
+  },
+  {
+    "name_en": "Light Mantis Pants",
+    "name_kr": "라이트 맨티스 바지"
+  },
+  {
+    "name_en": "Evil Tale",
+    "name_kr": "이블윙즈"
+  },
+  {
+    "name_en": "Steely Throwing Knives",
+    "name_kr": "뇌전 수리검"
+  },
+  {
+    "name_en": "Dark Anakamoon",
+    "name_kr": "다크 아나카문"
+  },
+  {
+    "name_en": "Dark Seraphis",
+    "name_kr": "다크 세라피스"
+  },
+  {
+    "name_en": "Pink Goldrunners",
+    "name_kr": "핑크 앵클부츠"
+  },
+  {
+    "name_en": "Orihalcon Camel Boots",
+    "name_kr": "오리할콘 카멜부츠"
+  },
+  {
+    "name_en": "Dark Scorpio",
+    "name_kr": "다크 스콜피오"
+  },
+  {
+    "name_en": "Dark Scorpio Pants",
+    "name_kr": "다크 스콜피오 바지"
+  },
+  {
+    "name_en": "Red Gaia Cape",
+    "name_kr": "빨간색 가이아의 망토"
+  },
+  {
+    "name_en": "Mithril Platine Pants",
+    "name_kr": "미스릴 플라틴 바지"
+  },
+  {
+    "name_en": "Mithril Platine",
+    "name_kr": "미스릴 플라틴"
+  },
+  {
+    "name_en": "Gold Lapiz Sandals",
+    "name_kr": "골드 라피스 샌들"
+  },
+  {
+    "name_en": "Blue Mystique Shoes",
+    "name_kr": "블루 루티드 슈즈"
+  },
+  {
+    "name_en": "Blue Eyes",
+    "name_kr": "블루 아이즈"
+  },
+  {
+    "name_en": "Red Belt",
+    "name_kr": "빨간 허리띠"
+  },
+  {
+    "name_en": "Blue Magic Cape",
+    "name_kr": "파란색 마법의 망토"
+  },
+  {
+    "name_en": "Black Pirate's Bandana",
+    "name_kr": "블랙 파이렛츠 반다나"
+  },
+  {
+    "name_en": "Broom",
+    "name_kr": "빗자루"
+  },
+  {
+    "name_en": "Pepe Beak",
+    "name_kr": "페페의 부리"
+  },
+  {
+    "name_en": "Dark Orientican",
+    "name_kr": "다크 오리엔타이칸"
+  },
+  {
+    "name_en": "Dark Orientican Pants",
+    "name_kr": "다크 오리엔타이칸 바지"
+  },
+  {
+    "name_en": "Orange Goldrunners",
+    "name_kr": "오렌지 앵클부츠"
+  },
+  {
+    "name_en": "Sapphire Clench",
+    "name_kr": "사파이어 클랜치"
+  },
+  {
+    "name_en": "Black Gaia Cape",
+    "name_kr": "검은색 가이아의 망토"
+  },
+  {
+    "name_en": "Blue Lapiz Sandals",
+    "name_kr": "블루 라피스 샌들"
+  },
+  {
+    "name_en": "Blue Patriot",
+    "name_kr": "블루 웨어캡"
+  },
+  {
+    "name_en": "Red Katana",
+    "name_kr": "레드 카타나"
+  },
+  {
+    "name_en": "Bronze Rover",
+    "name_kr": "브론즈 와이어스"
+  },
+  {
+    "name_en": "Scroll for Topwear for STR 60%",
+    "name_kr": "상의 힘 주문서 60%"
+  },
+  {
+    "name_en": "Ghost Headband",
+    "name_kr": "망령의 삼각두건"
+  },
+  {
+    "name_en": "Ramen",
+    "name_kr": "라면"
+  },
+  {
+    "name_en": "Grape Juice",
+    "name_kr": "포도 주스"
+  },
+  {
+    "name_en": "Fan",
+    "name_kr": "부채채"
+  },
+  {
+    "name_en": "Red Tai",
+    "name_kr": "적자로"
+  },
+  {
+    "name_en": "Cucumber",
+    "name_kr": "오이"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for LUK 60%",
+    "name_kr": "전신 갑옷 행운 주문서 60%"
+  },
+  {
+    "name_en": "Buffy's Hat",
+    "name_kr": "버피의 모자"
+  },
+  {
+    "name_en": "Dark Clench",
+    "name_kr": "다크 클랜치"
+  },
+  {
+    "name_en": "Dark Moss Boots",
+    "name_kr": "다크 모스부츠"
+  },
+  {
+    "name_en": "Blue Choro",
+    "name_kr": "청초로"
+  },
+  {
+    "name_en": "Neocora",
+    "name_kr": "네오코라"
+  },
+  {
+    "name_en": "Red Hinkel",
+    "name_kr": "레드 힌켈"
+  },
+  {
+    "name_en": "Brown Lorin",
+    "name_kr": "브라운 로린"
+  },
+  {
+    "name_en": "Mikhail",
+    "name_kr": "미하일"
+  },
+  {
+    "name_en": "Red Mystique Shoes",
+    "name_kr": "레드 루티드 슈즈"
+  },
+  {
+    "name_en": "Red Viska",
+    "name_kr": "레드 비스카"
+  },
+  {
+    "name_en": "Peach Seed",
+    "name_kr": "천도씨앗"
+  },
+  {
+    "name_en": "Red Pirate Top",
+    "name_kr": "레드 피라테"
+  },
+  {
+    "name_en": "Red Pirate Pants",
+    "name_kr": "레드 피라테 바지"
+  },
+  {
+    "name_en": "White Anakamoon",
+    "name_kr": "화이트 아나카문"
+  },
+  {
+    "name_en": "Black Voyson Shoes",
+    "name_kr": "블랙 보이슨 슈즈"
+  },
+  {
+    "name_en": "Vital Bullet",
+    "name_kr": "바이탈 불릿"
+  },
+  {
+    "name_en": "Scroll for Earring for HP 10%",
+    "name_kr": "귀 장식 체력 주문서 10%"
+  },
+  {
+    "name_en": "Power Elixir",
+    "name_kr": "파워 엘릭서"
+  },
+  {
+    "name_en": "Blood Gigantic",
+    "name_kr": "블러드 기간틱"
+  },
+  {
+    "name_en": "Brown Requierre",
+    "name_kr": "브라운 레퀴에르"
+  },
+  {
+    "name_en": "Blue Carzen Boots",
+    "name_kr": "블루 카젠부츠"
+  },
+  {
+    "name_en": "Red Mystique",
+    "name_kr": "레드 루티드"
+  },
+  {
+    "name_en": "Red Mystique Pants",
+    "name_kr": "레드 루티드 바지"
+  },
+  {
+    "name_en": "Black Bisk",
+    "name_kr": "블랙 비스크"
+  },
+  {
+    "name_en": "Wild Kargo Eye",
+    "name_kr": "와일드카고의 눈동자"
+  },
+  {
+    "name_en": "Pelvic Bone",
+    "name_kr": "골반뼈"
+  },
+  {
+    "name_en": "Bronze Husk",
+    "name_kr": "브론즈 허스크"
+  },
+  {
+    "name_en": "Silver Rover",
+    "name_kr": "실버 와이어스"
+  },
+  {
+    "name_en": "Beia Crash",
+    "name_kr": "베이아 크래쉬"
+  },
+  {
+    "name_en": "Zombie Teddy Bear",
+    "name_kr": "좀비테니 인형"
+  },
+  {
+    "name_en": "Dark Garner",
+    "name_kr": "다크 가너"
+  },
+  {
+    "name_en": "Blood Camel Boots",
+    "name_kr": "블러드 카멜부츠"
+  },
+  {
+    "name_en": "Sapphire Gigantic",
+    "name_kr": "사파이어 기간틱"
+  },
+  {
+    "name_en": "Gold Drop Earrings",
+    "name_kr": "골드드롭 이어링"
+  },
+  {
+    "name_en": "Blue Lorin",
+    "name_kr": "블루 로린"
+  },
+  {
+    "name_en": "Violet Platina",
+    "name_kr": "바이올렛 플라티나"
+  },
+  {
+    "name_en": "Violet Platina Pants",
+    "name_kr": "바이올렛 플라티나 바지"
+  },
+  {
+    "name_en": "Abyss Shooter",
+    "name_kr": "어비스 슈터"
+  },
+  {
+    "name_en": "Dark Pepe Beak",
+    "name_kr": "다크 페페의 부리"
+  },
+  {
+    "name_en": "Old Bronze Nordic Helm",
+    "name_kr": "낡은 브론즈 노르만 헬름"
+  },
+  {
+    "name_en": "Brown Polyfeather Hat",
+    "name_kr": "토궁우"
+  },
+  {
+    "name_en": "Dark Gigantic",
+    "name_kr": "다크 기간틱"
+  },
+  {
+    "name_en": "Blue Requierre",
+    "name_kr": "블루 레퀴에르"
+  },
+  {
+    "name_en": "Blue Elf Shoes",
+    "name_kr": "블루 리넥스슈즈"
+  },
+  {
+    "name_en": "Purple Carzen Boots",
+    "name_kr": "퍼플 카젠부츠"
+  },
+  {
+    "name_en": "Purple Mystique Shoes",
+    "name_kr": "퍼플 루티드 슈즈"
+  },
+  {
+    "name_en": "Mr Alli's Leather",
+    "name_kr": "게비알의 가죽"
+  },
+  {
+    "name_en": "Green Lineros",
+    "name_kr": "그린 리네로스"
+  },
+  {
+    "name_en": "Dark Lineros",
+    "name_kr": "다크 리네로스"
+  },
+  {
+    "name_en": "Orihalcon Platine",
+    "name_kr": "오리할콘 플라틴"
+  },
+  {
+    "name_en": "Orihalcon Platine Pants",
+    "name_kr": "오리할콘 플라틴 바지"
+  },
+  {
+    "name_en": "Dark Studded Top",
+    "name_kr": "다크 스타드"
+  },
+  {
+    "name_en": "Dark Studded Pants",
+    "name_kr": "다크 스타드 바지"
+  },
+  {
+    "name_en": "Sparta",
+    "name_kr": "스파타"
+  },
+  {
+    "name_en": "Red Lapiz Sandals",
+    "name_kr": "레드 라피스 샌들"
+  },
+  {
+    "name_en": "Ice Backbone",
+    "name_kr": "얼음 등뼈"
+  },
+  {
+    "name_en": "Yeti Horn",
+    "name_kr": "예티의 뿔"
+  },
+  {
+    "name_en": "Blue Moon",
+    "name_kr": "청월"
+  },
+  {
+    "name_en": "Dark Anakarune",
+    "name_kr": "다크 아나카룬"
+  },
+  {
+    "name_en": "Blue Lineros",
+    "name_kr": "블루 리네로스"
+  },
+  {
+    "name_en": "Gold Eyes",
+    "name_kr": "골드 아이즈"
+  },
+  {
+    "name_en": "Brown Scarab",
+    "name_kr": "황갑충"
+  },
+  {
+    "name_en": "Cat Doll",
+    "name_kr": "고양이 인형"
+  },
+  {
+    "name_en": "Steel Ancient Shield",
+    "name_kr": "스틸 에이션트 실드"
+  },
+  {
+    "name_en": "Golden River",
+    "name_kr": "금강저"
+  },
+  {
+    "name_en": "Soul of Cat",
+    "name_kr": "고양이의 영혼"
+  },
+  {
+    "name_en": "Lazy Buffy's Marble",
+    "name_kr": "레이지 버피의 구슬"
+  },
+  {
+    "name_en": "Old Mithri lNordic Helm",
+    "name_kr": "낡은 미스릴 노르만 헬름"
+  },
+  {
+    "name_en": "Blue Linnex",
+    "name_kr": "블루 리넥스"
+  },
+  {
+    "name_en": "Redemption",
+    "name_kr": "스페판"
+  },
+  {
+    "name_en": "Metal Silver Earrings",
+    "name_kr": "메탈실버 이어링"
+  },
+  {
+    "name_en": "Scroll for Earring for DEX 10%",
+    "name_kr": "귀 장식 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Free Spirit",
+    "name_kr": "자유로운 영혼"
+  },
+  {
+    "name_en": "Scroll for Cape for LUK 60%",
+    "name_kr": "망토 행운 주문서 60%"
+  },
+  {
+    "name_en": "Black Polyfeather Hat",
+    "name_kr": "흑궁우"
+  },
+  {
+    "name_en": "Green Elf Shoes",
+    "name_kr": "그린 리넥스슈즈"
+  },
+  {
+    "name_en": "Brown Lapiz Sandals",
+    "name_kr": "브라운 라피스 샌들"
+  },
+  {
+    "name_en": "Mark of the Pirate",
+    "name_kr": "해적의 표식"
+  },
+  {
+    "name_en": "Green Scarab",
+    "name_kr": "녹갑충"
+  },
+  {
+    "name_en": "Red Ades",
+    "name_kr": "레드 아데스"
+  },
+  {
+    "name_en": "Red Battle Lord",
+    "name_kr": "레드 배틀로드"
+  },
+  {
+    "name_en": "Red Battle Empress",
+    "name_kr": "레드 배틀엠프리스"
+  },
+  {
+    "name_en": "Dark Patriot",
+    "name_kr": "다크 웨어캡"
+  },
+  {
+    "name_en": "Dark Yeti Horn",
+    "name_kr": "다크 예티의 뿔"
+  },
+  {
+    "name_en": "White Seraphis",
+    "name_kr": "화이트 세라피스"
+  },
+  {
+    "name_en": "Aqua Platina Pants",
+    "name_kr": "아쿠아 플라티나 바지"
+  },
+  {
+    "name_en": "Aqua Platina",
+    "name_kr": "아쿠아 플라티나"
+  },
+  {
+    "name_en": "Green Linnex Shoes",
+    "name_kr": "그린 리넥스 신발"
+  },
+  {
+    "name_en": "Gold Rover",
+    "name_kr": "골드 와이어스"
+  },
+  {
+    "name_en": "Green Galaxy",
+    "name_kr": "그린 크로스햇"
+  },
+  {
+    "name_en": "Red Dragon Barbute",
+    "name_kr": "레드 드래곤 바부타"
+  },
+  {
+    "name_en": "Dark Drake's Horn",
+    "name_kr": "다크 드레이크의 뿔"
+  },
+  {
+    "name_en": "Gold Ancient Shield",
+    "name_kr": "골드 에이션트 실드"
+  },
+  {
+    "name_en": "Chrono",
+    "name_kr": "크로노"
+  },
+  {
+    "name_en": "Red Cordon",
+    "name_kr": "레드 코든"
+  },
+  {
+    "name_en": "Blue Mystique Pants",
+    "name_kr": "블루 루티드 바지"
+  },
+  {
+    "name_en": "Blue Mystique",
+    "name_kr": "블루 루티드"
+  },
+  {
+    "name_en": "Green Pirate Boots",
+    "name_kr": "그린 피레타부츠"
+  },
+  {
+    "name_en": "Angel Wings",
+    "name_kr": "엔젤윙즈"
+  },
+  {
+    "name_en": "Scroll for Bottomwear for DEX 60%",
+    "name_kr": "하의 민첩성 주문서 60%"
+  },
+  {
+    "name_en": "Half Earrings",
+    "name_kr": "하프 이어링"
+  },
+  {
+    "name_en": "Doombringer",
+    "name_kr": "그륜힐"
+  },
+  {
+    "name_en": "Hwabi Throwing Stars",
+    "name_kr": "화비 표창"
+  },
+  {
+    "name_en": "Sealed-Up Grandpa Clock",
+    "name_kr": "봉인된 괘종시계"
+  },
+  {
+    "name_en": "Sunrise Dew",
+    "name_kr": "새벽의 이슬"
+  },
+  {
+    "name_en": "Bronze Gigantic",
+    "name_kr": "브론즈 기간틱"
+  },
+  {
+    "name_en": "Mithril Husk",
+    "name_kr": "미스릴 허스크"
+  },
+  {
+    "name_en": "The Judgement",
+    "name_kr": "스튬"
+  },
+  {
+    "name_en": "Blue Enigmatic",
+    "name_kr": "블루 크리시스"
+  },
+  {
+    "name_en": "Blue Wing Boots",
+    "name_kr": "블루 윙부츠"
+  },
+  {
+    "name_en": "Sapphire Emperor",
+    "name_kr": "사파이어 엠퍼러"
+  },
+  {
+    "name_en": "Blue Studded Top",
+    "name_kr": "블루 스타드"
+  },
+  {
+    "name_en": "Blue Studded Pants",
+    "name_kr": "블루 스타드 바지"
+  },
+  {
+    "name_en": "Blue Hinkel",
+    "name_kr": "블루 힌켈"
+  },
+  {
+    "name_en": "Mithril Planet",
+    "name_kr": "미스릴 플레닛"
+  },
+  {
+    "name_en": "Blue Cordon",
+    "name_kr": "블루 코든"
+  },
+  {
+    "name_en": "Blue Scarab",
+    "name_kr": "청갑충"
+  },
+  {
+    "name_en": "White Gaia Cape",
+    "name_kr": "흰색 가이아의 망토"
+  },
+  {
+    "name_en": "Kandine",
+    "name_kr": "칸디네"
+  },
+  {
+    "name_en": "Gigantic Sledge",
+    "name_kr": "호프만"
+  },
+  {
+    "name_en": "Captain's Hat",
+    "name_kr": "선장의 모자"
+  },
+  {
+    "name_en": "Silver Ancient Shield",
+    "name_kr": "실버 에이션트 실드"
+  },
+  {
+    "name_en": "Gross Jaeger",
+    "name_kr": "그로스야거"
+  },
+  {
+    "name_en": "Cerebes' Tooth",
+    "name_kr": "불독의 송곳니"
+  },
+  {
+    "name_en": "Dark Requiem",
+    "name_kr": "다크 레퀴엠"
+  },
+  {
+    "name_en": "Brown Requiem",
+    "name_kr": "브라운 레퀴엠"
+  },
+  {
+    "name_en": "Baige Elf Shoes",
+    "name_kr": "베이지 리넥스슈즈"
+  },
+  {
+    "name_en": "Dark Husk",
+    "name_kr": "다크 허스크"
+  },
+  {
+    "name_en": "Dark Eyes",
+    "name_kr": "다크 아이즈"
+  },
+  {
+    "name_en": "Pink Mystique",
+    "name_kr": "핑크 루티드"
+  },
+  {
+    "name_en": "Pink Mystique Pants",
+    "name_kr": "핑크 루티드 바지"
+  },
+  {
+    "name_en": "Metal Heart Earrings",
+    "name_kr": "메탈하트 이어링"
+  },
+  {
+    "name_en": "Phoenix Wand",
+    "name_kr": "피닉스 완드"
+  },
+  {
+    "name_en": "Horse Skull",
+    "name_kr": "말 머리뼈"
+  },
+  {
+    "name_en": "Beige Lineros",
+    "name_kr": "베이지 리네로스"
+  },
+  {
+    "name_en": "Steel Aquila Shield",
+    "name_kr": "스틸 아퀼라 실드"
+  },
+  {
+    "name_en": "Red Rivers Boots",
+    "name_kr": "레드 리버스부츠"
+  },
+  {
+    "name_en": "Green Enigma Shoes",
+    "name_kr": "그린 크리시아슈즈"
+  },
+  {
+    "name_en": "Blue Halfglove",
+    "name_kr": "블루얼 하프글로브"
+  },
+  {
+    "name_en": "Lucida Tail",
+    "name_kr": "루이넬의 꼬리"
+  },
+  {
+    "name_en": "Sapphire Camel Boots",
+    "name_kr": "사파이어 카멜부츠"
+  },
+  {
+    "name_en": "Red Requierre",
+    "name_kr": "레드 레퀴에르"
+  },
+  {
+    "name_en": "Bronze Planet",
+    "name_kr": "브론즈 플레닛"
+  },
+  {
+    "name_en": "Blue Infinium Circlet",
+    "name_kr": "블루 키튼서클렛"
+  },
+  {
+    "name_en": "Green Linnex",
+    "name_kr": "그린 리넥스"
+  },
+  {
+    "name_en": "Green Pirate Top",
+    "name_kr": "그린 피라테"
+  },
+  {
+    "name_en": "Green Pirate Pants",
+    "name_kr": "그린 피라테 바지"
+  },
+  {
+    "name_en": "Blue Falcon",
+    "name_kr": "블루 골드윙캡"
+  },
+  {
+    "name_en": "Blue Pageant",
+    "name_kr": "블루얼 페긴트"
+  },
+  {
+    "name_en": "Storybook Formula for Black Cloud",
+    "name_kr": "[스토리북] 검은구름 제조법"
+  },
+  {
+    "name_en": "Buffoon's Grandpa Clock",
+    "name_kr": "버푼의 괘종시계"
+  },
+  {
+    "name_en": "Blue Ice Queen Skirt",
+    "name_kr": "블루 트란도트 치마"
+  },
+  {
+    "name_en": "The Gold Dragon",
+    "name_kr": "황룡도"
+  },
+  {
+    "name_en": "Blue Clarity",
+    "name_kr": "블루 와이즈"
+  },
+  {
+    "name_en": "Blue Battle Lord",
+    "name_kr": "블루 배틀로드"
+  },
+  {
+    "name_en": "Infinity's Wrath",
+    "name_kr": "인피니티"
+  },
+  {
+    "name_en": "Taurospear Horn",
+    "name_kr": "타우로스피어의 뿔"
+  },
+  {
+    "name_en": "Golden Hinkel",
+    "name_kr": "골든 힌켈"
+  },
+  {
+    "name_en": "Dark Lorin",
+    "name_kr": "다크 로린"
+  },
+  {
+    "name_en": "Dark Elf Shoes",
+    "name_kr": "다크 리넥스슈즈"
+  },
+  {
+    "name_en": "White Nightfox",
+    "name_kr": "화이트 루크"
+  },
+  {
+    "name_en": "Red Seraph Cape",
+    "name_kr": "빨간색 세라프의 망토"
+  },
+  {
+    "name_en": "Dark Ritual",
+    "name_kr": "레이든 스태프"
+  },
+  {
+    "name_en": "Green Enigma",
+    "name_kr": "그린 크리시아"
+  },
+  {
+    "name_en": "Brown Pireta Hat",
+    "name_kr": "브라운 피레타햇"
+  },
+  {
+    "name_en": "Green Pris",
+    "name_kr": "그린 프리스"
+  },
+  {
+    "name_en": "Blue Rivers Boots",
+    "name_kr": "블루 리버스부츠"
+  },
+  {
+    "name_en": "Storybook Indecipherable Book",
+    "name_kr": "[스토리북] Indecipherable Book"
+  },
+  {
+    "name_en": "Werewolf's Toenail",
+    "name_kr": "웨어울프의 발톱"
+  },
+  {
+    "name_en": "Dark Infinium Circlet",
+    "name_kr": "다크 키튼서클렛"
+  },
+  {
+    "name_en": "Green Patriot",
+    "name_kr": "그린 웨어캡"
+  },
+  {
+    "name_en": "Black Scarab",
+    "name_kr": "흑갑충"
+  },
+  {
+    "name_en": "Bent Judgement",
+    "name_kr": "모던스튬"
+  },
+  {
+    "name_en": "Purple Galaxy",
+    "name_kr": "퍼플 크로스햇"
+  },
+  {
+    "name_en": "Blue Dragon Barbute",
+    "name_kr": "블루 드래곤 바부타"
+  },
+  {
+    "name_en": "Red Pria",
+    "name_kr": "레드 프리아"
+  },
+  {
+    "name_en": "Green Pirate Blouse",
+    "name_kr": "그린 피라티드"
+  },
+  {
+    "name_en": "Green Pirate Skirt",
+    "name_kr": "그린 피라티드 치마"
+  },
+  {
+    "name_en": "Evil Spirit",
+    "name_kr": "사악한 영혼"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for INT 60%",
+    "name_kr": "전신 갑옷 지력 주문서 60%"
+  },
+  {
+    "name_en": "Dark Requierre",
+    "name_kr": "다크 레퀴에르"
+  },
+  {
+    "name_en": "Bloody Platina",
+    "name_kr": "블러디 플라티나"
+  },
+  {
+    "name_en": "Bloody Platina Pants",
+    "name_kr": "블러디 플라티나 바지"
+  },
+  {
+    "name_en": "Purple Enigma",
+    "name_kr": "퍼플 크리시아"
+  },
+  {
+    "name_en": "Green Falcon",
+    "name_kr": "그린 골드윙캡"
+  },
+  {
+    "name_en": "Dark Dragon Barbute",
+    "name_kr": "다크 드래곤 바부타"
+  },
+  {
+    "name_en": "Deep Buffoon's Rock Piece",
+    "name_kr": "딥 버푼의 돌조각"
+  },
+  {
+    "name_en": "Blue Nightfox",
+    "name_kr": "블루 루크"
+  },
+  {
+    "name_en": "Dark Enigma",
+    "name_kr": "다크 크리시아"
+  },
+  {
+    "name_en": "Red Pirate Boots",
+    "name_kr": "레드 피레타부츠"
+  },
+  {
+    "name_en": "Blood Emperor",
+    "name_kr": "블러드 엠퍼러"
+  },
+  {
+    "name_en": "Scroll for Cape for DEX 10%",
+    "name_kr": "망토 민첩성 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Claw for ATT 10%",
+    "name_kr": "아대 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Green Goldrunners",
+    "name_kr": "그린 앵클부츠"
+  },
+  {
+    "name_en": "Red Requiem",
+    "name_kr": "레드 레퀴엠"
+  },
+  {
+    "name_en": "Dark Enigmatic",
+    "name_kr": "다크 크리시스"
+  },
+  {
+    "name_en": "Lycanthrope's Toenail",
+    "name_kr": "라이칸스로프의 발톱"
+  },
+  {
+    "name_en": "Blue Screamer",
+    "name_kr": "청운검"
+  },
+  {
+    "name_en": "Ilbi Throwing Stars",
+    "name_kr": "일비 표창"
+  },
+  {
+    "name_en": "Blood Nightfox",
+    "name_kr": "블러드 루크"
+  },
+  {
+    "name_en": "Dark Linnex",
+    "name_kr": "다크 리넥스"
+  },
+  {
+    "name_en": "White Seraph Cape",
+    "name_kr": "흰색 세라프의 망토"
+  },
+  {
+    "name_en": "Purple Enigma Shoes",
+    "name_kr": "퍼플 크리시아슈즈"
+  },
+  {
+    "name_en": "Strawberry Earrings",
+    "name_kr": "딸기 귀고리"
+  },
+  {
+    "name_en": "Green Oriental Fury Coat",
+    "name_kr": "녹견랑포"
+  },
+  {
+    "name_en": "Red Anes",
+    "name_kr": "레드 아네스"
+  },
+  {
+    "name_en": "Brown Osfa Boots",
+    "name_kr": "브라운 쉐도우부츠"
+  },
+  {
+    "name_en": "Purple Imperial",
+    "name_kr": "퍼플 페로치"
+  },
+  {
+    "name_en": "Steelno",
+    "name_kr": "스틸르노"
+  },
+  {
+    "name_en": "Purple Nightfox",
+    "name_kr": "퍼플 루크"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for INT 100%",
+    "name_kr": "전신 갑옷 지력 주문서 100%"
+  },
+  {
+    "name_en": "Khan",
+    "name_kr": "아츠"
+  },
+  {
+    "name_en": "Ghost Pirate Key",
+    "name_kr": "파이렛의 키"
+  },
+  {
+    "name_en": "Gold Aquila Shield",
+    "name_kr": "골드 아퀼라 실드"
+  },
+  {
+    "name_en": "Fire Raven",
+    "name_kr": "파이어 샬리트"
+  },
+  {
+    "name_en": "Omega Spear",
+    "name_kr": "호진공창"
+  },
+  {
+    "name_en": "Blue Ades",
+    "name_kr": "블루 아데스"
+  },
+  {
+    "name_en": "Green Osfa Boots",
+    "name_kr": "그린 쉐도우부츠"
+  },
+  {
+    "name_en": "Green Neli Shoes",
+    "name_kr": "그린 넬리슈즈"
+  },
+  {
+    "name_en": "Green Imperial",
+    "name_kr": "그린 페로치"
+  },
+  {
+    "name_en": "Blue Sun Boat Hat",
+    "name_kr": "블루 샌프 보우트햇"
+  },
+  {
+    "name_en": "Scroll for One Handed Sword for Accuracy 100%",
+    "name_kr": "한손검 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Storybook Unknown Letter",
+    "name_kr": "[스토리북] 정체불명의 편지"
+  },
+  {
+    "name_en": "Sealed Teddy Bear",
+    "name_kr": "봉인된 테니인형"
+  },
+  {
+    "name_en": "All Cure Potion",
+    "name_kr": "만병통치약"
+  },
+  {
+    "name_en": "Sunset Dew",
+    "name_kr": "황혼의 이슬"
+  },
+  {
+    "name_en": "Black Seraph Cape",
+    "name_kr": "검은색 세라프의 망토"
+  },
+  {
+    "name_en": "Helios",
+    "name_kr": "헬리오스"
+  },
+  {
+    "name_en": "Angelic Betrayal",
+    "name_kr": "카타르"
+  },
+  {
+    "name_en": "Dark Clarity",
+    "name_kr": "다크 와이즈"
+  },
+  {
+    "name_en": "Green Larceny",
+    "name_kr": "그린 로버"
+  },
+  {
+    "name_en": "Green Wing Boots",
+    "name_kr": "그린 윙부츠"
+  },
+  {
+    "name_en": "Green Pireta Hat",
+    "name_kr": "그린 피레타햇"
+  },
+  {
+    "name_en": "Yellow Battle Empress",
+    "name_kr": "옐로우 배틀엠프리스"
+  },
+  {
+    "name_en": "Emerald War Greave",
+    "name_kr": "에메랄드 워 그리브"
+  },
+  {
+    "name_en": "Dark Neli Shoes",
+    "name_kr": "다크 넬리슈즈"
+  },
+  {
+    "name_en": "Green Mystra",
+    "name_kr": "그린 미스트라"
+  },
+  {
+    "name_en": "Dual Pirate's Propeller",
+    "name_kr": "듀얼 파이렛의 추진기"
+  },
+  {
+    "name_en": "Dark Pireta Hat",
+    "name_kr": "다크 피레타햇"
+  },
+  {
+    "name_en": "Blue Galaxy",
+    "name_kr": "블루 크로스햇"
+  },
+  {
+    "name_en": "Red Pris",
+    "name_kr": "레드 프리스"
+  },
+  {
+    "name_en": "Green Clarity",
+    "name_kr": "그린 와이즈"
+  },
+  {
+    "name_en": "Green Osfa Suit",
+    "name_kr": "그린 미스트슈트"
+  },
+  {
+    "name_en": "Green Osfa Pants",
+    "name_kr": "그린 미스트슈트 바지"
+  },
+  {
+    "name_en": "Orihalcon War Greave",
+    "name_kr": "오리할콘 워 그리브"
+  },
+  {
+    "name_en": "Red Focus",
+    "name_kr": "레드 아데브"
+  },
+  {
+    "name_en": "Blue Sage",
+    "name_kr": "블루 파쵸네"
+  },
+  {
+    "name_en": "Binding Bridle",
+    "name_kr": "속박의 굴레"
+  },
+  {
+    "name_en": "Dark Galaxy",
+    "name_kr": "다크 크로스햇"
+  },
+  {
+    "name_en": "Red Falcon",
+    "name_kr": "레드 골드윙캡"
+  },
+  {
+    "name_en": "Dark Pirate Blouse",
+    "name_kr": "다크 피라티드"
+  },
+  {
+    "name_en": "Dark Pirate Skirt",
+    "name_kr": "다크 피라티드 치마"
+  },
+  {
+    "name_en": "Green Battle Lord",
+    "name_kr": "그린 배틀로드"
+  },
+  {
+    "name_en": "Green Pria",
+    "name_kr": "그린 프리아"
+  },
+  {
+    "name_en": "Dark Rivers Boots",
+    "name_kr": "다크 리버스부츠"
+  },
+  {
+    "name_en": "Dark Valkyrie",
+    "name_kr": "다크 발퀴레"
+  },
+  {
+    "name_en": "Blood Valkyrie Skirt",
+    "name_kr": "블러드 발퀴레 치마"
+  },
+  {
+    "name_en": "Red Ades Shoes",
+    "name_kr": "레드 아데스 신발"
+  },
+  {
+    "name_en": "Blue Neli Shoes",
+    "name_kr": "블루 넬리슈즈"
+  },
+  {
+    "name_en": "Purple Mystra",
+    "name_kr": "퍼플 미스트라"
+  },
+  {
+    "name_en": "Bain's Spiky Collar",
+    "name_kr": "파이어독의 목걸이"
+  },
+  {
+    "name_en": "Dark Carzen Boots",
+    "name_kr": "다크 카젠부츠"
+  },
+  {
+    "name_en": "Gaea",
+    "name_kr": "리프 엑스"
+  },
+  {
+    "name_en": "Green Cordon",
+    "name_kr": "그린 코든"
+  },
+  {
+    "name_en": "Dark Emperor",
+    "name_kr": "다크 엠퍼러"
+  },
+  {
+    "name_en": "Silver Aquila Shield",
+    "name_kr": "실버 아퀼라 실드"
+  },
+  {
+    "name_en": "Dark Pirate Boots",
+    "name_kr": "다크 피레타부츠"
+  },
+  {
+    "name_en": "Dark Pris",
+    "name_kr": "다크 프리스"
+  },
+  {
+    "name_en": "Golden Arund",
+    "name_kr": "골든 아룬드"
+  },
+  {
+    "name_en": "Green Osfa Pants",
+    "name_kr": "그린 쉐이드슈트 바지"
+  },
+  {
+    "name_en": "Green Osfa Suit",
+    "name_kr": "그린 쉐이드슈트"
+  },
+  {
+    "name_en": "Red Neli Shoes",
+    "name_kr": "레드 넬리슈즈"
+  },
+  {
+    "name_en": "Green Focus",
+    "name_kr": "그린 아데브"
+  },
+  {
+    "name_en": "Rose Earrings",
+    "name_kr": "장미꽃 귀고리"
+  },
+  {
+    "name_en": "Red Osfa Boots",
+    "name_kr": "레드 쉐도우부츠"
+  },
+  {
+    "name_en": "White Pioneer",
+    "name_kr": "화이트 피니얼"
+  },
+  {
+    "name_en": "Viking Sail",
+    "name_kr": "바이킹 돛"
+  },
+  {
+    "name_en": "Green Enigmatic",
+    "name_kr": "그린 크리시스"
+  },
+  {
+    "name_en": "Heaven's Justice",
+    "name_kr": "골든해머"
+  },
+  {
+    "name_en": "Dark Falcon",
+    "name_kr": "다크 골드윙캡"
+  },
+  {
+    "name_en": "Dark Battle Lord",
+    "name_kr": "다크 배틀로드"
+  },
+  {
+    "name_en": "Red Pirate Blouse",
+    "name_kr": "레드 피라티드"
+  },
+  {
+    "name_en": "Red Pirate Skirt",
+    "name_kr": "레드 피라티드 치마"
+  },
+  {
+    "name_en": "Blue Pris",
+    "name_kr": "블루 프리스"
+  },
+  {
+    "name_en": "Emerald Emperor",
+    "name_kr": "에메랄드 엠퍼러"
+  },
+  {
+    "name_en": "Blue Battle Empress",
+    "name_kr": "블루 배틀엠프리스"
+  },
+  {
+    "name_en": "Blue Commodore",
+    "name_kr": "블루 제너럴"
+  },
+  {
+    "name_en": "Blue Commodore Pants",
+    "name_kr": "블루 제너럴 바지"
+  },
+  {
+    "name_en": "Purple Osfa Suit",
+    "name_kr": "퍼플 미스트슈트"
+  },
+  {
+    "name_en": "Purple Osfa Pants",
+    "name_kr": "퍼플 쉐이트슈트 바지"
+  },
+  {
+    "name_en": "Green Sage",
+    "name_kr": "그린 파쵸네"
+  },
+  {
+    "name_en": "Black Markintz",
+    "name_kr": "블랙 마르킨즈"
+  },
+  {
+    "name_en": "[Mastery Book] Dragon Strike 20",
+    "name_kr": "[마스터리북] 드래곤 스트라이크 20"
+  },
+  {
+    "name_en": "[Mastery Book] Ninja Ambush 20",
+    "name_kr": "[마스터리북] 닌자 앰부쉬 20"
+  },
+  {
+    "name_en": "Sealed Bottle",
+    "name_kr": "봉인된 항아리"
+  },
+  {
+    "name_en": "Dragon's Tail",
+    "name_kr": "용천권"
+  },
+  {
+    "name_en": "Dark Cordon",
+    "name_kr": "다크 코든"
+  },
+  {
+    "name_en": "Dark Pirate Top",
+    "name_kr": "다크 피라테"
+  },
+  {
+    "name_en": "Dark Pirate Pants",
+    "name_kr": "다크 피라테 바지"
+  },
+  {
+    "name_en": "Fire Arund",
+    "name_kr": "파이어 아룬드"
+  },
+  {
+    "name_en": "Blue Pria",
+    "name_kr": "블루 프리아"
+  },
+  {
+    "name_en": "Red Oriental Fury Coat",
+    "name_kr": "적견랑포"
+  },
+  {
+    "name_en": "Dark Ades",
+    "name_kr": "다크 아데스"
+  },
+  {
+    "name_en": "Green Commodore",
+    "name_kr": "그린 제너럴"
+  },
+  {
+    "name_en": "Green Commodore Pants",
+    "name_kr": "그린 제너럴 바지"
+  },
+  {
+    "name_en": "Red Sage",
+    "name_kr": "레드 파쵸네"
+  },
+  {
+    "name_en": "The Peacemaker",
+    "name_kr": "피스메이커"
+  },
+  {
+    "name_en": "Gigantic Viking Hat",
+    "name_kr": "기간틱 바이킹의 모자"
+  },
+  {
+    "name_en": "Heaven's Gate",
+    "name_kr": "그레이트 로헨"
+  },
+  {
+    "name_en": "Red Pireta Hat",
+    "name_kr": "레드 피레타햇"
+  },
+  {
+    "name_en": "Dark Battle Empress",
+    "name_kr": "다크 배틀엠프리스"
+  },
+  {
+    "name_en": "Dark Wing Boots",
+    "name_kr": "다크 윙부츠"
+  },
+  {
+    "name_en": "Purple Larceny",
+    "name_kr": "퍼플 로버"
+  },
+  {
+    "name_en": "Golden Raven",
+    "name_kr": "골든 샬리트"
+  },
+  {
+    "name_en": "Blue Oriental Fury Coat",
+    "name_kr": "청견랑포"
+  },
+  {
+    "name_en": "Blue Anes",
+    "name_kr": "블루 아네스"
+  },
+  {
+    "name_en": "Brown Osfa Pants",
+    "name_kr": "브라운 쉐이트슈트 바지"
+  },
+  {
+    "name_en": "Brown Osfa Suit",
+    "name_kr": "브라운 미스트슈트"
+  },
+  {
+    "name_en": "Dark Pachone",
+    "name_kr": "다크 판쵸네"
+  },
+  {
+    "name_en": "Two Handed Sword Forging Manual",
+    "name_kr": "두손검 제조법"
+  },
+  {
+    "name_en": "Ice Piece",
+    "name_kr": "팬텀워치의 얼음조각각"
+  },
+  {
+    "name_en": "Unagi",
+    "name_kr": "장어구이"
+  },
+  {
+    "name_en": "The Morningstar",
+    "name_kr": "크롬"
+  },
+  {
+    "name_en": "Marine Raven",
+    "name_kr": "마린 샬리트"
+  },
+  {
+    "name_en": "Blood Larceny",
+    "name_kr": "블러드 로버"
+  },
+  {
+    "name_en": "Red Wing Boots",
+    "name_kr": "레드 윙부츠"
+  },
+  {
+    "name_en": "Dark Enigma Shoes",
+    "name_kr": "다크 크리시아슈즈"
+  },
+  {
+    "name_en": "Red Arlic Helmet",
+    "name_kr": "레드 아데스햇"
+  },
+  {
+    "name_en": "Green Valkyrie Skirt",
+    "name_kr": "그린 발퀴레 치마"
+  },
+  {
+    "name_en": "Green Valkyrie",
+    "name_kr": "그린 발퀴레"
+  },
+  {
+    "name_en": "Green Anes",
+    "name_kr": "그린 아네스"
+  },
+  {
+    "name_en": "Dark Imperial",
+    "name_kr": "다크 페로치"
+  },
+  {
+    "name_en": "Scroll for Overall Armor for DEF 10%",
+    "name_kr": "전신 갑옷 방어력 주문서 10%"
+  },
+  {
+    "name_en": "Storybook Crimson Balrog's Proposal",
+    "name_kr": "[스토리북] 크림슨발록의 계획서"
+  },
+  {
+    "name_en": "Kimono Piece",
+    "name_kr": "찢어진 옷자락"
+  },
+  {
+    "name_en": "Orange Throwing Stars",
+    "name_kr": "귤"
+  },
+  {
+    "name_en": "Kinoko Ramen Roasted Pork",
+    "name_kr": "키노코라면(구운돼지)"
+  },
+  {
+    "name_en": "White Justice Cape",
+    "name_kr": "흰색 수호의 망토"
+  },
+  {
+    "name_en": "Colorful Tube",
+    "name_kr": "구명튜브"
+  },
+  {
+    "name_en": "Colonian Axe",
+    "name_kr": "클로니안 엑스"
+  },
+  {
+    "name_en": "Dark Scroll for Cape for STR 70%",
+    "name_kr": "망토 힘 주문서 70%"
+  },
+  {
+    "name_en": "Blue Arlic Helmet",
+    "name_kr": "블루 아데스햇"
+  },
+  {
+    "name_en": "Dark Scroll for Earring for DEX 70%",
+    "name_kr": "귀 장식 민첩성 주문서 70%"
+  },
+  {
+    "name_en": "Dark Scroll for Wand for Magic ATT 70%",
+    "name_kr": "완드 마력 주문서 70%"
+  },
+  {
+    "name_en": "Dark Scroll for Crossbow for ATT 30%",
+    "name_kr": "석궁 공격력 주문서 30%"
+  },
+  {
+    "name_en": "Thanatos Strap",
+    "name_kr": "타나토스의 견장"
+  },
+  {
+    "name_en": "Marine Arund",
+    "name_kr": "마린 아룬드"
+  },
+  {
+    "name_en": "Dark Pria",
+    "name_kr": "다크 프리아"
+  },
+  {
+    "name_en": "Dark Raven",
+    "name_kr": "다크 샬리트"
+  },
+  {
+    "name_en": "Green Giles Cape",
+    "name_kr": "초록색 자일즈의 망토"
+  },
+  {
+    "name_en": "Black Oriental Fury Coat",
+    "name_kr": "흑견랑포"
+  },
+  {
+    "name_en": "Silver Kalkan",
+    "name_kr": "실버 칼칸"
+  },
+  {
+    "name_en": "Green Arlic Helmet",
+    "name_kr": "그린 아데스햇"
+  },
+  {
+    "name_en": "Dark Commodore",
+    "name_kr": "다크 제너럴"
+  },
+  {
+    "name_en": "Dark Commodore Pants",
+    "name_kr": "다크 제너럴 바지"
+  },
+  {
+    "name_en": "Red Arnah Shoes",
+    "name_kr": "레드 아르나슈즈"
+  },
+  {
+    "name_en": "Gatekeeper Armband",
+    "name_kr": "게이트키퍼의 완장"
+  },
+  {
+    "name_en": "Beige Linnex",
+    "name_kr": "베이지 리넥스"
+  },
+  {
+    "name_en": "Eclipse",
+    "name_kr": "월아산"
+  },
+  {
+    "name_en": "Black Mamba",
+    "name_kr": "코브라스티어"
+  },
+  {
+    "name_en": "Dark Arund",
+    "name_kr": "다크 아룬드"
+  },
+  {
+    "name_en": "Bronze Kalkan",
+    "name_kr": "브론즈 칼칸"
+  },
+  {
+    "name_en": "Red Osfa Suit",
+    "name_kr": "레드 미스트슈트"
+  },
+  {
+    "name_en": "Red Osfa Pants",
+    "name_kr": "레드 쉐이트슈트 바지"
+  },
+  {
+    "name_en": "Purple Valkyrie Skirt",
+    "name_kr": "퍼플 발퀴레 치마"
+  },
+  {
+    "name_en": "Purple Valkyrie",
+    "name_kr": "퍼플 발퀴레"
+  },
+  {
+    "name_en": "Green Katina Boots",
+    "name_kr": "그린 가티나부츠"
+  },
+  {
+    "name_en": "Red Belly Duke",
+    "name_kr": "레드 벨리듀크"
+  },
+  {
+    "name_en": "Shiny Bullet",
+    "name_kr": "샤이니 불릿"
+  },
+  {
+    "name_en": "Tauromacis Horn",
+    "name_kr": "타우로마시스의 뿔"
+  },
+  {
+    "name_en": "Scroll for One-Handed Axe for ATT 60%",
+    "name_kr": "한손도끼 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Blue Requiem",
+    "name_kr": "블루 레퀴엠"
+  },
+  {
+    "name_en": "Blue Seraph Cape",
+    "name_kr": "파란색 세라프의 망토"
+  },
+  {
+    "name_en": "Red Enamel Boots",
+    "name_kr": "레드 에나멜 부츠"
+  },
+  {
+    "name_en": "Orange Whitebottom Boots",
+    "name_kr": "주황색 가죽 구두"
+  },
+  {
+    "name_en": "Yellow Doros Robe",
+    "name_kr": "옐로우 도로스 로브"
+  },
+  {
+    "name_en": "Mithril Axe",
+    "name_kr": "미스릴 도끼"
+  },
+  {
+    "name_en": "Green Fairy Top",
+    "name_kr": "그린 페어리 로브"
+  },
+  {
+    "name_en": "Green Fairy Skirt",
+    "name_kr": "그린 페어리 치마"
+  },
+  {
+    "name_en": "OrangeHigh Boots",
+    "name_kr": "오렌지 미들 래더"
+  },
+  {
+    "name_en": "Subi Throwing Star",
+    "name_kr": "수비 표창"
+  },
+  {
+    "name_en": "Red Cross Earrings",
+    "name_kr": "레드 크로스링"
+  },
+  {
+    "name_en": "Scroll for One-Handed Sword for Accuracy 100%",
+    "name_kr": "한손검 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Two Handed Sword",
+    "name_kr": "두손검"
+  },
+  {
+    "name_en": "Blood Sneak Pants",
+    "name_kr": "블러드 스니클리스 바지"
+  },
+  {
+    "name_en": "Blood Sneak",
+    "name_kr": "블러드 스니클리스"
+  },
+  {
+    "name_en": "Scroll for One-Handed Axe for Accuracy 100%",
+    "name_kr": "한손도끼 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Stinger",
+    "name_kr": "스팅어"
+  },
+  {
+    "name_en": "Blue Qi Pao",
+    "name_kr": "파란색 친파오"
+  },
+  {
+    "name_en": "Blue Qi Pao Pants",
+    "name_kr": "파란 친파오 바지"
+  },
+  {
+    "name_en": "Red Tiberian",
+    "name_kr": "레드 티베리안"
+  },
+  {
+    "name_en": "Silver Master Sergeant",
+    "name_kr": "실버 마스터 서전트"
+  },
+  {
+    "name_en": "Silver Master Sergeant Kilt",
+    "name_kr": "실버 마스터 서전트 치마"
+  },
+  {
+    "name_en": "SOS Letter",
+    "name_kr": "SOS구조 요청 편지"
+  },
+  {
+    "name_en": "Blue Jester",
+    "name_kr": "블루 핀터"
+  },
+  {
+    "name_en": "Dark Master Sergeant",
+    "name_kr": "다크 마스터 서전트"
+  },
+  {
+    "name_en": "Dark Master Sergeant Kilt",
+    "name_kr": "다크 마스터 서전트 치마"
+  },
+  {
+    "name_en": "Orange Whitebottom Boots",
+    "name_kr": "오렌지 가죽 구두"
+  },
+  {
+    "name_en": "Brown Jack Boots",
+    "name_kr": "브라운 잭부츠"
+  },
+  {
+    "name_en": "Mokbi Throwing Star",
+    "name_kr": "목비 표창"
+  },
+  {
+    "name_en": "Steel Pride",
+    "name_kr": "손오공 강철 머리띠"
+  },
+  {
+    "name_en": "Two Handed Axe",
+    "name_kr": "두손도끼"
+  },
+  {
+    "name_en": "Green Lappy Boots",
+    "name_kr": "그린 래피 부츠"
+  },
+  {
+    "name_en": "Brown Hunter",
+    "name_kr": "브라운 헌트"
+  },
+  {
+    "name_en": "Circle-Winded Staff",
+    "name_kr": "써클윈드 스태프"
+  },
+  {
+    "name_en": "Hard Needle",
+    "name_kr": "딱딱한 비늘"
+  },
+  {
+    "name_en": "Red Huntress Armor",
+    "name_kr": "레드 헌터미 아머"
+  },
+  {
+    "name_en": "Red Huntress Pants",
+    "name_kr": "레드 헌터미 아머 바지"
+  },
+  {
+    "name_en": "Brown Pole-Feather Hat",
+    "name_kr": "브라운 폴리페더햇"
+  },
+  {
+    "name_en": "One-Handed Axe Forging Stimulator",
+    "name_kr": "한손도끼 제작의 촉진제"
+  },
+  {
+    "name_en": "Air Bubble",
+    "name_kr": "공기방울"
+  },
+  {
+    "name_en": "Star Earrings",
+    "name_kr": "별 귀고리"
+  },
+  {
+    "name_en": "Black Blue-Lined Shoes",
+    "name_kr": "블루 하프슈즈"
+  },
+  {
+    "name_en": "Brown Steel-Tip Boots",
+    "name_kr": "브라운 네일슈즈"
+  },
+  {
+    "name_en": "Poopa Egg",
+    "name_kr": "푸퍼의 알"
+  },
+  {
+    "name_en": "Two-Handed Mace Forging Stimulator",
+    "name_kr": "두손둔기 제작의 촉진제"
+  },
+  {
+    "name_en": "Blue White-Line Boots",
+    "name_kr": "블루 화이트-Line Boots"
+  },
+  {
+    "name_en": "Green Pole-Feather Hat",
+    "name_kr": "그린 폴리페더햇"
+  },
+  {
+    "name_en": "Maroon Jangoon Boots",
+    "name_kr": "자 진월장화"
+  },
+  {
+    "name_en": "Seal Meat",
+    "name_kr": "물개고기"
+  },
+  {
+    "name_en": "(Summoned by Pianus)\"",
+    "name_kr": "(Summoned by Pianus)\""
+  },
+  {
+    "name_en": "Green Osfa Hat",
+    "name_kr": "그린 쉐이드햇"
+  },
+  {
+    "name_en": "Purple Giles Cape",
+    "name_kr": "저주색 자일즈의 망토"
+  },
+  {
+    "name_en": "Purple Osfa Boots",
+    "name_kr": "퍼플 쉐도우부츠"
+  },
+  {
+    "name_en": "Black Giles Cape",
+    "name_kr": "검은색 자일즈의 망토"
+  },
+  {
+    "name_en": "Reindeer Milk",
+    "name_kr": "순록의 우유"
+  },
+  {
+    "name_en": "Red Pirate Bottom",
+    "name_kr": "레드 피라테 바지"
+  },
+  {
+    "name_en": "Brown Osfa Hat",
+    "name_kr": "브라운 쉐이드햇"
+  },
+  {
+    "name_en": "Dark Ades Shoes",
+    "name_kr": "다크 아데스 신발"
+  },
+  {
+    "name_en": "White Marquini",
+    "name_kr": "화이트 마르퀴니"
+  },
+  {
+    "name_en": "Green Seraph Cape",
+    "name_kr": "초록색 세라프의 망토"
+  },
+  {
+    "name_en": "Red Oriental Fury Hat",
+    "name_kr": "적견랑건"
+  },
+  {
+    "name_en": "Blue Varr Shoes",
+    "name_kr": "블루 바르슈즈"
+  },
+  {
+    "name_en": "White Fangz",
+    "name_kr": "백혈귀"
+  },
+  {
+    "name_en": "[Mastery Book] Dragon Strike 30",
+    "name_kr": "[마스터리북] 드래곤 스트라이크 30"
+  },
+  {
+    "name_en": "Dark Pirate Bottom",
+    "name_kr": "다크 피라테 바지"
+  },
+  {
+    "name_en": "Green Ades",
+    "name_kr": "그린 아데스"
+  },
+  {
+    "name_en": "Purple Osfa Hat",
+    "name_kr": "퍼플 쉐이드햇"
+  },
+  {
+    "name_en": "Gold Kalkan",
+    "name_kr": "골드 칼칸"
+  },
+  {
+    "name_en": "Green Crescent Boots",
+    "name_kr": "그린 크리센트부츠"
+  },
+  {
+    "name_en": "Scroll for One-Handed Sword for Accuracy 10%",
+    "name_kr": "한손검 명중치 주문서 10%"
+  },
+  {
+    "name_en": "[Mastery Book] Chain Lightning 20",
+    "name_kr": "[마스터리북] 체인 라이트닝 20"
+  },
+  {
+    "name_en": "[Mastery Book] Wrath of the Octopi 20",
+    "name_kr": "[마스터리북] 서포트 옥토퍼스 20"
+  },
+  {
+    "name_en": "Green Ades Shoes",
+    "name_kr": "그린 아데스 신발"
+  },
+  {
+    "name_en": "Dark Arlic Helmet",
+    "name_kr": "다크 아데스햇"
+  },
+  {
+    "name_en": "Black Oriental Fury Hat",
+    "name_kr": "흑견랑건"
+  },
+  {
+    "name_en": "Blue Katina Boots",
+    "name_kr": "블루 가티나부츠"
+  },
+  {
+    "name_en": "[Mastery Book] Rapid Fire 30",
+    "name_kr": "[마스터리북] 래피드 파이어 30"
+  },
+  {
+    "name_en": "Storybook Ancient Book",
+    "name_kr": "[스토리북] 오래된 책"
+  },
+  {
+    "name_en": "Scroll for One-Handed Sword for ATT 60%",
+    "name_kr": "한손검 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Red Osfa Hat",
+    "name_kr": "레드 쉐이드햇"
+  },
+  {
+    "name_en": "Green Varr Shoes",
+    "name_kr": "그린 바르슈즈"
+  },
+  {
+    "name_en": "Black Duke Barkin Shoes",
+    "name_kr": "블랙 듀크바킨 슈즈"
+  },
+  {
+    "name_en": "[Mastery Book] Sharp Eyes 20",
+    "name_kr": "[마스터리북] 샤프아이즈 20"
+  },
+  {
+    "name_en": "[Mastery Book] Ice Demon 20",
+    "name_kr": "[마스터리북] 아이스 데몬 20"
+  },
+  {
+    "name_en": "[Mastery Book] Demolition 20",
+    "name_kr": "[마스터리북] 데몰리션 20"
+  },
+  {
+    "name_en": "Clover",
+    "name_kr": "클로버"
+  },
+  {
+    "name_en": "White Doros Robe",
+    "name_kr": "화이트 도로스 로브"
+  },
+  {
+    "name_en": "Lidium Ore",
+    "name_kr": "리튬의 원석"
+  },
+  {
+    "name_en": "Carrot",
+    "name_kr": "홍당무"
+  },
+  {
+    "name_en": "Scroll for Two-Handed BW for Accuracy 100%",
+    "name_kr": "두손둔기 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Cactus Stem",
+    "name_kr": "선인장의 줄기"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Axe for ATT 10%",
+    "name_kr": "두손도끼 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Desert Mist",
+    "name_kr": "사막의 이슬"
+  },
+  {
+    "name_en": "Scroll for One-Handed BW for Accuracy 60%",
+    "name_kr": "한손둔기 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Snake Rattle",
+    "name_kr": "뱀방울"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Sword for ATT 10%",
+    "name_kr": "두손검 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Black Magicshoes",
+    "name_kr": "블랙 매직슈즈"
+  },
+  {
+    "name_en": "Earmuff",
+    "name_kr": "귀마개"
+  },
+  {
+    "name_en": "Brown Doros Robe",
+    "name_kr": "브라운 도로스 로브"
+  },
+  {
+    "name_en": "Bronze Football Helmet",
+    "name_kr": "브론즈 디펜더 헬멧"
+  },
+  {
+    "name_en": "Blue Sneak",
+    "name_kr": "블루 스니클리스"
+  },
+  {
+    "name_en": "Dark Brown Sneak Pants",
+    "name_kr": "다크브라운 스니크 바지"
+  },
+  {
+    "name_en": "Scroll for One-Handed BW for Accuracy 10%",
+    "name_kr": "한손둔기 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Cactus Thorn",
+    "name_kr": "선인장의 가시"
+  },
+  {
+    "name_en": "Sky Blue Starry Bandana",
+    "name_kr": "하늘색 별 두건"
+  },
+  {
+    "name_en": "Ragged Scarf",
+    "name_kr": "낡은 목도리"
+  },
+  {
+    "name_en": "Red Gold Stealer",
+    "name_kr": "레드 골드 스틸러"
+  },
+  {
+    "name_en": "Red Gold Stealer Pants",
+    "name_kr": "레드 골드 스틸러 바지"
+  },
+  {
+    "name_en": "Cactus Flower",
+    "name_kr": "카투스의 꽃"
+  },
+  {
+    "name_en": "Dark Hunter's Armor",
+    "name_kr": "다크 헌터스 아머"
+  },
+  {
+    "name_en": "Telescope",
+    "name_kr": "망원경"
+  },
+  {
+    "name_en": "Scroll for One-Handed Sword for ATT 10%",
+    "name_kr": "한손검 공격력 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Sword for Accuracy 10%",
+    "name_kr": "두손검 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Scroll for Two-Handed BW for Accuracy 10%",
+    "name_kr": "두손둔기 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Scorpion Sting",
+    "name_kr": "전갈의 독침"
+  },
+  {
+    "name_en": "Scroll for One-Handed Axe for Accuracy 10%",
+    "name_kr": "한손도끼 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Kiyos Beak",
+    "name_kr": "키요의 부리"
+  },
+  {
+    "name_en": "Empty Sack",
+    "name_kr": "빈 자루"
+  },
+  {
+    "name_en": "Red Hunter",
+    "name_kr": "레드 헌트"
+  },
+  {
+    "name_en": "Flaming Desert",
+    "name_kr": "사막의 불꽃"
+  },
+  {
+    "name_en": "Sand",
+    "name_kr": "금모래 가루"
+  },
+  {
+    "name_en": "Gelatin",
+    "name_kr": "젤라틴"
+  },
+  {
+    "name_en": "Flask",
+    "name_kr": "플라스크"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Axe for Accuracy 60%",
+    "name_kr": "두손도끼 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Piece of Steel",
+    "name_kr": "강철 파편"
+  },
+  {
+    "name_en": "Hardened Piece of Steel",
+    "name_kr": "강철 파편 강화형"
+  },
+  {
+    "name_en": "Piece of Mithril",
+    "name_kr": "미스릴 파편"
+  },
+  {
+    "name_en": "Oaker Shouldermail Pants",
+    "name_kr": "오커 숄더메일 바지"
+  },
+  {
+    "name_en": "Hardened Piece of Mithril",
+    "name_kr": "미스릴 파편 강화형"
+  },
+  {
+    "name_en": "Blue-Lined Kismet",
+    "name_kr": "청선백궁"
+  },
+  {
+    "name_en": "Wires",
+    "name_kr": "전선다발"
+  },
+  {
+    "name_en": "Scroll for One-Handed Sword for Accuracy 60%",
+    "name_kr": "한손검 명중치 주문서 60%"
+  },
+  {
+    "name_en": "Plug",
+    "name_kr": "콘센트"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Axe for Accuracy 10%",
+    "name_kr": "두손도끼 명중치 주문서 10%"
+  },
+  {
+    "name_en": "Beaker",
+    "name_kr": "비커"
+  },
+  {
+    "name_en": "Entry Pass",
+    "name_kr": "출입증"
+  },
+  {
+    "name_en": "May Mist",
+    "name_kr": "5월의 이슬"
+  },
+  {
+    "name_en": "Homunsculer Sand",
+    "name_kr": "호문스큘러의 흙"
+  },
+  {
+    "name_en": "Frog Legs",
+    "name_kr": "개구리 뒷다리"
+  },
+  {
+    "name_en": "Sky Snowboard",
+    "name_kr": "스카이 스노우보드"
+  },
+  {
+    "name_en": "Frog Guard",
+    "name_kr": "개구리 아대"
+  },
+  {
+    "name_en": "Yellow Headband",
+    "name_kr": "노란색 머리띠"
+  },
+  {
+    "name_en": "Blue One-lined T-Shirt",
+    "name_kr": "파란색 원라인 티셔츠"
+  },
+  {
+    "name_en": "Scroll for Shoes for Jump 30%",
+    "name_kr": "신발 점프력 주문서 30%"
+  },
+  {
+    "name_en": "Chicken",
+    "name_kr": "닭고기"
+  },
+  {
+    "name_en": "White Egg",
+    "name_kr": "흰 달걀"
+  },
+  {
+    "name_en": "Kid's Key",
+    "name_kr": "키드의 열쇠"
+  },
+  {
+    "name_en": "Lizard Tail",
+    "name_kr": "도마뱀 꼬리"
+  },
+  {
+    "name_en": "Toad Poison",
+    "name_kr": "두꺼비독"
+  },
+  {
+    "name_en": "Lizard Tongue",
+    "name_kr": "도마뱀 혀"
+  },
+  {
+    "name_en": "Scroll for Helmet for DEF 100%",
+    "name_kr": "투구 방어력 주문서 100%"
+  },
+  {
+    "name_en": "Snake Scale",
+    "name_kr": "뱀 비늘"
+  },
+  {
+    "name_en": "Snake Skin",
+    "name_kr": "뱀 껍질"
+  },
+  {
+    "name_en": "Rash's Furball",
+    "name_kr": "래쉬의 털뭉치"
+  },
+  {
+    "name_en": "Tree Fruit",
+    "name_kr": "나무열매"
+  },
+  {
+    "name_en": "Anesthetic Powder",
+    "name_kr": "마취가루"
+  },
+  {
+    "name_en": "Beetle's Horn",
+    "name_kr": "비틀의 뿔"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Axe for ATT 60%",
+    "name_kr": "두손도끼 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Hov's Shorts",
+    "name_kr": "호브의 바지"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Sword for Accuracy 100%",
+    "name_kr": "두손검 명중치 주문서 100%"
+  },
+  {
+    "name_en": "Dark Rash's Furball",
+    "name_kr": "다크 래쉬의 털뭉치"
+  },
+  {
+    "name_en": "Curse Powder",
+    "name_kr": "저주가루"
+  },
+  {
+    "name_en": "Dual Beetle's Horn",
+    "name_kr": "듀얼 비틀의 뿔"
+  },
+  {
+    "name_en": "Pin Hov's Charm",
+    "name_kr": "핀호브의 부적"
+  },
+  {
+    "name_en": "Hankie's Pan Flute",
+    "name_kr": "헹키의 팬플룻"
+  },
+  {
+    "name_en": "Harp's Tail Feather",
+    "name_kr": "하프의 꼬리깃털"
+  },
+  {
+    "name_en": "Blood Harp's Crown",
+    "name_kr": "블러드 하프의 머리관"
+  },
+  {
+    "name_en": "Small Flaming Feather",
+    "name_kr": "작 불꽃 깃털"
+  },
+  {
+    "name_en": "Birk's Chewed Grass",
+    "name_kr": "버크의 씹던 풀풀"
+  },
+  {
+    "name_en": "SpartaLv100",
+    "name_kr": "스파타"
+  },
+  {
+    "name_en": "Dimon Wand",
+    "name_kr": "다이몬의 완드"
+  },
+  {
+    "name_en": "Blood Dagger",
+    "name_kr": "블러드 단검"
+  },
+  {
+    "name_en": "Dual Birk's Tiny Tail",
+    "name_kr": "듀얼 버크의 작은 꼬리"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Sword for ATT 60%",
+    "name_kr": "두손검 공격력 주문서 60%"
+  },
+  {
+    "name_en": "Pinaka",
+    "name_kr": "피나카"
+  },
+  {
+    "name_en": "Zedbug",
+    "name_kr": "제드버그"
+  },
+  {
+    "name_en": "White Neschere",
+    "name_kr": "화이트 네쉐르"
+  },
+  {
+    "name_en": "Kentaurus's Skull",
+    "name_kr": "켄타우로스의 뼈뼈"
+  },
+  {
+    "name_en": "Kage",
+    "name_kr": "케이그"
+  },
+  {
+    "name_en": "Tomahawk",
+    "name_kr": "토마호크"
+  },
+  {
+    "name_en": "The Beheader",
+    "name_kr": "참화도"
+  },
+  {
+    "name_en": "Red Craven",
+    "name_kr": "레드 크리븐"
+  },
+  {
+    "name_en": "Kentaurus's Marrow",
+    "name_kr": "켄타우로스의 정수"
+  },
+  {
+    "name_en": "Gold Double Knife",
+    "name_kr": "골드 트윈 나이프"
+  },
+  {
+    "name_en": "Battle Hammer",
+    "name_kr": "배틀해머"
+  },
+  {
+    "name_en": "Tavar",
+    "name_kr": "타바르"
+  },
+  {
+    "name_en": "Fairfrozen",
+    "name_kr": "페어프로즌"
+  },
+  {
+    "name_en": "[Storybook] Frozen Book of Ice",
+    "name_kr": "[스토리북] 얼어붙은 얼음의 책"
+  },
+  {
+    "name_en": "Kentaurus's Flame",
+    "name_kr": "켄타우로스의 불꽃"
+  },
+  {
+    "name_en": "Golden Smith Hammer",
+    "name_kr": "골든 스미스해머"
+  },
+  {
+    "name_en": "White Nisrock",
+    "name_kr": "화이트 니스록"
+  },
+  {
+    "name_en": "Blue Marine",
+    "name_kr": "블루마린"
+  },
+  {
+    "name_en": "Red Brave Hamal",
+    "name_kr": "레드 브레브히말"
+  },
+  {
+    "name_en": "[Storybook] Burning Book of Fire",
+    "name_kr": "[스토리북] 타오르는 불꽃의 책"
+  },
+  {
+    "name_en": "Green Grace Helmet",
+    "name_kr": "그린 그레이스 헬멧"
+  },
+  {
+    "name_en": "Magicodar",
+    "name_kr": "마기코라스"
+  },
+  {
+    "name_en": "Casters",
+    "name_kr": "캐스터스"
+  },
+  {
+    "name_en": "Cracked Shell",
+    "name_kr": "금이 간 등껍질"
+  },
+  {
+    "name_en": "Dragon Spirit",
+    "name_kr": "드래곤의 영혼"
+  },
+  {
+    "name_en": "Dragon Scale",
+    "name_kr": "드래곤의 비늘"
+  },
+  {
+    "name_en": "[Mastery Book] Barrage 20",
+    "name_kr": "[마스터리북] 피스트 20"
+  },
+  {
+    "name_en": "Dark Mystra",
+    "name_kr": "다크 미스트라"
+  },
+  {
+    "name_en": "Fraute",
+    "name_kr": "프라우테"
+  },
+  {
+    "name_en": "Varkit",
+    "name_kr": "바키트"
+  },
+  {
+    "name_en": "Red Shell",
+    "name_kr": "붉은 등껍질"
+  },
+  {
+    "name_en": "Red Martier",
+    "name_kr": "레드 마르티어"
+  },
+  {
+    "name_en": "[Mastery Book] Battleship Torpedo 30",
+    "name_kr": "[마스터리북] 배틀쉽 토르페도 30"
+  },
+  {
+    "name_en": "Green Arzuna",
+    "name_kr": "그린 아르주나"
+  },
+  {
+    "name_en": "Green Korben",
+    "name_kr": "그린 코르뱅"
+  },
+  {
+    "name_en": "Vifennis",
+    "name_kr": "비펜니스"
+  },
+  {
+    "name_en": "Metus",
+    "name_kr": "메투스"
+  },
+  {
+    "name_en": "Rexton Leather",
+    "name_kr": "리스튼의 가죽"
+  },
+  {
+    "name_en": "[Mastery Book] Elemental Boost 20",
+    "name_kr": "[마스터리북] 속성 강화 20"
+  },
+  {
+    "name_en": "Green Ciara",
+    "name_kr": "그린 시아르"
+  },
+  {
+    "name_en": "Green Neos",
+    "name_kr": "그린 네오스"
+  },
+  {
+    "name_en": "Green Neos Pants",
+    "name_kr": "그린 네오스 바지"
+  },
+  {
+    "name_en": "Ruin Hammer",
+    "name_kr": "루인해머"
+  },
+  {
+    "name_en": "Hellslayer",
+    "name_kr": "핼버드"
+  },
+  {
+    "name_en": "Strange Egg",
+    "name_kr": "이상한 알"
+  },
+  {
+    "name_en": "Blue Arcina",
+    "name_kr": "블루 아르시나"
+  },
+  {
+    "name_en": "[Mastery Book] Shadow Claw 20",
+    "name_kr": "[마스터리북] 스피릿 자벨린 20"
+  },
+  {
+    "name_en": "[Mastery Book] Energy Orb 20",
+    "name_kr": "[마스터리북] 에너지 오브 20"
+  },
+  {
+    "name_en": "Wyvern Wing",
+    "name_kr": "와이번의 날개"
+  },
+  {
+    "name_en": "[Mastery Book] Battleship Cannon 30",
+    "name_kr": "[마스터리북] 배틀쉽 캐논 30"
+  },
+  {
+    "name_en": "Blue Grace Helmet",
+    "name_kr": "블루 그레이스 헬멧"
+  },
+  {
+    "name_en": "Green Varuna",
+    "name_kr": "그린 바루나"
+  },
+  {
+    "name_en": "Green Armis",
+    "name_kr": "그린 아르미스"
+  },
+  {
+    "name_en": "Red Katte",
+    "name_kr": "레드 카테"
+  },
+  {
+    "name_en": "Blue Anelin",
+    "name_kr": "블루 아날린"
+  },
+  {
+    "name_en": "Berzerker",
+    "name_kr": "참마도"
+  },
+  {
+    "name_en": "Casa Crow",
+    "name_kr": "카사 크로우"
+  },
+  {
+    "name_en": "Wooden Shoulder Pad",
+    "name_kr": "나무 어깨 보호대"
+  },
+  {
+    "name_en": "Black Polax Hat",
+    "name_kr": "블랙 폴락스 햇"
+  },
+  {
+    "name_en": "[Mastery Book] Energy Orb 30",
+    "name_kr": "[마스터리북] 에너지 오브 30"
+  },
+  {
+    "name_en": "Wyvern Gill",
+    "name_kr": "와이번의 아가미미"
+  },
+  {
+    "name_en": "Dark Grace Helmet",
+    "name_kr": "다크 그레이스 헬멧"
+  },
+  {
+    "name_en": "Leomite",
+    "name_kr": "레오마이트"
+  },
+  {
+    "name_en": "Black Skellduke",
+    "name_kr": "블랙 스켈듀크"
+  },
+  {
+    "name_en": "[Mastery Book] Super Transformation 20",
+    "name_kr": "[마스터리북] 슈퍼 트랜스폼 20"
+  },
+  {
+    "name_en": "Wyvern Toenail",
+    "name_kr": "와이번의 발톱"
+  },
+  {
+    "name_en": "Silver Grace Helmet",
+    "name_kr": "실버 그레이스 헬멧"
+  },
+  {
+    "name_en": "Dark Focus",
+    "name_kr": "다크 아데브"
+  },
+  {
+    "name_en": "King Cent",
+    "name_kr": "킹 센트"
+  },
+  {
+    "name_en": "[Mastery Book] Brandish 20",
+    "name_kr": "[마스터리북] 브랜디쉬 20"
+  },
+  {
+    "name_en": "[Mastery Book] Divine Charge 20",
+    "name_kr": "[마스터리북] 디바인 차지 20"
+  },
+  {
+    "name_en": "[Mastery Book] Big Bang 20",
+    "name_kr": "[마스터리북] 빅뱅 20"
+  },
+  {
+    "name_en": "[Mastery Book] Battleship Cannon 20",
+    "name_kr": "[마스터리북] 배틀쉽 캐논 20"
+  },
+  {
+    "name_en": "Red Grace Helmet",
+    "name_kr": "레드 그레이스 헬멧"
+  },
+  {
+    "name_en": "Red Katinas",
+    "name_kr": "레드 카티나스"
+  },
+  {
+    "name_en": "Green Lucida",
+    "name_kr": "그린 엘소르"
+  },
+  {
+    "name_en": "Green Lucida Skirt",
+    "name_kr": "그린 엘소르 치마"
+  },
+  {
+    "name_en": "Green Bazura",
+    "name_kr": "그린 바즈라"
+  },
+  {
+    "name_en": "Red Arcina",
+    "name_kr": "레드 아르시나"
+  },
+  {
+    "name_en": "Devil's Sunrise",
+    "name_kr": "라 투핸더"
+  },
+  {
+    "name_en": "Skull Shoulder Pad",
+    "name_kr": "해골 어깨 보호대"
+  },
+  {
+    "name_en": "Green Anelin",
+    "name_kr": "그린 아날린"
+  },
+  {
+    "name_en": "Concerto",
+    "name_kr": "콘체르토"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Sword for Accuracy 60%",
+    "name_kr": "두손검 명중치 주문서 60%"
+  },
+  {
+    "name_en": "[Mastery Book] Rush 20",
+    "name_kr": "[마스터리북] 돌진 20"
+  },
+  {
+    "name_en": "[Mastery Book] Power Stance 20",
+    "name_kr": "[마스터리북] 스탠스 20"
+  },
+  {
+    "name_en": "[Mastery Book] Frostprey 20",
+    "name_kr": "[마스터리북] 프리져 20"
+  },
+  {
+    "name_en": "[Mastery Book] Venomous Star/Venomous Stab 20",
+    "name_kr": "[마스터리북] 베놈 20"
+  },
+  {
+    "name_en": "[Mastery Book] Rapid Fire 20",
+    "name_kr": "[마스터리북] 래피드 파이어 20"
+  },
+  {
+    "name_en": "[Mastery Book] Mana Reflection 20",
+    "name_kr": "[마스터리북] 마나 리플렉션 20"
+  },
+  {
+    "name_en": "[Mastery Book] Fire Demon 20",
+    "name_kr": "[마스터리북] 파이어 데몬 20"
+  },
+  {
+    "name_en": "[Mastery Book] Bow Expert 20",
+    "name_kr": "[마스터리북] 보우 엑스퍼트 20"
+  },
+  {
+    "name_en": "Egg Shell",
+    "name_kr": "알껍질 조각"
+  },
+  {
+    "name_en": "Green Varr Hat",
+    "name_kr": "그린 바르햇"
+  },
+  {
+    "name_en": "Blue Arnah Shoes",
+    "name_kr": "블루 아르나슈즈"
+  },
+  {
+    "name_en": "Scroll for Two-Handed Axe for Accuracy 100%",
+    "name_kr": "두손도끼 명중치 주문서 100%"
+  },
+  {
+    "name_en": "[Mastery Book] Paralyze 20",
+    "name_kr": "[마스터리북] 패럴라이즈 20"
+  },
+  {
+    "name_en": "[Mastery Book] Ifrit 20",
+    "name_kr": "[마스터리북] 이프리트 20"
+  },
+  {
+    "name_en": "[Mastery Book] Dragon's Breath 20",
+    "name_kr": "[마스터리북] 드래곤 펄스 20"
+  },
+  {
+    "name_en": "[Mastery Book] Crossbow Expert 20",
+    "name_kr": "[마스터리북] 크로스보우 엑스퍼트 20"
+  },
+  {
+    "name_en": "[Mastery Book] Assassinate 20",
+    "name_kr": "[마스터리북] 암살 20"
+  },
+  {
+    "name_en": "[Mastery Book] Demolition 30",
+    "name_kr": "[마스터리북] 데몰리션 30"
+  },
+  {
+    "name_en": "Destroyed Nest",
+    "name_kr": "망가지 둥지지"
+  },
+  {
+    "name_en": "Red Arnah Cap",
+    "name_kr": "레드 아르나햇"
+  },
+  {
+    "name_en": "Blue Katinas",
+    "name_kr": "블루 카티나스"
+  },
+  {
+    "name_en": "Red Varr Shoes",
+    "name_kr": "레드 바르슈즈"
+  },
+  {
+    "name_en": "Blue Ciara",
+    "name_kr": "블루 시아르"
+  },
+  {
+    "name_en": "Eternal Bullet",
+    "name_kr": "이터널 불릿"
+  },
+  {
+    "name_en": "[Mastery Book] Monster Magnet 20",
+    "name_kr": "[마스터리북] 몬ㅅ터 마그넷 20"
+  },
+  {
+    "name_en": "[Mastery Book] Advanced Combo Attack 20",
+    "name_kr": "[마스터리북] 어드밴스드 콤보 20"
+  },
+  {
+    "name_en": "[Mastery Book] Holy Charge 20",
+    "name_kr": "[마스터리북] 홀리 차지 20"
+  },
+  {
+    "name_en": "[Mastery Book] Elquines 20",
+    "name_kr": "[마스터리북] 엘퀴네스 20"
+  },
+  {
+    "name_en": "[Mastery Book] Hurricane 20",
+    "name_kr": "[마스터리북] 폭풍의 시 20"
+  },
+  {
+    "name_en": "[Mastery Book] Taunt 20",
+    "name_kr": "[마스터리북] 쇼다운 20"
+  },
+  {
+    "name_en": "[Mastery Book] Bullseye 20",
+    "name_kr": "[마스터리북] 어드밴스드 호밍 20"
+  },
+  {
+    "name_en": "Broken Horn",
+    "name_kr": "부러진 뿔"
+  },
+  {
+    "name_en": "Green Valhalla Helmet",
+    "name_kr": "그린 니르첸 투구"
+  },
+  {
+    "name_en": "Blue Arzuna",
+    "name_kr": "블루 아르주나"
+  },
+  {
+    "name_en": "Blue Varuna",
+    "name_kr": "블루 바루나"
+  },
+  {
+    "name_en": "Blue Crescent Boots",
+    "name_kr": "블루 크리센트부츠"
+  },
+  {
+    "name_en": "Blue Korben",
+    "name_kr": "블루 코르뱅"
+  },
+  {
+    "name_en": "[Mastery Book] Blast 20",
+    "name_kr": "[마스터리북] 블래스트 20"
+  },
+  {
+    "name_en": "[Mastery Book] Blocking 20",
+    "name_kr": "[마스터리북] 블로킹 20"
+  },
+  {
+    "name_en": "[Mastery Book] Ninja Storm 20",
+    "name_kr": "[마스터리북] 닌자 스톰 20"
+  },
+  {
+    "name_en": "[Mastery Book] Speed Infusion 20",
+    "name_kr": "[마스터리북] 윈드 부스터 20"
+  },
+  {
+    "name_en": "[Mastery Book] Piercing 20",
+    "name_kr": "[마스터리북] 피어싱 20"
+  },
+  {
+    "name_en": "[Mastery Book] Angel Ray 20",
+    "name_kr": "[마스터리북] 엔젤레이 20"
+  },
+  {
+    "name_en": "[Mastery Book] Phoenix 20",
+    "name_kr": "[마스터리북] 피닉스 20"
+  },
+  {
+    "name_en": "Old Neck Bone",
+    "name_kr": "오래된 뼈"
+  },
+  {
+    "name_en": "Green Canal Hood",
+    "name_kr": "그린 카날 후드"
+  },
+  {
+    "name_en": "Blue Bazura",
+    "name_kr": "블루 바즈라"
+  },
+  {
+    "name_en": "Blue Neos",
+    "name_kr": "블루 네오스"
+  },
+  {
+    "name_en": "Red Katina Boots",
+    "name_kr": "레드 가티나부츠"
+  },
+  {
+    "name_en": "Scroll for Two-Handed BW for ATT 60%",
+    "name_kr": "두손둔기 공격력 주문서 60%"
+  },
+  {
+    "name_en": "[Mastery Book] Achilles 20",
+    "name_kr": "[마스터리북] 아킬레스 20"
+  },
+  {
+    "name_en": "[Mastery Book] Hamstring Shot 20",
+    "name_kr": "[마스터리북] 햄스트링 20"
+  },
+  {
+    "name_en": "[Mastery Book] Holy Shield 20",
+    "name_kr": "[마스터리북] 홀리실드 20"
+  },
+  {
+    "name_en": "[Mastery Book] Sharp Eyes 30",
+    "name_kr": "[마스터리북] 샤프아이즈 30"
+  },
+  {
+    "name_en": "[Mastery Book] Battleship Torpedo 20",
+    "name_kr": "[마스터리북] 배틀쉽 토르페도 20"
+  },
+  {
+    "name_en": "[Mastery Book] Advanced Combo Attack 30",
+    "name_kr": "[마스터리북] 어드밴스드 콤보 30"
+  },
+  {
+    "name_en": "[Mastery Book] Blind 20",
+    "name_kr": "[마스터리북] 블라인드 20"
+  },
+  {
+    "name_en": "[Mastery Book] Boomerang Step 20",
+    "name_kr": "[마스터리북] 부메랑 스탭 20"
+  }
+]
