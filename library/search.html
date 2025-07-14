@@ -48,6 +48,7 @@
       <div id="details"></div>
     </div>
   </div>
+
   <script>
     let monsterData = [], bossData = [], itemNameMap = {};
     const monsterImagePath = "images/monsters/";
@@ -56,7 +57,6 @@
     const escapeHtml = text => text?.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
-    // 검색용 정규화: 한글·영문·숫자만 남기고 소문자, 괄호 제거
     const normalize = text =>
       text
         .toLowerCase()
@@ -64,7 +64,6 @@
         .replace(/\s*\([MF]\)/gi, '')
         .replace(/[^가-힣a-zA-Z0-9]/g, '');
 
-    // 아이템 이미지 이름 결정 (한글 예외처리 우선)
     const getItemImageName = name => {
       if (/스킬북/.test(name))   return "Skillbook";
       if (/마스터북/.test(name)) return "Masterybook";
@@ -97,7 +96,7 @@
       monsterData = await mResp.json();
       bossData    = await bResp.json();
       const mapArr = await mapResp.json();
-      mapArr.forEach(({ name_kr, name_en }) => { itemNameMap[name_kr] = name_en; });
+      mapArr.forEach(({ name_kr, name_en }) => itemNameMap[name_kr] = name_en);
     }
 
     function unifiedSearch() {
@@ -125,7 +124,8 @@
       });
 
       if (monsterMatches.length) {
-        const h2 = document.createElement('h2'); h2.textContent = `🧟 몬스터 (${monsterMatches.length})`;
+        const h2 = document.createElement('h2');
+        h2.textContent = `🧟 몬스터 (${monsterMatches.length})`;
         results.appendChild(h2);
         monsterMatches.forEach(monster => {
           const div = document.createElement('div'); div.className = 'result-item';
@@ -139,7 +139,8 @@
 
       const itemKeys = Object.keys(itemMatches);
       if (itemKeys.length) {
-        const h2 = document.createElement('h2'); h2.textContent = `🎁 아이템 (${itemKeys.length})`;
+        const h2 = document.createElement('h2');
+        h2.textContent = `🎁 아이템 (${itemKeys.length})`;
         results.appendChild(h2);
         itemKeys.forEach(item => {
           const div = document.createElement('div'); div.className = 'result-item';
@@ -169,13 +170,12 @@
         <p><strong>속성:</strong> ${monster.Modifiers || '없음'}</p>
         <p><strong>명중률 요구치:</strong> ${monster.required_accuracy || '0'}${monster.accuracy_level_decrease ? ` (레벨 -1마다 +${monster.accuracy_level_decrease})` : ''}</p>
         <button onclick="toggleDrops('${id}', this)">드랍아이템 보기</button>
-        <div id="${id}" style="display:none; margin-top:10px;">${
-monster.drops?.map(drop => `
+        <div id="${id}" style="display:none; margin-top:10px;">${monster.drops?.map(drop => `
             <div class="drop-item">
               <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
               <span>${escapeHtml(drop)}</span>
-            </div>`).join('')
-}        </div>
+            </div>`).join('')}
+        </div>
       `;
     }
 
@@ -204,39 +204,40 @@ monster.drops?.map(drop => `
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', e => { if(e.key==='Enter') unifiedSearch(); });
+    document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
     document.getElementById('darkModeToggle').addEventListener('click', () => {
       document.body.classList.toggle('dark-mode');
       const isDark = document.body.classList.contains('dark-mode');
       localStorage.setItem('darkMode', isDark);
       document.getElementById('darkModeToggle').textContent = isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
     });
-    if(localStorage.getItem('darkMode')==='true') {
-      document.body.classList.add('dark-mode'); document.getElementById('darkModeToggle').textContent='☀️ 라이트 모드';
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode'); document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
     }
     document.getElementById('searchInput').addEventListener('input', function() {
-      const query=this.value.trim().toLowerCase();
-      const list=document.getElementById('autocompleteList'); list.innerHTML=''; list.style.display='none';
-      if(!query) return;
-      const mMatches=[...monsterData,...bossData].filter(m=>stripGender(m.name).toLowerCase().includes(query));
-      const iSet=new Set();
-      [...monsterData,...bossData].forEach(m=>m.drops?.forEach(d=>{ if(stripGender(d).toLowerCase().includes(query)) iSet.add(d);}));
-      if(!mMatches.length && !iSet.size) return; list.style.display='block';
-      const addSec=(title, items, isItem=false)=>{
-        if(!items.length) return;
-        const header=document.createElement('li'); header.innerHTML=`<strong>${title}</strong>`; header.style.padding='5px'; header.style.borderBottom='1px solid #ccc'; list.appendChild(header);
-        items.forEach(item=>{
-          const li=document.createElement('li');
-          const img=getImageElement(isItem?itemImagePath:monsterImagePath, item.name||item, isItem);
-          const span=document.createElement('span'); span.textContent=item.name||item;
+      const query = this.value.trim().toLowerCase();
+      const list = document.getElementById('autocompleteList'); list.innerHTML = ''; list.style.display = 'none';
+      if (!query) return;
+      const mMatches = [...monsterData, ...bossData].filter(m => stripGender(m.name).toLowerCase().includes(query));
+      const iSet = new Set();
+      [...monsterData, ...bossData].forEach(m => m.drops?.forEach(d => { if (stripGender(d).toLowerCase().includes(query)) iSet.add(d); }));
+      if (!mMatches.length && !iSet.size) return; list.style.display = 'block';
+      const addSec = (title, items, isItem = false) => {
+        if (!items.length) return;
+        const header = document.createElement('li'); header.innerHTML = `<strong>${title}</strong>`; header.style.padding = '5px'; header.style.borderBottom = '1px solid #ccc'; list.appendChild(header);
+        items.forEach(item => {
+          const li = document.createElement('li');
+          const img = getImageElement(isItem ? itemImagePath : monsterImagePath, item.name || item, isItem);
+          const span = document.createElement('span'); span.textContent = item.name || item;
           li.appendChild(img); li.appendChild(span);
-          li.onclick=()=>{document.getElementById('searchInput').value=item.name||item; list.style.display='none';统一Search();};
+          li.onclick = () => { document.getElementById('searchInput').value = item.name || item; list.style.display = 'none'; unifiedSearch(); };
           list.appendChild(li);
         });
       };
-      addSec('몬스터', mMatches.slice(0,10)); addSec('아이템', Array.from(iSet).slice(0,10), true);
+      addSec('몬스터', mMatches.slice(0, 10));
+      addSec('아이템', Array.from(iSet).slice(0, 10), true);
     });
-    document.addEventListener('click', e=>{ const list=document.getElementById('autocompleteList'); if(!list.contains(e.target)&&e.target.id!=='searchInput') list.style.display='none'; });
+    document.addEventListener('click', e => { const list = document.getElementById('autocompleteList'); if (!list.contains(e.target) && e.target.id !== 'searchInput') list.style.display = 'none'; });
     loadData();
   </script>
 </body>
