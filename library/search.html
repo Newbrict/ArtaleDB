@@ -25,147 +25,64 @@
       box-shadow: 0 0 8px rgba(0,0,0,0.1);
       position: relative;
     }
-    body.dark-mode .container {
-      background: #1e1e1e;
-    }
+    body.dark-mode .container { background: #1e1e1e; }
     input[type=text] {
-      width: 60%;
-      padding: 10px;
-      margin-right: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      width: 60%; padding: 10px; margin-right: 10px;
+      border: 1px solid #ccc; border-radius: 4px;
     }
     body.dark-mode input[type=text] {
-      background: #333;
-      border: 1px solid #555;
-      color: #eee;
+      background: #333; border: 1px solid #555; color: #eee;
     }
     button {
-      padding: 10px 15px;
-      cursor: pointer;
-      border: none;
-      border-radius: 4px;
-      background-color: #4CAF50;
-      color: white;
-      font-weight: bold;
+      padding: 10px 15px; cursor: pointer;
+      border: none; border-radius: 4px;
+      background-color: #4CAF50; color: white; font-weight: bold;
     }
-    button:hover {
-      background-color: #45a049;
+    button:hover { background-color: #45a049; }
+    #darkModeToggle { background-color: #2196F3; margin-left: 10px; }
+    #darkModeToggle:hover { background-color: #1976D2; }
+    .result-item { display: flex; align-items: center;
+      border-bottom: 1px solid #ddd; padding: 15px 0; cursor: pointer;
     }
-    #darkModeToggle {
-      background-color: #2196F3;
-      margin-left: 10px;
-    }
-    #darkModeToggle:hover {
-      background-color: #1976D2;
-    }
-    .result-item {
-      display: flex;
-      align-items: center;
-      border-bottom: 1px solid #ddd;
-      padding: 15px 0;
-      cursor: pointer;
-    }
-    body.dark-mode .result-item {
-      border-color: #444;
-    }
-    .result-item img {
-      width: 50px;
-      height: auto;
-      margin-right: 15px;
-    }
-    mark {
-      background-color: yellow;
-      font-weight: bold;
-      padding: 0 3px;
-    }
-    body.dark-mode mark {
-      background-color: #ffda6a;
-    }
-    .content-wrapper {
-      display: flex;
-      gap: 30px;
-    }
-    #results {
-      flex: 1;
-      max-width: 45%;
-    }
-    #details {
-      flex: 1;
-      border-left: 1px solid #ccc;
-      padding-left: 20px;
-    }
-    body.dark-mode #details {
-      border-color: #444;
-    }
-    .drop-item {
-      display: flex;
-      align-items: center;
-      margin-bottom: 5px;
-    }
-    .drop-item img {
-      width: 40px;
-      height: auto;
-      margin-right: 10px;
-    }
+    body.dark-mode .result-item { border-color: #444; }
+    .result-item img { width: 50px; height: auto; margin-right: 15px; }
+    mark { background-color: yellow; font-weight: bold; padding: 0 3px; }
+    body.dark-mode mark { background-color: #ffda6a; }
+    .content-wrapper { display: flex; gap: 30px; }
+    #results { flex: 1; max-width: 45%; }
+    #details { flex: 1; border-left: 1px solid #ccc; padding-left: 20px; }
+    body.dark-mode #details { border-color: #444; }
+    .drop-item { display: flex; align-items: center; margin-bottom: 5px; }
+    .drop-item img { width: 40px; height: auto; margin-right: 10px; }
     .top-right-button {
-      position: absolute;
-      top: 20px;
-      right: 20px;
+      position: absolute; top: 20px; right: 20px;
       background-color: #ff7043;
     }
-    .top-right-button:hover {
-      background-color: #e55d2e;
-    }
+    .top-right-button:hover { background-color: #e55d2e; }
     #autocompleteList {
-      position: absolute;
-      background: white;
-      z-index: 1000;
-      list-style: none;
-      padding: 10px;
-      margin: 0;
-      width: 60%;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      max-height: 300px;
-      overflow-y: auto;
-      display: none;
+      position: absolute; background: white; z-index: 1000;
+      list-style: none; padding: 10px; margin: 0;
+      width: 60%; border: 1px solid #ccc; border-radius: 4px;
+      max-height: 300px; overflow-y: auto; display: none;
     }
-    body.dark-mode #autocompleteList {
-      background-color: #2b2b2b;
-      border: 1px solid #555;
-    }
-    body.dark-mode #autocompleteList li {
-      color: #ddd;
-    }
-    body.dark-mode #autocompleteList li strong {
-      color: #fff;
-    }
-    body.dark-mode #autocompleteList li:hover {
-      background-color: #3a3a3a;
-    }
+    body.dark-mode #autocompleteList { background: #2b2b2b; border: 1px solid #555; }
+    body.dark-mode #autocompleteList li { color: #ddd; }
+    body.dark-mode #autocompleteList li:hover { background-color: #3a3a3a; }
     #autocompleteList li {
-      padding: 5px 0;
-      display: flex;
-      align-items: center;
-      cursor: pointer;
+      padding: 5px 0; display: flex; align-items: center; cursor: pointer;
     }
-    #autocompleteList li img {
-      max-width: 30px;
-      max-height: 30px;
-      margin-right: 10px;
-    }
+    #autocompleteList li img { max-width: 30px; max-height: 30px; margin-right: 10px; }
   </style>
 </head>
 <body>
   <div class="container">
-    <button class="top-right-button" onclick="location.href='https://artaledb.com/'">🏠 메인</button>
+    <button class="top-right-button" onclick="location.href='https://artaledb.com/ko/index.html'">🏠 메인</button>
     <h1>🔍 몬스터 / 아이템 검색</h1>
     <div style="margin-bottom: 20px; position: relative;">
       <input type="text" id="searchInput" placeholder="검색어를 입력하세요 (예: 달팽이)">
       <ul id="autocompleteList"></ul>
       <button id="searchBtn">검색</button>
-      <button id="darkModeToggle">🌙 다크 모드</button>
+      <button id="darkModeToggle">다크 모드</button>
     </div>
     <div class="content-wrapper">
       <div id="results"></div>
@@ -174,9 +91,6 @@
   </div>
   <script>
     let monsterData = [], bossData = [], uniqueMap = {};
-    const monsterDataPath  = 'library/data/monster/monster_data.json';
-    const bossDataPath     = 'library/data/monster/boss_data.json';
-    const uniqueItemsPath  = 'library/data/item/unique_items.json';
     const monsterImagePath = 'library/images/monsters/';
     const itemImagePath    = 'library/images/items/';
 
@@ -210,9 +124,9 @@
 
     async function loadData() {
       const [mRes, bRes, uRes] = await Promise.all([
-        fetch(monsterDataPath),
-        fetch(bossDataPath),
-        fetch(uniqueItemsPath)
+        fetch('library/data/monster/monster_data.json'),
+        fetch('library/data/monster/boss_data.json'),
+        fetch('library/data/item/unique_items.json')
       ]);
       monsterData = await mRes.json();
       bossData    = await bRes.json();
@@ -222,83 +136,64 @@
     function unifiedSearch() {
       const keywordRaw = document.getElementById('searchInput').value.trim();
       if (!keywordRaw) return alert('검색어를 입력해주세요.');
-
-      const keywordLower = keywordRaw.toLowerCase();
-      const terms = keywordLower.split(',').map(t => normalize(t.trim()));
-      const resultsContainer = document.getElementById('results');
-      resultsContainer.innerHTML = '';
+      const keyLow = keywordRaw.toLowerCase();
+      const terms = keyLow.split(',').map(t => normalize(t.trim()));
+      const results = document.getElementById('results'); results.innerHTML = '';
       document.getElementById('details').innerHTML = '';
 
       const allMonsters = [...monsterData, ...bossData];
       const monsterMatches = allMonsters.filter(m => {
-        const nameLower = m.name.toLowerCase();
-        return terms.some(term => normalize(m.name).includes(term) || nameLower.includes(keywordLower));
+        const nameLow = m.name.toLowerCase();
+        return terms.some(term => normalize(m.name).includes(term) || nameLow.includes(keyLow));
       });
-
       const itemMatches = {};
-      allMonsters.forEach(m => {
-        if (!m.drops) return;
-        m.drops.forEach(drop => {
-          const dropNorm = normalize(drop);
-          const dropLower = drop.toLowerCase();
-          if (terms.some(term => dropNorm.includes(term) || dropLower.includes(keywordLower))) {
-            if (!itemMatches[drop]) itemMatches[drop] = [];
-            itemMatches[drop].push(m);
-          }
-        });
-      });
+      allMonsters.forEach(m => { (m.drops||[]).forEach(d => {
+        const dLow = d.toLowerCase(), dNorm = normalize(d);
+        if (terms.some(term => dNorm.includes(term) || dLow.includes(keyLow))) {
+          (itemMatches[d]||(itemMatches[d]=[])).push(m);
+        }
+      }); });
 
       if (monsterMatches.length) {
-        const title = document.createElement('h2');
-        title.textContent = `🧟 몬스터 (${monsterMatches.length})`;
-        resultsContainer.appendChild(title);
-        monsterMatches.forEach(mon => {
+        const h2 = document.createElement('h2'); h2.textContent = `🧟 몬스터 (${monsterMatches.length})`;
+        results.appendChild(h2);
+        monsterMatches.forEach(m => {
           const div = document.createElement('div'); div.classList.add('result-item');
-          div.appendChild(getImageElement(monsterImagePath, mon.name));
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(mon.name, keywordRaw);
-          div.appendChild(span);
-          div.addEventListener('click', () => showMonsterDetail(mon));
-          resultsContainer.appendChild(div);
+          div.appendChild(getImageElement(monsterImagePath, m.name));
+          const sp = document.createElement('span'); sp.innerHTML = highlightKeyword(m.name, keywordRaw);
+          div.appendChild(sp); div.addEventListener('click', () => showMonsterDetail(m));
+          results.appendChild(div);
         });
       }
-
-      const itemKeys = Object.keys(itemMatches);
-      if (itemKeys.length) {
-        const title = document.createElement('h2');
-        title.textContent = `🎁 아이템 (${itemKeys.length})`;
-        resultsContainer.appendChild(title);
-        itemKeys.forEach(item => {
+      const items = Object.keys(itemMatches);
+      if (items.length) {
+        const h2 = document.createElement('h2'); h2.textContent = `🎁 아이템 (${items.length})`;
+        results.appendChild(h2);
+        items.forEach(item => {
           const div = document.createElement('div'); div.classList.add('result-item');
           div.appendChild(getImageElement(itemImagePath, item, true));
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(item, keywordRaw);
-          div.appendChild(span);
-          div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
-          resultsContainer.appendChild(div);
+          const sp = document.createElement('span'); sp.innerHTML = highlightKeyword(item, keywordRaw);
+          div.appendChild(sp); div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+          results.appendChild(div);
         });
       }
-
-      if (!monsterMatches.length && !itemKeys.length) {
-        resultsContainer.innerHTML = '<p>결과가 없습니다.</p>';
-      }
+      if (!monsterMatches.length && !items.length) results.innerHTML = '<p>결과가 없습니다.</p>';
     }
 
-    function showMonsterDetail(monster) {
-      const details = document.getElementById('details');
-      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
-      const fn = stripGender(monster.name).replace(/\s+/g, '_');
-      const imgP = `${monsterImagePath}${fn}.png`;
-      const imgG = `${monsterImagePath}${fn}.gif`;
-      details.innerHTML = `
-        <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgP}" alt="${escapeHtml(monster.name)}" onerror="this.onerror=null;this.src='${imgG}'">
-        <p><strong>레벨:</strong> ${monster.level||'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp||'N/A'}</p>
-        <p><strong>지역:</strong> ${monster.region||'N/A'}</p>
-        <p><strong>경험치:</strong> ${monster.exp||'N/A'}</p>
-        <button onclick="toggleDrops('${dropsId}')">획득처 보기</button>
-        <div id="${dropsId}" style="display:none; margin-top:10px;">${(monster.drops||[]).map(d=>`
+    function showMonsterDetail(m) {
+      const d = document.getElementById('details');
+      const id = `drop-list-${sanitizeName(m.name)}`;
+      const fn = stripGender(m.name).replace(/\s+/g, '_');
+      const p = m.imagePath || `${monsterImagePath}${fn}`;
+      d.innerHTML = `
+        <h2>${escapeHtml(m.name)}</h2>
+        <img src="${p}.png" onerror="this.onerror=null;this.src='${p}.gif'" alt="${escapeHtml(m.name)}">
+        <p><strong>레벨:</strong> ${m.level||'N/A'}</p>
+        <p><strong>HP:</strong> ${m.hp||'N/A'}</p>
+        <p><strong>지역:</strong> ${m.region||'N/A'}</p>
+        <p><strong>경험치:</strong> ${m.exp||'N/A'}</p>
+        <button onclick="toggleDrops('${id}')">획득처 보기</button>
+        <div id="${id}" style="display:none; margin-top:10px;">${(m.drops||[]).map(d=>`
             <div class="drop-item">
               <img src="${itemImagePath+getItemImageName(d)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(d)}.gif'" alt="${escapeHtml(d)}">
               <span>${escapeHtml(d)}</span>
@@ -307,12 +202,30 @@
       `;
     }
 
-    function showItemDetail(item, monsters) {
-      const details = document.getElementById('details');
-      details.innerHTML = `
+    function showItemDetail(item, mons) {
+      const d = document.getElementById('details');
+      d.innerHTML = `
         <h2>${escapeHtml(item)}</h2>
         <img src="${itemImagePath+getItemImageName(item)}.png" onerror="this.onerror=null;this.src='${itemImagePath+getItemImageName(item)}.gif'" alt="${escapeHtml(item)}">
         <h3>획득처</h3>
-        ${monsters.map(m=>`
+        ${mons.map(m=>`
           <div class="drop-item">
-            <img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+strip
+            <img src="${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.png" onerror="this.onerror=null;this.src='${monsterImagePath+stripGender(m.name).replace(/\s+/g,'_')}.gif'" alt="${escapeHtml(m.name)}">
+            <span>${escapeHtml(m.name)}</span>
+          </div>`).join('')}
+      `;
+    }
+
+    function toggleDrops(id) {
+      const el = document.getElementById(id);
+      el.style.display = el.style.display === 'none' ? 'block' : 'none';
+    }
+
+    document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
+    document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
+    document.getElementById('darkModeToggle').addEventListener('click', () => document.body.classList.toggle('dark-mode'));
+
+    loadData();
+  </script>
+</body>
+</html>
