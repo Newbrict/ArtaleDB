@@ -1471,7 +1471,7 @@
       "Opal Ore",
       "Mithril Ore"
     ],
-    "region": "Victoria Island"
+    "region": "Victoria Island, Orbis"
   },
   {
     "name": "Sentinel",
@@ -1602,37 +1602,6 @@
       "Scroll for Topwear for DEF 60%"
     ],
     "region": "Zipangu"
-  },
-  {
-    "name": "Fairy",
-    "level": 30,
-    "hp": 800,
-    "mp": 175,
-    "weapon_def": 85,
-    "magic_def": 105,
-    "avoidability": 25,
-    "required_accuracy": 92,
-    "accuracy_level_decrease": 3.33,
-    "exp": 120,
-    "meso_range": [
-      80,
-      120
-    ],
-    "modifiers": "X",
-    "drops": [
-      "Fierry's Tentacle",
-      "Orange Potion",
-      "Blue Potion",
-      "Silver Ore",
-      "Amethyst Ore",
-      "Adamantium Ore",
-      "Topaz Ore",
-      "Orihalcon Ore",
-      "AquaMarine Ore",
-      "Opal Ore",
-      "Mithril Ore"
-    ],
-    "region": "Orbis"
   },
   {
     "name": "Ice Sentinel",
@@ -6113,7 +6082,7 @@
       "Aqua Golden Circlet",
       "Holy Cross Earrings",
       "Thorns",
-      "Blue Magic Cape",
+      "Blue Magic 호Cape",
       "Gold Moss Boots",
       "Sephia Garner",
       "Silver Legend Shield",
@@ -6171,7 +6140,7 @@
       "Staff Production Stimulator",
       "One Handed Axe Forging Stimulator"
     ],
-    "region": "Zipangu"
+    "region": "Korean Folk Town, Zipangu"
   },
   {
     "name": "Grizzly",
@@ -6219,52 +6188,6 @@
       "Overall Production Stimulator"
     ],
     "region": "Mu Lung"
-  },
-  {
-    "name": "Samiho",
-    "level": 56,
-    "hp": 4500,
-    "mp": 120,
-    "weapon_def": 150,
-    "magic_def": 190,
-    "avoidability": 28,
-    "required_accuracy": 103,
-    "accuracy_level_decrease": 3.7,
-    "exp": 185,
-    "meso_range": [
-      268,
-      402
-    ],
-    "modifiers": "Weak Fire /Weak Holy",
-    "drops": [
-      "Three-Tailed Foxtail",
-      "Leather",
-      "Dark Crystal Ore",
-      "Blue Potion",
-      "Elixir",
-      "Opal Ore",
-      "Orihalcon Ore",
-      "Holy Cross Earrings",
-      "Orihalcon Hildon Boots",
-      "Brown Moon Gloves",
-      "Orange Tai",
-      "White Anakarune",
-      "Scroll for Staff for Magic ATT 60%",
-      "Red Pennance",
-      "Holy Spear",
-      "Ocher Scorpio",
-      "Ocher Scorpio Pants",
-      "DEX Crystal Ore",
-      "Blue Shouldermail",
-      "Blue Shouldermail Pants",
-      "Scroll for Wand for Magic ATT 60%",
-      "Black Royal Barone",
-      "Scroll for Topwear for HP 100%",
-      "Two Handed Sword Forging Stimulator",
-      "Staff Production Stimulator",
-      "One Handed Axe Forging Stimulator"
-    ],
-    "region": "Korean Folk Town"
   },
   {
     "name": "Primitive Boar",
