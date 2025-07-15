@@ -1,0 +1,7818 @@
+[
+  {
+    "name_en": "Snail_Shell",
+    "name_kr": "달팽이의_껍질"
+  },
+  {
+    "name_en": "Red_Potion",
+    "name_kr": "빨간_포션"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEF_10%",
+    "name_kr": "투구_방어력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_Magic_Def_60%",
+    "name_kr": "망토_마법방어력_주문서_60%"
+  },
+  {
+    "name_en": "Arrow_for_Bow",
+    "name_kr": "활전용_화살"
+  },
+  {
+    "name_en": "Bronze_Ore",
+    "name_kr": "청동의_원석"
+  },
+  {
+    "name_en": "Garnet_Ore",
+    "name_kr": "가넷의_원석"
+  },
+  {
+    "name_en": "Arrow_for_Crossbow",
+    "name_kr": "석궁전용_화살"
+  },
+  {
+    "name_en": "Green_Headband",
+    "name_kr": "연두색_머리띠"
+  },
+  {
+    "name_en": "Green_Apple",
+    "name_kr": "초록사과"
+  },
+  {
+    "name_en": "Blue_Snail_Shell",
+    "name_kr": "파란_달팽이의_껍질"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_HP_100%",
+    "name_kr": "망토_체력_주문서_100%"
+  },
+  {
+    "name_en": "Amethyst_Ore",
+    "name_kr": "자수정의_원석"
+  },
+  {
+    "name_en": "Steel_Ore",
+    "name_kr": "강철의_원석"
+  },
+  {
+    "name_en": "Red_Striped_T_Shirt",
+    "name_kr": "빨간_줄무늬_티셔츠"
+  },
+  {
+    "name_en": "Red_Striped_T_Shirt",
+    "name_kr": "파란색_원라인_티셔츠"
+  },
+  {
+    "name_en": "Grey_Thick_Sweat_Pants",
+    "name_kr": "회갈색_수련복"
+  },
+  {
+    "name_en": "Grey_Brown_Training_Shirt",
+    "name_kr": "회갈색_수련복_바지"
+  },
+  {
+    "name_en": "Grey_Brown_Training_Pants",
+    "name_kr": "회색_고무줄_바지"
+  },
+  {
+    "name_en": "Mushroom_Spore",
+    "name_kr": "버섯의_포자"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_HP_60%",
+    "name_kr": "망토_체력_주문서_60%"
+  },
+  {
+    "name_en": "AquaMarine_Ore",
+    "name_kr": "아쿠아마린의_원석"
+  },
+  {
+    "name_en": "Mithril_Ore",
+    "name_kr": "미스릴의_원석"
+  },
+  {
+    "name_en": "Field_Dagger",
+    "name_kr": "필드_대거"
+  },
+  {
+    "name_en": "Ice_Jeans",
+    "name_kr": "아이스_진"
+  },
+  {
+    "name_en": "Jean_Capris",
+    "name_kr": "파란_칠부바지"
+  },
+  {
+    "name_en": "Green_Avelin_Skirt",
+    "name_kr": "그린_아벨린_치마"
+  },
+  {
+    "name_en": "Brown_Rocky_Bandana",
+    "name_kr": "브라운_로키_반다나"
+  },
+  {
+    "name_en": "Red_Snail_Shell",
+    "name_kr": "빨간_달팽이의_껍질"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_MP_100%",
+    "name_kr": "망토_마나_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_DEX_10%",
+    "name_kr": "전신_갑옷_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Wooden_Sword",
+    "name_kr": "목검"
+  },
+  {
+    "name_en": "Leather_Purse",
+    "name_kr": "가죽_핸드백"
+  },
+  {
+    "name_en": "Silver_Ore",
+    "name_kr": "은의_원석"
+  },
+  {
+    "name_en": "Opal_Ore",
+    "name_kr": "오팔의_원석"
+  },
+  {
+    "name_en": "Metal_Wand",
+    "name_kr": "메탈_완드"
+  },
+  {
+    "name_en": "Brown_Duo",
+    "name_kr": "브라운_듀오"
+  },
+  {
+    "name_en": "Amethyst_Earrings",
+    "name_kr": "자수정_귀걸이"
+  },
+  {
+    "name_en": "Brown_Woodsman_Boots",
+    "name_kr": "브라운_우드탑"
+  },
+  {
+    "name_en": "Red_Cloth_Pants",
+    "name_kr": "홍몽_바지"
+  },
+  {
+    "name_en": "Brown_Rocky_Suit",
+    "name_kr": "브라운_로키_슈트"
+  },
+  {
+    "name_en": "Tree_Branch",
+    "name_kr": "나뭇가지"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_HP_10%",
+    "name_kr": "망토_체력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_DEF_10%",
+    "name_kr": "상의_방어력_주문서_10%"
+  },
+  {
+    "name_en": "Emerald_Ore",
+    "name_kr": "에메랄드의_원석"
+  },
+  {
+    "name_en": "Adamantium_Ore",
+    "name_kr": "아다만티움의_원석"
+  },
+  {
+    "name_en": "Triangular_Zamadar",
+    "name_kr": "삼각_자마다르"
+  },
+  {
+    "name_en": "Brown_High_Boots",
+    "name_kr": "브라운_미들_래더"
+  },
+  {
+    "name_en": "Juno",
+    "name_kr": "주노"
+  },
+  {
+    "name_en": "Composite_Bow",
+    "name_kr": "합금_활"
+  },
+  {
+    "name_en": "Rookie_Pants",
+    "name_kr": "레전드_바지"
+  },
+  {
+    "name_en": "Pistol",
+    "name_kr": "피스톨"
+  },
+  {
+    "name_en": "Squishy_Liquid",
+    "name_kr": "물컹물컹한_액체"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_DEX_100%",
+    "name_kr": "망토_민첩성_주문서_100%"
+  },
+  {
+    "name_en": "Slime_Bubble",
+    "name_kr": "슬라임의_방울"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_DEF_10%",
+    "name_kr": "하의_방어력_주문서_10%"
+  },
+  {
+    "name_en": "White_Bandana",
+    "name_kr": "흰색_두건"
+  },
+  {
+    "name_en": "Metal_Axe",
+    "name_kr": "쇠_도끼"
+  },
+  {
+    "name_en": "Orihalcon_Ore",
+    "name_kr": "오리할콘의_원석"
+  },
+  {
+    "name_en": "Sapphire_Ore",
+    "name_kr": "사파이어의_원석"
+  },
+  {
+    "name_en": "Fork_on_a_Stick",
+    "name_kr": "포크_창"
+  },
+  {
+    "name_en": "Beige_Nitty",
+    "name_kr": "베이지_니티"
+  },
+  {
+    "name_en": "Lemona",
+    "name_kr": "레모나"
+  },
+  {
+    "name_en": "Iron_Axe",
+    "name_kr": "철제_도끼"
+  },
+  {
+    "name_en": "Steel_Knuckler",
+    "name_kr": "스틸_너클"
+  },
+  {
+    "name_en": "Pig's_Head",
+    "name_kr": "돼지의_머리"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_LUK_100%",
+    "name_kr": "망토_행운_주문서_100%"
+  },
+  {
+    "name_en": "Brown_Hard_Leather_Pants",
+    "name_kr": "갈색_하드래더_바지"
+  },
+  {
+    "name_en": "Brown_Skullcap",
+    "name_kr": "갈색_가죽모자"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_DEX_10%",
+    "name_kr": "신발_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Wooden_Mallet",
+    "name_kr": "나무_망치"
+  },
+  {
+    "name_en": "Gold_Ore",
+    "name_kr": "금의_원석"
+  },
+  {
+    "name_en": "Topaz_Ore",
+    "name_kr": "토파즈의_원석"
+  },
+  {
+    "name_en": "Garnier",
+    "name_kr": "가니어"
+  },
+  {
+    "name_en": "White_Split_Skirt",
+    "name_kr": "흰색_가람_치마"
+  },
+  {
+    "name_en": "Leather",
+    "name_kr": "동물의_가죽"
+  },
+  {
+    "name_en": "Orange_Lolica_Armor",
+    "name_kr": "오렌지_스퀘이머"
+  },
+  {
+    "name_en": "Dark_Nightshift",
+    "name_kr": "흑야"
+  },
+  {
+    "name_en": "Orange_Mushroom_Cap",
+    "name_kr": "주황버섯의_갓"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Jump_10%",
+    "name_kr": "신발_점프력_주문서_10%"
+  },
+  {
+    "name_en": "White_Gomushin",
+    "name_kr": "흰색_고무신"
+  },
+  {
+    "name_en": "Bronze_Koif",
+    "name_kr": "브론즈_코이프"
+  },
+  {
+    "name_en": "Spear",
+    "name_kr": "창"
+  },
+  {
+    "name_en": "Double_Axe",
+    "name_kr": "양날_도끼"
+  },
+  {
+    "name_en": "Diamond_Ore",
+    "name_kr": "다이아몬드의_원석"
+  },
+  {
+    "name_en": "Basic_Archer_Gloves",
+    "name_kr": "아르"
+  },
+  {
+    "name_en": "Red_Ninja_Sandals",
+    "name_kr": "빨간색_닌자_샌들"
+  },
+  {
+    "name_en": "Brown_Hard_Leather_Boots",
+    "name_kr": "브라운_하드래더_부츠"
+  },
+  {
+    "name_en": "Bullet",
+    "name_kr": "불릿"
+  },
+  {
+    "name_en": "Leaf",
+    "name_kr": "나뭇잎"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_DEX_10%",
+    "name_kr": "장갑_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Stolen_Fence",
+    "name_kr": "사각_나무_방패"
+  },
+  {
+    "name_en": "Bronze_Helmet",
+    "name_kr": "브론즈_캡"
+  },
+  {
+    "name_en": "Pole_Arm",
+    "name_kr": "폴암"
+  },
+  {
+    "name_en": "Yellow_Avelin",
+    "name_kr": "옐로우_아벨린"
+  },
+  {
+    "name_en": "Yellow_Avelin_Skirt",
+    "name_kr": "옐로우_아벨린_치마"
+  },
+  {
+    "name_en": "Green_Arianne_Skirt",
+    "name_kr": "그린_아리안느_치마"
+  },
+  {
+    "name_en": "Green_Arianne",
+    "name_kr": "그린_아리안느"
+  },
+  {
+    "name_en": "Single_Earring",
+    "name_kr": "한쪽_은_귀고리"
+  },
+  {
+    "name_en": "Wooden_Staff",
+    "name_kr": "나무_스태프"
+  },
+  {
+    "name_en": "Machete",
+    "name_kr": "쿠크리"
+  },
+  {
+    "name_en": "Orange_Potion",
+    "name_kr": "주황_포션"
+  },
+  {
+    "name_en": "Blue_Potion",
+    "name_kr": "파란_포션"
+  },
+  {
+    "name_en": "Brown_Lagger_Cap",
+    "name_kr": "브라운_래거_캡"
+  },
+  {
+    "name_en": "Pig's_Ribbon",
+    "name_kr": "돼지의_리본"
+  },
+  {
+    "name_en": "Stiff_Feather",
+    "name_kr": "뻣뻣한_깃털"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_DEF_10%",
+    "name_kr": "방패_방어력_주문서_10%"
+  },
+  {
+    "name_en": "Silver_Leather_Hoodwear",
+    "name_kr": "은색_래더_후드웨어"
+  },
+  {
+    "name_en": "Dark_Nightshift_Pants",
+    "name_kr": "흑야_바지"
+  },
+  {
+    "name_en": "Wooden_Samurai_Sword",
+    "name_kr": "환목검"
+  },
+  {
+    "name_en": "Orange_Sporty_T_Shirt",
+    "name_kr": "주황색_스포츠_티셔츠"
+  },
+  {
+    "name_en": "Brown_Cotton_Lagger",
+    "name_kr": "브라운_코튼래거"
+  },
+  {
+    "name_en": "Brown_Lagger_Slipper",
+    "name_kr": "브라운_래거_슬리퍼"
+  },
+  {
+    "name_en": "Octopus_Leg",
+    "name_kr": "옥토퍼스의_다리"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Sword_for_ATT_10%",
+    "name_kr": "한손검_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Steel_Shield",
+    "name_kr": "강철_방패"
+  },
+  {
+    "name_en": "Yellow_Arianne_Skirt",
+    "name_kr": "옐로우_아리안느_치마"
+  },
+  {
+    "name_en": "Brown_Corporal",
+    "name_kr": "브론즈_코퍼럴"
+  },
+  {
+    "name_en": "Brown_Corporal_Pants",
+    "name_kr": "브론즈_코퍼럴_바지"
+  },
+  {
+    "name_en": "Leather_Arms",
+    "name_kr": "래더_암즈"
+  },
+  {
+    "name_en": "Green_Mushroom_Cap",
+    "name_kr": "초록버섯의_갓"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Axe_for_ATT_10%",
+    "name_kr": "한손도끼_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Mace",
+    "name_kr": "메이스"
+  },
+  {
+    "name_en": "Red_Nightshift",
+    "name_kr": "적야"
+  },
+  {
+    "name_en": "Red_Nightshift_Pants",
+    "name_kr": "적야_바지"
+  },
+  {
+    "name_en": "Pan_Lid",
+    "name_kr": "냄비_뚜껑"
+  },
+  {
+    "name_en": "Battle_Crossbow",
+    "name_kr": "전투_석궁"
+  },
+  {
+    "name_en": "Green_Able_Armor",
+    "name_kr": "그레이_아벨_래더아머"
+  },
+  {
+    "name_en": "Green_Able_Armor_Skirt",
+    "name_kr": "그레이_아벨_가죽치마"
+  },
+  {
+    "name_en": "Old_Wisconsin",
+    "name_kr": "군밤장수_모자"
+  },
+  {
+    "name_en": "Long_Sword",
+    "name_kr": "카알_대검"
+  },
+  {
+    "name_en": "Brown_Winter_Hat",
+    "name_kr": "갈색_고급_가죽_모자"
+  },
+  {
+    "name_en": "Green_Matty",
+    "name_kr": "그린_매티"
+  },
+  {
+    "name_en": "Zeco",
+    "name_kr": "제코"
+  },
+  {
+    "name_en": "Purple_Arianne",
+    "name_kr": "퍼플_아리안느"
+  },
+  {
+    "name_en": "Purple_Arianne_Skirt",
+    "name_kr": "퍼플_아리안느_치마"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_INT_100%",
+    "name_kr": "망토_지력_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Dagger_for_ATT_10%",
+    "name_kr": "단검_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_Weapon_Def_60%",
+    "name_kr": "망토_물리방어력_주문서_60%"
+  },
+  {
+    "name_en": "Bubbling's_Huge_Bubble",
+    "name_kr": "버블링의_큰_방울"
+  },
+  {
+    "name_en": "Red_Apprentice_Hat",
+    "name_kr": "붉은색_낡은_고깔_모자"
+  },
+  {
+    "name_en": "Blue_Nightshift",
+    "name_kr": "청야"
+  },
+  {
+    "name_en": "Blue_Nightshift_Pants",
+    "name_kr": "청야_바지"
+  },
+  {
+    "name_en": "Yellow_Able_Armor",
+    "name_kr": "옐로우_아벨_래더아머"
+  },
+  {
+    "name_en": "Brown_Abel_Skirt",
+    "name_kr": "브라운_아벨_가죽치마"
+  },
+  {
+    "name_en": "Blue_Jewelry_Boots",
+    "name_kr": "블루_쥬얼리_슈즈"
+  },
+  {
+    "name_en": "Fish_Spear",
+    "name_kr": "물고기_작살"
+  },
+  {
+    "name_en": "The_Magic_Rock",
+    "name_kr": "마법의_돌"
+  },
+  {
+    "name_en": "Green_Lagger_Halfglove",
+    "name_kr": "그린_래거_하프글로브"
+  },
+  {
+    "name_en": "Dellinger_Special",
+    "name_kr": "델린져"
+  },
+  {
+    "name_en": "Firewood",
+    "name_kr": "장작"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_BW_for_ATT_10%",
+    "name_kr": "한손둔기_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Wizard_Wand",
+    "name_kr": "위저드_완드"
+  },
+  {
+    "name_en": "Bronze_Aroa_Boots",
+    "name_kr": "고동색_아로아_슈즈"
+  },
+  {
+    "name_en": "Contra_Axe",
+    "name_kr": "콘트라_엑스"
+  },
+  {
+    "name_en": "Battle_Shield",
+    "name_kr": "배틀_실드"
+  },
+  {
+    "name_en": "Orange_Split_Piece",
+    "name_kr": "주황색_가람"
+  },
+  {
+    "name_en": "White_Split_Pants",
+    "name_kr": "흰색_가람_바지"
+  },
+  {
+    "name_en": "Brown_Nightshift",
+    "name_kr": "황야"
+  },
+  {
+    "name_en": "Brown_Nightshift_Pants",
+    "name_kr": "황야_바지"
+  },
+  {
+    "name_en": "Blue_Robin_Hat",
+    "name_kr": "블루_패더윙햇"
+  },
+  {
+    "name_en": "Old_Wooden_Staff",
+    "name_kr": "고목나무_스태프"
+  },
+  {
+    "name_en": "Wooden_Baseball_Bat",
+    "name_kr": "나무_야구_방망이"
+  },
+  {
+    "name_en": "Seedling",
+    "name_kr": "묘목"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_DEX_60%",
+    "name_kr": "전신_갑옷_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_DEX_60%",
+    "name_kr": "장갑_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Brown_Able_Skirt",
+    "name_kr": "브라운_아벨_가죽치마"
+  },
+  {
+    "name_en": "Green_Plain_Robe",
+    "name_kr": "그린_플레로브"
+  },
+  {
+    "name_en": "Black_Split_Piece",
+    "name_kr": "검은색_가람"
+  },
+  {
+    "name_en": "Black_Split_Skirt",
+    "name_kr": "검은색_가람_치마"
+  },
+  {
+    "name_en": "Orange_High_Boots",
+    "name_kr": "오렌지_미들_래더"
+  },
+  {
+    "name_en": "Blue_Enamel_Boots",
+    "name_kr": "파란색_에나멜_부츠"
+  },
+  {
+    "name_en": "Dark_Savata",
+    "name_kr": "다크_사바타"
+  },
+  {
+    "name_en": "Red_Thief_Hood",
+    "name_kr": "레드_시프_후드"
+  },
+  {
+    "name_en": "Blue_Feather_Hat",
+    "name_kr": "블루_페더햇"
+  },
+  {
+    "name_en": "Blue_Wizard_Robe",
+    "name_kr": "파란색_사제의_로브"
+  },
+  {
+    "name_en": "Scroll_for_Knuckle_for_ATT_10%",
+    "name_kr": "너클_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Bronze_Full_Helm",
+    "name_kr": "브론즈_풀_헬름"
+  },
+  {
+    "name_en": "Red_Split",
+    "name_kr": "붉은색_가람"
+  },
+  {
+    "name_en": "Blue_Savata",
+    "name_kr": "블루_사바타"
+  },
+  {
+    "name_en": "Red_Ankle-strap_Sandals",
+    "name_kr": "빨간색_도로시_구두"
+  },
+  {
+    "name_en": "Misthil_Axe",
+    "name_kr": "미스릴_도끼"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_DEF_60%",
+    "name_kr": "상의_방어력_주문서_60%"
+  },
+  {
+    "name_en": "Magic_Potion",
+    "name_kr": "마법사의_물약"
+  },
+  {
+    "name_en": "Blue_Mushroom_Cap",
+    "name_kr": "파란버섯의_갓"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Sword_for_ATT_10%",
+    "name_kr": "한손검_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Steel_Fitted_Mail",
+    "name_kr": "스틸_메일"
+  },
+  {
+    "name_en": "Red_Loosecap",
+    "name_kr": "레드_루즈캡"
+  },
+  {
+    "name_en": "Mithril_Pole_Arm",
+    "name_kr": "미스릴_폴암"
+  },
+  {
+    "name_en": "Red_Shivermail",
+    "name_kr": "레드_쉬버메일"
+  },
+  {
+    "name_en": "Red_Shivermail_Skirt",
+    "name_kr": "레드_쉬버메일_치마"
+  },
+  {
+    "name_en": "Blue_Sergeant",
+    "name_kr": "블루_서전트"
+  },
+  {
+    "name_en": "Steel_Sergeant_Kilt",
+    "name_kr": "스틸_서전트_치마"
+  },
+  {
+    "name_en": "Purple_Jewelry_Boots",
+    "name_kr": "퍼플_쥬얼리_슈즈"
+  },
+  {
+    "name_en": "White_Potion",
+    "name_kr": "하얀_포션"
+  },
+  {
+    "name_en": "Mithril_War_Boots",
+    "name_kr": "미스릴_워_부츠"
+  },
+  {
+    "name_en": "Halfmoon_Zamadar",
+    "name_kr": "반월_자마다르"
+  },
+  {
+    "name_en": "Wizard_Staff",
+    "name_kr": "위저드_스태프"
+  },
+  {
+    "name_en": "Green_Burgler",
+    "name_kr": "그린_버글러"
+  },
+  {
+    "name_en": "Brown_Double_Marine",
+    "name_kr": "브라운_더블마린"
+  },
+  {
+    "name_en": "Brown_Pitz_Bandana",
+    "name_kr": "브라운_피츠_반다나"
+  },
+  {
+    "name_en": "Stirge_Wing",
+    "name_kr": "스티지의_날개"
+  },
+  {
+    "name_en": "Lemon",
+    "name_kr": "레몬"
+  },
+  {
+    "name_en": "Steel_Corporal",
+    "name_kr": "스틸_코퍼럴"
+  },
+  {
+    "name_en": "Steel_Corporal_Pants",
+    "name_kr": "스틸_코퍼럴_바지"
+  },
+  {
+    "name_en": "Red_Pao",
+    "name_kr": "빨간색_파오"
+  },
+  {
+    "name_en": "Red_Pao_Bottom",
+    "name_kr": "빨간색_파오_바지"
+  },
+  {
+    "name_en": "Pink_Qi_Pao",
+    "name_kr": "분홍색_친파오"
+  },
+  {
+    "name_en": "Purple_Qi_Pao_Skirt",
+    "name_kr": "보라색_친파오_치마"
+  },
+  {
+    "name_en": "Scroll_for_Knuckle_for_ATT_60%",
+    "name_kr": "너클_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_Magic_Def_10%",
+    "name_kr": "망토_마법방어력_주문서_10%"
+  },
+  {
+    "name_en": "Green_Robin_Hat",
+    "name_kr": "그린_페더윙햇"
+  },
+  {
+    "name_en": "Ryden",
+    "name_kr": "라이덴"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_INT_100%",
+    "name_kr": "투구_지력_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Axe_for_Accuracy_60%",
+    "name_kr": "한손도끼_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Work_Gloves",
+    "name_kr": "노가다_목장갑"
+  },
+  {
+    "name_en": "Beige_Carribean",
+    "name_kr": "베이지_카리브어"
+  },
+  {
+    "name_en": "Jr_Necki's_Skin",
+    "name_kr": "주니어_네키의_가죽"
+  },
+  {
+    "name_en": "Orange",
+    "name_kr": "오렌지"
+  },
+  {
+    "name_en": "Coconut_Knife",
+    "name_kr": "넙치검"
+  },
+  {
+    "name_en": "Red_Jack_Boots",
+    "name_kr": "레드_잭부츠"
+  },
+  {
+    "name_en": "Steel_Sharp_Helm",
+    "name_kr": "스틸_샤프_헬름"
+  },
+  {
+    "name_en": "Blue_Kendo_Robe",
+    "name_kr": "파란색_검도복"
+  },
+  {
+    "name_en": "Purple_Split",
+    "name_kr": "보라색_가람"
+  },
+  {
+    "name_en": "Brown_Lamelle",
+    "name_kr": "브라운_라멜"
+  },
+  {
+    "name_en": "Brown_Ramel_Skirt",
+    "name_kr": "브라운_라멜_치마"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_Jump_100%",
+    "name_kr": "하의_점프력_주문서_100%"
+  },
+  {
+    "name_en": "Double_Tail_Knuckler",
+    "name_kr": "더블테일_너클"
+  },
+  {
+    "name_en": "Sap_of_Ancient_Tree",
+    "name_kr": "고목_나무의_수액"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_BW_for_ATT_10%",
+    "name_kr": "두손둔기_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Brown_Doroness_Robe",
+    "name_kr": "브라운_도로네스_로브"
+  },
+  {
+    "name_en": "Green_Able_Armor_Skirt",
+    "name_kr": "그린_아벨_가죽치마"
+  },
+  {
+    "name_en": "Purple_Shivermail",
+    "name_kr": "퍼플_쉬버메일"
+  },
+  {
+    "name_en": "Purple_Shivermail_Skirt",
+    "name_kr": "퍼플_쉬버메일_치마"
+  },
+  {
+    "name_en": "Adamantium_Igor",
+    "name_kr": "아다만티움_이고르"
+  },
+  {
+    "name_en": "Red_Lappy_Boots",
+    "name_kr": "레드_래피_부츠"
+  },
+  {
+    "name_en": "Yellow_Starry_Bandana",
+    "name_kr": "노란색_별_두건"
+  },
+  {
+    "name_en": "Mithril_Guards",
+    "name_kr": "미스릴_가즈"
+  },
+  {
+    "name_en": "Silver_Guardian",
+    "name_kr": "실버_가디언"
+  },
+  {
+    "name_en": "Purple_Doroness_Robe",
+    "name_kr": "퍼플_도로네스_로브"
+  },
+  {
+    "name_en": "Black_Lappy_Boots",
+    "name_kr": "블랙_래피_부츠"
+  },
+  {
+    "name_en": "The_Summoning_Rock",
+    "name_kr": "소환의_돌"
+  },
+  {
+    "name_en": "Wooden_Top",
+    "name_kr": "나무팽이"
+  },
+  {
+    "name_en": "Axe",
+    "name_kr": "도끼"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Sword_for_Accuracy_60%",
+    "name_kr": "두손검_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_BW_for_Accuracy_100%",
+    "name_kr": "두손둔기_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Horny_Mushroom_Cap",
+    "name_kr": "뿔버섯의_갓"
+  },
+  {
+    "name_en": "Wizard_Potion",
+    "name_kr": "현자의_물약"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Axe_for_ATT_10%",
+    "name_kr": "두손도끼_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Iron_Burgernet_Helm",
+    "name_kr": "아이언_버거넷_헬름"
+  },
+  {
+    "name_en": "Green_Able_Armor",
+    "name_kr": "그린린_아벨_래더아머"
+  },
+  {
+    "name_en": "Yellow_Windshoes",
+    "name_kr": "옐로우_윈드슈즈"
+  },
+  {
+    "name_en": "Red_Kendo_Robe",
+    "name_kr": "빨간색_검도복"
+  },
+  {
+    "name_en": "Eagle_Crow",
+    "name_kr": "이글_크로"
+  },
+  {
+    "name_en": "Black_Pao",
+    "name_kr": "검정색_파오"
+  },
+  {
+    "name_en": "Black_Pao_Bottom",
+    "name_kr": "검정색_파오_바지"
+  },
+  {
+    "name_en": "Blue_Jean_Shorts",
+    "name_kr": "파란_청_반바지"
+  },
+  {
+    "name_en": "Steel_Fingerless_Gloves",
+    "name_kr": "강철_반장갑"
+  },
+  {
+    "name_en": "Brown_Jester",
+    "name_kr": "브라운_핀터"
+  },
+  {
+    "name_en": "Cutlus",
+    "name_kr": "커틀러스"
+  },
+  {
+    "name_en": "The_Negotiator",
+    "name_kr": "개런드_피스톨"
+  },
+  {
+    "name_en": "Brown_Turk_Gally",
+    "name_kr": "브라운_툴크갤리"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_BW_for_Accuracy_10%",
+    "name_kr": "한손둔기_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Green_Moon_Conehat",
+    "name_kr": "그린문_고깔모자"
+  },
+  {
+    "name_en": "Bronze_Wolfskin",
+    "name_kr": "브론즈_우드쉽"
+  },
+  {
+    "name_en": "Silver_War_Boots",
+    "name_kr": "실버_워_부츠"
+  },
+  {
+    "name_en": "Viking_Sword",
+    "name_kr": "바이킹_소드"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_DEF_60%",
+    "name_kr": "하의_방어력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_INT_10%",
+    "name_kr": "귀_장식_지력_주문서_10%"
+  },
+  {
+    "name_en": "Wooden_Board",
+    "name_kr": "목판"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_INT_60%",
+    "name_kr": "망토_지력_주문서_60%"
+  },
+  {
+    "name_en": "Brown_Robin_Hat",
+    "name_kr": "브라운_페더윙햇"
+  },
+  {
+    "name_en": "Mithril_Viking_Helm",
+    "name_kr": "미스릴_바이킹_헬름"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_DEF_60%",
+    "name_kr": "방패_방어력_주문서_60%"
+  },
+  {
+    "name_en": "Blue_Split_Piece",
+    "name_kr": "푸른색_가람"
+  },
+  {
+    "name_en": "Green_Loosecap",
+    "name_kr": "그린_루즈캡"
+  },
+  {
+    "name_en": "Black_Split_Pants",
+    "name_kr": "검은색_가람_바지"
+  },
+  {
+    "name_en": "Gold_War_Boots",
+    "name_kr": "골드_워_부츠"
+  },
+  {
+    "name_en": "Silver_Sylvia",
+    "name_kr": "실버_실비아"
+  },
+  {
+    "name_en": "Iron_Dagger",
+    "name_kr": "아이언_대거"
+  },
+  {
+    "name_en": "Orihalcon_Missel",
+    "name_kr": "오리할콘_미셀"
+  },
+  {
+    "name_en": "Ocean_Mesana",
+    "name_kr": "오션_메사나"
+  },
+  {
+    "name_en": "Scroll_for_Spear_for_Accuracy_60%",
+    "name_kr": "창_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Knuckle_for_Accuracy_100%",
+    "name_kr": "너클_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Spiderweb",
+    "name_kr": "거미줄"
+  },
+  {
+    "name_en": "Warrior_Pill",
+    "name_kr": "전사의_알약"
+  },
+  {
+    "name_en": "LUK_Crystal_Ore",
+    "name_kr": "행운의_크리스탈_원석"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_DEF_100%",
+    "name_kr": "방패_방어력_주문서_100%"
+  },
+  {
+    "name_en": "Korean_Fan",
+    "name_kr": "태극부채"
+  },
+  {
+    "name_en": "Aluminum_Baseball_Bat",
+    "name_kr": "알루미늄_야구_방망이"
+  },
+  {
+    "name_en": "Eloon",
+    "name_kr": "일룬"
+  },
+  {
+    "name_en": "Red_Savata",
+    "name_kr": "레드_사바타"
+  },
+  {
+    "name_en": "Red_Starry_Bandana",
+    "name_kr": "빨간색_별_두건"
+  },
+  {
+    "name_en": "Blue_Doros_Robe",
+    "name_kr": "블루_도로스_로브"
+  },
+  {
+    "name_en": "Subi_Throwing_Stars",
+    "name_kr": "수비_표창"
+  },
+  {
+    "name_en": "Balanche",
+    "name_kr": "발란쉐"
+  },
+  {
+    "name_en": "Brown_Skeedy_Sandals",
+    "name_kr": "브라운_스키디_샌들"
+  },
+  {
+    "name_en": "Brown_Wooden_Krag",
+    "name_kr": "브라운_우든크라그"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_LUK_100%",
+    "name_kr": "귀_장식_행운_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Axe_for_Accuracy_10%",
+    "name_kr": "두손도끼_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Jr_Sentinel_Shellpiece",
+    "name_kr": "주니어_스톤볼의_돌조각"
+  },
+  {
+    "name_en": "Brown_Loosecap",
+    "name_kr": "브라운_루즈캡"
+  },
+  {
+    "name_en": "Iron_Mace",
+    "name_kr": "강철_메이스"
+  },
+  {
+    "name_en": "Fusion_Mace",
+    "name_kr": "퓨전_메이스"
+  },
+  {
+    "name_en": "Orihalcon_Master_Sergeant_Kilt",
+    "name_kr": "오리할콘_마스터_서전트_치마"
+  },
+  {
+    "name_en": "Orihalcon_Master_Sergeant",
+    "name_kr": "오리할콘_마스터_서전트"
+  },
+  {
+    "name_en": "Black_Steal",
+    "name_kr": "블랙_스틸레스"
+  },
+  {
+    "name_en": "Black_Steal_Pants",
+    "name_kr": "블랙_스틸레스_바지지"
+  },
+  {
+    "name_en": "Bronze_Arrow_for_Bow",
+    "name_kr": "활전용_청동화살"
+  },
+  {
+    "name_en": "Bronze_Arrow_for_Crossbow",
+    "name_kr": "석궁전용_청동화살"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_BW_for_Accuracy_60%",
+    "name_kr": "두손둔기_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Charm_of_the_Undead",
+    "name_kr": "죽은_자의_부적"
+  },
+  {
+    "name_en": "Scroll_for_Spear_for_ATT_10%",
+    "name_kr": "창_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Weighted_Earrings",
+    "name_kr": "추_귀고리"
+  },
+  {
+    "name_en": "Gold_Earrings",
+    "name_kr": "금_귀고리"
+  },
+  {
+    "name_en": "Hunter's_Bow",
+    "name_kr": "사냥꾼의_활"
+  },
+  {
+    "name_en": "Green_Hunter",
+    "name_kr": "그린_헌트"
+  },
+  {
+    "name_en": "Brown_Sneak",
+    "name_kr": "브라운_스니크"
+  },
+  {
+    "name_en": "Brown_Sneak_Pants",
+    "name_kr": "브라운_스니크_바지"
+  },
+  {
+    "name_en": "Mithril_Wand",
+    "name_kr": "미스릴_완드"
+  },
+  {
+    "name_en": "Red_Martial_Arts_Pants",
+    "name_kr": "홍무_바지"
+  },
+  {
+    "name_en": "Green_Hwarang_Shirt",
+    "name_kr": "지천의"
+  },
+  {
+    "name_en": "Blue_Chaos_Robe",
+    "name_kr": "블루_데빌즈_로브"
+  },
+  {
+    "name_en": "White_Chaos_Robe",
+    "name_kr": "화이트_데빌즈_로브"
+  },
+  {
+    "name_en": "Pink_Jester",
+    "name_kr": "핑크_핀터"
+  },
+  {
+    "name_en": "Nakamaki",
+    "name_kr": "나카마키"
+  },
+  {
+    "name_en": "Red_Hwarang_Shirt",
+    "name_kr": "지장의"
+  },
+  {
+    "name_en": "Blue_Counter",
+    "name_kr": "블루_카운터"
+  },
+  {
+    "name_en": "Golden_Hook",
+    "name_kr": "골든훅"
+  },
+  {
+    "name_en": "Speed_Potion",
+    "name_kr": "민첩함의_물약"
+  },
+  {
+    "name_en": "Brown_Leather_Armor_Glove",
+    "name_kr": "브라운_래더_아머글로브"
+  },
+  {
+    "name_en": "Slate",
+    "name_kr": "석판"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_INT_60%",
+    "name_kr": "귀_장식_지력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Spear_for_ATT_60%",
+    "name_kr": "창_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Ice_Wand",
+    "name_kr": "아이스_완드"
+  },
+  {
+    "name_en": "Blue_Pao_Bottom",
+    "name_kr": "파란색_파오_바지"
+  },
+  {
+    "name_en": "Blue_Pao",
+    "name_kr": "파란색_파오"
+  },
+  {
+    "name_en": "Sky_Shark",
+    "name_kr": "스카이_샤크"
+  },
+  {
+    "name_en": "Sky_Shark_Skirt",
+    "name_kr": "스카이_샤크_치마"
+  },
+  {
+    "name_en": "Scroll_for_Staff_for_Magic_ATT_60%",
+    "name_kr": "스태프_마력_주문서_60%"
+  },
+  {
+    "name_en": "Green_Marker",
+    "name_kr": "그린_마커"
+  },
+  {
+    "name_en": "Red_Lutia",
+    "name_kr": "레드_루티아"
+  },
+  {
+    "name_en": "Black_Sneak",
+    "name_kr": "블랙_스니크"
+  },
+  {
+    "name_en": "Black_Sneak_Pants",
+    "name_kr": "블랙_스니크_바지지"
+  },
+  {
+    "name_en": "Lollipop",
+    "name_kr": "막대_사탕"
+  },
+  {
+    "name_en": "Forked_Spear",
+    "name_kr": "삼지창"
+  },
+  {
+    "name_en": "Mokbi_Throwing_Stars",
+    "name_kr": "목비_표창"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_LUK_60%",
+    "name_kr": "귀_장식_행운_주문서_60%"
+  },
+  {
+    "name_en": "Seclusion_Wristguard",
+    "name_kr": "시클루전_리스트"
+  },
+  {
+    "name_en": "Wild_Boar_Tooth",
+    "name_kr": "와일드보어의_송곳니"
+  },
+  {
+    "name_en": "Green_Shivermail",
+    "name_kr": "그린_쉬버메일"
+  },
+  {
+    "name_en": "Green_Shivermail_Skirt",
+    "name_kr": "그린_쉬버메일_치마"
+  },
+  {
+    "name_en": "Red_Doroness_Robe",
+    "name_kr": "레드_도로네스_로브"
+  },
+  {
+    "name_en": "Sapphire_Earrings",
+    "name_kr": "사파이어_귀고리"
+  },
+  {
+    "name_en": "Bronze_Pride",
+    "name_kr": "손오공_청동_머리띠"
+  },
+  {
+    "name_en": "Mithril_Battle_Grieves",
+    "name_kr": "미스릴_배틀_그리브"
+  },
+  {
+    "name_en": "Iron_Chain_Boots",
+    "name_kr": "아이언_체인슈즈"
+  },
+  {
+    "name_en": "Lionheart",
+    "name_kr": "하이랜더"
+  },
+  {
+    "name_en": "Circle_Winded_Staff",
+    "name_kr": "써클윈드_스태프"
+  },
+  {
+    "name_en": "Brown_Piette_Pants",
+    "name_kr": "브라운_피에뜨_바지"
+  },
+  {
+    "name_en": "Brown_Piette",
+    "name_kr": "브라운_피에뜨"
+  },
+  {
+    "name_en": "Blue_Knucklevest_Pants",
+    "name_kr": "블루_너클베스트_바지"
+  },
+  {
+    "name_en": "Brown_Guiltian",
+    "name_kr": "브라운_길티언"
+  },
+  {
+    "name_en": "Red_Distinction",
+    "name_kr": "레드_크라페"
+  },
+  {
+    "name_en": "Sabretooth",
+    "name_kr": "버드빌"
+  },
+  {
+    "name_en": "Hard_Leather_Glove",
+    "name_kr": "하드레더_글로브"
+  },
+  {
+    "name_en": "Split_Bullet",
+    "name_kr": "스플릿_불릿"
+  },
+  {
+    "name_en": "Warrior_Potion",
+    "name_kr": "전사의_물약"
+  },
+  {
+    "name_en": "Crow_Feather",
+    "name_kr": "까마귀_깃털"
+  },
+  {
+    "name_en": "Fish_Cake_Skewer",
+    "name_kr": "어묵(꼬치)"
+  },
+  {
+    "name_en": "Mana_Elixir",
+    "name_kr": "마나_엘릭서"
+  },
+  {
+    "name_en": "Dango",
+    "name_kr": "당고"
+  },
+  {
+    "name_en": "Green_Umbrella",
+    "name_kr": "연두색_우산"
+  },
+  {
+    "name_en": "Blue_Whitebottom_Boots",
+    "name_kr": "파란색_가죽구두"
+  },
+  {
+    "name_en": "Aqua_Snowboard",
+    "name_kr": "아쿠아_스노우보드"
+  },
+  {
+    "name_en": "Red_Engrit",
+    "name_kr": "레드_잉그리트"
+  },
+  {
+    "name_en": "Blue_Guise",
+    "name_kr": "블루_가이즈"
+  },
+  {
+    "name_en": "Bronze_Mischief",
+    "name_kr": "브론즈_스틸라인"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Jump_60%",
+    "name_kr": "신발_점프력_주문서_60%"
+  },
+  {
+    "name_en": "Evil_Eye's_Tail",
+    "name_kr": "이블아이의_꼬리"
+  },
+  {
+    "name_en": "Scroll_for_Pole_Arm_for_ATT_10%",
+    "name_kr": "폴암_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Yellow_Square",
+    "name_kr": "옐로우_스퀘어"
+  },
+  {
+    "name_en": "Gold_Sneak",
+    "name_kr": "골드_스니클리스"
+  },
+  {
+    "name_en": "Great_Red_Helmet",
+    "name_kr": "레드_그레이트_헬멧"
+  },
+  {
+    "name_en": "Cat's_Eye",
+    "name_kr": "캣츠_아이"
+  },
+  {
+    "name_en": "White_Wizard_Robe",
+    "name_kr": "흰색_사제의_로브"
+  },
+  {
+    "name_en": "Gold_Sneak_Pants",
+    "name_kr": "골드_스니클리스_바지"
+  },
+  {
+    "name_en": "Blue_Engrit",
+    "name_kr": "블루_잉그리트"
+  },
+  {
+    "name_en": "Green_Bennis_Chainmail",
+    "name_kr": "그린_이너스_체인메일"
+  },
+  {
+    "name_en": "Bennis_Chainpants",
+    "name_kr": "이너스_체인바지"
+  },
+  {
+    "name_en": "Green_Avelin",
+    "name_kr": "그린_아벨린"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Sword_for_Accuracy_100%",
+    "name_kr": "두손검_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_HP_100%",
+    "name_kr": "장갑_체력_주문서_100%"
+  },
+  {
+    "name_en": "Norman_Grip",
+    "name_kr": "노만_그립"
+  },
+  {
+    "name_en": "Khaki_Shadow_Pants",
+    "name_kr": "카키_쉐도우_바지"
+  },
+  {
+    "name_en": "Mithril_Maul",
+    "name_kr": "미스릴_모울"
+  },
+  {
+    "name_en": "Sticky_Spiderweb",
+    "name_kr": "끈적이는_거미줄"
+  },
+  {
+    "name_en": "Magic_Pill",
+    "name_kr": "마법사의_알약"
+  },
+  {
+    "name_en": "DEX_Crystal_Ore",
+    "name_kr": "민첩성의_크리스탈_원석"
+  },
+  {
+    "name_en": "Purple_Fairy_Skirt",
+    "name_kr": "퍼플_페어리_로브_치마"
+  },
+  {
+    "name_en": "Purple_Fairy_Top",
+    "name_kr": "퍼플_페어리_로브"
+  },
+  {
+    "name_en": "Blue_Hawkeye",
+    "name_kr": "블루_네페르"
+  },
+  {
+    "name_en": "Green_Wizard_Robe",
+    "name_kr": "초록색_사제의_로브"
+  },
+  {
+    "name_en": "Steel_Sylvia",
+    "name_kr": "스틸_실비아"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_STR_100%",
+    "name_kr": "방패_힘_주문서_100%"
+  },
+  {
+    "name_en": "Cloud_Foxtail",
+    "name_kr": "여우_꼬리"
+  },
+  {
+    "name_en": "Sushi_Salmon",
+    "name_kr": "초밥(청란젓)"
+  },
+  {
+    "name_en": "Frying_Pan",
+    "name_kr": "프라이팬"
+  },
+  {
+    "name_en": "Diao_Chan_Sword",
+    "name_kr": "칠성검"
+  },
+  {
+    "name_en": "Sky_Blue_Umbrella",
+    "name_kr": "하늘색_우산"
+  },
+  {
+    "name_en": "Newspaper_Hat",
+    "name_kr": "신문지_투구"
+  },
+  {
+    "name_en": "Sapphire_Fitted_Mail",
+    "name_kr": "사파이어_메일"
+  },
+  {
+    "name_en": "Dankke",
+    "name_kr": "당커"
+  },
+  {
+    "name_en": "Blue_Legolier",
+    "name_kr": "블루_레골러"
+  },
+  {
+    "name_en": "Blue_Pole_Feather_Hat",
+    "name_kr": "블루_폴리페더햇"
+  },
+  {
+    "name_en": "Red_Pole_Feather_Hat",
+    "name_kr": "레드_폴리페더햇"
+  },
+  {
+    "name_en": "Teddy's_Cotton",
+    "name_kr": "곰인형의_솜뭉치"
+  },
+  {
+    "name_en": "Wisdom_Crystal_Ore",
+    "name_kr": "지혜의_크리스탈_원석"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_DEX_60%",
+    "name_kr": "신발_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Mountain_Crossbow",
+    "name_kr": "산양_석궁"
+  },
+  {
+    "name_en": "Golden_Pride",
+    "name_kr": "손오공_금_머리띠"
+  },
+  {
+    "name_en": "War_Hammer",
+    "name_kr": "워해머"
+  },
+  {
+    "name_en": "Dark_Silver_Stealer",
+    "name_kr": "다크실버_스틸러"
+  },
+  {
+    "name_en": "Blue_Silky_Boots",
+    "name_kr": "블루_실키부츠"
+  },
+  {
+    "name_en": "Brown_Pollard",
+    "name_kr": "브라운_폴라아드"
+  },
+  {
+    "name_en": "Fire_Sentinel_Shellpiece",
+    "name_kr": "파이어_스톤볼의_돌조각"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_ATT_10%",
+    "name_kr": "장갑_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Blue_Lutia",
+    "name_kr": "블루_루티아"
+  },
+  {
+    "name_en": "Sky_Sneak",
+    "name_kr": "스카이_스니클리스"
+  },
+  {
+    "name_en": "Green_Huntress_Armor",
+    "name_kr": "그린_헌터미_아머"
+  },
+  {
+    "name_en": "Sky_Sneak_Pants",
+    "name_kr": "스카이_스니클리스_바지"
+  },
+  {
+    "name_en": "Green_Huntress_Pants",
+    "name_kr": "그린_헌터미_아머_바지"
+  },
+  {
+    "name_en": "Blueberry_Lolica_Armor",
+    "name_kr": "블루베리_스퀘이머"
+  },
+  {
+    "name_en": "Purple_Salt_Shoes",
+    "name_kr": "퍼플_솔트_슈즈"
+  },
+  {
+    "name_en": "Red_Viper",
+    "name_kr": "레드_바이퍼"
+  },
+  {
+    "name_en": "White_Crusader_Chainmail",
+    "name_kr": "화이트_크로스_체인메일"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_HP_100%",
+    "name_kr": "방패_체력_주문서_100%"
+  },
+  {
+    "name_en": "Dark_Tiberian",
+    "name_kr": "다크_티베리안"
+  },
+  {
+    "name_en": "Green_Silky_Boots",
+    "name_kr": "그린_실키부츠"
+  },
+  {
+    "name_en": "Sledgehammer",
+    "name_kr": "빅해머"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_LUK_10%",
+    "name_kr": "망토_행운_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Bow_for_ATT_60%",
+    "name_kr": "활_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Tobi_Throwing_Stars",
+    "name_kr": "토비_표창"
+  },
+  {
+    "name_en": "Fierry's_Tentacle",
+    "name_kr": "페어리의_더듬이"
+  },
+  {
+    "name_en": "Sentinel_Shellpiece",
+    "name_kr": "스톤볼의_돌조각"
+  },
+  {
+    "name_en": "Power_Crystal_Ore",
+    "name_kr": "힘의_크리스탈_원석"
+  },
+  {
+    "name_en": "Petal_Staff",
+    "name_kr": "페탈_스태프"
+  },
+  {
+    "name_en": "Fireman's_Axe",
+    "name_kr": "파이어_잭"
+  },
+  {
+    "name_en": "White_Martial_Arts_Pants",
+    "name_kr": "백무_바지"
+  },
+  {
+    "name_en": "Green_Pole_Feather_Hat",
+    "name_kr": "그린_폴리페더햇"
+  },
+  {
+    "name_en": "Lightning_Earrings",
+    "name_kr": "번개_귀고리"
+  },
+  {
+    "name_en": "Green_Knucklevest",
+    "name_kr": "그린_너클베스트"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_Weapon_Def_10%",
+    "name_kr": "망토_물리방어력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_DEX_100%",
+    "name_kr": "귀_장식_민첩성_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_HP_100%",
+    "name_kr": "하의_체력_주문서_100%"
+  },
+  {
+    "name_en": "White_Oceania_Cap",
+    "name_kr": "화이트_오시니아_캡"
+  },
+  {
+    "name_en": "Toy_Drum",
+    "name_kr": "장난감_북"
+  },
+  {
+    "name_en": "Dark_Crystal_Ore",
+    "name_kr": "어둠의_크리스탈_원석"
+  },
+  {
+    "name_en": "Red_Whip",
+    "name_kr": "붉은_채찍"
+  },
+  {
+    "name_en": "Broadsword",
+    "name_kr": "클러디"
+  },
+  {
+    "name_en": "Black_Bennis_Chainmail",
+    "name_kr": "레드_이너스_체인메일"
+  },
+  {
+    "name_en": "Blue_Steal",
+    "name_kr": "블루_스틸레스"
+  },
+  {
+    "name_en": "Blue_Steal_Pants",
+    "name_kr": "블루_스틸레스_바지"
+  },
+  {
+    "name_en": "Black_Dragon_Robe",
+    "name_kr": "흑룡포"
+  },
+  {
+    "name_en": "Black_Lutia",
+    "name_kr": "블랙_루티아"
+  },
+  {
+    "name_en": "Green_Legolier",
+    "name_kr": "그린_레골러"
+  },
+  {
+    "name_en": "Green_Legolier_Pants",
+    "name_kr": "그린_레골러_바지"
+  },
+  {
+    "name_en": "Brown_Matty",
+    "name_kr": "브라운_매티"
+  },
+  {
+    "name_en": "Fairy_Wand",
+    "name_kr": "페어리_완드"
+  },
+  {
+    "name_en": "Cold_Mind",
+    "name_kr": "콜드마인드"
+  },
+  {
+    "name_en": "Scroll_for_Gun_for_ATT_60%",
+    "name_kr": "건_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Pole_Arm_for_Accuracy_10%",
+    "name_kr": "폴암_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Spear_Forging_Stimulator",
+    "name_kr": "창_제작의_촉진제"
+  },
+  {
+    "name_en": "Claw_Production_Stimulator",
+    "name_kr": "아대_제작의_촉진제"
+  },
+  {
+    "name_en": "Shoes_Production_Stimulator",
+    "name_kr": "신발_제작의_촉진제"
+  },
+  {
+    "name_en": "Raccoon_Firewood",
+    "name_kr": "너구리_장작"
+  },
+  {
+    "name_en": "Tri-colored_Dango",
+    "name_kr": "삼색_당고"
+  },
+  {
+    "name_en": "Kinoko_Ramen_Salt",
+    "name_kr": "키노코라면(소금)"
+  },
+  {
+    "name_en": "Takoyaki_Octopus_Ball",
+    "name_kr": "타코야끼(문어_볼)"
+  },
+  {
+    "name_en": "Orange_Ski",
+    "name_kr": "오렌지_스키"
+  },
+  {
+    "name_en": "Yellow_Mop",
+    "name_kr": "노란_대걸레"
+  },
+  {
+    "name_en": "Heavy_Hammer",
+    "name_kr": "호스맨즈"
+  },
+  {
+    "name_en": "Square_Shovel",
+    "name_kr": "사각_강철_야삽"
+  },
+  {
+    "name_en": "Pointed_Shovel",
+    "name_kr": "삼각_강철_야삽"
+  },
+  {
+    "name_en": "Blue_Magicshoes",
+    "name_kr": "블루_매직슈즈"
+  },
+  {
+    "name_en": "White_Magicshoes",
+    "name_kr": "화이트_매직슈즈"
+  },
+  {
+    "name_en": "Dark_Legolier",
+    "name_kr": "다크_레골러"
+  },
+  {
+    "name_en": "Green_Legolia_Pants",
+    "name_kr": "그린_레골리스_바지"
+  },
+  {
+    "name_en": "Dark_Legolia_Pants",
+    "name_kr": "다크_레골리스_바지"
+  },
+  {
+    "name_en": "Blue_Avenger",
+    "name_kr": "블루_후르츠"
+  },
+  {
+    "name_en": "Ice_Sentinel_Shellpiece",
+    "name_kr": "아이스_스톤볼의_돌조각"
+  },
+  {
+    "name_en": "Blue_Matty",
+    "name_kr": "블루_매티"
+  },
+  {
+    "name_en": "Blue_Bennis_Chainmail",
+    "name_kr": "블루_이너스_체인메일"
+  },
+  {
+    "name_en": "Plunger",
+    "name_kr": "뚜러"
+  },
+  {
+    "name_en": "Red_Steal_Pants",
+    "name_kr": "레드_스틸레스_바지"
+  },
+  {
+    "name_en": "Red_Steal",
+    "name_kr": "레드_스틸레스"
+  },
+  {
+    "name_en": "Axe_Pole_Arm",
+    "name_kr": "도끼_폴암"
+  },
+  {
+    "name_en": "Worn-Out_Goggle",
+    "name_kr": "낡은_고글"
+  },
+  {
+    "name_en": "Black_Crystal_Ore",
+    "name_kr": "흑수정의_원석"
+  },
+  {
+    "name_en": "Forked_Dagger",
+    "name_kr": "쌍지단도"
+  },
+  {
+    "name_en": "Red_Hunter's_Armor",
+    "name_kr": "레드_헌터스_아머"
+  },
+  {
+    "name_en": "Red_Hunter's_Pants",
+    "name_kr": "레드_헌터스_아머_바지"
+  },
+  {
+    "name_en": "Green_Jester",
+    "name_kr": "그린_핀터"
+  },
+  {
+    "name_en": "Steel_Briggon",
+    "name_kr": "스틸_브리건"
+  },
+  {
+    "name_en": "Red_White_Lined_Boots",
+    "name_kr": "레드_라인부츠"
+  },
+  {
+    "name_en": "Green_Pilfer",
+    "name_kr": "그린_필퍼"
+  },
+  {
+    "name_en": "Blue_Guiltian",
+    "name_kr": "블루_길티언"
+  },
+  {
+    "name_en": "Brown_Pierre_Shoes",
+    "name_kr": "브라운_피에르슈즈"
+  },
+  {
+    "name_en": "Iron_Knuckle",
+    "name_kr": "아이언_너클"
+  },
+  {
+    "name_en": "Prime_Hands",
+    "name_kr": "프라임_핸즈"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Axe_for_Accuracy_100%",
+    "name_kr": "두손도끼_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Bow_Production_Stimulator",
+    "name_kr": "활_제작의_촉진제"
+  },
+  {
+    "name_en": "Crossbow_Production_Stimulator",
+    "name_kr": "석궁_제작의_촉진제"
+  },
+  {
+    "name_en": "Helmet_Production_Stimulator",
+    "name_kr": "투구_제작의_촉진제"
+  },
+  {
+    "name_en": "Wand_Production_Stimulator",
+    "name_kr": "완드_제작의_촉진제"
+  },
+  {
+    "name_en": "Teddy's_Yellow_Ribbon",
+    "name_kr": "곰인형의_노란리본"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_INT_10%",
+    "name_kr": "망토_지력_주문서_10%"
+  },
+  {
+    "name_en": "Black_Huntress_Armor",
+    "name_kr": "블랙_헌터미_아머"
+  },
+  {
+    "name_en": "Black_Huntress_Pants",
+    "name_kr": "블랙_헌터미_바지"
+  },
+  {
+    "name_en": "Bronze_Missel",
+    "name_kr": "브론즈_미셀"
+  },
+  {
+    "name_en": "Blood_Chaos_Robe",
+    "name_kr": "블러드_데빌즈_로브"
+  },
+  {
+    "name_en": "Red_Knucklevest",
+    "name_kr": "레드_너클베스트"
+  },
+  {
+    "name_en": "Red_Knucklevest_Pants",
+    "name_kr": "레드_너클베스트_바지"
+  },
+  {
+    "name_en": "Yellow_Briggon",
+    "name_kr": "옐로우_브리건"
+  },
+  {
+    "name_en": "Red_Salt_Shoes",
+    "name_kr": "레드_솔트_슈즈"
+  },
+  {
+    "name_en": "Steel_Avarice",
+    "name_kr": "스틸_보닌"
+  },
+  {
+    "name_en": "Yellow_Tartis",
+    "name_kr": "옐로우_타르티스"
+  },
+  {
+    "name_en": "One_Handed_Sword_Forging_Stimulator",
+    "name_kr": "한손검_제작의_촉진제"
+  },
+  {
+    "name_en": "Topwear_Production_Stimulator",
+    "name_kr": "상의_제작의_촉진제"
+  },
+  {
+    "name_en": "Overall_Production_Stimulator",
+    "name_kr": "전신_갑옷_제작의_촉진제"
+  },
+  {
+    "name_en": "Overall_Production_Stimulator",
+    "name_kr": "핑크테니_오목알"
+  },
+  {
+    "name_en": "Fire_Boar's_Tooth",
+    "name_kr": "파이어보어의_송곳니"
+  },
+  {
+    "name_en": "Wolbi_Throwing_Stars",
+    "name_kr": "월비_표창"
+  },
+  {
+    "name_en": "Arwen's_Glass_Shoes",
+    "name_kr": "아르웬의_유리구두"
+  },
+  {
+    "name_en": "Brown_Martial_Arts_Pants",
+    "name_kr": "황무_바지"
+  },
+  {
+    "name_en": "Gold_Sylvia",
+    "name_kr": "골드_실비아"
+  },
+  {
+    "name_en": "Red_Hunter_Boots",
+    "name_kr": "레드_헌터부츠"
+  },
+  {
+    "name_en": "Black_Salt_Shoes",
+    "name_kr": "블랙_솔트_슈즈"
+  },
+  {
+    "name_en": "Red_Silky_Boots",
+    "name_kr": "레드_실키부츠"
+  },
+  {
+    "name_en": "Heckler",
+    "name_kr": "헤클러"
+  },
+  {
+    "name_en": "Crystal_Wand",
+    "name_kr": "크리스탈_완드"
+  },
+  {
+    "name_en": "Red_Matty",
+    "name_kr": "레드_매티"
+  },
+  {
+    "name_en": "Staff_Production_Stimulator",
+    "name_kr": "스태프_제작의_촉진제"
+  },
+  {
+    "name_en": "Knuckler_Production_Stimulator",
+    "name_kr": "너클_제작의_촉진제"
+  },
+  {
+    "name_en": "Gun_Production_Stimulator",
+    "name_kr": "건_제작의_촉진제"
+  },
+  {
+    "name_en": "Shield_Production_Stimulator",
+    "name_kr": "방패_제작의_촉진제"
+  },
+  {
+    "name_en": "Rat_Trap",
+    "name_kr": "쥐덫"
+  },
+  {
+    "name_en": "Scroll_for_Pole_Arm_for_ATT_60%",
+    "name_kr": "폴암_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Green_Guise",
+    "name_kr": "그린_가이즈"
+  },
+  {
+    "name_en": "Brown_Hawkeye",
+    "name_kr": "브라운_네페르"
+  },
+  {
+    "name_en": "Silver_Chain_Boots",
+    "name_kr": "실버_체인슈즈"
+  },
+  {
+    "name_en": "Cass",
+    "name_kr": "카스"
+  },
+  {
+    "name_en": "White_Martial_Arts_Shorts",
+    "name_kr": "반_백무_바지"
+  },
+  {
+    "name_en": "Bronze_Scaler",
+    "name_kr": "브론즈_스케일러"
+  },
+  {
+    "name_en": "Jacker",
+    "name_kr": "젝커"
+  },
+  {
+    "name_en": "Brown_Paulie_Boots",
+    "name_kr": "브라운_폴티_부츠"
+  },
+  {
+    "name_en": "One_Handed_Axe_Forging_Stimulator",
+    "name_kr": "한손도끼_제작의_촉진제"
+  },
+  {
+    "name_en": "One_Handed_Mace_Forging_Stimulator",
+    "name_kr": "한손둔기_제작의_촉진제"
+  },
+  {
+    "name_en": "Ligator_Skin",
+    "name_kr": "리게이터의_가죽"
+  },
+  {
+    "name_en": "Gephart",
+    "name_kr": "게파트"
+  },
+  {
+    "name_en": "Yellow_Engrit",
+    "name_kr": "옐로우_잉그리트"
+  },
+  {
+    "name_en": "Red_Amoria_Top",
+    "name_kr": "레드_아모리아_로브"
+  },
+  {
+    "name_en": "Steel_Arbion",
+    "name_kr": "스틸_아르비욘"
+  },
+  {
+    "name_en": "Mithril_Trigger",
+    "name_kr": "미스릴_티거"
+  },
+  {
+    "name_en": "Steel_Tower_Shield",
+    "name_kr": "스틸_타워_실드"
+  },
+  {
+    "name_en": "Red_Amoria_Skirt",
+    "name_kr": "레드_아모리아_치마"
+  },
+  {
+    "name_en": "Leatty_Furball",
+    "name_kr": "리티의_털뭉치"
+  },
+  {
+    "name_en": "Dark_Hawkeye",
+    "name_kr": "다크_네페르"
+  },
+  {
+    "name_en": "Black_Steal_Pants",
+    "name_kr": "블랙_스틸레스_바지"
+  },
+  {
+    "name_en": "Green_Hunter_Boots",
+    "name_kr": "그린_헌터부츠"
+  },
+  {
+    "name_en": "Red_Magicshoes",
+    "name_kr": "레드_매직슈즈"
+  },
+  {
+    "name_en": "Red_Noel",
+    "name_kr": "레드_노엘"
+  },
+  {
+    "name_en": "Gold_Dragon",
+    "name_kr": "금룡의"
+  },
+  {
+    "name_en": "Two_Handed_Sword_Forging_Stimulator",
+    "name_kr": "두손검_제작의_촉진제"
+  },
+  {
+    "name_en": "Gloves_Production_Stimulator",
+    "name_kr": "장갑_제작의_촉진제"
+  },
+  {
+    "name_en": "Black_Jester",
+    "name_kr": "블랙_핀터"
+  },
+  {
+    "name_en": "Dark_Legolia",
+    "name_kr": "다크_레골리스"
+  },
+  {
+    "name_en": "Red_Cleave",
+    "name_kr": "레드_클리브"
+  },
+  {
+    "name_en": "Red_Sneakers",
+    "name_kr": "빨간색_캔버스화"
+  },
+  {
+    "name_en": "Sniper_Potion",
+    "name_kr": "명사수의_물약"
+  },
+  {
+    "name_en": "Scroll_for_Wand_for_Magic_ATT_10%",
+    "name_kr": "완드_마력_주문서_10%"
+  },
+  {
+    "name_en": "Kumbi_Throwing_Stars",
+    "name_kr": "금비_표창"
+  },
+  {
+    "name_en": "Solid_Horn",
+    "name_kr": "단단한_뿔"
+  },
+  {
+    "name_en": "Scroll_for_Wand_for_Magic_ATT_60%",
+    "name_kr": "완드_마력_주문서_60%"
+  },
+  {
+    "name_en": "Green_Hawkeye",
+    "name_kr": "그린_네페르"
+  },
+  {
+    "name_en": "Blue_Sky",
+    "name_kr": "창천의"
+  },
+  {
+    "name_en": "Black_Amoria_Top",
+    "name_kr": "블랙_아모리아_로브"
+  },
+  {
+    "name_en": "Black_Amoria_Skirt",
+    "name_kr": "블랙_아모리아_치마"
+  },
+  {
+    "name_en": "Blue_Legolia",
+    "name_kr": "블루_레골리스"
+  },
+  {
+    "name_en": "Blue_Legolia_Pants",
+    "name_kr": "블루_레골리스_바지"
+  },
+  {
+    "name_en": "Gold_Arbion",
+    "name_kr": "골드_아르비욘"
+  },
+  {
+    "name_en": "Blue_Moon_Shoes",
+    "name_kr": "블루_문슈즈"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Axe_for_Accuracy_100%",
+    "name_kr": "한손도끼_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Knuckle_for_Accuracy_60%",
+    "name_kr": "너클_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Red_Misty",
+    "name_kr": "레드_로얄미스티"
+  },
+  {
+    "name_en": "Two_Handed_Axe_Forging_Stimulator",
+    "name_kr": "두손도끼_제작의_촉진제"
+  },
+  {
+    "name_en": "Bottomwear_Production_Stimulator",
+    "name_kr": "하의_제작의_촉진제"
+  },
+  {
+    "name_en": "Reef_Claw",
+    "name_kr": "리프_크로"
+  },
+  {
+    "name_en": "Brown_Hunter_Boots",
+    "name_kr": "브라운_헌터부츠"
+  },
+  {
+    "name_en": "Dark_Guardian",
+    "name_kr": "다크_가디언"
+  },
+  {
+    "name_en": "Gold_Scaler",
+    "name_kr": "골드_스케일러"
+  },
+  {
+    "name_en": "Silver_Fitted_Mail",
+    "name_kr": "실버_메일"
+  },
+  {
+    "name_en": "Red_Starlight",
+    "name_kr": "레드_스타라이트"
+  },
+  {
+    "name_en": "Red_Moonlight",
+    "name_kr": "레드_문라이트"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Axe_for_Accuracy_10%",
+    "name_kr": "한손도끼_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Claw_for_ATT_60%",
+    "name_kr": "아대_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Flaming_Feather",
+    "name_kr": "불꽃_깃털"
+  },
+  {
+    "name_en": "Brown_Guise",
+    "name_kr": "브라운_가이즈"
+  },
+  {
+    "name_en": "Blood_Battle_Grieves",
+    "name_kr": "블러드_배틀그리브"
+  },
+  {
+    "name_en": "Blue_Axe",
+    "name_kr": "버크"
+  },
+  {
+    "name_en": "Steel_Trigger",
+    "name_kr": "스틸_티거"
+  },
+  {
+    "name_en": "Blue_Legolier_Pants",
+    "name_kr": "블루_레골러_바지"
+  },
+  {
+    "name_en": "Brown_Starlight",
+    "name_kr": "브라운_스타라이트"
+  },
+  {
+    "name_en": "Dark_Matty",
+    "name_kr": "다크_매티"
+  },
+  {
+    "name_en": "Two_Handed_Mace_Forging_Stimulator",
+    "name_kr": "두손둔기_제작의_촉진제"
+  },
+  {
+    "name_en": "Dark_Leatty_Furball",
+    "name_kr": "다크_리티의_털뭉치"
+  },
+  {
+    "name_en": "Dark_Guise",
+    "name_kr": "다크_가이즈"
+  },
+  {
+    "name_en": "Scimitar",
+    "name_kr": "왕푸"
+  },
+  {
+    "name_en": "Dark_Chaos_Robe",
+    "name_kr": "다크_데빌즈_로브"
+  },
+  {
+    "name_en": "Dark_Briggon",
+    "name_kr": "다크_브리건"
+  },
+  {
+    "name_en": "Green_White_Lined_Boots",
+    "name_kr": "그린_라인부츠"
+  },
+  {
+    "name_en": "Purple_Moonlight",
+    "name_kr": "퍼플_문라이트"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_DEX_100%",
+    "name_kr": "하의_민첩성_주문서_100%"
+  },
+  {
+    "name_en": "Blue_Den_Marine",
+    "name_kr": "블루_데네마린"
+  },
+  {
+    "name_en": "Hard_Walnut",
+    "name_kr": "단단한_호두"
+  },
+  {
+    "name_en": "Speed_Pill",
+    "name_kr": "속도_향상의_알약"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Jump_100%",
+    "name_kr": "신발_점프력_주문서_100%"
+  },
+  {
+    "name_en": "Blue_Fairy_Top",
+    "name_kr": "블루_페어리_로브"
+  },
+  {
+    "name_en": "Blue_Fairy_Skirt",
+    "name_kr": "블루_페어리_로브_치마"
+  },
+  {
+    "name_en": "Dark_Brown_Stealer",
+    "name_kr": "다크브라운_스틸러"
+  },
+  {
+    "name_en": "Dark_Brown_Stealer_Pants",
+    "name_kr": "다크브라운_스틸러_바지"
+  },
+  {
+    "name_en": "Great_Blue_Helmet",
+    "name_kr": "블루_그레이트_헬멧"
+  },
+  {
+    "name_en": "Dark_Pole_Feather_Hat",
+    "name_kr": "다크_폴리페더햇"
+  },
+  {
+    "name_en": "Brown_Legolier",
+    "name_kr": "브라운_레골러"
+  },
+  {
+    "name_en": "Brown_Legolier_Pants",
+    "name_kr": "브라운_레골러_바지"
+  },
+  {
+    "name_en": "Blood_Fitted_Mail",
+    "name_kr": "블러드_메일"
+  },
+  {
+    "name_en": "Green_Starlight",
+    "name_kr": "그린_스타라이트"
+  },
+  {
+    "name_en": "Hall_Staff",
+    "name_kr": "홀_스태프"
+  },
+  {
+    "name_en": "Brown_Jeweled",
+    "name_kr": "브라운_쥬얼드"
+  },
+  {
+    "name_en": "Red_Barbay",
+    "name_kr": "레드_바르베이"
+  },
+  {
+    "name_en": "Dagger_Forging_Stimulator",
+    "name_kr": "단검_제작의_촉진제"
+  },
+  {
+    "name_en": "Clock_Spring",
+    "name_kr": "시계_태엽"
+  },
+  {
+    "name_en": "Snowball",
+    "name_kr": "눈덩이"
+  },
+  {
+    "name_en": "Brown_Marker",
+    "name_kr": "브라운_마커"
+  },
+  {
+    "name_en": "Brown_Legolia",
+    "name_kr": "브라운_레골리스"
+  },
+  {
+    "name_en": "Brown_Legolia_Pants",
+    "name_kr": "브라운_레골리스_바지"
+  },
+  {
+    "name_en": "Blue_Noel",
+    "name_kr": "블루_노엘"
+  },
+  {
+    "name_en": "Blue_Starlight",
+    "name_kr": "블루_스타라이트"
+  },
+  {
+    "name_en": "Black_Red_Lined_Shoes",
+    "name_kr": "레드_하프슈즈"
+  },
+  {
+    "name_en": "Adamantium_Knuckle",
+    "name_kr": "아다만티움_너클"
+  },
+  {
+    "name_en": "Brown_Locote_Shoes",
+    "name_kr": "브라운_로코트_슈즈"
+  },
+  {
+    "name_en": "Toy_Duckling",
+    "name_kr": "장난감_새끼오리"
+  },
+  {
+    "name_en": "Soft_Feather",
+    "name_kr": "부드러운_깃털"
+  },
+  {
+    "name_en": "Blue_Hunter's_Armor",
+    "name_kr": "블루_헌터스_아머"
+  },
+  {
+    "name_en": "Silver_Black_Stealer",
+    "name_kr": "실버블랙_스틸러_바지"
+  },
+  {
+    "name_en": "Blue_Hunter's_Pants",
+    "name_kr": "블루_허터스_아머_바지"
+  },
+  {
+    "name_en": "Silver_Black_Stealer_Pants",
+    "name_kr": "실버블랙_스틸러_바지"
+  },
+  {
+    "name_en": "Great_Brown_Helmet",
+    "name_kr": "브라운_그레이트_헬멧"
+  },
+  {
+    "name_en": "Blue_Crusader_Chainmail",
+    "name_kr": "블루_크로스_체인메일"
+  },
+  {
+    "name_en": "Aqua_Brace",
+    "name_kr": "아쿠아_브레이스"
+  },
+  {
+    "name_en": "Bazlud",
+    "name_kr": "베즐러드"
+  },
+  {
+    "name_en": "Blue_Brace_Look",
+    "name_kr": "블루_브레이스룩"
+  },
+  {
+    "name_en": "Star_Pixie's_Starpiece",
+    "name_kr": "스타픽시의_별조각"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_STR_100%",
+    "name_kr": "망토_힘_주문서_100%"
+  },
+  {
+    "name_en": "Black_Marker",
+    "name_kr": "블랙_마커"
+  },
+  {
+    "name_en": "Steel_Missel",
+    "name_kr": "스틸_미셀"
+  },
+  {
+    "name_en": "Blue_White_Lined_Boots",
+    "name_kr": "블루_라인부츠"
+  },
+  {
+    "name_en": "Red_Burgler",
+    "name_kr": "레드_버글러"
+  },
+  {
+    "name_en": "Red_Legolia",
+    "name_kr": "레드_레골리스"
+  },
+  {
+    "name_en": "Red_Legolia_Pants",
+    "name_kr": "레드_레골리스_바지"
+  },
+  {
+    "name_en": "Brown_Moonlight",
+    "name_kr": "브라운_문라이트"
+  },
+  {
+    "name_en": "Traus",
+    "name_kr": "트라우스"
+  },
+  {
+    "name_en": "Vaulter_2000",
+    "name_kr": "발터2000"
+  },
+  {
+    "name_en": "Pole_Arm_Forging_Stimulator",
+    "name_kr": "폴암_제작의_촉진제"
+  },
+  {
+    "name_en": "Tablecloth",
+    "name_kr": "식탁보"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_HP_10%",
+    "name_kr": "투구_체력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEX_100%",
+    "name_kr": "투구_민첩성_주문서_100%"
+  },
+  {
+    "name_en": "Battle_Bow",
+    "name_kr": "배틀_보우"
+  },
+  {
+    "name_en": "Dark_Crusader_Chainmail",
+    "name_kr": "다크_크로스_체인메일"
+  },
+  {
+    "name_en": "Dark_Engrit",
+    "name_kr": "다크_잉그리트"
+  },
+  {
+    "name_en": "Mithril_Scaler",
+    "name_kr": "미스릴_스케일러"
+  },
+  {
+    "name_en": "Dark_Noel",
+    "name_kr": "다크_노엘"
+  },
+  {
+    "name_en": "Orihalcon_Arbion",
+    "name_kr": "오리할콘_아르비욘"
+  },
+  {
+    "name_en": "Niam",
+    "name_kr": "니암"
+  },
+  {
+    "name_en": "Red_Moon_Shoes",
+    "name_kr": "레드_문슈즈"
+  },
+  {
+    "name_en": "Red_Pierre_Shoes",
+    "name_kr": "레드_피에르슈즈"
+  },
+  {
+    "name_en": "Adamantium_Avarice",
+    "name_kr": "아다만티움_보닌"
+  },
+  {
+    "name_en": "Shooting_Star",
+    "name_kr": "슈팅_스타"
+  },
+  {
+    "name_en": "Jousting_Helmet",
+    "name_kr": "주스팅"
+  },
+  {
+    "name_en": "Blue_Moonlight",
+    "name_kr": "블루_문슈즈라이트"
+  },
+  {
+    "name_en": "Black_Green_Lined_Shoes",
+    "name_kr": "그린_하프슈즈"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_BW_for_ATT_60%",
+    "name_kr": "한손둔기_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Curse_Eye's_Tail",
+    "name_kr": "커즈아이의_꼬리"
+  },
+  {
+    "name_en": "Scroll_for_Bow_for_ATT_10%",
+    "name_kr": "활_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Black_Martial_Arts_Pants",
+    "name_kr": "흑무_바지"
+  },
+  {
+    "name_en": "Dark_Burgler",
+    "name_kr": "다크_버글러"
+  },
+  {
+    "name_en": "Black_Knucklevest",
+    "name_kr": "블랙_너클베스트"
+  },
+  {
+    "name_en": "Black_Knucklevest_Pants",
+    "name_kr": "블랙_너클베스트_바지"
+  },
+  {
+    "name_en": "Red_Duke",
+    "name_kr": "레드_듀크"
+  },
+  {
+    "name_en": "Scroll_for_Gun_for_ATT_10%",
+    "name_kr": "건_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Lunar_Shooter",
+    "name_kr": "루나_슈터"
+  },
+  {
+    "name_en": "Silver_Maiden",
+    "name_kr": "실버_메이든"
+  },
+  {
+    "name_en": "\"Blackbull's\"_deed_to_the_land",
+    "name_kr": "'돼지와_함께_춤을'의_땅문서"
+  },
+  {
+    "name_en": "Bloctopus_Key_Chain",
+    "name_kr": "문어_열쇠고리"
+  },
+  {
+    "name_en": "Silver_Battle_Grieves",
+    "name_kr": "실버_배틀_그리브"
+  },
+  {
+    "name_en": "Black_Magicshoes",
+    "name_kr": "블랙랙_매직슈즈"
+  },
+  {
+    "name_en": "Adamantium_Guards",
+    "name_kr": "아다만티움_가즈"
+  },
+  {
+    "name_en": "Dark_Legolier_Pants",
+    "name_kr": "다크_레골러_바지"
+  },
+  {
+    "name_en": "Purple_Avenger",
+    "name_kr": "퍼플_후르츠"
+  },
+  {
+    "name_en": "Crescent_Polearm",
+    "name_kr": "크레센트"
+  },
+  {
+    "name_en": "Khaki_Shadow",
+    "name_kr": "카키_쉐도우"
+  },
+  {
+    "name_en": "Silver_Crow",
+    "name_kr": "실버_크로우"
+  },
+  {
+    "name_en": "Jr_Pepes_Fish",
+    "name_kr": "주니어_페페의_물고기"
+  },
+  {
+    "name_en": "Blue_Burgler",
+    "name_kr": "블루_버글러"
+  },
+  {
+    "name_en": "Red_Gold_Stealer_Pants",
+    "name_kr": "레드골드_스틸러_바지"
+  },
+  {
+    "name_en": "Green_Legolia",
+    "name_kr": "그린_레골리스"
+  },
+  {
+    "name_en": "Emerald_Fitted_Mail",
+    "name_kr": "에메랄드_메일"
+  },
+  {
+    "name_en": "Steel_Nordic_Helm",
+    "name_kr": "스틸_노르만_헬름"
+  },
+  {
+    "name_en": "Red_Arten",
+    "name_kr": "레드드_아르텐"
+  },
+  {
+    "name_en": "Titan",
+    "name_kr": "타이탄"
+  },
+  {
+    "name_en": "Scroll_for_Knuckle_for_Accuracy_10%",
+    "name_kr": "너클_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Red_Gold_Stealer",
+    "name_kr": "레드골드_스틸러"
+  },
+  {
+    "name_en": "Jr._Boogie's_Horns",
+    "name_kr": "주니어_부기의_뿔"
+  },
+  {
+    "name_en": "Sunflower_Seed",
+    "name_kr": "해바라기씨"
+  },
+  {
+    "name_en": "Blue_Amoria_Top",
+    "name_kr": "블루_아모리아_로브"
+  },
+  {
+    "name_en": "Blue_Amoria_Skirt",
+    "name_kr": "블루_아모리아_치마"
+  },
+  {
+    "name_en": "Great_Brown_Helmet",
+    "name_kr": "블루_그레이트_헬멧"
+  },
+  {
+    "name_en": "Gold_Brace",
+    "name_kr": "골드_브레이스"
+  },
+  {
+    "name_en": "Gold_Cleave",
+    "name_kr": "골드_클리브"
+  },
+  {
+    "name_en": "Dark_Moon_Shoes",
+    "name_kr": "다크_문슈즈"
+  },
+  {
+    "name_en": "Maroon_Jangoon_Shoes",
+    "name_kr": "청_진월장화"
+  },
+  {
+    "name_en": "Brown_Barbee",
+    "name_kr": "브라운_바르비"
+  },
+  {
+    "name_en": "Propeller",
+    "name_kr": "비행기_프로펠러"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Sword_for_ATT_60%",
+    "name_kr": "한손검_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Gold_Chain_Boots",
+    "name_kr": "골드_체인슈즈"
+  },
+  {
+    "name_en": "Black_Hunter_Boots",
+    "name_kr": "블랙_헌터부츠"
+  },
+  {
+    "name_en": "Emerald_Battle_Grieves",
+    "name_kr": "에메랄드_배틀_그리브"
+  },
+  {
+    "name_en": "Brown_Burgler",
+    "name_kr": "브라운_버글러"
+  },
+  {
+    "name_en": "Dark_Moonlight",
+    "name_kr": "다크_문라이트"
+  },
+  {
+    "name_en": "Green_Distinction",
+    "name_kr": "그린_크라페"
+  },
+  {
+    "name_en": "Yellow_Jangoon_Armor",
+    "name_kr": "황진일갑주"
+  },
+  {
+    "name_en": "Black_Jangoon_Pants",
+    "name_kr": "흑진일갑주_바지"
+  },
+  {
+    "name_en": "White_Piette",
+    "name_kr": "화이트_피에뜨"
+  },
+  {
+    "name_en": "Blue_Piette_Pants",
+    "name_kr": "블루_피에뜨_바지"
+  },
+  {
+    "name_en": "Blue_Calaf",
+    "name_kr": "블루_칼라프"
+  },
+  {
+    "name_en": "Red_Sonata",
+    "name_kr": "적_흑일모자"
+  },
+  {
+    "name_en": "Emerald_Hildon_Boots",
+    "name_kr": "에메랄드_힐던부츠"
+  },
+  {
+    "name_en": "Red_Maro",
+    "name_kr": "적마로"
+  },
+  {
+    "name_en": "Panda_Doll",
+    "name_kr": "팬더인형"
+  },
+  {
+    "name_en": "Blue_Hunter_Boots",
+    "name_kr": "블루_헌터부츠"
+  },
+  {
+    "name_en": "Dark_Starlight",
+    "name_kr": "다크_스타라이트"
+  },
+  {
+    "name_en": "Red_Guiltian",
+    "name_kr": "레드_길티언"
+  },
+  {
+    "name_en": "Dark_Knuckle",
+    "name_kr": "다크_너클"
+  },
+  {
+    "name_en": "Dragon_Toenail",
+    "name_kr": "드래곤_토네일"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_LUK_100%",
+    "name_kr": "방패_행운_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_BW_for_Accuracy_60%",
+    "name_kr": "한손둔기_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Sniper_Pill",
+    "name_kr": "명사수의_알약"
+  },
+  {
+    "name_en": "Dark_Avenger",
+    "name_kr": "다크_후르츠"
+  },
+  {
+    "name_en": "Black_Jangoon_Armor",
+    "name_kr": "흑진월갑주"
+  },
+  {
+    "name_en": "Red_Arten",
+    "name_kr": "레드_아르텐"
+  },
+  {
+    "name_en": "Black_Jangoon_Skirt",
+    "name_kr": "흑진월갑주_치마"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Speed_10%",
+    "name_kr": "신발_이동속도_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Dagger_for_ATT_60%",
+    "name_kr": "단검_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Lorang's_Claws",
+    "name_kr": "로랑의_집게발"
+  },
+  {
+    "name_en": "Dark_Trigger",
+    "name_kr": "다크_티거"
+  },
+  {
+    "name_en": "Adamantium_Tower_Shield",
+    "name_kr": "아다만티움_타워_실드"
+  },
+  {
+    "name_en": "Blue_Pierre_Shoes",
+    "name_kr": "블루_피에르슈즈"
+  },
+  {
+    "name_en": "Dark_Cleave",
+    "name_kr": "다크_클리브"
+  },
+  {
+    "name_en": "Dark_Piette",
+    "name_kr": "다크_피에뜨"
+  },
+  {
+    "name_en": "Dark_Piette_Pants",
+    "name_kr": "다크_피에뜨_바지지"
+  },
+  {
+    "name_en": "Purple_Shadow",
+    "name_kr": "퍼플_쉐도우"
+  },
+  {
+    "name_en": "Purple_Shadow_Pants",
+    "name_kr": "퍼플_쉐도우_바지"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_LUK_100%",
+    "name_kr": "상의_행운_주문서_100%"
+  },
+  {
+    "name_en": "Neozard",
+    "name_kr": "네오자드"
+  },
+  {
+    "name_en": "Motor",
+    "name_kr": "비행기_모터"
+  },
+  {
+    "name_en": "Mystic_Shield",
+    "name_kr": "미스틱_실드"
+  },
+  {
+    "name_en": "Red_Jangoon_Armor",
+    "name_kr": "홍진월갑주"
+  },
+  {
+    "name_en": "Red_Jangoon_Skirt",
+    "name_kr": "홍진월갑주_치마"
+  },
+  {
+    "name_en": "White_Piettra",
+    "name_kr": "화이트_피에르타"
+  },
+  {
+    "name_en": "White_Piettra_Skirt",
+    "name_kr": "화이트_피에르타_치마"
+  },
+  {
+    "name_en": "Red_Pilfer",
+    "name_kr": "레드_필퍼"
+  },
+  {
+    "name_en": "Yellow_Duke",
+    "name_kr": "옐로우_듀크"
+  },
+  {
+    "name_en": "Dark_Pennance",
+    "name_kr": "다크크_페넌스"
+  },
+  {
+    "name_en": "Steel_Slain",
+    "name_kr": "스틸_슬레인"
+  },
+  {
+    "name_en": "Rower",
+    "name_kr": "로우어"
+  },
+  {
+    "name_en": "Lion's_Fang",
+    "name_kr": "호검"
+  },
+  {
+    "name_en": "Cog",
+    "name_kr": "톱니바퀴"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_BW_for_ATT_60%",
+    "name_kr": "두손둔기_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Bronze_Chain_Boots",
+    "name_kr": "브론즈_체인슈즈"
+  },
+  {
+    "name_en": "Mithril_Brist",
+    "name_kr": "미스릴_스케일러"
+  },
+  {
+    "name_en": "Blue_Pilfer",
+    "name_kr": "블루_필퍼"
+  },
+  {
+    "name_en": "White_Guiltian",
+    "name_kr": "Wh화이트트ite_길티언"
+  },
+  {
+    "name_en": "Maroon_Jangoon_Armor",
+    "name_kr": "자진일갑주"
+  },
+  {
+    "name_en": "White_Jangoon_Pants",
+    "name_kr": "백진일갑주_바지"
+  },
+  {
+    "name_en": "Lupin_Doll",
+    "name_kr": "루팡_인형"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_MP_60%",
+    "name_kr": "망토_마나_주문서_60%"
+  },
+  {
+    "name_en": "Lupin's_Banana",
+    "name_kr": "루팡의_바나나"
+  },
+  {
+    "name_en": "Purple_Steal",
+    "name_kr": "퍼플_스틸레스"
+  },
+  {
+    "name_en": "Purple_Steal_Pants",
+    "name_kr": "퍼플_스틸레스_바지"
+  },
+  {
+    "name_en": "Black_Yellow_Lined_Shoes",
+    "name_kr": "옐로우_하프슈즈"
+  },
+  {
+    "name_en": "Gold_Moon_Shoes",
+    "name_kr": "골드_문슈즈"
+  },
+  {
+    "name_en": "Mithril_Tower_Shield",
+    "name_kr": "미스릴_타워_실드"
+  },
+  {
+    "name_en": "Dark_Avarice",
+    "name_kr": "다크_보닌"
+  },
+  {
+    "name_en": "Light_Mantis",
+    "name_kr": "라이트_맨티스"
+  },
+  {
+    "name_en": "Brown_Leather_Krag",
+    "name_kr": "브라운_레더크라그"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_MP_10%",
+    "name_kr": "망토_마나_주문서_10%"
+  },
+  {
+    "name_en": "Black_Adventurer_Cape",
+    "name_kr": "검은색_모험가의_망토"
+  },
+  {
+    "name_en": "Plastic_Crown",
+    "name_kr": "플라스틱_왕관"
+  },
+  {
+    "name_en": "Bronze_Guardian",
+    "name_kr": "브론즈_가디언"
+  },
+  {
+    "name_en": "Blue_Duke",
+    "name_kr": "블루_듀크"
+  },
+  {
+    "name_en": "Dark_Guiltian",
+    "name_kr": "다크_길티언"
+  },
+  {
+    "name_en": "Marine_Shadow",
+    "name_kr": "마린_쉐도우"
+  },
+  {
+    "name_en": "Marine_Shadow_Pants",
+    "name_kr": "마린_쉐도우_바지"
+  },
+  {
+    "name_en": "Brown_Piettra",
+    "name_kr": "브라운_피에르타"
+  },
+  {
+    "name_en": "Brown_Piettra_Skirt",
+    "name_kr": "브라운_피에르타_치마"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Axe_for_Accuracy_60%",
+    "name_kr": "두손도끼_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Blue_Calas",
+    "name_kr": "블루문"
+  },
+  {
+    "name_en": "Plane_Controller",
+    "name_kr": "비행기_컨트롤러"
+  },
+  {
+    "name_en": "Blue_Distinction",
+    "name_kr": "블루_크라페"
+  },
+  {
+    "name_en": "Blue_Jangoon_Armor",
+    "name_kr": "청진일갑주"
+  },
+  {
+    "name_en": "Brown_Jangoon_Pants",
+    "name_kr": "황진일갑주_바지"
+  },
+  {
+    "name_en": "Dark_Shadow",
+    "name_kr": "다크_쉐도우"
+  },
+  {
+    "name_en": "Dark_Shadow_Pants",
+    "name_kr": "다크_쉐도우_바지"
+  },
+  {
+    "name_en": "Brown_Jangoon_Shoes",
+    "name_kr": "황_진월장화"
+  },
+  {
+    "name_en": "Pansy_Earrings",
+    "name_kr": "펜지_이어링"
+  },
+  {
+    "name_en": "Blue_Pennance",
+    "name_kr": "블루_페넌스"
+  },
+  {
+    "name_en": "Red_Willow",
+    "name_kr": "레드_윌로우"
+  },
+  {
+    "name_en": "Green_Goni_Shoes",
+    "name_kr": "그린_고니슈즈"
+  },
+  {
+    "name_en": "Mithril_Brist",
+    "name_kr": "미스릴_브리스트"
+  },
+  {
+    "name_en": "Toy_Trojan_Sword",
+    "name_kr": "장난감_병정의_칼"
+  },
+  {
+    "name_en": "Brown_Pilfer",
+    "name_kr": "브라운_필퍼"
+  },
+  {
+    "name_en": "Mithril_Nordic_Helm",
+    "name_kr": "미스릴_노르만_헬름"
+  },
+  {
+    "name_en": "Dark_Arten",
+    "name_kr": "다크_아르텐"
+  },
+  {
+    "name_en": "Yellow_Pierre_Shoes",
+    "name_kr": "옐로우_피에르슈즈"
+  },
+  {
+    "name_en": "Red_Calaf",
+    "name_kr": "레드_칼라프"
+  },
+  {
+    "name_en": "Small_Egg",
+    "name_kr": "작은_알"
+  },
+  {
+    "name_en": "Dark_Brace",
+    "name_kr": "다크_브레이스"
+  },
+  {
+    "name_en": "Brown_Jangoon_Armor",
+    "name_kr": "황진월갑주"
+  },
+  {
+    "name_en": "Brown_Jangoon_Skirt",
+    "name_kr": "황진월갑주_치마"
+  },
+  {
+    "name_en": "Blue_Moon_Gloves",
+    "name_kr": "청월_장갑"
+  },
+  {
+    "name_en": "Dark_Willow",
+    "name_kr": "다크_윌로우"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_BW_for_Accuracy_100%",
+    "name_kr": "한손둔기_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Table_Clock",
+    "name_kr": "작은_시계"
+  },
+  {
+    "name_en": "Blue_Moonlight",
+    "name_kr": "블루_문라이트"
+  },
+  {
+    "name_en": "Cromi",
+    "name_kr": "크로미"
+  },
+  {
+    "name_en": "Sai",
+    "name_kr": "차"
+  },
+  {
+    "name_en": "All-purpose_Clock_Spring",
+    "name_kr": "만능_시계_태엽"
+  },
+  {
+    "name_en": "Space_Food",
+    "name_kr": "우주_식량"
+  },
+  {
+    "name_en": "Dexterity_Pill",
+    "name_kr": "민첩함의_알약"
+  },
+  {
+    "name_en": "Yellow_Umbrella",
+    "name_kr": "노란색_우산"
+  },
+  {
+    "name_en": "Orange_Calas",
+    "name_kr": "오렌지_칼라스"
+  },
+  {
+    "name_en": "Blue_Maro",
+    "name_kr": "청마로"
+  },
+  {
+    "name_en": "Silver_Crusader_Helm",
+    "name_kr": "실버_크루세이더_헬름"
+  },
+  {
+    "name_en": "Cursed_Doll",
+    "name_kr": "저주받은_인형"
+  },
+  {
+    "name_en": "Dark_Pilfer",
+    "name_kr": "다크_필퍼"
+  },
+  {
+    "name_en": "Blood_Avarice",
+    "name_kr": "블러드_보닌"
+  },
+  {
+    "name_en": "Arc_Staff",
+    "name_kr": "아크_스태프"
+  },
+  {
+    "name_en": "The_Nine_Dragons",
+    "name_kr": "구룡도"
+  },
+  {
+    "name_en": "Shinkita",
+    "name_kr": "신기타"
+  },
+  {
+    "name_en": "Scroll_for_Spear_for_Accuracy_10%",
+    "name_kr": "창_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Worn_Paper_Lantern",
+    "name_kr": "제등"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Axe_for_ATT_60%",
+    "name_kr": "두손도끼_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Yakisoba_x2",
+    "name_kr": "야끼소바(곱배기)"
+  },
+  {
+    "name_en": "Mighty_Bullet",
+    "name_kr": "마이티_불릿"
+  },
+  {
+    "name_en": "Liu_Bei_Dagger",
+    "name_kr": "쌍고검"
+  },
+  {
+    "name_en": "Ocher_Shouldermail",
+    "name_kr": "오우커_숄더메일"
+  },
+  {
+    "name_en": "White_Calas",
+    "name_kr": "화이트_칼라스"
+  },
+  {
+    "name_en": "Nimble_Wristguard",
+    "name_kr": "님블_리스트"
+  },
+  {
+    "name_en": "Red_Moon_Pants",
+    "name_kr": "적월_바지"
+  },
+  {
+    "name_en": "Cold_Eye's_Tail",
+    "name_kr": "콜드아이의_꼬리"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEF_60%",
+    "name_kr": "투구_방어력_주문서_60%"
+  },
+  {
+    "name_en": "Pink_Moon_Conehat",
+    "name_kr": "핑크문_고깔모자"
+  },
+  {
+    "name_en": "Icicle",
+    "name_kr": "고드름"
+  },
+  {
+    "name_en": "Old_Steel_Nordic_Helm",
+    "name_kr": "골드_노르만_헬름"
+  },
+  {
+    "name_en": "Brown_Distinction",
+    "name_kr": "브라운_크라페"
+  },
+  {
+    "name_en": "Red_Shadow",
+    "name_kr": "레드_쉐도우"
+  },
+  {
+    "name_en": "Red_Shadow_Pants",
+    "name_kr": "레드_쉐도우_바지"
+  },
+  {
+    "name_en": "Pink_Goldwind_Shoes",
+    "name_kr": "핑크_골든윈드슈즈"
+  },
+  {
+    "name_en": "Brown_Moon_Gloves",
+    "name_kr": "황월_장갑"
+  },
+  {
+    "name_en": "Scroll_for_Pole_Arm_for_Accuracy_60%",
+    "name_kr": "폴암_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Dark_Hunter's_Pants",
+    "name_kr": "다크_헌터스_아머_바지"
+  },
+  {
+    "name_en": "Acorn",
+    "name_kr": "도토리"
+  },
+  {
+    "name_en": "White_Guiltian",
+    "name_kr": "화이트_길티언"
+  },
+  {
+    "name_en": "Bloody_Mantis_Pants",
+    "name_kr": "블러디_맨티스_바지"
+  },
+  {
+    "name_en": "Bloody_Mantis",
+    "name_kr": "블러디_맨티스"
+  },
+  {
+    "name_en": "Cheap_BATT_ery",
+    "name_kr": "싸구려_건전지"
+  },
+  {
+    "name_en": "Green_Steel_Tip_Boots",
+    "name_kr": "그린_네일슈즈"
+  },
+  {
+    "name_en": "Jeweled_Katar",
+    "name_kr": "쥬얼_쿠아다라"
+  },
+  {
+    "name_en": "Red_Avenger",
+    "name_kr": "레드_후르츠"
+  },
+  {
+    "name_en": "Thimble",
+    "name_kr": "골무"
+  },
+  {
+    "name_en": "Black_Blue_Lines_Shoes",
+    "name_kr": "블루_하프슈즈"
+  },
+  {
+    "name_en": "Maroon_Moon_Pants",
+    "name_kr": "자월_바지"
+  },
+  {
+    "name_en": "Orange_Golden_Circlet",
+    "name_kr": "오렌지_골든서클릿"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_HP_100%",
+    "name_kr": "상의_체력_주문서_100%"
+  },
+  {
+    "name_en": "Fly_Eye_Wing",
+    "name_kr": "플라이아이의_날개"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_STR_10%",
+    "name_kr": "망토_힘_주문서_10%"
+  },
+  {
+    "name_en": "Red_Legolier_Pants",
+    "name_kr": "레드_레골러_바지"
+  },
+  {
+    "name_en": "Red_Legolier",
+    "name_kr": "레드_레골러"
+  },
+  {
+    "name_en": "Blue_Arten",
+    "name_kr": "블루_아르텐"
+  },
+  {
+    "name_en": "Dark_Calaf",
+    "name_kr": "다크_칼라프"
+  },
+  {
+    "name_en": "Orihalcon_Hildon_Boots",
+    "name_kr": "오리할콘_힐던부츠"
+  },
+  {
+    "name_en": "Olympus",
+    "name_kr": "올림푸스"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_ATT_60%",
+    "name_kr": "장갑_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Zard",
+    "name_kr": "쟈드"
+  },
+  {
+    "name_en": "Esther_Shield",
+    "name_kr": "에스터_실드"
+  },
+  {
+    "name_en": "Serpent's_Tongue",
+    "name_kr": "장팔사모"
+  },
+  {
+    "name_en": "Buck",
+    "name_kr": "벅"
+  },
+  {
+    "name_en": "Mateon's_Tentacle",
+    "name_kr": "마티안의_촉수"
+  },
+  {
+    "name_en": "Dark_Pennance",
+    "name_kr": "다크_페넌스"
+  },
+  {
+    "name_en": "Blue_Steel_Tip_Boots",
+    "name_kr": "블루_네일슈즈"
+  },
+  {
+    "name_en": "Red_Moon_Gloves",
+    "name_kr": "적월_장갑"
+  },
+  {
+    "name_en": "Small_Spaceship",
+    "name_kr": "소형_우주선"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Speed_60%",
+    "name_kr": "신발_이동속도_주문서_60%"
+  },
+  {
+    "name_en": "Jurgen_Wristguard",
+    "name_kr": "주르건_리스트"
+  },
+  {
+    "name_en": "Dark_Piette_Pants",
+    "name_kr": "다크_피에뜨_바지"
+  },
+  {
+    "name_en": "Dark_Calas",
+    "name_kr": "다크_칼라스"
+  },
+  {
+    "name_en": "Blue_Sonata",
+    "name_kr": "청_흑일모자"
+  },
+  {
+    "name_en": "Iron_Hog's_Metal_Hoof",
+    "name_kr": "아이언호그의_철발굽"
+  },
+  {
+    "name_en": "Elixir",
+    "name_kr": "엘릭서"
+  },
+  {
+    "name_en": "Red-Lined_Kismet",
+    "name_kr": "적선백궁"
+  },
+  {
+    "name_en": "Orange_Calaf",
+    "name_kr": "오렌지_칼라프"
+  },
+  {
+    "name_en": "Blood_Slain",
+    "name_kr": "블러드_슬레인"
+  },
+  {
+    "name_en": "Yellow_Toy_Block",
+    "name_kr": "노란색_장난감_블록"
+  },
+  {
+    "name_en": "Blue_Shouldermail",
+    "name_kr": "블루_숄더메일"
+  },
+  {
+    "name_en": "Blue_Shouldermail_Pants",
+    "name_kr": "블루_숄더메일_바지"
+  },
+  {
+    "name_en": "Skull_Shield",
+    "name_kr": "해골_방패"
+  },
+  {
+    "name_en": "Moss_Snail_Shell",
+    "name_kr": "이끼_달팽이의_껍질"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_HP_60%",
+    "name_kr": "투구_체력_주문서_60%"
+  },
+  {
+    "name_en": "Nependeath_Seed",
+    "name_kr": "네펜데스의_씨앗"
+  },
+  {
+    "name_en": "Gold_Nordic_Helm",
+    "name_kr": "골드_노르만_헬름"
+  },
+  {
+    "name_en": "Dark_Piettra",
+    "name_kr": "다크_피에르타"
+  },
+  {
+    "name_en": "Dark_Piettra_Skirt",
+    "name_kr": "다크_피에르타_바지"
+  },
+  {
+    "name_en": "Green_Lumati",
+    "name_kr": "그린_루이마리"
+  },
+  {
+    "name_en": "Gold_Brist",
+    "name_kr": "골드_브리스트"
+  },
+  {
+    "name_en": "Red_Goni_Shoes",
+    "name_kr": "레드_고니슈즈"
+  },
+  {
+    "name_en": "Nependeath's_Honey",
+    "name_kr": "네펜데스의_꿀"
+  },
+  {
+    "name_en": "Jr._Cerebes_Tooth",
+    "name_kr": "주니어_불독의_송곳니"
+  },
+  {
+    "name_en": "Dark_Trigger",
+    "name_kr": "다_티거"
+  },
+  {
+    "name_en": "Green_Sonata",
+    "name_kr": "녹_흑일모자"
+  },
+  {
+    "name_en": "Dark_Golden_Circlet",
+    "name_kr": "다크_골든서클릿"
+  },
+  {
+    "name_en": "Bronze_Crusader_Helm",
+    "name_kr": "브론즈_크루세이더_헬름"
+  },
+  {
+    "name_en": "Needle_Pouch",
+    "name_kr": "바늘쌈지"
+  },
+  {
+    "name_en": "Emerald_Dome",
+    "name_kr": "에메랄드_돔"
+  },
+  {
+    "name_en": "Dark_Piettra_Skirt",
+    "name_kr": "다크_피에르타_치마"
+  },
+  {
+    "name_en": "Brown_Double_Boots",
+    "name_kr": "브라운_더블트_부츠"
+  },
+  {
+    "name_en": "Skeledog's_Bone",
+    "name_kr": "스켈독의_뼈"
+  },
+  {
+    "name_en": "Blue_Bandana",
+    "name_kr": "파란색_두건"
+  },
+  {
+    "name_en": "Blue_Lined_Kismet",
+    "name_kr": "청선백궁"
+  },
+  {
+    "name_en": "Red_Pierre_Shoes",
+    "name_kr": "레드드_피에르슈즈"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_HP_60%",
+    "name_kr": "장갑_체력_주문서_60%"
+  },
+  {
+    "name_en": "Plateon's_Helmet",
+    "name_kr": "플라티안의_헬멧"
+  },
+  {
+    "name_en": "Brown_Pole_Feather_Hat",
+    "name_kr": "브라운_폴리페더햇"
+  },
+  {
+    "name_en": "Red_Lumati",
+    "name_kr": "레드_루이마리"
+  },
+  {
+    "name_en": "Blue_Willow",
+    "name_kr": "블루루_윌로우"
+  },
+  {
+    "name_en": "Purple_Goni_Shoes",
+    "name_kr": "퍼플_고니슈즈"
+  },
+  {
+    "name_en": "Fury_Claw",
+    "name_kr": "데빌클로"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_HP_100%",
+    "name_kr": "귀_장식_체력_주문서_100%"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_STR_100%",
+    "name_kr": "전신_갑옷_힘_주문서_100%"
+  },
+  {
+    "name_en": "Mechanical_Heart",
+    "name_kr": "기계심장"
+  },
+  {
+    "name_en": "Sapphire_Slain",
+    "name_kr": "사파이어_슬레인"
+  },
+  {
+    "name_en": "Green_China",
+    "name_kr": "녹일"
+  },
+  {
+    "name_en": "Green_China_Pants",
+    "name_kr": "녹일_바지"
+  },
+  {
+    "name_en": "Black_Maro",
+    "name_kr": "흑마로"
+  },
+  {
+    "name_en": "The_Rising",
+    "name_kr": "라이징"
+  },
+  {
+    "name_en": "Mr_Rasfelt",
+    "name_kr": "라스펠트건"
+  },
+  {
+    "name_en": "Blue_Toy_Block",
+    "name_kr": "파란색_장난감_블록"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_DEF_60%",
+    "name_kr": "전신_갑옷_방어력_주문서_60%"
+  },
+  {
+    "name_en": "Dark_Distinction",
+    "name_kr": "다크_크라페"
+  },
+  {
+    "name_en": "Ocher_Shouldermail_Pants",
+    "name_kr": "오우커_숄더메일_바지"
+  },
+  {
+    "name_en": "Red_Pennance",
+    "name_kr": "레드_페넌스"
+  },
+  {
+    "name_en": "Gold_Hildon_Boots",
+    "name_kr": "골드_힐던부츠"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_Jump_60%",
+    "name_kr": "하의_점프력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_DEX_10%",
+    "name_kr": "하의_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_STR_60%",
+    "name_kr": "방패_힘_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Sword_for_Accuracy_10%",
+    "name_kr": "두손검_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Dark_Cloud_Foxtail",
+    "name_kr": "큰_구름여우_꼬리"
+  },
+  {
+    "name_en": "Kinoko_Ramen_Pig_Head",
+    "name_kr": "키노코라면(돼지사골)"
+  },
+  {
+    "name_en": "Yakisoba",
+    "name_kr": "야끼소바"
+  },
+  {
+    "name_en": "Fish_Cake_Dish",
+    "name_kr": "어묵(접시)"
+  },
+  {
+    "name_en": "Red_Umbrella",
+    "name_kr": "빨강_우산"
+  },
+  {
+    "name_en": "Thermometer",
+    "name_kr": "체온계"
+  },
+  {
+    "name_en": "Pounder",
+    "name_kr": "절구공이"
+  },
+  {
+    "name_en": "Blue_Adventurer_Cape",
+    "name_kr": "파란색_모험가의_망토"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEX_60%",
+    "name_kr": "투구_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_STR_100%",
+    "name_kr": "상의_힘_주문서_100%"
+  },
+  {
+    "name_en": "Snake_Leather",
+    "name_kr": "뱀가죽"
+  },
+  {
+    "name_en": "Umber_Shouldermail",
+    "name_kr": "엄버_숄더메일"
+  },
+  {
+    "name_en": "Umber_Shouldermail_Pants",
+    "name_kr": "엄버_숄더메일_바지"
+  },
+  {
+    "name_en": "Necki_Swimming_Cap",
+    "name_kr": "네키의_수영모자"
+  },
+  {
+    "name_en": "Scroll_for_Pole_Arm_for_Accuracy_100%",
+    "name_kr": "폴암_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Lunar_Pixie's_Moonpiece",
+    "name_kr": "루나픽시의_달조각"
+  },
+  {
+    "name_en": "Aqua_Golden_Circlet",
+    "name_kr": "아쿠아_골든서클릿"
+  },
+  {
+    "name_en": "Brown_Sonata",
+    "name_kr": "황_흑일모자"
+  },
+  {
+    "name_en": "Red_Moon",
+    "name_kr": "적월"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_BW_for_Accuracy_10%",
+    "name_kr": "두손둔기_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Receving_Apparatus",
+    "name_kr": "수신기"
+  },
+  {
+    "name_en": "Skull_Earrings",
+    "name_kr": "해골_귀고리"
+  },
+  {
+    "name_en": "Green_Goldwind_Shoes",
+    "name_kr": "그린_골든윈드슈즈"
+  },
+  {
+    "name_en": "Golden_Mole",
+    "name_kr": "골든_모울"
+  },
+  {
+    "name_en": "Dark_Slain",
+    "name_kr": "다크_슬레인"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEX_10%",
+    "name_kr": "투구_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Mithril_Crusader_Helm",
+    "name_kr": "미스릴_크루세이더_헬름"
+  },
+  {
+    "name_en": "Maroon_Moon",
+    "name_kr": "자월"
+  },
+  {
+    "name_en": "Necki_Flower",
+    "name_kr": "네키의_꽃"
+  },
+  {
+    "name_en": "Brown_Leather_Ocean_Hat",
+    "name_kr": "브라운레더_오션_햇"
+  },
+  {
+    "name_en": "Scroll_for_Spear_for_Accuracy_100%",
+    "name_kr": "창_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Iron_Boar_Armor",
+    "name_kr": "아이언보어의_갑옷조각"
+  },
+  {
+    "name_en": "Scroll_for_Two_Handed_Sword_for_ATT_60%",
+    "name_kr": "한손검_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Drake_Skull",
+    "name_kr": "드레이크의_머리뼈"
+  },
+  {
+    "name_en": "Dragon_Skin",
+    "name_kr": "용의_가죽"
+  },
+  {
+    "name_en": "Blue_Bone_Helm",
+    "name_kr": "블루_본_헬름"
+  },
+  {
+    "name_en": "Red_Calas",
+    "name_kr": "레드_칼라스"
+  },
+  {
+    "name_en": "Mithril_Hildon_Boots",
+    "name_kr": "미스릴_힐던부츠"
+  },
+  {
+    "name_en": "Purple_Steel_Tip_Boots",
+    "name_kr": "퍼플플_네일슈즈"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_INT_60%",
+    "name_kr": "투구_지력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_HP_60%",
+    "name_kr": "하의_체력_주문서_60%"
+  },
+  {
+    "name_en": "Tortie_Shell",
+    "name_kr": "엄티의_등껍질"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_STR_60%",
+    "name_kr": "망토_힘_주문서_60%"
+  },
+  {
+    "name_en": "Purple_Goldwind_Shoes",
+    "name_kr": "퍼플_골든윈드슈즈"
+  },
+  {
+    "name_en": "Dark_Shouldermail_Pants",
+    "name_kr": "다크_숄더메일_바지"
+  },
+  {
+    "name_en": "Dark_Shouldermail",
+    "name_kr": "다크_숄더메일"
+  },
+  {
+    "name_en": "Brown_Moon_Pants",
+    "name_kr": "황월_바지"
+  },
+  {
+    "name_en": "Brown_Moon",
+    "name_kr": "황월"
+  },
+  {
+    "name_en": "Flame_Golden_Circlet",
+    "name_kr": "플레임_골든서클릿"
+  },
+  {
+    "name_en": "Tree_Trunk",
+    "name_kr": "나무줄기"
+  },
+  {
+    "name_en": "Scroll_for_Staff_for_Magic_ATT_10%",
+    "name_kr": "스태프_마력_주문서_10%"
+  },
+  {
+    "name_en": "Ivory_Shouldermail",
+    "name_kr": "아이보리_숄더메일"
+  },
+  {
+    "name_en": "Ivory_Shouldermail_Pants",
+    "name_kr": "아이보리_숄더메일_바지"
+  },
+  {
+    "name_en": "Blue_Goldwind_Shoes",
+    "name_kr": "블루_골든윈드슈즈"
+  },
+  {
+    "name_en": "Mecateon's_Laser_Gun",
+    "name_kr": "메카티안의_광선총"
+  },
+  {
+    "name_en": "Black_Amoria_Top",
+    "name_kr": "블랙_아모리아_Top"
+  },
+  {
+    "name_en": "Brown_Royce",
+    "name_kr": "브라운_로이스"
+  },
+  {
+    "name_en": "Rombot's_Memory_Card",
+    "name_kr": "롬바드의_메모리카드"
+  },
+  {
+    "name_en": "Broken_Piece_of_Pot",
+    "name_kr": "깨진_항아리_조각"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEF_60%`",
+    "name_kr": "투구_방어력_주문서_60%`"
+  },
+  {
+    "name_en": "Green_Plasteer",
+    "name_kr": "그린_플레스티어"
+  },
+  {
+    "name_en": "Dirty_Bandage",
+    "name_kr": "더러운_붕대"
+  },
+  {
+    "name_en": "Bronze_Pow",
+    "name_kr": "브론즈_파우"
+  },
+  {
+    "name_en": "Oaker_Garner",
+    "name_kr": "오커_가너"
+  },
+  {
+    "name_en": "Bronze_Clench",
+    "name_kr": "브론즈_클랜치"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_STR_10%",
+    "name_kr": "상의_힘_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_LUK_60%",
+    "name_kr": "상의_행운_주문서_60%"
+  },
+  {
+    "name_en": "Dark_Nependeath_Seed",
+    "name_kr": "다크_네펜데스의_씨앗"
+  },
+  {
+    "name_en": "Red_Shouldermail",
+    "name_kr": "레드_숄더메일"
+  },
+  {
+    "name_en": "Red_Shouldermail_Pants",
+    "name_kr": "레드_숄더메일_바지"
+  },
+  {
+    "name_en": "Blue_China",
+    "name_kr": "청일"
+  },
+  {
+    "name_en": "Blue_China_Pants",
+    "name_kr": "청일_바지"
+  },
+  {
+    "name_en": "Blue_Willow",
+    "name_kr": "블루_윌로우"
+  },
+  {
+    "name_en": "Medicine_With_Weird_Vibes",
+    "name_kr": "이상한_느낌의_약"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_INT_10%",
+    "name_kr": "투구_지력_주문서_10%"
+  },
+  {
+    "name_en": "Ginseng-Boiled_Water",
+    "name_kr": "산삼_달인물"
+  },
+  {
+    "name_en": "Black_Bandana",
+    "name_kr": "검은색_두건"
+  },
+  {
+    "name_en": "Emerald_Earrings",
+    "name_kr": "에메랄드_귀고리"
+  },
+  {
+    "name_en": "Red_Ice_Queen",
+    "name_kr": "레드_트란도트"
+  },
+  {
+    "name_en": "Red_Ice_Queen_Skirt",
+    "name_kr": "레드_트란도트_치마"
+  },
+  {
+    "name_en": "White_Adventurer_Cape",
+    "name_kr": "화이트_모험가의_망토"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_HP_10%",
+    "name_kr": "하의_체력_주문서_10%"
+  },
+  {
+    "name_en": "Clang's_Claws",
+    "name_kr": "클랑의_집게발"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_LUK_10%",
+    "name_kr": "상의_행운_주문서_10%"
+  },
+  {
+    "name_en": "Chief_Gray's_Sign",
+    "name_kr": "원로_그레이의_표식"
+  },
+  {
+    "name_en": "Red_Magic_Cape",
+    "name_kr": "빨간색_마법의_망토"
+  },
+  {
+    "name_en": "Star_Rock",
+    "name_kr": "별의_돌"
+  },
+  {
+    "name_en": "Brown_Steel_Tip_Boots",
+    "name_kr": "브라운_네일슈즈"
+  },
+  {
+    "name_en": "Purple_Steel_Tip_Boots",
+    "name_kr": "퍼플_네일슈즈"
+  },
+  {
+    "name_en": "Old_Mithril_Nordic_Helm",
+    "name_kr": "낡은_미스릴_노르만_헬름"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_Jump_10%",
+    "name_kr": "하의_점프력_주문서_10%"
+  },
+  {
+    "name_en": "Tiger_Stamp",
+    "name_kr": "호랑이_발도장"
+  },
+  {
+    "name_en": "Scroll_for_Crossbow_for_ATT_10%",
+    "name_kr": "석궁_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Drake's_Blood",
+    "name_kr": "드레이크의_피"
+  },
+  {
+    "name_en": "Drake's_Meat",
+    "name_kr": "드레이크의_고기"
+  },
+  {
+    "name_en": "Blue_Lumati",
+    "name_kr": "블루_루이마리"
+  },
+  {
+    "name_en": "Thorns",
+    "name_kr": "쏜즈"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_HP_10%",
+    "name_kr": "상의_체력_주문서_10%"
+  },
+  {
+    "name_en": "Jr_Yeti_Skin",
+    "name_kr": "주니어_예티의_가죽"
+  },
+  {
+    "name_en": "Mithril_Wolfskin",
+    "name_kr": "미스릴_우드쉽"
+  },
+  {
+    "name_en": "Blue_Anakarune",
+    "name_kr": "블루_아나카룬"
+  },
+  {
+    "name_en": "Red_Anakarune",
+    "name_kr": "레드_아나카룬"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_STR_10%",
+    "name_kr": "방패_힘_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Sword_for_Accuracy_10%",
+    "name_kr": "한손검_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_LUK_10%",
+    "name_kr": "방패_행운_주문서_10%"
+  },
+  {
+    "name_en": "Umber_Mantis_Pants",
+    "name_kr": "엄버_맨티스_바지"
+  },
+  {
+    "name_en": "Umber_Mantis",
+    "name_kr": "엄버_맨티스"
+  },
+  {
+    "name_en": "Golden_Crow",
+    "name_kr": "골든_크로우"
+  },
+  {
+    "name_en": "Straw_Doll",
+    "name_kr": "짚_인형"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_HP_60%",
+    "name_kr": "방패_체력_주문서_60%"
+  },
+  {
+    "name_en": "Wooden_Doll",
+    "name_kr": "나무_인형"
+  },
+  {
+    "name_en": "Silver_Windshoes",
+    "name_kr": "실버_윈드슈즈"
+  },
+  {
+    "name_en": "Brown_Studded_Top",
+    "name_kr": "브라운_스타드"
+  },
+  {
+    "name_en": "Brown_Studded_Pants",
+    "name_kr": "브라운_스타드_바지"
+  },
+  {
+    "name_en": "Purple_Cast_Linen",
+    "name_kr": "퍼플_카스트_린넨"
+  },
+  {
+    "name_en": "Scroll_for_Gloves_for_HP_10%",
+    "name_kr": "장갑_체력_주문서_10%"
+  },
+  {
+    "name_en": "Brown_China",
+    "name_kr": "황일"
+  },
+  {
+    "name_en": "Rubble",
+    "name_kr": "돌조각"
+  },
+  {
+    "name_en": "Firebomb_Flame",
+    "name_kr": "파이어봄의_불씨"
+  },
+  {
+    "name_en": "Blood_Moss_Boots",
+    "name_kr": "블러드_모스부츠"
+  },
+  {
+    "name_en": "Red_Seraphis",
+    "name_kr": "레드_세라피스"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_HP_60%",
+    "name_kr": "귀_장식_체력_주문서_60%"
+  },
+  {
+    "name_en": "Luster_Pixie's_Sunpiece",
+    "name_kr": "러스터픽시의_태양조각"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Sword_for_Accuracy_60%",
+    "name_kr": "한손검_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Blue_Goni_Shoes",
+    "name_kr": "블루_고니슈즈"
+  },
+  {
+    "name_en": "Red_Gore_Boots",
+    "name_kr": "레드_고어부츠"
+  },
+  {
+    "name_en": "Steel_Manute",
+    "name_kr": "스틸_마누트"
+  },
+  {
+    "name_en": "Black_Schult",
+    "name_kr": "블랙_슐트"
+  },
+  {
+    "name_en": "Croco_Skin",
+    "name_kr": "크로코의_가죽"
+  },
+  {
+    "name_en": "Light_Scorpio",
+    "name_kr": "라이트_스콜피오"
+  },
+  {
+    "name_en": "Light_Scorpio_Pants",
+    "name_kr": "라이트_스콜피오_바지"
+  },
+  {
+    "name_en": "Wooden_Legend_Shield",
+    "name_kr": "우드_레전드_실드"
+  },
+  {
+    "name_en": "Black_Royal_Barone",
+    "name_kr": "블랙_로얄바롱"
+  },
+  {
+    "name_en": "Tiger_Skin",
+    "name_kr": "호랑이_가죽"
+  },
+  {
+    "name_en": "Cellion_Tail",
+    "name_kr": "샐리온의_꼬리"
+  },
+  {
+    "name_en": "Red_Hearted_Earrings",
+    "name_kr": "빨간하트_귀고리"
+  },
+  {
+    "name_en": "Red_China_Pants",
+    "name_kr": "적일_바지"
+  },
+  {
+    "name_en": "Red_China",
+    "name_kr": "적일"
+  },
+  {
+    "name_en": "Red_Anakamoon",
+    "name_kr": "레드_아나카문"
+  },
+  {
+    "name_en": "Orange_Tai",
+    "name_kr": "주자로"
+  },
+  {
+    "name_en": "Blaze_Capsule",
+    "name_kr": "블레이즈_캡슐"
+  },
+  {
+    "name_en": "Black_Basile_Boots",
+    "name_kr": "블랙_바실즈_부츠"
+  },
+  {
+    "name_en": "Bellflower",
+    "name_kr": "도라지"
+  },
+  {
+    "name_en": "Crystal_Flower_Earrings",
+    "name_kr": "크리스탈_플라워링"
+  },
+  {
+    "name_en": "Bronze_Platine",
+    "name_kr": "브론즈_플라틴"
+  },
+  {
+    "name_en": "Bronze_Platine_Pants",
+    "name_kr": "브론즈_플라틴_바지"
+  },
+  {
+    "name_en": "Red_Choro",
+    "name_kr": "적초로"
+  },
+  {
+    "name_en": "Psycho_Claw",
+    "name_kr": "세라핌즈"
+  },
+  {
+    "name_en": "Grupin_Tail",
+    "name_kr": "그류핀의_꼬리"
+  },
+  {
+    "name_en": "Blue_Moon_Pants",
+    "name_kr": "청월_바지"
+  },
+  {
+    "name_en": "Deadly_Fin",
+    "name_kr": "게타"
+  },
+  {
+    "name_en": "Tamus",
+    "name_kr": "타무스"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_LUK_10%",
+    "name_kr": "귀_장식_행운_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_LUK_60%",
+    "name_kr": "방패_행운_주문서_60%"
+  },
+  {
+    "name_en": "Glaze_Capsule",
+    "name_kr": "글레이즈_캡슐"
+  },
+  {
+    "name_en": "Lioner_Tail",
+    "name_kr": "라이오너의_꼬리"
+  },
+  {
+    "name_en": "Steel_Brist",
+    "name_kr": "스틸_브리스트"
+  },
+  {
+    "name_en": "Red_Polyfeather_Hat",
+    "name_kr": "적궁우"
+  },
+  {
+    "name_en": "MT-09's_Fuel",
+    "name_kr": "MT-09의_연료"
+  },
+  {
+    "name_en": "Pink-Flowered_Earrings",
+    "name_kr": "분홍꽃_귀고리"
+  },
+  {
+    "name_en": "Moon_Rock",
+    "name_kr": "달의_돌"
+  },
+  {
+    "name_en": "Mithri_Brist",
+    "name_kr": "미스릴_브리스트"
+  },
+  {
+    "name_en": "Brown_China_Pants",
+    "name_kr": "황일_바지"
+  },
+  {
+    "name_en": "Sparta",
+    "name_kr": "그리스"
+  },
+  {
+    "name_en": "Silver_Legend_Shield",
+    "name_kr": "실버_레전드_실드"
+  },
+  {
+    "name_en": "The_Shining",
+    "name_kr": "샤이닝"
+  },
+  {
+    "name_en": "100_Year_Old_Bellflower",
+    "name_kr": "100년_묵은_도라지"
+  },
+  {
+    "name_en": "Black_Hunter",
+    "name_kr": "블랙_헌트"
+  },
+  {
+    "name_en": "Venon",
+    "name_kr": "베논"
+  },
+  {
+    "name_en": "Red_Orientican",
+    "name_kr": "레드_오리엔타이칸"
+  },
+  {
+    "name_en": "Red_Orientican_Pants",
+    "name_kr": "레드_오리엔타이칸_바지"
+  },
+  {
+    "name_en": "Malady's_Experimental_Frog",
+    "name_kr": "멜러디의_실험용_개구리"
+  },
+  {
+    "name_en": "White_Calaf",
+    "name_kr": "화이트_칼라프"
+  },
+  {
+    "name_en": "Green_Orientican_Pants",
+    "name_kr": "그린_오리엔타이칸_바지"
+  },
+  {
+    "name_en": "Green_Orientican",
+    "name_kr": "그린_오리엔타이칸"
+  },
+  {
+    "name_en": "Asianic_Bow",
+    "name_kr": "봉황위궁"
+  },
+  {
+    "name_en": "Steal_Pow",
+    "name_kr": "스틸_파우"
+  },
+  {
+    "name_en": "Stone_Golem_Rubble",
+    "name_kr": "스톤골렘의_돌조각"
+  },
+  {
+    "name_en": "Red_Cross_Shield",
+    "name_kr": "레드_크로스_실드"
+  },
+  {
+    "name_en": "Scroll_for_Crossbow_for_ATT_60%",
+    "name_kr": "석궁_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Bronze_Identity",
+    "name_kr": "브론즈_하이드후드"
+  },
+  {
+    "name_en": "Green_Ice_Queen",
+    "name_kr": "그린_트란도트"
+  },
+  {
+    "name_en": "Green_Ice_Queen_Skirt",
+    "name_kr": "그린_트란도트_치마"
+  },
+  {
+    "name_en": "Hawkhead",
+    "name_kr": "호크헤드"
+  },
+  {
+    "name_en": "Old_Paper",
+    "name_kr": "낡은_종이"
+  },
+  {
+    "name_en": "Blue_Tai",
+    "name_kr": "청자로"
+  },
+  {
+    "name_en": "Skylar",
+    "name_kr": "방천극"
+  },
+  {
+    "name_en": "The_Book_Ghost's_Sheet_of_Paper",
+    "name_kr": "비급의_낱장"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_DEX_60%",
+    "name_kr": "귀_장식_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Black_Mushroom_Spore",
+    "name_kr": "검은_포자"
+  },
+  {
+    "name_en": "Hector's_Tail",
+    "name_kr": "헥터의_꼬리"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_DEX_60%",
+    "name_kr": "망토_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Green_Adventurer_Cape",
+    "name_kr": "그린_모험가의_망토"
+  },
+  {
+    "name_en": "Green_Maro",
+    "name_kr": "녹마로"
+  },
+  {
+    "name_en": "The_Blessing",
+    "name_kr": "플루튬"
+  },
+  {
+    "name_en": "Serpent's_Coil",
+    "name_kr": "스네이크"
+  },
+  {
+    "name_en": "Dark_Jr_Yeti_Skin",
+    "name_kr": "다크_주니어_예티의_가죽"
+  },
+  {
+    "name_en": "Holy_Cross_Earrings",
+    "name_kr": "홀리_크로스링"
+  },
+  {
+    "name_en": "Blue_Magic_호Cape",
+    "name_kr": "파란색_마법의_망토"
+  },
+  {
+    "name_en": "Gold_Moss_Boots",
+    "name_kr": "골드_모스부츠"
+  },
+  {
+    "name_en": "Sephia_Garner",
+    "name_kr": "세피아_가너"
+  },
+  {
+    "name_en": "Three-Tailed_Foxtail",
+    "name_kr": "삼미호의_꼬리"
+  },
+  {
+    "name_en": "White_Anakarune",
+    "name_kr": "화이트_아나카룬"
+  },
+  {
+    "name_en": "Holy_Spear",
+    "name_kr": "십자창"
+  },
+  {
+    "name_en": "Ocher_Scorpio",
+    "name_kr": "오우커_스콜피오"
+  },
+  {
+    "name_en": "Ocher_Scorpio_Pants",
+    "name_kr": "오우커_스콜피오_바지"
+  },
+  {
+    "name_en": "Bear_Foot",
+    "name_kr": "곰발바닥"
+  },
+  {
+    "name_en": "Yellow_Belt",
+    "name_kr": "노란_허리띠"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_LUK_100%",
+    "name_kr": "전신_갑옷_행운_주문서_100%"
+  },
+  {
+    "name_en": "Tough_Leather",
+    "name_kr": "거친_가죽"
+  },
+  {
+    "name_en": "Blue_Orientican",
+    "name_kr": "블루_오리엔타이칸"
+  },
+  {
+    "name_en": "Blue_Ice_Queen",
+    "name_kr": "블루_트란도트"
+  },
+  {
+    "name_en": "Gold_Manute",
+    "name_kr": "골드_마누트"
+  },
+  {
+    "name_en": "Blue_Gore_Boots",
+    "name_kr": "블루_고어부츠"
+  },
+  {
+    "name_en": "Zombie's_Lost_Tooth",
+    "name_kr": "좀비의_잃어버린_어금니"
+  },
+  {
+    "name_en": "Green_Seraphis",
+    "name_kr": "그린_세라피스"
+  },
+  {
+    "name_en": "Red_Magic_Cape",
+    "name_kr": "레드_마법의_망토"
+  },
+  {
+    "name_en": "Blue_Orientican_Pants",
+    "name_kr": "블루_오리엔타이칸_바지"
+  },
+  {
+    "name_en": "White_Polyfeather_Hat",
+    "name_kr": "백궁우"
+  },
+  {
+    "name_en": "Storybook_Black_Book",
+    "name_kr": "[스토리북]_검은책"
+  },
+  {
+    "name_en": "Rib",
+    "name_kr": "갈비뼈"
+  },
+  {
+    "name_en": "Silver_Planet",
+    "name_kr": "실버_플레닛"
+  },
+  {
+    "name_en": "Red_Infinium_Circlet",
+    "name_kr": "레드_키튼서클렛"
+  },
+  {
+    "name_en": "Brown_Nightfox",
+    "name_kr": "브라운_루크"
+  },
+  {
+    "name_en": "Beige_Patriot",
+    "name_kr": "베이지_웨어캡"
+  },
+  {
+    "name_en": "Zombie's_Lost_Tooth",
+    "name_kr": "좀비의_잃어버리_어금니"
+  },
+  {
+    "name_en": "Zombie's_Lost_Gold_Tooth",
+    "name_kr": "좀비의_잃어버린_금니"
+  },
+  {
+    "name_en": "White_Magic_Cape",
+    "name_kr": "흰색_마법의_망토"
+  },
+  {
+    "name_en": "Brown_Choro",
+    "name_kr": "황초로"
+  },
+  {
+    "name_en": "Adamantium_Legend_Shield",
+    "name_kr": "아다만티움_레전드_실드"
+  },
+  {
+    "name_en": "Gold_Pow",
+    "name_kr": "골드_파우"
+  },
+  {
+    "name_en": "Blue_Oriental_Helmet",
+    "name_kr": "블루_오리엔트_헬멧"
+  },
+  {
+    "name_en": "Blue_Seraphis",
+    "name_kr": "블루_세라피스"
+  },
+  {
+    "name_en": "Purple_Mystique",
+    "name_kr": "퍼플_루티드"
+  },
+  {
+    "name_en": "Purple_Mystique_Pants",
+    "name_kr": "퍼플_루티드_바지"
+  },
+  {
+    "name_en": "White_Fang's_Tail",
+    "name_kr": "화이트팽의_꼬리"
+  },
+  {
+    "name_en": "Blue_Anakamoon",
+    "name_kr": "블루_아나카문"
+  },
+  {
+    "name_en": "Red_Oriental_Helmet",
+    "name_kr": "레드_오리엔트_헬멧"
+  },
+  {
+    "name_en": "Blue_Gaia_Cape",
+    "name_kr": "파란색_가이아의_망토"
+  },
+  {
+    "name_en": "Dark_Stone_Golem_Rubble",
+    "name_kr": "다크_스톤골렘의_돌조각"
+  },
+  {
+    "name_en": "Old_Steel_Nordic_Helm",
+    "name_kr": "낡은_스틸_노르만_헬름"
+  },
+  {
+    "name_en": "Dark_Manute",
+    "name_kr": "다크_마누트"
+  },
+  {
+    "name_en": "Black_Magic_Cape",
+    "name_kr": "블랙_마법의_망토"
+  },
+  {
+    "name_en": "Dark_Identity",
+    "name_kr": "다크_하이드후드"
+  },
+  {
+    "name_en": "Blue_Goldrunners",
+    "name_kr": "블루_앵클부츠"
+  },
+  {
+    "name_en": "Evil_Wings",
+    "name_kr": "이블윙즈"
+  },
+  {
+    "name_en": "Burning_Hell",
+    "name_kr": "버닝헬"
+  },
+  {
+    "name_en": "Ancient_Scroll",
+    "name_kr": "고대의_주문서"
+  },
+  {
+    "name_en": "Green_Gore_Boots",
+    "name_kr": "그린_고어부츠"
+  },
+  {
+    "name_en": "Silver_Identity",
+    "name_kr": "실버_하이드후드"
+  },
+  {
+    "name_en": "Broken_Deer_Horn",
+    "name_kr": "부러진_사슴의_뿔"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_HP_60%",
+    "name_kr": "상의_체력_주문서_60%"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_STR_10%",
+    "name_kr": "전신_갑옷_힘_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Shield_for_HP_10%",
+    "name_kr": "방패_체력_주문서_10%"
+  },
+  {
+    "name_en": "Mixed_Block",
+    "name_kr": "Mixed_Block"
+  },
+  {
+    "name_en": "Light_Mantis_Pants",
+    "name_kr": "라이트_맨티스_바지"
+  },
+  {
+    "name_en": "Evil_Tale",
+    "name_kr": "이블윙즈"
+  },
+  {
+    "name_en": "Steely_Throwing_Knives",
+    "name_kr": "뇌전_수리검"
+  },
+  {
+    "name_en": "Dark_Anakamoon",
+    "name_kr": "다크_아나카문"
+  },
+  {
+    "name_en": "Dark_Seraphis",
+    "name_kr": "다크_세라피스"
+  },
+  {
+    "name_en": "Pink_Goldrunners",
+    "name_kr": "핑크_앵클부츠"
+  },
+  {
+    "name_en": "Orihalcon_Camel_Boots",
+    "name_kr": "오리할콘_카멜부츠"
+  },
+  {
+    "name_en": "Dark_Scorpio",
+    "name_kr": "다크_스콜피오"
+  },
+  {
+    "name_en": "Dark_Scorpio_Pants",
+    "name_kr": "다크_스콜피오_바지"
+  },
+  {
+    "name_en": "Red_Gaia_Cape",
+    "name_kr": "빨간색_가이아의_망토"
+  },
+  {
+    "name_en": "Mithril_Platine_Pants",
+    "name_kr": "미스릴_플라틴_바지"
+  },
+  {
+    "name_en": "Mithril_Platine",
+    "name_kr": "미스릴_플라틴"
+  },
+  {
+    "name_en": "Gold_Lapiz_Sandals",
+    "name_kr": "골드_라피스_샌들"
+  },
+  {
+    "name_en": "Blue_Mystique_Shoes",
+    "name_kr": "블루_루티드_슈즈"
+  },
+  {
+    "name_en": "Blue_Eyes",
+    "name_kr": "블루_아이즈"
+  },
+  {
+    "name_en": "Red_Belt",
+    "name_kr": "빨간_허리띠"
+  },
+  {
+    "name_en": "Blue_Magic_Cape",
+    "name_kr": "파란색_마법의_망토"
+  },
+  {
+    "name_en": "Black_Pirate's_Bandana",
+    "name_kr": "블랙_파이렛츠_반다나"
+  },
+  {
+    "name_en": "Broom",
+    "name_kr": "빗자루"
+  },
+  {
+    "name_en": "Pepe_Beak",
+    "name_kr": "페페의_부리"
+  },
+  {
+    "name_en": "Dark_Orientican",
+    "name_kr": "다크_오리엔타이칸"
+  },
+  {
+    "name_en": "Dark_Orientican_Pants",
+    "name_kr": "다크_오리엔타이칸_바지"
+  },
+  {
+    "name_en": "Orange_Goldrunners",
+    "name_kr": "오렌지_앵클부츠"
+  },
+  {
+    "name_en": "Sapphire_Clench",
+    "name_kr": "사파이어_클랜치"
+  },
+  {
+    "name_en": "Black_Gaia_Cape",
+    "name_kr": "검은색_가이아의_망토"
+  },
+  {
+    "name_en": "Blue_Lapiz_Sandals",
+    "name_kr": "블루_라피스_샌들"
+  },
+  {
+    "name_en": "Blue_Patriot",
+    "name_kr": "블루_웨어캡"
+  },
+  {
+    "name_en": "Red_Katana",
+    "name_kr": "레드_카타나"
+  },
+  {
+    "name_en": "Bronze_Rover",
+    "name_kr": "브론즈_와이어스"
+  },
+  {
+    "name_en": "Scroll_for_Topwear_for_STR_60%",
+    "name_kr": "상의_힘_주문서_60%"
+  },
+  {
+    "name_en": "Ghost_Headband",
+    "name_kr": "망령의_삼각두건"
+  },
+  {
+    "name_en": "Ramen",
+    "name_kr": "라면"
+  },
+  {
+    "name_en": "Grape_Juice",
+    "name_kr": "포도_주스"
+  },
+  {
+    "name_en": "Fan",
+    "name_kr": "부채채"
+  },
+  {
+    "name_en": "Red_Tai",
+    "name_kr": "적자로"
+  },
+  {
+    "name_en": "Cucumber",
+    "name_kr": "오이"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_LUK_60%",
+    "name_kr": "전신_갑옷_행운_주문서_60%"
+  },
+  {
+    "name_en": "Buffy's_Hat",
+    "name_kr": "버피의_모자"
+  },
+  {
+    "name_en": "Dark_Clench",
+    "name_kr": "다크_클랜치"
+  },
+  {
+    "name_en": "Dark_Moss_Boots",
+    "name_kr": "다크_모스부츠"
+  },
+  {
+    "name_en": "Blue_Choro",
+    "name_kr": "청초로"
+  },
+  {
+    "name_en": "Neocora",
+    "name_kr": "네오코라"
+  },
+  {
+    "name_en": "Red_Hinkel",
+    "name_kr": "레드_힌켈"
+  },
+  {
+    "name_en": "Brown_Lorin",
+    "name_kr": "브라운_로린"
+  },
+  {
+    "name_en": "Mikhail",
+    "name_kr": "미하일"
+  },
+  {
+    "name_en": "Red_Mystique_Shoes",
+    "name_kr": "레드_루티드_슈즈"
+  },
+  {
+    "name_en": "Red_Viska",
+    "name_kr": "레드_비스카"
+  },
+  {
+    "name_en": "Peach_Seed",
+    "name_kr": "천도씨앗"
+  },
+  {
+    "name_en": "Red_Pirate_Top",
+    "name_kr": "레드_피라테"
+  },
+  {
+    "name_en": "Red_Pirate_Pants",
+    "name_kr": "레드_피라테_바지"
+  },
+  {
+    "name_en": "White_Anakamoon",
+    "name_kr": "화이트_아나카문"
+  },
+  {
+    "name_en": "Black_Voyson_Shoes",
+    "name_kr": "블랙_보이슨_슈즈"
+  },
+  {
+    "name_en": "Vital_Bullet",
+    "name_kr": "바이탈_불릿"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_HP_10%",
+    "name_kr": "귀_장식_체력_주문서_10%"
+  },
+  {
+    "name_en": "Power_Elixir",
+    "name_kr": "파워_엘릭서"
+  },
+  {
+    "name_en": "Blood_Gigantic",
+    "name_kr": "블러드_기간틱"
+  },
+  {
+    "name_en": "Brown_Requierre",
+    "name_kr": "브라운_레퀴에르"
+  },
+  {
+    "name_en": "Blue_Carzen_Boots",
+    "name_kr": "블루_카젠부츠"
+  },
+  {
+    "name_en": "Red_Mystique",
+    "name_kr": "레드_루티드"
+  },
+  {
+    "name_en": "Red_Mystique_Pants",
+    "name_kr": "레드_루티드_바지"
+  },
+  {
+    "name_en": "Black_Bisk",
+    "name_kr": "블랙_비스크"
+  },
+  {
+    "name_en": "Wild_Kargo_Eye",
+    "name_kr": "와일드카고의_눈동자"
+  },
+  {
+    "name_en": "Pelvic_Bone",
+    "name_kr": "골반뼈"
+  },
+  {
+    "name_en": "Bronze_Husk",
+    "name_kr": "브론즈_허스크"
+  },
+  {
+    "name_en": "Silver_Rover",
+    "name_kr": "실버_와이어스"
+  },
+  {
+    "name_en": "Beia_Crash",
+    "name_kr": "베이아_크래쉬"
+  },
+  {
+    "name_en": "Zombie_Teddy_Bear",
+    "name_kr": "좀비테니_인형"
+  },
+  {
+    "name_en": "Dark_Garner",
+    "name_kr": "다크_가너"
+  },
+  {
+    "name_en": "Blood_Camel_Boots",
+    "name_kr": "블러드_카멜부츠"
+  },
+  {
+    "name_en": "Sapphire_Gigantic",
+    "name_kr": "사파이어_기간틱"
+  },
+  {
+    "name_en": "Gold_Drop_Earrings",
+    "name_kr": "골드드롭_이어링"
+  },
+  {
+    "name_en": "Blue_Lorin",
+    "name_kr": "블루_로린"
+  },
+  {
+    "name_en": "Violet_Platina",
+    "name_kr": "바이올렛_플라티나"
+  },
+  {
+    "name_en": "Violet_Platina_Pants",
+    "name_kr": "바이올렛_플라티나_바지"
+  },
+  {
+    "name_en": "Abyss_Shooter",
+    "name_kr": "어비스_슈터"
+  },
+  {
+    "name_en": "Dark_Pepe_Beak",
+    "name_kr": "다크_페페의_부리"
+  },
+  {
+    "name_en": "Old_Bronze_Nordic_Helm",
+    "name_kr": "낡은_브론즈_노르만_헬름"
+  },
+  {
+    "name_en": "Brown_Polyfeather_Hat",
+    "name_kr": "토궁우"
+  },
+  {
+    "name_en": "Dark_Gigantic",
+    "name_kr": "다크_기간틱"
+  },
+  {
+    "name_en": "Blue_Requierre",
+    "name_kr": "블루_레퀴에르"
+  },
+  {
+    "name_en": "Blue_Elf_Shoes",
+    "name_kr": "블루_리넥스슈즈"
+  },
+  {
+    "name_en": "Purple_Carzen_Boots",
+    "name_kr": "퍼플_카젠부츠"
+  },
+  {
+    "name_en": "Purple_Mystique_Shoes",
+    "name_kr": "퍼플_루티드_슈즈"
+  },
+  {
+    "name_en": "Mr_Alli's_Leather",
+    "name_kr": "게비알의_가죽"
+  },
+  {
+    "name_en": "Green_Lineros",
+    "name_kr": "그린_리네로스"
+  },
+  {
+    "name_en": "Dark_Lineros",
+    "name_kr": "다크_리네로스"
+  },
+  {
+    "name_en": "Orihalcon_Platine",
+    "name_kr": "오리할콘_플라틴"
+  },
+  {
+    "name_en": "Orihalcon_Platine_Pants",
+    "name_kr": "오리할콘_플라틴_바지"
+  },
+  {
+    "name_en": "Dark_Studded_Top",
+    "name_kr": "다크_스타드"
+  },
+  {
+    "name_en": "Dark_Studded_Pants",
+    "name_kr": "다크_스타드_바지"
+  },
+  {
+    "name_en": "Sparta",
+    "name_kr": "스파타"
+  },
+  {
+    "name_en": "Red_Lapiz_Sandals",
+    "name_kr": "레드_라피스_샌들"
+  },
+  {
+    "name_en": "Ice_Backbone",
+    "name_kr": "얼음_등뼈"
+  },
+  {
+    "name_en": "Yeti_Horn",
+    "name_kr": "예티의_뿔"
+  },
+  {
+    "name_en": "Blue_Moon",
+    "name_kr": "청월"
+  },
+  {
+    "name_en": "Dark_Anakarune",
+    "name_kr": "다크_아나카룬"
+  },
+  {
+    "name_en": "Blue_Lineros",
+    "name_kr": "블루_리네로스"
+  },
+  {
+    "name_en": "Gold_Eyes",
+    "name_kr": "골드_아이즈"
+  },
+  {
+    "name_en": "Brown_Scarab",
+    "name_kr": "황갑충"
+  },
+  {
+    "name_en": "Cat_Doll",
+    "name_kr": "고양이_인형"
+  },
+  {
+    "name_en": "Steel_Ancient_Shield",
+    "name_kr": "스틸_에이션트_실드"
+  },
+  {
+    "name_en": "Golden_River",
+    "name_kr": "금강저"
+  },
+  {
+    "name_en": "Soul_of_Cat",
+    "name_kr": "고양이의_영혼"
+  },
+  {
+    "name_en": "Lazy_Buffy's_Marble",
+    "name_kr": "레이지_버피의_구슬"
+  },
+  {
+    "name_en": "Old_Mithri_lNordic_Helm",
+    "name_kr": "낡은_미스릴_노르만_헬름"
+  },
+  {
+    "name_en": "Blue_Linnex",
+    "name_kr": "블루_리넥스"
+  },
+  {
+    "name_en": "Redemption",
+    "name_kr": "스페판"
+  },
+  {
+    "name_en": "Metal_Silver_Earrings",
+    "name_kr": "메탈실버_이어링"
+  },
+  {
+    "name_en": "Scroll_for_Earring_for_DEX_10%",
+    "name_kr": "귀_장식_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Free_Spirit",
+    "name_kr": "자유로운_영혼"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_LUK_60%",
+    "name_kr": "망토_행운_주문서_60%"
+  },
+  {
+    "name_en": "Black_Polyfeather_Hat",
+    "name_kr": "흑궁우"
+  },
+  {
+    "name_en": "Green_Elf_Shoes",
+    "name_kr": "그린_리넥스슈즈"
+  },
+  {
+    "name_en": "Brown_Lapiz_Sandals",
+    "name_kr": "브라운_라피스_샌들"
+  },
+  {
+    "name_en": "Mark_of_the_Pirate",
+    "name_kr": "해적의_표식"
+  },
+  {
+    "name_en": "Green_Scarab",
+    "name_kr": "녹갑충"
+  },
+  {
+    "name_en": "Red_Ades",
+    "name_kr": "레드_아데스"
+  },
+  {
+    "name_en": "Red_Battle_Lord",
+    "name_kr": "레드_배틀로드"
+  },
+  {
+    "name_en": "Red_Battle_Empress",
+    "name_kr": "레드_배틀엠프리스"
+  },
+  {
+    "name_en": "Dark_Patriot",
+    "name_kr": "다크_웨어캡"
+  },
+  {
+    "name_en": "Dark_Yeti_Horn",
+    "name_kr": "다크_예티의_뿔"
+  },
+  {
+    "name_en": "White_Seraphis",
+    "name_kr": "화이트_세라피스"
+  },
+  {
+    "name_en": "Aqua_Platina_Pants",
+    "name_kr": "아쿠아_플라티나_바지"
+  },
+  {
+    "name_en": "Aqua_Platina",
+    "name_kr": "아쿠아_플라티나"
+  },
+  {
+    "name_en": "Green_Linnex_Shoes",
+    "name_kr": "그린_리넥스_신발"
+  },
+  {
+    "name_en": "Gold_Rover",
+    "name_kr": "골드_와이어스"
+  },
+  {
+    "name_en": "Green_Galaxy",
+    "name_kr": "그린_크로스햇"
+  },
+  {
+    "name_en": "Red_Dragon_Barbute",
+    "name_kr": "레드_드래곤_바부타"
+  },
+  {
+    "name_en": "Dark_Drake's_Horn",
+    "name_kr": "다크_드레이크의_뿔"
+  },
+  {
+    "name_en": "Gold_Ancient_Shield",
+    "name_kr": "골드_에이션트_실드"
+  },
+  {
+    "name_en": "Chrono",
+    "name_kr": "크로노"
+  },
+  {
+    "name_en": "Red_Cordon",
+    "name_kr": "레드_코든"
+  },
+  {
+    "name_en": "Blue_Mystique_Pants",
+    "name_kr": "블루_루티드_바지"
+  },
+  {
+    "name_en": "Blue_Mystique",
+    "name_kr": "블루_루티드"
+  },
+  {
+    "name_en": "Green_Pirate_Boots",
+    "name_kr": "그린_피레타부츠"
+  },
+  {
+    "name_en": "Angel_Wings",
+    "name_kr": "엔젤윙즈"
+  },
+  {
+    "name_en": "Scroll_for_Bottomwear_for_DEX_60%",
+    "name_kr": "하의_민첩성_주문서_60%"
+  },
+  {
+    "name_en": "Half_Earrings",
+    "name_kr": "하프_이어링"
+  },
+  {
+    "name_en": "Doombringer",
+    "name_kr": "그륜힐"
+  },
+  {
+    "name_en": "Hwabi_Throwing_Stars",
+    "name_kr": "화비_표창"
+  },
+  {
+    "name_en": "Sealed-Up_Grandpa_Clock",
+    "name_kr": "봉인된_괘종시계"
+  },
+  {
+    "name_en": "Sunrise_Dew",
+    "name_kr": "새벽의_이슬"
+  },
+  {
+    "name_en": "Bronze_Gigantic",
+    "name_kr": "브론즈_기간틱"
+  },
+  {
+    "name_en": "Mithril_Husk",
+    "name_kr": "미스릴_허스크"
+  },
+  {
+    "name_en": "The_Judgement",
+    "name_kr": "스튬"
+  },
+  {
+    "name_en": "Blue_Enigmatic",
+    "name_kr": "블루_크리시스"
+  },
+  {
+    "name_en": "Blue_Wing_Boots",
+    "name_kr": "블루_윙부츠"
+  },
+  {
+    "name_en": "Sapphire_Emperor",
+    "name_kr": "사파이어_엠퍼러"
+  },
+  {
+    "name_en": "Blue_Studded_Top",
+    "name_kr": "블루_스타드"
+  },
+  {
+    "name_en": "Blue_Studded_Pants",
+    "name_kr": "블루_스타드_바지"
+  },
+  {
+    "name_en": "Blue_Hinkel",
+    "name_kr": "블루_힌켈"
+  },
+  {
+    "name_en": "Mithril_Planet",
+    "name_kr": "미스릴_플레닛"
+  },
+  {
+    "name_en": "Blue_Cordon",
+    "name_kr": "블루_코든"
+  },
+  {
+    "name_en": "Blue_Scarab",
+    "name_kr": "청갑충"
+  },
+  {
+    "name_en": "White_Gaia_Cape",
+    "name_kr": "흰색_가이아의_망토"
+  },
+  {
+    "name_en": "Kandine",
+    "name_kr": "칸디네"
+  },
+  {
+    "name_en": "Gigantic_Sledge",
+    "name_kr": "호프만"
+  },
+  {
+    "name_en": "Captain's_Hat",
+    "name_kr": "선장의_모자"
+  },
+  {
+    "name_en": "Silver_Ancient_Shield",
+    "name_kr": "실버_에이션트_실드"
+  },
+  {
+    "name_en": "Gross_Jaeger",
+    "name_kr": "그로스야거"
+  },
+  {
+    "name_en": "Cerebes'_Tooth",
+    "name_kr": "불독의_송곳니"
+  },
+  {
+    "name_en": "Dark_Requiem",
+    "name_kr": "다크_레퀴엠"
+  },
+  {
+    "name_en": "Brown_Requiem",
+    "name_kr": "브라운_레퀴엠"
+  },
+  {
+    "name_en": "Baige_Elf_Shoes",
+    "name_kr": "베이지_리넥스슈즈"
+  },
+  {
+    "name_en": "Dark_Husk",
+    "name_kr": "다크_허스크"
+  },
+  {
+    "name_en": "Dark_Eyes",
+    "name_kr": "다크_아이즈"
+  },
+  {
+    "name_en": "Pink_Mystique",
+    "name_kr": "핑크_루티드"
+  },
+  {
+    "name_en": "Pink_Mystique_Pants",
+    "name_kr": "핑크_루티드_바지"
+  },
+  {
+    "name_en": "Metal_Heart_Earrings",
+    "name_kr": "메탈하트_이어링"
+  },
+  {
+    "name_en": "Phoenix_Wand",
+    "name_kr": "피닉스_완드"
+  },
+  {
+    "name_en": "Horse_Skull",
+    "name_kr": "말_머리뼈"
+  },
+  {
+    "name_en": "Beige_Lineros",
+    "name_kr": "베이지_리네로스"
+  },
+  {
+    "name_en": "Steel_Aquila_Shield",
+    "name_kr": "스틸_아퀼라_실드"
+  },
+  {
+    "name_en": "Red_Rivers_Boots",
+    "name_kr": "레드_리버스부츠"
+  },
+  {
+    "name_en": "Green_Enigma_Shoes",
+    "name_kr": "그린_크리시아슈즈"
+  },
+  {
+    "name_en": "Blue_Halfglove",
+    "name_kr": "블루얼_하프글로브"
+  },
+  {
+    "name_en": "Lucida_Tail",
+    "name_kr": "루이넬의_꼬리"
+  },
+  {
+    "name_en": "Sapphire_Camel_Boots",
+    "name_kr": "사파이어_카멜부츠"
+  },
+  {
+    "name_en": "Red_Requierre",
+    "name_kr": "레드_레퀴에르"
+  },
+  {
+    "name_en": "Bronze_Planet",
+    "name_kr": "브론즈_플레닛"
+  },
+  {
+    "name_en": "Blue_Infinium_Circlet",
+    "name_kr": "블루_키튼서클렛"
+  },
+  {
+    "name_en": "Green_Linnex",
+    "name_kr": "그린_리넥스"
+  },
+  {
+    "name_en": "Green_Pirate_Top",
+    "name_kr": "그린_피라테"
+  },
+  {
+    "name_en": "Green_Pirate_Pants",
+    "name_kr": "그린_피라테_바지"
+  },
+  {
+    "name_en": "Blue_Falcon",
+    "name_kr": "블루_골드윙캡"
+  },
+  {
+    "name_en": "Blue_Pageant",
+    "name_kr": "블루얼_페긴트"
+  },
+  {
+    "name_en": "Storybook_Formula_for_Black_Cloud",
+    "name_kr": "[스토리북]_검은구름_제조법"
+  },
+  {
+    "name_en": "Buffoon's_Grandpa_Clock",
+    "name_kr": "버푼의_괘종시계"
+  },
+  {
+    "name_en": "Blue_Ice_Queen_Skirt",
+    "name_kr": "블루_트란도트_치마"
+  },
+  {
+    "name_en": "The_Gold_Dragon",
+    "name_kr": "황룡도"
+  },
+  {
+    "name_en": "Blue_Clarity",
+    "name_kr": "블루_와이즈"
+  },
+  {
+    "name_en": "Blue_Battle_Lord",
+    "name_kr": "블루_배틀로드"
+  },
+  {
+    "name_en": "Infinity's_Wrath",
+    "name_kr": "인피니티"
+  },
+  {
+    "name_en": "Taurospear_Horn",
+    "name_kr": "타우로스피어의_뿔"
+  },
+  {
+    "name_en": "Golden_Hinkel",
+    "name_kr": "골든_힌켈"
+  },
+  {
+    "name_en": "Dark_Lorin",
+    "name_kr": "다크_로린"
+  },
+  {
+    "name_en": "Dark_Elf_Shoes",
+    "name_kr": "다크_리넥스슈즈"
+  },
+  {
+    "name_en": "White_Nightfox",
+    "name_kr": "화이트_루크"
+  },
+  {
+    "name_en": "Red_Seraph_Cape",
+    "name_kr": "빨간색_세라프의_망토"
+  },
+  {
+    "name_en": "Dark_Ritual",
+    "name_kr": "레이든_스태프"
+  },
+  {
+    "name_en": "Green_Enigma",
+    "name_kr": "그린_크리시아"
+  },
+  {
+    "name_en": "Brown_Pireta_Hat",
+    "name_kr": "브라운_피레타햇"
+  },
+  {
+    "name_en": "Green_Pris",
+    "name_kr": "그린_프리스"
+  },
+  {
+    "name_en": "Blue_Rivers_Boots",
+    "name_kr": "블루_리버스부츠"
+  },
+  {
+    "name_en": "Storybook_Indecipherable_Book",
+    "name_kr": "[스토리북]_Indecipherable_Book"
+  },
+  {
+    "name_en": "Werewolf's_Toenail",
+    "name_kr": "웨어울프의_발톱"
+  },
+  {
+    "name_en": "Dark_Infinium_Circlet",
+    "name_kr": "다크_키튼서클렛"
+  },
+  {
+    "name_en": "Green_Patriot",
+    "name_kr": "그린_웨어캡"
+  },
+  {
+    "name_en": "Black_Scarab",
+    "name_kr": "흑갑충"
+  },
+  {
+    "name_en": "Bent_Judgement",
+    "name_kr": "모던스튬"
+  },
+  {
+    "name_en": "Purple_Galaxy",
+    "name_kr": "퍼플_크로스햇"
+  },
+  {
+    "name_en": "Blue_Dragon_Barbute",
+    "name_kr": "블루_드래곤_바부타"
+  },
+  {
+    "name_en": "Red_Pria",
+    "name_kr": "레드_프리아"
+  },
+  {
+    "name_en": "Green_Pirate_Blouse",
+    "name_kr": "그린_피라티드"
+  },
+  {
+    "name_en": "Green_Pirate_Skirt",
+    "name_kr": "그린_피라티드_치마"
+  },
+  {
+    "name_en": "Evil_Spirit",
+    "name_kr": "사악한_영혼"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_INT_60%",
+    "name_kr": "전신_갑옷_지력_주문서_60%"
+  },
+  {
+    "name_en": "Dark_Requierre",
+    "name_kr": "다크_레퀴에르"
+  },
+  {
+    "name_en": "Bloody_Platina",
+    "name_kr": "블러디_플라티나"
+  },
+  {
+    "name_en": "Bloody_Platina_Pants",
+    "name_kr": "블러디_플라티나_바지"
+  },
+  {
+    "name_en": "Purple_Enigma",
+    "name_kr": "퍼플_크리시아"
+  },
+  {
+    "name_en": "Green_Falcon",
+    "name_kr": "그린_골드윙캡"
+  },
+  {
+    "name_en": "Dark_Dragon_Barbute",
+    "name_kr": "다크_드래곤_바부타"
+  },
+  {
+    "name_en": "Deep_Buffoon's_Rock_Piece",
+    "name_kr": "딥_버푼의_돌조각"
+  },
+  {
+    "name_en": "Blue_Nightfox",
+    "name_kr": "블루_루크"
+  },
+  {
+    "name_en": "Dark_Enigma",
+    "name_kr": "다크_크리시아"
+  },
+  {
+    "name_en": "Red_Pirate_Boots",
+    "name_kr": "레드_피레타부츠"
+  },
+  {
+    "name_en": "Blood_Emperor",
+    "name_kr": "블러드_엠퍼러"
+  },
+  {
+    "name_en": "Scroll_for_Cape_for_DEX_10%",
+    "name_kr": "망토_민첩성_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Claw_for_ATT_10%",
+    "name_kr": "아대_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Green_Goldrunners",
+    "name_kr": "그린_앵클부츠"
+  },
+  {
+    "name_en": "Red_Requiem",
+    "name_kr": "레드_레퀴엠"
+  },
+  {
+    "name_en": "Dark_Enigmatic",
+    "name_kr": "다크_크리시스"
+  },
+  {
+    "name_en": "Lycanthrope's_Toenail",
+    "name_kr": "라이칸스로프의_발톱"
+  },
+  {
+    "name_en": "Blue_Screamer",
+    "name_kr": "청운검"
+  },
+  {
+    "name_en": "Ilbi_Throwing_Stars",
+    "name_kr": "일비_표창"
+  },
+  {
+    "name_en": "Blood_Nightfox",
+    "name_kr": "블러드_루크"
+  },
+  {
+    "name_en": "Dark_Linnex",
+    "name_kr": "다크_리넥스"
+  },
+  {
+    "name_en": "White_Seraph_Cape",
+    "name_kr": "흰색_세라프의_망토"
+  },
+  {
+    "name_en": "Purple_Enigma_Shoes",
+    "name_kr": "퍼플_크리시아슈즈"
+  },
+  {
+    "name_en": "Strawberry_Earrings",
+    "name_kr": "딸기_귀고리"
+  },
+  {
+    "name_en": "Green_Oriental_Fury_Coat",
+    "name_kr": "녹견랑포"
+  },
+  {
+    "name_en": "Red_Anes",
+    "name_kr": "레드_아네스"
+  },
+  {
+    "name_en": "Brown_Osfa_Boots",
+    "name_kr": "브라운_쉐도우부츠"
+  },
+  {
+    "name_en": "Purple_Imperial",
+    "name_kr": "퍼플_페로치"
+  },
+  {
+    "name_en": "Steelno",
+    "name_kr": "스틸르노"
+  },
+  {
+    "name_en": "Purple_Nightfox",
+    "name_kr": "퍼플_루크"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_INT_100%",
+    "name_kr": "전신_갑옷_지력_주문서_100%"
+  },
+  {
+    "name_en": "Khan",
+    "name_kr": "아츠"
+  },
+  {
+    "name_en": "Ghost_Pirate_Key",
+    "name_kr": "파이렛의_키"
+  },
+  {
+    "name_en": "Gold_Aquila_Shield",
+    "name_kr": "골드_아퀼라_실드"
+  },
+  {
+    "name_en": "Fire_Raven",
+    "name_kr": "파이어_샬리트"
+  },
+  {
+    "name_en": "Omega_Spear",
+    "name_kr": "호진공창"
+  },
+  {
+    "name_en": "Blue_Ades",
+    "name_kr": "블루_아데스"
+  },
+  {
+    "name_en": "Green_Osfa_Boots",
+    "name_kr": "그린_쉐도우부츠"
+  },
+  {
+    "name_en": "Green_Neli_Shoes",
+    "name_kr": "그린_넬리슈즈"
+  },
+  {
+    "name_en": "Green_Imperial",
+    "name_kr": "그린_페로치"
+  },
+  {
+    "name_en": "Blue_Sun_Boat_Hat",
+    "name_kr": "블루_샌프_보우트햇"
+  },
+  {
+    "name_en": "Scroll_for_One_Handed_Sword_for_Accuracy_100%",
+    "name_kr": "한손검_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Storybook_Unknown_Letter",
+    "name_kr": "[스토리북]_정체불명의_편지"
+  },
+  {
+    "name_en": "Sealed_Teddy_Bear",
+    "name_kr": "봉인된_테니인형"
+  },
+  {
+    "name_en": "All_Cure_Potion",
+    "name_kr": "만병통치약"
+  },
+  {
+    "name_en": "Sunset_Dew",
+    "name_kr": "황혼의_이슬"
+  },
+  {
+    "name_en": "Black_Seraph_Cape",
+    "name_kr": "검은색_세라프의_망토"
+  },
+  {
+    "name_en": "Helios",
+    "name_kr": "헬리오스"
+  },
+  {
+    "name_en": "Angelic_Betrayal",
+    "name_kr": "카타르"
+  },
+  {
+    "name_en": "Dark_Clarity",
+    "name_kr": "다크_와이즈"
+  },
+  {
+    "name_en": "Green_Larceny",
+    "name_kr": "그린_로버"
+  },
+  {
+    "name_en": "Green_Wing_Boots",
+    "name_kr": "그린_윙부츠"
+  },
+  {
+    "name_en": "Green_Pireta_Hat",
+    "name_kr": "그린_피레타햇"
+  },
+  {
+    "name_en": "Yellow_Battle_Empress",
+    "name_kr": "옐로우_배틀엠프리스"
+  },
+  {
+    "name_en": "Emerald_War_Greave",
+    "name_kr": "에메랄드_워_그리브"
+  },
+  {
+    "name_en": "Dark_Neli_Shoes",
+    "name_kr": "다크_넬리슈즈"
+  },
+  {
+    "name_en": "Green_Mystra",
+    "name_kr": "그린_미스트라"
+  },
+  {
+    "name_en": "Dual_Pirate's_Propeller",
+    "name_kr": "듀얼_파이렛의_추진기"
+  },
+  {
+    "name_en": "Dark_Pireta_Hat",
+    "name_kr": "다크_피레타햇"
+  },
+  {
+    "name_en": "Blue_Galaxy",
+    "name_kr": "블루_크로스햇"
+  },
+  {
+    "name_en": "Red_Pris",
+    "name_kr": "레드_프리스"
+  },
+  {
+    "name_en": "Green_Clarity",
+    "name_kr": "그린_와이즈"
+  },
+  {
+    "name_en": "Green_Osfa_Suit",
+    "name_kr": "그린_미스트슈트"
+  },
+  {
+    "name_en": "Green_Osfa_Pants",
+    "name_kr": "그린_미스트슈트_바지"
+  },
+  {
+    "name_en": "Orihalcon_War_Greave",
+    "name_kr": "오리할콘_워_그리브"
+  },
+  {
+    "name_en": "Red_Focus",
+    "name_kr": "레드_아데브"
+  },
+  {
+    "name_en": "Blue_Sage",
+    "name_kr": "블루_파쵸네"
+  },
+  {
+    "name_en": "Binding_Bridle",
+    "name_kr": "속박의_굴레"
+  },
+  {
+    "name_en": "Dark_Galaxy",
+    "name_kr": "다크_크로스햇"
+  },
+  {
+    "name_en": "Red_Falcon",
+    "name_kr": "레드_골드윙캡"
+  },
+  {
+    "name_en": "Dark_Pirate_Blouse",
+    "name_kr": "다크_피라티드"
+  },
+  {
+    "name_en": "Dark_Pirate_Skirt",
+    "name_kr": "다크_피라티드_치마"
+  },
+  {
+    "name_en": "Green_Battle_Lord",
+    "name_kr": "그린_배틀로드"
+  },
+  {
+    "name_en": "Green_Pria",
+    "name_kr": "그린_프리아"
+  },
+  {
+    "name_en": "Dark_Rivers_Boots",
+    "name_kr": "다크_리버스부츠"
+  },
+  {
+    "name_en": "Dark_Valkyrie",
+    "name_kr": "다크_발퀴레"
+  },
+  {
+    "name_en": "Blood_Valkyrie_Skirt",
+    "name_kr": "블러드_발퀴레_치마"
+  },
+  {
+    "name_en": "Red_Ades_Shoes",
+    "name_kr": "레드_아데스_신발"
+  },
+  {
+    "name_en": "Blue_Neli_Shoes",
+    "name_kr": "블루_넬리슈즈"
+  },
+  {
+    "name_en": "Purple_Mystra",
+    "name_kr": "퍼플_미스트라"
+  },
+  {
+    "name_en": "Bain's_Spiky_Collar",
+    "name_kr": "파이어독의_목걸이"
+  },
+  {
+    "name_en": "Dark_Carzen_Boots",
+    "name_kr": "다크_카젠부츠"
+  },
+  {
+    "name_en": "Gaea",
+    "name_kr": "리프_엑스"
+  },
+  {
+    "name_en": "Green_Cordon",
+    "name_kr": "그린_코든"
+  },
+  {
+    "name_en": "Dark_Emperor",
+    "name_kr": "다크_엠퍼러"
+  },
+  {
+    "name_en": "Silver_Aquila_Shield",
+    "name_kr": "실버_아퀼라_실드"
+  },
+  {
+    "name_en": "Dark_Pirate_Boots",
+    "name_kr": "다크_피레타부츠"
+  },
+  {
+    "name_en": "Dark_Pris",
+    "name_kr": "다크_프리스"
+  },
+  {
+    "name_en": "Golden_Arund",
+    "name_kr": "골든_아룬드"
+  },
+  {
+    "name_en": "Green_Osfa_Pants",
+    "name_kr": "그린_쉐이드슈트_바지"
+  },
+  {
+    "name_en": "Green_Osfa_Suit",
+    "name_kr": "그린_쉐이드슈트"
+  },
+  {
+    "name_en": "Red_Neli_Shoes",
+    "name_kr": "레드_넬리슈즈"
+  },
+  {
+    "name_en": "Green_Focus",
+    "name_kr": "그린_아데브"
+  },
+  {
+    "name_en": "Rose_Earrings",
+    "name_kr": "장미꽃_귀고리"
+  },
+  {
+    "name_en": "Red_Osfa_Boots",
+    "name_kr": "레드_쉐도우부츠"
+  },
+  {
+    "name_en": "White_Pioneer",
+    "name_kr": "화이트_피니얼"
+  },
+  {
+    "name_en": "Viking_Sail",
+    "name_kr": "바이킹_돛"
+  },
+  {
+    "name_en": "Green_Enigmatic",
+    "name_kr": "그린_크리시스"
+  },
+  {
+    "name_en": "Heaven's_Justice",
+    "name_kr": "골든해머"
+  },
+  {
+    "name_en": "Dark_Falcon",
+    "name_kr": "다크_골드윙캡"
+  },
+  {
+    "name_en": "Dark_Battle_Lord",
+    "name_kr": "다크_배틀로드"
+  },
+  {
+    "name_en": "Red_Pirate_Blouse",
+    "name_kr": "레드_피라티드"
+  },
+  {
+    "name_en": "Red_Pirate_Skirt",
+    "name_kr": "레드_피라티드_치마"
+  },
+  {
+    "name_en": "Blue_Pris",
+    "name_kr": "블루_프리스"
+  },
+  {
+    "name_en": "Emerald_Emperor",
+    "name_kr": "에메랄드_엠퍼러"
+  },
+  {
+    "name_en": "Blue_Battle_Empress",
+    "name_kr": "블루_배틀엠프리스"
+  },
+  {
+    "name_en": "Blue_Commodore",
+    "name_kr": "블루_제너럴"
+  },
+  {
+    "name_en": "Blue_Commodore_Pants",
+    "name_kr": "블루_제너럴_바지"
+  },
+  {
+    "name_en": "Purple_Osfa_Suit",
+    "name_kr": "퍼플_미스트슈트"
+  },
+  {
+    "name_en": "Purple_Osfa_Pants",
+    "name_kr": "퍼플_쉐이트슈트_바지"
+  },
+  {
+    "name_en": "Green_Sage",
+    "name_kr": "그린_파쵸네"
+  },
+  {
+    "name_en": "Black_Markintz",
+    "name_kr": "블랙_마르킨즈"
+  },
+  {
+    "name_en": "[Mastery_Book]_Dragon_Strike_20",
+    "name_kr": "[마스터리북]_드래곤_스트라이크_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Ninja_Ambush_20",
+    "name_kr": "[마스터리북]_닌자_앰부쉬_20"
+  },
+  {
+    "name_en": "Sealed_Bottle",
+    "name_kr": "봉인된_항아리"
+  },
+  {
+    "name_en": "Dragon's_Tail",
+    "name_kr": "용천권"
+  },
+  {
+    "name_en": "Dark_Cordon",
+    "name_kr": "다크_코든"
+  },
+  {
+    "name_en": "Dark_Pirate_Top",
+    "name_kr": "다크_피라테"
+  },
+  {
+    "name_en": "Dark_Pirate_Pants",
+    "name_kr": "다크_피라테_바지"
+  },
+  {
+    "name_en": "Fire_Arund",
+    "name_kr": "파이어_아룬드"
+  },
+  {
+    "name_en": "Blue_Pria",
+    "name_kr": "블루_프리아"
+  },
+  {
+    "name_en": "Red_Oriental_Fury_Coat",
+    "name_kr": "적견랑포"
+  },
+  {
+    "name_en": "Dark_Ades",
+    "name_kr": "다크_아데스"
+  },
+  {
+    "name_en": "Green_Commodore",
+    "name_kr": "그린_제너럴"
+  },
+  {
+    "name_en": "Green_Commodore_Pants",
+    "name_kr": "그린_제너럴_바지"
+  },
+  {
+    "name_en": "Red_Sage",
+    "name_kr": "레드_파쵸네"
+  },
+  {
+    "name_en": "The_Peacemaker",
+    "name_kr": "피스메이커"
+  },
+  {
+    "name_en": "Gigantic_Viking_Hat",
+    "name_kr": "기간틱_바이킹의_모자"
+  },
+  {
+    "name_en": "Heaven's_Gate",
+    "name_kr": "그레이트_로헨"
+  },
+  {
+    "name_en": "Red_Pireta_Hat",
+    "name_kr": "레드_피레타햇"
+  },
+  {
+    "name_en": "Dark_Battle_Empress",
+    "name_kr": "다크_배틀엠프리스"
+  },
+  {
+    "name_en": "Dark_Wing_Boots",
+    "name_kr": "다크_윙부츠"
+  },
+  {
+    "name_en": "Purple_Larceny",
+    "name_kr": "퍼플_로버"
+  },
+  {
+    "name_en": "Golden_Raven",
+    "name_kr": "골든_샬리트"
+  },
+  {
+    "name_en": "Blue_Oriental_Fury_Coat",
+    "name_kr": "청견랑포"
+  },
+  {
+    "name_en": "Blue_Anes",
+    "name_kr": "블루_아네스"
+  },
+  {
+    "name_en": "Brown_Osfa_Pants",
+    "name_kr": "브라운_쉐이트슈트_바지"
+  },
+  {
+    "name_en": "Brown_Osfa_Suit",
+    "name_kr": "브라운_미스트슈트"
+  },
+  {
+    "name_en": "Dark_Pachone",
+    "name_kr": "다크_판쵸네"
+  },
+  {
+    "name_en": "Two_Handed_Sword_Forging_Manual",
+    "name_kr": "두손검_제조법"
+  },
+  {
+    "name_en": "Ice_Piece",
+    "name_kr": "팬텀워치의_얼음조각각"
+  },
+  {
+    "name_en": "Unagi",
+    "name_kr": "장어구이"
+  },
+  {
+    "name_en": "The_Morningstar",
+    "name_kr": "크롬"
+  },
+  {
+    "name_en": "Marine_Raven",
+    "name_kr": "마린_샬리트"
+  },
+  {
+    "name_en": "Blood_Larceny",
+    "name_kr": "블러드_로버"
+  },
+  {
+    "name_en": "Red_Wing_Boots",
+    "name_kr": "레드_윙부츠"
+  },
+  {
+    "name_en": "Dark_Enigma_Shoes",
+    "name_kr": "다크_크리시아슈즈"
+  },
+  {
+    "name_en": "Red_Arlic_Helmet",
+    "name_kr": "레드_아데스햇"
+  },
+  {
+    "name_en": "Green_Valkyrie_Skirt",
+    "name_kr": "그린_발퀴레_치마"
+  },
+  {
+    "name_en": "Green_Valkyrie",
+    "name_kr": "그린_발퀴레"
+  },
+  {
+    "name_en": "Green_Anes",
+    "name_kr": "그린_아네스"
+  },
+  {
+    "name_en": "Dark_Imperial",
+    "name_kr": "다크_페로치"
+  },
+  {
+    "name_en": "Scroll_for_Overall_Armor_for_DEF_10%",
+    "name_kr": "전신_갑옷_방어력_주문서_10%"
+  },
+  {
+    "name_en": "Storybook_Crimson_Balrog's_Proposal",
+    "name_kr": "[스토리북]_크림슨발록의_계획서"
+  },
+  {
+    "name_en": "Kimono_Piece",
+    "name_kr": "찢어진_옷자락"
+  },
+  {
+    "name_en": "Orange_Throwing_Stars",
+    "name_kr": "귤"
+  },
+  {
+    "name_en": "Kinoko_Ramen_Roasted_Pork",
+    "name_kr": "키노코라면(구운돼지)"
+  },
+  {
+    "name_en": "White_Justice_Cape",
+    "name_kr": "흰색_수호의_망토"
+  },
+  {
+    "name_en": "Colorful_Tube",
+    "name_kr": "구명튜브"
+  },
+  {
+    "name_en": "Colonian_Axe",
+    "name_kr": "클로니안_엑스"
+  },
+  {
+    "name_en": "Dark_Scroll_for_Cape_for_STR_70%",
+    "name_kr": "망토_힘_주문서_70%"
+  },
+  {
+    "name_en": "Blue_Arlic_Helmet",
+    "name_kr": "블루_아데스햇"
+  },
+  {
+    "name_en": "Dark_Scroll_for_Earring_for_DEX_70%",
+    "name_kr": "귀_장식_민첩성_주문서_70%"
+  },
+  {
+    "name_en": "Dark_Scroll_for_Wand_for_Magic_ATT_70%",
+    "name_kr": "완드_마력_주문서_70%"
+  },
+  {
+    "name_en": "Dark_Scroll_for_Crossbow_for_ATT_30%",
+    "name_kr": "석궁_공격력_주문서_30%"
+  },
+  {
+    "name_en": "Thanatos_Strap",
+    "name_kr": "타나토스의_견장"
+  },
+  {
+    "name_en": "Marine_Arund",
+    "name_kr": "마린_아룬드"
+  },
+  {
+    "name_en": "Dark_Pria",
+    "name_kr": "다크_프리아"
+  },
+  {
+    "name_en": "Dark_Raven",
+    "name_kr": "다크_샬리트"
+  },
+  {
+    "name_en": "Green_Giles_Cape",
+    "name_kr": "초록색_자일즈의_망토"
+  },
+  {
+    "name_en": "Black_Oriental_Fury_Coat",
+    "name_kr": "흑견랑포"
+  },
+  {
+    "name_en": "Silver_Kalkan",
+    "name_kr": "실버_칼칸"
+  },
+  {
+    "name_en": "Green_Arlic_Helmet",
+    "name_kr": "그린_아데스햇"
+  },
+  {
+    "name_en": "Dark_Commodore",
+    "name_kr": "다크_제너럴"
+  },
+  {
+    "name_en": "Dark_Commodore_Pants",
+    "name_kr": "다크_제너럴_바지"
+  },
+  {
+    "name_en": "Red_Arnah_Shoes",
+    "name_kr": "레드_아르나슈즈"
+  },
+  {
+    "name_en": "Gatekeeper_Armband",
+    "name_kr": "게이트키퍼의_완장"
+  },
+  {
+    "name_en": "Beige_Linnex",
+    "name_kr": "베이지_리넥스"
+  },
+  {
+    "name_en": "Eclipse",
+    "name_kr": "월아산"
+  },
+  {
+    "name_en": "Black_Mamba",
+    "name_kr": "코브라스티어"
+  },
+  {
+    "name_en": "Dark_Arund",
+    "name_kr": "다크_아룬드"
+  },
+  {
+    "name_en": "Bronze_Kalkan",
+    "name_kr": "브론즈_칼칸"
+  },
+  {
+    "name_en": "Red_Osfa_Suit",
+    "name_kr": "레드_미스트슈트"
+  },
+  {
+    "name_en": "Red_Osfa_Pants",
+    "name_kr": "레드_쉐이트슈트_바지"
+  },
+  {
+    "name_en": "Purple_Valkyrie_Skirt",
+    "name_kr": "퍼플_발퀴레_치마"
+  },
+  {
+    "name_en": "Purple_Valkyrie",
+    "name_kr": "퍼플_발퀴레"
+  },
+  {
+    "name_en": "Green_Katina_Boots",
+    "name_kr": "그린_가티나부츠"
+  },
+  {
+    "name_en": "Red_Belly_Duke",
+    "name_kr": "레드_벨리듀크"
+  },
+  {
+    "name_en": "Shiny_Bullet",
+    "name_kr": "샤이니_불릿"
+  },
+  {
+    "name_en": "Tauromacis_Horn",
+    "name_kr": "타우로마시스의_뿔"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Axe_for_ATT_60%",
+    "name_kr": "한손도끼_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Blue_Requiem",
+    "name_kr": "블루_레퀴엠"
+  },
+  {
+    "name_en": "Blue_Seraph_Cape",
+    "name_kr": "파란색_세라프의_망토"
+  },
+  {
+    "name_en": "Red_Enamel_Boots",
+    "name_kr": "레드_에나멜_부츠"
+  },
+  {
+    "name_en": "Orange_Whitebottom_Boots",
+    "name_kr": "주황색_가죽_구두"
+  },
+  {
+    "name_en": "Yellow_Doros_Robe",
+    "name_kr": "옐로우_도로스_로브"
+  },
+  {
+    "name_en": "Mithril_Axe",
+    "name_kr": "미스릴_도끼"
+  },
+  {
+    "name_en": "Green_Fairy_Top",
+    "name_kr": "그린_페어리_로브"
+  },
+  {
+    "name_en": "Green_Fairy_Skirt",
+    "name_kr": "그린_페어리_치마"
+  },
+  {
+    "name_en": "OrangeHigh_Boots",
+    "name_kr": "오렌지_미들_래더"
+  },
+  {
+    "name_en": "Subi_Throwing_Star",
+    "name_kr": "수비_표창"
+  },
+  {
+    "name_en": "Red_Cross_Earrings",
+    "name_kr": "레드_크로스링"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Sword_for_Accuracy_100%",
+    "name_kr": "한손검_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Two_Handed_Sword",
+    "name_kr": "두손검"
+  },
+  {
+    "name_en": "Blood_Sneak_Pants",
+    "name_kr": "블러드_스니클리스_바지"
+  },
+  {
+    "name_en": "Blood_Sneak",
+    "name_kr": "블러드_스니클리스"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Axe_for_Accuracy_100%",
+    "name_kr": "한손도끼_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Stinger",
+    "name_kr": "스팅어"
+  },
+  {
+    "name_en": "Blue_Qi_Pao",
+    "name_kr": "파란색_친파오"
+  },
+  {
+    "name_en": "Blue_Qi_Pao_Pants",
+    "name_kr": "파란_친파오_바지"
+  },
+  {
+    "name_en": "Red_Tiberian",
+    "name_kr": "레드_티베리안"
+  },
+  {
+    "name_en": "Silver_Master_Sergeant",
+    "name_kr": "실버_마스터_서전트"
+  },
+  {
+    "name_en": "Silver_Master_Sergeant_Kilt",
+    "name_kr": "실버_마스터_서전트_치마"
+  },
+  {
+    "name_en": "SOS_Letter",
+    "name_kr": "SOS구조_요청_편지"
+  },
+  {
+    "name_en": "Blue_Jester",
+    "name_kr": "블루_핀터"
+  },
+  {
+    "name_en": "Dark_Master_Sergeant",
+    "name_kr": "다크_마스터_서전트"
+  },
+  {
+    "name_en": "Dark_Master_Sergeant_Kilt",
+    "name_kr": "다크_마스터_서전트_치마"
+  },
+  {
+    "name_en": "Orange_Whitebottom_Boots",
+    "name_kr": "오렌지_가죽_구두"
+  },
+  {
+    "name_en": "Brown_Jack_Boots",
+    "name_kr": "브라운_잭부츠"
+  },
+  {
+    "name_en": "Mokbi_Throwing_Star",
+    "name_kr": "목비_표창"
+  },
+  {
+    "name_en": "Steel_Pride",
+    "name_kr": "손오공_강철_머리띠"
+  },
+  {
+    "name_en": "Two_Handed_Axe",
+    "name_kr": "두손도끼"
+  },
+  {
+    "name_en": "Green_Lappy_Boots",
+    "name_kr": "그린_래피_부츠"
+  },
+  {
+    "name_en": "Brown_Hunter",
+    "name_kr": "브라운_헌트"
+  },
+  {
+    "name_en": "Circle-Winded_Staff",
+    "name_kr": "써클윈드_스태프"
+  },
+  {
+    "name_en": "Hard_Needle",
+    "name_kr": "딱딱한_비늘"
+  },
+  {
+    "name_en": "Red_Huntress_Armor",
+    "name_kr": "레드_헌터미_아머"
+  },
+  {
+    "name_en": "Red_Huntress_Pants",
+    "name_kr": "레드_헌터미_아머_바지"
+  },
+  {
+    "name_en": "Brown_Pole-Feather_Hat",
+    "name_kr": "브라운_폴리페더햇"
+  },
+  {
+    "name_en": "One-Handed_Axe_Forging_Stimulator",
+    "name_kr": "한손도끼_제작의_촉진제"
+  },
+  {
+    "name_en": "Air_Bubble",
+    "name_kr": "공기방울"
+  },
+  {
+    "name_en": "Star_Earrings",
+    "name_kr": "별_귀고리"
+  },
+  {
+    "name_en": "Black_Blue-Lined_Shoes",
+    "name_kr": "블루_하프슈즈"
+  },
+  {
+    "name_en": "Brown_Steel-Tip_Boots",
+    "name_kr": "브라운_네일슈즈"
+  },
+  {
+    "name_en": "Poopa_Egg",
+    "name_kr": "푸퍼의_알"
+  },
+  {
+    "name_en": "Two-Handed_Mace_Forging_Stimulator",
+    "name_kr": "두손둔기_제작의_촉진제"
+  },
+  {
+    "name_en": "Blue_White-Line_Boots",
+    "name_kr": "블루_화이트-Line_Boots"
+  },
+  {
+    "name_en": "Green_Pole-Feather_Hat",
+    "name_kr": "그린_폴리페더햇"
+  },
+  {
+    "name_en": "Maroon_Jangoon_Boots",
+    "name_kr": "자_진월장화"
+  },
+  {
+    "name_en": "Seal_Meat",
+    "name_kr": "물개고기"
+  },
+  {
+    "name_en": "(Summoned_by_Pianus)\"",
+    "name_kr": "(Summoned_by_Pianus)\""
+  },
+  {
+    "name_en": "Green_Osfa_Hat",
+    "name_kr": "그린_쉐이드햇"
+  },
+  {
+    "name_en": "Purple_Giles_Cape",
+    "name_kr": "저주색_자일즈의_망토"
+  },
+  {
+    "name_en": "Purple_Osfa_Boots",
+    "name_kr": "퍼플_쉐도우부츠"
+  },
+  {
+    "name_en": "Black_Giles_Cape",
+    "name_kr": "검은색_자일즈의_망토"
+  },
+  {
+    "name_en": "Reindeer_Milk",
+    "name_kr": "순록의_우유"
+  },
+  {
+    "name_en": "Red_Pirate_Bottom",
+    "name_kr": "레드_피라테_바지"
+  },
+  {
+    "name_en": "Brown_Osfa_Hat",
+    "name_kr": "브라운_쉐이드햇"
+  },
+  {
+    "name_en": "Dark_Ades_Shoes",
+    "name_kr": "다크_아데스_신발"
+  },
+  {
+    "name_en": "White_Marquini",
+    "name_kr": "화이트_마르퀴니"
+  },
+  {
+    "name_en": "Green_Seraph_Cape",
+    "name_kr": "초록색_세라프의_망토"
+  },
+  {
+    "name_en": "Red_Oriental_Fury_Hat",
+    "name_kr": "적견랑건"
+  },
+  {
+    "name_en": "Blue_Varr_Shoes",
+    "name_kr": "블루_바르슈즈"
+  },
+  {
+    "name_en": "White_Fangz",
+    "name_kr": "백혈귀"
+  },
+  {
+    "name_en": "[Mastery_Book]_Dragon_Strike_30",
+    "name_kr": "[마스터리북]_드래곤_스트라이크_30"
+  },
+  {
+    "name_en": "Dark_Pirate_Bottom",
+    "name_kr": "다크_피라테_바지"
+  },
+  {
+    "name_en": "Green_Ades",
+    "name_kr": "그린_아데스"
+  },
+  {
+    "name_en": "Purple_Osfa_Hat",
+    "name_kr": "퍼플_쉐이드햇"
+  },
+  {
+    "name_en": "Gold_Kalkan",
+    "name_kr": "골드_칼칸"
+  },
+  {
+    "name_en": "Green_Crescent_Boots",
+    "name_kr": "그린_크리센트부츠"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Sword_for_Accuracy_10%",
+    "name_kr": "한손검_명중치_주문서_10%"
+  },
+  {
+    "name_en": "[Mastery_Book]_Chain_Lightning_20",
+    "name_kr": "[마스터리북]_체인_라이트닝_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Wrath_of_the_Octopi_20",
+    "name_kr": "[마스터리북]_서포트_옥토퍼스_20"
+  },
+  {
+    "name_en": "Green_Ades_Shoes",
+    "name_kr": "그린_아데스_신발"
+  },
+  {
+    "name_en": "Dark_Arlic_Helmet",
+    "name_kr": "다크_아데스햇"
+  },
+  {
+    "name_en": "Black_Oriental_Fury_Hat",
+    "name_kr": "흑견랑건"
+  },
+  {
+    "name_en": "Blue_Katina_Boots",
+    "name_kr": "블루_가티나부츠"
+  },
+  {
+    "name_en": "[Mastery_Book]_Rapid_Fire_30",
+    "name_kr": "[마스터리북]_래피드_파이어_30"
+  },
+  {
+    "name_en": "Storybook_Ancient_Book",
+    "name_kr": "[스토리북]_오래된_책"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Sword_for_ATT_60%",
+    "name_kr": "한손검_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Red_Osfa_Hat",
+    "name_kr": "레드_쉐이드햇"
+  },
+  {
+    "name_en": "Green_Varr_Shoes",
+    "name_kr": "그린_바르슈즈"
+  },
+  {
+    "name_en": "Black_Duke_Barkin_Shoes",
+    "name_kr": "블랙_듀크바킨_슈즈"
+  },
+  {
+    "name_en": "[Mastery_Book]_Sharp_Eyes_20",
+    "name_kr": "[마스터리북]_샤프아이즈_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Ice_Demon_20",
+    "name_kr": "[마스터리북]_아이스_데몬_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Demolition_20",
+    "name_kr": "[마스터리북]_데몰리션_20"
+  },
+  {
+    "name_en": "Clover",
+    "name_kr": "클로버"
+  },
+  {
+    "name_en": "White_Doros_Robe",
+    "name_kr": "화이트_도로스_로브"
+  },
+  {
+    "name_en": "Lidium_Ore",
+    "name_kr": "리튬의_원석"
+  },
+  {
+    "name_en": "Carrot",
+    "name_kr": "홍당무"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_BW_for_Accuracy_100%",
+    "name_kr": "두손둔기_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Cactus_Stem",
+    "name_kr": "선인장의_줄기"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Axe_for_ATT_10%",
+    "name_kr": "두손도끼_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Desert_Mist",
+    "name_kr": "사막의_이슬"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_BW_for_Accuracy_60%",
+    "name_kr": "한손둔기_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Snake_Rattle",
+    "name_kr": "뱀방울"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Sword_for_ATT_10%",
+    "name_kr": "두손검_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Black_Magicshoes",
+    "name_kr": "블랙_매직슈즈"
+  },
+  {
+    "name_en": "Earmuff",
+    "name_kr": "귀마개"
+  },
+  {
+    "name_en": "Brown_Doros_Robe",
+    "name_kr": "브라운_도로스_로브"
+  },
+  {
+    "name_en": "Bronze_Football_Helmet",
+    "name_kr": "브론즈_디펜더_헬멧"
+  },
+  {
+    "name_en": "Blue_Sneak",
+    "name_kr": "블루_스니클리스"
+  },
+  {
+    "name_en": "Dark_Brown_Sneak_Pants",
+    "name_kr": "다크브라운_스니크_바지"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_BW_for_Accuracy_10%",
+    "name_kr": "한손둔기_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Cactus_Thorn",
+    "name_kr": "선인장의_가시"
+  },
+  {
+    "name_en": "Sky_Blue_Starry_Bandana",
+    "name_kr": "하늘색_별_두건"
+  },
+  {
+    "name_en": "Ragged_Scarf",
+    "name_kr": "낡은_목도리"
+  },
+  {
+    "name_en": "Red_Gold_Stealer",
+    "name_kr": "레드_골드_스틸러"
+  },
+  {
+    "name_en": "Red_Gold_Stealer_Pants",
+    "name_kr": "레드_골드_스틸러_바지"
+  },
+  {
+    "name_en": "Cactus_Flower",
+    "name_kr": "카투스의_꽃"
+  },
+  {
+    "name_en": "Dark_Hunter's_Armor",
+    "name_kr": "다크_헌터스_아머"
+  },
+  {
+    "name_en": "Telescope",
+    "name_kr": "망원경"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Sword_for_ATT_10%",
+    "name_kr": "한손검_공격력_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Sword_for_Accuracy_10%",
+    "name_kr": "두손검_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_BW_for_Accuracy_10%",
+    "name_kr": "두손둔기_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Scorpion_Sting",
+    "name_kr": "전갈의_독침"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Axe_for_Accuracy_10%",
+    "name_kr": "한손도끼_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Kiyos_Beak",
+    "name_kr": "키요의_부리"
+  },
+  {
+    "name_en": "Empty_Sack",
+    "name_kr": "빈_자루"
+  },
+  {
+    "name_en": "Red_Hunter",
+    "name_kr": "레드_헌트"
+  },
+  {
+    "name_en": "Flaming_Desert",
+    "name_kr": "사막의_불꽃"
+  },
+  {
+    "name_en": "Sand",
+    "name_kr": "금모래_가루"
+  },
+  {
+    "name_en": "Gelatin",
+    "name_kr": "젤라틴"
+  },
+  {
+    "name_en": "Flask",
+    "name_kr": "플라스크"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Axe_for_Accuracy_60%",
+    "name_kr": "두손도끼_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Piece_of_Steel",
+    "name_kr": "강철_파편"
+  },
+  {
+    "name_en": "Hardened_Piece_of_Steel",
+    "name_kr": "강철_파편_강화형"
+  },
+  {
+    "name_en": "Piece_of_Mithril",
+    "name_kr": "미스릴_파편"
+  },
+  {
+    "name_en": "Oaker_Shouldermail_Pants",
+    "name_kr": "오커_숄더메일_바지"
+  },
+  {
+    "name_en": "Hardened_Piece_of_Mithril",
+    "name_kr": "미스릴_파편_강화형"
+  },
+  {
+    "name_en": "Blue-Lined_Kismet",
+    "name_kr": "청선백궁"
+  },
+  {
+    "name_en": "Wires",
+    "name_kr": "전선다발"
+  },
+  {
+    "name_en": "Scroll_for_One-Handed_Sword_for_Accuracy_60%",
+    "name_kr": "한손검_명중치_주문서_60%"
+  },
+  {
+    "name_en": "Plug",
+    "name_kr": "콘센트"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Axe_for_Accuracy_10%",
+    "name_kr": "두손도끼_명중치_주문서_10%"
+  },
+  {
+    "name_en": "Beaker",
+    "name_kr": "비커"
+  },
+  {
+    "name_en": "Entry_Pass",
+    "name_kr": "출입증"
+  },
+  {
+    "name_en": "May_Mist",
+    "name_kr": "5월의_이슬"
+  },
+  {
+    "name_en": "Homunsculer_Sand",
+    "name_kr": "호문스큘러의_흙"
+  },
+  {
+    "name_en": "Frog_Legs",
+    "name_kr": "개구리_뒷다리"
+  },
+  {
+    "name_en": "Sky_Snowboard",
+    "name_kr": "스카이_스노우보드"
+  },
+  {
+    "name_en": "Frog_Guard",
+    "name_kr": "개구리_아대"
+  },
+  {
+    "name_en": "Yellow_Headband",
+    "name_kr": "노란색_머리띠"
+  },
+  {
+    "name_en": "Blue_One-lined_T-Shirt",
+    "name_kr": "파란색_원라인_티셔츠"
+  },
+  {
+    "name_en": "Scroll_for_Shoes_for_Jump_30%",
+    "name_kr": "신발_점프력_주문서_30%"
+  },
+  {
+    "name_en": "Chicken",
+    "name_kr": "닭고기"
+  },
+  {
+    "name_en": "White_Egg",
+    "name_kr": "흰_달걀"
+  },
+  {
+    "name_en": "Kid's_Key",
+    "name_kr": "키드의_열쇠"
+  },
+  {
+    "name_en": "Lizard_Tail",
+    "name_kr": "도마뱀_꼬리"
+  },
+  {
+    "name_en": "Toad_Poison",
+    "name_kr": "두꺼비독"
+  },
+  {
+    "name_en": "Lizard_Tongue",
+    "name_kr": "도마뱀_혀"
+  },
+  {
+    "name_en": "Scroll_for_Helmet_for_DEF_100%",
+    "name_kr": "투구_방어력_주문서_100%"
+  },
+  {
+    "name_en": "Snake_Scale",
+    "name_kr": "뱀_비늘"
+  },
+  {
+    "name_en": "Snake_Skin",
+    "name_kr": "뱀_껍질"
+  },
+  {
+    "name_en": "Rash's_Furball",
+    "name_kr": "래쉬의_털뭉치"
+  },
+  {
+    "name_en": "Tree_Fruit",
+    "name_kr": "나무열매"
+  },
+  {
+    "name_en": "Anesthetic_Powder",
+    "name_kr": "마취가루"
+  },
+  {
+    "name_en": "Beetle's_Horn",
+    "name_kr": "비틀의_뿔"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Axe_for_ATT_60%",
+    "name_kr": "두손도끼_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Hov's_Shorts",
+    "name_kr": "호브의_바지"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Sword_for_Accuracy_100%",
+    "name_kr": "두손검_명중치_주문서_100%"
+  },
+  {
+    "name_en": "Dark_Rash's_Furball",
+    "name_kr": "다크_래쉬의_털뭉치"
+  },
+  {
+    "name_en": "Curse_Powder",
+    "name_kr": "저주가루"
+  },
+  {
+    "name_en": "Dual_Beetle's_Horn",
+    "name_kr": "듀얼_비틀의_뿔"
+  },
+  {
+    "name_en": "Pin_Hov's_Charm",
+    "name_kr": "핀호브의_부적"
+  },
+  {
+    "name_en": "Hankie's_Pan_Flute",
+    "name_kr": "헹키의_팬플룻"
+  },
+  {
+    "name_en": "Harp's_Tail_Feather",
+    "name_kr": "하프의_꼬리깃털"
+  },
+  {
+    "name_en": "Blood_Harp's_Crown",
+    "name_kr": "블러드_하프의_머리관"
+  },
+  {
+    "name_en": "Small_Flaming_Feather",
+    "name_kr": "작_불꽃_깃털"
+  },
+  {
+    "name_en": "Birk's_Chewed_Grass",
+    "name_kr": "버크의_씹던_풀풀"
+  },
+  {
+    "name_en": "SpartaLv100",
+    "name_kr": "스파타"
+  },
+  {
+    "name_en": "Dimon_Wand",
+    "name_kr": "다이몬의_완드"
+  },
+  {
+    "name_en": "Blood_Dagger",
+    "name_kr": "블러드_단검"
+  },
+  {
+    "name_en": "Dual_Birk's_Tiny_Tail",
+    "name_kr": "듀얼_버크의_작은_꼬리"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Sword_for_ATT_60%",
+    "name_kr": "두손검_공격력_주문서_60%"
+  },
+  {
+    "name_en": "Pinaka",
+    "name_kr": "피나카"
+  },
+  {
+    "name_en": "Zedbug",
+    "name_kr": "제드버그"
+  },
+  {
+    "name_en": "White_Neschere",
+    "name_kr": "화이트_네쉐르"
+  },
+  {
+    "name_en": "Kentaurus's_Skull",
+    "name_kr": "켄타우로스의_뼈뼈"
+  },
+  {
+    "name_en": "Kage",
+    "name_kr": "케이그"
+  },
+  {
+    "name_en": "Tomahawk",
+    "name_kr": "토마호크"
+  },
+  {
+    "name_en": "The_Beheader",
+    "name_kr": "참화도"
+  },
+  {
+    "name_en": "Red_Craven",
+    "name_kr": "레드_크리븐"
+  },
+  {
+    "name_en": "Kentaurus's_Marrow",
+    "name_kr": "켄타우로스의_정수"
+  },
+  {
+    "name_en": "Gold_Double_Knife",
+    "name_kr": "골드_트윈_나이프"
+  },
+  {
+    "name_en": "Battle_Hammer",
+    "name_kr": "배틀해머"
+  },
+  {
+    "name_en": "Tavar",
+    "name_kr": "타바르"
+  },
+  {
+    "name_en": "Fairfrozen",
+    "name_kr": "페어프로즌"
+  },
+  {
+    "name_en": "[Storybook]_Frozen_Book_of_Ice",
+    "name_kr": "[스토리북]_얼어붙은_얼음의_책"
+  },
+  {
+    "name_en": "Kentaurus's_Flame",
+    "name_kr": "켄타우로스의_불꽃"
+  },
+  {
+    "name_en": "Golden_Smith_Hammer",
+    "name_kr": "골든_스미스해머"
+  },
+  {
+    "name_en": "White_Nisrock",
+    "name_kr": "화이트_니스록"
+  },
+  {
+    "name_en": "Blue_Marine",
+    "name_kr": "블루마린"
+  },
+  {
+    "name_en": "Red_Brave_Hamal",
+    "name_kr": "레드_브레브히말"
+  },
+  {
+    "name_en": "[Storybook]_Burning_Book_of_Fire",
+    "name_kr": "[스토리북]_타오르는_불꽃의_책"
+  },
+  {
+    "name_en": "Green_Grace_Helmet",
+    "name_kr": "그린_그레이스_헬멧"
+  },
+  {
+    "name_en": "Magicodar",
+    "name_kr": "마기코라스"
+  },
+  {
+    "name_en": "Casters",
+    "name_kr": "캐스터스"
+  },
+  {
+    "name_en": "Cracked_Shell",
+    "name_kr": "금이_간_등껍질"
+  },
+  {
+    "name_en": "Dragon_Spirit",
+    "name_kr": "드래곤의_영혼"
+  },
+  {
+    "name_en": "Dragon_Scale",
+    "name_kr": "드래곤의_비늘"
+  },
+  {
+    "name_en": "[Mastery_Book]_Barrage_20",
+    "name_kr": "[마스터리북]_피스트_20"
+  },
+  {
+    "name_en": "Dark_Mystra",
+    "name_kr": "다크_미스트라"
+  },
+  {
+    "name_en": "Fraute",
+    "name_kr": "프라우테"
+  },
+  {
+    "name_en": "Varkit",
+    "name_kr": "바키트"
+  },
+  {
+    "name_en": "Red_Shell",
+    "name_kr": "붉은_등껍질"
+  },
+  {
+    "name_en": "Red_Martier",
+    "name_kr": "레드_마르티어"
+  },
+  {
+    "name_en": "[Mastery_Book]_Battleship_Torpedo_30",
+    "name_kr": "[마스터리북]_배틀쉽_토르페도_30"
+  },
+  {
+    "name_en": "Green_Arzuna",
+    "name_kr": "그린_아르주나"
+  },
+  {
+    "name_en": "Green_Korben",
+    "name_kr": "그린_코르뱅"
+  },
+  {
+    "name_en": "Vifennis",
+    "name_kr": "비펜니스"
+  },
+  {
+    "name_en": "Metus",
+    "name_kr": "메투스"
+  },
+  {
+    "name_en": "Rexton_Leather",
+    "name_kr": "리스튼의_가죽"
+  },
+  {
+    "name_en": "[Mastery_Book]_Elemental_Boost_20",
+    "name_kr": "[마스터리북]_속성_강화_20"
+  },
+  {
+    "name_en": "Green_Ciara",
+    "name_kr": "그린_시아르"
+  },
+  {
+    "name_en": "Green_Neos",
+    "name_kr": "그린_네오스"
+  },
+  {
+    "name_en": "Green_Neos_Pants",
+    "name_kr": "그린_네오스_바지"
+  },
+  {
+    "name_en": "Ruin_Hammer",
+    "name_kr": "루인해머"
+  },
+  {
+    "name_en": "Hellslayer",
+    "name_kr": "핼버드"
+  },
+  {
+    "name_en": "Strange_Egg",
+    "name_kr": "이상한_알"
+  },
+  {
+    "name_en": "Blue_Arcina",
+    "name_kr": "블루_아르시나"
+  },
+  {
+    "name_en": "[Mastery_Book]_Shadow_Claw_20",
+    "name_kr": "[마스터리북]_스피릿_자벨린_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Energy_Orb_20",
+    "name_kr": "[마스터리북]_에너지_오브_20"
+  },
+  {
+    "name_en": "Wyvern_Wing",
+    "name_kr": "와이번의_날개"
+  },
+  {
+    "name_en": "[Mastery_Book]_Battleship_Cannon_30",
+    "name_kr": "[마스터리북]_배틀쉽_캐논_30"
+  },
+  {
+    "name_en": "Blue_Grace_Helmet",
+    "name_kr": "블루_그레이스_헬멧"
+  },
+  {
+    "name_en": "Green_Varuna",
+    "name_kr": "그린_바루나"
+  },
+  {
+    "name_en": "Green_Armis",
+    "name_kr": "그린_아르미스"
+  },
+  {
+    "name_en": "Red_Katte",
+    "name_kr": "레드_카테"
+  },
+  {
+    "name_en": "Blue_Anelin",
+    "name_kr": "블루_아날린"
+  },
+  {
+    "name_en": "Berzerker",
+    "name_kr": "참마도"
+  },
+  {
+    "name_en": "Casa_Crow",
+    "name_kr": "카사_크로우"
+  },
+  {
+    "name_en": "Wooden_Shoulder_Pad",
+    "name_kr": "나무_어깨_보호대"
+  },
+  {
+    "name_en": "Black_Polax_Hat",
+    "name_kr": "블랙_폴락스_햇"
+  },
+  {
+    "name_en": "[Mastery_Book]_Energy_Orb_30",
+    "name_kr": "[마스터리북]_에너지_오브_30"
+  },
+  {
+    "name_en": "Wyvern_Gill",
+    "name_kr": "와이번의_아가미미"
+  },
+  {
+    "name_en": "Dark_Grace_Helmet",
+    "name_kr": "다크_그레이스_헬멧"
+  },
+  {
+    "name_en": "Leomite",
+    "name_kr": "레오마이트"
+  },
+  {
+    "name_en": "Black_Skellduke",
+    "name_kr": "블랙_스켈듀크"
+  },
+  {
+    "name_en": "[Mastery_Book]_Super_Transformation_20",
+    "name_kr": "[마스터리북]_슈퍼_트랜스폼_20"
+  },
+  {
+    "name_en": "Wyvern_Toenail",
+    "name_kr": "와이번의_발톱"
+  },
+  {
+    "name_en": "Silver_Grace_Helmet",
+    "name_kr": "실버_그레이스_헬멧"
+  },
+  {
+    "name_en": "Dark_Focus",
+    "name_kr": "다크_아데브"
+  },
+  {
+    "name_en": "King_Cent",
+    "name_kr": "킹_센트"
+  },
+  {
+    "name_en": "[Mastery_Book]_Brandish_20",
+    "name_kr": "[마스터리북]_브랜디쉬_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Divine_Charge_20",
+    "name_kr": "[마스터리북]_디바인_차지_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Big_Bang_20",
+    "name_kr": "[마스터리북]_빅뱅_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Battleship_Cannon_20",
+    "name_kr": "[마스터리북]_배틀쉽_캐논_20"
+  },
+  {
+    "name_en": "Red_Grace_Helmet",
+    "name_kr": "레드_그레이스_헬멧"
+  },
+  {
+    "name_en": "Red_Katinas",
+    "name_kr": "레드_카티나스"
+  },
+  {
+    "name_en": "Green_Lucida",
+    "name_kr": "그린_엘소르"
+  },
+  {
+    "name_en": "Green_Lucida_Skirt",
+    "name_kr": "그린_엘소르_치마"
+  },
+  {
+    "name_en": "Green_Bazura",
+    "name_kr": "그린_바즈라"
+  },
+  {
+    "name_en": "Red_Arcina",
+    "name_kr": "레드_아르시나"
+  },
+  {
+    "name_en": "Devil's_Sunrise",
+    "name_kr": "라_투핸더"
+  },
+  {
+    "name_en": "Skull_Shoulder_Pad",
+    "name_kr": "해골_어깨_보호대"
+  },
+  {
+    "name_en": "Green_Anelin",
+    "name_kr": "그린_아날린"
+  },
+  {
+    "name_en": "Concerto",
+    "name_kr": "콘체르토"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Sword_for_Accuracy_60%",
+    "name_kr": "두손검_명중치_주문서_60%"
+  },
+  {
+    "name_en": "[Mastery_Book]_Rush_20",
+    "name_kr": "[마스터리북]_돌진_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Power_Stance_20",
+    "name_kr": "[마스터리북]_스탠스_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Frostprey_20",
+    "name_kr": "[마스터리북]_프리져_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Venomous_Star/Venomous_Stab_20",
+    "name_kr": "[마스터리북]_베놈_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Rapid_Fire_20",
+    "name_kr": "[마스터리북]_래피드_파이어_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Mana_Reflection_20",
+    "name_kr": "[마스터리북]_마나_리플렉션_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Fire_Demon_20",
+    "name_kr": "[마스터리북]_파이어_데몬_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Bow_Expert_20",
+    "name_kr": "[마스터리북]_보우_엑스퍼트_20"
+  },
+  {
+    "name_en": "Egg_Shell",
+    "name_kr": "알껍질_조각"
+  },
+  {
+    "name_en": "Green_Varr_Hat",
+    "name_kr": "그린_바르햇"
+  },
+  {
+    "name_en": "Blue_Arnah_Shoes",
+    "name_kr": "블루_아르나슈즈"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_Axe_for_Accuracy_100%",
+    "name_kr": "두손도끼_명중치_주문서_100%"
+  },
+  {
+    "name_en": "[Mastery_Book]_Paralyze_20",
+    "name_kr": "[마스터리북]_패럴라이즈_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Ifrit_20",
+    "name_kr": "[마스터리북]_이프리트_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Dragon's_Breath_20",
+    "name_kr": "[마스터리북]_드래곤_펄스_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Crossbow_Expert_20",
+    "name_kr": "[마스터리북]_크로스보우_엑스퍼트_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Assassinate_20",
+    "name_kr": "[마스터리북]_암살_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Demolition_30",
+    "name_kr": "[마스터리북]_데몰리션_30"
+  },
+  {
+    "name_en": "Destroyed_Nest",
+    "name_kr": "망가지_둥지지"
+  },
+  {
+    "name_en": "Red_Arnah_Cap",
+    "name_kr": "레드_아르나햇"
+  },
+  {
+    "name_en": "Blue_Katinas",
+    "name_kr": "블루_카티나스"
+  },
+  {
+    "name_en": "Red_Varr_Shoes",
+    "name_kr": "레드_바르슈즈"
+  },
+  {
+    "name_en": "Blue_Ciara",
+    "name_kr": "블루_시아르"
+  },
+  {
+    "name_en": "Eternal_Bullet",
+    "name_kr": "이터널_불릿"
+  },
+  {
+    "name_en": "[Mastery_Book]_Monster_Magnet_20",
+    "name_kr": "[마스터리북]_몬ㅅ터_마그넷_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Advanced_Combo_Attack_20",
+    "name_kr": "[마스터리북]_어드밴스드_콤보_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Holy_Charge_20",
+    "name_kr": "[마스터리북]_홀리_차지_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Elquines_20",
+    "name_kr": "[마스터리북]_엘퀴네스_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Hurricane_20",
+    "name_kr": "[마스터리북]_폭풍의_시_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Taunt_20",
+    "name_kr": "[마스터리북]_쇼다운_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Bullseye_20",
+    "name_kr": "[마스터리북]_어드밴스드_호밍_20"
+  },
+  {
+    "name_en": "Broken_Horn",
+    "name_kr": "부러진_뿔"
+  },
+  {
+    "name_en": "Green_Valhalla_Helmet",
+    "name_kr": "그린_니르첸_투구"
+  },
+  {
+    "name_en": "Blue_Arzuna",
+    "name_kr": "블루_아르주나"
+  },
+  {
+    "name_en": "Blue_Varuna",
+    "name_kr": "블루_바루나"
+  },
+  {
+    "name_en": "Blue_Crescent_Boots",
+    "name_kr": "블루_크리센트부츠"
+  },
+  {
+    "name_en": "Blue_Korben",
+    "name_kr": "블루_코르뱅"
+  },
+  {
+    "name_en": "[Mastery_Book]_Blast_20",
+    "name_kr": "[마스터리북]_블래스트_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Blocking_20",
+    "name_kr": "[마스터리북]_블로킹_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Ninja_Storm_20",
+    "name_kr": "[마스터리북]_닌자_스톰_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Speed_Infusion_20",
+    "name_kr": "[마스터리북]_윈드_부스터_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Piercing_20",
+    "name_kr": "[마스터리북]_피어싱_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Angel_Ray_20",
+    "name_kr": "[마스터리북]_엔젤레이_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Phoenix_20",
+    "name_kr": "[마스터리북]_피닉스_20"
+  },
+  {
+    "name_en": "Old_Neck_Bone",
+    "name_kr": "오래된_뼈"
+  },
+  {
+    "name_en": "Green_Canal_Hood",
+    "name_kr": "그린_카날_후드"
+  },
+  {
+    "name_en": "Blue_Bazura",
+    "name_kr": "블루_바즈라"
+  },
+  {
+    "name_en": "Blue_Neos",
+    "name_kr": "블루_네오스"
+  },
+  {
+    "name_en": "Red_Katina_Boots",
+    "name_kr": "레드_가티나부츠"
+  },
+  {
+    "name_en": "Scroll_for_Two-Handed_BW_for_ATT_60%",
+    "name_kr": "두손둔기_공격력_주문서_60%"
+  },
+  {
+    "name_en": "[Mastery_Book]_Achilles_20",
+    "name_kr": "[마스터리북]_아킬레스_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Hamstring_Shot_20",
+    "name_kr": "[마스터리북]_햄스트링_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Holy_Shield_20",
+    "name_kr": "[마스터리북]_홀리실드_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Sharp_Eyes_30",
+    "name_kr": "[마스터리북]_샤프아이즈_30"
+  },
+  {
+    "name_en": "[Mastery_Book]_Battleship_Torpedo_20",
+    "name_kr": "[마스터리북]_배틀쉽_토르페도_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Advanced_Combo_Attack_30",
+    "name_kr": "[마스터리북]_어드밴스드_콤보_30"
+  },
+  {
+    "name_en": "[Mastery_Book]_Blind_20",
+    "name_kr": "[마스터리북]_블라인드_20"
+  },
+  {
+    "name_en": "[Mastery_Book]_Boomerang_Step_20",
+    "name_kr": "[마스터리북]_부메랑_스탭_20"
+  }
+]

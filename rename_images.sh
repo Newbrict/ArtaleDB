@@ -1,3 +1,4 @@
+HEAD
 #!/usr/bin/env bash
 set -euo pipefail
 IFS=$'\n\t'
@@ -43,3 +44,40 @@ for ext in "${EXTENSIONS[@]}"; do
     fi
   done
 done
+=======
+#!/usr/bin/env bash
+set -euo pipefail
+IFS=$'\n\t'
+
+MAPPING_FILE="mapping.json"
+TARGET_DIR="library/images/items"
+
+if ! command -v jq &>/dev/null; then
+  echo "Error: jq가 필요합니다." >&2
+  exit 1
+fi
+
+EXTENSIONS=(png jpg jpeg gif)
+
+for ext in "${EXTENSIONS[@]}"; do
+  shopt -s nullglob
+  for filepath in "$TARGET_DIR"/*."$ext"; do
+    filename="${filepath##*/}"
+    name="${filename%.*}"
+    newname=$(jq -r --arg key "$name" \
+      '[ .[] | select(.name_en == $key) | .name_kr ] | .[0]' \
+      "$MAPPING_FILE")
+    if [[ -n "$newname" && "$newname" != "null" ]]; then
+      newfile="${newname}.${ext}"
+      if [[ -e "$TARGET_DIR/$newfile" ]]; then
+        echo "⚠️ Skipping: '$newfile' already exists"
+      else
+        echo "Renaming: '$filename' → '$newfile'"
+        mv "$filepath" "$TARGET_DIR/$newfile"
+      fi
+    else
+      echo "매핑 없음: '$filename'"
+    fi
+  done
+done
+>>>>>>> 524306e (Add rename_images.sh and mapping.json)
