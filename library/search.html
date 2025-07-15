@@ -174,8 +174,8 @@
   </div>
   <script>
     let monsterData = [], bossData = [];
-    const monsterImagePath = "images/monsters/";
-    const itemImagePath = "images/items/";
+    const monsterImagePath = "./image/monsters/";
+    const itemImagePath    = "./image/items/";
 
     const escapeHtml = text => text?.replace(/[&<>"]|'/g, c =>
       ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])
@@ -213,8 +213,8 @@
 
     async function loadData() {
       const [monsterResp, bossResp] = await Promise.all([
-        fetch('library/data/monster/monster_data.json'),
-        fetch('library/data/monster/boss_data.json')
+        fetch('./data/monster/monster_data.json'),
+        fetch('./data/monster/boss_data.json')
       ]);
       monsterData = await monsterResp.json();
       bossData = await bossResp.json();
