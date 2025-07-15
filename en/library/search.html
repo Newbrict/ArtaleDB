@@ -287,65 +287,84 @@
       }
     }
 
-    function showMonsterDetail(monster) {
-      const details = document.getElementById('details');
-      const dropsId = `drop-list-${sanitizeName(monster.name)}`;
-      const filename = stripGender(monster.name).replace(/\s+/g, '_');
-      const imgSrc = `${monsterImagePath}${filename}.png`;
-      const fallbackImgSrc = `${monsterImagePath}${filename}.gif`;
+   function showMonsterDetail(monster) {
+  const details = document.getElementById('details');
+  const dropsId  = `drop-list-${sanitizeName(monster.name)}`;
+  const filename = stripGender(monster.name).replace(/\s+/g, '_');
+  const imgSrc   = `${monsterImagePath}${filename}.png`;
+  const fallback = `${monsterImagePath}${filename}.gif`;
 
-      // --- respawn_time 처리 (min~max to h+m to h+m) ---
-      let respawnHtml = '';
-      if (monster.respawn_time) {
-        const [minStr, maxStr] = monster.respawn_time
-          .split(',').map(s => s.trim());
-        const formatHM = str => {
-          const m = parseInt(str, 10);
-          const h = Math.floor(m / 60);
-          const mm = m % 60;
-          const parts = [];
-          if (h)  parts.push(`${h}h`);
-          if (mm) parts.push(`${mm}m`);
-          return parts.join(' ') || '0m';
-        };
-        const from = formatHM(minStr);
-        const toTime = formatHM(maxStr);
-        respawnHtml = `<p><strong>Respawn Time:</strong> ${from} to ${toTime}</p>`;
+  // helper: 분 → "3h 15m" 포맷
+  const minutesToHM = m => {
+    const h  = Math.floor(m / 60);
+    const mm = m % 60;
+    const parts = [];
+    if (h)  parts.push(`${h}h`);
+    if (mm) parts.push(`${mm}m`);
+    return parts.join(' ') || '0m';
+  };
+
+  // -------------------
+  // respawn_time 처리
+  // -------------------
+  let respawnHtml = '';
+  if (monster.respawn_time != null) {
+    try {
+      // 1) 문자열 "min,max" → [min,max]
+      // 2) 숫자 → [num]
+      // 3) 배열 [min,max] → 그대로
+      let arr;
+      if (typeof monster.respawn_time === 'string' && monster.respawn_time.includes(',')) {
+        arr = monster.respawn_time.split(',').map(s => parseInt(s.trim(), 10));
+      } else if (Array.isArray(monster.respawn_time)) {
+        arr = monster.respawn_time.map(n => parseInt(n, 10));
+      } else {
+        arr = [ parseInt(monster.respawn_time, 10) ];
       }
 
-      details.innerHTML = `
-        <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgSrc}"
-             onerror="this.onerror=null;this.src='${fallbackImgSrc}';"
-             alt="${escapeHtml(monster.name)}">
-
-        <p><strong>Level:</strong> ${monster.level || 'N/A'}</p>
-        <p><strong>HP:</strong> ${monster.hp || 'N/A'}</p>
-        <p><strong>Region:</strong> ${monster.region || 'N/A'}</p>
-        <p><strong>EXP:</strong> ${monster.exp || 'N/A'}</p>
-
-        ${respawnHtml}
-
-        <p><strong>Modifiers:</strong> ${monster.Modifiers || 'N/A'}</p>
-        <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'}
-          ${monster.accuracy_level_decrease != null
-            ? `(1 level decrease +${monster.accuracy_level_decrease})`
-            : ''}
-        </p>
-
-        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
-        <div id="${dropsId}" style="display:none; margin-top:10px;">
-          ${(monster.drops || []).map(drop => `
-            <div class="drop-item">
-              <img src="${itemImagePath + getItemImageName(drop)}.png"
-                   onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';"
-                   alt="${escapeHtml(drop)}">
-              <span>${escapeHtml(drop)}</span>
-            </div>
-          `).join('')}
-        </div>
-      `;
+      const from = minutesToHM(arr[0]);
+      const to   = arr[1] ? minutesToHM(arr[1]) : null;
+      respawnHtml = to
+        ? `<p><strong>Respawn Time:</strong> ${from} to ${to}</p>`
+        : `<p><strong>Respawn Time:</strong> ${from}</p>`;
+    } catch (e) {
+      console.warn('Failed to parse respawn_time:', monster.respawn_time, e);
     }
+  }
+
+  details.innerHTML = `
+    <h2>${escapeHtml(monster.name)}</h2>
+    <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallback}';" 
+         alt="${escapeHtml(monster.name)}">
+
+    <p><strong>Level:</strong> ${monster.level  || 'N/A'}</p>
+    <p><strong>HP:</strong>    ${monster.hp     || 'N/A'}</p>
+    <p><strong>Region:</strong>${monster.region || 'N/A'}</p>
+    <p><strong>EXP:</strong>   ${monster.exp    || 'N/A'}</p>
+
+    ${respawnHtml}
+
+    <p><strong>Modifiers:</strong>        ${monster.Modifiers || 'N/A'}</p>
+    <p><strong>Required Accuracy:</strong>
+      ${monster.required_accuracy || 'N/A'}
+      ${monster.accuracy_level_decrease != null
+        ? `(1 level decrease +${monster.accuracy_level_decrease})`
+        : ''}
+    </p>
+
+    <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
+    <div id="${dropsId}" style="display:none; margin-top:10px;">
+      ${(monster.drops || []).map(drop => `
+        <div class="drop-item">
+          <img src="${itemImagePath + getItemImageName(drop)}.png"
+               onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';"
+               alt="${escapeHtml(drop)}">
+          <span>${escapeHtml(drop)}</span>
+        </div>
+      `).join('')}
+    </div>
+  `;
+}
 
     function toggleDrops(id, btn) {
       const el = document.getElementById(id);
