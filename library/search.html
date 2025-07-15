@@ -185,12 +185,18 @@
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
 
     const getItemImageName = name => {
-      if (/스킬북/i.test(name)) return "스킬북";
-      if (/마스터리북/i.test(name)) return "마북";
-      const scrollMatch = name.match(/주문서[^\d]*(\d+)%/i);
-      if (scrollMatch) return "Scroll" + scrollMatch[1];
-      return sanitizeName(name);
-    };
+  // 기존 Scroll / 스킬북 로직 유지…
+  if (/스킬북/i.test(name)) return "스킬북";
+  if (/마스터리북/i.test(name)) return "마북";
+  const scrollMatch = name.match(/주문서[^\d]*(\d+)%/i);
+  if (scrollMatch) return "Scroll" + scrollMatch[1];
+
+  // 한글 매핑 우선 적용
+  if (itemNameMap[name]) return itemNameMap[name];
+
+  // 그 외에는 sanitizeName
+  return sanitizeName(name);
+};
 
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
