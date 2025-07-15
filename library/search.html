@@ -213,8 +213,8 @@
 
     async function loadData() {
       const [monsterResp, bossResp] = await Promise.all([
-        fetch('data/monster/monster_data.json'),
-        fetch('data/monster/boss_data.json')
+        fetch('library/data/monster/monster_data.json'),
+        fetch('library/data/monster/boss_data.json')
       ]);
       monsterData = await monsterResp.json();
       bossData = await bossResp.json();
