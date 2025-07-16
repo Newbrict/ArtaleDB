@@ -14117,7 +14117,7 @@
     "required_accuracy": 92,
     "accuracy_level_decrease": 3.333,
     "exp": 5,
-    "meso_range": [""미상""],
+    "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
      
@@ -14135,7 +14135,7 @@
     "required_accuracy": 92,
     "accuracy_level_decrease": 3.333,
     "exp": 194,
-    "meso_range": [""미상""],
+    "meso_range": ["미상"],
     "modifiers": "X",
     "drops": [
       "인형뽑기 기계인형",
