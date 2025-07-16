@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>몬스터 &amp; 아이템 검색</title>
+  <title>🔍 몬스터 & 아이템 검색</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -132,17 +132,17 @@
       display: none;
     }
     body.dark-mode #autocompleteList {
-      background-color: #2b2b2b;      
-      border: 1px solid #555;       
+      background-color: #2b2b2b;
+      border: 1px solid #555;
     }
     body.dark-mode #autocompleteList li {
-      color: #ddd;                   
+      color: #ddd;
     }
     body.dark-mode #autocompleteList li strong {
-      color: #fff;                   
+      color: #fff;
     }
     body.dark-mode #autocompleteList li:hover {
-      background-color: #3a3a3a;     
+      background-color: #3a3a3a;
     }
     #autocompleteList li {
       padding: 5px 0;
@@ -177,23 +177,20 @@
     const monsterImagePath = "./images/monsters/";
     const itemImagePath    = "./images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>"]|'/g, c =>
-      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c])
+    const escapeHtml = text => text?.replace(/[&<>\"]/g, c =>
+      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'' :'&#39;'}[c])
     ) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^가-힣a-zA-Z0-9]/g, '_');
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
 
-const getItemImageName = name => {
-  // 스킬북·마북·Scroll 로직은 유지
-  if (/스킬북/i.test(name)) return "스킬북";
-  if (/마스터리북/i.test(name)) return "마북";
-  const scrollMatch = name.match(/주문서[^\d]*(\d+)%/i);
-  if (scrollMatch) return "Scroll" + scrollMatch[1];
-
-  // 그 외엔 한글 이름 그대로 sanitize
-  return sanitizeName(name);
-};
+    const getItemImageName = name => {
+      if (/스킬북/i.test(name)) return "스킬북";
+      if (/마스터리북/i.test(name)) return "마북";
+      const scrollMatch = name.match(/주문서[^\d]*(\d+)%/i);
+      if (scrollMatch) return "Scroll" + scrollMatch[1];
+      return sanitizeName(name);
+    };
 
     const getImageElement = (path, name, isItem = false) => {
       const img = document.createElement('img');
@@ -330,8 +327,7 @@ const getItemImageName = name => {
 
       details.innerHTML = `
         <h2>${escapeHtml(monster.name)}</h2>
-        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallback}';"
-             alt="${escapeHtml(monster.name)}">
+        <img src="${imgSrc}" onerror="this.onerror=null;this.src='${fallback}';" alt="${escapeHtml(monster.name)}">
 
         <p><strong>레벨:</strong> ${monster.level  || 'N/A'}</p>
         <p><strong>체력(HP):</strong> ${monster.hp     || 'N/A'}</p>
@@ -352,10 +348,10 @@ const getItemImageName = name => {
         <div id="${dropsId}" style="display:none; margin-top:10px;">
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
-              <img src="${itemImagePath + getItemImageName(drop)}.png"
-                   onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';"
-                   alt="${escapeHtml(drop)}">
-              <span>${escapeHtml(drop)}</span>
+              <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
+              <span onclick="document.getElementById('searchInput').value='${escapeHtml(drop)}'; unifiedSearch();" style="cursor:pointer; text-decoration:underline; color:#2196F3;">
+                ${escapeHtml(drop)}
+              </span>
             </div>
           `).join('')}
         </div>
