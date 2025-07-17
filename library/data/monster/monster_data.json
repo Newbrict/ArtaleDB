@@ -9472,7 +9472,7 @@
       -1,
       -1
     ],
-    "modifiers": "Weak Ice / Strong Poison, Strong 파이어",
+    "modifiers": "얼음 약점 / 독, 불 반감",
     "drops": [
       "석궁 공격력 주문서 60%",
       "주황 포션",
@@ -12227,7 +12227,7 @@
     "accuracy_level_decrease": 3.733,
     "exp": 1600,
     "meso_range": [668, 953],
-    "modifiers": "Weak Ice / Resist 파이어",
+    "modifiers": "얼음 약점 / 불 반감",
     "drops": [
         "켄타우로스의 불꽃",
         "마나 엘릭서",
