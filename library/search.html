@@ -108,6 +108,11 @@
       height: auto;
       margin-right: 10px;
     }
+    .drop-item span {
+      text-decoration: none !important;
+      cursor: pointer;
+      color: #2196F3;
+    }
     .top-right-button {
       position: absolute;
       top: 20px;
@@ -177,9 +182,10 @@
     const monsterImagePath = "./images/monsters/";
     const itemImagePath    = "./images/items/";
 
-   const escapeHtml = text => text?.replace(/[&<>\"']/g, c =>
-      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])
+    const escapeHtml = text => text?.replace(/[&<>\"']/g, c =>
+      ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c])
     ) || '';
+
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^가-힣a-zA-Z0-9]/g, '_');
     const normalize = text => sanitizeName(stripGender(text.toLowerCase()));
@@ -199,10 +205,7 @@
         ? getItemImageName(name)
         : stripGender(name).replace(/\s+/g, '_');
       img.src = path + filename + '.png';
-      img.onerror = () => {
-        img.onerror = null;
-        img.src = path + filename + '.gif';
-      };
+      img.onerror = () => { img.onerror = null; img.src = path + filename + '.gif'; };
       return img;
     };
 
@@ -217,47 +220,40 @@
         fetch('./data/monster/boss_data.json')
       ]);
       monsterData = await monsterResp.json();
-      bossData = await bossResp.json();
+      bossData    = await bossResp.json();
     }
 
     function unifiedSearch() {
       const keywordRaw = document.getElementById('searchInput').value.trim();
       if (!keywordRaw) return alert("검색어를 입력해주세요.");
 
-      const terms = keywordRaw.toLowerCase().split(',')
-        .map(t => normalize(t.trim()));
+      const terms = keywordRaw.toLowerCase().split(',').map(t => normalize(t.trim()));
       const resultsContainer = document.getElementById('results');
       resultsContainer.innerHTML = "";
       document.getElementById('details').innerHTML = "";
 
       const monsterMatches = [...monsterData, ...bossData].filter(m =>
-        terms.some(term => normalize(m.name).includes(term))
-      );
+        terms.some(term => normalize(m.name).includes(term)));
 
       const itemMatches = {};
-      [...monsterData, ...bossData].forEach(m => {
-        (m.drops || []).forEach(drop => {
-          const normDrop = normalize(drop);
-          if (terms.some(term => normDrop.includes(term))) {
-            if (!itemMatches[drop]) itemMatches[drop] = [];
-            itemMatches[drop].push(m);
-          }
-        });
-      });
+      [...monsterData, ...bossData].forEach(m => (m.drops || []).forEach(drop => {
+        const normDrop = normalize(drop);
+        if (terms.some(term => normDrop.includes(term))) {
+          if (!itemMatches[drop]) itemMatches[drop] = [];
+          itemMatches[drop].push(m);
+        }
+      }));
 
       if (monsterMatches.length) {
         const title = document.createElement('h2');
         title.textContent = `🧟 몬스터 (${monsterMatches.length})`;
         resultsContainer.appendChild(title);
         monsterMatches.forEach(monster => {
-          const div = document.createElement('div');
-          div.classList.add('result-item');
+          const div = document.createElement('div'); div.classList.add('result-item');
           div.appendChild(getImageElement(monsterImagePath, monster.name));
-
           const span = document.createElement('span');
           span.innerHTML = highlightKeyword(monster.name, keywordRaw);
           div.appendChild(span);
-
           div.addEventListener('click', () => showMonsterDetail(monster));
           resultsContainer.appendChild(div);
         });
