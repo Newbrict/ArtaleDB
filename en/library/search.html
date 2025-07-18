@@ -111,7 +111,21 @@
     .drop-item .drop-link {
       cursor: pointer;
       color: #0066cc;
-      text-decoration: underline;
+      text-decoration: none !important;   /* underline removed */
+    }
+    /* remove underline in item detail links */
+    #details a {
+      text-decoration: none !important;
+      cursor: pointer;
+      color: #0066cc;
+    }
+    #details a:hover {
+      text-decoration: underline !important;
+    }
+    /* dark mode neutral tone */
+    body.dark-mode .drop-item .drop-link,
+    body.dark-mode #details a {
+      color: #a1ccd9 !important;
     }
     .top-right-button {
       position: absolute;
@@ -137,17 +151,17 @@
       display: none;
     }
     body.dark-mode #autocompleteList {
-      background-color: #2b2b2b;      
-      border: 1px solid #555;       
+      background-color: #2b2b2b;
+      border: 1px solid #555;
     }
     body.dark-mode #autocompleteList li {
-      color: #ddd;                   
+      color: #ddd;
     }
     body.dark-mode #autocompleteList li strong {
-      color: #fff;                   
+      color: #fff;
     }
     body.dark-mode #autocompleteList li:hover {
-      background-color: #3a3a3a;     
+      background-color: #3a3a3a;
     }
     #autocompleteList li {
       padding: 5px 0;
@@ -182,8 +196,9 @@
     const monsterImagePath = "images/monsters/";
     const itemImagePath = "images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>\"]|'|\//g, c =>
-      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;','/':'&#x2F;'}[c])
+    // corrected escapeHtml regex and mapping
+    const escapeHtml = text => text?.replace(/[&<>\"'\/]/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;', '/': '&#x2F;' }[c])
     ) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^a-zA-Z0-9]/g, '_');
