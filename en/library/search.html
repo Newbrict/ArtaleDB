@@ -350,8 +350,7 @@
         ${respawnHtml}
         <p><strong>Modifiers:</strong> ${monster.modifiers || 'N/A'}</p>
         <p><strong>Required Accuracy:</strong> ${monster.required_accuracy || 'N/A'} ${monster.accuracy_level_decrease != null ? `(1 level decrease +${monster.accuracy_level_decrease})` : ''}</p>
-        <button onclick="toggleDrops('${dropsId}', this)">Show Drops</button>
-        <div id="${dropsId}" style="display:none; margin-top:10px;">
+        <div id="${dropsId}" style="margin-top:10px;">
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
               <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
