@@ -177,8 +177,8 @@
     const monsterImagePath = "./images/monsters/";
     const itemImagePath    = "./images/items/";
 
-    const escapeHtml = text => text?.replace(/[&<>\"]/g, c =>
-      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\' :'&#39;'}[c])
+   const escapeHtml = text => text?.replace(/[&<>\"']/g, c =>
+      ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c])
     ) || '';
     const stripGender = name => name.replace(/\s*\([MF]\)/i, '').trim();
     const sanitizeName = name => name.replace(/[^가-힣a-zA-Z0-9]/g, '_');
