@@ -400,7 +400,10 @@
         const link = document.createElement('a');
         link.href = '#';
         link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
-        link.addEventListener('click', e => { e.preventDefault(); document.getElementById('searchInput').value = m.name; unifiedSearch(); });
+        link.addEventListener('click', e => {
+         e.preventDefault();
+          showMonsterDetail(m);  
+      });
         li.appendChild(img);
         li.appendChild(link);
         ul.appendChild(li);
