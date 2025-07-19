@@ -296,25 +296,32 @@
       }
 
       const itemKeys = Object.keys(itemMatches);
-      if (itemKeys.length) {
-        const title = document.createElement('h2');
-        title.textContent = `🎁 아이템 (${itemKeys.length})`;
-        resultsContainer.appendChild(title);
-        itemKeys.forEach(item => {
-          const div = document.createElement('div');
-          div.classList.add('result-item');
-          div.appendChild(getImageElement(itemImagePath, item, true));
+     if (itemKeys.length) {
+  const title = document.createElement('h2');
+  title.textContent = `🎁 아이템 (${itemKeys.length})`;
+  resultsContainer.appendChild(title);
 
-          const span = document.createElement('span');
-          span.innerHTML = highlightKeyword(item, keywordRaw);
-          div.appendChild(span);
+  itemKeys.forEach(item => {
+    const div = document.createElement('div');
+    div.classList.add('result-item');
+    div.appendChild(getImageElement(itemImagePath, item, true));
 
-          div.addEventListener('click', () => {
-          document.getElementById('searchInput').value = item;
-          unifiedSearch();
-          showItemDetail(item, itemMatches[item]);
-          resultsContainer.appendChild(div);
-        });
+    const span = document.createElement('span');
+    span.innerHTML = highlightKeyword(item, keywordRaw);
+    div.appendChild(span);
+
+    // 클릭 핸들러: 검색어 세팅 → unifiedSearch → 상세보기
+    div.addEventListener('click', () => {
+      document.getElementById('searchInput').value = item;
+      unifiedSearch();
+      showItemDetail(item, itemMatches[item]);
+    });
+
+    // appendChild는 forEach 블록 안, 핸들러 바깥에
+    resultsContainer.appendChild(div);
+  });  // ← forEach 끝
+
+} // ← if (itemKeys.length) 끝
 
       if (!monsterMatches.length && !itemKeys.length) {
         resultsContainer.innerHTML = "<p>검색된 결과가 없습니다.</p>";
