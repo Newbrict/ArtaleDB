@@ -430,10 +430,10 @@
         const link = document.createElement('a');
         link.href = '#';
         link.textContent = `${m.name} (레벨: ${m.level || 'N/A'}, 지역: ${m.region || 'N/A'})`;
-        link.addEventListener('click', e => {
+         link.addEventListener('click', e => {
           e.preventDefault();
-          document.getElementById('searchInput').value = m.name;
-          unifiedSearch();
+          showMonsterDetail(m);
+        });
         });
 
         li.appendChild(img);
