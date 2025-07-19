@@ -112,12 +112,10 @@
       object-position: center;
       margin-right: 10px;
     }
-    }
-    
- .drop-item span {
-  text-decoration: none !important;
-  cursor: pointer;
-  color: #2196F3;
+    .drop-item span {
+      text-decoration: none !important;
+      cursor: pointer;
+      color: #2196F3;
     }
     /* 아이템 상세보기 링크 밑줄 제거 */
     #details a {
@@ -127,14 +125,13 @@
     }
     #details a:hover {
       text-decoration: underline !important;
-    }  
-
+    }
     /* 다크 모드에서 링크/아이템 색을 중립 톤으로 */
     body.dark-mode .drop-item span,
     body.dark-mode #details a {
       color: #a1ccd9 !important;
     }
-     /* 아이템 상세보기 획득처 리스트 – 중앙 정렬 & 간격 */
+    /* 아이템 상세보기 획득처 리스트 – 중앙 정렬 & 간격 */
     #details ul li {
       display: flex;
       align-items: center;
@@ -146,7 +143,12 @@
       object-fit: contain;
       margin-right: 10px;
     }
+
+    /* autocomplete 첫 번째 항목 하이라이트 */
+    #autocompleteList li.selected {
+      background-color: #f0f0f0;
     }
+
     .top-right-button {
       position: absolute;
       top: 20px;
@@ -370,27 +372,20 @@
           ${monster.required_accuracy || 'N/A'}
           ${monster.accuracy_level_decrease != null
             ? `(몬스터 레벨보다 1레벨 낮을 때 마다 +${monster.accuracy_level_decrease})`
-            : ''}
+            : ''}  
         </p>
 
         <div style="margin-top:10px;">
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
               <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
-              <span onclick="document.getElementById('searchInput').value='${escapeHtml(drop)}'; unifiedSearch();" style="cursor:pointer; text-decoration:underline; color:#2196F3;">
+              <span onclick="document.getElementById('searchInput').value='${escapeHtml(drop)}'; unifiedSearch();">
                 ${escapeHtml(drop)}
               </span>
             </div>
           `).join('')}
         </div>
       `;
-    }
-
-    function toggleDrops(id, btn) {
-      const el = document.getElementById(id);
-      const isVisible = el.style.display === 'block';
-      el.style.display = isVisible ? 'none' : 'block';
-      btn.textContent = isVisible ? '드롭 보기' : '드롭 숨기기';
     }
 
     function showItemDetail(item, monsters) {
@@ -431,21 +426,8 @@
     }
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
-    document.getElementById('searchInput').addEventListener('keydown', e => {
-      if (e.key === 'Enter') unifiedSearch();
-    });
-    document.getElementById('darkModeToggle').addEventListener('click', () => {
-      document.body.classList.toggle('dark-mode');
-      const isDark = document.body.classList.contains('dark-mode');
-      localStorage.setItem('darkMode', isDark);
-      document.getElementById('darkModeToggle').textContent =
-        isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
-    });
-    if (localStorage.getItem('darkMode') === 'true') {
-      document.body.classList.add('dark-mode');
-      document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
-    }
 
+    // 자동 제안 첫 번째 선택 및 Enter 처리
     document.getElementById('searchInput').addEventListener('input', function() {
       const query = this.value.trim().toLowerCase();
       const autocompleteList = document.getElementById('autocompleteList');
@@ -496,6 +478,28 @@
 
       addSection('몬스터', monsterMatches.slice(0, 10));
       addSection('아이템', Array.from(itemSet).slice(0, 10), true);
+
+      // 첫 번째 제안 자동 선택
+      const list = document.getElementById('autocompleteList');
+      const suggestions = Array.from(list.querySelectorAll('li'))
+                               .filter(li => !li.querySelector('strong'));
+      suggestions.forEach(li => li.classList.remove('selected'));
+      if (suggestions.length) suggestions[0].classList.add('selected');
+    });
+
+    document.getElementById('searchInput').addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter') return;
+      const list = document.getElementById('autocompleteList');
+      if (list.style.display === 'block') {
+        const suggestions = Array.from(list.querySelectorAll('li'))
+                                 .filter(li => !li.querySelector('strong'));
+        if (suggestions.length) {
+          suggestions[0].click();
+          e.preventDefault();
+          return;
+        }
+      }
+      unifiedSearch();
     });
 
     document.addEventListener('click', e => {
@@ -505,6 +509,19 @@
         list.style.display = 'none';
       }
     });
+
+    document.getElementById('darkModeToggle').addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      const isDark = document.body.classList.contains('dark-mode');
+      localStorage.setItem('darkMode', isDark);
+      document.getElementById('darkModeToggle').textContent =
+        isDark ? '☀️ 라이트 모드' : '🌙 다크 모드';
+    });
+
+    if (localStorage.getItem('darkMode') === 'true') {
+      document.body.classList.add('dark-mode');
+      document.getElementById('darkModeToggle').textContent = '☀️ 라이트 모드';
+    }
 
     loadData();
   </script>
