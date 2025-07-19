@@ -315,6 +315,8 @@
     function handleDropClick(itemName) {
       document.getElementById('searchInput').value = itemName;
       unifiedSearch();
+      const matches = [...monsterData, ...bossData].filter(m => (m.drops||[]).includes(itemName));
+      showItemDetail(itemName, matches);
     }
 
     function showMonsterDetail(monster) {
