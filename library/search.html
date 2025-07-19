@@ -309,7 +309,10 @@
           span.innerHTML = highlightKeyword(item, keywordRaw);
           div.appendChild(span);
 
-          div.addEventListener('click', () => showItemDetail(item, itemMatches[item]));
+          div.addEventListener('click', () => {
+          document.getElementById('searchInput').value = item;
+          unifiedSearch();
+          showItemDetail(item, itemMatches[item]);
           resultsContainer.appendChild(div);
         });
       }
