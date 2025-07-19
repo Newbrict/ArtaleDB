@@ -379,8 +379,19 @@
           ${(monster.drops || []).map(drop => `
             <div class="drop-item">
               <img src="${itemImagePath + getItemImageName(drop)}.png" onerror="this.onerror=null;this.src='${itemImagePath + getItemImageName(drop)}.gif';" alt="${escapeHtml(drop)}">
-              <span onclick="document.getElementById('searchInput').value='${escapeHtml(drop)}'; unifiedSearch();">
-                ${escapeHtml(drop)}
+              <span
+                onclick="
+                   const item = '${escapeHtml(drop)}';
+                    // 검색어 세팅 & 검색 실행
+                    document.getElementById('searchInput').value = item;
+                     unifiedSearch();
+                     // 검색 결과(monsterData, bossData)에서 해당 아이템 드롭하는 몬스터만 골라 디테일 표시
+                     const matches = [...monsterData, ...bossData].filter(m => (m.drops||[]).includes(item));
+                     showItemDetail(item, matches);
+                   "
+                    style="cursor:pointer; text-decoration:underline; color:#2196F3;"
+                  >
+                    ${escapeHtml(drop)}
               </span>
             </div>
           `).join('')}
