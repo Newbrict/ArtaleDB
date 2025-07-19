@@ -382,35 +382,53 @@
       btn.textContent = isVisible ? 'Show Drops' : 'Hide Drops';
     }
 
-    function showItemDetail(item, monsters) {
-      const details = document.getElementById('details');
-      details.innerHTML = '';
-      details.appendChild(getImageElement(itemImagePath, item, true));
-      const title = document.createElement('h2');
-      title.textContent = item;
-      details.appendChild(title);
-      const sub = document.createElement('div');
-      sub.innerHTML = `<p><strong>Dropped by:</strong></p>`;
-      const ul = document.createElement('ul');
-      monsters.forEach(m => {
-        const li = document.createElement('li');
-        const img = getImageElement(monsterImagePath, m.name);
-        img.style.width = '30px';
-        img.style.marginRight = '8px';
-        const link = document.createElement('a');
-        link.href = '#';
-        link.textContent = `${m.name} (Level: ${m.level || 'N/A'}, Region: ${m.region || 'N/A'})`;
-        link.addEventListener('click', e => {
-         e.preventDefault();
-          showMonsterDetail(m);  
-      });
-        li.appendChild(img);
-        li.appendChild(link);
-        ul.appendChild(li);
-      });
-      sub.appendChild(ul);
-      details.appendChild(sub);
-    }
+   function showItemDetail(item, monsters) {
+  const details = document.getElementById('details');
+  details.innerHTML = '';
+  details.appendChild(getImageElement(itemImagePath, item, true));
+
+  const title = document.createElement('h2');
+  title.textContent = item;
+  details.appendChild(title);
+
+  const sub = document.createElement('div');
+  sub.innerHTML = `<p><strong>획득처:</strong></p>`;
+
+  const ul = document.createElement('ul');
+  monsters.forEach(m => {
+    const li = document.createElement('li');
+    li.style.display = 'flex';
+    li.style.alignItems = 'center';
+    li.style.marginBottom = '8px';
+
+    const img = getImageElement(monsterImagePath, m.name);
+    img.style.width = '30px';
+    img.style.marginRight = '8px';
+    li.appendChild(img);
+
+    const link = document.createElement('a');
+    link.href = '#';
+    link.textContent = `${m.name} (레벨: ${m.level || 'N/A'}, 지역: ${m.region || 'N/A'})`;
+    link.style.textDecoration = 'none';
+    link.style.color = '#2196F3';
+
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      // 1) 검색창 세팅
+      document.getElementById('searchInput').value = m.name;
+      // 2) unifiedSearch로 좌측 결과 갱신
+      unifiedSearch();
+      // 3) 해당 몬스터 상세정보 출력
+      showMonsterDetail(m);
+    });
+
+    li.appendChild(link);
+    ul.appendChild(li);
+  });
+
+  sub.appendChild(ul);
+  details.appendChild(sub);
+}
 
     document.getElementById('searchBtn').addEventListener('click', unifiedSearch);
     document.getElementById('searchInput').addEventListener('keydown', e => { if (e.key === 'Enter') unifiedSearch(); });
