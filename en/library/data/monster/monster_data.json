@@ -9874,7 +9874,7 @@
     ],
     "modifiers": "Immune Fire, Immune Lightning",
     "drops": [
-      "(Summoned by Pianus)\"Taiwan"
+      
     ],
     "region": "Aqua Road Dungeon"
   },
@@ -10228,7 +10228,7 @@
       32,
       48
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Arrow for Crossbow",
       "Clover",
@@ -10265,7 +10265,7 @@
       33,
       49
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orange Potion",
       "Blue Potion",
@@ -10424,7 +10424,7 @@
       70,
       108
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orange Potion",
       "Blue Potion",
@@ -10587,7 +10587,7 @@
       74,
       114
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orange Potion",
       "Blue Potion",
@@ -10631,7 +10631,7 @@
       74,
       114
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orange Potion",
       "Blue Potion",
@@ -10673,7 +10673,7 @@
       76,
       118
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -10844,7 +10844,7 @@
     "accuracy_level_decrease": 1.66,
     "exp": 62,
     "meso_range": [79, 122],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orihalcon Ore",
       "Garnet Ore",
@@ -10878,7 +10878,7 @@
       95,
       147
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -10926,7 +10926,7 @@
       108,
       166
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -10979,7 +10979,7 @@
       129,
       198
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11027,7 +11027,7 @@
       139,
       214
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11063,7 +11063,7 @@
       176,
       264
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11097,7 +11097,7 @@
       200,
       300
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11140,7 +11140,7 @@
       240,
       360
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11182,7 +11182,7 @@
       288,
       432
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "White Potion",
       "Blue Potion",
@@ -11373,7 +11373,7 @@
       410,
       631
     ],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Mana Elixir",
       "Amethyst Ore",
@@ -11454,7 +11454,7 @@
     "accuracy_level_decrease": 0.13,
     "exp": 17,
     "meso_range": [22, 23],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Frog Legs",
       "Sky Snowboard",
@@ -11491,7 +11491,7 @@
     "accuracy_level_decrease": 0.66,
     "exp": 28,
     "meso_range": [36, 55],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Chicken",
       "White Egg",
@@ -11526,7 +11526,7 @@
     "accuracy_level_decrease": 1.06,
     "exp": 46,
     "meso_range": [59, 91],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Orange Potion",
       "Weighted Earrings",
@@ -11558,7 +11558,7 @@
     "accuracy_level_decrease": 1.6,
     "exp": 58,
     "meso_range": [74, 114],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Toad Poison",
       "Steel Ore",
@@ -11591,7 +11591,7 @@
     "accuracy_level_decrease": 2,
     "exp": 95,
     "meso_range": [120, 185],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Adamantium Ore",
       "White Potion",
@@ -11626,7 +11626,7 @@
     "accuracy_level_decrease": 2.93,
     "exp": 230,
     "meso_range": [280, 432],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Snake Scale",
       "Snake Skin",
@@ -12898,7 +12898,7 @@
     "accuracy_level_decrease": 0.533,
     "exp": 40,
     "meso_range": [51, 79],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Cass",
       "Stinger",
@@ -12934,7 +12934,7 @@
     "accuracy_level_decrease": 0.533,
     "exp": 43,
     "meso_range": [55, 85],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Aluminum Baseball Bat",
       "Korean Fan",
@@ -13073,7 +13073,7 @@
     "accuracy_level_decrease": 1.066,
     "exp": 96,
     "meso_range": [120, 185],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Silver Snowboard",
       "Korean Fan",
@@ -13110,7 +13110,7 @@
     "accuracy_level_decrease": 2.133,
     "exp": 103,
     "meso_range": [129, 198],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Red Guiltian",
       "Red Lumati",
@@ -13141,7 +13141,7 @@
     "accuracy_level_decrease": 2.133,
     "exp": 119,
     "meso_range": [147, 227],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Motorcycle Helmet",
       "White Potion",
@@ -13172,7 +13172,7 @@
     "accuracy_level_decrease": 2.133,
     "exp": 130,
     "meso_range": [169, 260],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
      
     ],
@@ -13190,7 +13190,7 @@
     "accuracy_level_decrease": 1.066,
     "exp": 83,
     "meso_range": [103, 158],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Yeti Doll Key Chain",
       "White Potion",
@@ -13223,7 +13223,7 @@
     "accuracy_level_decrease": 2.133,
     "exp": 130,
     "meso_range": [169, 260],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       
     ],
@@ -13241,7 +13241,7 @@
     "accuracy_level_decrease": 1.066,
     "exp": 83,
     "meso_range": [103, 158],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "Jr. Pepe Doll Key Chain",
       "Maroon Jangoon Armor",
@@ -13273,7 +13273,7 @@
     "accuracy_level_decrease": 3.333,
     "exp": 5,
     "meso_range": ["N/A", "N/A"],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
     
     ],
@@ -13291,7 +13291,7 @@
     "accuracy_level_decrease": 3.333,
     "exp": 194,
     "meso_range": ["N/A", "N/A"],
-    "modifiers": "Taiwan",
+    "modifiers": "",
     "drops": [
       "UFO Catcher",
       "Elixir",
