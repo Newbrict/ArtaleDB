@@ -1789,5 +1789,39 @@
 			"Sunset Dew"
         ],
         "location": "Last Mission: Zakum's Altar"
-    }      
+    },
+{
+  "name": "Snack Bar",
+  "level": 85,
+  "hp": 1459550,
+  "modifiers": "X",
+  "respawn_time": [
+    780,
+    1020
+  ],
+  "drops": [
+    "Heavy Mesos Bag",
+    "Fish Cake (Dish)",
+    "Hotdog",
+    "W Ramen",
+    "Sushi(Tuna)",
+    "Mushroom Miso Ramen",
+    "Varkit",
+    "Scroll for Pendant for STR 30%",
+    "Scroll for Pendant for INT 30%",
+    "Scroll for Pendant for DEX 30%",
+    "Scroll for Pendant for LUK 30%",
+    "Scroll for Staff for Magic ATT 60%",
+    "Scroll for Two-Handed Sword for ATT 60%",
+    "Scroll for Spear for ATT 60%",
+    "Scroll for Pole Arm for ATT 60%",
+    "Scroll for Bow for ATT 60%",
+    "Fish Spear",
+    "Poison Mushroom",
+    "Pyogo Mushroom",
+    "Frying Pan"
+  ],
+  "location": "Night Market, Taiwan"
+}
+
 ]
