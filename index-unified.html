@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="site.title">아르테일 데이터베이스</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #4CAF50;
+      color: white;
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .language-switch .lang-button {
+      background-color: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 8px 16px;
+      font-size: 14px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      cursor: pointer;
+    }
+
+    .language-switch .lang-button:hover {
+      background-color: white;
+      color: #4CAF50;
+    }
+
+    .hero {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .hero-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .hero-button {
+      text-decoration: none;
+      color: white;
+      background-color: #4CAF50;
+      font-weight: bold;
+      font-size: 18px;
+      padding: 15px 25px;
+      border: 1px solid white;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .hero-button:hover {
+      background-color: white;
+      color: #4CAF50;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin: 40px 20px;
+    }
+
+    .feature {
+      flex: 1;
+      max-width: 300px;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .feature img {
+      max-width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .feature h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .feature p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .feature a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 15px;
+      color: white;
+      background-color: #4CAF50;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .feature a:hover {
+      background-color: #45a049;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 10px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+      font-size: 14px;
+      line-height: 1.6;
+      margin-top: auto;
+    }
+
+    .footer a {
+      color: #1E90FF;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+
+    .footer a:hover {
+      color: #FFD700;
+      text-decoration: underline;
+    }
+
+    .footer p {
+      margin: 10px 0;
+    }
+
+    .footer strong {
+      font-weight: bold;
+    }
+  </style>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8544532996772505" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo" data-i18n="header.logo">아르테일 데이터베이스</div>
+    <div class="language-switch">
+      <a href="/" class="lang-button" data-i18n="header.language.switch" data-i18n-href="header.language.url">English</a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero.title">아르테일 데이터베이스</h1>
+      <p data-i18n="hero.subtitle">아르테일에 대한 정보를 한눈에!</p>
+      <div class="hero-links">
+        <a href="library/search.html" class="hero-button" data-i18n="hero.button1">몬스터/아이템 검색</a>
+        <a href="https://docs.google.com/spreadsheets/d/1A0-LYyz7KnGEtPU9maB4EhETwQUk-pRxSx8I38OoMeE/edit?gid=0#gid=0" class="hero-button" data-i18n="hero.button2">스킬트리/추천 사냥터</a>
+        <a href="library/ttl.html" class="hero-button" data-i18n="hero.button3">경험치 계산기</a>
+        <a href="https://docs.google.com/spreadsheets/d/18CYTe4L__6fRjkdCqaFvKjmWcirw3N38AVe7XexnWCw/edit#gid=1500442038" class="hero-button" data-i18n="hero.button4" data-i18n-href="hero.button4.url">퀘스트 정보</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Features Section -->
+  <div class="features">
+    <div class="feature">
+      <h3 data-i18n="feature1.title">몬스터/아이템 검색</h3>
+      <p data-i18n="feature1.description">몬스터의 상세 정보와, 드랍 아이템 등을 검색합니다.</p>
+      <a href="library/search.html" class="hero-button" data-i18n="feature1.button">검색하기</a>
+    </div>
+    <div class="feature">
+      <h3 data-i18n="feature2.title">스킬트리/추천 사냥터</h3>
+      <p data-i18n="feature2.description">직업별 추천 스킬트리와 레벨별 추천 사냥터 정보를 알 수 있습니다.</p>
+      <a href="https://docs.google.com/spreadsheets/d/1A0-LYyz7KnGEtPU9maB4EhETwQUk-pRxSx8I38OoMeE/edit?gid=0#gid=0" data-i18n="feature2.button">확인하기</a>
+    </div>
+    <div class="feature">
+      <h3 data-i18n="feature3.title">경험치 계산기</h3>
+      <p data-i18n="feature3.description">몇 시간 사냥하면 레벨업이 가능한지 알 수 있는 계산기입니다.</p>
+      <a href="library/ttl.html" data-i18n="feature3.button">계산하기</a>
+    </div>
+    <div class="feature">
+      <h3 data-i18n="feature4.title">퀘스트 정보</h3>
+      <p data-i18n="feature4.description">아르테일에 존재하는 퀘스트의 요구조건 및 보상을 확인할 수 있습니다.</p>
+      <a href="https://docs.google.com/spreadsheets/d/18CYTe4L__6fRjkdCqaFvKjmWcirw3N38AVe7XexnWCw/edit#gid=1500442038" data-i18n="feature4.button" data-i18n-href="feature4.url">확인하기</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p data-i18n="footer.copyright" data-i18n-html>&copy; 2025 아르테일 데이터베이스. All rights reserved. 이 사이트에 사용된 모든 이미지, 정보 등의 지적 자산은 해당 소유자의 자산이며, 정보 제공 목적으로 공정 사용에 따라 사용됩니다.</p>
+    <a href="terms_of_service.html" data-i18n="footer.terms">서비스 약관</a> |
+    <a href="https://ko-fi.com/heroaran50" target="_blank" data-i18n="footer.support">제작자 커피 한잔 사주기</a>
+
+    <p style="margin-top: 20px;">
+      <strong data-i18n="footer.thanks">도움주신분들:</strong>
+      <a href="https://gist.github.com/baweaver/fe8ccfd0d354667550326c33b1a87b03" target="_blank">baweaver</a> |
+      <a href="https://ko-fi.com/artalemarket" target="_blank">Haz</a>
+    </p>
+  </div>
+
+  <!-- Scripts -->
+  <script src="dist/main.bundle.js"></script>
+</body>
+</html>
