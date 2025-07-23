@@ -390,7 +390,7 @@
         "location": "Dungeon: The Grave of Mushmom"
     },
     {
-        "name": "Jr Balrog",
+        "name": "Jr. Balrog",
         "level": 80,
         "hp": 916000,
         "modifiers": "Weak Holy",
@@ -399,7 +399,7 @@
             540
         ],
         "drops": [
-            "Heavy Mesos Bag (No Image Available)",
+            "Heavy Mesos Bag",
             "Gold Mesos Bag",
             "Gold Mesos Bag",
             "Bronze Mesos Bag",
